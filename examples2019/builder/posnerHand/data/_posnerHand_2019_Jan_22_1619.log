@@ -1,0 +1,15 @@
+7.5117 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1296d5dd8>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12b5d0390>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.5118 	EXP 	window1: recordFrameIntervals = False
+7.6787 	EXP 	window1: recordFrameIntervals = True
+7.8617 	EXP 	window1: recordFrameIntervals = False
+7.8873 	EXP 	Created cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='images/arrow_left.png', interpolate=True, mask=None, maskParams=None, name='cue', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+7.9312 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+7.9321 	EXP 	Created target = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image=None, interpolate=True, mask=None, maskParams=None, name='target', opacity=1.0, ori=0.0, pos=array([0.5, 0. ]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+7.9464 	EXP 	fixation: autoDraw = True
+8.9453 	EXP 	fixation: autoDraw = False
+8.9616 	EXP 	cue: autoDraw = True
+9.1623 	EXP 	cue: autoDraw = False
+9.1623 	EXP 	target: autoDraw = True
+11.0204 	DATA 	Keypress: space
+12.0667 	DATA 	Keypress: escape
+12.3403 	EXP 	window1: mouseVisible = True

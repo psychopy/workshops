@@ -1,0 +1,21 @@
+3.3858 	WARNING 	User requested fullscreen with size [2560 1440], but screen is actually [1440, 900]. Using actual size
+6.1471 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.1479 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x10eb41c10>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x110b84b50>, multiSample=False, name='window1', numSamples=2, pos=[0, 0], screen=0, size=array([1440,  900]), stereo=False, units=u'norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+6.1480 	EXP 	window1: recordFrameIntervals = False
+6.3296 	EXP 	window1: recordFrameIntervals = True
+6.4300 	WARNING 	t of last frame was 30.30ms (=1/33)
+6.4632 	WARNING 	t of last frame was 33.19ms (=1/30)
+6.4966 	WARNING 	t of last frame was 33.40ms (=1/29)
+6.5309 	WARNING 	t of last frame was 34.29ms (=1/29)
+6.6153 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+8.5361 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+8.9796 	EXP 	Created heart = ImageStim(autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='heart_red.png', interpolate=True, mask=None, maskParams=None, name='heart', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='pix', win=Window(...))
+9.0376 	EXP 	heart: autoDraw = True
+16.4484 	DATA 	Keypress: escape
+16.7240 	EXP 	window1: mouseVisible = True

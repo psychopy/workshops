@@ -1,0 +1,3 @@
+trials.thisTrialN,trials.stepSize,trials.intensity,corrAns,direction,trials.response,resp.rt,date,frameRate,expName,session,participant,
+0,0.4,0.5,up,90,1,1.57081222534,2018_Jan_21_2220,59.3091843386,customRDK,001,,
+1,0.4,0.199053585277,down,-90,1,0.400925159454,2018_Jan_21_2220,59.3091843386,customRDK,001,,

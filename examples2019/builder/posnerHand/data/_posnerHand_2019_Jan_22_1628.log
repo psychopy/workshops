@@ -1,0 +1,271 @@
+6.3129 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.3133 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x12a598b38>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12adcf4e0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([5120, 2880]), stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.3133 	EXP 	window1: recordFrameIntervals = False
+6.4793 	EXP 	window1: recordFrameIntervals = True
+6.5288 	EXP 	window1: recordFrameIntervals = True
+6.5713 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+6.5729 	EXP 	Created cue = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='cue', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+6.5877 	EXP 	Created target = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='images/target.png', interpolate=True, mask=None, maskParams=None, name='target', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.20833333, 0.20833333]), texRes=128, units='height', win=Window(...))
+6.5972 	EXP 	Imported conditions.xlsx as conditions, 10 conditions, 3 params
+6.5976 	EXP 	Created sequence: random, trialTypes=10, nReps=5, seed=None
+6.5979 	EXP 	New trial (rep=0, index=0): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+6.6288 	WARNING 	t of last frame was 100.26ms (=1/9)
+6.6288 	EXP 	cue: image = 'images/arrow_left.png'
+6.6288 	EXP 	target: pos = array([-0.5,  0. ])
+6.6288 	EXP 	fixation: autoDraw = True
+6.7517 	WARNING 	t of last frame was 39.42ms (=1/25)
+7.6292 	EXP 	fixation: autoDraw = False
+7.6292 	EXP 	cue: autoDraw = True
+7.8287 	EXP 	cue: autoDraw = False
+7.8287 	EXP 	target: autoDraw = True
+8.5635 	DATA 	Mouse: Left button down, pos=(681,770)
+8.5657 	EXP 	New trial (rep=0, index=1): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+8.5965 	WARNING 	t of last frame was 33.85ms (=1/29)
+8.5965 	EXP 	fixation: autoDraw = False
+8.5965 	EXP 	cue: autoDraw = False
+8.5965 	EXP 	target: autoDraw = False
+8.5965 	EXP 	cue: image = 'images/arrow_right.png'
+8.5965 	EXP 	target: pos = array([0.5, 0. ])
+8.5965 	EXP 	fixation: autoDraw = True
+8.6465 	DATA 	Mouse:  Left button up, pos=(681,770)
+9.5962 	EXP 	fixation: autoDraw = False
+9.5962 	EXP 	cue: autoDraw = True
+9.7961 	EXP 	cue: autoDraw = False
+9.7961 	EXP 	target: autoDraw = True
+10.3131 	DATA 	Mouse: Left button down, pos=(1958,721)
+10.3149 	EXP 	New trial (rep=0, index=2): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+10.3465 	WARNING 	t of last frame was 34.11ms (=1/29)
+10.3465 	EXP 	fixation: autoDraw = False
+10.3465 	EXP 	cue: autoDraw = False
+10.3465 	EXP 	target: autoDraw = False
+10.3465 	EXP 	cue: image = 'images/arrow_right.png'
+10.3465 	EXP 	target: pos = array([0.5, 0. ])
+10.3465 	EXP 	fixation: autoDraw = True
+10.3974 	DATA 	Mouse:  Left button up, pos=(1975,715)
+11.3470 	EXP 	fixation: autoDraw = False
+11.3470 	EXP 	cue: autoDraw = True
+11.5475 	EXP 	cue: autoDraw = False
+11.5475 	EXP 	target: autoDraw = True
+11.6040 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+11.9984 	DATA 	Mouse: Left button down, pos=(2008,702)
+12.0000 	EXP 	New trial (rep=0, index=3): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+12.0320 	EXP 	fixation: autoDraw = False
+12.0320 	EXP 	cue: autoDraw = False
+12.0320 	EXP 	target: autoDraw = False
+12.0320 	EXP 	cue: image = 'images/arrow_left.png'
+12.0320 	EXP 	target: pos = array([-0.5,  0. ])
+12.0320 	EXP 	fixation: autoDraw = True
+12.0977 	DATA 	Mouse:  Left button up, pos=(2009,703)
+13.0303 	EXP 	fixation: autoDraw = False
+13.0303 	EXP 	cue: autoDraw = True
+13.2307 	EXP 	cue: autoDraw = False
+13.2307 	EXP 	target: autoDraw = True
+13.6819 	DATA 	Mouse: Left button down, pos=(683,732)
+13.6836 	EXP 	New trial (rep=0, index=4): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', -0.5), ('is_valid', 'invalid')])
+13.7148 	EXP 	fixation: autoDraw = False
+13.7148 	EXP 	cue: autoDraw = False
+13.7148 	EXP 	target: autoDraw = False
+13.7148 	EXP 	cue: image = 'images/arrow_right.png'
+13.7148 	EXP 	target: pos = array([-0.5,  0. ])
+13.7148 	EXP 	fixation: autoDraw = True
+13.7818 	DATA 	Mouse:  Left button up, pos=(682,731)
+14.7139 	EXP 	fixation: autoDraw = False
+14.7139 	EXP 	cue: autoDraw = True
+14.9142 	EXP 	cue: autoDraw = False
+14.9142 	EXP 	target: autoDraw = True
+15.5153 	DATA 	Mouse: Left button down, pos=(682,753)
+15.5168 	EXP 	New trial (rep=0, index=5): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', 0.5), ('is_valid', 'invalid')])
+15.5482 	EXP 	fixation: autoDraw = False
+15.5482 	EXP 	cue: autoDraw = False
+15.5482 	EXP 	target: autoDraw = False
+15.5482 	EXP 	cue: image = 'images/arrow_left.png'
+15.5482 	EXP 	target: pos = array([0.5, 0. ])
+15.5482 	EXP 	fixation: autoDraw = True
+15.6317 	DATA 	Mouse:  Left button up, pos=(682,753)
+16.5492 	EXP 	fixation: autoDraw = False
+16.5492 	EXP 	cue: autoDraw = True
+16.7488 	EXP 	cue: autoDraw = False
+16.7488 	EXP 	target: autoDraw = True
+17.3498 	DATA 	Mouse: Left button down, pos=(1890,738)
+17.3514 	EXP 	New trial (rep=0, index=6): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+17.3831 	EXP 	fixation: autoDraw = False
+17.3831 	EXP 	cue: autoDraw = False
+17.3831 	EXP 	target: autoDraw = False
+17.3831 	EXP 	cue: image = 'images/arrow_right.png'
+17.3831 	EXP 	target: pos = array([0.5, 0. ])
+17.3831 	EXP 	fixation: autoDraw = True
+17.4501 	DATA 	Mouse:  Left button up, pos=(1904,739)
+18.3817 	EXP 	fixation: autoDraw = False
+18.3817 	EXP 	cue: autoDraw = True
+18.5821 	EXP 	cue: autoDraw = False
+18.5821 	EXP 	target: autoDraw = True
+19.0995 	DATA 	Mouse: Left button down, pos=(1984,712)
+19.1017 	EXP 	New trial (rep=0, index=7): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+19.1332 	EXP 	fixation: autoDraw = False
+19.1332 	EXP 	cue: autoDraw = False
+19.1332 	EXP 	target: autoDraw = False
+19.1332 	EXP 	cue: image = 'images/arrow_right.png'
+19.1332 	EXP 	target: pos = array([0.5, 0. ])
+19.1332 	EXP 	fixation: autoDraw = True
+19.1832 	DATA 	Mouse:  Left button up, pos=(1981,712)
+20.1322 	EXP 	fixation: autoDraw = False
+20.1322 	EXP 	cue: autoDraw = True
+20.3322 	EXP 	cue: autoDraw = False
+20.3322 	EXP 	target: autoDraw = True
+20.8995 	DATA 	Mouse: Left button down, pos=(1908,736)
+20.9011 	EXP 	New trial (rep=0, index=8): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+20.9326 	EXP 	fixation: autoDraw = False
+20.9326 	EXP 	cue: autoDraw = False
+20.9326 	EXP 	target: autoDraw = False
+20.9326 	EXP 	cue: image = 'images/arrow_left.png'
+20.9326 	EXP 	target: pos = array([-0.5,  0. ])
+20.9326 	EXP 	fixation: autoDraw = True
+20.9833 	DATA 	Mouse:  Left button up, pos=(1906,734)
+21.9342 	EXP 	fixation: autoDraw = False
+21.9342 	EXP 	cue: autoDraw = True
+22.1343 	EXP 	cue: autoDraw = False
+22.1343 	EXP 	target: autoDraw = True
+22.6510 	DATA 	Mouse: Left button down, pos=(686,739)
+22.6527 	EXP 	New trial (rep=0, index=9): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+22.6845 	EXP 	fixation: autoDraw = False
+22.6845 	EXP 	cue: autoDraw = False
+22.6845 	EXP 	target: autoDraw = False
+22.6845 	EXP 	cue: image = 'images/arrow_left.png'
+22.6845 	EXP 	target: pos = array([-0.5,  0. ])
+22.6845 	EXP 	fixation: autoDraw = True
+22.7350 	DATA 	Mouse:  Left button up, pos=(685,738)
+23.6841 	EXP 	fixation: autoDraw = False
+23.6841 	EXP 	cue: autoDraw = True
+23.8838 	EXP 	cue: autoDraw = False
+23.8838 	EXP 	target: autoDraw = True
+24.3510 	DATA 	Mouse: Left button down, pos=(482,765)
+24.3525 	EXP 	New trial (rep=1, index=0): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+24.3857 	EXP 	fixation: autoDraw = False
+24.3857 	EXP 	cue: autoDraw = False
+24.3857 	EXP 	target: autoDraw = False
+24.3857 	EXP 	cue: image = 'images/arrow_right.png'
+24.3857 	EXP 	target: pos = array([0.5, 0. ])
+24.3857 	EXP 	fixation: autoDraw = True
+24.4515 	DATA 	Mouse:  Left button up, pos=(495,767)
+25.3841 	EXP 	fixation: autoDraw = False
+25.3841 	EXP 	cue: autoDraw = True
+25.5840 	EXP 	cue: autoDraw = False
+25.5840 	EXP 	target: autoDraw = True
+26.0850 	DATA 	Mouse: Left button down, pos=(1974,728)
+26.0867 	EXP 	New trial (rep=1, index=1): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+26.1187 	EXP 	fixation: autoDraw = False
+26.1187 	EXP 	cue: autoDraw = False
+26.1187 	EXP 	target: autoDraw = False
+26.1187 	EXP 	cue: image = 'images/arrow_left.png'
+26.1187 	EXP 	target: pos = array([-0.5,  0. ])
+26.1187 	EXP 	fixation: autoDraw = True
+26.1516 	DATA 	Mouse:  Left button up, pos=(1973,727)
+27.1191 	EXP 	fixation: autoDraw = False
+27.1191 	EXP 	cue: autoDraw = True
+27.3191 	EXP 	cue: autoDraw = False
+27.3191 	EXP 	target: autoDraw = True
+27.8366 	DATA 	Mouse: Left button down, pos=(671,724)
+27.8380 	EXP 	New trial (rep=1, index=2): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+27.8700 	EXP 	fixation: autoDraw = False
+27.8700 	EXP 	cue: autoDraw = False
+27.8700 	EXP 	target: autoDraw = False
+27.8700 	EXP 	cue: image = 'images/arrow_left.png'
+27.8700 	EXP 	target: pos = array([-0.5,  0. ])
+27.8700 	EXP 	fixation: autoDraw = True
+27.9033 	DATA 	Mouse:  Left button up, pos=(671,724)
+28.8693 	EXP 	fixation: autoDraw = False
+28.8693 	EXP 	cue: autoDraw = True
+29.0693 	EXP 	cue: autoDraw = False
+29.0693 	EXP 	target: autoDraw = True
+29.5028 	DATA 	Mouse: Left button down, pos=(480,721)
+29.5041 	EXP 	New trial (rep=1, index=3): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', 0.5), ('is_valid', 'invalid')])
+29.5361 	EXP 	fixation: autoDraw = False
+29.5361 	EXP 	cue: autoDraw = False
+29.5361 	EXP 	target: autoDraw = False
+29.5361 	EXP 	cue: image = 'images/arrow_left.png'
+29.5361 	EXP 	target: pos = array([0.5, 0. ])
+29.5361 	EXP 	fixation: autoDraw = True
+29.5865 	DATA 	Mouse:  Left button up, pos=(483,722)
+30.5355 	EXP 	fixation: autoDraw = False
+30.5355 	EXP 	cue: autoDraw = True
+30.7362 	EXP 	cue: autoDraw = False
+30.7362 	EXP 	target: autoDraw = True
+31.1701 	DATA 	Mouse: Left button down, pos=(1978,747)
+31.1715 	EXP 	New trial (rep=1, index=4): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+31.2042 	EXP 	fixation: autoDraw = False
+31.2042 	EXP 	cue: autoDraw = False
+31.2042 	EXP 	target: autoDraw = False
+31.2042 	EXP 	cue: image = 'images/arrow_right.png'
+31.2042 	EXP 	target: pos = array([0.5, 0. ])
+31.2042 	EXP 	fixation: autoDraw = True
+31.2379 	DATA 	Mouse:  Left button up, pos=(1978,746)
+32.2041 	EXP 	fixation: autoDraw = False
+32.2041 	EXP 	cue: autoDraw = True
+32.4041 	EXP 	cue: autoDraw = False
+32.4041 	EXP 	target: autoDraw = True
+33.0052 	DATA 	Mouse: Left button down, pos=(2127,744)
+33.0067 	EXP 	New trial (rep=1, index=5): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+33.0383 	EXP 	fixation: autoDraw = False
+33.0383 	EXP 	cue: autoDraw = False
+33.0383 	EXP 	target: autoDraw = False
+33.0383 	EXP 	cue: image = 'images/arrow_left.png'
+33.0383 	EXP 	target: pos = array([-0.5,  0. ])
+33.0383 	EXP 	fixation: autoDraw = True
+33.1206 	DATA 	Mouse:  Left button up, pos=(2127,743)
+34.0370 	EXP 	fixation: autoDraw = False
+34.0370 	EXP 	cue: autoDraw = True
+34.2373 	EXP 	cue: autoDraw = False
+34.2373 	EXP 	target: autoDraw = True
+34.7041 	DATA 	Mouse: Left button down, pos=(700,731)
+34.7056 	EXP 	New trial (rep=1, index=6): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+34.7382 	EXP 	fixation: autoDraw = False
+34.7382 	EXP 	cue: autoDraw = False
+34.7382 	EXP 	target: autoDraw = False
+34.7382 	EXP 	cue: image = 'images/arrow_right.png'
+34.7382 	EXP 	target: pos = array([0.5, 0. ])
+34.7382 	EXP 	fixation: autoDraw = True
+34.7893 	DATA 	Mouse:  Left button up, pos=(702,731)
+35.7373 	EXP 	fixation: autoDraw = False
+35.7373 	EXP 	cue: autoDraw = True
+35.9379 	EXP 	cue: autoDraw = False
+35.9379 	EXP 	target: autoDraw = True
+36.3225 	DATA 	Mouse: Left button down, pos=(1916,730)
+36.3239 	EXP 	New trial (rep=1, index=7): OrderedDict([('cue_file', 'images/arrow_left.png'), ('target_x', -0.5), ('is_valid', 'valid')])
+36.3563 	EXP 	fixation: autoDraw = False
+36.3563 	EXP 	cue: autoDraw = False
+36.3563 	EXP 	target: autoDraw = False
+36.3563 	EXP 	cue: image = 'images/arrow_left.png'
+36.3563 	EXP 	target: pos = array([-0.5,  0. ])
+36.3563 	EXP 	fixation: autoDraw = True
+36.3890 	DATA 	Mouse:  Left button up, pos=(1916,730)
+37.3558 	EXP 	fixation: autoDraw = False
+37.3558 	EXP 	cue: autoDraw = True
+37.5547 	EXP 	cue: autoDraw = False
+37.5547 	EXP 	target: autoDraw = True
+37.9727 	DATA 	Mouse: Left button down, pos=(633,741)
+37.9741 	EXP 	New trial (rep=1, index=8): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', 0.5), ('is_valid', 'valid')])
+38.0064 	EXP 	fixation: autoDraw = False
+38.0064 	EXP 	cue: autoDraw = False
+38.0064 	EXP 	target: autoDraw = False
+38.0064 	EXP 	cue: image = 'images/arrow_right.png'
+38.0064 	EXP 	target: pos = array([0.5, 0. ])
+38.0064 	EXP 	fixation: autoDraw = True
+38.0555 	DATA 	Mouse:  Left button up, pos=(633,741)
+39.0051 	EXP 	fixation: autoDraw = False
+39.0051 	EXP 	cue: autoDraw = True
+39.2052 	EXP 	cue: autoDraw = False
+39.2052 	EXP 	target: autoDraw = True
+39.5570 	DATA 	Mouse: Left button down, pos=(1939,731)
+39.5584 	EXP 	New trial (rep=1, index=9): OrderedDict([('cue_file', 'images/arrow_right.png'), ('target_x', -0.5), ('is_valid', 'invalid')])
+39.5895 	EXP 	fixation: autoDraw = False
+39.5895 	EXP 	cue: autoDraw = False
+39.5895 	EXP 	target: autoDraw = False
+39.5895 	EXP 	cue: image = 'images/arrow_right.png'
+39.5895 	EXP 	target: pos = array([-0.5,  0. ])
+39.5895 	EXP 	fixation: autoDraw = True
+39.6227 	DATA 	Mouse:  Left button up, pos=(1939,731)
+40.2053 	DATA 	Keypress: escape
+40.4815 	EXP 	window1: mouseVisible = True

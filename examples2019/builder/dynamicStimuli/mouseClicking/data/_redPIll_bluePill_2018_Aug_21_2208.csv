@@ -1,0 +1,4 @@
+trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,mouse.x,mouse.y,mouse.leftButton,mouse.midButton,mouse.rightButton,mouse.time,mouse.clicked_name,mouse.clicked_fillColor,date,frameRate,expName,session,participant,
+0,0,0,0,-0.6138888888888889,-0.4111111111111111,1,0,0,15.0422170162,bluePill,blue,2018_Aug_21_2208,60.01319221573422,redPIll_bluePill,001,,
+1,0,1,0,0.6277777777777778,0.04666666666666667,1,0,0,0.670624017715,redPill,red,2018_Aug_21_2208,60.01319221573422,redPIll_bluePill,001,,
+2,0,2,0,0.6277777777777778,0.04666666666666667,1,0,0,0.535388946533,redPill,red,2018_Aug_21_2208,60.01319221573422,redPIll_bluePill,001,,

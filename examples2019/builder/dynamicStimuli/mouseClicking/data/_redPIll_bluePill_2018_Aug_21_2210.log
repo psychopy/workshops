@@ -1,0 +1,72 @@
+7.5219 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x10edf1850>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x113f74610>, multiSample=False, name='window1', numSamples=2, pos=[0, 0], screen=0, size=array([1440,  900]), stereo=False, units=u'norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+7.5220 	EXP 	window1: recordFrameIntervals = False
+7.6885 	EXP 	window1: recordFrameIntervals = True
+7.8736 	EXP 	window1: recordFrameIntervals = False
+8.0723 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Choose your pill (with the mouse)', units=u'norm', win=Window(...), wrapWidth=1)
+8.0858 	EXP 	Created redPill = Polygon(autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=u'red', fillColorSpace='named', fillRGB=array([255.,   0.,   0.]), interpolate=True, lineColor=u'red', lineColorSpace='named', lineRGB=array([255.,   0.,   0.]), lineWidth=1, name='redPill', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.2, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+8.0886 	EXP 	Created bluePill = Polygon(autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=u'blue', fillColorSpace='named', fillRGB=array([  0.,   0., 255.]), interpolate=True, lineColor=u'blue', lineColorSpace='named', lineRGB=array([  0.,   0., 255.]), lineWidth=1, name='bluePill', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+8.1042 	EXP 	Created feedbackText = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=u'white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=u'Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedbackText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units=u'norm', win=Window(...), wrapWidth=1)
+8.1223 	EXP 	text: autoDraw = True
+8.8416 	DATA 	Mouse: Left button down, pos=(753,306)
+8.8423 	DATA 	Mouse:  Left button up, pos=(753,306)
+9.0942 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+9.0948 	EXP 	New trial (rep=0, index=0): None
+9.1096 	EXP 	text: autoDraw = False
+9.1096 	EXP 	text: autoDraw = False
+9.1096 	EXP 	redPill: autoDraw = True
+9.1096 	EXP 	bluePill: autoDraw = True
+22.5484 	DATA 	Mouse: Left button down, pos=(280,262)
+22.5793 	DATA 	Mouse:  Left button up, pos=(280,262)
+22.5964 	EXP 	redPill: autoDraw = False
+22.5964 	EXP 	bluePill: autoDraw = False
+22.5964 	EXP 	feedbackText: text = u'You selected the blue pill'
+22.5964 	EXP 	feedbackText: autoDraw = True
+24.5515 	EXP 	New trial (rep=1, index=0): None
+24.5674 	EXP 	feedbackText: autoDraw = False
+24.5674 	EXP 	feedbackText: autoDraw = False
+24.5674 	EXP 	redPill: autoDraw = True
+24.5674 	EXP 	bluePill: autoDraw = True
+25.7242 	DATA 	Mouse: Left button down, pos=(1126,519)
+25.7513 	DATA 	Mouse:  Left button up, pos=(1126,519)
+25.7730 	EXP 	redPill: autoDraw = False
+25.7730 	EXP 	bluePill: autoDraw = False
+25.7730 	EXP 	feedbackText: text = u'You selected the red pill'
+25.7730 	EXP 	feedbackText: autoDraw = True
+27.7285 	EXP 	New trial (rep=2, index=0): None
+27.7445 	EXP 	feedbackText: autoDraw = False
+27.7445 	EXP 	feedbackText: autoDraw = False
+27.7445 	EXP 	redPill: autoDraw = True
+27.7445 	EXP 	bluePill: autoDraw = True
+28.5652 	DATA 	Mouse: Left button down, pos=(1181,497)
+28.5664 	DATA 	Mouse:  Left button up, pos=(1181,497)
+29.1513 	DATA 	Mouse: Left button down, pos=(1181,497)
+29.1525 	DATA 	Mouse:  Left button up, pos=(1181,497)
+29.9196 	DATA 	Mouse: Left button down, pos=(1168,538)
+29.9336 	EXP 	redPill: autoDraw = False
+29.9336 	EXP 	bluePill: autoDraw = False
+29.9336 	EXP 	feedbackText: text = u'You selected the red pill'
+29.9336 	EXP 	feedbackText: autoDraw = True
+29.9851 	DATA 	Mouse:  Left button up, pos=(1168,538)
+31.9245 	EXP 	New trial (rep=3, index=0): None
+31.9390 	EXP 	feedbackText: autoDraw = False
+31.9390 	EXP 	feedbackText: autoDraw = False
+31.9390 	EXP 	redPill: autoDraw = True
+31.9390 	EXP 	bluePill: autoDraw = True
+32.5767 	DATA 	Mouse: Left button down, pos=(285,619)
+32.6243 	EXP 	redPill: autoDraw = False
+32.6243 	EXP 	bluePill: autoDraw = False
+32.6243 	EXP 	feedbackText: text = u'You selected the blue pill'
+32.6243 	EXP 	feedbackText: autoDraw = True
+32.6598 	DATA 	Mouse:  Left button up, pos=(285,619)
+34.5813 	EXP 	New trial (rep=4, index=0): None
+34.5963 	EXP 	feedbackText: autoDraw = False
+34.5963 	EXP 	feedbackText: autoDraw = False
+34.5963 	EXP 	redPill: autoDraw = True
+34.5963 	EXP 	bluePill: autoDraw = True
+35.8199 	DATA 	Mouse: Left button down, pos=(303,606)
+35.8313 	EXP 	redPill: autoDraw = False
+35.8313 	EXP 	bluePill: autoDraw = False
+35.8313 	EXP 	feedbackText: text = u'You selected the blue pill'
+35.8313 	EXP 	feedbackText: autoDraw = True
+35.8997 	DATA 	Mouse:  Left button up, pos=(303,606)
+37.8749 	EXP 	window1: mouseVisible = True
