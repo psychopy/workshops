@@ -32,14 +32,14 @@ This is really simply a flow diagram. It only specifies the order in which thing
 
 The Flow (usually) doesn't know how long things will last or what happens within them. It simply runs a *Routine* until that *Routine* has finished and then moves onto the next until the experiment finishes.
 
-In the case of the Stroop task we have 3 Routines that run in turn and the 'trial' Routine is repeated an number of times in a loop.
+In the case of the Stroop task we have 3 Routines that run in turn and the 'trial' Routine is repeated a number of times in a loop.
 
 Routines
 ~~~~~~~~~~~~~~~~~~
 
-These define how *Components* interact in time. They allow one or more stimuli to be displayed and repsonses to be collected at defined times relative to the start of the Routine.
+These define how *Components* interact in time. They allow one or more stimuli to be displayed and responses to be collected at defined times relative to the start of the Routine.
 
-A typical Routine would be a trial (present one or more stimuli and get a response) but it might be something else like the presentation of instructions.
+A typical Routine would be a trial (present one or more stimuli and get a response) but it might be something else, like the presentation of instructions.
 
 Also, a trial could be comprised of multiple Routines.
 
@@ -55,7 +55,7 @@ The 'trial' Routine in the basic Stroop task. You can see there are just two thi
 
 You can see that the Routine has a time view, like a track editor for movie/audio editing software, so Components can be controlled independently in time. Maybe a fixation point would stay on for your entire trial but the stimulus would just appear for a short period.
 
-In the stroop demo the stimulus and keyboard both start at 0.5s after the beginning of the Routine. They both last an infinite duration (the time bar extends beyond the screen).
+In the Stroop demo the stimulus and keyboard both start at 0.5 s after the beginning of the Routine. They both last an indefinite duration (the time bar extends beyond the screen).
 
 Components
 ~~~~~~~~~~~~~~~~~~
@@ -156,7 +156,7 @@ In this table:
     - The columns represent variables that we can refer to from PsychoPy
     - The variable names need to be unique and with no punctuation (case-sensitive)
     - The rows represent distinct trials (which we can randomise and repeat)
-    - In our case `cong` isn't actually used by PsychoPy but it's useful for analysis
+    - In our case `congr` isn't actually used by PsychoPy but it's useful for analysis
 
 .. nextSlide::
 
@@ -184,7 +184,7 @@ We want about 0.5s inter-trial-intervals (ITI) so that participants don't feel t
 
 Create a new Text Component by clicking the button on the right.
 
-NB: The buttons on the right create new objects, but you can edit an object by clicking on its icon in the Routine. You can remove an object by *right* clicking its icon in the Routine.
+NB: The buttons on the right create new objects, but you can edit an existing object by clicking on its icon in the Routine. You can remove an object by *right* clicking its icon in the Routine.
 
 .. nextSlide::
 
@@ -201,7 +201,7 @@ Note, we changed:
     - the *text* became *$stim* where the name *stim* was one of our columns
     - the *text* has been set to *update every repeat* (of the Routine)
 
-NB: Start and stop can be defined in different ways (times, frames, conditions) and a duration/stop that is left blank will last forever.
+NB: Start and stop can be defined in different ways (times, frames, conditions) and a duration/stop that is left blank will last indefinitely.
 
 *If you get an error message from your experiment that "stim is not defined" it means one of these things:*
 
@@ -240,7 +240,7 @@ Press `Browse...` to find your conditions file, telling PsychoPy about each of y
 .. image:: /_images/loopDlgComplete.png
     :align: left
 
-If you got your excel file right then you'll see a message telling you how many trial types and variables you created.
+If you got your Excel file right then you'll see a message telling you how many trial types and variables you created.
 
 Press `OK`
 
@@ -269,7 +269,7 @@ All we really need now is to collect reaction times.
 Add a Keyboard Component to your study with:
 
     - start = `0.5` (seconds)
-    - end = `<leave blank, meaning infinite>`
+    - end = `<leave blank, meaning indefinite>`
     - allowed keys = `'left','right'`
     - store correct = `True`
     - correct = `$corrAns`
@@ -304,7 +304,7 @@ Click on that Routine (either in the Flow or in the Routine tabs at the top) to 
 Add a text component to `instructions` Routine:
     - name = `instructText`
     - start = 0
-    - duration = `<blank i.e. infinite>`
+    - duration = `<blank i.e. indefinite>`
     - text = `<something useful here about the keys to press>`
 
 Because we made the text last forever we need to provide something to end the Routine or we'll never get to the main experiment!
@@ -314,7 +314,7 @@ Because we made the text last forever we need to provide something to end the Ro
 Add a keyboard component:
     - name = `endInstr`
     - save = nothing
-    - duration = `<blank i.e. infinite>`
+    - duration = `<blank i.e. indefinite>`
     - forceEndRoutine = `True`
     - allowedKeys = `<blank i.e. any keys>`
 

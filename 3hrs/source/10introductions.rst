@@ -13,11 +13,13 @@ About me
     * Principal creator/maintainer of PsychoPy
 
 **Credits:**
-    - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
+    - Many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
 
     - Nottingham University have been paying my salary while PsychoPy was written
 
-    - Wellcome Trust recently gave us a grant to improve this a LOT
+    - Wellcome Trust gave us a grant to add online capabilities
+
+    - The Chan-Zuckerberg Initiative are funding further substantial improvements
 
 .. image:: /_static/nott_logo.png
     :align: right
@@ -42,10 +44,10 @@ It's `Psychology software in Python`
 PsychoPy is several things:
 
     - a library for use in Python scripts
-    - an editor including Python to edit scripts
-    - an application with a graphical user interface (GUI) for building experiments
+    - an editor to write and run such scripts (the 'Coder' view)
+    - an application for building experiments through a graphical user interface (GUI) (the 'Builder' view)
 
-It's, itself, entirely written in Python
+It is itself entirely written in Python
 
 Goal of PsychoPy
 ~~~~~~~~~~~~~~~~~~
@@ -98,16 +100,16 @@ Why do people *Build*?
 
     - It is far faster to develop experiments!
     - You can still understand (and build on) your experiment next year
-    - You'll probably have fewer bugs
+    - You'll probably have fewer bugs (and better performance)
     - Code Components can be used in nearly all places where Builder isn't enough
-    - In the future your Builder experiment will also compile to a web (JS/HTML) experiment!
+    - Builder experiments can also compile to a web format (Javscript/HTML) to run online!
 
 What does **Jon** do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I still use both Builder and Coder on a regular basis.
+I use Builder on a regular basis.
 
-My experiments I are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code.
+My experiments are almost always created in Builder, with added Code Components. I don't ever break out and switch to pure code.
 
 
 Going further
@@ -115,12 +117,14 @@ Going further
 
 Builder interface:
 
-    - *Building Experiments in PsychoPy* by Peirce and MacAskill (Sage Publications) will be out in May 2018
+    - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage)
 
 Python programming (for experimental psych):
 
     - `Programming Experiments in Python workshop <http://www.psychopy.org/resources/workshops.html>`_ (3 days of programming in Nottingham)
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
     - `Python for Experimental Psychologists <https://www.amazon.co.uk/Python-Experimental-Psychologists-Edwin-Dalmaijer/dp/1138671576>`_ by Edwin Dalmaijer (2017, Routledge)
+    - `Programming psychological experiments and data handling with Python/PsychoPy <https://www.amazon.co.jp/dp/4254128916>`_ by Hiroyuki Sogo (2017, Asakura Shoten)
+
 
 So, let's go on and learn some :ref:`session1`...
