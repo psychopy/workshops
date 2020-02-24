@@ -104,7 +104,7 @@ To actually include one of these marks within a string, enclose it in the other 
     >>> text1 = "I don't like ham"
     >>> text2 = 'She said "hello".'
 
-    If you don't match your quotes in pairs, you'll notice all of your code turn pink.
+If you don't match your quotes in pairs, you'll notice all of your code turn pink.
 
 .. ifslides::
 
