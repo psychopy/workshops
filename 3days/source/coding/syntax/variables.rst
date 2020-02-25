@@ -217,6 +217,9 @@ Like older C-style formats::
 
 For more see on those two see: https://pyformat.info/
 
+.. ifslides::
+
+    Now you know about simple variables let's store them in :ref:`containers`
 
 Containers
 -----------------
@@ -572,6 +575,3 @@ Error resources
     - Try this flow chart: http://i.imgur.com/WRuJV6r.png
     - For the pros, see http://stackoverflow.com/questions/1011431/common-pitfalls-in-python
 
-.. ifslides::
-
-    Now you know about simple variables let's store them in :ref:`containers`

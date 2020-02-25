@@ -22,6 +22,7 @@ About me
 .. image:: /_static/nott_logo.png
     :align: right
 
+
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
 

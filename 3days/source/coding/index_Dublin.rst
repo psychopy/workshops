@@ -9,6 +9,43 @@ Coding a full experiment
 
 In this session we'll create an experiment from scratch using only Python code.
 
+Introductions
+------------------------
+
+
+**Rebecca Hirst:**
+    * Not a programmer
+    * I did my BSc, MSc and PhD at University of Nottingham ...so, I used PsychoPy *a lot*
+    * I now work in the multisensory cognition lab at TCD
+
+
+.. image:: /_static/TCD_logo.png
+    :align: right
+
+Introductions
+------------------------
+
+
+**David McGovern:**
+	* Not a programmer
+	* I did my PhD and first postdoc position at University of Nottingham... so, I used PsychoPy *a lot*
+	* I am now an Assistant Professor in School of Psychology at DCU
+
+
+.. image:: /_static/DCU_logo.png
+    :align: right
+
+Plan for the day
+------------------------
+
+	* Make a task (the Posner Cuing task)
+	* Work on "improvements"
+	* Cover "hacky tips" to start making different experiments
+
+.. note::
+
+	* This is an example note. 
+
 The Posner Cuing task
 ------------------------
 
@@ -65,6 +102,29 @@ Later (on each trial) we'll need to draw the fixation point and then flip the sc
     fixation.draw()
     win.flip()
 
+Understanding `Window.flip()`
+-------------------------------
+
+    - All the `draw()` commands operate on a memory buffer called the 'back buffer' on the graphics card.
+
+    - When you `flip()` the window it causes everything in that 'back buffer' to become visible on the physical screen.
+
+    - The flip() command waits until the next screen refresh to present your stimuli (every 1/60s, so about 16.6ms)
+
+    - It will then wait until the physical screen refresh occurs (if possible with your graphics card settings)
+
+.. nextslide::
+
+This has various knock-on effects:
+
+    - That means your screen flips (and intervening code) are tied to a fixed rate of 1/60s
+
+    - It is physically impossible to draw your stimulus for partial frames (e.g. 25ms) on a 60Hz screen
+
+    - Also, if Python/PsychoPy has to run too much code between flips you might 'drop' a frame (fail to get it drawn by the time of the screen refresh)
+
+    - If you don't call `flip()` for a while, or if you drop a frame, the screen will stay as it is for another frame
+
 Create your probe stimulus
 -----------------------------
 
@@ -92,33 +152,11 @@ own with custom vertices::
 
 Also add draw() code like the other objects. Again, it doesn't matter the order we initialise it, but the drawing needs to be between the fixation and the probe.
 
-Understanding `Window.flip()`
--------------------------------
-
-    - All the `draw()` commands operate on a memory buffer called the 'back buffer' on the graphics card.
-
-    - When you `flip()` the window it causes everything in that 'back buffer' to become visible on the physical screen.
-
-    - The flip() command waits until the next screen refresh to present your stimuli (every 1/60s, so about 16.6ms)
-
-    - It will then wait until the physical screen refresh occurs (if possible with your graphics card settings)
-
-.. nextslide::
-
-This has various knock-on effects:
-
-    - That means your screen flips (and intervening code) are tied to a fixed rate of 1/60s
-
-    - It is physically impossible to draw your stimulus for partial frames (e.g. 25ms) on a 60Hz screen
-
-    - Also, if Python/PsychoPy has to run too much code between flips you might 'drop' a frame (fail to get it drawn by the time of the screen refresh)
-
-    - If you don't call `flip()` for a while, or if you drop a frame, the screen will stay as it is for another frame
 
 Set some timing parameters
 -----------------------------
 
-If you run now the objects will be presented for a single frame each (1/60th of sec). That's too short for us to see. We need to set times for our objects. we can achieve that with the `core.wait()` function.
+If you run now the objects will be presented for a single frame each (1/60th of sec). That's shorter than we want. We need to set times for our objects. we can achieve that with the `core.wait()` function.
 
 Possible: "hard code" the values by typing them where needed.
 
@@ -291,14 +329,70 @@ Then when we present our stimulus we could reset that clock to zero::
 
 .. nextslide::
 
+There is more than one way to get a key response in PsychoPy. 
+
+Until recently this was done using the event module but now we use the 
+Keyboard *class* in the hardware module (I'll explain why). 
+
+Lets try out both to demonstrate.
+
+.. nextslide::
+
+**event.waitKeys()**
+
 After our stimulus has finished we should flip the screen (without doing any drawing so it will be blank) and then wait for a response to occur::
 
     #clear screen
     win.flip()
+    respClock.reset()
     #wait for response
     keys = event.waitKeys(keyList = ['left','right','escape'])
     resp = keys[0] #take first response
     rt = respClock.getTime()
+    print('RT (seconds):', rt)
+
+*print()* is a great way to debug but we might want to remove this later
+
+.. nextslide::
+
+**hardware.keyboard.Keyboard.getKeys()**
+
+Uses python-psychtoolbox lib and has some advantages:
+
+	* polling is performed and timestamped asynchronously with the main thread (times relate to when the key was pressed, not when the call was made)
+	* it's faster
+	* can detect the KeyUp events (enabling) keypress duration
+	* on Linux and Mac you can distinguish between different keyboard devices (see getKeyboards())
+
+.. note:: On 32 bit installations and Python2 older psychopy.event.getKeys() is used.
+
+.. nextslide::
+
+**hardware.keyboard.Keyboard.getKeys()**::
+
+	#at the start of your script
+	from psychopy.hardware import keyboard
+	kb = keyboard.Keyboard()
+
+.. nextslide::
+
+**hardware.keyboard.Keyboard.getKeys()**::
+
+    #in your trial loop
+    win.flip()
+    kb.clock.reset()
+    got_keypress = False
+    while not got_keypress:
+        keys =  kb.getKeys(keyList = ['left','right','escape'])
+        if 'escape' in keys:
+            core.quit()
+        if len(keys)>0:
+            print(keys[0].name, keys[0].rt, keys[0].duration)
+            rt = keys[0].rt
+            resp = keys[0].name
+            got_keypress = True
+    print('RT (seconds):', rt)
+
 
 .. nextslide::
 
@@ -321,11 +415,6 @@ And store the responses in the TrialHandler::
 
 (Note that we aren't saving the data file yet though!)
 
-You can see the full set of code changes here:
-
-`repository: collecting responses <https://github.com/psychopy/posner/commit/2aaebe7450d1828c3d0a28a8a84d8af5ebf55286>`_
-
-(The 'view' button will fetch you the full script so far)
 
 .. _experimentHandler:
 
@@ -356,19 +445,21 @@ Create a base filename
 
 Let's create a filename using the participant name and the date. OK, so we'll need to get those!
 
-For the username, we can easily create a dialog box that uses our `info` dictionary to store information (top of our script)::
+Create a dialog box that uses our `info` dictionary to store information (top of our script)::
 
     info = {} #a dictionary
     #present dialog to collect info
     info['participant'] = ''
-    dlg = gui.DlgFromDict(info) #(and from psychopy import gui at top of script)
+    #from psychopy import gui at top of script
+    dlg = gui.DlgFromDict(info)
     if not dlg.OK:
         core.quit()
     #add additional info after the dialog has gone
     info['fixTime'] = 0.5 # seconds
     info['cueTime'] = 0.2
     info['probeTime'] = 0.2
-    info['dateStr'] = data.getDateStr() #will create str of current date/time
+    #create str of current date/time
+    info['dateStr'] = data.getDateStr()
 
 .. nextslide::
 
@@ -380,7 +471,7 @@ Now we've collected the information there are various ways to create our filenam
     filename = "data/{0['participant']}_{0['dateStr']}".format(info)
     filename = "data/{participant}_{dateStr}".format(**info)
 
-You can see them looking increasingly obscure, but increasingly brief.
+You can see them looking increasingly obscure, but increasingly brief. 
 
 Create ExperimentHandler
 --------------------------
@@ -435,11 +526,13 @@ Improvements...
 
 There are a few problems with this version, that we could definitely improve on. Currently:
 
-    - a very fast response gets ignored because we only start looking at the keyboard after the probe has gone
     - we should time our stimulus presentations by number of frames, for brief stimuli, not by a clock
+    - a very fast response gets ignored because we only start looking at the keyboard after the probe has gone
     - we don't have any practice trials (to learn that the cue is 'informative')
     - our code is not very 'modular'
     - but it does work and took less than 100 lines!
+
+:ref:`Improve`
 
 Summary
 ----------------
@@ -454,3 +547,9 @@ Hopefully you've learned how to:
     - set timings
     - receive responses from a keyboard
     - save data in various formats
+
+.. toctree::
+    :hidden:
+    :maxdepth: 1
+
+    coding/improvements_Dublin
