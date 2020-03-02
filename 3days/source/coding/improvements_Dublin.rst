@@ -139,14 +139,14 @@ the trial::
         win.flip()
     probe.setAutoDraw(False)
     win.flip()
-    keys =  kb.getKeys(keyList = ['left','right','escape'], clear=True)
 
 .. nextslide::
 
 If a response has not been made by the end of the trial time wait for a key press::
 
     while not keys:
-        keys =  kb.getKeys(keyList = ['left','right','escape'], clear=True)
+        keys =  kb.getKeys(keyList = ['left','right','escape'], 
+        		clear=True)
     if 'escape' in keys:
         core.quit()
     if len(keys)>0:
@@ -177,9 +177,11 @@ the trial list at the start of the block and add it to the experiment handler::
 	block_count=0
 	for block in outerLoop:  # the outer loop doesn't save any data
 		if block_count==0:
-			trials = data.TrialHandler(trialList=conditions, nReps=1, name='practiceBlock')
+			trials = data.TrialHandler(trialList=conditions, 
+					nReps=1, name='practiceBlock')
 		else:
-			trials = data.TrialHandler(trialList=conditions, nReps=2, name='mainBlocks')
+			trials = data.TrialHandler(trialList=conditions, 
+					nReps=2, name='mainBlocks')
 		block_count=block_count+1
 		thisExp.addLoop(trials)
 		for thisTrial in trials:
@@ -221,10 +223,12 @@ main trials...
 
 	#At the start of your block loop
 	for block in outerLoop:  # the outer loop doesn't save any data
-		if block_count==0:
-			trials = data.TrialHandler(trialList=conditions, nReps=1, name='practiceBlock')
+		if block_count ==0:
+			trials = data.TrialHandler(trialList=conditions,
+						nReps=1, method = 'random', name='PracticeBlock')
 		else:
-			trials = data.TrialHandler(trialList=conditions, nReps=2, name='mainBlocks')
+			trials = data.TrialHandler(trialList=conditions,
+						nReps=5, method = 'random', name = 'MainBlock')
 		if block_count==1:
 			Continue.draw()
 			win.flip()
@@ -238,7 +242,17 @@ There are many further tweaks we may want to make:
 
 	- Providing feedback
 	- Counterbalancing
-	- modularity of code
 
 And many more specific to your experiment requirements...
 
+Next we will cover :ref:`plottingPosner` 
+
+Time permitting we might cover :ref:`syntax` (but you will have picked a lot of this up 
+already!)
+
+.. toctree::
+    :hidden:
+    :maxdepth: 1
+
+    syntax/index_Dublin
+    arraysAndPlotting_Dublin
