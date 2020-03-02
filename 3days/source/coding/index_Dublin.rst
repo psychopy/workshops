@@ -8,6 +8,7 @@ Coding a full experiment
 ============================================
 
 In this session we'll create an experiment from scratch using only Python code.
+All materials will be made available at Psychopy.org/talks/dublin
 
 Introductions
 ------------------------
@@ -18,6 +19,7 @@ Introductions
     * I did my BSc, MSc and PhD at University of Nottingham ...so, I used PsychoPy *a lot*
     * I now work in the multisensory cognition lab at TCD
 
+You can contact me at hirstr@tcd.ie
 
 .. image:: /_static/TCD_logo.png
     :align: right
@@ -40,7 +42,10 @@ Plan for the day
 
 	* Make a task (the Posner Cuing task)
 	* Work on "improvements"
-	* Cover "hacky tips" to start making different experiments
+	* Plot and visualise the results
+
+Time permitting we might cover :ref:`syntax` (but we will talk through a lot of this as
+we go through!) 
 
 .. note::
 
@@ -156,7 +161,7 @@ Also add draw() code like the other objects. Again, it doesn't matter the order 
 Set some timing parameters
 -----------------------------
 
-If you run now the objects will be presented for a single frame each (1/60th of sec). That's shorter than we want. We need to set times for our objects. we can achieve that with the `core.wait()` function.
+If you run now the objects will be presented for a single frame each (1/60th of sec). That's shorter than we want. We need to set times for our objects. We can achieve that with the `core.wait()` function.
 
 Possible: "hard code" the values by typing them where needed.
 
@@ -227,7 +232,7 @@ To repeat our trials using the TrialHandler instead of the basic for loop we can
 
 For now we've set the `trialList` simply to an empty list, but later we'll change that.
 
-The code above needs to come somewhere *after* you initialise your stimuli and it needs to include your trial code
+The code above needs to come *after* you initialise your stimuli and it must include your trial code
 
 Controlling conditions
 ------------------------
@@ -306,9 +311,6 @@ Each time through the loop the value `thisTrial` is a dictionary for one trial, 
         probe.setPos( [thisTrial['probeX'], 0] )
         cue.setOri( thisTrial['cueOri'] )
 
-You can see the code changes here:
-
-    - `repository: updating stimulus <https://github.com/psychopy/posner/commit/09e7057e0d243f5a211814453324efbd355b2d5e>`_
 
 Collect responses
 --------------------------
@@ -387,9 +389,8 @@ Uses python-psychtoolbox lib and has some advantages:
         if 'escape' in keys:
             core.quit()
         if len(keys)>0:
-            print(keys[0].name, keys[0].rt, keys[0].duration)
-            rt = keys[0].rt
             resp = keys[0].name
+            rt = keys[0].rt
             got_keypress = True
     print('RT (seconds):', rt)
 
@@ -494,20 +495,20 @@ After your code to create the TrialHandler loop::
     thisExp.nextEntry()
 
 
-We can't quit during a run
+Quitting during a run
 ----------------------------------------------------
 
-Let's make it possible to end the experiment during a run using the 'escape' key
+Currently we press the 'escape' key to escape a trail
 
-Where you checked your responses we need to add something to handle that::
+Alternatives include::
 
     elif resp=='escape':
         trials.finished = True
 
-Alternatives to `trials.finished=True` ::
+Or::
 
     break #will end the innermost loop, not necessarily `trials`
-    core.quit() #from psychopy lib will exit Python
+    core.quit() #from psychopy lib will exit Python (what we currently have)
 
 NB: If you hit the red stop button in PsychoPy it issues a very severe abort and no data will be saved!
 
@@ -515,11 +516,14 @@ NB: If you hit the red stop button in PsychoPy it issues a very severe abort and
 All done!
 -------------
 
-You can see all the steps that were used here (and some further ones in the intermediate stream) here:
-
- - https://github.com/psychopy/posner/commits
-
 You should have a working version of the Posner Cueing task.
+
+All materials will be made available at psychopy.org/talks/dublin
+
+I will upload working code examples from today here:
+
+ - https://github.com/RebeccaHirst/Dublin_workshops
+
 
 Improvements...
 -----------------
@@ -551,5 +555,5 @@ Hopefully you've learned how to:
 .. toctree::
     :hidden:
     :maxdepth: 1
-
+	syntax/index_Dublin
     coding/improvements_Dublin

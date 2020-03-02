@@ -193,4 +193,3 @@ slides:
 rinoh:
 	$(SPHINXBUILD) -b rinoh $(ALLSPHINXOPTS) $(BUILDDIR)/rinoh
 	@echo "Build finished. The rinoh slides are in $(BUILDDIR)/rinoh."
-

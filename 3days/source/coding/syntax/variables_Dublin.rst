@@ -252,7 +252,7 @@ Mathematical operators::
 	a + b
 	b * 3
 
-For those who have come from Matlab backgrounds, these lists might look like Matlab matrices, but they aren't. These aren't designed for mathematical operations. There is a similar object which *is* very much like Matlab matrices, which we'll explore when we look at :ref:`dataAnalysis`
+For those who have come from Matlab backgrounds, these lists might look like Matlab matrices, but they aren't. These aren't designed for mathematical operations (this is where we use numpy arrays). 
 
 .. nextslide::
 
@@ -454,10 +454,10 @@ A general strategy for approaching errors is:
 		- Do all your parenthesis, brackets, and quotes *match*?
 
 	- Did you do something you shouldn't have?
-		- Did you call for a class that doesn't exist, wasn't imported, or hasn't been set yet?
+		- e.g. call for a class that doesn't exist, wasn't imported, or hasn't been set?
 
 	- Is something not what you thought it was?
-		- Was a value possibly redefined when you "weren't looking" or did a variable have a misleading name, like a number called "subject_name"?
+		- e.g. was a value redefined when you "weren't looking"?
 
 .. nextslide::
 

@@ -256,7 +256,7 @@ Short example
 ::
 
     import scipy.fftpack as fft
-    my_ft = fft.fft(np.random.randn((2,100)))
+    my_ft = fft.fft(np.random.randn(2,100))
     print(my_ft)
 
 Lot's of useful examples and study materials to be found `here <http://scipy-lectures.github.io/>`_
@@ -297,6 +297,7 @@ For example::
 
     t = np.linspace(-6*np.pi, 6*np.pi, 100)
     ax.plot(t, np.sin(t)/t)
+    plt.show()
 
 .. nextslide::
 
@@ -435,7 +436,7 @@ It's also useful to have something to manipulate filenames. We'll use :mod:`os.p
     for thisFilename in filenames:
         thisPath, thisFullName = path.split(thisFilename)
         fileNoExt, fileExt = path.splitext(thisFilename)
-        print(thisName, thisPath, thisFullName)
+        print(thisPath, thisFullName)
         print(fileNoExt, fileExt)
 
 
@@ -485,8 +486,8 @@ OK, from our filtered data we need the mean and std.dev. reaction time for each 
     from scipy import stats
     ...
 
-    conflict = filtered[filtered.description == 'conflict']
-    congruent = filtered[filtered.description != 'conflict']
+    conflict = filtered[filtered.descr == 'conflict']
+    congruent = filtered[filtered.descr != 'conflict']
     #get mean/std.dev
     meanConfl = scipy.mean(conflict['rt'])
     sdConfl = scipy.std(conflict['rt'], ddof=1) # ddof=1 means /sqrt(N-1)
@@ -541,7 +542,7 @@ Plotting the Posner experiment data
 Let's apply our knowledge to the data from the posner experiment::
 
     fig, ax = plt.subplots(1)
-    ax.bar([1,2], [meanConfl, meanCongr], yerr=[semConfl, semCongr])
+    ax.bar([1,2], [meanConfl, meanCongr], yerr=[sdConfl, sdCongr])
     plt.show()
 
 .. nextslide::

@@ -3,7 +3,7 @@
 Conditionals
 ---------------
 
-We need to be able to control what parts of a script get run based on *conditions*. For example, if this trial requires a probe to be presented then run *this code* but if not run *that code*.
+We need to be able to control what parts of a script run based on *conditions*. For example, if this trial requires a probe to be presented then run *this code* but if not run *that code*.
 
 Boolean logic
 ~~~~~~~~~~~~~~~~~
