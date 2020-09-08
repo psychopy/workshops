@@ -174,16 +174,16 @@ Save it straight away in the folder you created. (This creates a *.psyexp* file)
 
 We want about 0.5s inter-trial-intervals (ITI) so that participants don't feel too rushed. To achieve that all we need to do is start the stimulus/response Components after a period at the beginning of the Routine.
 
-.. image:: /_images/textAdd.png
+.. image:: /_images/textAdd2020.png
     :align: right
 
 Create a new Text Component by clicking the button on the right.
 
-NB: The buttons on the right create new objects, but you can edit an object by clicking on its icon in the Routine. You can remove an object by *right* clicking its icon in the Routine.
+NB: The buttons on the right create new objects, but you can edit an object by clicking on its icon in the Routine. You can remove an object by *right* clicking its icon in the Routine. You can also copy and past a component to a new routine. 
 
 .. nextSlide::
 
-.. figure:: /_images/textDlg1st.png
+.. figure:: /_images/textDlg1st2020.png
 
     Text dialog with contents for our stimulus
 
@@ -198,6 +198,8 @@ Note, we changed:
 
 NB: Start and stop can be defined in different ways (times, frames, conditions) and a duration/stop that is left blank will last forever.
 
+.. nextSlide::
+
 *If you get an error message from your experiment that "stim is not defined" it means one of these things:*
 
     - you didn't tell PsychoPy to "set every repeat"
@@ -208,22 +210,22 @@ NB: Start and stop can be defined in different ways (times, frames, conditions) 
 
 To repeat trials (with variations as needed) we need to add a loop to your Flow.
 
-Click ONCE on *Add Loop* in the FLow panel:
+Click ONCE on *Insert Loop* in the Flow panel:
 
-.. image:: /_images/flowClickInsertLoop.png
+.. image:: /_images/flowClickInsertLoop2020.png
     :align: center
 
 Then click the start and the end points for your loop (it doesn't matter which you do first). If the is only one remaining valid place for your loop to go the other point will be added automatically.
 
 
-.. image:: /_images/flowInsertLoopStart.png
+.. image:: /_images/flowInsertLoopStart2020.png
     :align: center
 
 .. nextslide::
 
 When the start/end points are added a dialog will appear to allow you to control the settings.
 
-.. image:: /_images/loopDlg.png
+.. image:: /_images/loopDlg2020.png
     :align: center
 
 NB: Later, you can click on the loop name to get this dialog back.
@@ -232,7 +234,7 @@ NB: Later, you can click on the loop name to get this dialog back.
 
 Press `Browse...` to find your conditions file, telling PsychoPy about each of your trials.
 
-.. image:: /_images/loopDlgComplete.png
+.. image:: /_images/loopDlgComplete2020.png
     :align: left
 
 If you got your excel file right then you'll see a message telling you how many trial types and variables you created.
@@ -243,10 +245,10 @@ Press `OK`
 
 Your Flow should now look something like this:
 
-.. image:: /_images/flowWithLoop.png
+.. image:: /_images/flowWithLoop2020.png
     :align: center
 
-At this point you should be able to save your experiment and launch the "study".
+At this point you should be able to save your experiment and run the "study".
 
 You'll see a dialog appear asking for the name of the participant and the "session".
 
@@ -271,7 +273,7 @@ Add a Keyboard Component to your study with:
 
 .. nextSlide::
 
-.. image:: /_images/keyboardDlg.png
+.. image:: /_images/keyboardDlg2020.png
     :align: left
 
 For more information about the options you could press the help button.
@@ -280,7 +282,7 @@ For more information about the options you could press the help button.
 
 Your `trial` Routine should now look like this. Note the start times align at 0.5 but the keyboard option goes on forever. The trial only ends when a response is made in this study.
 
-.. image:: /_images/routineFlankerText.png
+.. image:: /_images/routineFlankerText2020.png
     :align: center
 
 Add some instructions
