@@ -31,11 +31,11 @@ The Flow
 
 This is really simply a flow diagram. It only specifies the order in which things occur and whether or not they repeat in a "Loop".
 
-.. figure:: /_images/flowStroop.png
+.. figure:: /_images/flowStroop2020.png
 
 The Flow (usually) doesn't know how long things will last or what happens within them. It simply runs a *Routine* until that *Routine* has finished and then moves onto the next until the experiment finishes.
 
-In the case of the Stroop task we have 3 Routines that run in turn and the 'trial' Routine is repeated an number of times in a loop.
+In the case of the Stroop task we have 3 Routines that run in turn and the 'trial' Routine is repeated a number of times in a loop.
 
 Routines
 ~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ Also, a trial could be comprised of multiple Routines.
 
 Let's take a look at the `trial` Routine for the Stroop task.
 
-.. image:: /_images/routineStroop.png
+.. image:: /_images/routineStroop2020.png
 
 The 'trial' Routine in the basic Stroop task. You can see there are just two thing comprising the trial, a `Text Component` and a `Keyboard Component`
 
@@ -63,7 +63,7 @@ In the stroop demo the stimulus and keyboard both start at 0.5s after the beginn
 Components
 ~~~~~~~~~~~~~~~~~~
 
-.. image:: /_images/componentsView.png
+.. image:: /_images/componentsView2020.png
     :align: right
 
 There are many Components that could be added to a Routine. These are shown in the right-hand panel with different categories.
@@ -75,41 +75,33 @@ The first few icons are probably obvious (New experiment, Open, Save, Undo, Redo
 
 With the others, if you hover you'll get a tooltip telling you what they do.
 
-The first two concern the overall application settings.
+The first two concern the Monitor centre (which controls screen parameters and callibration) and Experiment settings.
 
-.. image:: /_images/preferences128.png
+.. image:: /_images/monitorExpSettings.png
     :align: right
-
-Alters the preferences for the application.
-
-.. image:: /_images/monitors128.png
-    :align: right
-
-Control monitor calibrations and tell PsychoPy about sizes.
 
 .. nextSlide::
 
-The remaining 4 icons control the current experiment:
+The next set of icons allow you to compile your programme to a (slightly complicated) python .py file and run your programme (optionally through "Runner view").
 
-.. image:: /_images/settingsExp128.png
+.. image:: /_images/compileRunnerRun.png
     :align: right
 
-Changes settings about this experiment, such as whether it should run full-screen and what the opening dialog should contain.
+Runner view
+~~~~~~~~~~~~~~~~~~
 
-.. image:: /_images/compile128.png
+.. image:: /_images/runnerView.png
     :align: right
 
-The Builder is actually going to create a (slightly complicated) Python script. This button allows you to view the Python code that it will run.
+Shows which file you are running, gives helpful alerts (to save time "fixing" things!) and gives a print out (stdout) of info as your task runs. The red cross force quits experiments (without saving any data!)
 
-.. image:: /_images/run128.png
+On the toolbar
+~~~~~~~~~~~~~~~~~~
+
+The final set of icons cover the run online options (we will cover these later!).
+
+.. image:: /_images/onlineIcons.png
     :align: right
-
-Launch your current experiment.
-
-.. image:: /_images/stop128.png
-    :align: right
-
-Force-quit the running current experiment (without saving any data!)
 
 Your first study
 ---------------------
