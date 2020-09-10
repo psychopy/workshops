@@ -215,7 +215,7 @@ Click ONCE on *Insert Loop* in the Flow panel:
 .. image:: /_images/flowClickInsertLoop2020.png
     :align: center
 
-Then click the start and the end points for your loop (it doesn't matter which you do first). If the is only one remaining valid place for your loop to go the other point will be added automatically.
+Then click the start and the end points for your loop (it doesn't matter which you do first). If only one valid place for your loop to end is remaining the other point is added automatically.
 
 
 .. image:: /_images/flowInsertLoopStart2020.png
@@ -276,6 +276,7 @@ Add a Keyboard Component to your study with:
 .. image:: /_images/keyboardDlg2020.png
     :align: left
 
+
 For more information about the options you could press the help button.
 
 .. nextSlide::
@@ -292,7 +293,7 @@ For instructions:
     - create a new Routine called `instructions`
     - insert that Routine into your Flow before the `trials` loop starts
 
-.. image:: /_images/addRoutine.png
+.. image:: /_images/addRoutine2020.png
 
 Click on that Routine (either in the Flow or in the Routine tabs at the top) to edit that.
 
@@ -329,7 +330,7 @@ There isn't much to read so you could just put the text up for 1 or 2 seconds an
 Changing your info dialog
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /_images/settingsExp128.png
+.. image:: /_images/settingsExp1282020.png
     :align: left
 
 In the Experiment Settings dialog you can alter the information you collect at the beginning, as well as a variety of other options.
@@ -344,9 +345,10 @@ NB: The order of the entries doesn't matter (will be alphabetical anyway)
 
 .. nextSlide::
 
-.. image:: /_images/expSettingsFlanker.png
+.. image:: /_images/expSettingsFlanker2020.png
     :align: center
 
+[We will come to the Online tab later!]
 
 .. _data:
 
@@ -355,11 +357,9 @@ Data options
 
 The main file output is the trial-by-trial csv file (which opens in Excel).
 
-**Don't** bother about `summarised` formats and Excel (native) files. They don't add information and can slow things down.
-
 **Do** keep the `log` file and the `psydat` file. You might not need those but they're a safety net in case things go wrong.
 
-The format of the filename can be changed but that's a little easy to break if you don't know what you're doing.
+The format of the filename can be changed but might be easier with some knowledge of python (so leave as default if unsure!).
 
 Analyse your data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -371,7 +371,6 @@ When we run the experiment PsychoPy will create a folder called data next to the
 
 The csv file is a simple comma-separated text file. It can be opened in anything (R, SPSS, Excel...)
 
-My computer is set to open this in Excel if I double-click
 
 .. nextSlide::
 
@@ -432,7 +431,7 @@ Most dialog entries have the option to take raw Python code if you start your en
 
 You can use this as more than a variable from your conditions file e.g.:
 
-    - set stimulus position to travel in a circle with :code:`$[ sin(t*2*pi), cos(t*2*pi) ]` and set this to `update every frame`
+    - set stimulus position to travel in a circle with :code:`$( sin(t*2*pi), cos(t*2*pi) )` and set this to `update every frame`
 
 NB. If you actually need a dollar symbol to be in your text, do one of:
     - `$"You won $5"`  [include quotes]
@@ -440,12 +439,19 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
 
 .. nextSlide::
 
+:code:`$( sin(t*2*pi), cos(t*2*pi) )`
+
+If you want to find out what "t" is you can look "under the hood" by compiling a python script
+
+.. image:: /_images/compile322020.png
+
+.. nextSlide::
 
 Let's create a task where text is gradually revealed.
 
 Think of a Routine like this:
 
-.. image:: /_images/routineTextReveal.png
+.. image:: /_images/routineTextReveal2020.png
 
 The text object could be any long piece of text. You might need to make sure the wrap length is set to be the full width of the screen to fit on one line.
 
@@ -454,18 +460,8 @@ The text object could be any long piece of text. You might need to make sure the
 .. image:: /_images/revealMaskProperties.png
     :align: right
 
-Your mask is a square that moves (note the size and the pos settings).
+Your mask is a square that moves (note the size and the pos settings). 
 
-..  _quizShowFaces:
-
-Quiz show faces
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Let's take some faces and make them shrink and rotate while participants try to detect the face.
-
-- The psychological point of this isn't clear(!), but it used to be popular in quiz shows.
-
-- "Have I got News For You" still does it.
 
 ..  _heartThrob:
 
@@ -525,7 +521,7 @@ The natural error
 
 The biggest error that people make with this is to create a Routine (and a loop) for each block of trials:
 
-.. image:: /_images/flowBlocksWrong.png
+.. image:: /_images/flowBlocksWrong2020.png
 
 Then they ask on the forum, "How do I shuffle the blocks on my Flow?"
 
@@ -537,7 +533,7 @@ The right way
 
 Instead of a Routine for each block, create a Routine for all your trials and make it behave differently across the blocks:
 
-.. image:: /_images/flowBlocksRight.png
+.. image:: /_images/flowBlocksRight2020.png
 
 Then you can set the conditions files in your blocks loop to control the block-level changes.
 
@@ -566,7 +562,7 @@ red     green           0           down
 green   green           1           down
 green   blue            0           right
 blue    blue            1           right
-blue    red             1           left
+blue    red             0           left
 ======  =============   =========== ===========
 
 .. nextslide::
@@ -606,7 +602,7 @@ Now we need to set up the variables inside our experiment:
 
 .. nextslide::
 
-.. image:: /_images/blocksMethodB_blockLoop.png
+.. image:: /_images/blocksMethodB_blockLoop2020.png
 
 .. nextslide::
 
@@ -614,11 +610,11 @@ We could also add a Routine called `blockReady` like an instructions Routine wit
 
   - a text object that says::
 
-    $"Ready to start a block of %s words?\\n\\n Press a key when ready" %(label)
+    $"Ready to start a block of %s words? \n \n Press a key when ready" %(label)
 
   - a keyboard object to advance to the next trial
 
-.. image:: /_images/blocksMethodBFullFlow.png
+.. image:: /_images/blocksMethodBFullFlow2020.png
 
 .. nextslide:: Randomised block design complete!
 
