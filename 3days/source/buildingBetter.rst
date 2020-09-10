@@ -577,7 +577,7 @@ rouge   green           0           down
 vert    green           1           down
 vert    blue            0           right
 bleu    blue            1           right
-bleu    red             1           left
+bleu    red             0          left
 ======  =============   =========== ===========
 
 .. nextslide::
