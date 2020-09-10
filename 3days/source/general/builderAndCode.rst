@@ -19,9 +19,7 @@ Go to the Builder view and open the Stroop demo. Take a look around.
 Viewing the Builder script
 -----------------------------
 
-As a first step to combining your code with a Builder
-
-.. image:: /_images/compileScriptButton.png
+As a first step to combining your code with a Builder is to compile a builder script to coder.
 
 Compare this with scripts you've written:
 
@@ -80,7 +78,9 @@ Code Components
 
 This goes to the next step in integrating code with your experiment
 
-A Code Component allows you to add multi-line arbitrary Python code at 5 different points in the script:
+A Code Component allows you to add multi-line arbitrary Python code at 6 different points in the script:
+
+    - before the experiment
     - start of the experiment
     - start of the current Routine
     - every frame
@@ -89,16 +89,21 @@ A Code Component allows you to add multi-line arbitrary Python code at 5 differe
 
 .. nextslide::
 
-Let's try and create a 'Feedback' Routine for the basic stroop task (requires a Code Component to decide whether the last response was correct or not).
-    - open the Stroop demo from Builder >demos
-    - create a new Routine that goes immediately after `trial` on the flow
+.. image:: /_images/codeComponent2020.png
 
-**More advanced:** go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
+.. nextslide::
 
-    - what is the current size of the balloon?
-    - did the subject press the 'pump' key?
-    - did we exceed our maxPumps for this balloon?
-    - ...
+Let's try and create a 'Feedback' Routine for the flanker task we made yesterday (requires a Code Component to decide whether the last response was correct or not).
+    - rerun the task you created to create a data file
+    - open the data file and look at the headers that are created
+    - you can access these data to feedback to participants.
+
+.. nextslide::
+Create a new Routine that goes immediately after `trial` on the flow and add a code component.
+
+.. image:: /_images/flankerFeedback.png
+
+After that try adding response time feedback....
 
 Understanding the order of execution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,6 +111,18 @@ Understanding the order of execution
 Each entry of your Routine has multiple Components and their code /for each part of the experiment/  is run in the order of the components.
 
 Do you want you custom code executed before or after your stimulus?
+
+Code Components - Advanced
+---------------------
+
+Go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
+
+    - what is the current size of the balloon?
+    - did the subject press the 'pump' key?
+    - did we exceed our maxPumps for this balloon?
+    - ...
+
+Let's talk through what is in this demo
 
 Custom Components
 ---------------------

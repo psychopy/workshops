@@ -33,11 +33,12 @@ Building better experiments with
   - :ref:`session1`
   - :ref:`blockDesigns`
   - :ref:`dynamic`
-  - :ref:`onlineStudies`
+  - :ref:`builderAndCode`
 
 .. slide:: Day 2: morning
   :level: 2
 
+  - :ref:`onlineStudies`
   - :ref:`firstExperiment`
 
     - Getting started
@@ -68,6 +69,7 @@ Building better experiments with
 
     10introductions
     buildingBetter
+    builderAndCode
     32online
     
     coding/index

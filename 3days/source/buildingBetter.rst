@@ -658,5 +658,5 @@ You can now create trials and blocks in any order, fixed or random.
 
 You're in complete control (but you need to understand what orders you want!)
 
-Next... :ref:`codeComponents`
+Next... :ref:`builderAndCode`
 
