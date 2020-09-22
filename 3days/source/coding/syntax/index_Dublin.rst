@@ -1,4 +1,4 @@
-.. _syntax:
+.. _syntax_dublin:
 
 Python syntax and objects
 =========================================================

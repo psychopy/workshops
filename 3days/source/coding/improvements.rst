@@ -1,7 +1,7 @@
 .. P4N 2014 slides file, created by
    hieroglyph-quickstart on Tue Mar  4 20:42:06 2014.
 
-.. _Improve:
+.. _Improvements:
 
 Improvements
 ============================================
@@ -29,90 +29,24 @@ This is fine, but as soon as you flip the window again, the stimulus will disapp
 
 .. nextslide::
 
-Replacing .draw() should present something pretty similar, but we still miss quick responses::
+We could draw something on a set number of frames using a 'for' loop::
 
-    probe.setAutoDraw(True)
-    win.flip()
-    core.wait(info['probeTime'])
-    kb.clearEvents ()
-    kb.clock.reset()
-    got_keypress = False
-    while not got_keypress:
-        keys =  kb.getKeys(keyList = ['left','right','escape'], clear=True)
-        if 'escape' in keys:
-            core.quit()
-        if len(keys)>0:
-            print(keys[0].name, keys[0].rt, keys[0].duration)
-            rt = keys[0].rt
-            resp = keys[0].name
-            got_keypress = True
-    print('RT (seconds):', rt)
+    for Nframes in range(5):
+        probe.setAutoDraw(True)
+        win.flip()
+    probe.setAutoDraw(False)
+
+This should look pretty similar when we run it.
+Exercise: Reset our stimulus timings by adapting our 'info' dictionary.
 
 .. nextslide::
 
-We can stop drawing the probe when the probe time is up::
+We could use several for loops OR we could use one large for loop with 'if' statements::
 
-    while not got_keypress:
-        if kb.clock.getTime()>info['probeTime']:
-            probe.setAutoDraw(False)
-            win.flip()
-
-Timing stimuli using frames
-------------------------
-
-Currently ::
-
-	info['probeTime']=0.2
-
-On a 60Hz Monitor this is 12 frames.
-
-Remember the duration of stimuli are limited to integers of the monitors frame rate.
-
-.. nextslide::
-
-To present something for 12 frames we would say::
-
-	probe.setAutoDraw(True)
-	for frameN in range(12):
-		win.flip()
-	probe.setAutoDraw(False)
-	win.flip()
-
-.. nextslide::
-
-To ease the transition from time to frames we can set up a function to 
-figure out how many frames are needed for our desired timing (sec) through measuring the
-monitors frame rate::
-
-
-	def sec_to_frame(sec, tol=0.1):
-		frame_time = (sec)/(1/win.getActualFrameRate())
-		frame_time_int= int(round(frame_time))
-		if abs(frame_time - frame_time_int) < tol:
-			return frame_time_int
-		else:
-			raise Exception('Desired timing not divisible by frame rate. Please reset')
-
-*Note:* It is still better to plan your stimuli to be an integer of your frame rate. Here 
-you might want to warn the user of timing discrepancies. 
-
-.. nextslide::
-
-Then we would use this function to convert our stimulus timings to frames::
-
-	fixTime=sec_to_frame(info['fixTime'])
-	cueTime=sec_to_frame(info['cueTime'])
-	probeTime=sec_to_frame(info['probeTime'])
-	trial_frames = fixTime+cueTime+probeTime
-
-.. nextslide::
-
-In our trial loop we then present stimuli like this::
-
-    for frameN in range(trial_frames):
-        if frameN<=fixTime:
+    for frameN in range(totalFrames):
+        if frameN<info['fixTime']:
             fixation.setAutoDraw(True)
-        elif fixTime<frameN<=fixTime+cueTime:
+        elif info['fixTime']<=frameN<info['fixTime']+info['cueTime']:
             fixation.setAutoDraw(False)
             cue.setAutoDraw(True)
         else:
@@ -122,42 +56,95 @@ In our trial loop we then present stimuli like this::
     probe.setAutoDraw(False)
     win.flip()
 
-.. nextslide::
+Getting an early keypress
+------------------------
 
-Reset the response key clock when the probe is drawn and fetch the keys at the end of 
-the trial::
-
-    for frameN in range(trial_frames):
-        if frameN<=fixTime:
-            fixation.setAutoDraw(True)
-        elif fixTime<frameN<fixTime+cueTime:
-            fixation.setAutoDraw(False)
-            cue.setAutoDraw(True)
-        elif fixTime+cueTime==frameN:
-            cue.setAutoDraw(False)
-            probe.setAutoDraw(True)
-            win.callOnFlip(kb.clearEvents)
-            win.callOnFlip(kb.clock.reset) # sets t=0 to stim pres time
-        win.flip()
-    probe.setAutoDraw(False)
-    win.flip()
+For more precise keypress measurements, we can use the Keyboard class rather than the event module.
 
 .. nextslide::
+
+**hardware.keyboard.Keyboard.getKeys()**
+
+Uses python-psychtoolbox lib and has some advantages:
+
+    * polling is performed and timestamped asynchronously with the main thread (times relate to when the key was pressed, not when the call was made)
+    * it's faster
+    * can detect the KeyUp events (enabling) keypress duration
+    * on Linux and Mac you can distinguish between different keyboard devices (see getKeyboards())
+
+.. note:: On 32 bit installations and Python2 older psychopy.event.getKeys() is used.
+
+.. nextslide::
+
+**hardware.keyboard.Keyboard.getKeys()**::
+
+    #at the start of your script
+    from psychopy.hardware import keyboard
+    kb = keyboard.Keyboard()
+
+.. nextslide::
+
+We can reset this clock and get keypresses using::
+
+    kb.clock.reset()
+    keys = kb.getKeys(keyList = ['left','right','escape'])
+
 
 If a response has not been made by the end of the trial time wait for a key press::
 
     while not keys:
         keys =  kb.getKeys(keyList = ['left','right','escape'], 
         		clear=True)
-    if 'escape' in keys:
-        core.quit()
-    if len(keys)>0:
-        print(keys[0].name, keys[0].rt, keys[0].duration)
-        rt = keys[0].rt
-        resp = keys[0].name
-        got_keypress = True
-    print('RT (seconds):', rt)
+    resp = keys[0].name
+    rt = keys[0].rt
 
+This will function much like our old code... we need to position the first call to getKeys to make a response earlier.
+
+.. nextslide::
+
+Exercise: Where do we reposition the call to getKeys in order to measure response time from the time the probe is first drawn?
+
+To check your solution, try changing the duration of the fixation, cue and probe to check you can respond before or when the probe appears
+
+Try printing the response time ...
+
+.. nextslide::
+
+You may notice that we are getting some negative rts... this is because a response is logged before the clock is reset... why? We might need to clear the event buffer::
+
+            elif frameN==info['fixTime']+info['cueTime']:
+                #reset clock and listen for keypress
+                kb.clearEvents()
+                kb.clock.reset()
+                keys = kb.getKeys(keyList = ['left', 'right', 'escape'])
+
+.. nextslide::
+
+Final solution::
+        for frameN in range(totalFrames):
+            if frameN<info['fixTime']:
+                fixation.setAutoDraw(True)
+            elif info['fixTime']<=frameN<info['fixTime']+info['cueTime']:
+                fixation.setAutoDraw(False)
+                cue.setAutoDraw(True)
+            elif frameN==info['fixTime']+info['cueTime']:
+                #reset clock and listen for keypress
+                kb.clearEvents()
+                kb.clock.reset()
+                keys = kb.getKeys(keyList = ['left', 'right', 'escape'])
+            else:
+                cue.setAutoDraw(False)
+                probe.setAutoDraw(True)
+            win.flip()
+        probe.setAutoDraw(False)
+        win.flip()
+        #if a key hasn't been pressed already wait untill one is
+        while not keys:
+            keys =  kb.getKeys(keyList = ['left','right','escape'])
+        resp = keys[0].name
+        rt = keys[0].rt
+
+.. nextslide::
 
 Practice trials
 ------------------------

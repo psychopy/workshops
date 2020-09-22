@@ -421,8 +421,7 @@ You could use this, for instance, to:
   - make an object move to make the task harder
   - make an object more interesting for participants (e.g. developmental)
 
-    - rainbow text
-    - throbbing heart
+
 
 Code as arguments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -496,9 +495,14 @@ raise the value to a power before scaling it up:
 More ideas and working code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Inside the examples zip file, look under::
+Have a play with dynamically changing the various properties of a text stimulus:
 
-  builder/dynamic
+    1. Colour
+    2. Orientation
+    3. Size
+
+For more inspiration look in the folder::
+    builder/dynamic
 
 You'll find working examples of a range of these stimulus setups
 

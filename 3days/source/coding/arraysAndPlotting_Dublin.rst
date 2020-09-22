@@ -99,8 +99,7 @@ Plotting in matplotlib
 Matplotlib is very general and customizable. There are several different
 interfaces to the objects and functions implemented in MPL:
 
-    - matplotlib - raw access to the plotting library. useful for extending
-        matplotlib or doing very custom things
+    - matplotlib - raw access to the plotting library. useful for extending matplotlib or doing very custom things
     -   pylab - Matlab-like interface to matplotlib
     -   pyplot - Object-oriented interface to matplotlib => use this one!
 
@@ -303,8 +302,10 @@ Solution::
 	ax[1].bar(['conflict', 'congruent'], [AccConfl, AccCongr])
 	ax[1].set_ylabel('Accuracy (proportion)')
 
-	ax[2].scatter(conflict['MainBlock.thisN'], conflict['rt'], c = 'r', label = 'conflict')
-	ax[2].scatter(congruent['MainBlock.thisN'], congruent['rt'], c = 'b', label = 'congruent')
+	ax[2].scatter(conflict['MainBlock.thisN'], conflict['rt'], 
+        c = 'r', label = 'conflict')
+	ax[2].scatter(congruent['MainBlock.thisN'], congruent['rt'], 
+        c = 'b', label = 'congruent')
 	ax[2].set_ylabel('RT (mean)')
 	ax[2].set_xlabel('trial N')
 	ax[2].legend(loc = 'upper right')
@@ -385,17 +386,11 @@ Hopefully today you have learnt how to:
 	- Optimise the experiment
 	- Visualise the results (and move forward with analysing them)
 
-.. nextslide::
-
-Further help: 
-
-	- For more specific on python syntax :ref:`syntax`
-	- For general questions about PsychoPy and creating experiments visit the `discourse page <https://discourse.psychopy.org/>`_
-	- For further questions about what we learnt today HirstR@tcd.ie
+What else? :ref:`syntax`
 
 .. toctree::
     :hidden:
     :maxdepth: 1
 
     general/arraysAndPlotting
-    syntax/index_Dublin
+    syntax/index

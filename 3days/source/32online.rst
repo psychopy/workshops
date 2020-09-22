@@ -4,7 +4,7 @@
 Running online studies
 =================================
 
-Let's just take our Posner task from earlier and try to run it online.
+Let's just take one of our tasks from earlier and try to run it online.
 
 We'll have to see what goes wrong!
 

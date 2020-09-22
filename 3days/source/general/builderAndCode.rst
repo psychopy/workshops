@@ -93,7 +93,7 @@ A Code Component allows you to add multi-line arbitrary Python code at 6 differe
 
 .. nextslide::
 
-Let's try and create a 'Feedback' Routine for the flanker task we made yesterday (requires a Code Component to decide whether the last response was correct or not).
+Let's try and create a 'Feedback' Routine for the flanker task we made (requires a Code Component to decide whether the last response was correct or not).
     - rerun the task you created to create a data file
     - open the data file and look at the headers that are created
     - you can access these data to feedback to participants.
@@ -103,7 +103,14 @@ Create a new Routine that goes immediately after `trial` on the flow and add a c
 
 .. image:: /_images/flankerFeedback.png
 
-After that try adding response time feedback....
+Exercises
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Try: 
+
+    1. Changing the colour of the text based on feedback (green correct, red incorrect)
+    2. Adding a feedback 'tone' that varies depending on if correct or incorrect
+    3. Adding response time feedback. 
 
 Understanding the order of execution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,13 +125,23 @@ Code Components - Advanced
 Go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
 
     - what is the current size of the balloon?
-    - did the subject press the 'pump' key?
+    - did the participant press the 'pump' key?
     - did we exceed our maxPumps for this balloon?
     - ...
 
-Let's talk through what is in this demo
+First, everyone have a run through of this demo to familiarize yourself with the task. 
 
-Custom Components
+.. nextslide::
+
+OK let's talk through the existing code components and the files in this demo.
+
+Exercises: 
+
+    1. Change the balloon to be the blue baloon. 
+    2. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
+    3. Add a penalty - you loose earnings if the baloon pops..
+
+What next?
 ---------------------
 
-If you know how to write :ref:`codeComponents` then you're also most of the way to writing your own, reusable, *custom component* which will appear in the Components Panel of the Builder interface.
+Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore the pavlovia environment!
