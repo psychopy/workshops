@@ -15,7 +15,7 @@ The Posner Cuing task
 Synopsis of the study:
 
     - Present a probe to the left or right of fixation
-    - Subjects have to respond to the presence of the probe as quickly as possible
+    - Participants have to respond to the presence of the probe as quickly as possible
     - Precede the probe with a cue
     - Usually the cue predicts the probe location
     - We can measure the effect of attention by the difference in reaction times between correct and incorrect cues
@@ -173,6 +173,23 @@ Try doing that so that you get two repeats of the trial.
 That's very inefficient though, so undo it.
 
 Exercise: Why not create a loop to run as many trials as you like? That would be more efficient. Add a for... loop and indent your trial code so that it is 'contained' in the loop. Set the loop to run for 5 'repeats'.
+
+.. nextSlide::
+
+Solution::
+
+    for trial in range(5):
+        fixation.draw()
+        win.flip()
+        core.wait(info['fixTime'])
+    
+        cue.draw()
+        win.flip()
+        core.wait(info['cueTime'])
+    
+        probe.draw()
+        win.flip()
+        info['probeTime']
 
 .. _trialHandler:
 
@@ -454,3 +471,9 @@ Hopefully you've learned how to:
     - set timings
     - receive responses from a keyboard
     - save data in various formats
+
+
+.. nextslide::
+
+What next? 
+:ref:`Improvements`

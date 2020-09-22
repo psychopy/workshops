@@ -33,9 +33,16 @@ Building better experiments with
   - :ref:`session1`
   - :ref:`blockDesigns`
   - :ref:`dynamic`
-  - :ref:`onlineStudies`
+  - :ref:`builderAndCode`
 
 .. slide:: Day 2: morning
+  :level: 2
+
+  - :ref:`pavloviaEnv`
+  - :ref:`builderToPavlovia`
+  - :ref:`debuggingOnline`
+
+.. slide:: Day 2: afternoon
   :level: 2
 
   - :ref:`firstExperiment`
@@ -47,7 +54,7 @@ Building better experiments with
     - Participant info
     - Saving your data
 
-.. slide:: Day 2: afternoon
+.. slide:: Day 3
   :level: 2
 
   - :ref:`syntax`
@@ -56,10 +63,7 @@ Building better experiments with
     - Variables: numbers, strings 
     - Lists and Dicts
     - Loops and conditionals
-
-.. slide:: Day 3
-  :level: 2
-
+    
   - :ref:`generalPurpose`
 
 .. toctree::
@@ -68,7 +72,10 @@ Building better experiments with
 
     10introductions
     buildingBetter
-    32online
+    builderAndCode
+    pavlovia
+    pavloviaLaunch
+    debuggingOnline
     
     coding/index
     coding/syntax/index

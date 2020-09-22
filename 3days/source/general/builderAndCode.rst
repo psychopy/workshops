@@ -19,9 +19,7 @@ Go to the Builder view and open the Stroop demo. Take a look around.
 Viewing the Builder script
 -----------------------------
 
-As a first step to combining your code with a Builder
-
-.. image:: /_images/compileScriptButton.png
+As a first step to combining your code with a Builder is to compile a builder script to coder.
 
 Compare this with scripts you've written:
 
@@ -80,7 +78,9 @@ Code Components
 
 This goes to the next step in integrating code with your experiment
 
-A Code Component allows you to add multi-line arbitrary Python code at 5 different points in the script:
+A Code Component allows you to add multi-line arbitrary Python code at 6 different points in the script:
+
+    - before the experiment
     - start of the experiment
     - start of the current Routine
     - every frame
@@ -89,16 +89,28 @@ A Code Component allows you to add multi-line arbitrary Python code at 5 differe
 
 .. nextslide::
 
-Let's try and create a 'Feedback' Routine for the basic stroop task (requires a Code Component to decide whether the last response was correct or not).
-    - open the Stroop demo from Builder >demos
-    - create a new Routine that goes immediately after `trial` on the flow
+.. image:: /_images/codeComponent2020.png
 
-**More advanced:** go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
+.. nextslide::
 
-    - what is the current size of the balloon?
-    - did the subject press the 'pump' key?
-    - did we exceed our maxPumps for this balloon?
-    - ...
+Let's try and create a 'Feedback' Routine for the flanker task we made (requires a Code Component to decide whether the last response was correct or not).
+    - rerun the task you created to create a data file
+    - open the data file and look at the headers that are created
+    - you can access these data to feedback to participants.
+
+.. nextslide::
+Create a new Routine that goes immediately after `trial` on the flow and add a code component.
+
+.. image:: /_images/flankerFeedback.png
+
+Exercises
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Try: 
+
+    1. Changing the colour of the text based on feedback (green correct, red incorrect)
+    2. Adding a feedback 'tone' that varies depending on if correct or incorrect
+    3. Adding response time feedback. 
 
 Understanding the order of execution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,7 +119,29 @@ Each entry of your Routine has multiple Components and their code /for each part
 
 Do you want you custom code executed before or after your stimulus?
 
-Custom Components
+Code Components - Advanced
 ---------------------
 
-If you know how to write :ref:`codeComponents` then you're also most of the way to writing your own, reusable, *custom component* which will appear in the Components Panel of the Builder interface.
+Go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
+
+    - what is the current size of the balloon?
+    - did the participant press the 'pump' key?
+    - did we exceed our maxPumps for this balloon?
+    - ...
+
+First, everyone have a run through of this demo to familiarize yourself with the task. 
+
+.. nextslide::
+
+OK let's talk through the existing code components and the files in this demo.
+
+Exercises: 
+
+    1. Change the balloon to be the blue baloon. 
+    2. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
+    3. Add a penalty - you loose earnings if the baloon pops..
+
+What next?
+---------------------
+
+Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore the pavlovia environment!

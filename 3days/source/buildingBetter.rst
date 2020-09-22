@@ -31,11 +31,11 @@ The Flow
 
 This is really simply a flow diagram. It only specifies the order in which things occur and whether or not they repeat in a "Loop".
 
-.. figure:: /_images/flowStroop.png
+.. figure:: /_images/flowStroop2020.png
 
 The Flow (usually) doesn't know how long things will last or what happens within them. It simply runs a *Routine* until that *Routine* has finished and then moves onto the next until the experiment finishes.
 
-In the case of the Stroop task we have 3 Routines that run in turn and the 'trial' Routine is repeated an number of times in a loop.
+In the case of the Stroop task we have 3 Routines that run in turn and the 'trial' Routine is repeated a number of times in a loop.
 
 Routines
 ~~~~~~~~~~~~~~~~~~
@@ -50,7 +50,7 @@ Also, a trial could be comprised of multiple Routines.
 
 Let's take a look at the `trial` Routine for the Stroop task.
 
-.. image:: /_images/routineStroop.png
+.. image:: /_images/routineStroop2020.png
 
 The 'trial' Routine in the basic Stroop task. You can see there are just two thing comprising the trial, a `Text Component` and a `Keyboard Component`
 
@@ -63,7 +63,7 @@ In the stroop demo the stimulus and keyboard both start at 0.5s after the beginn
 Components
 ~~~~~~~~~~~~~~~~~~
 
-.. image:: /_images/componentsView.png
+.. image:: /_images/componentsView2020.png
     :align: right
 
 There are many Components that could be added to a Routine. These are shown in the right-hand panel with different categories.
@@ -75,41 +75,33 @@ The first few icons are probably obvious (New experiment, Open, Save, Undo, Redo
 
 With the others, if you hover you'll get a tooltip telling you what they do.
 
-The first two concern the overall application settings.
+The first two concern the Monitor centre (which controls screen parameters and callibration) and Experiment settings.
 
-.. image:: /_images/preferences128.png
+.. image:: /_images/monitorExpSettings.png
     :align: right
-
-Alters the preferences for the application.
-
-.. image:: /_images/monitors128.png
-    :align: right
-
-Control monitor calibrations and tell PsychoPy about sizes.
 
 .. nextSlide::
 
-The remaining 4 icons control the current experiment:
+The next set of icons allow you to compile your programme to a (slightly complicated) python .py file and run your programme (optionally through "Runner view").
 
-.. image:: /_images/settingsExp128.png
+.. image:: /_images/compileRunnerRun.png
     :align: right
 
-Changes settings about this experiment, such as whether it should run full-screen and what the opening dialog should contain.
+Runner view
+~~~~~~~~~~~~~~~~~~
 
-.. image:: /_images/compile128.png
+.. image:: /_images/runnerView.png
     :align: right
 
-The Builder is actually going to create a (slightly complicated) Python script. This button allows you to view the Python code that it will run.
+Shows which file you are running, gives helpful alerts (to save time "fixing" things!) and gives a print out (stdout) of info as your task runs. The red cross force quits experiments (without saving any data!)
 
-.. image:: /_images/run128.png
+On the toolbar
+~~~~~~~~~~~~~~~~~~
+
+The final set of icons cover the run online options (we will cover these later!).
+
+.. image:: /_images/onlineIcons.png
     :align: right
-
-Launch your current experiment.
-
-.. image:: /_images/stop128.png
-    :align: right
-
-Force-quit the running current experiment (without saving any data!)
 
 Your first study
 ---------------------
@@ -182,16 +174,16 @@ Save it straight away in the folder you created. (This creates a *.psyexp* file)
 
 We want about 0.5s inter-trial-intervals (ITI) so that participants don't feel too rushed. To achieve that all we need to do is start the stimulus/response Components after a period at the beginning of the Routine.
 
-.. image:: /_images/textAdd.png
+.. image:: /_images/textAdd2020.png
     :align: right
 
 Create a new Text Component by clicking the button on the right.
 
-NB: The buttons on the right create new objects, but you can edit an object by clicking on its icon in the Routine. You can remove an object by *right* clicking its icon in the Routine.
+NB: The buttons on the right create new objects, but you can edit an object by clicking on its icon in the Routine. You can remove an object by *right* clicking its icon in the Routine. You can also copy and past a component to a new routine. 
 
 .. nextSlide::
 
-.. figure:: /_images/textDlg1st.png
+.. figure:: /_images/textDlg1st2020.png
 
     Text dialog with contents for our stimulus
 
@@ -206,6 +198,8 @@ Note, we changed:
 
 NB: Start and stop can be defined in different ways (times, frames, conditions) and a duration/stop that is left blank will last forever.
 
+.. nextSlide::
+
 *If you get an error message from your experiment that "stim is not defined" it means one of these things:*
 
     - you didn't tell PsychoPy to "set every repeat"
@@ -216,22 +210,22 @@ NB: Start and stop can be defined in different ways (times, frames, conditions) 
 
 To repeat trials (with variations as needed) we need to add a loop to your Flow.
 
-Click ONCE on *Add Loop* in the FLow panel:
+Click ONCE on *Insert Loop* in the Flow panel:
 
-.. image:: /_images/flowClickInsertLoop.png
+.. image:: /_images/flowClickInsertLoop2020.png
     :align: center
 
-Then click the start and the end points for your loop (it doesn't matter which you do first). If the is only one remaining valid place for your loop to go the other point will be added automatically.
+Then click the start and the end points for your loop (it doesn't matter which you do first). If only one valid place for your loop to end is remaining the other point is added automatically.
 
 
-.. image:: /_images/flowInsertLoopStart.png
+.. image:: /_images/flowInsertLoopStart2020.png
     :align: center
 
 .. nextslide::
 
 When the start/end points are added a dialog will appear to allow you to control the settings.
 
-.. image:: /_images/loopDlg.png
+.. image:: /_images/loopDlg2020.png
     :align: center
 
 NB: Later, you can click on the loop name to get this dialog back.
@@ -240,7 +234,7 @@ NB: Later, you can click on the loop name to get this dialog back.
 
 Press `Browse...` to find your conditions file, telling PsychoPy about each of your trials.
 
-.. image:: /_images/loopDlgComplete.png
+.. image:: /_images/loopDlgComplete2020.png
     :align: left
 
 If you got your excel file right then you'll see a message telling you how many trial types and variables you created.
@@ -251,10 +245,10 @@ Press `OK`
 
 Your Flow should now look something like this:
 
-.. image:: /_images/flowWithLoop.png
+.. image:: /_images/flowWithLoop2020.png
     :align: center
 
-At this point you should be able to save your experiment and launch the "study".
+At this point you should be able to save your experiment and run the "study".
 
 You'll see a dialog appear asking for the name of the participant and the "session".
 
@@ -279,8 +273,9 @@ Add a Keyboard Component to your study with:
 
 .. nextSlide::
 
-.. image:: /_images/keyboardDlg.png
+.. image:: /_images/keyboardDlg2020.png
     :align: left
+
 
 For more information about the options you could press the help button.
 
@@ -288,7 +283,7 @@ For more information about the options you could press the help button.
 
 Your `trial` Routine should now look like this. Note the start times align at 0.5 but the keyboard option goes on forever. The trial only ends when a response is made in this study.
 
-.. image:: /_images/routineFlankerText.png
+.. image:: /_images/routineFlankerText2020.png
     :align: center
 
 Add some instructions
@@ -298,7 +293,7 @@ For instructions:
     - create a new Routine called `instructions`
     - insert that Routine into your Flow before the `trials` loop starts
 
-.. image:: /_images/addRoutine.png
+.. image:: /_images/addRoutine2020.png
 
 Click on that Routine (either in the Flow or in the Routine tabs at the top) to edit that.
 
@@ -335,7 +330,7 @@ There isn't much to read so you could just put the text up for 1 or 2 seconds an
 Changing your info dialog
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /_images/settingsExp128.png
+.. image:: /_images/settingsExp1282020.png
     :align: left
 
 In the Experiment Settings dialog you can alter the information you collect at the beginning, as well as a variety of other options.
@@ -350,9 +345,10 @@ NB: The order of the entries doesn't matter (will be alphabetical anyway)
 
 .. nextSlide::
 
-.. image:: /_images/expSettingsFlanker.png
+.. image:: /_images/expSettingsFlanker2020.png
     :align: center
 
+[We will come to the Online tab later!]
 
 .. _data:
 
@@ -361,11 +357,9 @@ Data options
 
 The main file output is the trial-by-trial csv file (which opens in Excel).
 
-**Don't** bother about `summarised` formats and Excel (native) files. They don't add information and can slow things down.
-
 **Do** keep the `log` file and the `psydat` file. You might not need those but they're a safety net in case things go wrong.
 
-The format of the filename can be changed but that's a little easy to break if you don't know what you're doing.
+The format of the filename can be changed but might be easier with some knowledge of python (so leave as default if unsure!).
 
 Analyse your data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -377,7 +371,6 @@ When we run the experiment PsychoPy will create a folder called data next to the
 
 The csv file is a simple comma-separated text file. It can be opened in anything (R, SPSS, Excel...)
 
-My computer is set to open this in Excel if I double-click
 
 .. nextSlide::
 
@@ -428,8 +421,7 @@ You could use this, for instance, to:
   - make an object move to make the task harder
   - make an object more interesting for participants (e.g. developmental)
 
-    - rainbow text
-    - throbbing heart
+
 
 Code as arguments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -438,7 +430,7 @@ Most dialog entries have the option to take raw Python code if you start your en
 
 You can use this as more than a variable from your conditions file e.g.:
 
-    - set stimulus position to travel in a circle with :code:`$[ sin(t*2*pi), cos(t*2*pi) ]` and set this to `update every frame`
+    - set stimulus position to travel in a circle with :code:`$( sin(t*2*pi), cos(t*2*pi) )` and set this to `update every frame`
 
 NB. If you actually need a dollar symbol to be in your text, do one of:
     - `$"You won $5"`  [include quotes]
@@ -446,12 +438,19 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
 
 .. nextSlide::
 
+:code:`$( sin(t*2*pi), cos(t*2*pi) )`
+
+If you want to find out what "t" is you can look "under the hood" by compiling a python script
+
+.. image:: /_images/compile322020.png
+
+.. nextSlide::
 
 Let's create a task where text is gradually revealed.
 
 Think of a Routine like this:
 
-.. image:: /_images/routineTextReveal.png
+.. image:: /_images/routineTextReveal2020.png
 
 The text object could be any long piece of text. You might need to make sure the wrap length is set to be the full width of the screen to fit on one line.
 
@@ -460,18 +459,8 @@ The text object could be any long piece of text. You might need to make sure the
 .. image:: /_images/revealMaskProperties.png
     :align: right
 
-Your mask is a square that moves (note the size and the pos settings).
+Your mask is a square that moves (note the size and the pos settings). 
 
-..  _quizShowFaces:
-
-Quiz show faces
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Let's take some faces and make them shrink and rotate while participants try to detect the face.
-
-- The psychological point of this isn't clear(!), but it used to be popular in quiz shows.
-
-- "Have I got News For You" still does it.
 
 ..  _heartThrob:
 
@@ -506,9 +495,14 @@ raise the value to a power before scaling it up:
 More ideas and working code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Inside the examples zip file, look under::
+Have a play with dynamically changing the various properties of a text stimulus:
 
-  builder/dynamic
+    1. Colour
+    2. Orientation
+    3. Size
+
+For more inspiration look in the folder::
+    builder/dynamic
 
 You'll find working examples of a range of these stimulus setups
 
@@ -531,7 +525,7 @@ The natural error
 
 The biggest error that people make with this is to create a Routine (and a loop) for each block of trials:
 
-.. image:: /_images/flowBlocksWrong.png
+.. image:: /_images/flowBlocksWrong2020.png
 
 Then they ask on the forum, "How do I shuffle the blocks on my Flow?"
 
@@ -543,7 +537,7 @@ The right way
 
 Instead of a Routine for each block, create a Routine for all your trials and make it behave differently across the blocks:
 
-.. image:: /_images/flowBlocksRight.png
+.. image:: /_images/flowBlocksRight2020.png
 
 Then you can set the conditions files in your blocks loop to control the block-level changes.
 
@@ -572,7 +566,7 @@ red     green           0           down
 green   green           1           down
 green   blue            0           right
 blue    blue            1           right
-blue    red             1           left
+blue    red             0           left
 ======  =============   =========== ===========
 
 .. nextslide::
@@ -587,7 +581,7 @@ rouge   green           0           down
 vert    green           1           down
 vert    blue            0           right
 bleu    blue            1           right
-bleu    red             1           left
+bleu    red             0          left
 ======  =============   =========== ===========
 
 .. nextslide::
@@ -612,7 +606,7 @@ Now we need to set up the variables inside our experiment:
 
 .. nextslide::
 
-.. image:: /_images/blocksMethodB_blockLoop.png
+.. image:: /_images/blocksMethodB_blockLoop2020.png
 
 .. nextslide::
 
@@ -620,11 +614,11 @@ We could also add a Routine called `blockReady` like an instructions Routine wit
 
   - a text object that says::
 
-    $"Ready to start a block of %s words?\\n\\n Press a key when ready" %(label)
+    $"Ready to start a block of %s words? \n \n Press a key when ready" %(label)
 
   - a keyboard object to advance to the next trial
 
-.. image:: /_images/blocksMethodBFullFlow.png
+.. image:: /_images/blocksMethodBFullFlow2020.png
 
 .. nextslide:: Randomised block design complete!
 
@@ -668,5 +662,5 @@ You can now create trials and blocks in any order, fixed or random.
 
 You're in complete control (but you need to understand what orders you want!)
 
-Next... :ref:`codeComponents`
+Next... :ref:`builderAndCode`
 

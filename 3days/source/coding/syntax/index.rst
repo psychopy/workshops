@@ -1,3 +1,4 @@
+
 .. _syntax:
 
 Python syntax and objects

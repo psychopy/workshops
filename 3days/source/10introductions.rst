@@ -5,7 +5,7 @@
 Introductions
 ----------------
 
-About me
+About us
 ==========
 
 **Jon Peirce:**
@@ -15,13 +15,24 @@ About me
 **Credits:**
     - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
 
-    - Nottingham University have been paying my salary while PsychoPy was written
+    - Nottingham University have been paying my (Jons) salary while PsychoPy was written
 
     - Wellcome Trust recently gave us a grant to improve this a LOT
 
 .. image:: /_static/nott_logo.png
     :align: right
 
+The growing team
+==========
+
+**Alain Pitiot**
+    * All things Pavlovia
+**Todd Parsons**  
+    * Python developer
+**Thomas Pronk and Sotiri Bakagiannis**
+    * JS developers
+**Rebecca Hirst** 
+    * Science officer - education, outreach, dabbles in programming
 
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -71,13 +82,13 @@ PsychoPy is written in the Python programming language
 
 .. nextslide::
 
-.. figure:: /_images/coderView.png
+.. figure:: /_images/coderView2020.png
 
    The Coder view is used to create experiments from Python scripts
 
 .. nextslide::
 
-.. figure:: /_images/builderView.png
+.. figure:: /_images/builderView2020.png
 
    The Builder view is used to create experiments visually
 
