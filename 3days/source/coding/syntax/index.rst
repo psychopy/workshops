@@ -11,8 +11,14 @@ Python syntax and objects
    variables
    loops
    conditions
+
+.. nextslide::
+
+.. toctree::
+   :maxdepth: 1
+
    functions
    classes
    exercises/index
    solutions/index
-   glossary
+   

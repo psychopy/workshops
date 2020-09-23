@@ -144,4 +144,4 @@ Exercises:
 What next?
 ---------------------
 
-Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore the pavlovia environment!
+Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore :ref:`pavloviaEnv`! 

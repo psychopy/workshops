@@ -252,4 +252,4 @@ Take home messages
 	- Use the developer tools 
 	- You can get more help on discourse! 
 
-So we have now already encountered some code, let's learn some more and code a full experiment.
+So we have now already encountered some code, let's learn some more and :ref:`firstExperiment`.

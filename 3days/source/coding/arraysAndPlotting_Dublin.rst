@@ -4,9 +4,9 @@
 
 .. _plottingPosner:
 
-Plotting the results
+Plotting results
 ============================================
-Did our experiment work? lets look at plotting the data from a single participant
+Did our posner experiment work? lets look at plotting the data from a single participant
 
 
 Some handy libraries for handeling data

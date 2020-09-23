@@ -21,7 +21,7 @@ Building better experiments with
       - http://www.psychopy.org/3days (html slides)
       - http://www.psychopy.org/3days/psychopy3days.pdf
 
-  - And could you download and unzip the examples:
+  - You can download and unzip previous examples here:
 
     - http://www.psychopy.org/examples2019.zip
 
@@ -54,6 +54,8 @@ Building better experiments with
     - Participant info
     - Saving your data
 
+  - :ref:`Improvements`
+
 .. slide:: Day 3
   :level: 2
 
@@ -63,7 +65,10 @@ Building better experiments with
     - Variables: numbers, strings 
     - Lists and Dicts
     - Loops and conditionals
-    
+  - :ref:`syntax`
+
+  -:ref:`plottingPosner`
+  
   - :ref:`generalPurpose`
 
 .. toctree::
