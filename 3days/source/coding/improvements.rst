@@ -214,17 +214,15 @@ main trials...
 Further improvements
 ------------------------
 
-There are many further tweaks we may want to make:
+Exercises:
 
-	- Providing feedback
-	- Counterbalancing
+	- Add trial-by-trial feedback on correctness and RT
+	- End the practice trials early if the participant scores 5 correct in a row
 
-And many more specific to your experiment requirements...
 
-Next we will cover :ref:`plottingPosner` 
 
-Time permitting we might cover :ref:`syntax` (but you will have picked a lot of this up 
-already!)
+Let's talk about :ref:`syntax` (but you will have picked a lot of this up 
+already!) and then look at :ref:`plottingPosner` 
 
 .. toctree::
     :hidden:
