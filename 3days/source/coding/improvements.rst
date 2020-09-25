@@ -221,8 +221,10 @@ Exercises:
 
 
 
-Let's talk about :ref:`syntax` (but you will have picked a lot of this up 
-already!) and then look at :ref:`plottingPosner` 
+What else can we talk about...
+ :ref:`syntax` (but you will have picked a lot of this up 
+already!) 
+:ref:`plottingPosner` 
 
 .. toctree::
     :hidden:
