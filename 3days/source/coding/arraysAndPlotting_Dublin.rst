@@ -81,6 +81,14 @@ And you can determine the shape you want it to have::
     ten_by_ten = np.arange(100).reshape((10, 10))
     print(ten_by_ten)
 
+.. nextslide::
+
+Exercise: Using numpy 
+1. make a list ranging 0 to 1 with 90 steps
+2. print the shape of the array
+3. reshape the array to be 3 rows of 30
+4. print only the final row from the matrix
+
 
 .. nextslide::
 

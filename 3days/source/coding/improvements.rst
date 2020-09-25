@@ -31,7 +31,7 @@ This is fine, but as soon as you flip the window again, the stimulus will disapp
 
 We could draw something on a set number of frames using a 'for' loop::
 
-    for Nframes in range(5):
+    for frameN in range(5):
         probe.setAutoDraw(True)
         win.flip()
     probe.setAutoDraw(False)
@@ -121,6 +121,7 @@ You may notice that we are getting some negative rts... this is because a respon
 .. nextslide::
 
 Final solution::
+
         for frameN in range(totalFrames):
             if frameN<info['fixTime']:
                 fixation.setAutoDraw(True)
@@ -152,28 +153,21 @@ Practice trials
 We want a practice block, in which one trial for each condition is presented. For this, 
 we can use our Experiment Handler::
 
-	#Before our trial loop
-	#Create an outerloop that acts as a block (2 blocks; practice and main)
-	outerLoop = data.TrialHandler(trialList=[], nReps=2, name='Block',
-					 method='random')
-	thisExp.addLoop(outerLoop)
+	#Create two sets of trial handlers
+	trials = data.TrialHandler(trialList=conditions, nReps=1, name='mainBlock')
+    pracTrials = data.TrialHandler(trialList=conditions, nReps=1, name='practiceBlock')
+    outerLoop = [pracTrials, trials]
+
 
 .. nextslide::
 
 Then, put our trial loop inside a block loop (indent the whole block), create 
 the trial list at the start of the block and add it to the experiment handler::
 
-	block_count=0
-	for block in outerLoop:  # the outer loop doesn't save any data
-		if block_count==0:
-			trials = data.TrialHandler(trialList=conditions, 
-					nReps=1, name='practiceBlock')
-		else:
-			trials = data.TrialHandler(trialList=conditions, 
-					nReps=2, name='mainBlocks')
-		block_count=block_count+1
-		thisExp.addLoop(trials)
-		for thisTrial in trials:
+    for trials in outerLoop:
+        thisExp.addLoop(trials)
+        for trial in trials:
+            print(trials.name)#check this is the set of trials we were expecting
 
 Now lets run that and look at the output...
 
@@ -210,34 +204,27 @@ main trials...
 	win.flip()
 	event.waitKeys()
 
-	#At the start of your block loop
-	for block in outerLoop:  # the outer loop doesn't save any data
-		if block_count ==0:
-			trials = data.TrialHandler(trialList=conditions,
-						nReps=1, method = 'random', name='PracticeBlock')
-		else:
-			trials = data.TrialHandler(trialList=conditions,
-						nReps=5, method = 'random', name = 'MainBlock')
-		if block_count==1:
-			Continue.draw()
-			win.flip()
-			event.waitKeys()
-		block_count=block_count+1
+	for trials in outerLoop:
+    thisExp.addLoop(trials)
+    if trials.name=='mainTrials'
+		Continue.draw()
+		win.flip()
+		event.waitKeys()
 
 Further improvements
 ------------------------
 
-There are many further tweaks we may want to make:
+Exercises:
 
-	- Providing feedback
-	- Counterbalancing
+	- Add trial-by-trial feedback on correctness and RT
+	- End the practice trials early if the participant scores 5 correct in a row
 
-And many more specific to your experiment requirements...
 
-Next we will cover :ref:`plottingPosner` 
 
-Time permitting we might cover :ref:`syntax` (but you will have picked a lot of this up 
-already!)
+What else can we talk about...
+ :ref:`syntax` (but you will have picked a lot of this up 
+already!) 
+:ref:`plottingPosner` 
 
 .. toctree::
     :hidden:
