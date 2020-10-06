@@ -14,17 +14,12 @@ Building better experiments with
       :align: right
       :scale: 50%
 
-.. slide:: Materials
-  :level: 2
+Materials
+~~~~~~~~~~~~~~~~~~~~~~
 
-  - These materials are available in various forms:
+These materials are available as a `web page <https://workshops.psychopy.org>`_ or as `html slides <https://workshops.psychopy.org/slides/3days>`_
 
-      - http://www.psychopy.org/3days (html slides)
-      - http://www.psychopy.org/psychopy3days.pdf
-
-  - You can download and unzip previous examples here:
-
-    - http://www.psychopy.org/examples.zip
+You can also download and unzip `previous examples <https://workshops.psychopy.org/examples2019.zip>`_
 
 
 .. slide:: Day 1
