@@ -126,7 +126,7 @@ Going further
 
 Builder interface:
 
-    - *Building Experiments in PsychoPy* by Peirce and MacAskill (Sage Publications)
+    - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)
 
 Python programming (for experimental psych):
 
