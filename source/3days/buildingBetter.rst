@@ -169,7 +169,7 @@ Some exercises (10-15 mins)
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
 
 All done
-~~~~~~~~~~~~~~~~~~
+-----------------
 
 You can now create trials and blocks in any order, fixed or random.
 
