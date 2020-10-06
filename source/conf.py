@@ -288,7 +288,7 @@ slide_link_to_html = True
 slide_html_relative_path = '..'
 slide_link_html_to_slides = True
 slide_link_html_sections_to_slides = True
-slide_relative_path = './html/slides'
+slide_relative_path = 'slides'
 
 # ----------------------------------------------
 
