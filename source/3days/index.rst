@@ -13,17 +13,12 @@ Building better experiments with
       :align: right
       :scale: 50 %
 
-.. slide:: Materials
-  :level: 2
+Materials
+~~~~~~~~~~~~~~~~~~~~~~
 
-  - These materials are available in various forms:
+These materials are available as a `web page <https://workshops.psychopy.org>`_ or as `html slides <https://workshops.psychopy.org/slides/3days>`_
 
-      - http://www.psychopy.org/3days (html slides)
-      - http://www.psychopy.org/3days/psychopy3days.pdf
-
-  - You can download and unzip previous examples here:
-
-    - http://www.psychopy.org/examples2019.zip
+You can also download and unzip `previous examples <https://workshops.psychopy.org/examples2019.zip>`_
 
 
 .. slide:: Day 1
@@ -74,14 +69,14 @@ Building better experiments with
 .. toctree::
     :maxdepth: 2
 
-    10introductions
-    buildingBetter
-    builderAndCode
-    pavlovia
-    pavloviaLaunch
-    debuggingOnline
+    3days/10introductions
+    3days/buildingBetter
+    3days/builderAndCode
+    3days/pavlovia
+    3days/pavloviaLaunch
+    3days/debuggingOnline
     
-    coding/index
-    coding/syntax/index
+    3days/coding/index
+    3days/coding/syntax/index
 
-    general/pythonForGeneral
+    3days/general/pythonForGeneral
