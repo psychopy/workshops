@@ -29,7 +29,7 @@ Building better experiments with
 .. slide:: Day 1
   :level: 2
 
-  - :ref:`introduction`
+  - :ref:`introduction3days`
   - :ref:`session1`
   - :ref:`blockDesigns`
   - :ref:`dynamic`
@@ -72,7 +72,7 @@ Building better experiments with
   - :ref:`generalPurpose`
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     10introductions
     buildingBetter
