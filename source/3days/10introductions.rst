@@ -15,7 +15,7 @@ About us
 **Credits:**
     - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
 
-    - Nottingham University have been paying my (Jons) salary while PsychoPy was written
+    - Nottingham University have been paying Jons salary while PsychoPy was written
 
     - Wellcome Trust recently gave us a grant to improve this a LOT
 
@@ -52,10 +52,9 @@ What is PsychoPy?
 It's `Psychology software in Python`
 
 PsychoPy is several things:
-
-    - a library for use in Python scripts
-    - an editor including Python to edit scripts
-    - an application with a graphical user interface (GUI) for building experiments
+    * a library for use in Python scripts
+    * an editor including Python to edit scripts
+    * an application with a graphical user interface (GUI) for building experiments
 
 It's, itself, entirely written in Python
 
