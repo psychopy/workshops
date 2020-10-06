@@ -3,7 +3,7 @@ Workshop materials for the PsychoPy team
 
 ## Build the slides/HTML/PDF
 
-Test To build the output files from the `.rst` source files, navigate to the source folder that contains a `Makefile` that specifies how to build the documents from the source (e.g. the `3days` or `3hrs` folder), and in a terminal, type one or more of these to get the output you want:
+To build the output files from the `.rst` source files, navigate to the source folder that contains a `Makefile` that specifies how to build the documents from the source (e.g. the `3days` or `3hrs` folder), and in a terminal, type one or more of these to get the output you want:
 
     make html
     make slides
