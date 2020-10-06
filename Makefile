@@ -186,10 +186,10 @@ pseudoxml:
 
 
 slides:
-	$(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/slides
-	@echo "Build finished. The HTML slides are in $(BUILDDIR)/slides."
+	$(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) $(BUILDDIR)/html/slides
+	@echo "Build finished. The HTML slides are in $(BUILDDIR)/html/slides."
 
 
 rinoh:
 	$(SPHINXBUILD) -b rinoh $(ALLSPHINXOPTS) $(BUILDDIR)/rinoh
-	@echo "Build finished. The rinoh slides are in $(BUILDDIR)/rinoh."
+	@echo "Build finished. The rinoh outputs are in $(BUILDDIR)/rinoh."
