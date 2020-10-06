@@ -23,7 +23,7 @@ The following workshops are currently planned:
 ==========  ============================ ========  ========  ===================
 Date        Content                      Duration  Timezone  Bookings
 ==========  ============================ ========  ========  ===================
-28/10/2020   :ref:`Creating Experiments`  3 days    US        https:/someurl.com
+28/10/2020   :ref:`Creating Experiments`  3 days    US        https://pavlovia.org/store
 ==========  ============================ ========  ========  ===================
 
 
