@@ -1,8 +1,9 @@
 
 .. ifslides::
 
-  .. image:: /_static/nott_logo.png
+  .. image:: /_static/OST600.png
     :align: right
+    :scale: 25%
 
 Building better experiments with
 `````````````````````````````````````````````````
@@ -11,7 +12,7 @@ Building better experiments with
 
   .. image:: /_static/psychopy.png
       :align: right
-      :scale: 50 %
+      :scale: 50%
 
 .. slide:: Materials
   :level: 2
@@ -19,11 +20,11 @@ Building better experiments with
   - These materials are available in various forms:
 
       - http://www.psychopy.org/3days (html slides)
-      - http://www.psychopy.org/3days/psychopy3days.pdf
+      - http://www.psychopy.org/psychopy3days.pdf
 
   - You can download and unzip previous examples here:
 
-    - http://www.psychopy.org/examples2019.zip
+    - http://www.psychopy.org/examples.zip
 
 
 .. slide:: Day 1
@@ -71,17 +72,38 @@ Building better experiments with
   
   - :ref:`generalPurpose`
 
-.. toctree::
-    :maxdepth: 2
+.. ifslides::
 
-    10introductions
-    buildingBetter
-    builderAndCode
-    pavlovia
-    pavloviaLaunch
-    debuggingOnline
-    
-    coding/index
-    coding/syntax/index
+  .. toctree::
+      :hidden:
+      :maxdepth: 2
 
-    general/pythonForGeneral
+      10introductions
+      buildingBetter
+      builderAndCode
+      pavlovia
+      pavloviaLaunch
+      debuggingOnline
+      
+      coding/index
+      coding/syntax/index
+
+      general/pythonForGeneral
+
+.. ifnotslides::
+
+  .. toctree::
+
+      :maxdepth: 2
+
+      10introductions
+      buildingBetter
+      builderAndCode
+      pavlovia
+      pavloviaLaunch
+      debuggingOnline
+      
+      coding/index
+      coding/syntax/index
+
+      general/pythonForGeneral
