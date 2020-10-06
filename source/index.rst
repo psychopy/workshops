@@ -22,8 +22,7 @@ The following workshops are currently planned:
 ==========  ============================ ========  ========  ===================
 Date        Content                      Duration  Timezone  Bookings
 ==========  ============================ ========  ========  ===================
-1/11/2020   :ref:`Creating Experiments`  3 days    US        https:/someurl.com
-25/11/2020  :ref:`Creating Experiments`  3 days    UK        https:/someurl.com
+28/10/2020   :ref:`Creating Experiments`  3 days    US        https:/someurl.com
 ==========  ============================ ========  ========  ===================
 
 
