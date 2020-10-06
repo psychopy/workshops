@@ -73,12 +73,33 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
     - `$"You won $5"`  [include the quotes]
     - `You won \$5`
 
+.. nextslide::
+
+Using code as arguments allows us to easily make stimuli 'dynamic' (i.e. things change their attributes in time). 
+
+.. nextslide::
+
+Let's create a task where text is gradually revealed (e.g. we want to control reading speed).
+
+Think of a Routine like this:
+
+.. image:: /_images/routineTextReveal2020.png
+
+The text object could be any long piece of text. You might need to make sure the wrap length is set to be the full width of the screen to fit on one line.
+
+.. nextSlide::
+
+.. image:: /_images/revealMaskProperties.png
+    :align: right
+
+Your mask is a square that moves (note the size and the pos settings). 
+
 Code Components
 ---------------------
 
 This goes to the next step in integrating code with your experiment
 
-A Code Component allows you to add multi-line arbitrary Python code at 6 different points in the script:
+A Code Component allows you to add Python (and now JS) code at 6 different points in the script:
 
     - before the experiment
     - start of the experiment
@@ -93,31 +114,56 @@ A Code Component allows you to add multi-line arbitrary Python code at 6 differe
 
 .. nextslide::
 
-Let's try and create a 'Feedback' Routine for the flanker task we made (requires a Code Component to decide whether the last response was correct or not).
-    - rerun the task you created to create a data file
-    - open the data file and look at the headers that are created
-    - you can access these data to feedback to participants.
-
-.. nextslide::
-Create a new Routine that goes immediately after `trial` on the flow and add a code component.
-
-.. image:: /_images/flankerFeedback.png
-
-Exercises
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Try: 
-
-    1. Changing the colour of the text based on feedback (green correct, red incorrect)
-    2. Adding a feedback 'tone' that varies depending on if correct or incorrect
-    3. Adding response time feedback. 
-
-Understanding the order of execution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The order of execution is important.
 
 Each entry of your Routine has multiple Components and their code /for each part of the experiment/  is run in the order of the components.
 
 Do you want you custom code executed before or after your stimulus?
+
+.. nextslide::
+
+Let's try and create a 'Feedback' Routine for the Posner task we want to:
+    - Add trial by trial feedback on response times 
+    - Adjust the colour of the feedback based on RT
+    - Give feedback at the end on average RT overall, on valid trials and on invalid trials.
+
+.. nextslide::
+
+To add trial by trial feedback on response times create a feedback routine and add a text component. In the text field enter::
+    
+    $'RT was '+str(round(resp.time[0], 3))+' ms'
+
+.. nextslide::
+
+To adjust feedback colour based on response time we need a code component::
+
+    if resp.time[0]<.5:
+        feedbackCol = 'green'
+    else:
+        feedbackCol = 'red'
+
+.. nextslide::
+
+To give feedback at the end for each condition let's learn about lists. We want three lists to keep track of RTs::
+
+    allRTList=[]
+    validRTList=[]
+    invalidRTList=[]
+
+.. nextslide::
+
+Some useful *Python* methods
+    - .append() - adds to a list
+    - np.average() - returns average of a list using the numpy (np) library. 
+
+Exercises (15-20 minutes)
+---------------------
+
+Try: 
+
+    1. Add a feedback tone that varies in frequency depending on if the RT fell in the desired time limit. 
+    2. Add a text component to the end feedback routine to tell participants if they showed a Posner cueing effect.
+    3. IF participants show a posner cueing effect, tell them how large their effect was in ms. 
 
 Code Components - Advanced
 ---------------------
@@ -133,13 +179,16 @@ First, everyone have a run through of this demo to familiarize yourself with the
 
 .. nextslide::
 
-OK let's talk through the existing code components and the files in this demo.
+OK let's talk through the existing code components and the files in this demo. Then we are going to try some excercises to combine all of the skills we have learnt so far.
 
-Exercises: 
+Exercises (20-30 minutes)
+---------------------
 
-    1. Change the balloon to be the blue baloon. 
-    2. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
-    3. Add a penalty - you loose earnings if the baloon pops..
+    1. Make the colour of the balloon change on every trial (either green or blue)
+    2. Add a new condition, where blue balloons have a high risk of popping early, whilst green balloons do not. 
+    3. Allow the researcher to assign participants to either group A or B - where group A will have the standard condition first, followed by block where colour predicts pop timing, and group B vice versa.
+    4. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
+    5. Add a penalty - you loose earnings if the baloon pops..
 
 What next?
 ---------------------

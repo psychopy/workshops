@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on October 06, 2020, at 22:47
+    on October 06, 2020, at 22:45
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -36,7 +36,7 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2020.2.4'
-expName = 'rainbowText'  # from the Builder filename that created this script
+expName = 'bouncing_ball'  # from the Builder filename that created this script
 expInfo = {'session': '001', 'participant': ''}
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
@@ -48,7 +48,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\44797\\Documents\\GitHub\\workshops\\examples2019\\builder\\dynamicStimuli\\rainbowText\\rainbowText_lastrun.py',
+    originPath='C:\\Users\\44797\\Documents\\GitHub\\workshops\\examples2019\\builder\\dynamicStimuli\\bouncingBall\\bouncingBall_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -62,8 +62,8 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1440, 900], fullscr=True, screen=0, 
-    winType='pyglet', allowGUI=False, allowStencil=False,
+    size=[600, 400], fullscr=False, screen=0, 
+    winType='pyglet', allowGUI=True, allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True)
 # store frame rate of monitor if we can measure it
@@ -78,13 +78,13 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
-rainbowText = visual.TextStim(win=win, name='rainbowText',
-    text='Crazy colors',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='hsv', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
+polygon = visual.Polygon(
+    win=win, name='polygon',units='height', 
+    edges=100, size=0.05,
+    ori=0, pos=[0,0],
+    lineWidth=1, lineColor='pink', lineColorSpace='rgb',
+    fillColor='red', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -92,10 +92,10 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 
 # ------Prepare to start Routine "trial"-------
 continueRoutine = True
-routineTimer.add(4.000000)
+routineTimer.add(10.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
-trialComponents = [rainbowText]
+trialComponents = [polygon]
 for thisComponent in trialComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -118,24 +118,24 @@ while continueRoutine and routineTimer.getTime() > 0:
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *rainbowText* updates
-    if rainbowText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *polygon* updates
+    if polygon.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        rainbowText.frameNStart = frameN  # exact frame index
-        rainbowText.tStart = t  # local t and not account for scr refresh
-        rainbowText.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(rainbowText, 'tStartRefresh')  # time at next scr refresh
-        rainbowText.setAutoDraw(True)
-    if rainbowText.status == STARTED:
+        polygon.frameNStart = frameN  # exact frame index
+        polygon.tStart = t  # local t and not account for scr refresh
+        polygon.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(polygon, 'tStartRefresh')  # time at next scr refresh
+        polygon.setAutoDraw(True)
+    if polygon.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > rainbowText.tStartRefresh + 4-frameTolerance:
+        if tThisFlipGlobal > polygon.tStartRefresh + 10-frameTolerance:
             # keep track of stop time/frame for later
-            rainbowText.tStop = t  # not accounting for scr refresh
-            rainbowText.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(rainbowText, 'tStopRefresh')  # time at next scr refresh
-            rainbowText.setAutoDraw(False)
-    if rainbowText.status == STARTED:  # only update if drawing
-        rainbowText.setColor((t*90, 1, 0.5), colorSpace='hsv', log=False)
+            polygon.tStop = t  # not accounting for scr refresh
+            polygon.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(polygon, 'tStopRefresh')  # time at next scr refresh
+            polygon.setAutoDraw(False)
+    if polygon.status == STARTED:  # only update if drawing
+        polygon.setPos((0, (sin(t*6)**2)/20), log=False)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -158,8 +158,8 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in trialComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('rainbowText.started', rainbowText.tStartRefresh)
-thisExp.addData('rainbowText.stopped', rainbowText.tStopRefresh)
+thisExp.addData('polygon.started', polygon.tStartRefresh)
+thisExp.addData('polygon.stopped', polygon.tStopRefresh)
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
