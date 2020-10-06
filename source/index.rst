@@ -12,7 +12,8 @@
 Open Science Tools official workshops
 `````````````````````````````````````````````````
 
-There are many resources to help you learn the various aspects of PsychoPy (and most of them are free)!
+There are many resources to help you learn the various aspects of PsychoPy (and most of them are free!
+
 For users that have a budget, and want some direct training from the Open Science Tools team (who create PsychoPy), we now run frequent workshops with a range of topics, a range of timezones and a range of durations.
 
 You can register your interest in workshops in a range of formats (and potentially suggest a new format) at <link to sruvey>.
