@@ -1,0 +1,20 @@
+1.3557 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+4.8211 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019E6BC97400>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019E6B865D30>, multiSample=False, name='window1', numSamples=2, pos=[240.0, 100.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.8212 	EXP 	window1: mouseVisible = True
+4.8213 	EXP 	window1: recordFrameIntervals = False
+4.9868 	EXP 	window1: recordFrameIntervals = True
+5.1709 	EXP 	window1: recordFrameIntervals = False
+5.3039 	EXP 	Created left_eye = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='white', fillColorSpace='named', fillRGB=array([255., 255., 255.]), interpolate=True, lineColor='white', lineColorSpace='named', lineRGB=array([255., 255., 255.]), lineWidth=1, name='left_eye', opacity=1.0, ori=array(0.), pos=array([-0.3,  0. ]), size=array([0.3, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+5.3070 	EXP 	Created left_pupil = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='left_pupil', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+5.3108 	EXP 	Created right_eye = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor='white', fillColorSpace='named', fillRGB=array([255., 255., 255.]), interpolate=True, lineColor='white', lineColorSpace='named', lineRGB=array([255., 255., 255.]), lineWidth=1, name='right_eye', opacity=1.0, ori=array(0.), pos=array([0.3, 0. ]), size=array([0.3, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+5.3151 	EXP 	Created right_pupil = Polygon(__class__=<class 'psychopy.visual.polygon.Polygon'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-3.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='right_pupil', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+5.3527 	EXP 	left_eye: autoDraw = True
+5.3527 	EXP 	left_pupil: autoDraw = True
+5.3527 	EXP 	right_eye: autoDraw = True
+5.3527 	EXP 	right_pupil: autoDraw = True
+15.3154 	DATA 	Keypress: escape
+15.3453 	EXP 	left_eye: autoDraw = False
+15.3453 	EXP 	left_pupil: autoDraw = False
+15.3453 	EXP 	right_eye: autoDraw = False
+15.3453 	EXP 	right_pupil: autoDraw = False
+15.3689 	EXP 	window1: mouseVisible = True
