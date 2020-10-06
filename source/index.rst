@@ -34,6 +34,6 @@ Slides for our sessions are available here:
 .. toctree::
     :maxdepth: 1
 
-    Creating better Experiments 3 day workshop <:ref:`3days/index`>
+    Creating better Experiments 3 day workshop <3days/index>
     Afternoon of Builder and Code <3hrs/index>
     

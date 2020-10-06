@@ -72,7 +72,6 @@ Building better experiments with
   - :ref:`generalPurpose`
 
 .. toctree::
-    :hidden:
     :maxdepth: 1
 
     10introductions
