@@ -18,9 +18,27 @@
 
         <div class="collapse navbar-collapse nav-collapse w-100 pull-right">
           <ul class="nav navbar-nav ml-auto">
-            <li><a href="examples.zip">examples.zip</a></li>
-            <li><a href="{{ pathto('download') }}" style="font-weight:bold">Register Interest</a></li>
+            <li><a href=" " style="font-weight:bold"> </a></li>
+            <li><a href="https://workshops.psychopy.org/psychopy_examples.zip" style="font-weight:bold">examples.zip</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSey6G_Y7oo-kuXZwuE4Cp9cVqMxuV0cpVhy2NvbWWQtImHcqw/viewform" style="font-weight:bold">Register Interest</a></li>
 
+            <li class="dropdown globaltoc-container">
+              <a role="button"
+                 id="dLabelGlobalToc"
+                 data-toggle="dropdown"
+                 data-target="#"
+                 href="#">Days <b class="caret"></b></a>
+              <ul class="dropdown-menu globaltoc"
+                  role="menu"
+                  aria-labelledby="dLabelGlobalToc">
+                  <ul>
+                      <li class="toctree-l1"><a class="reference internal" href="slides/3days/index.html#3">Day 1</a>
+                      </li>
+                      <li class="toctree-l1"><a class="reference internal" href="slides/3days/index.html#4">Day 2</a></li>
+                      <li class="toctree-l1"><a class="reference internal" href="slides/3days/index.html#5">Day 3</a></li>
+                  </ul>
+              </ul>
+            </li>
             {% if theme_navbar_links %}
               {%- for link in theme_navbar_links %}
                 <li><a href="{{ pathto(*link[1:]) }}">{{ link[0] }}</a></li>
