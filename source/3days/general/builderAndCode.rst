@@ -210,6 +210,23 @@ Exercises (20-30 minutes)
     4. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
     5. Add a penalty - you loose earnings if the baloon pops..
 
+Code Components - Advanced
+---------------------
+
+Sometimes you might want to end a routine or loop early if a certain condition is met. For example if a level of accuracy has been met. Do do this we can use::
+    continueRoutine = False # ends a routine
+    trials.finished = True # ends the loop (trials = name of loop)
+
+.. nextslide::
+
+Make a simple routine with a text component that lasts 0.5 seconds add a loop to repeat that 5 times. 
+
+Try accessing the properties of your loop object - see 'finished' is in the list. 
+There is also some properties we see in our outputfile (e.g. thisN).
+
+Let's try ending the routine at trial 3 instead of trial 5...
+What happend is you do or do not use continueRoutine ? 
+
 What next?
 ---------------------
 
