@@ -19,7 +19,7 @@ Materials
 
 These materials are available as a `web page <https://workshops.psychopy.org>`_ or as `html slides <https://workshops.psychopy.org/slides/3days>`_
 
-You can also download and unzip `previous examples <https://workshops.psychopy.org/examples2019.zip>`_
+You can also download and unzip `previous examples <https://workshops.psychopy.org/psychopy_examples.zip>`_
 
 
 .. slide:: Day 1
