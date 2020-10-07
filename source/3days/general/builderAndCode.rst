@@ -77,6 +77,24 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
 
 Using code as arguments allows us to easily make stimuli 'dynamic' (i.e. things change their attributes in time). 
 
+Try adding a mouse component and a simple polygon to a routine to present for 5 seconds. set the position of your polygon to be mouse.getPos()
+
+.. nextslide::
+
+Handy side tip. If you want to see what properties and methods an object has, you can  use a print() statement, e.g.::
+    print(dir(mouse))
+
+If you want to learn more about a method in an object you can print the docstring for that method::
+    print(mouse.setVisible.__doc__)
+
+.. nextslide::
+
+Making things dynamic could allow you to, for instance:
+
+  - gradually reveal an object
+  - make an object move to make the task harder
+  - make an object more interesting for participants (e.g. developmental)
+
 .. nextslide::
 
 Let's create a task where text is gradually revealed (e.g. we want to control reading speed).
@@ -132,6 +150,8 @@ Let's try and create a 'Feedback' Routine for the Posner task we want to:
 To add trial by trial feedback on response times create a feedback routine and add a text component. In the text field enter::
     
     $'RT was '+str(round(resp.time[0], 3))+' ms'
+
+NB: at the moment we use '+' to concatinate strings rather than python formatted strings (e.g. '%s'%(resp.time[0])). This is because the latter is not currently compatible with online studies. 
 
 .. nextslide::
 
