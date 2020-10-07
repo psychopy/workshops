@@ -82,9 +82,11 @@ Try adding a mouse component and a simple polygon to a routine to present for 5 
 .. nextslide::
 
 Handy side tip. If you want to see what properties and methods an object has, you can  use a print() statement, e.g.::
+
     print(dir(mouse))
 
 If you want to learn more about a method in an object you can print the docstring for that method::
+
     print(mouse.setVisible.__doc__)
 
 .. nextslide::
@@ -213,7 +215,8 @@ Exercises (20-30 minutes)
 Code Components - Advanced
 ---------------------
 
-Sometimes you might want to end a routine or loop early if a certain condition is met. For example if a level of accuracy has been met. Do do this we can use::
+Sometimes you might want to end a routine or loop early if a certain condition is met. For example if a level of accuracy or a time limit has been reached. To do this we can use::
+
     continueRoutine = False # ends a routine
     trials.finished = True # ends the loop (trials = name of loop)
 
@@ -225,9 +228,23 @@ Try accessing the properties of your loop object - see 'finished' is in the list
 There is also some properties we see in our outputfile (e.g. thisN).
 
 Let's try ending the routine at trial 3 instead of trial 5...
-What happend is you do or do not use continueRoutine ? 
+What happend if you do or do not use continueRoutine? 
+
 
 What next?
 ---------------------
 
 Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore :ref:`pavloviaEnv`! 
+
+Additional note
+---------------------
+
+Sometimes you might want to set the properties of multiple components at once. For this we could use a for loop (we will talk more about these on Friday)
+
+Exercises (15-20 minutes)
+---------------------
+Painting shapes...
+
+    1. present 4 white polygons (circles, triangle, rectangle)
+    2. add a mouse component to click the polygons
+    3. if a polygon is clicked, set it's colour to green
