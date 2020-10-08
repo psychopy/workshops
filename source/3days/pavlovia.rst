@@ -106,6 +106,15 @@ Benefits of GitLab (the important bits):
 Gitlab: version control
 -----------------
 
+Bad practice.
+
+.. image:: /_images/badVerControl.png
+    :align: right
+
+NB: this example resulted from me downloading another posters experiment and uploading as new project, instead of forking (which would have made a new project name).
+
+.. nextSlide::
+
 You can see when the last changes were made to the task by looking at the commit history
 
 .. image:: /_images/gitlabComHistory.png
@@ -237,3 +246,9 @@ Pushing your studies to Pavlovia?
 -----------------
 
 Now we have explored pavlovia.org let's see how to :ref:`builderToPavlovia`
+
+
+Exercise
+-----------------
+
+Try to push the experiment we made yesterday online. List any bugs you find and how you fixed them. 

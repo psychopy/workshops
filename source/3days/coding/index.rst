@@ -441,11 +441,7 @@ NB: If you hit the red stop button in PsychoPy it issues a very severe abort and
 All done!
 -------------
 
-You can see all the steps that were used here (and some further ones in the intermediate stream) here:
-
- - https://github.com/psychopy/posner/commits
-
-You should have a working version of the Posner Cueing task.
+If I push these changes to pavlovia, you can see the changes we make to the task throughout task creation...
 
 Improvements...
 -----------------

@@ -24,7 +24,7 @@ Download an image you want (preferably with a transparent background e.g. .png) 
 
 .. nextSlide::
 
-Exercise: 
+Question: 
 
 On each trial we will present our image. We want to present our image in a different location on each trial. How do we do that?
 
@@ -40,7 +40,7 @@ We create a conditions file containing the desired X and Y coordinates on each t
 Gather a response
 -----------------
 
-Exercise: 
+Question: 
 
 On each trial, we want to gather responses from the mouse.
 
@@ -96,4 +96,4 @@ If we then go to our Experiments in the pavlovia Dashboard, we should see our ta
 
 There we have it! our first basic task in pavlovia!! 
 
-In reality, things are not always smooth. Next we will build on this task to cover some tips in :ref:`debuggingOnline`
+In reality, things are not always smooth (but we are working on it!). Next we will build on this task to cover some tips in :ref:`debuggingOnline`
