@@ -130,6 +130,16 @@ Imagine you have a working task, you then make a bunch of changes, and it doesn'
 Gitlab: adding team members
 -----------------
 
+You can either add members to a single project, or you can create a group where you can share several projects. The second might be useful for lab groups with several ongoing experiments, or teaching with several demos!
+
+.. nextSlide::
+
+To make a group go to gitlab > groups > your groups > new group
+
+Then select the 'members' icon on the side bar to add members
+
+.. nextSlide::
+
 You can view the members on another project by selecting "members" in the side tab.
 
 .. image:: /_images/gitlabViewMembers.png
@@ -155,6 +165,15 @@ You can change the visibility of your task at any time under permissions.
 One thing to note is that once you make your project "public" the data file stored there will also be public. 
     - good as allows easy data sharing
     - Something to bare in mind if you are collecting protected data
+
+Gitlab: forking 
+-----------------
+
+If you find an experiment you like using 'explore' you can open the gitlab page by selecting 'View code (<>)'
+
+You can then fork that to make your own copy of the project to work from (you can make a copy for your own 'namespace' or add it to a group). 
+
+If you really like the task, give the original poster a star too!! 
 
 
 .. _pavloviaDashboard:
@@ -200,6 +219,19 @@ You can save your output as .csv files or a database. You can also decide if you
 
 .. image:: /_images/pavloviaSaving.png
     :align: right
+
+Exercises (10-15 mins)
+-----------------
+
+Let's get some practice using pavlovia.org!
+
+    1. in your breakout room make a group for you to share something. 
+    2. try forking the project we worked on yesterday to your group area
+    3. try searching that project from your local psychopy 
+    4. make a small edit 
+    5. upload and see if the change shows on gitlab!
+
+NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 
 Pushing your studies to Pavlovia?
 -----------------
