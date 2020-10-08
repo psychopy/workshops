@@ -259,3 +259,8 @@ Take home messages
 	- You can get more help on discourse! 
 
 So we have now already encountered some code, let's learn some more and :ref:`firstExperiment`.
+
+Exercise
+-----------------
+
+Try to push the experiment we made yesterday online. List any bugs you find and how you fixed them. 
