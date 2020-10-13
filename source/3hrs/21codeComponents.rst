@@ -24,6 +24,7 @@ Create a feedback Routine
 Let's create a 'Feedback' Routine for the basic task we created earlier. We could just use some "code as argument". i.e. you can add code to the field of any component by starting that field with a $ sign. 
 
 Add a text component and in the 'text' field add::
+
   $RT=%.3f" %(resp.time)
 
 and 'set to every repeat'
@@ -40,9 +41,9 @@ Imagine we want something a bit more complex. We want the colour of the feedback
 In your Code Component select the tab for `Begin Routine` and type in::
 
     if resp.time<.5:
-      msg="You were fast! RT=%.3f" %(resp.time)
+      thisCol='green'
     else:
-      msg="You were slow. RT=%.3f" %(resp.time)
+      thisCol='red'
 
 Code Components are obviously something that could get super-complex but you can accomplish a lot with quite simple Python commands (that now translate to JS!)
 

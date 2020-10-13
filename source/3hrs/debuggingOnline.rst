@@ -5,7 +5,7 @@
         :align: left
         :scale: 25 %
         
-.. _debuggingOnline:
+.. _debuggingOnline3Hrs:
 
 Debugging online
 =================================
