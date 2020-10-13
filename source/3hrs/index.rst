@@ -21,6 +21,8 @@ Materials
 
 These materials are available at `Our workshops page <https://workshops.psychopy.org/>`_
 
+Here you can also download a zip containing several premade demos of tasks.
+
 
 .. nextslide:: Plan
 

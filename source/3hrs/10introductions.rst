@@ -1,5 +1,10 @@
 
+.. ifslides::
 
+    .. image:: /_static/OST600.png
+        :align: left
+        :scale: 25 %
+    
 .. _introduction:
 
 
@@ -19,9 +24,6 @@ About us
     - Nottingham University have been paying Jons salary while PsychoPy was written
 
     - Wellcome Trust recently gave us a grant to improve this a LOT
-
-.. image:: /_static/nott_logo.png
-    :align: right
 
 The growing team
 ==========
