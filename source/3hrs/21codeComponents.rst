@@ -51,7 +51,7 @@ Translation errors
 ----------------------------
 In order to run online, our python experiment needs to be converted to JS. If you have your code type set to Auto ->JS you might notice when these errors can occur.
 
-We will talk about that in :ref:`debuggingOnline3Hrs`
+We will talk about that in :ref: `debuggingOnline3Hrs`
 
 Basic Python syntax
 --------------------------------------
@@ -112,9 +112,9 @@ If... statements and code blocks
 What gets included in an `if...` statement (or a `for...` loop) is determined by indentation. There is no `end` statement in Python, recall our earlier component::
 
     if resp.time[0]<.5:
-      msg="You were fast! RT=%.3f" %(resp.time[0])
+      thisCol = 'green'
     else:
-      msg="You were slow. RT=%.3f" %(resp.time[0])
+      thisCol = 'red'
 
 Understanding the order of execution
 --------------------------------------
@@ -128,13 +128,15 @@ For our feedback we needed the Code component to create the `msg` variable befor
 Storing variables for later use
 ----------------------------------------
 
-Often you'll need to store variables to keep track of things, such as how many times your participant has got the answer correct or giving end feedback regarding RT. For example, in your 'Begin experiment tab you could make an empty list::
+Often you'll need to store variables to keep track of things e.g. keeping track of RTs to give feedback at the end::
 
     RTlist = []
 
 and add to that list at the end of each routine::
 
     RTlist.append(resp.time[0])
+
+.. nextslide::
 
 Then in our final end message we could add a code component where we set some feedback text::
 
