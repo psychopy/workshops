@@ -109,3 +109,8 @@ Take home messages
 	- Look at the crib sheet 
 	- Use the developer tools 
 	- You can get more help on discourse! 
+
+Coming next
+---------------
+
+:ref:`blockDesigns`

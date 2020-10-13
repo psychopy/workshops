@@ -38,35 +38,6 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
     - `$"You won $5"`  [include quotes]
     - `You won \\$5`
 
-.. nextSlide::
-
-
-Let's create a task where text is gradually revealed.
-
-Think of a Routine like this:
-
-.. image:: /_images/routineTextReveal.png
-
-The text object could be any long piece of text. You might need to make sure the wrap length is set to be the full width of the screen to fit on one line.
-
-.. nextSlide::
-
-.. image:: /_images/revealMaskProperties.png
-    :align: right
-
-Your mask is a square that moves (note the size and the pos settings).
-
-..  _quizShowFaces:
-
-Quiz show faces
-----------------------------
-
-- Let's take some faces and make them shrink and rotate while participants try to detect the face.
-
-- The psychological point of this isn't clear(!), but it used to be popular in quiz shows.
-
-- "Have I got News For You" still does it.
-
 ..  _heartThrob:
 
 Create a pulsating heart
