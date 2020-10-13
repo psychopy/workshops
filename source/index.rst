@@ -1,17 +1,14 @@
 
 .. ifslides::
 
-    .. image:: /_static/psychopy.png
-        :align: left
-        :scale: 50 %
-
     .. image:: /_static/OST600.png
-        :align: right
+        :align: left
         :scale: 25 %
 
 
 Open Science Tools official workshops
 `````````````````````````````````````````````````
+
 
 There are many resources to help you learn the various aspects of PsychoPy (and most of them are free!
 

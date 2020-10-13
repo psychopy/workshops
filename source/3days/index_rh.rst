@@ -1,8 +1,10 @@
 
 .. ifslides::
 
-  .. image:: /_static/nott_logo.png
-    :align: right
+    .. image:: /_static/OST600.png
+        :align: left
+        :scale: 25 %
+        
 
 Building better experiments with
 `````````````````````````````````````````````````

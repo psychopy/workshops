@@ -1,4 +1,10 @@
 
+.. ifslides::
+
+    .. image:: /_static/OST600.png
+        :align: left
+        :scale: 25 %
+        
 .. _debuggingOnline:
 
 Debugging online

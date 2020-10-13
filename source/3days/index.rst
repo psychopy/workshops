@@ -2,7 +2,7 @@
 .. ifslides::
 
   .. image:: /_static/OST600.png
-    :align: right
+    :align: left
     :scale: 25%
 
 Building better experiments with
