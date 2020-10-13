@@ -247,5 +247,3 @@ Let's talk about:
 
 :ref:`codeComponents`
 
-Extending builder with code
-Counterbalancing 

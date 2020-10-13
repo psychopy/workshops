@@ -6,8 +6,8 @@ Code Components
 
 Integrating code with your experiment is not necissary, but can allow greater flexibility in your experiments (and allows you to learn some code!)
 
-.. slide::
-  :level: 2
+Code Components
+----------------------------
 
   A Code Component allows you to add multi-line arbitrary Python code at 6 different points in the script:
       - before the exmperiment
@@ -17,14 +17,6 @@ Integrating code with your experiment is not necissary, but can allow greater fl
       - end of the Routine
       - end of the Experiment
 
-.. ifnotslides::
-
-  A Code Component allows you to add multi-line arbitrary Python code at 5 different points in the script:
-      - start of the experiment
-      - start of the current Routine
-      - every frame
-      - end of the Routine
-      - end of the Experiment
 
 Create a feedback Routine
 ----------------------------
