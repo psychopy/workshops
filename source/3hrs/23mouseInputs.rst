@@ -53,5 +53,3 @@ Using the fact that we can easily work out where a mouse is we can create dynami
   - test whether the mouse button(s) are being pressed
 
 You can even make your button change when it has been pressed (e.g. stimuli that disappear once you click them?) or when you hover over them
-
-Next we'll be looking at :ref:`onlineStudies`

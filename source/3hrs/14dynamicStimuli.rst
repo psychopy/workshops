@@ -38,6 +38,10 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
     - `$"You won $5"`  [include quotes]
     - `You won \\$5`
 
+Interacting with the mouse
+---------------------
+
+When moving online, the features of the mouse can make for some really cool dynamic experiments that translate to touchscreens :ref:`mouse`
 ..  _heartThrob:
 
 Create a pulsating heart
