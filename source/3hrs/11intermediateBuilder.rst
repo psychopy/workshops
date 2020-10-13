@@ -45,7 +45,8 @@ So now we have a very simple experiment that works locally, let's see how we wou
 
 This is where the globe symbols come in, which represet online functionality. 
 
-.. nextSlide::
+Running online studies
+-----------------
 
 To get our study online, we check that we are signed into our pavlovia acount. Then we 'sync' our project. 
 
