@@ -16,8 +16,9 @@ Building better experiments with
 .. slide:: Materials
   :level: 2
 
-  - These materials are available at -
-- `Our workshops page <https://workshops.psychopy.org/>`_ 
+  - These materials are available at
+
+  - `Our workshops page <https://workshops.psychopy.org/>`_
 
 
 .. nextslide:: Plan
