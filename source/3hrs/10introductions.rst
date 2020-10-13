@@ -2,11 +2,6 @@
 
 .. _introduction:
 
-Introductions
-----------------
-
-About us
-==========
 
 Introductions
 ----------------
