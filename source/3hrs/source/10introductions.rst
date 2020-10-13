@@ -5,7 +5,13 @@
 Introductions
 ----------------
 
-About me
+About us
+==========
+
+Introductions
+----------------
+
+About us
 ==========
 
 **Jon Peirce:**
@@ -13,16 +19,26 @@ About me
     * Principal creator/maintainer of PsychoPy
 
 **Credits:**
-    - Many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
+    - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
 
-    - Nottingham University have been paying my salary while PsychoPy was written
+    - Nottingham University have been paying Jons salary while PsychoPy was written
 
-    - Wellcome Trust gave us a grant to add online capabilities
-
-    - The Chan-Zuckerberg Initiative are funding further substantial improvements
+    - Wellcome Trust recently gave us a grant to improve this a LOT
 
 .. image:: /_static/nott_logo.png
     :align: right
+
+The growing team
+==========
+
+**Alain Pitiot**
+    * All things Pavlovia
+**Todd Parsons**  
+    * Python developer
+**Thomas Pronk and Sotiri Bakagiannis**
+    * JS developers
+**Rebecca Hirst** 
+    * Science officer - education, outreach, dabbles in programming
 
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -42,12 +58,11 @@ What is PsychoPy?
 It's `Psychology software in Python`
 
 PsychoPy is several things:
+    * a library for use in Python scripts
+    * an editor including Python to edit scripts
+    * an application with a graphical user interface (GUI) for building experiments
 
-    - a library for use in Python scripts
-    - an editor to write and run such scripts (the 'Coder' view)
-    - an application for building experiments through a graphical user interface (GUI) (the 'Builder' view)
-
-It is itself entirely written in Python
+It's, itself, entirely written in Python
 
 Goal of PsychoPy
 ~~~~~~~~~~~~~~~~~~
@@ -72,13 +87,13 @@ PsychoPy is written in the Python programming language
 
 .. nextslide::
 
-.. figure:: /_images/coderView.png
+.. figure:: /_images/coderView2020.png
 
    The Coder view is used to create experiments from Python scripts
 
 .. nextslide::
 
-.. figure:: /_images/builderView.png
+.. figure:: /_images/builderView2020.png
 
    The Builder view is used to create experiments visually
 
@@ -100,31 +115,26 @@ Why do people *Build*?
 
     - It is far faster to develop experiments!
     - You can still understand (and build on) your experiment next year
-    - You'll probably have fewer bugs (and better performance)
+    - You'll probably have fewer bugs
     - Code Components can be used in nearly all places where Builder isn't enough
-    - Builder experiments can also compile to a web format (Javscript/HTML) to run online!
+    - Your Builder experiment will also compile to a web (JS/HTML) experiment!
 
 What does **Jon** do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I use Builder on a regular basis.
+I still use both Builder and Coder on a regular basis.
 
-My experiments are almost always created in Builder, with added Code Components. I don't ever break out and switch to pure code.
+My experiments I are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code.
 
 
 Going further
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Builder interface:
-
-    - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage)
+    - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)
 
 Python programming (for experimental psych):
-
-    - `Programming Experiments in Python workshop <http://www.psychopy.org/resources/workshops.html>`_ (3 days of programming in Nottingham)
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
     - `Python for Experimental Psychologists <https://www.amazon.co.uk/Python-Experimental-Psychologists-Edwin-Dalmaijer/dp/1138671576>`_ by Edwin Dalmaijer (2017, Routledge)
-    - `Programming psychological experiments and data handling with Python/PsychoPy <https://www.amazon.co.jp/dp/4254128916>`_ by Hiroyuki Sogo (2017, Asakura Shoten)
-
 
 So, let's go on and learn some :ref:`session1`...
