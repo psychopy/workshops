@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Making things dynamic &mdash; Workshops for PsychoPy 2020 2020</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../_static/P4Ncustomslides.css" type="text/css" />
+    
+    
+    
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'April 2020',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Workshops for PsychoPy 2020 2020" href="../index.html" />
+    <link rel="up" title="Building better experiments with" href="index.html" />
+    <link rel="next" title="Block designs and counterbalancing" href="15blockDesigns.html" />
+    <link rel="prev" title="Builder basics" href="11basicBuilder.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="making-things-dynamic">
+
+<h1>Making things dynamic</h1>
+
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="slide level-2" id="what-is-dynamic">
+
+<h2>What is dynamic?</h2>
+
+<p>In PsychoPy everything is organised in reference to time</p>
+<blockquote>
+<div><ul class="simple">
+<li>We don’t have “slides” that simply follow each other like in some packages</li>
+<li>Things overlap in time</li>
+<li>Things can <em>change</em> their attributes in time</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-2" id="why-is-that-useful">
+
+<h2>Why is that useful?</h2>
+
+<p>You could use this, for instance, to:</p>
+<blockquote>
+<div><ul class="simple">
+<li>gradually reveal an object</li>
+<li>make an object move to make the task harder</li>
+<li>make an object more interesting for participants (e.g. developmental)<ul>
+<li>rainbow text</li>
+<li>throbbing heart</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-2" id="code-as-arguments">
+
+<h2>Code as arguments</h2>
+
+<p>Most dialog entries have the option to take raw Python code if you start your entry with <cite>$</cite> (or have that by default).</p>
+<p>You can use this as more than a variable from your conditions file e.g.:</p>
+<blockquote>
+<div><ul class="simple">
+<li>set stimulus position to travel in a circle with <code class="code docutils literal notranslate"><span class="pre">$[</span> <span class="pre">sin(t*2*pi),</span> <span class="pre">cos(t*2*pi)</span> <span class="pre">]</span></code> and set this to <cite>update every frame</cite></li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>NB. If you actually need a dollar symbol to be in your text, do one of:</dt><dd><ul class="simple">
+<li><cite>$”You won $5”</cite>  [include quotes]</li>
+<li><cite>You won \$5</cite></li>
+</ul>
+</dd>
+</dl>
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-2" id="id1">
+
+<h2>Code as arguments</h2>
+
+<p>Let’s create a task where text is gradually revealed.</p>
+<p>Think of a Routine like this:</p>
+<img alt="../_images/routineTextReveal.png" src="../_images/routineTextReveal.png" />
+<p>The text object could be any long piece of text. You might need to make sure the wrap length is set to be the full width of the screen to fit on one line.</p>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-2" id="id2">
+
+<h2>Code as arguments</h2>
+
+<img alt="../_images/revealMaskProperties.png" class="align-right" src="../_images/revealMaskProperties.png" />
+<p>Your mask is a square that moves (note the size and the pos settings).</p>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+<article class="slide level-2" id="quiz-show-faces">
+
+<h2>Quiz show faces</h2>
+
+<ul class="simple">
+<li>Let’s take some faces and make them shrink and rotate while participants try to detect the face.</li>
+<li>The psychological point of this isn’t clear(!), but it used to be popular in quiz shows.</li>
+<li>“Have I got News For You” still does it.</li>
+</ul>
+
+
+
+<div class="slide-no">7</div>
+
+
+</article>
+<article class="slide level-2" id="create-a-pulsating-heart">
+
+<h2>Create a pulsating heart</h2>
+
+<p>Download an image of a “love” heart, preferably one with a transparent background.</p>
+<p>Let’s put that into a PsychoPy experiment and set its size to vary on every frame.</p>
+<a class="reference internal image-reference" href="../_images/heart_red.png"><img alt="../_images/heart_red.png" class="align-center" src="../_images/heart_red.png" style="width: 247.70000000000002px; height: 240.0px;" /></a>
+
+
+
+<div class="slide-no">8</div>
+
+
+</article>
+<article class="slide level-2" id="equation-for-a-pulse">
+
+<h2>Equation for a pulse</h2>
+
+<p>Getting the maths to look right here is going to be the key.</p>
+<p>It’s something based on a sinusoid. Recall that <cite>sin(t)</cite> varies smoothly
+between -1 and 1:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>sin(t)</cite> :  too small</li>
+<li><cite>50*sin(t)</cite> : big enough (50 pixels) but it goes negative</li>
+<li><cite>100+50*sin(t)</cite> : varying nicely between 50 and 150 pixels</li>
+</ul>
+</div></blockquote>
+<p>That’s a good start. If we want to make it more pulse-like we need to
+raise the value to a power before scaling it up:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>100+50*sin(t)**4</cite></li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">9</div>
+
+
+</article>
+<article class="slide level-2" id="more-ideas-and-working-code">
+
+<h2>More ideas and working code</h2>
+
+<p>Inside the examples zip file, look under:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">builder</span><span class="o">/</span><span class="n">dynamic</span>
+</pre></div>
+</div>
+<p>You’ll find working examples of a range of these stimulus setups</p>
+
+
+
+<div class="slide-no">10</div>
+
+
+</article>
+<article class="slide level-2" id="coming-next">
+
+<h2>Coming next</h2>
+
+<p><a class="reference internal" href="15blockDesigns.html#blockdesigns"><span class="std std-ref">Block designs and counterbalancing</span></a></p>
+
+
+
+<div class="slide-no">11</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

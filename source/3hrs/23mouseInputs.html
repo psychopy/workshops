@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mouse inputs &mdash; Workshops for PsychoPy 2020 2020</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../_static/P4Ncustomslides.css" type="text/css" />
+    
+    
+    
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'April 2020',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Workshops for PsychoPy 2020 2020" href="../index.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="mouse-inputs">
+
+<h1>Mouse inputs</h1>
+
+<p>There are some neat aspects to the mouse that can make for interesting interactive experiments</p>
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="slide level-2" id="stimuli-that-move-with-the-mouse">
+
+<h2>Stimuli that move with the mouse</h2>
+
+<p>It’s the easiest thing in the world to make a stimulus appear at the location of the mouse:</p>
+<blockquote>
+<div><ul class="simple">
+<li>add a Mouse Component (let’s call it <cite>mouse</cite>)</li>
+<li>set the position of your stimulus to be at <cite>mouse.getPos()</cite> and <strong>update on every frame</strong></li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-2" id="stimuli-that-act-as-buttons">
+
+<h2>Stimuli that act as buttons</h2>
+
+<p>To turn a stimulus (almost any stimulus) into a button:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Add a Mouse Component (let’s call it <cite>resp</cite>)</li>
+<li>In the Mouse object, provide the names of stimuli that are “clickable”</li>
+<li>Optionally, insert whatever attributes about that stimulus you want to store</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-2" id="is-the-mouse-in-this-area">
+
+<h2>Is the mouse in <em>this</em> area?</h2>
+
+<p>Most stimuli (except for text) have a method <cite>.contains()</cite> and so we can test whether the mouse is at that location.</p>
+<p>Let’s create a circle called <cite>myStim</cite> and an object that tracks the mouse, called <cite>marker</cite> and make <cite>marker</cite> change color if it goes inside the circle.</p>
+<p>All we need is a Code Component with “Each Frame” set to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">myStim</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">mouse</span><span class="p">):</span>
+  <span class="n">marker</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">marker</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-2" id="id1">
+
+<h2>Is the mouse in <em>this</em> area?</h2>
+
+<p>The stimulus that you test can be moving and that’s fine too. The <cite>.contains()</cite> method doesn’t care if the position is changing!</p>
+<p>The “stimulus” can also be invisible (so you’re effectively just using it to define an “area” rather than a stimulus).</p>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-2" id="creating-a-button">
+
+<h2>Creating a button</h2>
+
+<p>Using the fact that we can easily work out where a mouse is we can create dynamic “buttons” with a bit of code as well:</p>
+<blockquote>
+<div><ul class="simple">
+<li>create a stimulus</li>
+<li>test whether the mouse is contained in that stimulus</li>
+<li>test whether the mouse button(s) are being pressed</li>
+</ul>
+</div></blockquote>
+<p>You can even make your button change when it has been pressed (e.g. stimuli that disappear once you click them?) or when you hover over them</p>
+<p>Next we’ll be looking at <a class="reference internal" href="32online.html#onlinestudies"><span class="std std-ref">Running online studies</span></a></p>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

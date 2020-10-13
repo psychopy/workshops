@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Improvements: images, timing and units &mdash; Workshops for PsychoPy 2020 2020</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../_static/P4Ncustomslides.css" type="text/css" />
+    
+    
+    
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'April 2020',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Workshops for PsychoPy 2020 2020" href="../index.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="improvements-images-timing-and-units">
+
+<h1>Improvements: images, timing and units</h1>
+
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="slide level-2" id="overview">
+
+<h2>Overview</h2>
+
+<dl class="docutils">
+<dt>Our study already works but we could make it nicer:</dt><dd><ul class="simple">
+<li>improve the stimulus timing</li>
+<li>using images</li>
+<li>providing a ‘readme’ file</li>
+</ul>
+</dd>
+<dt>Customise using code:</dt><dd><ul class="simple">
+<li>add feedback</li>
+<li>conditions in branching</li>
+</ul>
+</dd>
+</dl>
+<p>(Some of this is just an excuse to do unecessarily fancy stuff!)</p>
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-2" id="understanding-timing-and-frame-rates">
+
+<h2>Understanding timing and frame rates</h2>
+
+<p>So far we’ve used seconds to time our stimuli. This isn’t optimal (no, using <cite>ms</cite> wouldn’t help!)</p>
+<p>Your screen doesn’t refresh constantly. It refreshes every 1/60th of a second (16.667 ms). You can only present your stimulus for integer multiples of that period. e.g:</p>
+<blockquote>
+<div><ul class="simple">
+<li>200 ms duration = 12 frames</li>
+<li>250 ms duration = 15 frames</li>
+<li>210, 220, 230 ms durations = not possible!</li>
+</ul>
+</div></blockquote>
+<p>By setting your time by seconds or ms it’s tempting to forget that this might not be exactly what you’re getting.</p>
+
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-2" id="id1">
+
+<h2>Understanding timing and frame rates</h2>
+
+<p>If your computer (graphics card) is really poor then the screen refresh doesn’t sync with the calls from the code. To test this we can go to the Coder View (in the view menu) and load the time-by-frames script in the demos.</p>
+<p>Good timing looks like this:</p>
+<img alt="../_images/frameTiming.png" class="align-center" src="../_images/frameTiming.png" />
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-2" id="id2">
+
+<h2>Understanding timing and frame rates</h2>
+
+<p><strong>Very short refresh</strong>: If frame times are less than your monitor refresh rate then the monitor is not synchronising to the screen refresh. You might be able to fix that by turning on “vsync” in the graphics card driver settings of your operating system (win/linux).</p>
+<p><strong>Occasional dropped frames</strong>: For a slow computer, or for very complex stimuli, you might “drop” frames. This occurs when the drawing copmutations that need to be done aren’t completed within the screen refresh duration. The graphics card then leaves the existing frame visible for an extra duration and draws your stimuli on the frame after (so that this one frame has the duration of exactly two).</p>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-2" id="id3">
+
+<h2>Understanding timing and frame rates</h2>
+
+<p><strong>For very brief stimuli</strong> you should probably use a set number of frames to time your stimuli. It forces you to think in terms of the monitor refresh period.</p>
+<p><strong>For long-duration stimuli</strong> this matters less, and you stand a higher chance of dropping frames, so using time might be more precise.</p>
+<p>If you have studies that really need millisecond-precise timing (such as EEG) then buy a fast computer with a fast graphics card!</p>
+<p>Be wary of any software package that simply tells you “sub-millisecond timing guaranteed”</p>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+<article class="slide level-2" id="using-images-instead-of-text">
+
+<h2>Using images instead of text</h2>
+
+<dl class="docutils">
+<dt>Our task could use images instead of text for the stimuli. Advantages:</dt><dd><ul class="simple">
+<li><dl class="first docutils">
+<dt>text ‘size’ is tricky:</dt><dd><ul>
+<li>we can set letter height but that corresponds to the size of the font</li>
+<li>we don’t know how much of the font space ‘&gt;’ occupies</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>using images we can create non-textual versions of the task. e.g.:</dt><dd><ul>
+<li>does it work the same for circles of different colours?</li>
+<li>does it work for faces with different expressions?</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+
+
+
+<div class="slide-no">7</div>
+
+
+</article>
+<article class="slide level-2" id="id4">
+
+<h2>Using images instead of text</h2>
+
+<p>OK, let’s use an image file for our targets and distractors.</p>
+<dl class="docutils">
+<dt>We want something in most image formats but not:</dt><dd><ul class="simple">
+<li>vector graphics (svg)</li>
+<li>animated gifs</li>
+</ul>
+</dd>
+</dl>
+<p>Alpha (transparency) channels are supported.</p>
+<dl class="docutils">
+<dt>I’ll use a hand image from here:</dt><dd><a class="reference external" href="http://bit.ly/1JKKYbf">http://bit.ly/1JKKYbf</a></dd>
+</dl>
+<p>(this one is a png file)</p>
+
+
+
+<div class="slide-no">8</div>
+
+
+</article>
+<article class="slide level-2" id="id5">
+
+<h2>Using images instead of text</h2>
+
+<p>Save your image with your experiment. I usually have a folder called <em>‘stims’</em> or <em>‘images’</em> next to my experiment folder and put all my images in there to keep things neat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>flankerTaskFolder
+|── data
+│   |── jwp_flankerText_2016_Jan_14_1513.csv
+│   |── jwp_flankerText_2016_Jan_14_1513.log
+│   |── jwp_flankerText_2016_Jan_14_1513.psydat
+│   |── jwp_flankerText_2016_Jan_14_1514.csv
+│   |── jwp_flankerText_2016_Jan_14_1514.log
+│   |── jwp_flankerText_2016_Jan_14_1514.psydat
+|── stims
+│   |── handLeft.png
+|── conditions.xlsx
+|── flankerText_lastrun.py
+|── flankerText.psyexp
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">9</div>
+
+
+</article>
+<article class="slide level-2" id="id6">
+
+<h2>Using images instead of text</h2>
+
+<dl class="docutils">
+<dt>Filenames can be used just like anything else in PsychoPy:</dt><dd><ul class="simple">
+<li>you can type them in manually</li>
+<li>you can put them in variables (e.g. Excel conditions file)</li>
+</ul>
+</dd>
+<dt>Keep the filename relative:</dt><dd><ul class="simple">
+<li>if it’s right next to the experiment file then just use the file name</li>
+<li>if the stims folder is next to the experiment then use ‘stims/myImage.png’</li>
+<li>avoid the full path (C:/Documents and Settings/jwp/…). What if you move your study?</li>
+</ul>
+</dd>
+</dl>
+<p>Make sure you include the file extension (.jpg, .png, .bmp…). You may need to change the settings of the folder view to see it</p>
+
+
+
+<div class="slide-no">10</div>
+
+
+</article>
+<article class="slide level-2" id="create-a-new-version-of-our-task">
+
+<h2>Create a new version of our task</h2>
+
+<ol class="arabic simple">
+<li>Go to your flanker task in Builder and do &gt;File&gt;Save As… <em>flankerImages</em></li>
+<li>In your <em>trial</em> routine delete the Text Component for your stimulus.</li>
+<li><dl class="first docutils">
+<dt>Insert an Image Component into your trial</dt><dd><ul>
+<li>name = <cite>target</cite></li>
+<li>image = <cite>stims/handLeft.png</cite></li>
+<li>start = 0.5 s</li>
+<li>duration = 1 s</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Run the task so you can see how it looks</li>
+</ol>
+
+
+
+<div class="slide-no">11</div>
+
+
+</article>
+<article class="slide level-2" id="id7">
+
+<h2>Create a new version of our task</h2>
+
+<p>By default the size of the image will be whatever it was on the disk (in pixels).</p>
+<p>For us that’s too big so we want to change it.</p>
+<p>PsychoPy offers a variety of ‘units’ to specify our stimuli.</p>
+<p>If you do specify the size then it doesn’t matter what size the image actually is (in either dimension) on disk. It will be stretched to fit the size you request.</p>
+
+
+
+<div class="slide-no">12</div>
+
+
+</article>
+<article class="slide level-2" id="visual-units-on-the-monitor">
+
+<h2>Visual units on the monitor</h2>
+
+<p>When you specify units for a stimulus they apply to both the location and size, and possibly spatial frequency (for gratings).</p>
+<p>In all units the centre of the screen is (0,0) in PsychoPy</p>
+<p><strong>Normalised units (the default):</strong></p>
+<blockquote>
+<div><p>Here, whatever size your screen is, the coordinates go from -1 (left, bottom) to +1 (right, top). So the screen is width=2, height=2</p>
+<p>If your stimulus has size (0.5, 0.5) it will be 1/4 the width of the screen and 1/4 the height (the width is 2 and this is 0.5 so it’s 1/4 the width. Yes?)</p>
+</div></blockquote>
+
+
+
+<div class="slide-no">13</div>
+
+
+</article>
+<article class="slide level-2" id="id8">
+
+<h2>Visual units on the monitor</h2>
+
+<p>Normalised units are convenient for demos because we know where the edges of the screen are automatically. For size they are a bit strange - square objects get converted to wide objects on a wide screen.</p>
+<p><strong>Height units:</strong></p>
+<blockquote>
+<div><p>Here the height of the screen is assigned the value of 1 and the width is given the scale to match that height.</p>
+<p>So now top and bottom are at 0.5, -0.5 but the left and right locations depend on the aspect ratio of your screen.</p>
+<p>But the nice thing is that now a size of (1,1) is a square that’s exactly the height of the screen</p>
+</div></blockquote>
+
+
+
+<div class="slide-no">14</div>
+
+
+</article>
+<article class="slide level-2" id="id9">
+
+<h2>Visual units on the monitor</h2>
+
+<p><strong>Pix:</strong> The number of pixels is easy to understand, but very much dependent on your screen (pixel sizes vary a lot).</p>
+<p><strong>Cm:</strong> If you tell PsychoPy how wide your screen is in cm then it can calculate stimulus sizes in cm too. Now you can go to a different screen and have the same stmiulus size automatically.</p>
+<p><strong>Deg:</strong> If you tell PsychoPy how wide your screen is (cm) and how away it is, PsychoPy can also use degrees of visual angle for stimulus size. This means the stimulus size is “device independent”.</p>
+<p>To use <em>cm</em> and <em>deg</em> you need to open Monitor Center and set up your monitor, then you ALSO need to go to the Experiment Settings and make sure the screen is using that monitor name</p>
+
+
+
+<div class="slide-no">15</div>
+
+
+</article>
+<article class="slide level-2" id="setting-image-size-for-our-stimuli">
+
+<h2>Setting image size for our stimuli</h2>
+
+<p>For our study, let’s fetch that image for our target and flankers</p>
+<p>Let’s size our stimulus in pixels (easy) and make it 80,40 (the original image was 625x320 pix)</p>
+<p>Run your study. How does it look?</p>
+<p>Now, change the size to be -80,40 and re-run. What happened?</p>
+
+
+
+<div class="slide-no">16</div>
+
+
+</article>
+<article class="slide level-2" id="id10">
+
+<h2>Setting image size for our stimuli</h2>
+
+<dl class="docutils">
+<dt>OK, one easy way to flip our image is to give it a negative size. For this study you could also:</dt><dd><ul class="simple">
+<li>create another copy of the image in photoshop and set the image to change each trial</li>
+<li>rotate the image 180 deg (not quite the same thing but would result in a hand pointing right!)</li>
+<li>use the ‘flip’ option in the advanced section of the Image properties</li>
+</ul>
+</dd>
+</dl>
+<p>For us, this time, negative size happens to be convenient</p>
+
+
+
+<div class="slide-no">17</div>
+
+
+</article>
+<article class="slide level-2" id="id11">
+
+<h2>Setting image size for our stimuli</h2>
+
+<p>To make that flip occur on some trials and not others we need a variable in our conditions file.</p>
+<p>Open your previous conditions and Save As… <strong>conditionsImages.xlsx</strong></p>
+<p>Instead of a column for stimulus we’ll now have a column called <cite>targWidth</cite> and one called <cite>distWidth</cite> and we’ll set those to be congruent or not:</p>
+<blockquote>
+<div><table border="1" class="docutils align-default">
+<colgroup>
+<col width="29%" />
+<col width="31%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">targWidth</th>
+<th class="head">distWidth</th>
+<th class="head">corrAns</th>
+<th class="head">congr</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>80</td>
+<td>80</td>
+<td>left</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>80</td>
+<td>-80</td>
+<td>left</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>-80</td>
+<td>-80</td>
+<td>right</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>-80</td>
+<td>80</td>
+<td>right</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+
+
+
+<div class="slide-no">18</div>
+
+
+</article>
+<article class="slide level-2" id="id12">
+
+<h2>Setting image size for our stimuli</h2>
+
+<p>Now go back to your PsychoPy study and:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Open the trials loop and update your loop to use the new conditions file</li>
+<li>Go to your target stimulus and set its size to be [targWidth, 40] and set it to <strong>set every repeat</strong></li>
+<li><dl class="first docutils">
+<dt>Create 4 Image components for your flankers:</dt><dd><ul>
+<li>names = flank1, flank2, flank3, flank4</li>
+<li>sizes = [distWidth, 40] and <strong>set every repeat</strong></li>
+<li>pos = [-180, 0], [-90, 0], [90, 0], [180,0]</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+
+
+
+<div class="slide-no">19</div>
+
+
+</article>
+<article class="slide level-2" id="id13">
+
+<h2>Setting image size for our stimuli</h2>
+
+<img alt="../_images/targetPropsImages.png" class="align-left" src="../_images/targetPropsImages.png" />
+<p>Your <cite>target</cite> properties should now look like this</p>
+
+
+
+<div class="slide-no">20</div>
+
+
+</article>
+<article class="slide level-2" id="id14">
+
+<h2>Setting image size for our stimuli</h2>
+
+<p>Your <cite>trial</cite> Routine should look like this:</p>
+<img alt="../_images/routineFlankerImages.png" src="../_images/routineFlankerImages.png" />
+<p>For your units you can also alter the default for the entire experiment (that’s often a good idea). You can still override that per-stimulus</p>
+
+
+
+<div class="slide-no">21</div>
+
+
+</article>
+<article class="slide level-2" id="static-intervals">
+
+<h2>Static Intervals</h2>
+
+<p>That pink box, labeled “ISI”. What is it?</p>
+<p>That isn’t actually doing anything in this experiment. It doesn’t cause an “interval” as the name implies. We could actually right-click the pink area and remove it and it would make no difference.</p>
+<p>This is called a Static Component and we can use it to tell PsychoPy that in this period everything is static - we aren’t starting or stopping any stimulus. We can then use this to do time-consuming tasks without harming our timing.</p>
+<p>The main thing it can be used for is loading images from disk, or potentially setting the text of a text Component. These operations can be time consuming. Rather than “set every repeat” we could select “set during trial:ISI”</p>
+
+
+
+<div class="slide-no">22</div>
+
+
+</article>
+<article class="slide level-2" id="keyboards-and-button-boxes">
+
+<h2>Keyboards and button boxes</h2>
+
+<p>You might (or might not) have heard a lot about keyboards being poor for millisecond timing in experiments.</p>
+<p>That’s true - if you want very precise response timing (e.g. to measure response-locked EEG) you probably need specialised hardware.</p>
+<p>Then again ask yourself wether you need it. Usually the participant’s responses are much more variable than the lag/variability in keyboard latency.</p>
+
+
+
+<div class="slide-no">23</div>
+
+
+</article>
+<article class="slide level-2" id="readme-files">
+
+<h2>Readme files</h2>
+
+<p>One of the lesser-known features of PsychoPy is its handling of README files</p>
+<p>Simply place a text file called <cite>readme</cite> or <cite>readme.txt</cite> in the same folder as your experiment and it will appear every time you open that experiment.</p>
+<p>Very useful for:</p>
+<blockquote>
+<div><ul class="simple">
+<li>keeping notes on development of your study</li>
+<li>providing reminders to yourself (“Turn on the speakers!”)</li>
+</ul>
+</div></blockquote>
+<p><cite>Ctrl-I</cite> will toggle the file on/off</p>
+
+
+
+<div class="slide-no">24</div>
+
+
+</article>
+<article class="slide level-2" id="overall">
+
+<h2>Overall</h2>
+
+<p>There are a million ways to control your experiment in PsychoPy, from the very simple to the very fancy.</p>
+<p>Remember the aim/mantra of ours, to be:</p>
+<blockquote>
+<div><ul class="simple">
+<li>intuitive enough for undergrads</li>
+<li>precise enough for psychophysics</li>
+<li>flexible enough for everything else</li>
+</ul>
+</div></blockquote>
+<p>We can keep things easy if your study is easy, but as you make it more detailed and “unusual” you’ll need more coding skills.</p>
+
+
+
+<div class="slide-no">25</div>
+
+
+</article>
+<article class="slide level-2" id="next">
+
+<h2>Next</h2>
+
+<p><a class="reference internal" href="14dynamicStimuli.html#dynamic"><span class="std std-ref">Making things dynamic</span></a></p>
+
+
+
+<div class="slide-no">26</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

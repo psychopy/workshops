@@ -23,8 +23,11 @@ This page is a work in progress but slides for your session are available here. 
 
 - `Creating better Experiments 3 day workshop <slides/3days/index.html>`_
 
+- `Creating better Experiments 3 hr workshop <slides/3hrs/index.html>`_
+
 .. toctree::
     :maxdepth: 1
     :hidden:
 
     Creating better Experiments 3 day workshop <3days/index>
+    Creating better Experiments 3 hour workshop <3hrs/index>

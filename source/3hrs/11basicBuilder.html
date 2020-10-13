@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Builder basics &mdash; Workshops for PsychoPy 2020 2020</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../_static/P4Ncustomslides.css" type="text/css" />
+    
+    
+    
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'April 2020',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Workshops for PsychoPy 2020 2020" href="../index.html" />
+    <link rel="up" title="Building better experiments with" href="index.html" />
+    <link rel="next" title="Making things dynamic" href="14dynamicStimuli.html" />
+    <link rel="prev" title="Introductions" href="10introductions.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="builder-basics">
+
+<h1>Builder basics</h1>
+
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="admonition-overview slide level-1">
+
+<h1>Overview</h1>
+
+<ul class="simple">
+<li><a class="reference internal" href="#builderinterface"><span class="std std-ref">The Builder interface</span></a></li>
+<li><a class="reference internal" href="#conditionsbuilder"><span class="std std-ref">Define your conditions</span></a></li>
+<li><a class="reference internal" href="#trials"><span class="std std-ref">Define your trials</span></a></li>
+<li><a class="reference internal" href="#responsesbuilder"><span class="std std-ref">Collecting responses</span></a></li>
+<li><a class="reference internal" href="#data"><span class="std std-ref">Data options</span></a></li>
+</ul>
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-2" id="the-builder-interface">
+
+<h2>The Builder interface</h2>
+
+<p>An experiment in Builder has:</p>
+<blockquote>
+<div><ul class="simple">
+<li>a single <em>Flow</em></li>
+<li>one or more <em>Routines</em> that are combined in the <em>Flow</em></li>
+<li>several <em>Components</em> that are combined to form <em>Routines</em></li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-2" id="the-flow">
+
+<h2>The Flow</h2>
+
+<p>This is really simply a flow diagram. It only specifies the order in which things occur and whether or not they repeat in a “Loop”.</p>
+<div class="figure align-default">
+<img alt="../_images/flowStroop.png" src="../_images/flowStroop.png" />
+</div>
+<p>The Flow (usually) doesn’t know how long things will last or what happens within them. It simply runs a <em>Routine</em> until that <em>Routine</em> has finished and then moves onto the next until the experiment finishes.</p>
+<p>In the case of the Stroop task we have 3 Routines that run in turn and the ‘trial’ Routine is repeated a number of times in a loop.</p>
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-2" id="routines">
+
+<h2>Routines</h2>
+
+<p>These define how <em>Components</em> interact in time. They allow one or more stimuli to be displayed and responses to be collected at defined times relative to the start of the Routine.</p>
+<p>A typical Routine would be a trial (present one or more stimuli and get a response) but it might be something else, like the presentation of instructions.</p>
+<p>Also, a trial could be comprised of multiple Routines.</p>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-2" id="id3">
+
+<h2>Routines</h2>
+
+<p>Let’s take a look at the <cite>trial</cite> Routine for the Stroop task.</p>
+<img alt="../_images/routineStroop.png" src="../_images/routineStroop.png" />
+<p>The ‘trial’ Routine in the basic Stroop task. You can see there are just two thing comprising the trial, a <cite>Text Component</cite> and a <cite>Keyboard Component</cite></p>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+<article class="slide level-2" id="id4">
+
+<h2>Routines</h2>
+
+<p>You can see that the Routine has a time view, like a track editor for movie/audio editing software, so Components can be controlled independently in time. Maybe a fixation point would stay on for your entire trial but the stimulus would just appear for a short period.</p>
+<p>In the Stroop demo the stimulus and keyboard both start at 0.5 s after the beginning of the Routine. They both last an indefinite duration (the time bar extends beyond the screen).</p>
+
+
+
+<div class="slide-no">7</div>
+
+
+</article>
+<article class="slide level-2" id="components">
+
+<h2>Components</h2>
+
+<img alt="../_images/componentsView.png" class="align-right" src="../_images/componentsView.png" />
+<p>There are many Components that could be added to a Routine. These are shown in the right-hand panel with different categories.</p>
+
+
+
+<div class="slide-no">8</div>
+
+
+</article>
+<article class="slide level-2" id="on-the-toolbar">
+
+<h2>On the toolbar</h2>
+
+<p>The first few icons are probably obvious (New experiment, Open, Save, Undo, Redo).</p>
+<p>With the others, if you hover you’ll get a tooltip telling you what they do.</p>
+<p>The first two concern the overall application settings.</p>
+<img alt="../_images/preferences128.png" class="align-right" src="../_images/preferences128.png" />
+<p>Alters the preferences for the application.</p>
+<img alt="../_images/monitors128.png" class="align-right" src="../_images/monitors128.png" />
+<p>Control monitor calibrations and tell PsychoPy about sizes.</p>
+
+
+
+<div class="slide-no">9</div>
+
+
+</article>
+<article class="slide level-2" id="id5">
+
+<h2>On the toolbar</h2>
+
+<p>The remaining 4 icons control the current experiment:</p>
+<img alt="../_images/settingsExp128.png" class="align-right" src="../_images/settingsExp128.png" />
+<p>Changes settings about this experiment, such as whether it should run full-screen and what the opening dialog should contain.</p>
+<img alt="../_images/compile128.png" class="align-right" src="../_images/compile128.png" />
+<p>The Builder is actually going to create a (slightly complicated) Python script. This button allows you to view the Python code that it will run.</p>
+<img alt="../_images/run128.png" class="align-right" src="../_images/run128.png" />
+<p>Launch your current experiment.</p>
+<img alt="../_images/stop128.png" class="align-right" src="../_images/stop128.png" />
+<p>Force-quit the running current experiment (without saving any data!)</p>
+
+
+
+<div class="slide-no">10</div>
+
+
+</article>
+<article class="slide level-3" id="your-first-study">
+
+<h3>Your first study</h3>
+
+<p>We’ll build the <a class="reference internal" href="#erikson" id="id1"><span>[Erikson]</span></a> flanker task. The task involves a central target with irrelevant objects, that may or may not match the target, on either side. The question is whether the reaction time differs according to whether the flankers match.</p>
+
+
+
+<div class="slide-no">11</div>
+
+
+</article>
+<article class="slide level-2" id="define-your-conditions">
+
+<h2>Define your conditions</h2>
+
+<p>The first thing we need to do when creating a task is to set up the conditions. Think about what differs from one trial to the next:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Do you need different filenames?</li>
+<li>Different “correct” answers?</li>
+<li>Different stimulus durations?</li>
+</ul>
+</div></blockquote>
+<p>In the flanker task we basically need 4 trial variants:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span> <span class="o">&lt;</span> <span class="o">&lt;</span> <span class="o">&lt;</span> <span class="o">&lt;</span>  <span class="c1"># left congruent</span>
+<span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span>  <span class="c1"># left incongruent</span>
+
+<span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span> <span class="o">&gt;</span>  <span class="c1"># right congruent</span>
+<span class="o">&lt;</span> <span class="o">&lt;</span> <span class="o">&gt;</span> <span class="o">&lt;</span> <span class="o">&lt;</span>  <span class="c1"># right incongruent</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">12</div>
+
+
+</article>
+<article class="slide level-2" id="id6">
+
+<h2>Define your conditions</h2>
+
+<p>For now we’ll just use text characters as the stimuli, but they could be anything. We’ll do a version with images afterwards.</p>
+<p>Open a spreadsheet application (e.g. MS Excel) and create this set of entries:</p>
+<blockquote>
+<div><table border="1" class="docutils align-default">
+<colgroup>
+<col width="40%" />
+<col width="32%" />
+<col width="28%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">stim</th>
+<th class="head">corrAns</th>
+<th class="head">congr</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&lt; &lt; &lt; &lt; &lt;</td>
+<td>left</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>&gt; &gt; &lt; &gt; &gt;</td>
+<td>left</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>&gt; &gt; &gt; &gt; &gt;</td>
+<td>right</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>&lt; &lt; &gt; &lt; &lt;</td>
+<td>right</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+
+
+
+<div class="slide-no">13</div>
+
+
+</article>
+<article class="slide level-2" id="id7">
+
+<h2>Define your conditions</h2>
+
+<p>In this table:</p>
+<blockquote>
+<div><ul class="simple">
+<li>The columns represent variables that we can refer to from PsychoPy</li>
+<li>The variable names need to be unique and with no punctuation (case-sensitive)</li>
+<li>The rows represent distinct trials (which we can randomise and repeat)</li>
+<li>In our case <cite>congr</cite> isn’t actually used by PsychoPy but it’s useful for analysis</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">14</div>
+
+
+</article>
+<article class="slide level-2" id="id8">
+
+<h2>Define your conditions</h2>
+
+<p>Create a folder on the computer where you’ll store the experiment.</p>
+<p>Save your spreadsheet inside that folder as an Excel Workbook (<em>.xlsx</em> format), or comma-separated-value (<em>.csv</em>) file.</p>
+
+
+
+<div class="slide-no">15</div>
+
+
+</article>
+<article class="slide level-2" id="define-your-trials">
+
+<h2>Define your trials</h2>
+
+<p>For the flanker task (as we’ve defined it) all we need is a single Text Component on each trial and a Keyboard Component for participants to respond.</p>
+<p>Open the PsychoPy Builder view and make sure you have an empty (New) experiment.</p>
+<p>Save it straight away in the folder you created. (This creates a <em>.psyexp</em> file)</p>
+
+
+
+<div class="slide-no">16</div>
+
+
+</article>
+<article class="slide level-2" id="id9">
+
+<h2>Define your trials</h2>
+
+<p>We want about 0.5s inter-trial-intervals (ITI) so that participants don’t feel too rushed. To achieve that all we need to do is start the stimulus/response Components after a period at the beginning of the Routine.</p>
+<img alt="../_images/textAdd.png" class="align-right" src="../_images/textAdd.png" />
+<p>Create a new Text Component by clicking the button on the right.</p>
+<p>NB: The buttons on the right create new objects, but you can edit an existing object by clicking on its icon in the Routine. You can remove an object by <em>right</em> clicking its icon in the Routine.</p>
+
+
+
+<div class="slide-no">17</div>
+
+
+</article>
+<article class="slide level-2" id="id10">
+
+<h2>Define your trials</h2>
+
+<div class="figure align-default" id="id2">
+<img alt="../_images/textDlg1st.png" src="../_images/textDlg1st.png" />
+<p class="caption"><span class="caption-text">Text dialog with contents for our stimulus</span></p>
+</div>
+
+
+
+<div class="slide-no">18</div>
+
+
+</article>
+<article class="slide level-2" id="id11">
+
+<h2>Define your trials</h2>
+
+<p>Note, we changed:</p>
+<blockquote>
+<div><ul class="simple">
+<li>the <em>start</em> time to 0.5 (seconds after Routine started)</li>
+<li>the <em>stop</em> (duration) could be shorter?</li>
+<li>the <em>text</em> became <em>$stim</em> where the name <em>stim</em> was one of our columns</li>
+<li>the <em>text</em> has been set to <em>update every repeat</em> (of the Routine)</li>
+</ul>
+</div></blockquote>
+<p>NB: Start and stop can be defined in different ways (times, frames, conditions) and a duration/stop that is left blank will last indefinitely.</p>
+<p><em>If you get an error message from your experiment that “stim is not defined” it means one of these things:</em></p>
+<blockquote>
+<div><ul class="simple">
+<li>you didn’t tell PsychoPy to “set every repeat”</li>
+<li>you have a typographical (e.g. capitals) error with your conditions file</li>
+<li>you haven’t told PsychoPy about your conditions file (like now)</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">19</div>
+
+
+</article>
+<article class="slide level-2" id="id12">
+
+<h2>Define your trials</h2>
+
+<p>To repeat trials (with variations as needed) we need to add a loop to your Flow.</p>
+<p>Click ONCE on <em>Add Loop</em> in the FLow panel:</p>
+<img alt="../_images/flowClickInsertLoop.png" class="align-center" src="../_images/flowClickInsertLoop.png" />
+<p>Then click the start and the end points for your loop (it doesn’t matter which you do first). If the is only one remaining valid place for your loop to go the other point will be added automatically.</p>
+<img alt="../_images/flowInsertLoopStart.png" class="align-center" src="../_images/flowInsertLoopStart.png" />
+
+
+
+<div class="slide-no">20</div>
+
+
+</article>
+<article class="slide level-2" id="id13">
+
+<h2>Define your trials</h2>
+
+<p>When the start/end points are added a dialog will appear to allow you to control the settings.</p>
+<img alt="../_images/loopDlg.png" class="align-center" src="../_images/loopDlg.png" />
+<p>NB: Later, you can click on the loop name to get this dialog back.</p>
+
+
+
+<div class="slide-no">21</div>
+
+
+</article>
+<article class="slide level-2" id="id14">
+
+<h2>Define your trials</h2>
+
+<p>Press <cite>Browse…</cite> to find your conditions file, telling PsychoPy about each of your trials.</p>
+<img alt="../_images/loopDlgComplete.png" class="align-left" src="../_images/loopDlgComplete.png" />
+<p>If you got your Excel file right then you’ll see a message telling you how many trial types and variables you created.</p>
+<p>Press <cite>OK</cite></p>
+
+
+
+<div class="slide-no">22</div>
+
+
+</article>
+<article class="slide level-2" id="id15">
+
+<h2>Define your trials</h2>
+
+<p>Your Flow should now look something like this:</p>
+<img alt="../_images/flowWithLoop.png" class="align-center" src="../_images/flowWithLoop.png" />
+<p>At this point you should be able to save your experiment and launch the “study”.</p>
+<p>You’ll see a dialog appear asking for the name of the participant and the “session”.</p>
+<p>When you run you should see different trials occuring. Press <cite>Escape</cite> anytime to quit (will save the data but not much will be in there).</p>
+
+
+
+<div class="slide-no">23</div>
+
+
+</article>
+<article class="slide level-2" id="collecting-responses">
+
+<h2>Collecting responses</h2>
+
+<p>Believe it or not we’ve nearly finished!</p>
+<p>All we really need now is to collect reaction times.</p>
+<p>Add a Keyboard Component to your study with:</p>
+<blockquote>
+<div><ul class="simple">
+<li>start = <cite>0.5</cite> (seconds)</li>
+<li>end = <cite>&lt;leave blank, meaning indefinite&gt;</cite></li>
+<li>allowed keys = <cite>‘left’,’right’</cite></li>
+<li>store correct = <cite>True</cite></li>
+<li>correct = <cite>$corrAns</cite></li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">24</div>
+
+
+</article>
+<article class="slide level-2" id="id16">
+
+<h2>Collecting responses</h2>
+
+<img alt="../_images/keyboardDlg.png" class="align-left" src="../_images/keyboardDlg.png" />
+<p>For more information about the options you could press the help button.</p>
+
+
+
+<div class="slide-no">25</div>
+
+
+</article>
+<article class="slide level-2" id="id17">
+
+<h2>Collecting responses</h2>
+
+<p>Your <cite>trial</cite> Routine should now look like this. Note the start times align at 0.5 but the keyboard option goes on forever. The trial only ends when a response is made in this study.</p>
+<img alt="../_images/routineFlankerText.png" class="align-center" src="../_images/routineFlankerText.png" />
+
+
+
+<div class="slide-no">26</div>
+
+
+</article>
+<article class="slide level-2" id="add-some-instructions">
+
+<h2>Add some instructions</h2>
+
+<dl class="docutils">
+<dt>For instructions:</dt><dd><ul class="simple">
+<li>create a new Routine called <cite>instructions</cite></li>
+<li>insert that Routine into your Flow before the <cite>trials</cite> loop starts</li>
+</ul>
+</dd>
+</dl>
+<img alt="../_images/addRoutine.png" src="../_images/addRoutine.png" />
+<p>Click on that Routine (either in the Flow or in the Routine tabs at the top) to edit that.</p>
+
+
+
+<div class="slide-no">27</div>
+
+
+</article>
+<article class="slide level-2" id="id18">
+
+<h2>Add some instructions</h2>
+
+<dl class="docutils">
+<dt>Add a text component to <cite>instructions</cite> Routine:</dt><dd><ul class="simple">
+<li>name = <cite>instructText</cite></li>
+<li>start = 0</li>
+<li>duration = <cite>&lt;blank i.e. indefinite&gt;</cite></li>
+<li>text = <cite>&lt;something useful here about the keys to press&gt;</cite></li>
+</ul>
+</dd>
+</dl>
+<p>Because we made the text last forever we need to provide something to end the Routine or we’ll never get to the main experiment!</p>
+
+
+
+<div class="slide-no">28</div>
+
+
+</article>
+<article class="slide level-2" id="id19">
+
+<h2>Add some instructions</h2>
+
+<dl class="docutils">
+<dt>Add a keyboard component:</dt><dd><ul class="simple">
+<li>name = <cite>endInstr</cite></li>
+<li>save = nothing</li>
+<li>duration = <cite>&lt;blank i.e. indefinite&gt;</cite></li>
+<li>forceEndRoutine = <cite>True</cite></li>
+<li>allowedKeys = <cite>&lt;blank i.e. any keys&gt;</cite></li>
+</ul>
+</dd>
+</dl>
+<p>NB: make sure the duration is blank. If the keyboard stops being checked after 1 second then PsychoPy will never spot that the key has been pressed. The user will have to press Esc and quit the study.</p>
+
+
+
+<div class="slide-no">29</div>
+
+
+</article>
+<article class="slide level-2" id="add-a-slide-to-say-thanks">
+
+<h2>Add a slide to say “thanks”</h2>
+
+<p>If an experiment suddenly ends after a trial but gives you no message people worry that they broke something.</p>
+<p>Add a Routine like your <cite>instructions</cite> that says something like “Finished! Thanks for taking part.”</p>
+<p>There isn’t much to read so you could just put the text up for 1 or 2 seconds and not bother using a keyboard to get rid of the message.</p>
+
+
+
+<div class="slide-no">30</div>
+
+
+</article>
+<article class="slide level-2" id="changing-your-info-dialog">
+
+<h2>Changing your info dialog</h2>
+
+<img alt="../_images/settingsExp128.png" class="align-left" src="../_images/settingsExp128.png" />
+<p>In the Experiment Settings dialog you can alter the information you collect at the beginning, as well as a variety of other options.</p>
+<p>We don’t care(?) about the “session” number for the participant so we could remove that row.</p>
+<p><strong>Do keep the `participant` setting</strong> (it gets used by default in creating the data filename).</p>
+<p>You could add a row for gender? Is there anything else you want to be kept alongside the data?</p>
+<p>NB: The order of the entries doesn’t matter (will be alphabetical anyway)</p>
+
+
+
+<div class="slide-no">31</div>
+
+
+</article>
+<article class="slide level-2" id="id20">
+
+<h2>Changing your info dialog</h2>
+
+<img alt="../_images/expSettingsFlanker.png" class="align-center" src="../_images/expSettingsFlanker.png" />
+
+
+
+<div class="slide-no">32</div>
+
+
+</article>
+<article class="slide level-2" id="data-options">
+
+<h2>Data options</h2>
+
+<p>The main file output is the trial-by-trial csv file (which opens in Excel).</p>
+<p><strong>Don’t</strong> bother about <cite>summarised</cite> formats and Excel (native) files. They don’t add information and can slow things down.</p>
+<p><strong>Do</strong> keep the <cite>log</cite> file and the <cite>psydat</cite> file. You might not need those but they’re a safety net in case things go wrong.</p>
+<p>The format of the filename can be changed but that’s a little easy to break if you don’t know what you’re doing.</p>
+
+
+
+<div class="slide-no">33</div>
+
+
+</article>
+<article class="slide level-2" id="analyse-your-data">
+
+<h2>Analyse your data</h2>
+
+<dl class="docutils">
+<dt>When we run the experiment PsychoPy will create a folder called data next to the <cite>.psyexp</cite> file. That will contain 3 files for each run of the study:</dt><dd><ul class="simple">
+<li>log file (a text file). Lots of detail. Open in Excel or something like Notepad++</li>
+<li>psydat file (for doing analyses in Python scripts)</li>
+<li>csv file. For most analysis methods.</li>
+</ul>
+</dd>
+</dl>
+<p>The csv file is a simple comma-separated text file. It can be opened in anything (R, SPSS, Excel…)</p>
+<p>My computer is set to open this in Excel if I double-click</p>
+
+
+
+<div class="slide-no">34</div>
+
+
+</article>
+<article class="slide level-2" id="id21">
+
+<h2>Analyse your data</h2>
+
+<dl class="docutils">
+<dt>Open your data file in Excel and <em>save as an Excel Workbook</em>. This means that:</dt><dd><ul class="simple">
+<li>Excel will not keep asking if you want to change the format</li>
+<li>you can add things like graphs and formulae and they will get saved</li>
+<li>if you mess up your analysis here the original file (csv) will still be there to go back to!</li>
+</ul>
+</dd>
+</dl>
+
+
+
+<div class="slide-no">35</div>
+
+
+</article>
+<article class="slide level-2" id="id22">
+
+<h2>Analyse your data</h2>
+
+<p>Each row represents one trial, organised chronologically.</p>
+<p>For this particular analysis all you would need to do is sort by whether the target/flankers were congruent (I told you that would be useful!) and then take the average reaction time of each type of trial.</p>
+<p>The reaction time can be found in the resp.rt column. This measures the time (in secs) from the beginning of the keyboard being available (which we aligned with the stimulus onset).</p>
+<p>That’s it! One study created, run and analysed!</p>
+
+
+
+<div class="slide-no">36</div>
+
+
+</article>
+<article class="slide level-2" id="id23">
+
+<h2>References</h2>
+
+<table class="docutils citation" frame="void" id="erikson" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Erikson]</a></td><td>Eriksen, B. A., Eriksen, C. W. (1974). Effects of noise letters upon identification of a target letter in a non- search task. <em>Perception and Psychophysics</em> 16: 143–149</td></tr>
+</tbody>
+</table>
+
+
+
+<div class="slide-no">37</div>
+
+
+</article>
+<article class="slide level-3" id="next">
+
+<h3>Next</h3>
+
+<p><a class="reference internal" href="12imagesUnits.html#improvements"><span class="std std-ref">Improvements: images, timing and units</span></a></p>
+
+
+
+<div class="slide-no">38</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>
