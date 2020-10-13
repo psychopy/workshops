@@ -1,5 +1,5 @@
 
-.. _session1:
+.. _session1Archive:
 
 Builder basics
 ==============================
@@ -12,7 +12,7 @@ Builder basics
     * :ref:`responsesBuilder`
     * :ref:`data`
 
-.. _builderInterface:
+.. _builderInterfaceArchive:
 
 The Builder interface
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,7 +113,7 @@ Your first study
 
 We'll build the [Erikson]_ flanker task. The task involves a central target with irrelevant objects, that may or may not match the target, on either side. The question is whether the reaction time differs according to whether the flankers match.
 
-.. _conditionsBuilder:
+.. _conditionsBuilderArchive:
 
 Define your conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,7 +164,7 @@ Create a folder on the computer where you'll store the experiment.
 
 Save your spreadsheet inside that folder as an Excel Workbook (*.xlsx* format), or comma-separated-value (*.csv*) file.
 
-.. _trials:
+.. _trialsArchive:
 
 Define your trials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -257,7 +257,7 @@ You'll see a dialog appear asking for the name of the participant and the "sessi
 
 When you run you should see different trials occuring. Press `Escape` anytime to quit (will save the data but not much will be in there).
 
-.. _responsesBuilder:
+.. _responsesBuilderArchive:
 
 Collecting responses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -351,7 +351,7 @@ NB: The order of the entries doesn't matter (will be alphabetical anyway)
     :align: center
 
 
-.. _data:
+.. _dataArchive:
 
 Data options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
