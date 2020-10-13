@@ -2,7 +2,7 @@
 .. _blockDesigns:
 
 Block designs and counterbalancing
-=====================================
+--------------------------------------
 
 A block design is where we have sets of similar trials organised into blocks rather than having trials interleaved.
 
@@ -12,11 +12,11 @@ e.g.
   - a block of Stroop task in English and a block in French
 
 The natural error
----------------------
+`````````````````````````````````````````
 
 The biggest error that people make with this is to create a Routine (and a loop) for each block of trials:
 
-.. image:: /_images/flowBlocksWrong.png
+.. image:: /_images/flowBlocksWrong2020.png
 
 Then they ask on the forum, "How do I shuffle the blocks on my Flow?"
 
@@ -24,69 +24,34 @@ That is the wrong way to think about it.
 
 
 The right way
----------------------
+`````````````````````````````````````````
 
 Instead of a Routine for each block, create a Routine for all your trials and make it behave differently across the blocks:
 
-.. image:: /_images/flowBlocksRight.png
+.. image:: /_images/flowBlocksRight2020.png
 
 Then you can set the conditions files in your blocks loop to control the block-level changes.
 
 The outer "blocks" loop then takes a (meta) "conditions" file that specifies which of the conditions files will be loaded in each block.
 
-Multilingual Stroop task
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. nextslide::
 
-Let's create the Stroop using blocks of French and english
+Imagine we want to extend our Posner task to include a block where invalid trials occur on 80% or trials. 
 
 We need to create a total of 3 conditions files:
 
-  - french.xlsx
-  - english.xlsx
+  - conditions20.xlsx
+  - conditions80.xlsx
   - blocks.xlsx
 
 .. nextslide::
 
-english.xlsx:
-
-======  =============   =========== ===========
-word    letterColour    congruent   corrAns
-======  =============   =========== ===========
-red     red             1           left
-red     green           0           down
-green   green           1           down
-green   blue            0           right
-blue    blue            1           right
-blue    red             1           left
-======  =============   =========== ===========
-
-.. nextslide::
-
-french.xlsx:
-
-======  =============   =========== ===========
-word    letterColour    congruent   corrAns
-======  =============   =========== ===========
-rouge   red             1           left
-rouge   green           0           down
-vert    green           1           down
-vert    blue            0           right
-bleu    blue            1           right
-bleu    red             1           left
-======  =============   =========== ===========
-
-.. nextslide::
 
 blocks.xlsx:
 
-============  ========
-conditions    label
-============  ========
-english.xlsx  English
-french.xlsx   French
-============  ========
+.. image:: /_images/posnerBlocks.png
 
-The `label` variable isn't technically needed but it could be used to tell people what block they are about to enter. The point is that you can still use other variables here, defined at the block level of the program, just as in Method A.
+The `label` variable isn't technically needed but it could be used to tell people what block they are about to enter. The point is that you can still use other variables here, defined at the block level of the program.
 
 .. nextslide::
 
@@ -97,7 +62,7 @@ Now we need to set up the variables inside our experiment:
 
 .. nextslide::
 
-.. image:: /_images/blocksMethodB_blockLoop.png
+.. image:: /_images/blocksMethodB_blockLoop2020.png
 
 .. nextslide::
 
@@ -105,11 +70,11 @@ We could also add a Routine called `blockReady` like an instructions Routine wit
 
   - a text object that says::
 
-    $"Ready to start a block of %s words?\\n\\n Press a key when ready" %(label)
+    $"This block will have a %s probability of invalid cues \n \n Press a key when ready" %(label)
 
-  - a keyboard object to advance to the next trial
+  - a mouse object to advance to the next trial
 
-.. image:: /_images/blocksMethodBFullFlow.png
+.. image:: /_images/blocksMethodBFullFlow2020.png
 
 .. nextslide:: Randomised block design complete!
 
@@ -121,22 +86,22 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 .. _counterbalancedDesigns:
 
 Counterbalancing
----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomise them.
-)
+
 
 Setting the order
-~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````````````````````
 
 PsychoPy doesn't handle the ordering for you - you need to decide how to create the orders and how to assign participants.
 
 Now, rather than a single file to specify the blocks you need one for each order that you want the blocks to appear in (and then set the blocks loop to be `sequential` rather than `random` to preserve the order you set)
 
-For instance, the bilingual Stroop task you might have groupA with alternating languages, beginning with English, and the groupB participants might have the same but starting with French.
+For instance, the Posner task you might have groupA with alternating invalid cue probability, beginning with high prob, and the groupB participants might have the same but starting with low prob.
 
 How to assign participants to a group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+`````````````````````````````````````````
 
 Easiest way is by hand at the start of the run for the participant. The steps are:
 
@@ -153,4 +118,4 @@ You can now create trials and blocks in any order, fixed or random.
 
 You're in complete control (but you need to understand what orders you want!)
 
-Next... :ref:`codeComponents`
+For online use we could also use this handy tool for `generating sequential participant IDs <https://moryscarter.com/vespr/pavlovia.php>`_
