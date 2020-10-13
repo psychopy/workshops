@@ -62,7 +62,6 @@ As we create the project we have the options to:
 
 To view your study online, log into pavlovia.org, you will see your experiment under Dashboard > Experiments.
 
-.. nextSlide::
 
 Let's get some data! 
 
@@ -71,4 +70,4 @@ Next
 
 OK we have now seen the basics of running a study online. Let's talk about some other aspects of the pavlovia environment...
 
-:ref:`pavloviaEnv`
+:ref:`pavloviaEnv3Hrs`
