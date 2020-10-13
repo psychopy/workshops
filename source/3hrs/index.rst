@@ -17,7 +17,7 @@ Building better experiments with
   :level: 2
 
   - These materials are available at -
-`Our workshops page <https://workshops.psychopy.org/>`_ 
+- `Our workshops page <https://workshops.psychopy.org/>`_ 
 
 
 .. nextslide:: Plan
