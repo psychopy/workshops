@@ -13,8 +13,10 @@ Building better experiments with
       :align: right
       :scale: 50 %
 
-.. slide:: Materials
-  :level: 2
+.. nextslide::
+
+Materials
+~~~~~~~~~~~~~~~~~~~~~~
 
 These materials are available at `Our workshops page <https://workshops.psychopy.org/>`_
 
@@ -25,8 +27,9 @@ These materials are available at `Our workshops page <https://workshops.psychopy
     :maxdepth: 1
 
     10introductions
-    11basicBuilder
+    11intermediateBuilder
+    onlineStudies
+    pavloviaEnv3Hrs
+    21codeComponents
     14dynamicStimuli
     15blockDesigns
-    21codeComponents
-    32online
