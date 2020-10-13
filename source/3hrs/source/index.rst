@@ -16,14 +16,8 @@ Building better experiments with
 .. slide:: Materials
   :level: 2
 
-  - These materials are available in various forms:
-
-      - http://www.psychopy.org/builderworkshop (html slides)
-      - http://www.psychopy.org/builderWorkshop2019.pdf
-
-  - And could you download and unzip the examples:
-
-    - http://www.psychopy.org/PsychoPy_examples2019.zip
+  - These materials are available at -
+`Our workshops page <https://workshops.psychopy.org/>`_ 
 
 
 .. nextslide:: Plan
