@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Making deeper changes (advanced) &mdash; Workshops for PsychoPy 2020 2020</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../_static/P4Ncustomslides.css" type="text/css" />
+    
+    
+    
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'April 2020',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Workshops for PsychoPy 2020 2020" href="../index.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="making-deeper-changes-advanced">
+
+<h1>Making deeper changes (advanced)</h1>
+
+<p>You want to change PsychoPy itself?</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>You can!</strong> This is the beauty of Open Source</li>
+<li><strong>It usually isn’t even that hard!</strong> This is the beauty of Python</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="slide level-2" id="what-would-i-want-to-do">
+
+<h2>What would I want to do?</h2>
+
+<p>Who knows? Maybe you want</p>
+<blockquote>
+<div><ul class="simple">
+<li>a DotStim (RDK) that moves in a different way?</li>
+<li>a whole “new” stimulus (e.g. a fixation point that’s three rings)</li>
+<li>a staircase that has a different selection method</li>
+<li>a code component to be reusable</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-2" id="how-to-do-it">
+
+<h2>How to do it</h2>
+
+<p>First you have to work out what the Python code might look like from:</p>
+<blockquote>
+<div><ul class="simple">
+<li>looking at existing code</li>
+<li>searching online</li>
+<li>importing other packages</li>
+<li>…</li>
+</ul>
+</div></blockquote>
+<p>BUT then you also need to work out how to add this in a clean way so that you can still understand your study!</p>
+
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-2" id="classes-and-subclassing">
+
+<h2>Classes and subclassing</h2>
+
+<p>Let’s imagine we’re using dots in our study but we don’t like DotStim. Fine:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Create a new DotStim that looks like the original and import that into your study.</li>
+<li>Ideally your new DotStim is a subclass of the original and just overrides the methods you need</li>
+<li>Now your study can use Builder just as before (easy to see what you’re doing) but you import your own subclass and overwrite DotStim before it gets used</li>
+</ul>
+</div></blockquote>
+<p>Similar solution for the change to the Staircase</p>
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-2" id="make-your-subclass-re-usable">
+
+<h2>Make your subclass re-usable</h2>
+
+<p>If your class is going to be useful to multiple studies:</p>
+<blockquote>
+<div><ul class="simple">
+<li>store it in a file in some central location (HOME/code/psychopyCompons)</li>
+<li><dl class="first docutils">
+<dt>add that location to the python path</dt><dd><ul>
+<li>with a .pth file</li>
+<li>or in PsychoPy prefs (and then import psychopy)</li>
+<li>or by calling sys.path.append() in your script</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>now you can import that class in any study</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-2" id="monkey-patching">
+
+<h2>Monkey-patching</h2>
+
+<p>Sometimes you want to go even further and change something that you can’t sub-class e.g.</p>
+<blockquote>
+<div><ul class="simple">
+<li>because PsychoPy creates it before you can insert code</li>
+<li>because it’s something that will be used globally</li>
+</ul>
+</div></blockquote>
+<p>With “monkey patching” you can replace any command with something of your own, even builtin functions and even after classes have been created.</p>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+<article class="slide level-2" id="custom-components">
+
+<h2>Custom Components</h2>
+
+<p>If you know how to write Code Components then you’re also most of the way to writing your own, reusable, <em>custom component</em> which will appear in the Components Panel of the Builder interface.</p>
+<p>Not necessary but something for advanced technophiles to get into!</p>
+<p>e.g. some users have added their own stimulus types, or hardware components (e.g. eyetracking) of their own</p>
+
+
+
+<div class="slide-no">7</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

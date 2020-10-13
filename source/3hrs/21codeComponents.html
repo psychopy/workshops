@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Code Components &mdash; Workshops for PsychoPy 2020 2020</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/single.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <link rel="stylesheet" href="../_static/P4Ncustomslides.css" type="text/css" />
+    
+    
+    
+    <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'April 2020',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Workshops for PsychoPy 2020 2020" href="../index.html" />
+    <link rel="up" title="Building better experiments with" href="index.html" />
+    <link rel="next" title="Running online studies" href="32online.html" />
+    <link rel="prev" title="Block designs and counterbalancing" href="15blockDesigns.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  
+<article class="slide level-1" id="code-components">
+
+<h1>Code Components</h1>
+
+<p>This goes to the next step in integrating code with your experiment</p>
+
+
+
+<div class="slide-no">1</div>
+
+
+</article>
+<article class="admonition- slide level-2">
+
+<h2></h2>
+
+<dl class="docutils">
+<dt>A Code Component allows you to add multi-line arbitrary Python code at 5 different points in the script:</dt><dd><ul class="simple">
+<li>start of the experiment</li>
+<li>start of the current Routine</li>
+<li>every frame</li>
+<li>end of the Routine</li>
+<li>end of the Experiment</li>
+</ul>
+</dd>
+</dl>
+
+
+
+<div class="slide-no">2</div>
+
+
+</article>
+<article class="slide level-2" id="create-a-feedback-routine">
+
+<h2>Create a feedback Routine</h2>
+
+<dl class="docutils">
+<dt>Let’s create a ‘Feedback’ Routine for the basic task we created earlier (requires a Code Component to decide whether the last response was correct or not).</dt><dd><ul class="simple">
+<li>create a new Routine, <cite>feedback</cite>, that goes immediately after <cite>trial</cite> on the flow</li>
+<li>we need a Code Component (from the ‘Custom’ section) with a message that differs according to the response</li>
+<li>then we’ll use that message in a Text Component</li>
+</ul>
+</dd>
+</dl>
+
+
+
+<div class="slide-no">3</div>
+
+
+</article>
+<article class="slide level-2" id="id1">
+
+<h2>Create a feedback Routine</h2>
+
+<p>In your Code Component select the tab for <cite>Begin Routine</cite> and type in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">corr</span><span class="p">:</span>
+  <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Correct! RT=</span><span class="si">%.3f</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">rt</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Oops! That was wrong&quot;</span>
+</pre></div>
+</div>
+<p>Code Components are obviously something that could get super-complex but you can accomplish a lot with quite simple Python commands.</p>
+
+
+
+<div class="slide-no">4</div>
+
+
+</article>
+<article class="slide level-2" id="id2">
+
+<h2>Create a feedback Routine</h2>
+
+<p>Now create a Text Component:</p>
+<blockquote>
+<div><ul class="simple">
+<li>name = <cite>feedbackTxt</cite> (or something)</li>
+<li>text = <cite>$msg</cite> and make sure you <strong>set every repeat</strong></li>
+</ul>
+</div></blockquote>
+<p>That’s all you need.</p>
+
+
+
+<div class="slide-no">5</div>
+
+
+</article>
+<article class="slide level-2" id="basic-python-syntax">
+
+<h2>Basic Python syntax</h2>
+
+<p>There are so many potential things to learn about Python code and we really can’t teach much of it.</p>
+<p>Assigning variables is done like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># an int</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;some text&quot;</span> <span class="c1"># a string</span>
+</pre></div>
+</div>
+<p>NB strings can use “” or ‘’ as long as the quotes match (and the other quote can be a character inside the string).</p>
+
+
+
+<div class="slide-no">6</div>
+
+
+</article>
+<article class="slide level-2" id="id3">
+
+<h2>Basic Python syntax</h2>
+
+<p>You can also have groups of variables like a list:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">21</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Accessing the contents of a list (or array or string is done like this):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">firstEntry</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># indices start at zero!!</span>
+<span class="n">lastEntry</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">firstLetter</span> <span class="o">=</span> <span class="s1">&#39;my long string&#39;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">middleLetters</span> <span class="o">=</span> <span class="s1">&#39;my long string&#39;</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">7</div>
+
+
+</article>
+<article class="slide level-2" id="id4">
+
+<h2>Basic Python syntax</h2>
+
+<p>Or use a dictionary (dict):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">a</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;jon&#39;</span>
+<span class="n">a</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;male&#39;</span>
+<span class="n">a</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">21</span>
+</pre></div>
+</div>
+<p>and access like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">8</div>
+
+
+</article>
+<article class="slide level-2" id="id5">
+
+<h2>Basic Python syntax</h2>
+
+<p>One very useful dictionary is the <cite>expInfo</cite> dictionary which contains all the info from your initial dialog box:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">expInfo</span><span class="p">[</span><span class="s1">&#39;participant&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Try adding some variables to your Experiment Info dialog (in Experiment Settings) and then use it as the text in a Text Component like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$expInfo[&#39;participant&#39;]
+</pre></div>
+</div>
+<p>You <em>may</em> need to convert your info object to a string first like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$str(expInfo[&#39;consented&#39;])
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">9</div>
+
+
+</article>
+<article class="slide level-3" id="formatted-strings">
+
+<h3>Formatted strings</h3>
+
+<p>Sometimes you need to combine numbers and strings.</p>
+<p>You’ve seen this in the reaction time feedback and you can see it in the setting of the filename for data file (in Experiment Settings).</p>
+
+
+
+<div class="slide-no">10</div>
+
+
+</article>
+<article class="slide level-3" id="id6">
+
+<h3>Formatted strings</h3>
+
+<p>You can simply convert numbers into strings and “add” them to a string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="n">subj</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cond</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span>
+</pre></div>
+</div>
+<p>but that doesn’t provide much control of the formatting of the number. For example, if you wanted a certain number of decimal places it couldn’t set that.</p>
+
+
+
+<div class="slide-no">11</div>
+
+
+</article>
+<article class="slide level-3" id="id7">
+
+<h3>Formatted strings</h3>
+
+<p>In the following the <cite>%i</cite>, <cite>%f</cite> and <cite>%s</cite> indicates that Python go and find a variable in the following list and insert it with the specified representation. Any other text just looks like itself(!). If you’ve ever used formatted string operations in C or Matlab these will make sense pretty quickly, but otherwise they could take some time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;</span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+<span class="s2">&quot;an int:</span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="s2">&quot;a float:</span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="s2">&quot;before</span><span class="si">%i</span><span class="s2">_after&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+<span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.txt&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">subj</span><span class="p">)</span> <span class="c1">#assuming subj was still defined</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s%i</span><span class="s2">.txt&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">subj</span><span class="p">,</span> <span class="n">cond</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">12</div>
+
+
+</article>
+<article class="slide level-3" id="id8">
+
+<h3>Formatted strings</h3>
+
+<p>Now the real advantage of formatted strings is that you can control the number of decimal places, and padding with zeros. Try these out:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;</span><span class="si">%04i</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="s2">&quot;</span><span class="si">%4i</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="s2">&quot;</span><span class="si">%s%03i</span><span class="s2">.txt&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">subj</span><span class="p">,</span> <span class="n">cond</span><span class="p">)</span>
+<span class="s2">&quot;That took </span><span class="si">%f</span><span class="s2"> seconds&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mf">32.5432143</span><span class="p">)</span>
+<span class="s2">&quot;That took </span><span class="si">%.2f</span><span class="s2"> seconds&quot;</span> <span class="o">%</span><span class="p">(</span><span class="mf">32.5243553</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">13</div>
+
+
+</article>
+<article class="slide level-3" id="id9">
+
+<h3>Formatted strings</h3>
+
+<p>There’s a new way to do the same sort of thing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+<span class="s2">&quot;an int:</span><span class="si">{:d}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># it&#39;s d now, not i</span>
+<span class="s2">&quot;a float:</span><span class="si">{:f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="s2">&quot;{:4i}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="s2">&quot;</span><span class="si">{:04d}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It has some advantages in being able to name the entry:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{subj}{cond:02d}</span><span class="s2">.txt&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">subj</span><span class="o">=</span><span class="s1">&#39;jwp&#39;</span><span class="p">,</span> <span class="n">cond</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">14</div>
+
+
+</article>
+<article class="slide level-3" id="if-statements-and-code-blocks">
+
+<h3>If… statements and code blocks</h3>
+
+<p>What gets included in an <cite>if…</cite> statement (or a <cite>for…</cite> loop) is determined by indentation. There is no <cite>end</cite> statement in Python:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s1">&#39;x&#39;</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+  <span class="n">corr</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="n">continueRoutine</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">elif</span> <span class="s1">&#39;y&#39;</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;invalid key&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">corr</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">15</div>
+
+
+</article>
+<article class="slide level-2" id="understanding-the-order-of-execution">
+
+<h2>Understanding the order of execution</h2>
+
+<p>Each entry of your Routine has multiple Components and their code <em>for each part of the experiment</em> is run in the order of the components.</p>
+<p>Do you want you custom code executed before or after your stimulus?</p>
+<p>For our feedback we needed the Code component to create the <cite>msg</cite> variable before the Text Compenent updated its message.</p>
+
+
+
+<div class="slide-no">16</div>
+
+
+</article>
+<article class="slide level-2" id="storing-variables-for-later-use">
+
+<h2>Storing variables for later use</h2>
+
+<p>Often you’ll need to store variables to keep track of things, such as how many times your participant has got the answer correct.</p>
+<p>Let’s take a look at the BART demo (included in PsychoPy Builder).</p>
+
+
+
+<div class="slide-no">17</div>
+
+
+</article>
+<article class="slide level-2" id="branching-and-terminating-routines-early">
+
+<h2>Branching and terminating Routines early</h2>
+
+<p>Basically, you can use an <cite>if…</cite> statement on each frame (or somewhere else) and set a variable to stop on next repeat.</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>continueRoutine</cite>
+can be set to False to exit the current Routine at the next screen refresh</li>
+<li><cite>trials.finished</cite> (where <cite>trials</cite> is the name of a loop) can be set to  <cite>False</cite> and that loop will terminate on its next iteration. This doesn’t abort the current Routine(s) before that</li>
+<li><cite>core.quit()</cite></li>
+</ul>
+</div></blockquote>
+<p>Sometimes you need multiple things</p>
+
+
+
+<div class="slide-no">18</div>
+
+
+</article>
+<article class="slide level-2" id="prevent-a-routine-from-occurring">
+
+<h2>Prevent a Routine from occurring</h2>
+
+<p>You could use the code above to prevent a Routine form occuring.</p>
+<p>You could set a variable that aborted the Routine (setting continueRoutine=False) on the very first frame.</p>
+<p>Alternatively you could surround that Routine by a loop in the Flow and set the a variable for the number of repeats (like <cite>$nReps</cite>). Then just use code to set <cite>nReps=0</cite> and your loop will effectively skip.</p>
+
+
+
+<div class="slide-no">19</div>
+
+
+</article>
+<article class="slide level-2" id="how-to-debug-a-code-component">
+
+<h2>How to debug a code component</h2>
+
+<p>Once you’re adding custom code there are <strong>many</strong> things to go wrong. We’ll look at some of the common issues.</p>
+<p>Look carefully at the message and try google as well - most errors have been encountered by somebody before you! Look at the names of the variables that the error mentions and check the code relating to them.</p>
+<p><cite>print()</cite> statements are really useful here but remove them when you’re done. Lots of print commands can bring your script to a grinding halt!</p>
+
+
+
+<div class="slide-no">20</div>
+
+
+</article>
+<article class="slide level-3" id="debugging-if-statements">
+
+<h3>Debugging <cite>if…</cite> statements</h3>
+
+<p><cite>if…</cite> statements often cause problems for new programmers. Sometimes an entry never gets used, when you think it should be <cite>True</cite></p>
+<p>You may need to use <cite>print()</cite> to work out where in your <cite>if…</cite> statement your code gets to. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">keys</span> <span class="o">==</span> <span class="s1">&#39;k&#39;</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;got a k yippee!&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">keys</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">21</div>
+
+
+</article>
+<article class="slide level-3" id="id10">
+
+<h3>Debugging <cite>if…</cite> statements</h3>
+
+<p>By printing out what the value of <cite>resp.keys</cite> was on the occasions that it goes wrong we can help you debug the code.</p>
+<p>NB. In the case above <cite>keys</cite> is <cite>[‘k’]</cite> not <cite>‘k’</cite> so you never get to see ‘yipee’. You needed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s1">&#39;k&#39;</span> <span class="ow">in</span> <span class="n">resp</span><span class="o">.</span><span class="n">keys</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>to test whether <em>any</em> of the keys were ‘k’</p>
+
+
+
+<div class="slide-no">22</div>
+
+
+</article>
+<article class="slide level-3" id="id11">
+
+<h3>Debugging <cite>if…</cite> statements</h3>
+
+<p>Also, make sure that your <cite>if…</cite> statement catches <em>all</em> the relevant options. For instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">resp</span><span class="o">==</span><span class="s1">&#39;right&#39;</span> <span class="ow">and</span> <span class="n">stimPos</span><span class="o">==</span><span class="s1">&#39;right&#39;</span><span class="p">:</span>
+  <span class="n">correct</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">elif</span> <span class="n">resp</span><span class="o">==</span><span class="s1">&#39;left&#39;</span> <span class="ow">and</span> <span class="n">stimPos</span><span class="o">==</span><span class="s1">&#39;right&#39;</span><span class="p">:</span>
+  <span class="n">correct</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Here we haven’t defined what happens if, say, <cite>resp==’left’</cite> so we might then have a problem that ‘correct’ hasn’t been defined (or it might be left as whatever happened on the previous trial!!)</p>
+
+
+
+<div class="slide-no">23</div>
+
+
+</article>
+<article class="slide level-3" id="syntax-errors">
+
+<h3>Syntax errors</h3>
+
+<p>These crop up when you haven’t written valid code. Check the ‘syntax’ of your code against the examples carefully. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>is a syntax error because you need <strong>==</strong> for a test (not <strong>=</strong>).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="mi">5</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>is a syntax error because the colon is missing</p>
+
+
+
+<div class="slide-no">24</div>
+
+
+</article>
+<article class="slide level-3" id="attribute-errors">
+
+<h3>Attribute errors</h3>
+
+<p>If you get an attribute error it usually means that something in one part of your script has been overwritten by another.</p>
+<p>If the error comes up not on a line of your own hand-written code then it might indicate that one of the variables you created in your code component has overwritten something else.</p>
+<p>For instance, if you had an Image Component called <cite>stimulus</cite> but then you used code to create a variable <cite>stimulus = ‘myImage.jpg’</cite> then you would probably get an error later on like:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if t &gt;= 0.0 and stimulus.status == NOT_STARTED:
+AttributeError: &#39;str&#39; object has no attribute &#39;status&#39;
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">25</div>
+
+
+</article>
+<article class="slide level-3" id="type-errors">
+
+<h3>Type errors</h3>
+
+<p>Type errors can occur when you try to do things with the wrong ‘type’ of object. For instance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>would give:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TypeError: unsupported operand type(s) for +: &#39;int&#39; and &#39;str&#39;
+</pre></div>
+</div>
+<p>if age had defined as a number and name was a <em>string</em>. You would need to convert the number to a string (or vice versa) to add them</p>
+
+
+
+<div class="slide-no">26</div>
+
+
+</article>
+<article class="slide level-3" id="id12">
+
+<h3>Type errors</h3>
+
+<p>Type errors can also occur nowhere near the line of code where they were created (as with Attribute Errors) if you have overwritten another variable with your code.</p>
+<p>Again, look at the line of code where the error is being generated and think about what you’ve done with similar variable names.</p>
+
+
+
+<div class="slide-no">27</div>
+
+
+</article>
+<article class="slide level-3" id="index-errors">
+
+<h3>Index errors</h3>
+
+<p>You can get an <cite>IndexError</cite> by referring to something that is too short (e.g. requesting the third entry in a list with only two entries).</p>
+<p>One of the most common times this happens with Builder Code Components is when you try to test whether the participant pressed a certain key.</p>
+<p>For example you could test whether the first key they pressed was ‘x’ by doing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;yes it was x&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">28</div>
+
+
+</article>
+<article class="slide level-3" id="id13">
+
+<h3>Index errors</h3>
+
+<p>but if the subject hasn’t responded at all then this will yield:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if resp.keys[0]==&#39;x&#39; and corrAns==&#39;x&#39;:
+IndexError: list index out of range
+</pre></div>
+</div>
+<p>You need this instead:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">keys</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">resp</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;yes it was x&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s1">&#39;x&#39;</span> <span class="ow">in</span> <span class="n">resp</span><span class="o">.</span><span class="n">keys</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x was one of the keys&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+
+
+
+<div class="slide-no">29</div>
+
+
+</article>
+<article class="slide level-3" id="the-user-forum">
+
+<h3>The user forum</h3>
+
+<p>The forum (discourse.psychopy.org) is fairly willing to help you fix issues but only if you make it easy:</p>
+<blockquote>
+<div><ul class="simple">
+<li>if you have Code Components in your experiment <strong>always</strong> state that and try to give any relevant pieces</li>
+<li>try to work out which bit of the Code Component is the problem by cutting bits out and trying again</li>
+<li>always give the exact, complete error message (not just the last line)</li>
+<li>if you need to upload the experiment to the forum, try to create a <em>minimal working example</em></li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">30</div>
+
+
+</article>
+<article class="slide level-2" id="how-would-i-know-what-is-possible">
+
+<h2>How would I know what is possible!?</h2>
+
+<p>Of course, the code might be simple when you know it! How would you know that the above are variables?</p>
+<p>PsychoPy has many users, and therefore Google knows PsychoPy well. The documentation and the users forum have many answers, so google very often works.</p>
+<p>Google for: <cite>end a loop early psychopy</cite> and see what happens (hit 1 and 4 both give you the answer above)</p>
+<p>You can also compile any script…</p>
+
+
+
+<div class="slide-no">31</div>
+
+
+</article>
+<article class="slide level-2" id="compiling-code-from-builder">
+
+<h2>Compiling code from Builder</h2>
+
+<img alt="../_images/compileScriptButton.png" src="../_images/compileScriptButton.png" />
+<p>We can see some Python code using the compile button. The scripts generated by Builder are particularly frightening to a non-programmer:</p>
+<blockquote>
+<div><ul class="simple">
+<li>much more code than we needed</li>
+<li><dl class="first docutils">
+<dt>especially more complicated code to</dt><dd><ul>
+<li>start/stop each stimulus/component</li>
+<li>determine whether all the components are finished (i.e. trial is over)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>rather little re-use of code</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">32</div>
+
+
+</article>
+<article class="slide level-2" id="id14">
+
+<h2>Compiling code from Builder</h2>
+
+<p>Builder can’t know your intentions so has to prepare for everything!</p>
+<p>But the code can be useful:</p>
+<blockquote>
+<div><ul class="simple">
+<li>to get ideas for how to do things</li>
+<li><dl class="first docutils">
+<dt>to find out what variables a Builder experiment ‘knows’ about e.g.:</dt><dd><cite>t</cite> is always the current time in seconds since the start of the Routine</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+
+
+
+<div class="slide-no">33</div>
+
+
+</article>
+<article class="slide level-2" id="one-way-streets">
+
+<h2>One-way streets</h2>
+
+<p>You could save and run your exported script (as Builder does each time you press run).</p>
+<p>You could tweak this code and see the effects your edits have on the running of the experiment.</p>
+<p>If you do your changes will <strong>NOT</strong> be reflected back in the Builder experiment.</p>
+<p>Hacking the script might be useful to see how things work but it’s better to add your edits back into the Builder view.</p>
+<p>We’ll see some better ideas in the section <a class="reference internal" href="23mouseInputs.html#mouse"><span class="std std-ref">Mouse inputs</span></a></p>
+
+
+
+<div class="slide-no">34</div>
+
+
+</article>
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

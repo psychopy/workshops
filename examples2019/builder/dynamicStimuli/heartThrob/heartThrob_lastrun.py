@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.4),
-    on October 06, 2020, at 22:43
+    on October 07, 2020, at 13:40
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -136,7 +136,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(heart, 'tStopRefresh')  # time at next scr refresh
             heart.setAutoDraw(False)
     if heart.status == STARTED:  # only update if drawing
-        heart.setSize(100 + 50 * (sin(t*3))**4, log=False)
+        heart.setSize(100 + 50 * (sin(t*3))**2, log=False)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
