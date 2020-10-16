@@ -32,6 +32,15 @@ How can I purchase tickets?
 
 Tickets can be purchased from the `pavlovia store <https://pavlovia.org/store>`_
 
+Dates and timezones
+~~~~~~~~~~~~~~~~~~~~~~
+
++-------------------+-------------------+
+|      Date(s)      |      Timezone     | 
++===================+===================+
+| October 28th-30th | US (East coast)   | 
++-------------------+-------------------+
+
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
 
