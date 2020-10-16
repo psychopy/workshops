@@ -1,104 +1,43 @@
 
-.. ifslides::
-
-  .. image:: /_static/OST600.png
-    :align: left
-    :scale: 25%
-
-Building better experiments with
+Creating Experiments in PsychoPy (3 days)
 `````````````````````````````````````````````````
 
-.. ifslides::
+About
+~~~~~~~~~~~~~~~~~~~~~~
 
-  .. image:: /_static/psychopy.png
-      :align: right
-      :scale: 50%
+These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming in general. We can be quite flexible with what we cover in these sessions but we will keep the themes quite broad to facilitate most attendees. Typically the timetable with appear as follows:
+
+.. image:: /_static/timetable.png
+  :align: center
+  :scale: 50%
+
+What do I need to know in advance?
+~~~~~~~~~~~~~~~~~~~~~~
+
+The only base knowledge we will assume for this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
+
+What technology and/or software will I need to make the most of the workshops?
+~~~~~~~~~~~~~~~~~~~~~~
+
+You will need to download a recent version of PsychoPy and register for a free Pavlovia account in order to follow along with the tasks we create in the workshop.
+
+We run the workshops using a combination of zoom and slack. The slack channel is designed to encourage interaction throughout and provides a few benefits:
+
+- This provides a location to ask questions throughout (for those apprehensive to use the mic).
+- Questions are monitored by other PsychoPy team members, meaning you can get feedback from the whole team.
+- The conversations are archived, so you can come back to the answers to yours and others questions later. 
+
+How can I purchase tickets?
+~~~~~~~~~~~~~~~~~~~~~~
+
+Tickets can be purchased from the `pavlovia store <https://pavlovia.org/store>`_
 
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
 
-These materials are available as a `web page <https://workshops.psychopy.org>`_ or as `html slides <https://workshops.psychopy.org/slides/3days>`_
+The slides and materials for this workshop can be accessed `Here <materials.html>`_
 
-You can also download and unzip `previous examples <https://workshops.psychopy.org/psychopy_examples.zip>`_
-
-
-.. slide:: Day 1
-  :level: 2
-
-  - :ref:`introduction3days`
-  - :ref:`session1`
-  - :ref:`blockDesigns`
-  - :ref:`dynamic`
-  - :ref:`builderAndCode`
-
-.. slide:: Day 2: morning
-  :level: 2
-
-  - :ref:`pavloviaEnv`
-  - :ref:`builderToPavlovia`
-  - :ref:`debuggingOnline`
-
-.. slide:: Day 2: afternoon
-  :level: 2
-
-  - :ref:`firstExperiment`
-
-    - Getting started
-    - Create a window and stimuli
-    - Conditions and trial handlers
-    - Responses
-    - Participant info
-    - Saving your data
-
-  - :ref:`Improvements`
-
-.. slide:: Day 3
-  :level: 2
-
-  - :ref:`syntax`
-
-    - Writing code
-    - Variables: numbers, strings 
-    - Lists and Dicts
-    - Loops and conditionals
-  - :ref:`syntax`
-
-  -:ref:`plottingPosner`
-  
-  - :ref:`generalPurpose`
-
-.. ifslides::
-
-  .. toctree::
-      :hidden:
-      :maxdepth: 2
-
-      10introductions
-      buildingBetter
-      builderAndCode
-      pavlovia
-      pavloviaLaunch
-      debuggingOnline
-      
-      coding/index
-      coding/syntax/index
-
-      general/pythonForGeneral
-
-.. ifnotslides::
-
-  .. toctree::
-
-      :maxdepth: 2
-
-      10introductions
-      buildingBetter
-      builderAndCode
-      pavlovia
-      pavloviaLaunch
-      debuggingOnline
-      
-      coding/index
-      coding/syntax/index
-
-      general/pythonForGeneral
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+    Creating better Experiments 3 day workshop <slides/3days/materials>
