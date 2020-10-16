@@ -14,7 +14,7 @@ There are many resources to help you learn the various aspects of PsychoPy (and 
 
 For users that have a budget, and want some direct training from the Open Science Tools team (who create PsychoPy), we now run frequent workshops with a range of topics, a range of timezones and a range of durations. 
 
-- `About our 3-day workshops <html/3days/about.html>`_
+- `About our 3 day workshops <html/3days/about.html>>`_
 
 .. nextslide::
 
