@@ -1,10 +1,9 @@
 
 .. ifslides::
 
-    .. image:: /_static/OST600.png
-        :align: left
-        :scale: 25 %
-        
+  .. image:: /_static/OST600.png
+    :align: left
+    :scale: 25%
 
 Building better experiments with
 `````````````````````````````````````````````````
@@ -13,14 +12,14 @@ Building better experiments with
 
   .. image:: /_static/psychopy.png
       :align: right
-      :scale: 50 %
+      :scale: 50%
 
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
 
 These materials are available as a `web page <https://workshops.psychopy.org>`_ or as `html slides <https://workshops.psychopy.org/slides/3days>`_
 
-You can also download and unzip `previous examples <https://workshops.psychopy.org/examples2019.zip>`_
+You can also download and unzip `previous examples <https://workshops.psychopy.org/psychopy_examples.zip>`_
 
 
 .. slide:: Day 1
@@ -68,17 +67,38 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   
   - :ref:`generalPurpose`
 
-.. toctree::
-    :maxdepth: 2
+.. ifslides::
 
-    3days/10introductions
-    3days/buildingBetter
-    3days/builderAndCode
-    3days/pavlovia
-    3days/pavloviaLaunch
-    3days/debuggingOnline
-    
-    3days/coding/index
-    3days/coding/syntax/index
+  .. toctree::
+      :hidden:
+      :maxdepth: 2
 
-    3days/general/pythonForGeneral
+      10introductions
+      buildingBetter
+      builderAndCode
+      pavlovia
+      pavloviaLaunch
+      debuggingOnline
+      
+      coding/index
+      coding/syntax/index
+
+      general/pythonForGeneral
+
+.. ifnotslides::
+
+  .. toctree::
+
+      :maxdepth: 2
+
+      10introductions
+      buildingBetter
+      builderAndCode
+      pavlovia
+      pavloviaLaunch
+      debuggingOnline
+      
+      coding/index
+      coding/syntax/index
+
+      general/pythonForGeneral
