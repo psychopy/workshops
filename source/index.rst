@@ -19,7 +19,7 @@ For users that have a budget, and want some direct training from the Open Scienc
 
 You can learn to use PsychoPy from documentation
 
-This page is a work in progress but slides for your session are available here. :
+This page is a work in progress but slides for each session are available here. :
 
 - `Creating better Experiments 3 day workshop <slides/3days/index.html>`_
 
