@@ -23,9 +23,9 @@ What makes a PsychoPy experiment?
 
 Open the posnerHand.psyexp file. An experiment in Builder has:
 
-    - a single *Flow* (specifies the order in which things occur and whether they repeat in a *Loop*)
-    - one or more *Routines* that are combined in the *Flow*
-    - several *Components* that are combined to form *Routines*
+- a single *Flow* (specifies the order in which things occur and whether they repeat in a *Loop*)
+- one or more *Routines* that are combined in the *Flow*
+- several *Components* that are combined to form *Routines*
 
 
 The conditions file
@@ -37,12 +37,20 @@ If you are going to change something on every repeat of a routine (e.g. stimulus
 
 Each header is a parameter, each row corresponds to the value of that parameter on each repeat/trial.
 
-Let's practice making minor edits
+Making edits
 -----------------
 
-    - Add some instructions
-    - Gather some additional info (e.g. age)
-    - Add a routine to 'familiarise' participants with the stimuli
+- Add some instructions
+- Gather some additional info (e.g. age)
+
+First, let's practice making edits to make sure we are comfortable with builder view. 
+
+Exercises (15 minutes)
+-----------------
+
+- add 2 more trials to the conditions file using the 'neutral' arrow image (we want it so that the target can appear either on the left or the right)
+- add an end routine to thank participants for taking part 
+- in the end routine, ask participants to press a button to end the task (you can use a polygon for the 'button')
 
 .. _onlineStudies:
 
@@ -56,13 +64,12 @@ This is where the globe symbols come in, which represet online functionality.
 Running online studies
 -----------------
 
-To get our study online, we check that we are signed into our pavlovia acount. Then we 'sync' our project. 
+To get our study online, we check that we are signed into our pavlovia acount. Then we 'sync' our project. As we create the project we have the options to:
 
-As we create the project we have the options to:
-    - select which 'group' we want to push a project to
-    - add a description that will appear on the 'Experiment' page online
-    - add keywords to help future users find your task (if you make it public)
-    - choose if we want the task to be public*
+- select which 'group' we want to push a project to
+- add a description that will appear on the 'Experiment' page online
+- add keywords to help future users find your task (if you make it public)
+- choose if we want the task to be public*
 
 *we can change the visibility of our task later
 

@@ -14,8 +14,6 @@ Building better experiments with
       :align: right
       :scale: 50 %
 
-.. nextslide::
-
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -33,6 +31,8 @@ Here you can also download a zip containing several premade demos of tasks.
     11intermediateBuilder
     onlineStudies
     pavloviaEnv3Hrs
+    23mouseInputs
+    textBox
+    15blockDesigns
     21codeComponents
     14dynamicStimuli
-    15blockDesigns
