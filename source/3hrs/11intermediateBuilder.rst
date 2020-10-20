@@ -27,6 +27,7 @@ Open the posnerHand.psyexp file. An experiment in Builder has:
     - one or more *Routines* that are combined in the *Flow*
     - several *Components* that are combined to form *Routines*
 
+
 The conditions file
 -----------------
 
@@ -71,6 +72,8 @@ To view your study online, log into pavlovia.org, you will see your experiment u
 
 
 Let's get some data! 
+
+(Please do not use any identifying information in your participant ID)
 
 Next
 ----------
