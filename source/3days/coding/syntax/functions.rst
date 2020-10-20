@@ -136,8 +136,6 @@ If you don't specify any return values in your function but you then try to assi
 Operations in-place
 ~~~~~~~~~~~~~~~~~~~~~
 
-Quick Aside on Copying :ref:`revision`
-
 Remember that Python passes pointers to objects rather than copies of them, unless you manually make a copy. So again, if you do anything that changes the variable 'in-place' then it will be changed in the code that called your function.::
 
     def change(input):

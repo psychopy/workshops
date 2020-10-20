@@ -18,6 +18,16 @@ Code Components
       - end of the Experiment
 
 
+.. nextSlide::
+
+You can also set the code 'type':
+- Py: python code (local use)
+- JS: Java script (code you will only need executing online)
+- Both: allows you to simultaneously edit and add both Py and JS
+- Auto -> JS: type in python, autotranslated to JS
+
+I tend to keep the default (Auto-> JS) and then switch to 'Both' if I need to make edits for online. But keeping seperate JS and Py can help keep things 'modular'
+
 Create a feedback Routine
 ----------------------------
 
@@ -281,6 +291,4 @@ Hacking the script might be useful to see how things work but it's better to add
 What next
 -------------------
 
-Now we know we can set the attributed of components on every frame, we can make some exciting experiments by :ref:`dynamic`
-
-But, adding code is usually where we may run into errors online, so lets talk about some common errors and :ref:`debuggingOnline3Hrs` 
+Knowing how we can set the attributes of components on every frame, we can make some exciting experiments by :ref:`dynamic` as we can with mouse components.
