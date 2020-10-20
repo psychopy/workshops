@@ -40,9 +40,9 @@ Imagine we want to extend our Posner task to include a block where invalid trial
 
 We need to create a total of 3 conditions files:
 
-  - conditions20.xlsx
-  - conditions80.xlsx
-  - blocks.xlsx
+- conditions20.xlsx
+- conditions80.xlsx
+- blocks.xlsx
 
 .. nextslide::
 
@@ -57,8 +57,8 @@ The `label` variable isn't technically needed but it could be used to tell peopl
 
 Now we need to set up the variables inside our experiment:
 
-  - the inner (trials) loop will have a conditions file = `$conditions` which is defined in the `blocks.xlsx` file
-  - the outer (blocks) loop will have conditions file = `blocks.xlsx`
+- the inner (trials) loop will have a conditions file = `$conditions` which is defined in the `blocks.xlsx` file
+- the outer (blocks) loop will have conditions file = `blocks.xlsx`
 
 .. nextslide::
 
@@ -68,11 +68,11 @@ Now we need to set up the variables inside our experiment:
 
 We could also add a Routine called `blockReady` like an instructions Routine with:
 
-  - a text object that says::
+- a text object that says::
 
     $"This block will have a %s probability of invalid cues \n \n Press a key when ready" %(label)
 
-  - a mouse object to advance to the next trial
+- a mouse object to advance to the next trial
 
 .. image:: /_images/blocksMethodBFullFlow2020.png
 
@@ -105,11 +105,11 @@ How to assign participants to a group
 
 Easiest way is by hand at the start of the run for the participant. The steps are:
 
- - In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need to create)
- - For the block loop use that value by calling `expInfo['group']` using one of the alternatives below:
+- In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need to create)
+- For the block loop use that value by calling `expInfo['group']` using one of the alternatives below:
 
-  - `$"block" + expInfo['group'] + ".xlsx"`
-  - `$"block{}.xlsx".format( expInfo['group'] )`
+- `$"block" + expInfo['group'] + ".xlsx"`
+- `$"block{}.xlsx".format( expInfo['group'] )`
 
 All done
 ~~~~~~~~~~~
