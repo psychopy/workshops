@@ -25,7 +25,7 @@ Let's create a 'Feedback' Routine for the basic task we created earlier. We coul
 
 Add a text component and in the 'text' field add::
 
-  $RT=%.3f" %(resp.time)
+  $RT=%.3f" %(resp.time[0])
 
 and 'set to every repeat'
 
@@ -40,7 +40,7 @@ Imagine we want something a bit more complex. We want the colour of the feedback
 
 In your Code Component select the tab for `Begin Routine` and type in::
 
-    if resp.time<.5:
+    if resp.time[0]<.5:
       thisCol='green'
     else:
       thisCol='red'
@@ -49,9 +49,9 @@ Code Components are obviously something that could get super-complex but you can
 
 Translation errors
 ----------------------------
-In order to run online, our python experiment needs to be converted to JS. If you have your code type set to Auto ->JS you might notice when these errors can occur.
+To run online, our python experiment needs to be converted to JS. If you have your code type set to Auto ->JS you might notice when these errors can occur.
 
-We will talk about that in :ref: `debuggingOnline3Hrs`
+We will talk about that in :ref:`debuggingOnline3Hrs` 
 
 Basic Python syntax
 --------------------------------------
