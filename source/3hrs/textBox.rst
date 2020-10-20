@@ -23,5 +23,5 @@ There is alot more we could talk about:
 
 :ref:`blockDesigns` are something many want to implement.
 
-But we could also practice using
+Time permitting we can talk more about
 :ref:`codeComponents`
