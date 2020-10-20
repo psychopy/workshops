@@ -139,7 +139,6 @@ So we have created a basic experiment, pushed it online and learnt about how we 
 
 But what if we want something more complex?
 
-Let's talk about:
+Let's talk about some other types of responses we can get and how these can make our experiment more flexible.
 :ref:`mouse`
-:ref:`codeComponents`
-
+:ref:`typedResponses`

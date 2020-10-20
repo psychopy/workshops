@@ -39,6 +39,8 @@ Add a text component and in the 'text' field add::
 
 and 'set to every repeat'
 
+NB: we might want to use the '+' methos to format strings when moving online.
+
 .. nextSlide::
 
 Imagine we want something a bit more complex. We want the colour of the feedback to change depending on how fast the participant was. For this we need to:
@@ -57,11 +59,10 @@ In your Code Component select the tab for `Begin Routine` and type in::
 
 Code Components are obviously something that could get super-complex but you can accomplish a lot with quite simple Python commands (that now translate to JS!)
 
-Translation errors
+Common coding issues
 ----------------------------
-To run online, our python experiment needs to be converted to JS. If you have your code type set to Auto ->JS you might notice when these errors can occur.
 
-We will talk about that in :ref:`debuggingOnline3Hrs` 
+Locally, syntax errors can be common. If you have your code type set to Auto ->JS you might notice when these errors can occur, but it is also useful to understand why these can occur. 
 
 Basic Python syntax
 --------------------------------------
@@ -146,6 +147,8 @@ and add to that list at the end of each routine::
 
     RTlist.append(resp.time[0])
 
+NB: append is 'push' in JS
+
 .. nextslide::
 
 Then in our final end message we could add a code component where we set some feedback text::
@@ -155,6 +158,8 @@ Then in our final end message we could add a code component where we set some fe
 Then in our text component add::
 
     $feedbackText
+
+NB: we can't use specific python libraries (i.e. numpy) online so we find appropriate alternatives using JS resources.
 
 Branching and terminating Routines early
 ------------------------------------------
