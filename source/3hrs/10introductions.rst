@@ -35,7 +35,7 @@ The growing team
 **Thomas Pronk and Sotiri Bakagiannis**
     * JS developers
 **Rebecca Hirst** 
-    * Science officer - education, outreach, dabbles in programming
+    * Science officer (and part-time post doc)
 
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -100,8 +100,7 @@ Why do people *Code*?
 .. rst-class:: build
 
     - To implement more complex experimental designs/procedures(?)
-    - To break out of the current trial structure
-    - To break out of the hardware drawing loop cycle
+    - To break out of the current trial structure or hardware drawing loop cycle
     - To know exactly what the code is doing(?)
     - To program things that aren't psychology experiments. (e.g. stats, simulations, analyses etc.)
 
@@ -112,7 +111,7 @@ Why do people *Build*?
 
     - It is far faster to develop experiments!
     - You can still understand (and build on) your experiment next year
-    - You'll probably have fewer bugs
+    - You'll probably have fewer bugs (e.g. less space for typos)
     - Code Components can be used in nearly all places where Builder isn't enough
     - Your Builder experiment will also compile to a web (JS/HTML) experiment!
 
