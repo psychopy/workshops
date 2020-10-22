@@ -21,6 +21,7 @@ Code Components
 .. nextSlide::
 
 You can also set the code 'type':
+
 - Py: python code (local use)
 - JS: Java script (code you will only need executing online)
 - Both: allows you to simultaneously edit and add both Py and JS
