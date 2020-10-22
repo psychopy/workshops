@@ -122,7 +122,7 @@ For online use we could also use this handy tool for `generating sequential part
 
 Time permitting
 ~~~~~~~~~~~
-You don't need to know how to code in order to make an experiment in PsychoPy. But, as we have seen, understanding a few simple concepts can really help in making tasks more flexible (e.g. if statements) and PsychoPy allows us to inadertently learn some coding principles.
+You don't need to know how to code in order to make an experiment in PsychoPy. But, as we have seen, understanding a few simple concepts can really help in making tasks more flexible (e.g. if statements) and PsychoPy allows us to inadvertently learn some coding principles.
 
 Let's practice using 
 :ref:`codeComponents`
