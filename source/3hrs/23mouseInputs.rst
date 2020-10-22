@@ -43,6 +43,11 @@ The stimulus that you test can be moving and that's fine too. The `.contains()` 
 
 The "stimulus" can also be invisible (so you're effectively just using it to define an "area" rather than a stimulus).
 
+Is the mouse "pressed in"
+---------------------------------------------
+
+You can continuously check if a mouse is pressed in an object using the mouse.isPressedIn(x) method. To check if the mouse is in the area of x and if one of the buttons is pressed in. 
+
 Creating a button
 ---------------------------------------------
 

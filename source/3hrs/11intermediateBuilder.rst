@@ -45,7 +45,7 @@ Making edits
 
 First, let's practice making edits to make sure we are comfortable with builder view. 
 
-Exercises (15 minutes)
+Exercises (10 minutes)
 -----------------
 
 - add 2 more trials to the conditions file using the 'neutral' arrow image (we want it so that the target can appear either on the left or the right)
