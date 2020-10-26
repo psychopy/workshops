@@ -26,9 +26,8 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   :level: 2
 
   - :ref:`introduction3days`
-  - :ref:`session1`
-  - :ref:`blockDesigns`
-  - :ref:`dynamic`
+  - :ref:`session13Days`
+  - :ref:`mouse3days`
   - :ref:`builderAndCode`
 
 .. slide:: Day 2: morning
@@ -50,7 +49,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
     - Participant info
     - Saving your data
 
-  - :ref:`Improvements`
+  - :ref:`Improvements3days`
 
 .. slide:: Day 3
   :level: 2
@@ -71,10 +70,11 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
   .. toctree::
       :hidden:
-      :maxdepth: 2
+      :maxdepth: 1
 
       10introductions
       buildingBetter
+      23mouseInputs
       builderAndCode
       pavlovia
       pavloviaLaunch
@@ -89,11 +89,12 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
   .. toctree::
 
-      :maxdepth: 2
+      :maxdepth: 1
 
       10introductions
       buildingBetter
       builderAndCode
+      23mouseInputs
       pavlovia
       pavloviaLaunch
       debuggingOnline

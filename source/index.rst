@@ -9,14 +9,26 @@
 Open Science Tools official workshops
 `````````````````````````````````````````````````
 
+Upcoming events
+~~~~~~~~~~~~~~~~~~~~~~
+
++-----------------+----------------------------------------------+
+|     Format      |  Details                                     |
++=================+==============================================+
+|3-day            | `Upcoming events <3days/index.html>`_        |
++-----------------+----------------------------------------------+
+|3-hour           | `Upcoming events <3hrs/index.html>`_         |
++-----------------+----------------------------------------------+
+
+About
+~~~~~~~~~~~~~~~~~~~~~~
 
 There are many resources to help you learn the various aspects of PsychoPy (and most of them are free!)
 
-For users that have a budget, and want some direct training from the Open Science Tools team (who create PsychoPy), we now run frequent 3-day workshops with a range of topics, a range of timezones and a range of durations. You can read 
-`about our 3 day workshops here <3days/index.html>`_
+For users that have a budget, and want some direct training from the Open Science Tools team (who create PsychoPy), we now run frequent `3 day workshops here <3days/index.html>`_ with a range of topics and timezones.
 
-Alternatively, we will now be running shorter 3-hour introductions to PsychoPy. You can read
-`about our 3 hour workshops here <3hrs/index.html>`_
+Alternatively, we are trying out some shorter `3 hour intrpoductory sessions <3hrs/index.html>`_ which can also be booked on a departmental bases through contacting us.
+
 
 
 We were planning also to run a new modular Summer School, called :ref:`pampr`.
@@ -31,7 +43,7 @@ or in-person.
 .. _pampr:
 
 PaMPR (Programming and Methods in Psychology Research)
------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 **2021 dates To Be Confirmed**
 

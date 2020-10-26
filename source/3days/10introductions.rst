@@ -1,4 +1,9 @@
 
+.. ifslides::
+
+  .. image:: /_static/OST600.png
+    :align: left
+    :scale: 25%
 
 .. _introduction3days:
 
@@ -21,6 +26,7 @@ About us
 
 .. image:: /_static/nott_logo.png
     :align: right
+    :scale: 25%
 
 The growing team
 ==========
@@ -32,7 +38,7 @@ The growing team
 **Thomas Pronk and Sotiri Bakagiannis**
     * JS developers
 **Rebecca Hirst** 
-    * Science officer - education, outreach, dabbles in programming
+    * Science officer (and postdoc)
 
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -97,8 +103,7 @@ Why do people *Code*?
 .. rst-class:: build
 
     - To implement more complex experimental designs/procedures(?)
-    - To break out of the current trial structure
-    - To break out of the hardware drawing loop cycle
+    - To break out of the current trial structure or hardware drawing loop cycle
     - To know exactly what the code is doing(?)
     - To program things that aren't psychology experiments. (e.g. stats, simulations, analyses etc.)
 
@@ -131,4 +136,4 @@ Python programming (for experimental psych):
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
     - `Python for Experimental Psychologists <https://www.amazon.co.uk/Python-Experimental-Psychologists-Edwin-Dalmaijer/dp/1138671576>`_ by Edwin Dalmaijer (2017, Routledge)
 
-So, let's go on and learn some :ref:`session1`...
+So, let's go on and learn some :ref:`session13Days`...

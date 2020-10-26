@@ -77,7 +77,7 @@ NB. If you actually need a dollar symbol to be in your text, do one of:
 
 Using code as arguments allows us to easily make stimuli 'dynamic' (i.e. things change their attributes in time). 
 
-Try adding a mouse component and a simple polygon to a routine to present for 5 seconds. set the position of your polygon to be mouse.getPos()
+e.g. our shape that tracked the mouse by setting the shape position to be mouse.getPos()
 
 .. nextslide::
 

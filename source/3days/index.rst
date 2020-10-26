@@ -2,6 +2,17 @@
 Creating Experiments in PsychoPy (3 days)
 `````````````````````````````````````````````````
 
+Upcoming events
+~~~~~~~~~~~~~~~~~~~~~~
+
++--------------------+-------------------+--------------------------------------+
+|      Date(s)       |      Timezone     |  Purchase link                       |
++====================+===================+======================================+
+| October 28th-30th  | US (East coast)   | `Link <https://pavlovia.org/store>`_ |
++--------------------+-------------------+--------------------------------------+
+| November 18th-20th | US (East coast)   | TBC                                  |
++--------------------+-------------------+--------------------------------------+
+
 About
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -10,6 +21,7 @@ These sessions are designed to build confidence creating experiments and getting
 .. image:: /_static/timetable.png
   :align: center
   :scale: 50%
+
 
 What do I need to know in advance?
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -31,15 +43,6 @@ How can I purchase tickets?
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Tickets can be purchased from the `pavlovia store <https://pavlovia.org/store>`_
-
-Dates and timezones
-~~~~~~~~~~~~~~~~~~~~~~
-
-+-------------------+-------------------+
-|      Date(s)      |      Timezone     | 
-+===================+===================+
-| October 28th-30th | US (East coast)   | 
-+-------------------+-------------------+
 
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
