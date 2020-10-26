@@ -1,6 +1,16 @@
 
 Creating Experiments in PsychoPy (3 hours)
 `````````````````````````````````````````````````
+Upcoming events
+~~~~~~~~~~~~~~~~~~~~~~
+
++--------------------+-------------------+--------------------------------------+
+|      Date(s)       |      Timezone     |  Registration link                   |
++====================+===================+======================================+
+| TBC                |     UK (London)   | TBC                                  |
++--------------------+-------------------+--------------------------------------+
+| TBC                |     UK (London)   | TBC                                  |
++--------------------+-------------------+--------------------------------------+
 
 About
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -20,9 +30,7 @@ You will need to download a recent version of PsychoPy and register for a free P
 How can I register?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Currently we are running these workshops as open sessions, please register to attend a session using the following links: 
-
-`October 22nd <https://www.eventbrite.co.uk/e/psychopy-workshop-3hr-tickets-125472887785>`_ .
+Currently we are running these workshops as open sessions, please register to attend a session using the following links in the calander above. 
 
 
 Materials

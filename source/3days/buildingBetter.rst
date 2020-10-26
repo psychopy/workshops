@@ -1,5 +1,5 @@
 
-.. _session1:
+.. _session13Days:
 
 Building better experiments
 ==============================
@@ -38,12 +38,9 @@ Let's practice making minor edits
 Some warm up exercises (5-10 mins)
 -----------------
 
-    - Add a thanks message
-    - Add a routine to familiarise participants with the stimuli. In this routine we want:
-        - An image of the stimulus
-        - Some text to tell the participant what that image is
-        - A mouse click to end the routine
-        - The routine will occur twice (once for each image)
+    - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
+    - Add a 'thanks' message to tell participants when they end the experiment.
+        - in the thanks routine ask participants to click a button with the mouse to end the experiment.
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
@@ -134,7 +131,7 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 .. _counterbalancedDesigns:
 
 Counterbalancing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomise them.
 
@@ -175,5 +172,7 @@ You can now create trials and blocks in any order, fixed or random.
 
 You're in complete control (but you need to understand what orders you want!)
 
-Next... :ref:`builderAndCode`
+Let's touch on what we can get out of :ref:`mouse3days`
+
+Before we talk about :ref:`builderAndCode`
 
