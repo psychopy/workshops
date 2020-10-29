@@ -16,61 +16,20 @@ The plan
 
 Today we are going to practice what we learnt in builder, but focus on getting online. 
 
-We are going to make a new task - an asteroid blast game (AKA response time task). 
+First we will make a VERY simple demo then we will introduce some things that might not work smoothly online.
 
 
-Make your builder file
+The task
 -----------------
-Make a folder called "targetHitTask", open builder view and save the file in our folder. 
+We are going to make a "targetHitTask".
 
-
-Add a stimulus
------------------
-
-Download an image you want (preferably with a transparent background e.g. .png) and save it as 'targetIm'.
-
-.. nextSlide::
-
-Question: 
-
-On each trial we will present our image. We want to present our image in a different location on each trial. How do we do that?
-
-.. nextSlide::
-
-Answer:
-
-We create a conditions file containing the desired X and Y coordinates on each trial, and set our stimulus position to update. 
-
-.. image:: /_images/targetImSettings.png
-    :align: right
-
-Gather a response
------------------
-
-Question: 
+Participants will be presented with targets in a set number of locations (in a random order) and click them as fast as they can. 
 
 On each trial, we want to gather responses from the mouse.
 
 The participant should only be able to click the target.
 
 The image should stay on the screen untill clicked.
-
-.. nextSlide::
-
-Answer:
-
-	- add a mouse component
-		- duration: infinate (blank)
-		- end routine: "valid click"
-		- clickable stimuli: "targetIm"
-	- set the duration field of our image to be empty (infinate)
-
-.. nextSlide::
-
-On a tablet, mouse clicks are translated to screen touches. 
-
-.. image:: /_images/mouseProperties1.png
-    :align: right
 
 Add more routines
 -----------------

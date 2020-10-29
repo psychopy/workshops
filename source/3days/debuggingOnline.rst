@@ -61,14 +61,18 @@ First check that runs locally, if yes, try to run that online.
 
 This time our error doesn't refer to a variable, but it refers to a function we used. 
 
-The crib sheet
+Resources
 -----------------
 
-If we encounter a translation error. The first point of call is the crib sheet. 
+If we encounter a translation error. There are several places we should check for support:
 
-	- https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601
+- `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_
+- `The psychoJS API <https://psychopy.github.io/psychojs/module-visual.Polygon.html>`_
+- `The forum <https://discourse.psychopy.org/>`_
 
-If we search 'round' here, we can see that the JS version of this is provided::
+.. nextSlide::
+
+If we search 'round' in the crib sheet, we can see that the JS version of this is provided::
 
 	round = function(num, n=0) {    
 	    return +(Math.round(num + ("e+" + n))  + ("e-" + n));
@@ -249,6 +253,16 @@ We can then open up our JS file and take a look further.
 .. image:: /_images/syntaxErrorJS.png
     :align: center
 
+Other useful tools
+-----------------
+There are several other tools that can be useful including:
+
+- `counterbalancing online <https://discourse.psychopy.org/>`_ through using sequential participant IDs.
+
+- `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_ also has seceral useful references for daisychaining with qualtrics:
+
+- `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_
+
 
 Take home messages
 -----------------
@@ -258,7 +272,12 @@ Take home messages
 	- Use the developer tools 
 	- You can get more help on discourse! 
 
-So we have now already encountered some code, let's learn some more and :ref:`firstExperiment`.
+Next up!
+-----------------
+
+JS demos followed by a JS Q&A. 
+
+Then let's get more hands on with python code in :ref:`firstExperiment`.
 
 Exercise
 -----------------
