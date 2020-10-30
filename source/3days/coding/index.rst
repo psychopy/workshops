@@ -285,9 +285,7 @@ Each time through the loop the value `thisTrial` is a dictionary for one trial, 
         probe.setPos( [thisTrial['probeX'], 0] )
         cue.setOri( thisTrial['cueOri'] )
 
-You can see the code changes here:
-
-    - `repository: updating stimulus <https://github.com/psychopy/posner/commit/09e7057e0d243f5a211814453324efbd355b2d5e>`_
+You can see the code changes here through looking at the version history on the gitlab project page.
 
 Collect responses
 --------------------------
