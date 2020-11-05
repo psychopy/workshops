@@ -1,42 +1,45 @@
 
 Creating Experiments in PsychoPy (3 hours)
 `````````````````````````````````````````````````
-Upcoming events
+Upcoming 'open' events
 ~~~~~~~~~~~~~~~~~~~~~~
 
-+--------------------+-------------------+--------------------------------------+
-|      Date(s)       |      Timezone     |  Registration link                   |
-+====================+===================+======================================+
-| TBC                |     UK (London)   | TBC                                  |
-+--------------------+-------------------+--------------------------------------+
-| TBC                |     UK (London)   | TBC                                  |
-+--------------------+-------------------+--------------------------------------+
++---------------------------------------------+-------------------------------+----------------------------------------------------------------------------------------------+
+|      Date(s)                                |      Time                     |  Registration link                                                                           |
++=============================================+===============================+==============================================================================================+
+| 12th November 2020                          |     10:00-13:00 UK (London)   | `Link <https://www.eventbrite.co.uk/e/open-psychopy-workshop-3hr-tickets-128099002565>`_     |
++---------------------------------------------+-------------------------------+----------------------------------------------------------------------------------------------+
+| 3rd December 2020                           |     14:00-17:00 UK (London)   | `Link <https://www.eventbrite.co.uk/e/open-psychopy-workshop-3hr-tickets-128103764809>`_     |
++---------------------------------------------+-------------------------------+----------------------------------------------------------------------------------------------+
 
-About
+About 
 ~~~~~~~~~~~~~~~~~~~~~~
 
-These sesssions are intended to give a basic introduction to getting online from builder and start using code to make your experiments more flexible. 
+Formats
+-------
+*open format sessions* We are now running regular 3hr workshops in an 'open' format. These sessions are *free*, and anyone from any institution can attend. Please note that places are limited, so if you are unable to attend please cancel your ticket in advance so that others may register. 
 
-What do I need to know in advance?
-~~~~~~~~~~~~~~~~~~~~~~
+*departmental sessions* If you would like to organise one of our 3hr sessions for your department please contact us directly via workshops at opensciencetools.org we typically charge a small fee for these sessions (£100).
 
-We will assume some knowledge of using builder to get started with this session, but this knowledge can be learnt in this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
+Content
+-------
+These sesssions are intended to give a *basic* introduction to getting online from builder and start using code to make your experiments more flexible. 
+
+The base knowledge that we will assume in advance can be learnt in this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
+
 
 What technology and/or software will I need to make the most of the workshops?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-You will need to download a recent version of PsychoPy and register for a free Pavlovia account in order to follow along with the tasks we create in the workshop.
-
-How can I register?
-~~~~~~~~~~~~~~~~~~~~~~
-
-Currently we are running these workshops as open sessions, please register to attend a session using the following links in the calander above. 
+- Zoom - to stream the sessions
+- PsychoPy - we recommend downloading a recent version
+- Pavlovia - please register for a free acount `here <https://pavlovia.org/>`_ .
 
 
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The slides and materials for this workshop can be accessed `Here <materials.html>`_
+The slides and materials for this workshop can be accessed `Here <materials.html>`_ These materials will remain open for you to use and share, but may be updated as we continue developing workshop content. 
 
 .. toctree::
     :maxdepth: 1
