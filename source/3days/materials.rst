@@ -81,6 +81,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       debuggingOnline
       
       coding/index
+      coding/improvements
       coding/syntax/index
 
       general/pythonForGeneral
@@ -100,6 +101,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       debuggingOnline
       
       coding/index
+      coding/improvements
       coding/syntax/index
 
       general/pythonForGeneral

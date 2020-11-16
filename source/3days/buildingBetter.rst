@@ -16,9 +16,9 @@ What makes a PsychoPy experiment?
 
 Open the posnerHand.psyexp file. An experiment in Builder has:
 
-    - a single *Flow* (specifies the order in which things occur and whether they repeat in a *Loop*)
-    - one or more *Routines* that are combined in the *Flow*
-    - several *Components* that are combined to form *Routines*
+- a single *Flow* (specifies the order in which things occur and whether they repeat in a *Loop*)
+- one or more *Routines* that are combined in the *Flow*
+- several *Components* that are combined to form *Routines*
 
 The conditions file
 -----------------
@@ -32,15 +32,15 @@ Each header is a parameter, each row corresponds to the value of that parameter 
 Let's practice making minor edits
 -----------------
 
-    - Add some instructions
-    - Gather some additional info (e.g. age)
+- Add some instructions
+- Gather some additional info (e.g. age)
 
 Some warm up exercises (5-10 mins)
 -----------------
 
-    - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
-    - Add a 'thanks' message to tell participants when they end the experiment.
-        - in the thanks routine ask participants to click a button with the mouse to end the experiment.
+- Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
+- Add a 'thanks' message to tell participants when they end the experiment.
+    - in the thanks routine ask participants to click a button with the mouse to end the experiment.
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
@@ -85,9 +85,9 @@ Imagine we want to extend our Posner task to include a block where invalid trial
 
 We need to create a total of 3 conditions files:
 
-  - conditions20.xlsx
-  - conditions80.xlsx
-  - blocks.xlsx
+- conditions20.xlsx
+- conditions80.xlsx
+- blocks.xlsx
 
 .. nextslide::
 
@@ -102,8 +102,8 @@ The `label` variable isn't technically needed but it could be used to tell peopl
 
 Now we need to set up the variables inside our experiment:
 
-  - the inner (trials) loop will have a conditions file = `$conditions` which is defined in the `blocks.xlsx` file
-  - the outer (blocks) loop will have conditions file = `blocks.xlsx`
+- the inner (trials) loop will have a conditions file = `$conditions` which is defined in the `blocks.xlsx` file
+- the outer (blocks) loop will have conditions file = `blocks.xlsx`
 
 .. nextslide::
 
@@ -113,11 +113,11 @@ Now we need to set up the variables inside our experiment:
 
 We could also add a Routine called `blockReady` like an instructions Routine with:
 
-  - a text object that says::
+- a text object that says::
 
     $"This block will have a %s probability of invalid cues \n \n Press a key when ready" %(label)
 
-  - a mouse object to advance to the next trial
+- a mouse object to advance to the next trial
 
 .. image:: /_images/blocksMethodBFullFlow2020.png
 
@@ -150,18 +150,18 @@ How to assign participants to a group
 
 Easiest way is by hand at the start of the run for the participant. The steps are:
 
- - In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need to create)
- - For the block loop use that value by calling `expInfo['group']` using one of the alternatives below:
+- In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need to create)
+- For the block loop use that value by calling `expInfo['group']` using one of the alternatives below:
 
-  - `$"block" + expInfo['group'] + ".xlsx"`
-  - `$"block{}.xlsx".format( expInfo['group'] )`
+- `$"block" + expInfo['group'] + ".xlsx"`
+- `$"block{}.xlsx".format( expInfo['group'] )`
 
 Some exercises (10-15 mins)
 -----------------
 
-    - Instead of changing the cue_image on each repeat. Manipulate the direction of the arrow using the 'Orientation' field of your cue component.
-    - Add 2 new blocks (one 20% invalid cues the other 80% invalid) but, in these blocks, the target is instead presented above or below the fixation.
-    - We will present the blocks in a randomised block design.
+- Instead of changing the cue_image on each repeat. Manipulate the direction of the arrow using the 'Orientation' field of your cue component.
+- Add 2 new blocks (one 20% invalid cues the other 80% invalid) but, in these blocks, the target is instead presented above or below the fixation.
+- We will present the blocks in a randomised block design.
 
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
 
