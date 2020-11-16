@@ -23,11 +23,11 @@ As a first step to combining your code with a Builder is to compile a builder sc
 
 Compare this with scripts you've written:
 
-    - much more code than we needed
-    - especially more complicated code to
-        - start/stop each stimulus/component
-        - determine whether all the components are finished (i.e. trial is over)
-    - rather little re-use of code
+- much more code than we needed
+- especially more complicated code to
+    - start/stop each stimulus/component
+    - determine whether all the components are finished (i.e. trial is over)
+- rather little re-use of code
 
 Builder doesn't know your intentions so plans for everything
 
@@ -35,16 +35,16 @@ Builder doesn't know your intentions so plans for everything
 
 Many similar concepts:
 
-    - similar imports
-    - initialisation of objects
-    - creating a dialog box from a dictionary
-    - TrailHandler(s) and ExperimentHandler
+- similar imports
+- initialisation of objects
+- creating a dialog box from a dictionary
+- TrailHandler(s) and ExperimentHandler
 
 It can be useful:
 
-    - to get ideas for how to do things
-    - to find out what variables a Builder experiment 'knows' about e.g.:
-        `t` is always the current time in sec since the start of the Routine
+- to get ideas for how to do things
+- to find out what variables a Builder experiment 'knows' about e.g.:
+    `t` is always the current time in sec since the start of the Routine
 
 One-way streets
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,12 +66,12 @@ Most dialog entries have the option to take raw Python code if you start your en
 
 You can use this as more than a variable from your conditions file e.g.:
 
-    - set stimulus position to be :code:`$[ sin(t*2*pi), cos(t*2*pi) ]` and set this to `update every frame`
-    - set a text object to have text :code:`"ABC"[randint(3)]` and have it `update every repeat`
+- set stimulus position to be :code:`$[ sin(t*2*pi), cos(t*2*pi) ]` and set this to `update every frame`
+- set a text object to have text :code:`"ABC"[randint(3)]` and have it `update every repeat`
 
 NB. If you actually need a dollar symbol to be in your text, do one of:
-    - `$"You won $5"`  [include the quotes]
-    - `You won \$5`
+- `$"You won $5"`  [include the quotes]
+- `You won \$5`
 
 .. nextslide::
 
@@ -93,9 +93,9 @@ If you want to learn more about a method in an object you can print the docstrin
 
 Making things dynamic could allow you to, for instance:
 
-  - gradually reveal an object
-  - make an object move to make the task harder
-  - make an object more interesting for participants (e.g. developmental)
+- gradually reveal an object
+- make an object move to make the task harder
+- make an object more interesting for participants (e.g. developmental)
 
 .. nextslide::
 
@@ -121,12 +121,12 @@ This goes to the next step in integrating code with your experiment
 
 A Code Component allows you to add Python (and now JS) code at 6 different points in the script:
 
-    - before the experiment
-    - start of the experiment
-    - start of the current Routine
-    - every frame
-    - end of the Routine
-    - end of the Experiment
+- before the experiment
+- start of the experiment
+- start of the current Routine
+- every frame
+- end of the Routine
+- end of the Experiment
 
 .. nextslide::
 
@@ -143,9 +143,10 @@ Do you want you custom code executed before or after your stimulus?
 .. nextslide::
 
 Let's try and create a 'Feedback' Routine for the Posner task we want to:
-    - Add trial by trial feedback on response times 
-    - Adjust the colour of the feedback based on RT
-    - Give feedback at the end on average RT overall, on valid trials and on invalid trials.
+
+- Add trial by trial feedback on response times 
+- Adjust the colour of the feedback based on RT
+- Give feedback at the end on average RT overall, on valid trials and on invalid trials.
 
 .. nextslide::
 
@@ -175,27 +176,28 @@ To give feedback at the end for each condition let's learn about lists. We want 
 .. nextslide::
 
 Some useful *Python* methods
-    - .append() - adds to a list
-    - np.average() - returns average of a list using the numpy (np) library. 
+
+- .append() - adds to a list
+- np.average() - returns average of a list using the numpy (np) library. 
 
 Exercises (15-20 minutes)
 ---------------------
 
 Try: 
 
-    1. Add a feedback tone that varies in frequency depending on if the RT fell in the desired time limit. 
-    2. Add a text component to the end feedback routine to tell participants if they showed a Posner cueing effect.
-    3. IF participants show a posner cueing effect, tell them how large their effect was in ms. 
+1. Add a feedback tone that varies in frequency depending on if the RT fell in the desired time limit. 
+2. Add a text component to the end feedback routine to tell participants if they showed a Posner cueing effect.
+3. IF participants show a posner cueing effect, tell them how large their effect was in ms. 
 
 Code Components - Advanced
 ---------------------
 
 Go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
 
-    - what is the current size of the balloon?
-    - did the participant press the 'pump' key?
-    - did we exceed our maxPumps for this balloon?
-    - ...
+- what is the current size of the balloon?
+- did the participant press the 'pump' key?
+- did we exceed our maxPumps for this balloon?
+- ...
 
 First, everyone have a run through of this demo to familiarize yourself with the task. 
 
@@ -206,11 +208,11 @@ OK let's talk through the existing code components and the files in this demo. T
 Exercises (20-30 minutes)
 ---------------------
 
-    1. Make the colour of the balloon change on every trial (either green or blue)
-    2. Add a new condition, where blue balloons have a high risk of popping early, whilst green balloons do not. 
-    3. Allow the researcher to assign participants to either group A or B - where group A will have the standard condition first, followed by block where colour predicts pop timing, and group B vice versa.
-    4. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
-    5. Add a penalty - you loose earnings if the baloon pops..
+1. Make the colour of the balloon change on every trial (either green or blue)
+2. Add a new condition, where blue balloons have a high risk of popping early, whilst green balloons do not. 
+3. Allow the researcher to assign participants to either group A or B - where group A will have the standard condition first, followed by block where colour predicts pop timing, and group B vice versa.
+4. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
+5. Add a penalty - you loose earnings if the baloon pops..
 
 Code Components - Advanced
 ---------------------
@@ -245,6 +247,6 @@ Exercises (15-20 minutes)
 ---------------------
 Painting shapes...
 
-    1. present 4 white polygons (circles, triangle, rectangle)
-    2. add a mouse component to click the polygons
-    3. if a polygon is clicked, set it's colour to green
+1. present 4 white polygons (circles, triangle, rectangle)
+2. add a mouse component to click the polygons
+3. if a polygon is clicked, set it's colour to green

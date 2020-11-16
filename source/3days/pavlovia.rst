@@ -33,8 +33,8 @@ The Pavlovia environment
 
 Pavlovia is:
 
-    - A secure server to launch and run experiments
-    - An experiment repository
+- A secure server to launch and run experiments
+- An experiment repository
 
 Pavlovia and the library used to run experiments in browser (PsychoJS) are relatively young (2018) - this means minor changes may occur as we develop and improve the platform (e.g. recently given option to not save incomplete data)
 
@@ -105,10 +105,10 @@ Viewing the code will take you to "gitlab". This allows similar features to GitH
 
 Benefits of GitLab (the important bits):
 
-	 - Version control
-	 - Add lab members to projects to work on the same files
-	 - Easy sharing of your task (open science)
-	 - Others can fork, use and develop your task (more citations?)
+ - Version control
+ - Add lab members to projects to work on the same files
+ - Easy sharing of your task (open science)
+ - Others can fork, use and develop your task (more citations?)
 
 Gitlab: version control
 -----------------
@@ -241,11 +241,11 @@ Exercises (10-15 mins)
 
 Let's get some practice using pavlovia.org!
 
-    1. in your breakout room make a group for you to share something. 
-    2. try forking the project we worked on yesterday to your group area
-    3. try searching that project from your local psychopy 
-    4. make a small edit 
-    5. upload and see if the change shows on gitlab!
+1. in your breakout room make a group for you to share something. 
+2. try forking the project we worked on yesterday to your group area
+3. try searching that project from your local psychopy 
+4. make a small edit 
+5. upload and see if the change shows on gitlab!
 
 NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 

@@ -267,10 +267,10 @@ There are several other tools that can be useful including:
 Take home messages
 -----------------
 
-	- Common errors are usually translation errors
-	- Look at the crib sheet 
-	- Use the developer tools 
-	- You can get more help on discourse! 
+- Common errors are usually translation errors
+- Look at the crib sheet 
+- Use the developer tools 
+- You can get more help on discourse! 
 
 Next up!
 -----------------

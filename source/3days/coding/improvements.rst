@@ -13,9 +13,9 @@ Improvements
 
 Previously we mentioned a few problems that we will work on in this session:
 
-    - we should time our stimulus presentations by number of frames, for brief stimuli, not by a clock
-    - a very fast response gets ignored because we only start looking at the keyboard after the probe has gone
-    - we don't have any practice trials (to learn that the cue is 'informative')
+- we should time our stimulus presentations by number of frames, for brief stimuli, not by a clock
+- a very fast response gets ignored because we only start looking at the keyboard after the probe has gone
+- we don't have any practice trials (to learn that the cue is 'informative')
 
 Presenting stimuli by frames
 ------------------------
@@ -67,10 +67,10 @@ For more precise keypress measurements, we can use the Keyboard class rather tha
 
 Uses python-psychtoolbox lib and has some advantages:
 
-    * polling is performed and timestamped asynchronously with the main thread (times relate to when the key was pressed, not when the call was made)
-    * it's faster
-    * can detect the KeyUp events (enabling) keypress duration
-    * on Linux and Mac you can distinguish between different keyboard devices (see getKeyboards())
+* polling is performed and timestamped asynchronously with the main thread (times relate to when the key was pressed, not when the call was made)
+* it's faster
+* can detect the KeyUp events (enabling) keypress duration
+* on Linux and Mac you can distinguish between different keyboard devices (see getKeyboards())
 
 .. note:: On 32 bit installations and Python2 older psychopy.event.getKeys() is used.
 
@@ -139,7 +139,7 @@ Now lets run that and look at the output...
 
 .. nextslide::
 
-We can add a message to warn participants when they will start the next block. 
+We can add a message to warn participants when they will start the next block::
 
 	Continue = visual.TextStim(win,
 		units='norm', height = 0.1,
@@ -167,8 +167,8 @@ Further improvements
 
 Exercises:
 
-	- Add trial-by-trial feedback on correctness and RT
-	- End the practice trials early if the participant scores 5 correct in a row
+- Add trial-by-trial feedback on correctness and RT
+- End the practice trials early if the participant scores 5 correct in a row
 
 
 

@@ -14,11 +14,11 @@ The Posner Cuing task
 
 Synopsis of the study:
 
-    - Present a probe to the left or right of fixation
-    - Participants have to respond to the presence of the probe as quickly as possible
-    - Precede the probe with a cue
-    - Usually the cue predicts the probe location
-    - We can measure the effect of attention by the difference in reaction times between correct and incorrect cues
+- Present a probe to the left or right of fixation
+- Participants have to respond to the presence of the probe as quickly as possible
+- Precede the probe with a cue
+- Usually the cue predicts the probe location
+- We can measure the effect of attention by the difference in reaction times between correct and incorrect cues
 
 
 How do we even start?
@@ -28,14 +28,14 @@ Don't be tempted to try and write a script from beginning to end in one go! Brea
 
 .. rst-class:: build
 
-    - create a trial
-        - create window
-        - create fixation, cue and probe stimuli
-        - set up the timing of the trial
-    - set up conditions
-        - need to alter probe location
-        - need to alter cues
-    - make sure data are being saved
+- create a trial
+    - create window
+    - create fixation, cue and probe stimuli
+    - set up the timing of the trial
+- set up conditions
+    - need to alter probe location
+    - need to alter cues
+- make sure data are being saved
 
 Create a window
 ---------------------
@@ -95,25 +95,19 @@ Also add draw() code like the other objects. Again, it doesn't matter the order 
 Understanding `Window.flip()`
 -------------------------------
 
-    - All the `draw()` commands operate on a memory buffer called the 'back buffer' on the graphics card.
-
-    - When you `flip()` the window it causes everything in that 'back buffer' to become visible on the physical screen.
-
-    - The flip() command waits until the next screen refresh to present your stimuli (every 1/60s, so about 16.6ms)
-
-    - It will then wait until the physical screen refresh occurs (if possible with your graphics card settings)
+- All the `draw()` commands operate on a memory buffer called the 'back buffer' on the graphics card.
+- When you `flip()` the window it causes everything in that 'back buffer' to become visible on the physical screen.
+- The flip() command waits until the next screen refresh to present your stimuli (every 1/60s, so about 16.6ms)
+- It will then wait until the physical screen refresh occurs (if possible with your graphics card settings)
 
 .. nextslide::
 
 This has various knock-on effects:
 
-    - That means your screen flips (and intervening code) are tied to a fixed rate of 1/60s
-
-    - It is physically impossible to draw your stimulus for partial frames (e.g. 25ms) on a 60Hz screen
-
-    - Also, if Python/PsychoPy has to run too much code between flips you might 'drop' a frame (fail to get it drawn by the time of the screen refresh)
-
-    - If you don't call `flip()` for a while, or if you drop a frame, the screen will stay as it is for another frame
+- That means your screen flips (and intervening code) are tied to a fixed rate of 1/60s
+- It is physically impossible to draw your stimulus for partial frames (e.g. 25ms) on a 60Hz screen
+- Also, if Python/PsychoPy has to run too much code between flips you might 'drop' a frame (fail to get it drawn by the time of the screen refresh)
+- If you don't call `flip()` for a while, or if you drop a frame, the screen will stay as it is for another frame
 
 Set some timing parameters
 -----------------------------
@@ -222,23 +216,23 @@ We can import conditions from either *.xlsx* or *.csv* files.
 
 Create a file with:
 
-    - headings that specify dictionary fields
-    - (headings better with no spaces or punctuation, although that won't actually matter today)
-    - one row per condition/trial-type
-    - no missing columns or rows (e.g. don't leave a row between header and trials)
+- headings that specify dictionary fields
+- (headings better with no spaces or punctuation, although that won't actually matter today)
+- one row per condition/trial-type
+- no missing columns or rows (e.g. don't leave a row between header and trials)
 
 
 .. nextslide::
 
 For the Posner task we *need* control of:
 
-    - direction of cue (we could rotate the stimulus 180 deg to point the other way)
-    - location of probe
+- direction of cue (we could rotate the stimulus 180 deg to point the other way)
+- location of probe
 
 For analysis it's handy also to store:
 
-    - something to signal whether this trial is 'valid cue'
-    - a description of this trial?
+- something to signal whether this trial is 'valid cue'
+- a description of this trial?
 
 .. nextslide::
 
@@ -336,12 +330,6 @@ And store the responses in the TrialHandler::
 
 (Note that we aren't saving the data file yet though!)
 
-You can see the full set of code changes here:
-
-`repository: collecting responses <https://github.com/psychopy/posner/commit/2aaebe7450d1828c3d0a28a8a84d8af5ebf55286>`_
-
-(The 'view' button will fetch you the full script so far)
-
 .. _experimentHandler:
 
 Using the ExperimentHandler
@@ -349,22 +337,22 @@ Using the ExperimentHandler
 
 For today the `ExperimentHandler` isn't strictly needed, but it allows some nice things so we'll use it:
 
-    - it allows multiple loops/handlers to be combined into one (e.g. we could have a loop of practice trials and another loop of main trials)
-    - it saves data automatically in 3 formats even if there's an error:
+- it allows multiple loops/handlers to be combined into one (e.g. we could have a loop of practice trials and another loop of main trials)
+- it saves data automatically in 3 formats even if there's an error:
 
-        - log file for detail but not for analysis
-        - csv file trial-by-trial is easy for analysis
-        - psydat file contains more info about trials than csv file (and can regenerate the csv!)
+  - log file for detail but not for analysis
+  - csv file trial-by-trial is easy for analysis
+  - psydat file contains more info about trials than csv file (and can regenerate the csv!)
 
 
 .. nextslide::
 
 All we need to do is:
 
-    - create a base file name for our data files
-    - create the `ExperimentHandler`
-    - add our `trials` loop to it
-    - tell it when one 'entry' is complete (one row in the data file, typically one trial)
+- create a base file name for our data files
+- create the `ExperimentHandler`
+- add our `trials` loop to it
+- tell it when one 'entry' is complete (one row in the data file, typically one trial)
 
 Create a base filename
 --------------------------
@@ -441,30 +429,25 @@ All done!
 
 If I push these changes to pavlovia, you can see the changes we make to the task throughout task creation...
 
-Improvements...
+Improvements
 -----------------
 
 There are a few problems with this version, that we could definitely improve on. Currently:
 
-    - a very fast response gets ignored because we only start looking at the keyboard after the probe has gone
-    - we should time our stimulus presentations by number of frames, for brief stimuli, not by a clock
-    - we don't have any practice trials (to learn that the cue is 'informative')
-    - our code is not very 'modular'
-    - but it does work and took less than 100 lines!
+- a very fast response gets ignored because we only start looking at the keyboard after the probe has gone
+- we should time our stimulus presentations by number of frames, for brief stimuli, not by a clock
+- we don't have any practice trials (to learn that the cue is 'informative')
+- our code is not very 'modular'
+- but it does work and took less than 100 lines!
 
 Summary
 ----------------
 
 Hopefully you've learned how to:
-    - present stimuli
-        - create them
-        - set params as needed
-        - draw each time you need to (or set autodraw to True)
-        - update the window with `win.flip()`
-    - control trials using the `TrialHandler`
-    - set timings
-    - receive responses from a keyboard
-    - save data in various formats
+- create and present stimuli
+- set timings
+- receive responses from a keyboard
+- save data in various formats
 
 
 .. nextslide::
