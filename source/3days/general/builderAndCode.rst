@@ -186,8 +186,13 @@ Exercises (15-20 minutes)
 Try: 
 
 1. Add a feedback tone that varies in frequency depending on if the RT fell in the desired time limit. 
-2. Add a text component to the end feedback routine to tell participants if they showed a Posner cueing effect.
+2. Add a text component to the end routine to tell participants if they showed a Posner cueing effect.
 3. IF participants show a posner cueing effect, tell them how large their effect was in ms. 
+
+What next?
+---------------------
+
+Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore :ref:`pavloviaEnv`! 
 
 Code Components - Advanced
 ---------------------
@@ -232,11 +237,6 @@ There is also some properties we see in our outputfile (e.g. thisN).
 Let's try ending the routine at trial 3 instead of trial 5...
 What happend if you do or do not use continueRoutine? 
 
-
-What next?
----------------------
-
-Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore :ref:`pavloviaEnv`! 
 
 Additional note
 ---------------------

@@ -14,18 +14,18 @@ Launching your studies on Pavlovia
 The plan
 -----------------
 
-Today we are going to practice what we learnt in builder, but focus on getting online. 
+We are going to practice what we learnt in builder, but focus on getting online. 
 
-First we will make a VERY simple demo then we will introduce some things that might not work smoothly online.
+We will start with a VERY simple task (similar to what we have already been working on) then we will introduce some things that might not work smoothly online.
 
 
 The task
 -----------------
-We are going to make a "targetHitTask".
+A simple "targetHitTask".
 
-Participants will be presented with targets in a set number of locations (in a random order) and click them as fast as they can. 
+Present a target in a set number of locations (in a random order) and click them as fast as they can. 
 
-On each trial, we want to gather responses from the mouse.
+On each trial, we will gather responses from the mouse.
 
 The participant should only be able to click the target.
 
