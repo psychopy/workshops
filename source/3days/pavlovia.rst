@@ -192,6 +192,24 @@ You can then fork that to make your own copy of the project to work from (you ca
 If you really like the task, give the original poster a star too!! 
 
 
+Exercises (10-15 mins)
+-----------------
+
+Let's get some practice using pavlovia.org!
+
+1. in your breakout room make a group for you to share something. 
+2. try forking the project we worked on yesterday to your group area
+3. try searching that project from your local psychopy 
+4. make a small edit 
+5. upload and see if the change shows on gitlab!
+
+NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
+
+Pushing your studies to Pavlovia?
+-----------------
+
+Now we have explored pavlovia.org let's see how to :ref:`builderToPavlovia`
+
 .. _pavloviaDashboard:
 
 Pavlovia: Dashboard
@@ -215,8 +233,8 @@ By clicking on one of your experiments, you can see the details of that project,
 .. nextSlide::
 
 Set to "Piloting" and click "Pilot".
-	 - you can share that URL for 1hr to try the task.
-	 - you will get a pilot .csv data file.
+     - you can share that URL for 1hr to try the task.
+     - you will get a pilot .csv data file.
 
 .. image:: /_images/pavloviaPilot.png
     :align: right
@@ -235,24 +253,6 @@ You can save your output as .csv files or a database. You can also decide if you
 
 .. image:: /_images/pavloviaSaving.png
     :align: right
-
-Exercises (10-15 mins)
------------------
-
-Let's get some practice using pavlovia.org!
-
-1. in your breakout room make a group for you to share something. 
-2. try forking the project we worked on yesterday to your group area
-3. try searching that project from your local psychopy 
-4. make a small edit 
-5. upload and see if the change shows on gitlab!
-
-NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
-
-Pushing your studies to Pavlovia?
------------------
-
-Now we have explored pavlovia.org let's see how to :ref:`builderToPavlovia`
 
 
 Exercise
