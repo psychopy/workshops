@@ -16,7 +16,7 @@ The plan
 
 We are going to practice what we learnt in builder, but focus on getting online. 
 
-We will start with a VERY simple task (similar to what we have already been working on) then we will introduce some things that might not work smoothly online.
+We will start with a VERY simple task (similar to what we have already been working on, but stripped back) then we will introduce some things that might not work smoothly online.
 
 
 The task
