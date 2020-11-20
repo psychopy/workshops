@@ -423,6 +423,14 @@ Alternatives to `trials.finished=True` ::
 
 NB: If you hit the red stop button in PsychoPy it issues a very severe abort and no data will be saved!
 
+Exercise
+----------------
+
+In code: 
+
+1. Add instructions, participants must press a key to start. 
+2. Add some feedback text for response time. 
+3. Make this feedback red if slow and green if fast. 
 
 All done!
 -------------
