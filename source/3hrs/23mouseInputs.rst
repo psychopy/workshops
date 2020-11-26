@@ -59,7 +59,14 @@ Using the fact that we can easily work out where a mouse is we can create dynami
 
 You can even make your button change when it has been pressed (e.g. stimuli that disappear once you click them?) or when you hover over them
 
-Dot to Dot Demo
+What next?
+---------------------------------------------
+
+OK so we have covered the basics of making a task and how to do exciting dynamic things with the mouse. Let's touch on a relatively new response type...
+
+:ref:`typedResponses`
+
+Dot to Dot Demo (time pending)
 ---------------------------------------------
 
 We need:
@@ -104,12 +111,6 @@ instead of::
 
   polygon.color = 'red'
 
-What next?
----------------------------------------------
-
-OK so we have covered the basics of making a task and how to do exciting dynamic things with the mouse. Let's touch on a relatively new response type...
-
-:ref:`typedResponses`
 
 An exercise (time pending)
 ---------------------------------------------
