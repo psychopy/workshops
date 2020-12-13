@@ -118,12 +118,12 @@ Why do people *Build*?
     - Code Components can be used in nearly all places where Builder isn't enough
     - Your Builder experiment will also compile to a web (JS/HTML) experiment!
 
-What does **Jon** do?
+What do **we** do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I still use both Builder and Coder on a regular basis.
+I (Becca) and Jon still use both Builder and Coder on a regular basis.
 
-My experiments I are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code.
+My experiments I are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. I use code for other things (e.g. making my 'conditions' .csv files, making stimuli)
 
 
 Going further
