@@ -156,7 +156,7 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 - `$"block" + expInfo['group'] + ".xlsx"`
 - `$"block{}.xlsx".format( expInfo['group'] )`
 
-Some exercises (10-15 mins)
+Some exercises (20 mins)
 -----------------
 
 - Instead of changing the cue_image on each repeat. Manipulate the direction of the arrow using the 'Orientation' field of your cue component.
