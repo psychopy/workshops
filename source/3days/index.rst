@@ -8,10 +8,6 @@ Upcoming events
 +--------------------+-------------------+-----------------------------------------------------------------------------------------+
 |      Date(s)       |      Timezone     |  Purchase link                                                                          |
 +====================+===================+=========================================================================================+
-| November 18th-20th | UK - London       | `Link <https://pavlovia.org/store/workshops/2020-11-psychopy-creating-experiments>`_    |
-+--------------------+-------------------+-----------------------------------------------------------------------------------------+
-| December 14th-16th | UK - London       | `Link <https://pavlovia.org/store/workshops/2020-12-psychopy-creating-experiments>`_    |
-+--------------------+-------------------+-----------------------------------------------------------------------------------------+
 | January 13th-15th  | US - East coast   | `Link <https://pavlovia.org/store/workshops/2021-01-psychopy-creating-experiments>`_    |
 +--------------------+-------------------+-----------------------------------------------------------------------------------------+
 | February 3rd-5th   | UK - London       | `Link <https://pavlovia.org/store/workshops/2021-02-03-psychopy-creating-experiments>`_ |
