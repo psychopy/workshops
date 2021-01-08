@@ -5,14 +5,14 @@ Building better experiments
 ==============================
 
 Using Builder
------------------
+--------------------------------------
 
 All the base knowledge we assume at the start of this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
 This shows you how to make the 'posnerHand' demo available from `previous examples <https://workshops.psychopy.org/psychopy_examples.zip>`_
 
 What makes a PsychoPy experiment?
------------------
+--------------------------------------
 
 Open the posnerHand.psyexp file. An experiment in Builder has:
 
@@ -21,7 +21,7 @@ Open the posnerHand.psyexp file. An experiment in Builder has:
 - several *Components* that are combined to form *Routines*
 
 The conditions file
------------------
+--------------------------------------
 
 Open the conditions.xlsx file...
 
@@ -30,13 +30,13 @@ If you are going to change something on every repeat of a routine (e.g. stimulus
 Each header is a parameter, each row corresponds to the value of that parameter on each repeat/trial.
 
 Let's practice making minor edits
------------------
+--------------------------------------
 
 - Add some instructions
 - Gather some additional info (e.g. age)
 
 Some warm up exercises (5-10 mins)
------------------
+--------------------------------------
 
 - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
 - Add a 'thanks' message to tell participants when they end the experiment.
@@ -56,6 +56,8 @@ e.g.
   - a faces oriented correctly and faces inverted
   - a block of Stroop task in English and a block in French
 
+Note: these are all cases where the components would be identical between blocks.
+
 The natural error
 `````````````````````````````````````````
 
@@ -65,7 +67,7 @@ The biggest error that people make with this is to create a Routine (and a loop)
 
 Then they ask on the forum, "How do I shuffle the blocks on my Flow?"
 
-That is the wrong way to think about it.
+That is the wrong way to think about it (for blocks with identical components).
 
 
 The right way
@@ -81,12 +83,12 @@ The outer "blocks" loop then takes a (meta) "conditions" file that specifies whi
 
 .. nextslide::
 
-Imagine we want to extend our Posner task to include a block where invalid trials occur on 80% or trials. 
+Imagine we want to extend our Posner task to include a block where invalid trials occur on a higher proportion of trials. 
 
 We need to create a total of 3 conditions files:
 
-- conditions20.xlsx
-- conditions80.xlsx
+- conditionsA.xlsx
+- conditionsB.xlsx
 - blocks.xlsx
 
 .. nextslide::
@@ -111,13 +113,9 @@ Now we need to set up the variables inside our experiment:
 
 .. nextslide::
 
-We could also add a Routine called `blockReady` like an instructions Routine with:
+We could also tell the participants what kind of block they are about to enter, if we have a column in our outerLoop conditions file called 'label' we can add a text object that takes::
 
-- a text object that says::
-
-    $"This block will have a %s probability of invalid cues \n \n Press a key when ready" %(label)
-
-- a mouse object to advance to the next trial
+    $label
 
 .. image:: /_images/blocksMethodBFullFlow2020.png
 
@@ -139,11 +137,10 @@ Counterbalancing your blocks is really just an extension of the blocking scenari
 Setting the order
 `````````````````````````````````````````
 
-PsychoPy doesn't handle the ordering for you - you need to decide how to create the orders and how to assign participants.
+At the moment, PsychoPy doesn't handle the ordering for you - you need to decide how to create the orders and how to assign participants.
 
-Now, rather than a single file to specify the blocks you need one for each order that you want the blocks to appear in (and then set the blocks loop to be `sequential` rather than `random` to preserve the order you set)
+So, you need a file per conditions order (e.g. A -> B and B-> A) and then set the blocks loop to be `sequential` rather than `random` to preserve the order you set.
 
-For instance, the Posner task you might have groupA with alternating invalid cue probability, beginning with high prob, and the groupB participants might have the same but starting with low prob.
 
 How to assign participants to a group
 `````````````````````````````````````````
@@ -151,13 +148,15 @@ How to assign participants to a group
 Easiest way is by hand at the start of the run for the participant. The steps are:
 
 - In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need to create)
-- For the block loop use that value by calling `expInfo['group']` using one of the alternatives below:
+- For the block loop use that value by calling `expInfo['group']` using one of the alternatives below::
 
-- `$"block" + expInfo['group'] + ".xlsx"`
-- `$"block{}.xlsx".format( expInfo['group'] )`
+	$"block" + expInfo['group'] + ".xlsx"
+	$"block{}.xlsx".format( expInfo['group'] )
+
+*Note: This second kind of formatting is termed an 'fstring' in python - we will talk about that more later.*
 
 Some exercises (20 mins)
------------------
+--------------------------------------
 
 - Instead of changing the cue_image on each repeat. Manipulate the direction of the arrow using the 'Orientation' field of your cue component.
 - Add 2 new blocks (one 20% invalid cues the other 80% invalid) but, in these blocks, the target is instead presented above or below the fixation.
@@ -166,7 +165,7 @@ Some exercises (20 mins)
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
 
 All done
------------------
+--------------------------------------
 
 You can now create trials and blocks in any order, fixed or random.
 
