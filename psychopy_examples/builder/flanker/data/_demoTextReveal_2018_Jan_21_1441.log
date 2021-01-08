@@ -1,0 +1,13 @@
+10.4442 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color='white', colorSpace='named', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x111fbe610>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=(1440, 900), stereo=False, units=u'norm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.4443 	EXP 	window1: recordFrameIntervals = False
+10.6110 	EXP 	window1: recordFrameIntervals = True
+10.7950 	EXP 	window1: recordFrameIntervals = False
+11.4542 	EXP 	Created sentence = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='sentence', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 0.,  0.,  0.]), text='A long line of text to appear very gradually', units=u'norm', win=Window(...), wrapWidth=2)
+11.5489 	EXP 	<method-wrapper '__getattribute__' of attributeSetter object at 0x10ee7ab90>: vertices = array([[-1. ,  0.1],
+       [ 1. ,  0.1],
+       [ 1. , -0.1],
+       [-1. , -0.1]])
+11.5524 	EXP 	Created mask = Rect(autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([ 1.,  1.,  1.]), fillColorSpace='rgb', fillRGB=array([ 1.,  1.,  1.]), interpolate=True, lineColor=array([ 1.,  1.,  1.]), lineColorSpace='rgb', lineRGB=array([ 1.,  1.,  1.]), lineWidth=1, name='mask', opacity=1.0, ori=array(0.0), pos=array([ 0.,  0.]), size=array([ 1.,  1.]), units='norm', vertices=ndarray(...), win=Window(...))
+11.5675 	EXP 	sentence: autoDraw = True
+11.5675 	EXP 	mask: autoDraw = True
+16.5498 	EXP 	window1: mouseVisible = True

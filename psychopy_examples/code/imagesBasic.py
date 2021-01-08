@@ -1,0 +1,2 @@
+from os import pathfrom psychopy import guifrom PIL import Imagefilenames = gui.fileOpenDlg(allowed="*.*")for thisFilename in filenames:    print(thisFilename)    fileNoExt, fileExt = path.splitext(thisFilename)    thisImg = Image.open(thisFilename)    thisImg.save(fileNoExt+'NEW.jpg')
+    
