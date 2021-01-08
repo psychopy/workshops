@@ -89,7 +89,6 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 .. ifnotslides::
 
   .. toctree::
-
       :maxdepth: 1
 
       10introductions
