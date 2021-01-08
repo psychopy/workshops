@@ -1,0 +1,47 @@
+6.4026 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.4045 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x11081bc10>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x112d1cb50>, multiSample=False, name='window1', numSamples=2, pos=[420, 250], screen=0, size=array([600, 400]), stereo=False, units=u'norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+6.4046 	EXP 	window1: recordFrameIntervals = False
+6.6195 	EXP 	window1: recordFrameIntervals = True
+6.6871 	WARNING 	t of last frame was 34.84ms (=1/28)
+6.7207 	WARNING 	t of last frame was 33.58ms (=1/29)
+6.7635 	WARNING 	t of last frame was 24.04ms (=1/41)
+6.7862 	WARNING 	t of last frame was 22.73ms (=1/43)
+6.8564 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+8.8101 	EXP 	window1: recordFrameIntervals = True
+9.2967 	EXP 	Created sentence = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='sentence', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=2)
+9.3186 	EXP 	<method-wrapper '__getattribute__' of attributeSetter object at 0x10de5c3d0>: vertices = array([[-1.  ,  0.25],
+       [ 1.  ,  0.25],
+       [ 1.  , -0.25],
+       [-1.  , -0.25]])
+9.3209 	EXP 	Created mask = Rect(autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='lightgrey', fillColorSpace='named', fillRGB=array([211., 211., 211.]), interpolate=True, lineColor='grey', lineColorSpace='named', lineRGB=array([128., 128., 128.]), lineWidth=1, name='mask', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units=u'norm', vertices=ndarray(...), win=Window(...))
+9.4475 	EXP 	sentence: autoDraw = True
+9.4475 	EXP 	mask: autoDraw = True
+13.3702 	EXP 	window1: mouseVisible = True
+6.6489 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.6494 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x10e5b2c10>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1105f7b50>, multiSample=False, name='window1', numSamples=2, pos=[420, 250], screen=0, size=array([600, 400]), stereo=False, units=u'norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+6.6494 	EXP 	window1: recordFrameIntervals = False
+6.8826 	EXP 	window1: recordFrameIntervals = True
+6.9474 	WARNING 	t of last frame was 30.63ms (=1/32)
+7.0648 	WARNING 	t of last frame was 33.00ms (=1/30)
+7.1162 	WARNING 	t of last frame was 34.37ms (=1/29)
+7.1503 	WARNING 	t of last frame was 34.08ms (=1/29)
+7.2032 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+9.1709 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.3681 	EXP 	Created sentence = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='sentence', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=newstr(...), units=u'norm', win=Window(...), wrapWidth=2)
+9.3897 	EXP 	<method-wrapper '__getattribute__' of attributeSetter object at 0x10ba073d0>: vertices = array([[-1.  ,  0.25],
+       [ 1.  ,  0.25],
+       [ 1.  , -0.25],
+       [-1.  , -0.25]])
+9.3910 	EXP 	Created mask = Rect(autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=u'grey', fillColorSpace='named', fillRGB=array([128., 128., 128.]), interpolate=True, lineColor=u'grey', lineColorSpace='named', lineRGB=array([128., 128., 128.]), lineWidth=1, name='mask', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units=u'norm', vertices=ndarray(...), win=Window(...))
+9.4064 	EXP 	sentence: autoDraw = True
+9.4064 	EXP 	mask: autoDraw = True
+13.4169 	EXP 	window1: mouseVisible = True
