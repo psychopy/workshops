@@ -35,7 +35,7 @@ Let's practice making minor edits
 - Add some instructions
 - Gather some additional info (e.g. age)
 
-Some warm up exercises (5-10 mins)
+*Warm up exercises (5-10 mins)*
 ````````````````````````````````````````
 
 - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
@@ -46,7 +46,12 @@ When you are finished, come back to the main session and collect one run of your
 
 .. _blockDesigns:
 
+
 Block designs and counterbalancing
+==============================
+
+
+Randomised block designs
 --------------------------------------
 
 A block design is where we have sets of similar trials organised into blocks rather than having trials interleaved.
@@ -113,7 +118,7 @@ Now we need to set up the variables inside our experiment:
 
 .. nextslide::
 
-We could also tell the participants what kind of block they are about to enter, if we have a column in our outerLoop conditions file called 'label' we can add a text object that takes::
+We could also tell the participants what kind of block they are about to enter, we can add a text object that takes::
 
     $label
 
@@ -128,7 +133,7 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 
 .. _counterbalancedDesigns:
 
-Counterbalancing
+Counterbalancing 
 --------------------------------------
 
 Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomise them.
@@ -147,7 +152,7 @@ How to assign participants to a group
 
 Easiest way is by hand at the start of the run for the participant. The steps are:
 
-- In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need to create)
+- In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need)
 - For the block loop use that value by calling `expInfo['group']` using one of the alternatives below::
 
 	$"block" + expInfo['group'] + ".xlsx"
@@ -155,19 +160,59 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 
 *Note: This second kind of formatting is termed an 'fstring' in python - we will talk about that more later.*
 
-Some exercises (20 mins)
---------------------------------------
+*Exercises*
+`````````````````````````````````````````
 
-- Instead of changing the cue_image on each repeat. Manipulate the direction of the arrow using the 'Orientation' field of your cue component.
-- Add 2 new blocks (one 20% invalid cues the other 80% invalid) but, in these blocks, the target is instead presented above or below the fixation.
-- We will present the blocks in a randomised block design.
+Let's practice counterbalancing in different ways using the counterbalancing exercises in the demo folder. 
+
+- Turn this inefficient design into a randomised block design. 
+- Make it counterbalanced so that group A see cats first and group B see dogs first. 
 
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
+
+
+Counterbalancing subtasks
+--------------------------------------
+
+Sometimes we might have to counterbalance subtasks (i.e. routines that contain very different sets of components)
+
+You can wrap a loop around any set of routines and control if it presents using nReps. 
+
+.. nextslide::
+
+In the below we could control create the order C->B->A by using a conditions file where the nReps of each subloop are set per iteration of the outerloop. 
+
+.. image:: /_images/counterbalancesubs.png
+
+.. nextslide::
+
+e.g. using a conditions file like this...
+
++----------+-------------+-----------+
+| nRepsA   | nRepsB      |  nRepsC   |
++==========+=============+===========+
+| 0        | 0           | 1         |
++----------+-------------+-----------+
+| 0        | 1           | 0         |
++----------+-------------+-----------+
+| 1        | 0           | 1         |
++----------+-------------+-----------+
+
+Where the nReps argument of each subloop is set using something like '$nRepsA' ect.
+
+
+*Exercise*
+`````````````````````````````````````````
+
+*Use the second counterbalance exercise in the demos folder. 
+
+We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops. *
+
 
 All done
 --------------------------------------
 
-You can now create trials and blocks in any order, fixed or random.
+You can now create trials and blocks in any order, fixed or random and counterbalance subtasks!
 
 You're in complete control (but you need to understand what orders you want!)
 
