@@ -21,7 +21,7 @@ Open the posnerHand.psyexp file. An experiment in Builder has:
 - several *Components* that are combined to form *Routines*
 
 The conditions file
---------------------------------------
+````````````````````````````````````````
 
 Open the conditions.xlsx file...
 
@@ -30,13 +30,13 @@ If you are going to change something on every repeat of a routine (e.g. stimulus
 Each header is a parameter, each row corresponds to the value of that parameter on each repeat/trial.
 
 Let's practice making minor edits
---------------------------------------
+````````````````````````````````````````
 
 - Add some instructions
 - Gather some additional info (e.g. age)
 
 Some warm up exercises (5-10 mins)
---------------------------------------
+````````````````````````````````````````
 
 - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
 - Add a 'thanks' message to tell participants when they end the experiment.
