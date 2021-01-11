@@ -110,7 +110,6 @@ The text object could be any long piece of text. You might need to make sure the
 .. nextSlide::
 
 .. image:: /_images/revealMaskProperties.png
-    :align: right
 
 Your mask is a square that moves (note the size and the pos settings). 
 
@@ -152,9 +151,8 @@ Let's try and create a 'Feedback' Routine for the Posner task we want to:
 
 To add trial by trial feedback on response times create a feedback routine and add a text component. In the text field enter::
     
-    $'RT was '+str(round(resp.time[0], 3))+' ms'
+    $f'RT was {str(round(resp.time[0], 3))} ms'
 
-NB: at the moment we use '+' to concatinate strings rather than python formatted strings (e.g. '%s'%(resp.time[0])). This is because the latter is not currently compatible with online studies. 
 
 .. nextslide::
 

@@ -75,7 +75,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       10introductions
       buildingBetter
       23mouseInputs
-      builderAndCode
+      general/builderAndCode
       pavlovia
       pavloviaLaunch
       debuggingOnline
@@ -93,7 +93,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
       10introductions
       buildingBetter
-      builderAndCode
+      general/builderAndCode
       23mouseInputs
       pavlovia
       pavloviaLaunch
