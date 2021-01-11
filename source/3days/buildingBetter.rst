@@ -40,7 +40,7 @@ Let's practice making minor edits
 
 - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
 - Add a 'thanks' message to tell participants when they end the experiment.
-    - in the thanks routine ask participants to click a button with the mouse to end the experiment.
+- in the thanks routine ask participants to click a button with the mouse to end the experiment.
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
