@@ -37,19 +37,9 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   - :ref:`pavloviaEnv`
   - :ref:`builderToPavlovia`
   - :ref:`debuggingOnline`
-
-.. slide:: Day 2: afternoon
-  :level: 2
+  - :ref: `advancedOnline`
 
   - :ref:`firstExperiment`
-
-    - Getting started
-    - Create a window and stimuli
-    - Conditions and trial handlers
-    - Responses
-    - Participant info
-    - Saving your data
-
   - :ref:`Improvements3days`
 
 .. slide:: Day 3
@@ -81,6 +71,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       pavlovia
       pavloviaLaunch
       debuggingOnline
+      advancedOnline
       
       coding/index
       coding/improvements
@@ -109,6 +100,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       pavlovia
       pavloviaLaunch
       debuggingOnline
+      advancedOnline
 
   Day 3
 
