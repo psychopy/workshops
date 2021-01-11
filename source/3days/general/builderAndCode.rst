@@ -110,7 +110,6 @@ The text object could be any long piece of text. You might need to make sure the
 .. nextSlide::
 
 .. image:: /_images/revealMaskProperties.png
-    :align: right
 
 Your mask is a square that moves (note the size and the pos settings). 
 
@@ -140,113 +139,10 @@ Each entry of your Routine has multiple Components and their code /for each part
 
 Do you want you custom code executed before or after your stimulus?
 
-.. nextslide::
-
-Let's try and create a 'Feedback' Routine for the Posner task we want to:
-
-- Add trial by trial feedback on response times 
-- Adjust the colour of the feedback based on RT
-- Give feedback at the end on average RT overall, on valid trials and on invalid trials.
-
-.. nextslide::
-
-To add trial by trial feedback on response times create a feedback routine and add a text component. In the text field enter::
-    
-    $'RT was '+str(round(resp.time[0], 3))+' ms'
-
-NB: at the moment we use '+' to concatinate strings rather than python formatted strings (e.g. '%s'%(resp.time[0])). This is because the latter is not currently compatible with online studies. 
-
-.. nextslide::
-
-To adjust feedback colour based on response time we need a code component::
-
-    if resp.time[0]<.5:
-        feedbackCol = 'green'
-    else:
-        feedbackCol = 'red'
-
-.. nextslide::
-
-To give feedback at the end for each condition let's learn about lists. We want three lists to keep track of RTs::
-
-    allRTList=[]
-    validRTList=[]
-    invalidRTList=[]
-
-.. nextslide::
-
-Some useful *Python* methods
-
-- .append() - adds to a list
-- np.average() - returns average of a list using the numpy (np) library. 
-
-Exercises (15-20 minutes)
+What can we do with code in our experiments?
 ---------------------
 
-Try: 
-
-1. Add a feedback tone that varies in frequency depending on if the RT fell in the desired time limit. 
-2. Add a text component to the end routine to tell participants if they showed a Posner cueing effect.
-3. IF participants show a posner cueing effect, tell them how large their effect was in ms. 
-
-What next?
----------------------
-
-Next we will talk about getting online and what happens with the 'JS' side of your code components. But first, let's explore :ref:`pavloviaEnv`! 
-
-Code Components - Advanced
----------------------
-
-Go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
-
-- what is the current size of the balloon?
-- did the participant press the 'pump' key?
-- did we exceed our maxPumps for this balloon?
-- ...
-
-First, everyone have a run through of this demo to familiarize yourself with the task. 
-
-.. nextslide::
-
-OK let's talk through the existing code components and the files in this demo. Then we are going to try some excercises to combine all of the skills we have learnt so far.
-
-Exercises (20-30 minutes)
----------------------
-
-1. Make the colour of the balloon change on every trial (either green or blue)
-2. Add a new condition, where blue balloons have a high risk of popping early, whilst green balloons do not. 
-3. Allow the researcher to assign participants to either group A or B - where group A will have the standard condition first, followed by block where colour predicts pop timing, and group B vice versa.
-4. Set the colour of the baloon to be red if we are within 10 pumps of max pumps. 
-5. Add a penalty - you loose earnings if the baloon pops..
-
-Code Components - Advanced
----------------------
-
-Sometimes you might want to end a routine or loop early if a certain condition is met. For example if a level of accuracy or a time limit has been reached. To do this we can use::
-
-    continueRoutine = False # ends a routine
-    trials.finished = True # ends the loop (trials = name of loop)
-
-.. nextslide::
-
-Make a simple routine with a text component that lasts 0.5 seconds add a loop to repeat that 5 times. 
-
-Try accessing the properties of your loop object - see 'finished' is in the list. 
-There is also some properties we see in our outputfile (e.g. thisN).
-
-Let's try ending the routine at trial 3 instead of trial 5...
-What happend if you do or do not use continueRoutine? 
-
-
-Additional note
----------------------
-
-Sometimes you might want to set the properties of multiple components at once. For this we could use a for loop (we will talk more about these on Friday)
-
-Exercises (15-20 minutes)
----------------------
-Painting shapes...
-
-1. present 4 white polygons (circles, triangle, rectangle)
-2. add a mouse component to click the polygons
-3. if a polygon is clicked, set it's colour to green
+We can make more flexible and dynamic experiments using code, including:
+   - Add clocks and trial counters
+   - :ref:`addingFeedback`
+   - :ref:`mouse3days`

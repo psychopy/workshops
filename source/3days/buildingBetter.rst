@@ -40,7 +40,7 @@ Let's practice making minor edits
 
 - Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
 - Add a 'thanks' message to tell participants when they end the experiment.
-    - in the thanks routine ask participants to click a button with the mouse to end the experiment.
+- in the thanks routine ask participants to click a button with the mouse to end the experiment.
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
@@ -204,9 +204,9 @@ Where the nReps argument of each subloop is set using something like '$nRepsA' e
 *Exercise*
 `````````````````````````````````````````
 
-*Use the second counterbalance exercise in the demos folder. 
+Use the second counterbalance exercise in the demos folder. 
 
-We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops. *
+We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops.
 
 
 All done

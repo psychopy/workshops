@@ -27,8 +27,9 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
   - :ref:`introduction3days`
   - :ref:`session13Days`
-  - :ref:`mouse3days`
   - :ref:`builderAndCode`
+  - :ref:`addingFeedback`
+  - :ref:`mouse3days`
 
 .. slide:: Day 2: morning
   :level: 2
@@ -36,19 +37,9 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   - :ref:`pavloviaEnv`
   - :ref:`builderToPavlovia`
   - :ref:`debuggingOnline`
-
-.. slide:: Day 2: afternoon
-  :level: 2
+  - :ref: `advancedOnline`
 
   - :ref:`firstExperiment`
-
-    - Getting started
-    - Create a window and stimuli
-    - Conditions and trial handlers
-    - Responses
-    - Participant info
-    - Saving your data
-
   - :ref:`Improvements3days`
 
 .. slide:: Day 3
@@ -74,11 +65,13 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
       10introductions
       buildingBetter
+      general/builderAndCode
+      addingFeedback
       23mouseInputs
-      builderAndCode
       pavlovia
       pavloviaLaunch
       debuggingOnline
+      advancedOnline
       
       coding/index
       coding/improvements
@@ -87,18 +80,33 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       general/pythonForGeneral
 
 .. ifnotslides::
+  
+  Day 1
 
   .. toctree::
       :maxdepth: 1
 
       10introductions
       buildingBetter
-      builderAndCode
+      general/builderAndCode
+      addingFeedback
       23mouseInputs
+
+  Day 2
+
+  .. toctree::
+      :maxdepth: 1
+
       pavlovia
       pavloviaLaunch
       debuggingOnline
-      
+      advancedOnline
+
+  Day 3
+
+  .. toctree::
+      :maxdepth: 1
+
       coding/index
       coding/improvements
       coding/syntax/index

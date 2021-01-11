@@ -1,7 +1,7 @@
 
 .. _mouse3days:
 
-Mouse inputs
+Making the most of mouse inputs
 =================================
 
 There are some neat aspects to the mouse that can make for interesting interactive experiments
@@ -36,6 +36,16 @@ All we need is a Code Component with "Each Frame" set to::
     marker.color = 'red'
   else:
     marker.color = 'blue'
+
+.. note::
+  To take this online we need a slight edit::
+  
+    polygon.fillColor = new util.Color("red");
+
+  instead of::
+
+    polygon.color = 'red'
+
 
 .. nextslide::
 
@@ -94,29 +104,24 @@ For loops allow us to repeat the same set of code over a predifined n or over a 
 
 OK so once we have this, let's try and take this online.
 
-An exercise (time pending)
----------------------------------------------
+*Exercise*
+`````````````
 
-Practice what we learnt earlier to present several trials of our task:
-
--repeat our trial 3 times and present the dots in new locations on each trial.
-- use a second mouse component with a clickable button to end each trial
-
-Taking this online
----------------------------------------------
-
-When getting this online, we might notice this doesn't quite look as we expect. In these cases, there are several places we could look for support:
-
-- `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_
-- `The psychoJS API <https://psychopy.github.io/psychojs/module-visual.Polygon.html>`_
-- `The forum <https://discourse.psychopy.org/>`_
+Repeat our dot-to-dot trial 3 times and present the dots in new locations on each trial. Use a clickable button to end each trial.
 
 .. nextslide::
 
-If something works locally, but not online, this is typically a JS translation issue. so we can change the JS side of our code e.g.::
+.. note::
+  To take this online we need a slight edit::
   
-  polygon.fillColor = new util.Color("red");
+    polygon.fillColor = new util.Color("red");
 
-instead of::
+  instead of::
 
-  polygon.color = 'red'
+    polygon.color = 'red'
+
+  For useful tips on getting things online use:
+    - `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_
+    - `The psychoJS API <https://psychopy.github.io/psychojs/module-visual.Polygon.html>`_
+    - `The forum <https://discourse.psychopy.org/>`_
+
