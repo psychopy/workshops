@@ -1,7 +1,7 @@
 
 .. _mouse3days:
 
-Mouse inputs
+Making the most of mouse inputs
 =================================
 
 There are some neat aspects to the mouse that can make for interesting interactive experiments

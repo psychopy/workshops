@@ -12,7 +12,7 @@ The Pavlovia environment
 =================================
 
 The Pavlovia environment
------------------
+----------------------------
 
 .. image:: /_images/pavlovia.png
 	:align: center
@@ -29,7 +29,7 @@ The Pavlovia environment
 .. _pavloviaInterface:
 
 The Pavlovia environment
-~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Pavlovia is:
 
@@ -42,7 +42,7 @@ Pavlovia and the library used to run experiments in browser (PsychoJS) are relat
 .. _pavloviaDocs:
 
 Pavlovia: Docs
------------------
+----------------------------
 
 To learn more about Pavlovia we can use the 'Docs' tab.
 
@@ -58,7 +58,7 @@ Here we can find important information that might be needed for ethics applicati
 
 .. nextSlide::
 
-PsychoPy is free. Pavlovia runs an "open pricing model", which means we charge as little as possible whilst maintining service. The cost is very small in comparison to commercial competitors. 
+PsychoPy is free. Using Pavlovia to share studies is free. Collecting data through pavlovia has a small cost (relative to commercial competitors). This cost is to ensure the sustainability of PsychoPy. 
 
 .. image:: /_images/pavloviaPrices.png
     :align: right
@@ -73,7 +73,7 @@ You can buy credits or site licences in the "Store" tab. Pavlovia accounts are f
 .. _pavloviaExplore:
 
 Pavlovia: Explore
------------------
+----------------------------
 
 Here you can browse existing experiments. Try searching for an experiment in your field!
 
@@ -87,14 +87,13 @@ You can search a task, see what state it is currently in (Inactive, piloting or 
 .. image:: /_images/pavloviaSearch.png
     :align: right
 
-.. nextSlide::
-
-Pavlovia is another good place to start if you are looking to create a task that might already exist (in addition to the demos in PsychoPy!).
+.. note::
+    Pavlovia is another good place to start if you are looking to create a task that might already exist (in addition to the demos in PsychoPy!).
 
 .. _gitlabBrief:
 
 Gitlab
------------------
+--------------------------
 
 Viewing the code will take you to "gitlab". This allows similar features to GitHub (if you want them).
 
@@ -104,23 +103,23 @@ Viewing the code will take you to "gitlab". This allows similar features to GitH
 .. nextSlide::
 
 Benefits of GitLab (the important bits):
-
+ - Fork existing projects
  - Version control
  - Add lab members to projects to work on the same files
  - Easy sharing of your task (open science)
- - Others can fork, use and develop your task (more citations?)
 
-Gitlab: version control
------------------
 
-Bad practice.
+Forking
+````````````````````````````
 
-.. image:: /_images/badVerControl.png
-    :align: right
+If you find an experiment you like using 'explore' you can open the gitlab page by selecting 'View code (<>)'
 
-NB: this example resulted from me downloading another posters experiment and uploading as new project, instead of forking (which would have made a new project name).
+You can then fork that to make your own copy of the project to work from (you can make a copy for your own 'namespace' or add it to a group). 
 
-.. nextSlide::
+If you really like the task, give the original poster a star too!! 
+
+Version control
+````````````````````````````
 
 You can see when the last changes were made to the task by looking at the commit history
 
@@ -143,72 +142,77 @@ You can browse the repository at that point in history:
 
 Imagine you have a working task, you then make a bunch of changes, and it doesn't work. If you commit little and often you can easily revert those changes. 
 
-Gitlab: adding team members
------------------
+Adding team members
+````````````````````````````
 
-You can either add members to a single project, or you can create a group where you can share several projects. The second might be useful for lab groups with several ongoing experiments, or teaching with several demos!
-
-.. nextSlide::
-
-To make a group go to gitlab > groups > your groups > new group
-
-Then select the 'members' icon on the side bar to add members
-
-.. nextSlide::
-
-You can view the members on another project by selecting "members" in the side tab.
-
-.. image:: /_images/gitlabViewMembers.png
-    :align: right
-
-.. nextSlide::
-
-To add members to your own project (as we can try later), you can use the settings>members option where you can search and invite collaborators.
+To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
 
 .. image:: /_images/gitlabSettings.png
     :align: right
 
-Gitlab: making your task public
------------------
+.. note::
+    You can also make 'groups' inside gitlab
+
+Making your task public
+````````````````````````````
 
 You can change the visibility of your task at any time under permissions. 
 
 .. image:: /_images/gitlabPermissions.png
     :align: right
 
-.. nextSlide::
+.. ifslides::
+    .. nextSlide::
 
-One thing to note is that once you make your project "public" the data file stored there will also be public. 
-    - good as allows easy data sharing
-    - Something to bare in mind if you are collecting protected data
+    One thing to note is that once you make your project "public" the data file stored there will also be public. 
+        - good as allows easy data sharing
+        - Something to bare in mind if you are collecting protected data
 
-Gitlab: forking 
------------------
-
-If you find an experiment you like using 'explore' you can open the gitlab page by selecting 'View code (<>)'
-
-You can then fork that to make your own copy of the project to work from (you can make a copy for your own 'namespace' or add it to a group). 
-
-If you really like the task, give the original poster a star too!! 
+.. ifnotslides::
+    .. note::
+        Once you make your project "public" the data file stored there will also be public. 
+            - good as allows easy data sharing
+            - Something to bare in mind if you are collecting protected data
 
 
-Exercises (10-15 mins)
------------------
+*Exercises (10-15 mins)*
+`````````````````````````
 
 Let's get some practice using pavlovia.org!
 
 1. in your breakout room make a group for you to share something. 
-2. try forking the project we worked on yesterday to your group area
+2. try forking a task you like (hint: those in the 'demos' group can be useful)
 3. try searching that project from your local psychopy 
 4. make a small edit 
 5. upload and see if the change shows on gitlab!
 
 NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 
-Pushing your studies to Pavlovia?
------------------
+.. _builderToPavlovia:
 
-Now we have explored pavlovia.org let's see how to :ref:`builderToPavlovia`
+Launching your studies on Pavlovia
+=================================
+
+Launching studies on pavlovia
+-----------------------------
+
+To load the task to pavlovia.org we can either use the "run online" or the "sync to pavlovia" icons. The former will then try to run our task in the browser. For now let's use sync. 
+
+.. image:: /_images/syncWithPav.png
+    :align: right
+
+.. nextSlide::
+
+Next we create a pavlovia project, select what group we load the project to and add details on the task.
+
+.. image:: /_images/pavCreateProject.png
+    :align: right
+
+
+.. nextSlide::
+
+If we then go to our Experiments in the pavlovia Dashboard, we should see our task uploaded. We can see that currently it is inactive, change the status to pilot and then click "pilot" next to the View code option. 
+
 
 .. _pavloviaDashboard:
 
@@ -255,7 +259,6 @@ You can save your output as .csv files or a database. You can also decide if you
     :align: right
 
 
-Exercise
------------------
+.. nextSlide::
 
-Try to push the experiment we made yesterday online. List any bugs you find and how you fixed them. 
+In reality, things may not always translate online smoothly (but we are working on it!).Let's talk about how to get online confidently and some tips for translating experiments online in :ref:`debuggingOnline`

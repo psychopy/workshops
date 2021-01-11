@@ -27,8 +27,9 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
   - :ref:`introduction3days`
   - :ref:`session13Days`
-  - :ref:`mouse3days`
   - :ref:`builderAndCode`
+  - :ref:`addingFeedback`
+  - :ref:`mouse3days`
 
 .. slide:: Day 2: morning
   :level: 2
@@ -74,8 +75,9 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
 
       10introductions
       buildingBetter
-      23mouseInputs
       general/builderAndCode
+      addingFeedback
+      23mouseInputs
       pavlovia
       pavloviaLaunch
       debuggingOnline
@@ -87,6 +89,8 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       general/pythonForGeneral
 
 .. ifnotslides::
+  
+  Day 1
 
   .. toctree::
       :maxdepth: 1
@@ -94,11 +98,23 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
       10introductions
       buildingBetter
       general/builderAndCode
+      addingFeedback
       23mouseInputs
+
+  Day 2
+
+  .. toctree::
+      :maxdepth: 1
+
       pavlovia
       pavloviaLaunch
       debuggingOnline
-      
+
+  Day 3
+
+  .. toctree::
+      :maxdepth: 1
+
       coding/index
       coding/improvements
       coding/syntax/index

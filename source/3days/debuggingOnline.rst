@@ -15,15 +15,28 @@ Debugging online
 
 So your task was running perfectly offline, then you pushed it online, and it doesn't work - why?
 
-To run in the browser your python experiment is translated to Javascript (PsychoJS). Not everything you use in python can be autotranslated to JS. 
+To run in the browser your python experiment is translated to Javascript (PsychoJS). Not everything you use in python can be autotranslated to JS (e.g. whole python libraries such as numpy). 
 
 .. nextSlide::
 
-Let's start by adding some feedback in our experiment::
+General tips for getting online
+````````````````````````````````
+
+1. Always check the status of online options `status of online options <https://www.psychopy.org/online/status.html>`_ *before* making your experiment
+2. Push your experiment little and often (don't make your full experiment perfectly locally and then try to push it online)
+3. Read the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_
+4. Check out the `psychoJS documentation <https://psychopy.github.io/psychojs/>`_
+
+The forum is always there!
+
+.. nextSlide::
+
+Common errors
+````````````````````````````````
+
+*Undefined* errors::
 
 	feedbackText = ' target hit! %.2f seconds'%(mouse.time[0])
-
-now push that online and try to run it.
 
 .. nextSlide::
 
@@ -34,35 +47,13 @@ This means that although something was defined when you ran in python, that vari
 
 .. nextSlide::
 
-Indeed, we can see that our code component did not translate. So let's try a different approach.
-
-.. image:: /_images/notTranslated.png
-    :align: right
-
-.. nextSlide::
-
-If we try a different approach to inserting our variable to the string, our code translates. 
-
-.. image:: /_images/feedbackTranslated.png
-    :align: right
-
-.. nextSlide::
-
-But that feedback is a bit long, let's try and use the python "round" function to round this to 2 decimal places::
-
-	feedbackText = ' target hit!'+str(round(mouse.time[0], 2))+'seconds'
-
-First check that runs locally, if yes, try to run that online. 
-
-.. nextSlide::
-
 .. image:: /_images/functionErrorRound.png
     :align: right
 
-This time our error doesn't refer to a variable, but it refers to a function we used. 
+Sometimes we might get an error that doesn't refer to a variable, but it refers to a function or library we tried to use. 
 
 Resources
------------------
+````````````````````````````````
 
 If we encounter a translation error. There are several places we should check for support:
 
@@ -72,69 +63,49 @@ If we encounter a translation error. There are several places we should check fo
 
 .. nextSlide::
 
-If we search 'round' in the crib sheet, we can see that the JS version of this is provided::
+e.g. If we search 'round' in the crib sheet, we can see that the JS version of this is provided::
 
 	round = function(num, n=0) {    
 	    return +(Math.round(num + ("e+" + n))  + ("e-" + n));
 	}
 
 Adding JS code
------------------
+````````````````````````````````
 
 Add a code component in your first routine 'initJS'. Then let's try and run online again.
 
 .. image:: /_images/defineRoundJS.png
     :align: center
 
-More mods..
------------------
+.. nextSlide::
 
-Imagine we want:
-	- a limited amount of time to hit targets
-	- to count how many targets are hit. 
+There are several handy functions you might want to include at the start of your experiment in a .JS component which might make things easier in the long run:
+    - append - for adding to lists
+    - thisExp - for adding data to the experiment handler
+    - shuffle - for shuffling and randomly selecting items from lists
 
-Clocks
------------------
 
-First we want a clock, let's see what clocks are already going on in the background of our task. Compile your task to a python script and search 'clock'
+*Group Exercise*
+````````````````````````````````
+Let's try and push the experiment we made yesterday online and talk through any errors we encounter. 
 
-We want a new clock, but we don't want the name of our new clock to conflict with anything that already exists.
+Add ons we might also want to discuss:
+    - counterbalancing online
+    - bot checkers and online checks (e.g. has our participant walked away? is our participant pressing the same key repeatedly?)
+
+Other errors
+````````````````````````````````
+
+We have already seen that the variable "t" can be used to refer to the current time in the trial. But what if we want seperate clocks that run independantly relative to something else, locally we would use::
+
+	myClock = core.Clock()
 
 .. nextSlide::
 
-Add a code component to your instructions routine. 
-In the "End routine" tab we want to start the clock::
-
-	targetHitClock = core.Clock()
-
-In the "Begin Experiment" tab, let's set our time limit (in seconds)::
-
-	timeLimitSecs = 15
-
-.. nextSlide::
-
-In our trials loop, we want to continuously check the time and, if the time limit has been reached, end the loop early. 
-
-Where do we add a code component if we want to check something continuously?
-
-.. nextSlide::
-
-Add a code component to your trial routine and on "Every frame"::
-
-	if targetHitClock.getTime() > timeLimitSecs:
-   	    continueRoutine = False
-    	trials.finished = True
-
-Run that locally, does it work? 
-
-If yes, sync that to pavlovia, does it work online?
-
-Common online errors
------------------
+But online, that causes an error. 
 
 .. image:: /_images/constructorErr.png
     :align: center
-
 
 
 Exercise: What's wrong? How to we fix it? (Hint: crib sheet)
@@ -148,90 +119,8 @@ Solution (note the code type here):
 
 .. nextSlide::
 
-OK now we want to count how many hits we get. To do this, we can create a list. We will add to this each time a target is hit. Let's make an empty list at the start of our experiment::
-
-	nHits =[]
-
-NB: we could also use nHits = 0, but let's learn about lists
-
-Because our code component is set to 'Both' we will also have to add this to the JS side..
-
-.. nextSlide::
-
-After each hit we add to this list, in python we do this using append::
-
-	nHits.append(1)
-
-At the end of our task we can use::
-
-	sum(nHits)
-
-Exercise: Add feedback to our thanks routine telling us how many hits we achieved.
-
-.. nextSlide::
-
-Solution:
-
-.. image:: /_images/sumFeedback.png
-    :align: right
-
-Does it run locally? Now let's try get that online. 
-
-
-.. nextSlide::
-
-.. image:: /_images/feedbackTextErr.png
-    :align: right
-
-Did we also define this variable at the start of our programme in JS? 
-
-.. nextSlide::
-
-.. image:: /_images/clocksStartCode.png
-    :align: right
-
-If our code component code type is 'Both' we need to check that variables are defined in both python and JS. 
-
-OK let's try that online again...
-
-.. nextSlide::
-
-A new error!!
-
-.. image:: /_images/appendErr.png
-    :align: right
-
-Is this function listed on the crib sheet? Try to fix this one.
-
-.. nextSlide::
-
-Solution ('append' is 'push' in JS):
-
-.. image:: /_images/appendToPush.png
-    :align: right
-
-OK let's try again...
-
-.. nextSlide::
-
-ANOTHER new error...
-
-.. image:: /_images/sumErr.png
-    :align: right
-
-Is this function listed on the crib sheet? Try to fix this one.
-
-.. nextSlide::
-
-Solution: Define sum at the start of the experiment in JS
-
-.. image:: /_images/defineSumJS.png
-    :align: right
-
-
-
-Developer tools
------------------
+Fnding errors: Developer tools
+-------------------------------
 
 Sometimes you might not get an error message, but things "don't work" - what do we do here?
 
@@ -254,7 +143,7 @@ We can then open up our JS file and take a look further.
     :align: center
 
 Other useful tools
------------------
+-------------------
 There are several other tools that can be useful including:
 
 - `counterbalancing online <https://discourse.psychopy.org/>`_ through using sequential participant IDs.
@@ -263,23 +152,10 @@ There are several other tools that can be useful including:
 
 - `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_
 
-
-Take home messages
------------------
-
-- Common errors are usually translation errors
-- Look at the crib sheet 
-- Use the developer tools 
-- You can get more help on discourse! 
-
 Next up!
 -----------------
 
-JS demos followed by a JS Q&A. 
+Let's practice debugging errors, then play with advanced plugins we can use online.
 
-Then let's get more hands on with python code in :ref:`firstExperiment`.
+Then we will try :ref:`firstExperiment`.
 
-Exercise
------------------
-
-Try to push the experiment we made yesterday online. List any bugs you find and how you fixed them. 
