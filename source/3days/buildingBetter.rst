@@ -204,9 +204,9 @@ Where the nReps argument of each subloop is set using something like '$nRepsA' e
 *Exercise*
 `````````````````````````````````````````
 
-*Use the second counterbalance exercise in the demos folder. 
+Use the second counterbalance exercise in the demos folder. 
 
-We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops. *
+We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops.
 
 
 All done
