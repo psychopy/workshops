@@ -37,7 +37,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   - :ref:`pavloviaEnv`
   - :ref:`builderToPavlovia`
   - :ref:`debuggingOnline`
-  - :ref: `advancedOnline`
+  - :ref:`advancedOnline`
 
   - :ref:`firstExperiment`
   - :ref:`Improvements3days`
