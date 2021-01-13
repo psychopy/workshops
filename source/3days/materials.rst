@@ -31,7 +31,7 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   - :ref:`addingFeedback`
   - :ref:`mouse3days`
 
-.. slide:: Day 2: morning
+.. slide:: Day 2
   :level: 2
 
   - :ref:`pavloviaEnv`
