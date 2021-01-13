@@ -77,19 +77,33 @@ OK so we have covered the basics of making a task and how to do exciting dynamic
 
 :ref:`typedResponses3days`
 
-Dot to Dot Demo (time pending)
----------------------------------------------
+*Exercise (time pending)*
+````````````````````````````
+
+Let's practice what we know about mouse inputs to make a dot to dot demo. Participants will see a set of polygons and connect them (this allows us also to try the brush component!). When the mouse enters a polygon change it's colour.
+
+.. nextslide::
 
 We need:
 
-- A number of polygons
+- A number of polygons (keep the number small for now)
 - A mouse
 - The 'brush' component (our pencil to join the dots)
 - A code component to turn the polygons red when the mouse is clicked in their location
 
 .. nextslide::
 
-We have already seen how we can use 'conditional if' statements in python. And we could just use several of these statements to check if the mouse is in each polygon individually. 
+*If you still have time* Repeat our dot-to-dot trial 3 times and present the dots in new locations on each trial. Use a clickable button to end each trial.
+
+Side tip:
+````````````````````````````
+We have already seen how we can use 'conditional if' statements in python. And we could just use several of these statements to check if the mouse is in each polygon individually e.g.::
+      if mouse.isPressedIn(polygon1):
+        polygon1.color = 'red'
+      if mouse.isPressedIn(polygon2):
+        polygon1.color = 'red'
+      if mouse.isPressedIn(polygon3):
+        polygon1.color = 'red'
 
 Alternatively, we could use a 'for' loop... 
 
@@ -102,14 +116,6 @@ For loops allow us to repeat the same set of code over a predifined n or over a 
     if mouse.isPressedIn(polygon):
         polygon.color = 'red'
 
-OK so once we have this, let's try and take this online.
-
-*Exercise*
-`````````````
-
-Repeat our dot-to-dot trial 3 times and present the dots in new locations on each trial. Use a clickable button to end each trial.
-
-.. nextslide::
 
 .. note::
   To take this online we need a slight edit::
