@@ -39,22 +39,12 @@ You can also download and unzip `previous examples <https://workshops.psychopy.o
   - :ref:`debuggingOnline`
   - :ref:`advancedOnline`
 
-  - :ref:`firstExperiment`
-  - :ref:`Improvements3days`
-
 .. slide:: Day 3
   :level: 2
 
+  - :ref:`firstExperiment`
+  - :ref:`Improvements3days`
   - :ref:`syntax`
-
-    - Writing code
-    - Variables: numbers, strings 
-    - Lists and Dicts
-    - Loops and conditionals
-  - :ref:`syntax`
-
-  -:ref:`plottingPosner`
-  
   - :ref:`generalPurpose`
 
 .. ifslides::
