@@ -35,6 +35,7 @@ Let's practice making minor edits
 - Add some instructions
 - Gather some additional info (e.g. age)
 
+
 *Warm up exercises (5-10 mins)*
 ````````````````````````````````````````
 
@@ -165,8 +166,8 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 
 Let's practice counterbalancing in different ways using the counterbalancing exercises in the demo folder. 
 
-- Turn this inefficient design into a randomised block design. 
-- Make it counterbalanced so that group A see cats first and group B see dogs first. 
+1. Turn this inefficient design into a randomised block design. 
+2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. 
 
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
 
@@ -216,7 +217,10 @@ You can now create trials and blocks in any order, fixed or random and counterba
 
 You're in complete control (but you need to understand what orders you want!)
 
-Let's touch on what we can get out of :ref:`mouse3days`
+*Up next* 
 
-Before we talk about :ref:`builderAndCode`
+:ref:`builderAndCode`
+
+:ref:`mouse3days`
+
 
