@@ -98,6 +98,7 @@ We need:
 Side tip:
 ````````````````````````````
 We have already seen how we can use 'conditional if' statements in python. And we could just use several of these statements to check if the mouse is in each polygon individually e.g.::
+
       if mouse.isPressedIn(polygon1):
         polygon1.color = 'red'
       if mouse.isPressedIn(polygon2):
