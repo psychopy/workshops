@@ -155,7 +155,7 @@ There are several other tools that can be useful including:
 Next up!
 -----------------
 
-Let's practice debugging errors, then play with advanced plugins we can use online.
+Let's practice debugging errors, then play with advanced plugins we can use online ( :ref:`advancedOnline`).
 
 Then we will try :ref:`firstExperiment`.
 
