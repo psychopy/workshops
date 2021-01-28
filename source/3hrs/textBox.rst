@@ -6,15 +6,23 @@ PsychoPy now has an editable text box component to get typed responses. It is un
 
 textBox
 ----------------------------------
-The texbox component is very similar to the text stimulus, except that we can make it 'editable'
+The texbox component is very similar to the text stimulus, except that we can make it 'editable'. It can therefore be found under both 'Stimuli' and 'Response' sections of the components panel. 
 
-Exercise
-----------------------------------
-We are going to make a digit span task. Participants will see 3 numbers and then be asked to type their response. We need:
+.. nextslide::
 
-- A routine to show the digits one by one in a random order
-- A routine to gather the responses. Participants type a response and click a button to end the routine.
-- Both of these routines to repeat 5 times 
+* To have a completely blank textbox type a space in the text field to act as a place holder. Then set that field to *set every repeat*
+* If you want a speeded typed response, you might want to add a keyboard component to end the routine when a certain key is pressed otherwise use a mouse response to end the trial.
+
+.. nextslide::
+
+If you want to check that the typed string was correct you can add a code component and, in the "end routine" tab use ::
+	
+	if corAns in textbox.text:
+		correct = 1
+	else:
+		correct = 0
+
+This will test if the correct answer was within the typed string (e.g. ignoring any spaces after the response)
 
 What next?
 ----------------------------------

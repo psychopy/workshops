@@ -33,9 +33,11 @@ Let's create a circle called `myStim` and an object that tracks the mouse, calle
 All we need is a Code Component with "Each Frame" set to::
 
   if myStim.contains(mouse):
-    marker.color = 'red'
+    thisColor = 'red'
   else:
-    marker.color = 'blue'
+    thisColor = 'blue'
+
+Use `$thisColor` to set the color of your marker
 
 .. nextslide::
 

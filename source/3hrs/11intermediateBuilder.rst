@@ -41,7 +41,9 @@ Making edits
 -----------------
 
 - Add some instructions
-- Gather some additional info (e.g. age)
+
+As a general styling tip, we suggest to *keep the number of routines to a minimum*. Got several sets of instructions? use a loop!
+
 
 First, let's practice making edits to make sure we are comfortable with builder view. 
 
@@ -69,9 +71,7 @@ To get our study online, we check that we are signed into our pavlovia acount. T
 - select which 'group' we want to push a project to
 - add a description that will appear on the 'Experiment' page online
 - add keywords to help future users find your task (if you make it public)
-- choose if we want the task to be public*
-
-*we can change the visibility of our task later
+- choose if we want the task to be public (we can change that later)
 
 .. nextSlide::
 

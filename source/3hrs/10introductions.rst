@@ -14,9 +14,15 @@ Introductions
 About us
 ==========
 
-**Jon Peirce:**
-    * Vision scientist at University of Nottingham, UK
-    * Principal creator/maintainer of PsychoPy
+**Who am I?** 
+    * *Rebecca Hirst* - Science Officer/Consultant and postdoc (research focus multisensory perception)
+
+**Python developers**
+    * *Jon Peirce, Todd Parsons, Matthew Cuttone, Sol Simpson*
+**Java Script developers**
+    * *Alain Pitiot, Thomas Pronk Sotiri Bakagiannis*
+
+.. nextslide::
 
 **Credits:**
     - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
@@ -25,25 +31,12 @@ About us
 
     - Wellcome Trust recently gave us a grant to improve this a LOT
 
-The growing team
-==========
-
-**Alain Pitiot**
-    * All things Pavlovia
-**Todd Parsons**  
-    * Python developer
-**Thomas Pronk and Sotiri Bakagiannis**
-    * JS developers
-**Rebecca Hirst** 
-    * Science officer (and part-time post doc)
-
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Not aiming to teach you all of PsychoPy
 
 Hopefully give you some ideas about what's possible
-
 
 
 Getting to know PsychoPy
@@ -115,12 +108,12 @@ Why do people *Build*?
     - Code Components can be used in nearly all places where Builder isn't enough
     - Your Builder experiment will also compile to a web (JS/HTML) experiment!
 
-What does **Jon** do?
+What do **We** do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I still use both Builder and Coder on a regular basis.
+We use both Builder and Coder on a regular basis.
 
-My experiments I are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code.
+We recommend making experiments in Builder, with added Code Components. Pure code mainly used for other jobs (e.g. stimulus creation, making conditions files)
 
 
 Going further
