@@ -20,7 +20,7 @@ These sessions are designed to build confidence creating experiments and getting
 
 .. image:: /_static/timetable2.png
   :align: center
-  :scale: 50%
+  :width: 600
 
 
 What do I need to know in advance?
