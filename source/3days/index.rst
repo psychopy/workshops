@@ -18,7 +18,7 @@ About
 
 These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming in general. We can be quite flexible with what we cover in these sessions but we will keep the themes quite broad to facilitate most attendees. Typically the timetable with appear as follows:
 
-.. image:: /_static/timetable.png
+.. image:: /_static/timetable2.png
   :align: center
   :scale: 50%
 
