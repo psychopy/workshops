@@ -13,9 +13,15 @@ Introductions
 About us
 ==========
 
-**Jon Peirce:**
-    * Vision scientist at University of Nottingham, UK
-    * Principal creator/maintainer of PsychoPy
+**Who am I?** 
+    * *Rebecca Hirst* - Science Officer/Consultant and postdoc (research focus multisensory perception)
+
+**Python developers**
+    * *Jon Peirce, Todd Parsons, Matthew Cuttone, Sol Simpson*
+**Java Script developers**
+    * *Alain Pitiot, Thomas Pronk Sotiri Bakagiannis*
+
+.. nextslide::
 
 **Credits:**
     - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
@@ -23,22 +29,6 @@ About us
     - Nottingham University have been paying Jons salary while PsychoPy was written
 
     - Wellcome Trust recently gave us a grant to improve this a LOT
-
-.. image:: /_static/nott_logo.png
-    :align: right
-    :scale: 25%
-
-The growing team
-==========
-
-**Alain Pitiot**
-    * All things Pavlovia
-**Todd Parsons**  
-    * Python developer
-**Thomas Pronk and Sotiri Bakagiannis**
-    * JS developers
-**Rebecca Hirst** 
-    * Science officer (and postdoc)
 
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
