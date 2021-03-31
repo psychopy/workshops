@@ -146,7 +146,7 @@ Other useful tools
 -------------------
 There are several other tools that can be useful including:
 
-- `counterbalancing online <https://discourse.psychopy.org/>`_ through using sequential participant IDs.
+- Counterbalancing online using `sequential participant IDs <https://moryscarter.com/vespr/pavlovia.php>`_ 
 
 - `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_ also has seceral useful references for daisychaining with qualtrics:
 
