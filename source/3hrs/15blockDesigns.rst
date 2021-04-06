@@ -11,6 +11,7 @@ e.g.
   - a faces oriented correctly and faces inverted
   - a block of Stroop task in English and a block in French
 
+
 The natural error
 `````````````````````````````````````````
 
@@ -61,6 +62,11 @@ Now we need to set up the variables inside our experiment:
 - the outer (blocks) loop will have conditions file = `blocks.xlsx`
 
 .. nextslide::
+
+Randomised block designs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Setting loopType to *random* means that currently we have a randomised block design. The condition files listed in blocks.xlsx will be presented in a random order. 
 
 .. image:: /_images/blocksMethodB_blockLoop2020.png
 
