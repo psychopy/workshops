@@ -164,10 +164,10 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 *Exercises*
 `````````````````````````````````````````
 
-Let's practice counterbalancing in different ways using the counterbalancing exercises in the demo folder. 
+Let's practice counterbalancing in different ways using the counterbalancing exercises in the demo folder. In "excercise 1" you will find a non efficient counterbalanced design. We want to improve this in 2 phases.
 
-1. Turn this inefficient design into a randomised block design. 
-2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. 
+1. Turn this inefficient design into a randomised block design. (the cat and dog images are presented in blocks, but in a random order)
+2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
 
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
 
@@ -205,7 +205,7 @@ Where the nReps argument of each subloop is set using something like '$nRepsA' e
 *Exercise*
 `````````````````````````````````````````
 
-Use the second counterbalance exercise in the demos folder. 
+Open exercise 2 in the counterbalanceExercises folder. This is very similar to our last task, but this time our two routines present different kinds of components, so we need to use a different method of counterbalancing. 
 
 We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops.
 
