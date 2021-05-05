@@ -7,7 +7,11 @@ Solution 1.5
 
     me = {'name':'Jon','age':21,'house':33,'street':'Banana Drive'}
     for key in me:
-        print("%s: %s" %(key, me[key]))
+        print("%s: %s" % (key, me[key]))
 
-    #the last line could be
-    print(key, ":", me[key])
+or, if you wanted to be fancy...
+
+.. code-block:: python
+
+	for key, value in me.items():
+		print("%s: %s" % (key, value))
