@@ -13,10 +13,6 @@ Given these variables only::
 
 use string formatting to print out the following:
 
-    Hello Jon
-    HELLO Jon
-    The time is 9.05am
-    The time is 09:05
-    Jon is 1.8m tall
+    HELLO Jon, the time is 09:05am. Jon is 1.8m tall.
 
 Go to :ref:`sol1.8`
