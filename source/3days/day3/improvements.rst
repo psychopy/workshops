@@ -181,5 +181,5 @@ already!)
     :hidden:
     :maxdepth: 1
 
-    syntax/index_Dublin
-    arraysAndPlotting_Dublin
+    syntax/index
+    arraysAndPlotting
