@@ -147,5 +147,5 @@ Exercise (20 mins)
 
 The end product should look like this...
 
-.. image:: /_images/jumpAnimate.gif
+.. image:: /_giffs/search-gif.gif
    :width: 100 %
