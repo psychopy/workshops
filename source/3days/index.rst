@@ -12,24 +12,25 @@ Upcoming events
 +--------------------+-------------------+-----------------------------------------------------------------------------------------+
 
 About
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming in general. We can be quite flexible with what we cover in these sessions but we will keep the themes quite broad to facilitate most attendees. Typically the timetable with appear as follows:
+These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable with appear as follows:
 
 .. image:: /_static/timetable2.png
   :align: center
   :width: 600
 
+Note that on day 3 we are currently trialing parallel sessions; Advanced Builder and Pure Python. We hope that there will be a bit of something for everyone and several experience levels!
 
 What do I need to know in advance?
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The only base knowledge we will assume for this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
 
 What technology and/or software will I need to make the most of the workshops?
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You will need to download a recent version of PsychoPy and register for a free Pavlovia account in order to follow along with the tasks we create in the workshop.
+You will need to `download a recent version of PsychoPy <https://www.psychopy.org/download.html>`_ and register for a free `pavlovia.org <https://pavlovia.org/>`_ account to follow along with the tasks we create in the workshop. If you have access to *two monitors* that can be beneficial, although not essential. 
 
 We run the workshops using a combination of zoom and slack. The slack channel is designed to encourage interaction throughout and provides a few benefits:
 
@@ -38,16 +39,50 @@ We run the workshops using a combination of zoom and slack. The slack channel is
 - The conversations are archived, so you can come back to the answers to yours and others questions later. 
 
 How can I purchase tickets?
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tickets can be purchased from the `pavlovia store <https://pavlovia.org/store>`_
 
 Materials
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The slides and materials for this workshop can be accessed `Here <materials.html>`_
+All of our materials are opnly available in web page (links below) or and `html slide <https://workshops.psychopy.org/slides/3days>`_ format.
+
+You can also download and unzip  `a range of premade demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
+
+Day 1
 
 .. toctree::
-    :maxdepth: 1
-    :hidden:
-    Creating better Experiments 3 day workshop <slides/3days/materials>
+  :maxdepth: 1
+
+  10introductions
+  buildingBetter
+  general/builderAndCode
+  addingFeedback
+  23mouseInputs
+
+Day 2
+
+.. toctree::
+  :maxdepth: 1
+
+  pavlovia
+  pavloviaLaunch
+  debuggingOnline
+  advancedOnline
+
+Day 3
+
+.. toctree::
+  :maxdepth: 1
+
+  coding/index
+  coding/improvements
+  coding/syntax/index
+
+  general/pythonForGeneral
+
+
+Accessibility
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We are aware that online teaching via zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements or want to arrange one-to-one training please contact us directly at workshops@opensciencetools.org 
