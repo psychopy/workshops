@@ -119,6 +119,9 @@ OK so this works, but with three positions we might think "what's the point", le
 
 Here the method :code:`random()` is used to generate a random value between 0 and 1. 
 
+.. note::
+	:code:`random()` is a python method, if you are working online you will need the Javascript equivilent which is :code:`Math.random()` (hopefully psychopy will do this for you soon though!)
+
 .. nextslide::
 
 Because these random values are all positive, you might notice all the letters are in the top right hand side of the screen, so let's scale those positions to be :code:`pos=(random()-0.5, random()-0.5)`.
