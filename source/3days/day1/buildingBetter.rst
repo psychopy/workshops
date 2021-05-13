@@ -9,7 +9,7 @@ Using Builder
 
 All the base knowledge we assume at the start of this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
-This shows you how to make the 'posnerHand' demo available from `previous examples <https://workshops.psychopy.org/psychopy_examples.zip>`_
+This shows you how to make the `posner task in PsychoPy <https://workshops.psychopy.org/psychopy_examples.zip>`_
 
 What makes a PsychoPy experiment?
 --------------------------------------

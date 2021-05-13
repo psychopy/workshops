@@ -55,32 +55,47 @@ Day 1
 .. toctree::
   :maxdepth: 1
 
-  10introductions
-  buildingBetter
-  general/builderAndCode
-  addingFeedback
-  23mouseInputs
+  day1/introductions
+  day1/buildingBetter
+  day1/builderAndCode
+  day1/addingFeedback
+  day1/mouseInputs
 
 Day 2
 
 .. toctree::
   :maxdepth: 1
 
-  pavlovia
-  pavloviaLaunch
-  debuggingOnline
-  advancedOnline
+  day2/pavlovia
+  day2/builderToPavlovia
+  day2/debuggingOnline
+  day2/advancedOnline
 
-Day 3
+Day 3 (Morning)
 
 .. toctree::
   :maxdepth: 1
 
-  coding/index
-  coding/improvements
-  coding/syntax/index
+  day3/codingAnExperiment
+  day3/improvements
 
-  general/pythonForGeneral
+Day 3 (Afternoon) - parallel sessions
+
+Python focus - *for those wanting to learn more advanced coding concepts for general use*:
+
+.. toctree::
+  :maxdepth: 1
+
+  day3/python_parallel/coding/syntax/index
+  day3/python_parallel/general/pythonForGeneral
+
+Experiment focus - *for those wanting to learn more advanced tips with Builder for experiment creation*:
+
+.. toctree::
+  :maxdepth: 1
+
+  day3/builder_parallel/customRandomisation
+  day3/builder_parallel/makingMassComponents
 
 
 Accessibility
