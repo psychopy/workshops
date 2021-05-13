@@ -142,3 +142,10 @@ Exercise (20 mins)
 4. Make the target appear in random locations on each trial. 
 
 5. Make the number of distractors change on each trial...
+
+.. nextslide::
+
+The end product should look like this...
+
+.. image:: /_images/jumpAnimate.gif
+   :width: 100 %
