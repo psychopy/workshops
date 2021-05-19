@@ -58,7 +58,8 @@ Day 1
   day1/introductions
   day1/buildingBetter
   day1/builderAndCode
-  day1/addingFeedback
+  day1/clocksAndTrialCounters
+  day1/usingFeedback
   day1/mouseInputs
 
 Day 2
