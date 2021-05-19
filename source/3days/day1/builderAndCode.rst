@@ -143,6 +143,6 @@ What can we do with code in our experiments?
 ---------------------
 
 We can make more flexible and dynamic experiments using code, including:
-   - Add clocks and trial counters
+   - :ref:`clocksAndTrialCounders`
    - :ref:`addingFeedback`
    - :ref:`mouse3days`
