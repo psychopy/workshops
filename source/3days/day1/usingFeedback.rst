@@ -12,15 +12,38 @@ Let's try and create a 'Feedback' Routine for the Posner task we want to:
 - Adjust the colour of the feedback based on RT
 - Give feedback at the end on average RT overall, on valid trials and on invalid trials.
 
+What can we give feedback on?
+-------------------------------
+
+We can explore the variables available to us by examining the data output of our experiment. If we used a mouse component for example, we can see that there is usually: 
+
+*   :code:`mouse.time` - the time(s) of the mouse click(s)
+*   :code:`mouse.clicked_name` - the name(s) of the object(s) clicked by the mouse.
+
+We can also store other things from our mouse component by adding parameters to the *Store params for clicked* field.
+
 .. nextslide::
 
-To add trial by trial feedback on response times create a feedback routine and add a text component. In the text field enter::
-    
+We can use any of these variables to then provide trial-by trial feedback. First, we would need to add a routine called "feedback", in the routine add a text component and in the text field we could write::
+
+    $'RT was ' + 'str(resp.time)' + '' ms'
+
+Here we are concatinating strings using the + operator and we are also converting our resp.time variable to a string using the :code:`str()` method (we can't concatinate strings and numbers!).
+
+.. nextslide::
+
+The problem here is that 1) the resp.time value is actually a list, so we may want to index either the first or last element 2) we probably want to round the value to be a bit prettier::
+
+    $'RT was ' + 'str(round(resp.time[0], 3))' + '' ms'
+
+An alternative way of doing this in python would be to use a "formatted string" (this is better practice for python, but it might not translate so smoothly online)::
+
     $f'RT was {str(round(resp.time[0], 3))} ms'
 
+feedback dependant stimuli
+-------------------------------
 
-.. nextslide::
-
+We can make feedback response dependant by using simple :code:`if` statements.
 To adjust feedback colour based on response time we need a code component::
 
     if resp.time[0]<.5:
@@ -28,7 +51,8 @@ To adjust feedback colour based on response time we need a code component::
     else:
         feedbackCol = 'red'
 
-.. nextslide::
+Providing overall feedback
+-------------------------------
 
 To give feedback at the end for each condition let's learn about lists. We want three lists to keep track of RTs::
 
