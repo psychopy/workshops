@@ -8,7 +8,7 @@ Clocks and trial counters
 ===============================
 
 Clocks
-==============================
+-------------------------------
 
 Keeping track of time is really important to most experiments. In PsychoPy there are many useful clocks that live "under the hood", which we can use in our experiment:
 
@@ -91,7 +91,8 @@ Then add a code component to all routines following this and int he "Begin Routi
 This way all following routines would also be ended if the participant took too long to respond. 
 
 Trial counters
-====================================
+-------------------------------
+
 How is PsychoPy counting trials?
 ------------------------------------
 
