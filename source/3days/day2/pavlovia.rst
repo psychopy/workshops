@@ -11,115 +11,105 @@
 The Pavlovia environment
 =================================
 
-The Pavlovia environment
-----------------------------
-
 .. image:: /_images/pavlovia.png
 	:align: center
+    :scale:50%
 
-.. slide:: Overview
-
-    * :ref:`pavloviaInterface`
-    * :ref:`pavloviaDocs`
-    * :ref:`pavloviaExplore`
-    * :ref:`gitlabBrief`
-    * :ref:`pavloviaDashboard`
-    * :ref:`pavloviaExpPage`
-
-.. _pavloviaInterface:
-
-The Pavlovia environment
+What is PsychoJS?
 ----------------------------
 
-Pavlovia is:
+When we make an experiment in PsychoPy builder, it is writing our experiment in Python code under the hood. Now it also writes our experiment to JavaScript via PsychoPy's sister library `PsychoJS <https://psychopy.github.io/psychojs/>`_.
 
-- A secure server to launch and run experiments
-- An experiment repository
+.. image:: /_images/psychopy_pav_psychojs.png
+    :align: center
+    :scale:50%
 
-Pavlovia and the library used to run experiments in browser (PsychoJS) are relatively young (2018) - this means minor changes may occur as we develop and improve the platform (e.g. recently given option to not save incomplete data)
+.. nextSlide::
 
+If you prefer to write experiments in pure code, you can write experiments purely in Javascript using PsychoJS, but in general it will be more flexible, less bug prone and easier to share with non-coders if you use Builder. 
 
-.. _pavloviaDocs:
-
-Pavlovia: Docs
+What is Pavlovia?
 ----------------------------
 
-To learn more about Pavlovia we can use the 'Docs' tab.
+Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_. is a secure server for running experiments and storing data but it is also a good way to share your experiments publically with other researchers! Pavlovia is fully `GDPR complient <https://pavlovia.org/docs/home/ethics>`_.
 
-.. image:: /_images/pavloviaTabs.png
-    :align: right
+.. ifslides::
+
+    .. image:: /_images/psychopy_pav_psychojs.png
+    :align: center
+    :scale:50%
+
+What is free, what costs and why? 
+---------------------------------
+
+There are many features that we can use for free in pavlovia such as :
+
+*   Version control
+*   Public sharing of experiments
+
+But to support the ongoing development of PsychoPy (which has been developed for free for years by `dedicated contributors <https://github.com/psychopy/psychopy/graphs/contributors>`_.) a `small cost <https://pavlovia.org/store>`_. is introduced for **storing data** from experiments you run.
+
+Finding openly shared experiments
+----------------------------------
+
+There are two ways we can find and use existing experiments from Pavlovia:
+
+*   From within pavlovia itself using the ` explore <https://pavlovia.org/explore?sort=DEFAULT>`_. tab. 
+*   From within PsychoPy itself using the search globe. 
+
+Finding shared experiments from Pavlovia itself
+-------------------------------------------------
+
+In the  ` explore <https://pavlovia.org/explore?sort=DEFAULT>`_. tab each experiment has it's own icon. You can choose to run the experiment (if it is set to running) or view the code :code:`<>`
+
+.. image:: /_images/stroop_pavlovia.png
+    :align: left
+    :scale: 50 %
 
 .. nextSlide::
 
-Here we can find important information that might be needed for ethics applications, documents on how to use the site ("Experiments") and info on credits and licensing.
+We can then fork the experiment to our own "namespace" or a selected "gitlab group".
 
-.. image:: /_images/pavloviaEthics.png
-    :align: right
-
-.. nextSlide::
-
-PsychoPy is free. Using Pavlovia to share studies is free. Collecting data through pavlovia has a small cost (relative to commercial competitors). This cost is to ensure the sustainability of PsychoPy. 
-
-.. image:: /_images/pavloviaPrices.png
-    :align: right
+.. image:: /_images/fork_online.png
+    :align: left
+    :scale: 50 %
 
 .. nextSlide::
 
-You can buy credits or site licences in the "Store" tab. Pavlovia accounts are free and you can pilot experiments for free. 
+Finally, we would use the search icon inside PsychoPy to search and sync:
 
-.. image:: /_images/pavloviaStore.png
-    :align: right
+.. image:: /_images/sync_local.png
+    :align: left
+    :scale: 50 %
 
-.. _pavloviaExplore:
+Finding shared experiments from PsychoPy
+-------------------------------------------------
+Alternatively, we could just search from inside PsychoPy itself and "Fork +Sync" all at once
 
-Pavlovia: Explore
-----------------------------
-
-Here you can browse existing experiments. Try searching for an experiment in your field!
-
-.. image:: /_images/pavloviaExplore.png
-    :align: right
+.. image:: /_images/fork_local.png
+    :align: left
+    :scale: 50 %
 
 .. nextSlide::
 
-You can search a task, see what state it is currently in (Inactive, piloting or running), and either launch the task or take a look at the code, by clicking on the <> symbol. 
+Since the second metho is easier than the first, you might wonder "why bother" with the first approach? 
 
-.. image:: /_images/pavloviaSearch.png
-    :align: right
-
-.. note::
-    Pavlovia is another good place to start if you are looking to create a task that might already exist (in addition to the demos in PsychoPy!).
+*   You can avoid some errors by deleting the data folder from the forked project first (Web IDE > ... > delete > commit)
+*   Can be easier for use with groups (online you can fork to a group, locally the project will always be forked to your namespace)
 
 .. _gitlabBrief:
 
 Gitlab
 --------------------------
 
-Viewing the code will take you to "gitlab". This allows similar features to GitHub (if you want them).
-
-.. image:: /_images/gitlabPosner.png
-    :align: right
-
-.. nextSlide::
-
 Benefits of GitLab (the important bits):
  - Fork existing projects
  - Version control
  - Add lab members to projects to work on the same files
- - Easy sharing of your task (open science)
-
-
-Forking
-````````````````````````````
-
-If you find an experiment you like using 'explore' you can open the gitlab page by selecting 'View code (<>)'
-
-You can then fork that to make your own copy of the project to work from (you can make a copy for your own 'namespace' or add it to a group). 
-
-If you really like the task, give the original poster a star too!! 
+ - Easy sharing of your task (open science) 
 
 Version control
-````````````````````````````
+--------------------------
 
 You can see when the last changes were made to the task by looking at the commit history
 
@@ -143,7 +133,7 @@ You can browse the repository at that point in history:
 Imagine you have a working task, you then make a bunch of changes, and it doesn't work. If you commit little and often you can easily revert those changes. 
 
 Adding team members
-````````````````````````````
+--------------------------
 
 To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
 
@@ -154,7 +144,7 @@ To add members to your own project, you can use the settings>members option wher
     You can also make 'groups' inside gitlab
 
 Making your task public
-````````````````````````````
+--------------------------
 
 You can change the visibility of your task at any time under permissions. 
 
@@ -176,7 +166,7 @@ You can change the visibility of your task at any time under permissions.
 
 
 *Exercises (10-15 mins)*
-`````````````````````````
+--------------------------
 
 Let's get some practice using pavlovia.org!
 
