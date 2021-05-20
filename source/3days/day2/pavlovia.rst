@@ -85,9 +85,9 @@ Alternatively, we could just search from inside PsychoPy itself and "Fork +Sync"
 
 .. nextSlide::
 
-Since the second metho is easier than the first, you might wonder "why bother" with the first approach? 
+Since the second method is easier than the first, you might wonder "why bother" with the first approach? 
 
-*   You can avoid some errors by deleting the data folder from the forked project first (Web IDE > ... > delete > commit)
+*   You can avoid some errors by deleting the data folder from the forked project *before* you clone/sync it locally (Web IDE > ... > delete > commit)
 *   Can be easier for use with groups (online you can fork to a group, locally the project will always be forked to your namespace)
 
 .. _gitlabBrief:
@@ -105,12 +105,13 @@ Version control
 --------------------------
 
 .. image:: /_images/gitlabComHistory.png
-    :align: left
-    :scale: 50%
+    :align: center
+    :scale: 70%
 
-You can see when the last changes were made to the task by looking at the commit history
+You can see when the last changes were made to the task by looking at the commit history.
 
 .. nextSlide::
+
 
 If you click on the change you can see deletions (in red) and insertions (in green)
 
@@ -161,11 +162,11 @@ You can change the visibility of your task at any time under permissions.
 
 Let's get some practice using pavlovia.org!
 
-1. in your breakout room make a group for you to share something. 
-2. try forking a task you like (hint: those in the 'demos' group can be useful)
-3. try searching that project from your local psychopy 
-4. make a small edit 
-5. upload and see if the change shows on gitlab!
+1. try forking a task you like (hint: those in the 'demos' group can be useful)
+2. try searching that project from your local psychopy 
+3. make a small edit 
+4. upload and see if the change shows on gitlab!
+5. add someone else in your breakout room as a team member
 
 NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 
