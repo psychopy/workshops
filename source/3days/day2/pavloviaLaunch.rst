@@ -3,13 +3,13 @@
 Launching your studies on Pavlovia
 =================================
 
-Launching studies on pavlovia
------------------------------
+Pushing your experiment from PsychoPy to pavlovia
+--------------------------------------------------
 
-To load the task to pavlovia.org we can either use the "run online" or the "sync to pavlovia" icons. The former will then try to run our task in the browser. For now let's use sync. 
+To load the task to pavlovia.org we can either use the "run online" or the "sync to pavlovia" icons. The former will then try to run our task in the browser, the second will allow us to sync any changes without running the study. It is a good idea to sync little and often to keep track of the changes you make.
 
 .. image:: /_images/syncWithPav.png
-    :align: right
+    :align: center
 
 .. nextSlide::
 
@@ -26,44 +26,29 @@ If we then go to our Experiments in the pavlovia Dashboard, we should see our ta
 
 .. _pavloviaDashboard:
 
-Pavlovia: Dashboard
------------------
+Finding your experiment on pavlovia
+------------------------------------
 
-This is where you can view your experiments, check if you have credits etc. 
+You can find your experiment on pavlovia via the dashboard > experiments. This is where you can view your experiments, check if you have credits etc. 
 
 .. image:: /_images/pavloviaDashboard.png
     :align: right
 
-.. _pavloviaExpPage:
-
-Pavlovia: Dashboard: Experiment page
------------------
+The Experiment page
+------------------------------------
 
 By clicking on one of your experiments, you can see the details of that project, set the state of your experiment and access the data. 
 
 .. image:: /_images/pavloviaStatus.png
     :align: right
 
-.. nextSlide::
 
-Set to "Piloting" and click "Pilot".
-     - you can share that URL for 1hr to try the task.
-     - you will get a pilot .csv data file.
+Finding the data
+------------------------------------
+You can save your output in 2 ways:
 
-.. image:: /_images/pavloviaPilot.png
-    :align: right
-
-.. nextSlide::
-
-Setting your task to "Running" will create a URL under the "recruitment" tab which will allow you to share and run the task!
-
-.. image:: /_images/pavloviaRunning.png
-    :align: right
-
-
-.. nextSlide::
-
-You can save your output as .csv files or a database. You can also decide if you want to save incomplete results or not. 
+*	**.csv** format will store a .csv and log file that van be accessed via "View Code <>" > "data"
+*	**database** will store a single file with all participants appended to a single file (this will not be stored int the project repository, so if you later make your project public the data will not be public).
 
 .. image:: /_images/pavloviaSaving.png
     :align: right
