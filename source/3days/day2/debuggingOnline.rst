@@ -70,7 +70,7 @@ Sometimes you might not get an error message, but things "don't work" - what do 
 
 .. nextSlide::
 
-you can open developer tools in your browser (the`crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ gives tips how to do this on different browsers/operating systems)
+you can open developer tools in your browser (the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_) gives tips how to do this on different browsers/operating systems)
 This will tell us where our (which line) error is occuring
 
 .. image:: /_images/developerTools.png
@@ -90,6 +90,8 @@ There are several other tools that can be useful including:
 - Counterbalancing online using `sequential participant IDs <https://moryscarter.com/vespr/pavlovia.php>`_ 
 
 - `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_
+
+- The `assignment <https://gitlab.pavlovia.org/tpronk/assignment_stroop_cep_2021_may19-21>`_ we will complete! (fork the task then find the bugs...)
 
 Next up!
 -----------------
