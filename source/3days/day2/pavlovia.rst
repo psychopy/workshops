@@ -133,7 +133,7 @@ Adding team members
 To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
 
 .. image:: /_images/gitlabSettings.png
-    :align: right
+    :align: center
 
 Making your task public
 --------------------------
