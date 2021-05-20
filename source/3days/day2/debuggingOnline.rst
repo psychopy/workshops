@@ -60,7 +60,7 @@ Want to explore Javascript?
 
 Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS (but remember that this is a one way street! don't be tempted to alter the JS code if you want to continue making edits in builder!)
 
-Fnding errors: Developer tools
+Finding errors: Developer tools
 -------------------------------
 
 Sometimes you might not get an error message, but things "don't work" - what do we do here?
