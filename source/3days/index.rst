@@ -68,7 +68,7 @@ Day 2
   :maxdepth: 1
 
   day2/pavlovia
-  day2/builderToPavlovia
+  day2/pavloviaLaunch
   day2/debuggingOnline
   day2/advancedOnline
 
