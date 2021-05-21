@@ -32,7 +32,7 @@ In your breakout rooms work through this stepby-step guide to implement some ada
 **Step 1: Forking the demo**
 
 1.	Search for and fork the `demo_eye_tracking2 <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ project in demos.
-2.	Click ‘fork’ (next to clone) and select the name space you want to fork this too. 
+2.	Click `fork <https://workshops.psychopy.org/3days/day2/pavlovia.html#finding-shared-experiments-from-pavlovia-itself>`_ and select the name space you want to fork this too. 
 3.	Go to Dashboard> Experiments, find your newly forked project and set its’ status to running. Click ‘Run’ and check that it works on your own set up (you may be asked for webcam permissions the first time you run the demo). 
 4.	From your local PsychoPy. Select the ‘search pavlovia’ icon  (central globe icon in the top tool bar) and search ‘demo_eye_tracking’. Find the version that you just forked to your own namespace **Important: make sure it is the copy from your own namespace**
 
@@ -46,16 +46,17 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 1.	Add a polygon component to the ‘tracking_trial’ routine and position it in the top right corner of your screen, set it to appear for infinite duration. 
 
-*Note: Because this uses Javascript code, your local psychopy won’t run it. So, to check your changes have been made you will need to run it in the browser. In your ‘trials’ loop set ‘Selected Rows’ **temporarily**  to 1, click ‘sync to pavlovia’ (second globe from the right) then check that your polygon appears where you want it on screen (notice, the tracking won’t work well following one calibration trial, but that is fine for now).*
+.. note::
+    Because this uses Javascript code, your local psychopy won’t run it. So, to check your changes have been made you will need to run it in the browser. In your ‘trials’ loop set ‘Selected Rows’ **temporarily**  to 1, click ‘sync to pavlovia’ (second globe from the right) then check that your polygon appears where you want it on screen (notice, the tracking won’t work well following one calibration trial, but that is fine for now).
 
 .. nextSlide::
 
-2.	Add a code component called ‘checkTarget’ to the ‘tracking_trial’ routine. In the ‘each frame’ tab write::
-
-	if polygon.contains(tracking_square):
-    	thisCol = 'red'
+2.	Add a code component called ‘checkTarget’ to the ‘tracking_trial’ routine. In the **each frame** tab write
+::
+        if polygon.contains(tracking_square):
+            thisCol = 'red'
 	else:
-    	thisCol = 'white'
+            thisCol = 'white'
 
 .. nextSlide::
 
@@ -68,6 +69,8 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 5.	Sync it online – see what happens! Your polygon should change colour when you look at it.
 
+.. image:: /_gifs/eyetracking-polygon.gif
+    :align: center
 
 .. nextSlide::
 
@@ -79,10 +82,13 @@ Ok imagine we want several trials, where each trial ends when the participant lo
 
 2.	Add a loop around the ‘tracking_trial’ routine and feed in the conditions file you made.
 
-3.	In your ‘checkTarget’ code component make the following edit::
+3.	In your ‘checkTarget’ code component make the following edit
+::
 
-	if polygon.contains(tracking_square):
-    	thisCol = 'red'
-    	continueRoutine = False
-	else:
-    	thisCol = 'white'
+    if polygon.contains(tracking_square):
+        thisCol = 'red'
+        continueRoutine = False
+    else:
+        thisCol = 'white'
+
+
