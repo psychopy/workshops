@@ -145,5 +145,5 @@ Exercise (15 mins)
 
 Present a list of numbers and alternate numbers between odd and even.
 
-*Hint: remember how we can seperate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`*
+Hint: remember how we can seperate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`
 
