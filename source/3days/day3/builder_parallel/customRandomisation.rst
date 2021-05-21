@@ -25,7 +25,7 @@ Loops don't just have to be used to present trials/repeat stimuli, they can also
 
 - Make a conditions file with the header 'Word' and a list of words to present
 - Add a routine to your experiment and call it 'loading'. 
-- Add a code component to this routine and at under *Begin Routine* use :code:`print(Word)
+- Add a code component to this routine and at under *Begin Routine* use :code:`print(Word)`
 
 .. nextslide::
 
@@ -33,7 +33,7 @@ Once we know how to load our stimuli, we can use our python skills to manipulate
 
 Some cases where this can be useful:
 
-- You want some stimuli to be presented at fixed trials (e.g. 5th, 10th, 15th) trial is fixed, but with the interleaving trials selected randomy.
+- You want some stimuli to be presented at fixed trials (e.g. 5th, 10th, 15th) trial is fixed, but with the interleaving trials selected randomly.
 - You want to randomly pick a subset of the to-be-presented words in some practice trials.
 
 and many more! We will practice with the first case example. 
@@ -145,5 +145,5 @@ Exercise (15 mins)
 
 Present a list of numbers and alternate numbers between odd and even.
 
-*Hint: remember how we can seperate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`
+*Hint: remember how we can seperate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`*
 
