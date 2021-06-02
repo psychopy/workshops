@@ -75,7 +75,8 @@ Broader tutorials and exercises
 
 There are many open learning resources for learning PsychoPy, if you want to learn how to make a specific task try following one of our "experiment recipies": 
 
--	`n back tasks <tutorials/n-back.html>`_ 
+-	`The Stroop task <tutorials/stroop.html>`_  *builder basics*
+-	`N back tasks <tutorials/n-back.html>`_  *builder basics* - *Intro to code*
 
 
 .. toctree::

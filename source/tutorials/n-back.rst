@@ -90,7 +90,7 @@ The final thing we might want to do is make sure that we store whether a keypres
 
 .. nextslide::
 
-Under the `Data` tab in our keyboard component we then need to select the `Store correst` option and feed in our column header to the `Correct answer` fiels :code:`$corrAns`
+Under the `Data` tab in our keyboard component we then need to select the `Store correct` option and feed in our column header to the `Correct answer` field :code:`$corrAns`
 
 And there you have it! a very simple n-back task!
 
@@ -174,6 +174,8 @@ We are *nearly* there, the last thing to do it so ensure that our non-target tri
 
 .. note::
 	Remember python functions don't work online. Rather than using :code:`np.random.choice()` to randomly pick stimuli, we can instead :code:`shuffle()` the list and select the first/last item from it as our stimulus. Take a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ for notes on python - javascript translations. 
+
+**Hot tip** in most cases when we are using code components, we want to use the variables generated in our code to update our stimuli. Because of this chronological order, this code needs to be executed *before our stimuli are updated for the trail*. So, in general, if you are using a code component, make sure ri right click it and move it to the top of your routine. 
 
 Exercise (15 mins): Basic coding concepts
 ----------------------------------------------
