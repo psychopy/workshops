@@ -70,6 +70,14 @@ PsychoPy team on its own.
 We'll probably finish with a day of mini-conference for people to share methods new(ish) they're
 developing that others might find interesting.
 
+Broader tutorials and exercises
+~~~~~~~~~~~~~~~~~~~~~~
+
+There are many open learning resources for learning PsychoPy, if you want to learn how to make a specific task try following one of our "experiment recipies": 
+
+-	`n back tasks <tutorials/n-back.html>`_ 
+
+
 .. toctree::
     :maxdepth: 1
     :hidden:
