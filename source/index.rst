@@ -10,7 +10,7 @@ Open Science Tools official workshops
 `````````````````````````````````````````````````
 
 Upcoming events
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-----------------+----------------------------------------------+
 |     Format      |  Details                                     |
@@ -21,7 +21,7 @@ Upcoming events
 +-----------------+----------------------------------------------+
 
 About
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are many resources to help you learn the various aspects of PsychoPy (and most of them are free!)
 
@@ -43,7 +43,7 @@ or in-person.
 .. _pampr:
 
 PaMPR (Programming and Methods in Psychology Research)
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **2021 dates To Be Confirmed**
 
@@ -71,16 +71,16 @@ We'll probably finish with a day of mini-conference for people to share methods 
 developing that others might find interesting.
 
 Broader tutorials and exercises
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are many open learning resources for learning PsychoPy, if you want to learn how to make a specific task try following one of our "experiment recipies": 
+There are many open learning resources for learning PsychoPy, if you want to learn how to make a specific task try following one of our "experiment recipies". If you are a lecturer teaching research methods - please also feel free to use and share these brief exercises: 
 
-*builder basics*
+*Builder basics*
 
 -	`Lexical Decision tasks <tutorials/lexical_decision.html>`_ 
 -	`The Stroop task <tutorials/stroop.html>`_ 
 
-*builder basics* - *Intro to code*
+*Builder basics* - *Intro to code*
 
 -	`N back tasks <tutorials/n-back.html>`_  
 -	`Digit span tasks <tutorials/digit_span_task.html>`_  
