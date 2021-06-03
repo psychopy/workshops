@@ -15,7 +15,7 @@ The Stroop task is a great starting point for learning to use PsychoPy, it is wh
 Setting up our experiment 
 ----------------------------------------------
 
-OK step 1 of any experiment is to consider "what makes the main stimuli in my trial". In the Stroop task, this is simple - a word, and a keyboard response (and makybe a fixation cross to start of the trial!). 
+OK step 1 of any experiment is to consider "what makes the main stimuli in my trial". In the Stroop task, this is simple - a word, and a keyboard response (and maybe a fixation cross to start of the trial!). 
 
 .. image:: /_images/tutorials/stroop/basic_flow.png
    :width: 100 %
@@ -44,7 +44,7 @@ The next thing to do is to think about what information changes trial-by-trial. 
 Feeding trial info into PsychoPy
 ----------------------------------------------
 
-once we have our conditions file set up and **saved in the same location as our experiment** we need to give this info to our experiment. Add a loop around your trial routine and give the path to your conditions file in the Conditions field. We want to use the information from our conditions file to set a) the presented word (in the Text field of our word write :code:`$thisWord`) and b) the color of that word (in the Appearance tab of our word component write :code:`$thisColor` in teh Foreground Color field) - in both of these fields make sure to **set every repeat** this is because these are parameters that are going to change on each iteration of our trials loop. 
+Once we have our conditions file set up and **saved in the same location as our experiment** we need to give this info to our experiment. Add a loop around your trial routine and give the path to your conditions file in the Conditions field. We want to use the information from our conditions file to set a) the presented word (in the Text field of our word write :code:`$thisWord`) and b) the color of that word (in the Appearance tab of our word component write :code:`$thisColor` in the Foreground Color field) - in both of these fields make sure to **set every repeat** this is because these are parameters that are going to change on each iteration of our trials loop. 
 
 Collecting responses
 ----------------------------------------------

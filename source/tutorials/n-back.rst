@@ -138,7 +138,7 @@ then on each trial, rather than using :code:`$thisLetter` from the conditions fi
 
 But wait a second....
 
- We don't want the number to be random on every trial, instead we want it to be the same as the n-th back on some trials. So, we need a bit more code. First, let's track the letters presented on each trial by adding them to a list. In the *Begin Routine* tab we make an empty list :code:`presentedLetters = []` then in the *Begin Routine* tab we add the presented letter to the list::
+We don't want the number to be random on every trial, instead we want it to be the same as the n-th back on some trials. So, we need a bit more code. First, let's track the letters presented on each trial by adding them to a list. In the *Begin Routine* tab we make an empty list :code:`presentedLetters = []` then in the *Begin Routine* tab we add the presented letter to the list::
 
 	thisLetter = np.random.choice(letters)
 	presentedLetters.append(thisLetter)
