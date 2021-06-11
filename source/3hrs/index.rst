@@ -44,14 +44,14 @@ The slides and materials for this workshop can be accessed Here:
 .. toctree::
     :maxdepth: 1
 
-    10introductions
-    11intermediateBuilder
-    onlineStudies
-    pavloviaEnv3Hrs
-    23mouseInputs
+    introductions
+    intermediateBuilder
+    online
+    pavlovia
+    blockDesigns
+    codeComponents
+    mouseInputs
     textBox
-    15blockDesigns
-    21codeComponents
 
 These materials will remain open for you to use and share, but may be updated as we continue developing workshop content. 
 
