@@ -1,7 +1,21 @@
 
 Creating Experiments in PsychoPy (3 hours)
 `````````````````````````````````````````````````
-Upcoming 'open' events
+
+About 
+~~~~~~~~~~~~~~~~~~~~~~
+
+We typically deliver these sessions in a 3 hour format, and aim to cover 3 broad topics - in reality, we tend to tailor what we talk about depending on questions fromt he audience!
+
+.. image:: /_static/timetable3hr.png
+  :align: center
+  :width: 600
+
+Our 3hr sessions are designed to give a *broad* introduction to using PsychoPy, we aim to make materials useful for beginners but also include useful tips and tricks for those already familiar with PsychoPy. We deliver our 3hr workshops in "open" format, meaning **anyone can attend for free**, we advertise events on eventbrite and anyone can register.
+
+If you want a *departmental session* we charge a small fee (£100) - please contact workshops@opensciencetools.org to enquire. 
+
+Upcoming open/free events
 ~~~~~~~~~~~~~~~~~~~~~~
 
 +------------------+-------------------------------+-----------------------------------------------------------------------------------------------------+
@@ -11,36 +25,36 @@ Upcoming 'open' events
 +------------------+-------------------------------+-----------------------------------------------------------------------------------------------------+
 
 
-About 
-~~~~~~~~~~~~~~~~~~~~~~
+What can I do to prepare?
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Formats
--------
-*open format sessions* We are now running regular 3hr workshops in an 'open' format. These sessions are *free*, and anyone from any institution can attend. Please note that places are limited, so if you are unable to attend please cancel your ticket in advance so that others may register. 
+We recommend watching this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_  in advance of the session, this can get you up to speed on the materials we cover in the workshop. We believe very much in **learning by doing** our workshops work best if attendees follow along with making an experiment on their own computer whilst we talk through it's creation. 
 
-*departmental sessions* If you would like to organise one of our 3hr sessions for your department please contact us directly via workshops at opensciencetools.org we typically charge a small fee for these sessions (£100).
-
-Content
--------
-These sesssions are intended to give a *basic* introduction to getting online from builder and start using code to make your experiments more flexible. 
-
-The base knowledge that we will assume in advance can be learnt in this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
-
-
-What technology and/or software will I need to make the most of the workshops?
-~~~~~~~~~~~~~~~~~~~~~~
-
-- Zoom - to stream the sessions
-- PsychoPy - we recommend downloading a recent version
-- Pavlovia - please register for a free acount `here <https://pavlovia.org/>`_ .
+- Please make sure that you have a `recent version of PsychoPy installed <https://www.psychopy.org/download.html>`_
+- Make sure that you have `registered for a free pavlovia.org account <https://pavlovia.org/>`_
+- We stream our sessions via Zoom
+- It can be helpful, though not essential, to have 2 monitors (one for watching the session and one for creating the experiment)
 
 
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The slides and materials for this workshop can be accessed `Here <materials.html>`_ These materials will remain open for you to use and share, but may be updated as we continue developing workshop content. 
+The slides and materials for this workshop can be accessed Here:
 
 .. toctree::
     :maxdepth: 1
-    :hidden:
-    Creating better Experiments 3 hour workshop <3hrs/index>
+
+    10introductions
+    11intermediateBuilder
+    onlineStudies
+    pavloviaEnv3Hrs
+    23mouseInputs
+    textBox
+    15blockDesigns
+    21codeComponents
+
+These materials will remain open for you to use and share, but may be updated as we continue developing workshop content. 
+
+Accessibility
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We are aware that online teaching via zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements or want to arrange one-to-one training please contact us directly at workshops@opensciencetools.org 
