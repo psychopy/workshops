@@ -12,14 +12,14 @@ Building better experiments
 ==============================
 
 Using Builder
------------------
+----------------------------------
 
 All the base knowledge we assume at the start of this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
 This shows you how to make the 'posnerHand' demo available from `previous examples <https://workshops.psychopy.org/psychopy_examples.zip>`_
 
 What makes a PsychoPy experiment?
------------------
+----------------------------------
 
 Open the posnerHand.psyexp file. An experiment in Builder has:
 
@@ -29,7 +29,7 @@ Open the posnerHand.psyexp file. An experiment in Builder has:
 
 
 The conditions file
------------------
+----------------------------------
 
 Open the conditions.xlsx file...
 
@@ -38,7 +38,7 @@ If you are going to change something on every repeat of a routine (e.g. stimulus
 Each header is a parameter, each row corresponds to the value of that parameter on each repeat/trial.
 
 Making edits
------------------
+----------------------------------
 
 - Add some instructions
 
@@ -48,43 +48,10 @@ As a general styling tip, we suggest to *keep the number of routines to a minimu
 First, let's practice making edits to make sure we are comfortable with builder view. 
 
 Exercises (10 minutes)
------------------
+----------------------------------
 
 - add 2 more trials to the conditions file using the 'neutral' arrow image (we want it so that the target can appear either on the left or the right)
 - add an end routine to thank participants for taking part 
 - in the end routine, ask participants to press a button to end the task (you can use a polygon for the 'button')
 
-.. _onlineStudies:
-
-Running online studies
-=================================
-
-So now we have a very simple experiment that works locally, let's see how we would get that online. 
-
-This is where the globe symbols come in, which represet online functionality. 
-
-Running online studies
------------------
-
-To get our study online, we check that we are signed into our pavlovia acount. Then we 'sync' our project. As we create the project we have the options to:
-
-- select which 'group' we want to push a project to
-- add a description that will appear on the 'Experiment' page online
-- add keywords to help future users find your task (if you make it public)
-- choose if we want the task to be public (we can change that later)
-
-.. nextSlide::
-
-To view your study online, log into pavlovia.org, you will see your experiment under Dashboard > Experiments.
-
-
-Let's get some data! 
-
-(Please do not use any identifying information in your participant ID)
-
-Next
-----------
-
-OK we have now seen the basics of running a study online. Let's talk about some other aspects of the pavlovia environment...
-
-:ref:`pavloviaEnv3Hrs`
+:ref:`online`
