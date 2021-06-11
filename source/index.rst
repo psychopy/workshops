@@ -42,7 +42,7 @@ or in-person.
 PaMPR (Programming and Methods in Psychology Research)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**2021 dates To Be Confirmed**
+**2022 dates To Be Confirmed**
 
 This is a new thing! It's a joint venture with Nottingham trent University.
 I'm afraid we don't have the draft programme in place yet but the
@@ -79,8 +79,13 @@ There are many open learning resources for learning PsychoPy, if you want to lea
 
 *Builder basics* - *Intro to code*
 
--	`N back tasks <tutorials/n-back.html>`_  
 -	`Digit span tasks <tutorials/digit_span_task.html>`_  
+
+
+Previous events
+--------------------
+
+- ECEM, August 2013 : Python for eye-tracking workshop with (Sol Simpson, Michael MacAskill and Jon Peirce). `Download Python-for-eye-tracking materials <ECEM_Python_materials.zip>`_
 
 .. toctree::
     :maxdepth: 1
