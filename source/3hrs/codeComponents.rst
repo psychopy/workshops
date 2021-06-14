@@ -153,7 +153,7 @@ NB: append is 'push' in JS
 
 Then in our final end message we could add a code component where we set some feedback text::
 
-  feedbackText = 'Your average RT was'+np.average(RTlist)
+  feedbackText = 'Your average RT was'+average(RTlist)
 
 Then in our text component add::
 
@@ -166,12 +166,11 @@ Branching and terminating Routines early
 
 Basically, you can use an `if...` statement on each frame (or somewhere else) and set a variable to stop on next repeat.
 
-  - `continueRoutine`
+  - :code:`continueRoutine`
     can be set to False to exit the current Routine at the next screen refresh
 
-  - `trials.finished` (where `trials` is the name of a loop) can be set to  `False` and that loop will terminate on its next iteration. This doesn't abort the current Routine(s) before that
+  - :code:`trials.finished` (where `trials` is the name of a loop) can be set to  `False` and that loop will terminate on its next iteration. This doesn't abort the current Routine(s) before that
 
-  - `core.quit()`
 
 Sometimes you need multiple things
 
@@ -180,9 +179,9 @@ Prevent a Routine from occurring
 
 You could use the code above to prevent a Routine form occuring.
 
-You could set a variable that aborted the Routine (setting continueRoutine=False) on the very first frame.
+You could set a variable that aborted the Routine (setting :code:`continueRoutine=False`) on the very first frame.
 
-Alternatively you could surround that Routine by a loop in the Flow and set the a variable for the number of repeats (like `$nReps`). Then just use code to set `nReps=0` and your loop will effectively skip.
+You can also skip a routine by setting nReps to 0! 
 
 How to debug a code component
 -------------------------------
@@ -191,7 +190,7 @@ Once you're adding custom code there are **many** things to go wrong. We'll look
 
 Look carefully at the message and try google as well - most errors have been encountered by somebody before you! Look at the names of the variables that the error mentions and check the code relating to them.
 
-`print()` statements are really useful here but remove them when you're done. Lots of print commands can bring your script to a grinding halt!
+:code:`print()` statements are really useful here but remove them when you're done. Lots of print commands can bring your script to a grinding halt!
 
 Debugging `if...` statements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
