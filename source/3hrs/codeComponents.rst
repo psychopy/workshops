@@ -36,11 +36,9 @@ Let's create a 'Feedback' Routine for the basic task we created earlier. We coul
 
 Add a text component and in the 'text' field add::
 
-  $RT=%.3f" %(resp.time[0])
+  $"RT=" + str(round(resp.time[0], 3))
 
 and 'set to every repeat'
-
-NB: we might want to use the '+' methos to format strings when moving online.
 
 .. nextSlide::
 
@@ -57,8 +55,9 @@ In your Code Component select the tab for `Begin Routine` and type in::
       thisCol='green'
     else:
       thisCol='red'
+Then inside your test component under Appearance > Color type :code:`thisCol` and "set every repeat"
 
-Code Components are obviously something that could get super-complex but you can accomplish a lot with quite simple Python commands (that now translate to JS!)
+Code Components could get super-complex but you can accomplish a lot with quite simple Python commands.
 
 Common coding issues
 ----------------------------
