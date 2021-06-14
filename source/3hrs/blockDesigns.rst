@@ -2,7 +2,7 @@
 .. _blockDesigns:
 
 Block designs and counterbalancing
---------------------------------------
+=====================================
 
 Randomised block designs
 --------------------------------------
