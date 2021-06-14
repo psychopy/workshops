@@ -83,6 +83,10 @@ You've sorted out block designs in a relatively neat fashion.
 
 Just keep clear what differs from one block to the next (for a conditions file) and what stays the same (for the Routine definition).
 
+Exercise (10 mins)
+`````````````````````````````````````````
+
+In the psychopy examples folder you downloaded, open builder > counterbalancingExercises > exercise 1. Here we have a design containing one block where pictures of cats are presented and one where images of dogs are presented. Turn this into a randomised block design... 
 
 Counterbalancing 
 --------------------------------------
@@ -111,13 +115,10 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 
 *Note: This second kind of formatting is termed an 'fstring' in python - we will talk about that more later.*
 
-*Exercises*
+*Exercises (10 mins)*
 `````````````````````````````````````````
 
-Let's practice counterbalancing in different ways using the counterbalancing exercises in the demo folder. In "excercise 1" you will find a non efficient counterbalanced design. We want to improve this in 2 phases.
-
-1. Turn this inefficient design into a randomised block design. (the cat and dog images are presented in blocks, but in a random order)
-2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
+In the psychopy examples folder you downloaded, open builder > counterbalancingExercises > exercise 1. You should have already turned this into a randomised block design in the last exercise, now turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
 
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
 
