@@ -24,9 +24,8 @@ When we make an experiment in PsychoPy builder, it is writing our experiment in 
     :align: center
     :scale: 25 %
 
-.. nextSlide::
-
-If you prefer to write experiments in pure code, you can write experiments purely in Javascript using PsychoJS, but in general it will be more flexible, less bug prone and easier to share with non-coders if you use Builder. 
+.. note::
+    If you prefer to write experiments in pure code, you can write experiments purely in Javascript using PsychoJS, but in general it will be more flexible, less bug prone and easier to share with non-coders if you use Builder. 
 
 What is Pavlovia?
 ----------------------------
