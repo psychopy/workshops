@@ -40,7 +40,10 @@ Each header is a parameter, each row corresponds to the value of that parameter 
 Making edits
 ----------------------------------
 
-- Add some instructions
+As a basic first step let's add some instructions. Select "insert routine" and then click on your flow to add this to the start of your experiment. Click on the routine and add:
+
+- A TextStim component (for your instructions)
+- A keyboard or mouse component to end the routine when your participant has finished reading. 
 
 As a general styling tip, we suggest to *keep the number of routines to a minimum*. Got several sets of instructions? use a loop!
 
