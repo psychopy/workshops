@@ -15,9 +15,6 @@ So now we have a very simple experiment that works locally, let's see how we wou
 Before we take our study online it is important for us to understand a bit about how PsychoPy generates an experiment that can be read by your browser (using PsychoJS) as well as how we can host the study online (using pavlovia.org)
 
 
-The Pavlovia environment
-=================================
-
 What is PsychoJS?
 ----------------------------
 
@@ -42,6 +39,60 @@ Once we have our experiment written in JS, we need a way to "host" it online.  `
     :align: center
     :scale:50%
 
+Launching your studies on Pavlovia
+=================================
+
+Pushing your experiment from PsychoPy to pavlovia
+--------------------------------------------------
+
+To load the task to pavlovia.org we can either use the "run online" or the "sync to pavlovia" icons. The former will then try to run our task in the browser, the second will allow us to sync any changes without running the study. It is a good idea to sync little and often to keep track of the changes you make.
+
+.. image:: /_images/syncWithPav.png
+    :align: center
+
+.. nextSlide::
+
+Next we create a pavlovia project, select what group we load the project to and add details on the task.
+
+.. image:: /_images/pavCreateProject.png
+    :align: right
+
+
+.. nextSlide::
+
+If we then go to our Experiments in the pavlovia Dashboard, we should see our task uploaded. We can see that currently it is inactive, change the status to pilot and then click "pilot" next to the View code option. 
+
+
+Finding your experiment on pavlovia
+------------------------------------
+
+You can find your experiment on pavlovia via the dashboard > experiments. This is where you can view your experiments, check if you have credits etc. 
+
+.. image:: /_images/pavloviaDashboard.png
+    :align: right
+
+The Experiment page
+------------------------------------
+
+By clicking on one of your experiments, you can see the details of that project, set the state of your experiment and access the data. 
+
+.. image:: /_images/pavloviaStatus.png
+    :align: right
+
+
+Finding the data
+------------------------------------
+You can save your output in 2 ways:
+
+*   **.csv** format will store a .csv and log file that van be accessed via "View Code <>" > "data"
+*   **database** will store a single file with all participants appended to a single file (this will not be stored int the project repository, so if you later make your project public the data will not be public).
+
+.. image:: /_images/pavloviaSaving.png
+    :align: right
+
+The Pavlovia environment
+=================================
+
 What is free, what costs and why? 
 ---------------------------------
 
@@ -50,7 +101,7 @@ There are many features that we can use for free in pavlovia such as :
 *   Version control
 *   Public sharing of experiments
 
-But to support the ongoing development of PsychoPy (which has been developed for free for years by `dedicated contributors <https://github.com/psychopy/psychopy/graphs/contributors>`_) a `small cost <https://pavlovia.org/store>`_ is introduced for **storing data** from experiments you run.
+But to support the ongoing development of PsychoPy (which has been developed for free for years by ` contributors <https://github.com/psychopy/psychopy/graphs/contributors>`_) a `small cost <https://pavlovia.org/store>`_ is introduced for **storing data** from experiments you run.
 
 Finding openly shared experiments
 ----------------------------------
@@ -180,57 +231,6 @@ Let's get some practice using pavlovia.org!
 NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 
 
-
-Launching your studies on Pavlovia
-=================================
-
-Pushing your experiment from PsychoPy to pavlovia
---------------------------------------------------
-
-To load the task to pavlovia.org we can either use the "run online" or the "sync to pavlovia" icons. The former will then try to run our task in the browser, the second will allow us to sync any changes without running the study. It is a good idea to sync little and often to keep track of the changes you make.
-
-.. image:: /_images/syncWithPav.png
-    :align: center
-
-.. nextSlide::
-
-Next we create a pavlovia project, select what group we load the project to and add details on the task.
-
-.. image:: /_images/pavCreateProject.png
-    :align: right
-
-
-.. nextSlide::
-
-If we then go to our Experiments in the pavlovia Dashboard, we should see our task uploaded. We can see that currently it is inactive, change the status to pilot and then click "pilot" next to the View code option. 
-
-
-Finding your experiment on pavlovia
-------------------------------------
-
-You can find your experiment on pavlovia via the dashboard > experiments. This is where you can view your experiments, check if you have credits etc. 
-
-.. image:: /_images/pavloviaDashboard.png
-    :align: right
-
-The Experiment page
-------------------------------------
-
-By clicking on one of your experiments, you can see the details of that project, set the state of your experiment and access the data. 
-
-.. image:: /_images/pavloviaStatus.png
-    :align: right
-
-
-Finding the data
-------------------------------------
-You can save your output in 2 ways:
-
-*	**.csv** format will store a .csv and log file that van be accessed via "View Code <>" > "data"
-*	**database** will store a single file with all participants appended to a single file (this will not be stored int the project repository, so if you later make your project public the data will not be public).
-
-.. image:: /_images/pavloviaSaving.png
-    :align: right
 
 
 
