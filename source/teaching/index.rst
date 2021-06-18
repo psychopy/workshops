@@ -36,6 +36,10 @@ The **most comprehensive guide** is the book `Building Experiments in PsychoPy`_
 - The Professional (more detail for creating more precise studies)
 - The Specialist (with info about specialist needs such as studies in fMRI, EEG, ...)
 
+**Note that a new release of this book is now due January 2022!**
+
+- `Susan Benear <https://sites.temple.edu/cnltu/susan-benear/>`_ has created some fantastic `content on using PsychoPy builder <https://tu-coding-outreach-group.github.io/cog_summer_workshops_2021/psychopy/index.html>`_  delivered as part of the Coding Outreach Group Summer Workshop. All meterials are also share on `github <https://github.com/TU-Coding-Outreach-Group/cog_summer_workshops_2021/tree/main/psychopy>`_
+
 Undergraduate course material
 `````````````````````````````
 At `School of Psychology, University of Nottingham`_, PsychoPy is now used for all first year practical class teaching. The classes that comprise that first year course are provided below. They were created partially with funding from the former `Higher Education Academy Psychology Network`_. Note that the materials here will be updated soon - so make sure you have the latest version of them!
