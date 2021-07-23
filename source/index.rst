@@ -12,8 +12,6 @@ Open Science Tools official workshops
 Upcoming events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*	**24th June 2021** 11:00 - 12:30 London time - `Taking experiments online with pavlovia <https://docs.google.com/document/d/e/2PACX-1vSGIkhtdNoTURaeCkpCWrVS64md_U2cCXNape5nAa1cZOuz1vKGg66wblntTSiH6JtuS6FXDiu9PFm0/pub>`_ *Society for Improvement of Psychological Science (SIPS)*
-*	**21st July 2021** 17:00 - 18:00 London time- `Conducting online research with Pavlovia and PsychoPy  <https://web.cvent.com/event/f34de953-35e0-489e-9f19-aaf1a6953946/websitePage:b5e7ab6a-7e48-4653-8711-714354965a64>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
 *	**23rd July 2021** 14:00 - 15:00 London time- `New and Upcoming Features in PsychoPy <https://web.cvent.com/event/f34de953-35e0-489e-9f19-aaf1a6953946/websitePage:b5e7ab6a-7e48-4653-8711-714354965a64>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
 * **3-day workshops** - dates to be confirmed `Materials available here <3days/index.html>`_ 
 
@@ -72,6 +70,8 @@ Previous events
 --------------------
 
 - ECEM, August 2013 : Python for eye-tracking workshop with (Sol Simpson, Michael MacAskill and Jon Peirce). `Download Python-for-eye-tracking materials <ECEM_Python_materials.zip>`_
+- 24th June 2021 -  `Taking experiments online with pavlovia <https://osf.io/u2e5a/>`_ *Society for Improvement of Psychological Science (SIPS)*
+- 21st July 2021 `Conducting online research with Pavlovia and PsychoPy  <https://osf.io/472zf/>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
 
 .. toctree::
     :maxdepth: 1
