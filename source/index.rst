@@ -12,7 +12,7 @@ Open Science Tools official workshops
 Upcoming events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* **3-day workshops** - dates to be confirmed `Materials available here <3days/index.html>`_ 
+* **3-day workshops** September/October 2021 dates to be confirmed `Materials available here <3days/index.html>`_ 
 
 About
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,10 +68,11 @@ developing that others might find interesting.
 Previous events
 --------------------
 
-- ECEM, August 2013 : Python for eye-tracking workshop with (Sol Simpson, Michael MacAskill and Jon Peirce). `Download Python-for-eye-tracking materials <ECEM_Python_materials.zip>`_
-- 24th June 2021 -  `Taking experiments online with pavlovia <https://osf.io/472zf/>`_ *Society for Improvement of Psychological Science (SIPS)*
-- 21st July 2021 `Conducting online research with Pavlovia and PsychoPy  <https://osf.io/u2e5a/>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
 -	23rd July 2021 - `New and Upcoming Features in PsychoPy <https://osf.io/u2e5a/>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
+- 21st July 2021 `Conducting online research with Pavlovia and PsychoPy  <https://osf.io/u2e5a/>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
+- 24th June 2021 -  `Taking experiments online with pavlovia <https://osf.io/472zf/>`_ *Society for Improvement of Psychological Science (SIPS)*
+- ECEM, August 2013 : Python for eye-tracking workshop with (Sol Simpson, Michael MacAskill and Jon Peirce). `Download Python-for-eye-tracking materials <ECEM_Python_materials.zip>`_
+
 
 .. toctree::
     :maxdepth: 1
