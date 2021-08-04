@@ -83,6 +83,7 @@ Materials for Coder
   and has lots of great information taking you from basic programming to advanced techniques.
 - Radboud University, Nijmegen also has a
   `PsychoPy programming course <https://www.socsci.ru.nl/~wilberth/nocms/psychopy/print.php>`_
+- Want to try PsychoPy in a different python environment? `Reshanne Reeder <https://www.reshannereeder.com/>`_ has shared a set of `Python tutorials in the Spyder environment <https://kerblooee.github.io/pytutorial/>`_.
 
 ---------------------------------
 
