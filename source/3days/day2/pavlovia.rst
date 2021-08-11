@@ -29,7 +29,7 @@ But, in general it will be faster, less bug prone and easier to share with non-c
 What is Pavlovia?
 ----------------------------
 
-Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_. is:
+Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_ is:
 
 * A secure server for running experiments and storing data.
 * A gitbased version control system.
@@ -48,7 +48,7 @@ Finding shared experiments from Pavlovia itself
 
 In the  `explore <https://pavlovia.org/explore>`_. tab each experiment has it's own icon. You can choose to run the experiment (if it is set to running) or view the code :code:`<>`
 
-.. image:: /_images/stroop_pavlovia.png
+.. image:: /_images/fork_online.png
     :align: left
     :scale: 25 %
 
