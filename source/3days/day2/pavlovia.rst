@@ -92,48 +92,31 @@ Pavlovia uses a git based system for version conrol called "gitlab". You can see
 .. nextSlide::
 
 
-If you click on the change you can see deletions (in red) and insertions (in green)
+If you click on the change you can see deletions and insertions. You can browse the repository at that point in history to retrieve past files!
 
 .. image:: /_images/gitlabComChange0.png
-    :align: center
-
-.. nextSlide::
-
-You can browse the repository at that point in history. Imagine you have a working task, you then make a bunch of changes, and it doesn't work. If you commit little and often you can easily revert those changes. :
+    :align: left
 
 .. image:: /_images/gitlabBrowse0.png
-    :align: center
-
-
+    :align: right
 
 Adding team members
 --------------------------
 
 To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
 
-.. image:: /_images/gitlabSettings.png
+.. image:: /_gifs/add_member.gif
     :align: center
 
 Making your task public
 --------------------------
 
-You can change the visibility of your task at any time under permissions. 
+You can change the visibility of your task at any time under permissions. **Remember** Once you make your project "public" the data file stored there will also be public. 
 
-.. image:: /_images/gitlabPermissions.png
-    :align: right
+.. image:: /_gifs/gitlab_privacy.gif
+    :align: center
 
-.. ifslides::
-    .. nextSlide::
-
-    One thing to note is that once you make your project "public" the data file stored there will also be public. 
-        - good as allows easy data sharing
-        - Something to bare in mind if you are collecting protected data
-
-.. ifnotslides::
-    .. note::
-        Once you make your project "public" the data file stored there will also be public. 
-            - good as allows easy data sharing
-            - Something to bare in mind if you are collecting protected data
+.. nextSlide::
 
 
 *Exercises (10-15 mins)*
