@@ -43,39 +43,26 @@ There are two ways we can find and use existing experiments from Pavlovia:
 *   From within pavlovia itself using the `explore <https://pavlovia.org/explore>`_ tab. 
 *   From within PsychoPy itself using the search globe. 
 
-Finding shared experiments from Pavlovia itself
+Finding shared experiments 
 -------------------------------------------------
 
-In the  `explore <https://pavlovia.org/explore>`_. tab each experiment has it's own icon. You can choose to run the experiment (if it is set to running) or view the code :code:`<>`
-
-.. image:: /_images/fork_online0.png
-    :align: left
-    :scale: 25 %
-
-.. nextSlide::
-
-We can then fork the experiment to our own "namespace" or a selected "gitlab group".
+We could directly fork an experiment on pavlovia.
 
 .. image:: /_images/fork_online0.png
     :align: left
 
 .. nextSlide::
 
-Finally, we would use the search icon inside PsychoPy to search and sync:
+Then, search for that inside PsychoPy and sync it to our desktop. We could actually fork + sync in PsychoPy itself!
 
-.. image:: /_images/sync_local.png
-    :align: left
-
-Finding shared experiments from PsychoPy
--------------------------------------------------
-Alternatively, we could just search from inside PsychoPy itself and "Fork +Sync" all at once
-
-.. image:: /_images/fork_local.png
+.. image:: /_images/fork_local0.png
     :align: left
 
 .. nextSlide::
 
-Since the second method is easier than the first, you might wonder "why bother" with the first approach? 
+*Side Tip*
+
+Why might we fork inside pavlovia instead of using fork + sync in PsychoPy? Isn't this more work? 
 
 *   You can avoid some errors by deleting the data folder from the forked project *before* you clone/sync it locally (Web IDE > ... > delete > commit)
 *   Can be easier for use with groups (online you can fork to a group, locally the project will always be forked to your namespace)
