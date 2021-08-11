@@ -73,19 +73,20 @@ Gitlab
 --------------------------
 
 Benefits of GitLab (the important bits):
- - Fork existing projects
- - Version control
- - Add lab members to projects to work on the same files
- - Easy sharing of your task (open science) 
+*  Fork existing projects
+*  Version control
+*  Easy sharing of your task (open science) 
+*  Add lab members to projects
 
 Version control
 --------------------------
 
-.. image:: /_images/gitlabComHistory.png
+Pavlovia uses a git based system for version conrol called "gitlab". You can see when the last changes were made to the task by looking at the commit history.
+
+.. image:: /_gifs/git_control.gif
     :align: center
     :scale: 70%
 
-You can see when the last changes were made to the task by looking at the commit history.
 
 .. nextSlide::
 
