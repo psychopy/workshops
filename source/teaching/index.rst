@@ -12,7 +12,7 @@ Youtube tutorials
 
 - There is our `YouTube PsychoPy playlist <https://www.youtube.com/playlist?list=PLFB5A1BE51964D587>`_
   showing how to build basic experiments in the :ref:`builder` interface.
-- `Jason Ozubko <https://www.geneseo.edu/psychology/ozubko>`_ has added a series of great `PsychoPy Builder video tutorials`_ too
+- `Jason Ozubko <https://www.geneseo.edu/psychology/ozubko>`_ has added a series of great `PsychoPy Builder video tutorials <https://www.youtube.com/playlist?list=PL6PJquR5BWXllUt585cRJWcRTly55iXTm>`_ too
 - `Damien Mannion <https://www.djmannion.net/>`_ added a similarly great series of `PsychoPy programming videos on YouTube`_
 - ... and a `searching YouTube for PsychoPy <https://www.youtube.com/results?search_query=psychopy>`_
   reveals many more!
