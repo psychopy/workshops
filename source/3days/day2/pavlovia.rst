@@ -22,28 +22,18 @@ When we make an experiment in PsychoPy builder, it is writing our experiment in 
 
 .. nextSlide::
 
-If you prefer to write experiments in pure code, you can write experiments purely in Javascript using PsychoJS, but in general it will be more flexible, less bug prone and easier to share with non-coders if you use Builder. 
+If you prefer to write experiments in pure code, you can use Javascript using PsychoJS.
+
+But, in general it will be faster, less bug prone and easier to share with non-coders if you use Builder. 
 
 What is Pavlovia?
 ----------------------------
 
-Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_. is a secure server for running experiments and storing data but it is also a good way to share your experiments publically with other researchers! Pavlovia is fully `GDPR complient <https://pavlovia.org/docs/home/ethics>`_.
+Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_. is:
 
-.. ifslides::
-
-    .. image:: /_images/psychopy_pav_psychojs.png
-    :align: center
-    :scale:50%
-
-What is free, what costs and why? 
----------------------------------
-
-There are many features that we can use for free in pavlovia such as :
-
-*   Version control
-*   Public sharing of experiments
-
-But to support the ongoing development of PsychoPy (which has been developed for free for years by `dedicated contributors <https://github.com/psychopy/psychopy/graphs/contributors>`_) a `small cost <https://pavlovia.org/store>`_ is introduced for **storing data** from experiments you run.
+* A secure server for running experiments and storing data.
+* A gitbased version control system.
+* A huge open access library of experiments (that you can add to!)
 
 Finding openly shared experiments
 ----------------------------------
