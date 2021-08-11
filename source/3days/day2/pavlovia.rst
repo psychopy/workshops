@@ -16,7 +16,7 @@ What is PsychoJS?
 
 When we make an experiment in PsychoPy builder, it is writing our experiment in Python code under the hood. Now it also writes our experiment to JavaScript via PsychoPy's sister library `PsychoJS <https://psychopy.github.io/psychojs/>`_.
 
-.. image:: /_images/psychopy_pav_psychojs.png
+.. image:: /_images/psychopy_pav_psychojs0.png
     :align: center
     :scale: 25 %
 
@@ -48,7 +48,7 @@ Finding shared experiments from Pavlovia itself
 
 In the  `explore <https://pavlovia.org/explore>`_. tab each experiment has it's own icon. You can choose to run the experiment (if it is set to running) or view the code :code:`<>`
 
-.. image:: /_images/fork_online.png
+.. image:: /_images/fork_online0.png
     :align: left
     :scale: 25 %
 
@@ -56,7 +56,7 @@ In the  `explore <https://pavlovia.org/explore>`_. tab each experiment has it's 
 
 We can then fork the experiment to our own "namespace" or a selected "gitlab group".
 
-.. image:: /_images/fork_online.png
+.. image:: /_images/fork_online0.png
     :align: left
 
 .. nextSlide::
