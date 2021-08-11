@@ -73,10 +73,11 @@ Gitlab
 --------------------------
 
 Benefits of GitLab (the important bits):
-*  Fork existing projects
-*  Version control
-*  Easy sharing of your task (open science) 
-*  Add lab members to projects
+
+*   Fork existing projects
+*   Version control
+*   Easy sharing of your task (open science) 
+*   Add lab members to projects
 
 Version control
 --------------------------
@@ -85,7 +86,7 @@ Pavlovia uses a git based system for version conrol called "gitlab". You can see
 
 .. image:: /_gifs/git_control.gif
     :align: center
-    :scale: 70%
+    :scale: 100%
 
 
 .. nextSlide::
@@ -93,17 +94,17 @@ Pavlovia uses a git based system for version conrol called "gitlab". You can see
 
 If you click on the change you can see deletions (in red) and insertions (in green)
 
-.. image:: /_images/gitlabComChange.png
+.. image:: /_images/gitlabComChange0.png
     :align: center
 
 .. nextSlide::
 
-You can browse the repository at that point in history:
+You can browse the repository at that point in history. Imagine you have a working task, you then make a bunch of changes, and it doesn't work. If you commit little and often you can easily revert those changes. :
 
-.. image:: /_images/gitlabBrowse.png
+.. image:: /_images/gitlabBrowse0.png
     :align: center
 
-Imagine you have a working task, you then make a bunch of changes, and it doesn't work. If you commit little and often you can easily revert those changes. 
+
 
 Adding team members
 --------------------------
