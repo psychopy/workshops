@@ -10,12 +10,31 @@
 Debugging online
 =================================
 
-Debugging online
+Why do we need to debug?
 ----------------------------------
 
-So your task was running perfectly offline, then you pushed it online, and it doesn't work - why?
+So your task was running perfectly offline, then you pushed it online, and it doesn't work - why? There are lot's of reasons something might not work online, but the most common errors are coding errors. 
 
-To run in the browser your python experiment is translated to Javascript (PsychoJS). Not everything you use in python can be autotranslated to JS (e.g. whole python libraries such as numpy). 
+Remember that locally PsychoPy runs a compiled python experiment. Online pavlovia runs your compiled *Javascript* experiment which uses the PsychoJS library. 
+
+.. nextSlide::
+
+The PsychoJS library doesn't yet contain everything in PsychoPy, for several reasons:
+
+*	Does a component "make sense" online? e.g. Grating stimuli require a luminance calibrated monitor. Does your participant have a photometer at home?
+*	PsychoJS is younger than PsychoPy!
+
+Transpiling 
+----------------------------------
+
+When we add code components we have the choice to add code as either:
+
+*	*Py* - pure Python
+*	*JS - pure JavaScript
+*	*Both* - Python and Javascript independantly
+*	*Auto -> JS* - automatically *transpile* python code to javascript. 
+
+The last option is very cool and useful - but it can catch people out if something doesn't translate smoothly!
 
 .. nextSlide::
 
@@ -26,6 +45,7 @@ General tips for getting online
 2. Push your experiment little and often (don't make your full experiment perfectly locally and then try to push it online)
 3. Read the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_
 4. Check out the `psychoJS documentation <https://psychopy.github.io/psychojs/>`_
+5. Update to the latest release! Version 2021.2. improved transpiling alot and you can save *alot* of manual debugging online using that version. 
 
 The forum is always there!
 
@@ -37,20 +57,18 @@ Common errors
 ***Undefined errors***
 These usually mean that something "exists" in Python that does not "exist" in Javascript. This commonly happens with python libraryies e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like this, where there is a handy list of python terms and there equivilant javascript term. 
 
-.. note::
-    Remember that PsychoJS is ALOT younger than PsychoPy, so it needs a bit of time to catch up - which is why not all terms that exist in python exist in PsychoJS - we're working on it though!
-
-
-How do we fix errrors?
+How do we fix errrors? 
 ----------------------------------
+
+**Pre 2021.2.2**
 For these undefined errors we recommend adding a code component to the first routine where we "tell" javascript what we mean by providing the JS alternatives to anything undefined. 
 
 .. image:: /_images/JSsnippet.png
     :align: center
 
-.. note::
+**Still relevant to 2021.2.2**
 
-For things like numpy we also need to change code type to "Both" and make sure to use the new method (average) instead of refering to :code:`np.average`. 
+We can't transpile whole python libraies (e.g. numpy), so if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We might also need to change code type to "Both" and make sure to use the new method (average) instead of refering to :code:`np.average`. 
 
 .. image:: /_images/both_average.png
     :align: center

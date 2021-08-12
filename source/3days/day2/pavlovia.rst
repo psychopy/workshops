@@ -8,7 +8,7 @@
         
 .. _pavloviaEnv:
 
-The Pavlovia environment
+The Pavlovia environment and getting online
 =================================
 
 What is PsychoJS?
