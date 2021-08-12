@@ -30,7 +30,7 @@ Transpiling
 When we add code components we have the choice to add code as either:
 
 *	*Py* - pure Python
-*	*JS - pure JavaScript
+*	*JS* - pure JavaScript
 *	*Both* - Python and Javascript independantly
 *	*Auto -> JS* - automatically *transpile* python code to javascript. 
 
@@ -61,14 +61,15 @@ How do we fix errrors?
 ----------------------------------
 
 **Pre 2021.2.2**
-For these undefined errors we recommend adding a code component to the first routine where we "tell" javascript what we mean by providing the JS alternatives to anything undefined. 
+
+Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to Javascript. If you update you will save alot of headaches. For these undefined errors we recommend adding a code component to the first routine where we "tell" javascript what we mean by providing the JS alternatives to anything undefined. 
 
 .. image:: /_images/JSsnippet.png
     :align: center
 
 **Still relevant to 2021.2.2**
 
-We can't transpile whole python libraies (e.g. numpy), so if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We might also need to change code type to "Both" and make sure to use the new method (average) instead of refering to :code:`np.average`. 
+Even though we've improved the transpiler, we can't expect to transpile whole python libraies (e.g. numpy). So if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We might also need to change code type to "Both" and make sure to use the new method (average) instead of refering to :code:`np.average`. 
 
 .. image:: /_images/both_average.png
     :align: center
@@ -107,7 +108,13 @@ There are several other tools that can be useful including:
 
 - Counterbalancing online using `sequential participant IDs <https://moryscarter.com/vespr/pavlovia.php>`_ 
 
-- `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_
+- `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_ (e.g. so that we can use cm units online).
+
+- `Headphone checkers using huggins pitch <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ (e.g. so that we can use cm units online).
+
+- `Embedding html forms <https://discourse.psychopy.org/t/new-web-app-form-to-html-for-pavlovia/22626>`_.
+
+- `Eyetracking online <https://workshops.psychopy.org/3days/day2/advancedOnline.html>`_ using the webgazer library. **Note that in 2021.2.2 there is a different way of loading resources** 
 
 - The `assignment <https://gitlab.pavlovia.org/tpronk/assignment_stroop_cep_2021_may19-21>`_ we will complete! (fork the task then find the bugs...)
 
