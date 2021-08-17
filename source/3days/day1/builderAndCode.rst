@@ -69,9 +69,9 @@ You can use this as more than a variable from your conditions file e.g.:
 - set stimulus position to be :code:`$[ sin(t*2*pi), cos(t*2*pi) ]` and set this to `update every frame`
 - set a text object to have text :code:`"ABC"[randint(3)]` and have it `update every repeat`
 
-NB. If you actually need a dollar symbol to be in your text, do one of:
-- `$"You won $5"`  [include the quotes]
-- `You won \$5`
+NB. If you actually need a dollar symbol to be in your text, do:
+
+- `$"You won $5"` [include the quotes]
 
 .. nextslide::
 
@@ -111,7 +111,7 @@ The text object could be any long piece of text. You might need to make sure the
 
 .. image:: /_images/revealMaskProperties.png
 
-Your mask is a square that moves (note the size and the pos settings). 
+Your mask is a rectangle that moves (note the size and the pos settings). 
 
 Code Components
 ---------------------

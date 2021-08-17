@@ -158,8 +158,9 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 
 	$"block" + expInfo['group'] + ".xlsx"
 	$"block{}.xlsx".format( expInfo['group'] )
+	$f"block{expInfo['group']}.xlsx"
 
-*Note: This second kind of formatting is termed an 'fstring' in python - we will talk about that more later.*
+*Note: This last kind of formatting is termed an 'fstring' in python - we will talk about that more later.*
 
 *Exercises*
 `````````````````````````````````````````

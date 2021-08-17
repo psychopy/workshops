@@ -14,27 +14,30 @@ About Open Science Tools
 =========================
 
 **Who am I?** 
-    * *Rebecca Hirst* - Science Officer/Consultant and postdoc (research focus multisensory perception)
+    * *Jon Peirce* - Lecturer at Uni of Nottingham, creator of PsychoPy
+
+**Science Team**
+    * *Rebecca Hirst* - workshops and consultancy (and a Postdoc at Trinity College Dublin)
 
 **Python developers**
     * *Jon Peirce, Todd Parsons, Matthew Cuttone, Sol Simpson*
     
 **JavaScript developers**
-    * *Alain Pitiot, Thomas Pronk Sotiri Bakagiannis*
+    * *Alain Pitiot, Thomas Pronk, Sotiri Bakagiannis*
 
 .. nextslide::
 
 **Credits:**
 
-    - many other volunteers have contributed
-    
-      - to the code (notably, Jeremy Gray, David Bridges, Richard Höchenberger, Hiroyuki Sogo, ...)
-      - to the forum (notably, Michael MacAskill, Wakefield Morys-Carter, Jonathan Kominski, Jens Boelte, ...)
-      - there are many more not mentioned by name
+The community:
 
-    - Nottingham University have been paying Jon's salary while PsychoPy was written
+    - >150 code contributors (notably, Jeremy Gray, David Bridges, Richard Höchenberger, Hiroyuki Sogo, ...)
+    - forum contributors (notably, Michael MacAskill, Wakefield Morys-Carter, Jonathan Kominski, Jens Boelte, ...)
 
-    - The Wellcome Trust and the Chan Zuckerberg Initiative for recent funding
+Our funders:
+
+    - Nottingham University pay Jon's salary while he works on this
+    - The Wellcome Trust and the Chan Zuckerberg Initiative have paid staff
     
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -53,12 +56,13 @@ What is PsychoPy?
 
 It's `Psychology software in Python`
 
-PsychoPy is several things:
-    * a library for use in Python scripts
-    * an editor including Python to edit scripts
-    * an application with a graphical user interface (GUI) for building experiments
+PsychoPy is a Python library, an script editor (Coder) an application with a GUI (Builder)
 
-It's, itself, entirely written in Python
+It is, itself, entirely written in Python
+
+    - 2002-2003: Jon began work on this for his own lab (visual neruoscience)
+    - 2003-2017: a purely volunteer-driven, evenings and weekends project
+    - 2017-now: still open source and free to install but with professional support (funded by grants and Pavlovia)
 
 Goal of PsychoPy
 ~~~~~~~~~~~~~~~~~~
@@ -96,17 +100,13 @@ PsychoPy is written in the Python programming language
 Why do people *Code*?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. rst-class:: build
-
     - To implement more complex experimental designs/procedures(?)
-    - To break out of the current trial structure or hardware drawing loop cycle
     - To know exactly what the code is doing(?)
+    - To break out of the "trials/blocks" structure or drawing loop cycle
     - To program things that aren't psychology experiments. (e.g. stats, simulations, analyses etc.)
 
 Why do people *Build*?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. rst-class:: build
 
     - It is far faster to develop experiments!
     - You can still understand (and build on) your experiment next year
@@ -117,9 +117,9 @@ Why do people *Build*?
 What do **we** do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I (Becca) and Jon still use both Builder and Coder on a regular basis.
+My *experiments* are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. 
 
-My experiments I are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. I use code for other things (e.g. making my 'conditions' .csv files, making stimuli)
+I do use code for other things, like making my 'conditions' .csv files, making stimuli and customising the experiments.
 
 
 Going further
@@ -127,8 +127,9 @@ Going further
 
 Builder interface:
     - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)
+    - New edition coming in January 2022
 
-Python programming (for experimental psych):
+Python programming (for experimental psych) but these are a bit outdated:
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
     - `Python for Experimental Psychologists <https://www.amazon.co.uk/Python-Experimental-Psychologists-Edwin-Dalmaijer/dp/1138671576>`_ by Edwin Dalmaijer (2017, Routledge)
 

@@ -24,9 +24,11 @@ We can also store other things from our mouse component by adding parameters to 
 
 .. nextslide::
 
-We can use any of these variables to then provide trial-by trial feedback. First, we would need to add a routine called "feedback", in the routine add a text component and in the text field we could write::
+We can use any of these variables to then provide trial-by trial feedback. Imagine our trial has a Mouse Component called `resp`. 
 
-    $'RT was ' + 'str(resp.time)' + '' ms'
+We would need to add a routine called "feedback", in this feedback routine add a text component and in the text field we could write::
+
+    $'RT was ' + 'str(resp.time)' + ' ms'
 
 Here we are concatinating strings using the + operator and we are also converting our resp.time variable to a string using the :code:`str()` method (we can't concatinate strings and numbers!).
 
@@ -34,11 +36,11 @@ Here we are concatinating strings using the + operator and we are also convertin
 
 The problem here is that 1) the resp.time value is actually a list, so we may want to index either the first or last element 2) we probably want to round the value to be a bit prettier::
 
-    $'RT was ' + 'str(round(resp.time[0], 3))' + '' ms'
+    $'RT was ' + 'str(round(resp.time[0], 3))' + ' ms'
 
 An alternative way of doing this in python would be to use a "formatted string" (this is better practice for python, but it might not translate so smoothly online)::
 
-    $f'RT was {str(round(resp.time[0], 3))} ms'
+    $f'RT was {resp.time[0] : .3f} ms'
 
 feedback dependant stimuli
 -------------------------------
@@ -46,7 +48,7 @@ feedback dependant stimuli
 We can make feedback response dependant by using simple :code:`if` statements.
 To adjust feedback colour based on response time we need a code component::
 
-    if resp.time[0]<.5:
+    if resp.time[0] < 0.5:
         feedbackCol = 'green'
     else:
         feedbackCol = 'red'
