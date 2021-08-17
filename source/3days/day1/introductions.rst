@@ -121,6 +121,19 @@ My *experiments* are almost always in Builder, with added Code Components. I don
 
 I do use code for other things, like making my 'conditions' .csv files, making stimuli and customising the experiments.
 
+PsychoPy versions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+PsychoPy is changing rapidly, especially now it has full-time programmers
+
+You *don't* want your study to change part-way through, but you *do* want to be able to update your software
+
+PsychoPy experiments have a setting called `useVersion` that works for Builder/Python/JS experiments. Ideally:
+
+- Install the latest stable version
+- Develop your experiment in that
+- When you start running "for real" set the useVersion to the specific version you tested on
+
 
 Going further
 ~~~~~~~~~~~~~~~~~~~~~~
