@@ -10,26 +10,32 @@
 Introductions
 ----------------
 
-About us
-==========
+About Open Science Tools
+=========================
 
 **Who am I?** 
     * *Rebecca Hirst* - Science Officer/Consultant and postdoc (research focus multisensory perception)
 
 **Python developers**
     * *Jon Peirce, Todd Parsons, Matthew Cuttone, Sol Simpson*
-**Java Script developers**
+    
+**JavaScript developers**
     * *Alain Pitiot, Thomas Pronk Sotiri Bakagiannis*
 
 .. nextslide::
 
 **Credits:**
-    - many other people have contributed to the PsychoPy project (Jeremy Gray, Mike MacAskill, Richard Höchenberger, Sol Simpson being the biggest contributors)
 
-    - Nottingham University have been paying Jons salary while PsychoPy was written
+    - many other volunteers have contributed
+    
+      - to the code (notably, Jeremy Gray, David Bridges, Richard Höchenberger, Hiroyuki Sogo, ...)
+      - to the forum (notably, Michael MacAskill, Wakefield Morys-Carter, Jonathan Kominski, Jens Boelte, ...)
+      - there are many more not mentioned by name
 
-    - Wellcome Trust recently gave us a grant to improve this a LOT
+    - Nottingham University have been paying Jon's salary while PsychoPy was written
 
+    - The Wellcome Trust and the Chan Zuckerberg Initiative for recent funding
+    
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
 
