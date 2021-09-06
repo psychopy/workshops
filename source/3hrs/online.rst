@@ -77,34 +77,6 @@ Inside the experiment settings of PsychoPy you can configure the online settings
     :align: left
 
 
-Finding your experiment on pavlovia
-------------------------------------
-
-You can find your experiment on pavlovia via the dashboard > experiments. This is where you can view your experiments, check if you have credits etc. 
-
-.. image:: ../_images/pavloviaDashboard.png
-    :align: right
-
-The Experiment page
-------------------------------------
-
-By clicking on one of your experiments, you can see the details of that project, set the state of your experiment and access the data. 
-
-.. image:: ../_images/pavloviaStatus.png
-    :align: right
-
-
-Finding the data
-------------------------------------
-You can save your output in 2 ways:
-
-*   **.csv** format will store a .csv and log file that van be accessed via "View Code <>" > "data"
-*   **database** will store a single file with all participants appended to a single file (this will not be stored int the project repository, so if you later make your project public the data will not be public).
-
-.. image:: ../_images/pavloviaSaving.png
-    :align: right
-
-
 The Pavlovia environment
 =================================
 
