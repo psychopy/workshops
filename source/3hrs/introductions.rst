@@ -20,7 +20,7 @@ About us
 **Python developers**
     * *Jon Peirce, Todd Parsons, Matthew Cuttone, Sol Simpson*
 **Java Script developers**
-    * *Alain Pitiot, Thomas Pronk Sotiri Bakagiannis*
+    * *Alain Pitiot, Thomas Pronk*
 
 .. nextslide::
 
@@ -77,13 +77,13 @@ PsychoPy is written in the Python programming language
 
 .. nextslide::
 
-.. figure:: /_images/coderView2020.png
+.. figure:: /_images/coder_small.gif
 
    The Coder view is used to create experiments from Python scripts
 
 .. nextslide::
 
-.. figure:: /_images/builderView2020.png
+.. figure:: /_images/builder.png
 
    The Builder view is used to create experiments visually
 
