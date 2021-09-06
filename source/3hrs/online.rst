@@ -24,19 +24,22 @@ When we make an experiment in PsychoPy builder, it is writing our experiment in 
     :align: center
     :scale: 25 %
 
-.. note::
-    If you prefer to write experiments in pure code, you can write experiments purely in Javascript using PsychoJS, but in general it will be more flexible, less bug prone and easier to share with non-coders if you use Builder. 
+.. nextSlide::
+
+If you prefer to write experiments in pure code, you can use Javascript using PsychoJS.
+
+But, in general it will be faster, less bug prone and easier to share with non-coders if you use Builder. 
 
 What is Pavlovia?
 ----------------------------
 
-Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_ is a secure server for running experiments and storing data but it is also a good way to share your experiments publically with other researchers! Pavlovia is fully `GDPR complient <https://pavlovia.org/docs/home/ethics>`_.
+Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_ is:
 
-.. ifslides::
+* A secure server for running experiments and storing data.
+* A gitbased version control system.
+* A huge open access library of experiments (that you can add to!)
 
-    .. image:: ../_images/psychopy_pav_psychojs.png
-    :align: center
-    :scale:50%
+
 
 Launching your studies on Pavlovia
 =================================
@@ -80,15 +83,14 @@ Inside the experiment settings of PsychoPy you can configure the online settings
 The Pavlovia environment
 =================================
 
-What is free, what costs and why? 
----------------------------------
+Finding openly shared experiments
+----------------------------------
 
-There are many features that we can use for free in pavlovia such as :
+There are two ways we can find and use existing experiments from Pavlovia:
 
-*   Version control
-*   Public sharing of experiments
+*   From within pavlovia itself using the `explore <https://pavlovia.org/explore>`_ tab. 
+*   From within PsychoPy itself using the search globe. 
 
-But to support the ongoing development of PsychoPy (which has been developed for free for years by `contributors <https://github.com/psychopy/psychopy/graphs/contributors>`_) a `small cost <https://pavlovia.org/store>`_ is introduced for **storing data** from experiments you run.
 
 Finding openly shared experiments
 ----------------------------------
@@ -98,42 +100,19 @@ There are two ways we can find and use existing experiments from Pavlovia:
 *   From within pavlovia itself using the `explore <https://pavlovia.org/explore>`_ tab. 
 *   From within PsychoPy itself using the search globe. 
 
-Finding shared experiments from Pavlovia itself
--------------------------------------------------
-
-In the  `explore <https://pavlovia.org/explore>`_. tab each experiment has it's own icon. You can choose to run the experiment (if it is set to running) or view the code :code:`<>`
-
-.. image:: ../_images/stroop_pavlovia.png
-    :align: left
-    :scale: 25 %
-
 .. nextSlide::
 
-We can then fork the experiment to our own "namespace" or a selected "gitlab group".
+We could directly fork an experiment on pavlovia.
 
-.. image:: ../_images/fork_online.png
+.. image:: /_images/fork_online0.png
     :align: left
 
 .. nextSlide::
 
-Finally, we would use the search icon inside PsychoPy to search and sync:
+Then, search for that inside PsychoPy and sync it to our desktop. We could actually fork + sync in PsychoPy itself!
 
-.. image:: ../_images/sync_local.png
+.. image:: /_images/fork_local0.png
     :align: left
-
-Finding shared experiments from PsychoPy
--------------------------------------------------
-Alternatively, we could just search from inside PsychoPy itself and "Fork +Sync" all at once
-
-.. image:: ../_images/fork_local.png
-    :align: left
-
-.. nextSlide::
-
-Since the second method is easier than the first, you might wonder "why bother" with the first approach? 
-
-*   You can avoid some errors by deleting the data folder from the forked project *before* you clone/sync it locally (Web IDE > ... > delete > commit)
-*   Can be easier for use with groups (online you can fork to a group, locally the project will always be forked to your namespace)
 
 Gitlab
 --------------------------
