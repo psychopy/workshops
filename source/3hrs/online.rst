@@ -20,7 +20,7 @@ What is PsychoJS?
 
 When we make an experiment in PsychoPy builder, it is writing our experiment in Python code under the hood. Now it also writes our experiment to JavaScript via PsychoPy's sister library `PsychoJS <https://psychopy.github.io/psychojs/>`_.
 
-.. image:: /_images/psychopy_pav_psychojs.png
+.. image:: ../_images/psychopy_pav_psychojs.png
     :align: center
     :scale: 25 %
 
@@ -30,11 +30,11 @@ When we make an experiment in PsychoPy builder, it is writing our experiment in 
 What is Pavlovia?
 ----------------------------
 
-Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_. is a secure server for running experiments and storing data but it is also a good way to share your experiments publically with other researchers! Pavlovia is fully `GDPR complient <https://pavlovia.org/docs/home/ethics>`_.
+Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_ is a secure server for running experiments and storing data but it is also a good way to share your experiments publically with other researchers! Pavlovia is fully `GDPR complient <https://pavlovia.org/docs/home/ethics>`_.
 
 .. ifslides::
 
-    .. image:: /_images/psychopy_pav_psychojs.png
+    .. image:: ../_images/psychopy_pav_psychojs.png
     :align: center
     :scale:50%
 
