@@ -42,19 +42,19 @@ Making edits
 
 As a basic first step let's add some instructions. Select "insert routine" and then click on your flow to add this to the start of your experiment. Click on the routine and add:
 
-- A TextStim component (for your instructions)
-- A keyboard or mouse component to end the routine when your participant has finished reading. 
+- A Text component for your instructions
+- A keyboard, mouse or button component to end the routine when your participant has finished reading. 
 
-As a general styling tip, we suggest to *keep the number of routines to a minimum*. Got several sets of instructions? use a loop!
+.. note::
+	As a general styling tip, we suggest to *keep the number of routines to a minimum*. Got several sets of instructions? use a loop!
 
-
-First, let's practice making edits to make sure we are comfortable with builder view. 
+Let's practice making edits to make sure we are comfortable with builder view. 
 
 Exercises (10 minutes)
 ----------------------------------
 
-- add 2 more trials to the conditions file using the 'neutral' arrow image (we want it so that the target can appear either on the left or the right)
-- add an end routine to thank participants for taking part 
-- in the end routine, ask participants to press a button to end the task (you can use a polygon for the 'button')
+- add 2 more trials to the conditions file; on one trial a 'neutral' arrow image will be presented on the left on the other the 'neutral' arrow image will be presented on the right
+- add a routine to thank participants for taking part at the end
+- in the thanks routine, ask participants to press a button to end the task.
 
 :ref:`online`

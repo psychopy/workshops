@@ -77,13 +77,13 @@ PsychoPy is written in the Python programming language
 
 .. nextslide::
 
-.. figure:: /_images/coder_small.gif
+.. figure:: ../_images/coder_small.gif
 
    The Coder view is used to create experiments from Python scripts
 
 .. nextslide::
 
-.. figure:: /_images/builder.png
+.. figure:: ../_images/builder.png
 
    The Builder view is used to create experiments visually
 
