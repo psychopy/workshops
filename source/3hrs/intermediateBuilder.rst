@@ -21,7 +21,7 @@ This shows you how to make the 'posnerTargets' demo available from `previous exa
 What makes a PsychoPy experiment?
 ----------------------------------
 
-Open the posnerHand.psyexp file. An experiment in Builder has:
+Open the posnerTargets.psyexp file. An experiment in Builder has:
 
 - a single *Flow* (specifies the order in which things occur and whether they repeat in a *Loop*)
 - one or more *Routines* that are combined in the *Flow*
