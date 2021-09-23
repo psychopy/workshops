@@ -9,7 +9,7 @@ Using Builder
 
 All the base knowledge we assume at the start of this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
-This shows you how to make the `posner task in PsychoPy <https://workshops.psychopy.org/psychopy_examples.zip>`_
+In this demo we will work through making a posner task in PsychoPy you can `download the materials here <https://workshops.psychopy.org/psychopy_examples.zip>`_ (upen builder > posnerTargets).
 
 What makes a PsychoPy experiment?
 --------------------------------------
@@ -84,71 +84,55 @@ A block design is where we have sets of similar trials organised into blocks rat
 
 e.g.
   - a block of faces to recognise or a block of houses
-  - a faces oriented correctly and faces inverted
   - a block of Stroop task in English and a block in French
+  - a block of valid trials versus a block of invalid trials
 
 Note: these are all cases where the components would be identical between blocks.
 
-The natural error
+The natural approach
 `````````````````````````````````````````
 
-The biggest error that people make with this is to create a Routine (and a loop) for each block of trials:
+When people have several "blocks" the natural move is to add seperate routines for those blocks:
 
-.. image:: /_images/flowBlocksWrong2020.png
+.. image:: /_images/natural_error.png
 
-Then they ask on the forum, "How do I shuffle the blocks on my Flow?"
-
-That is the wrong way to think about it (for blocks with identical components).
+However, if both blocks contain the same stimuli/elements (e.g. a posner task with a fixation, cue and image, but where the position of the cue varies between blocks), this is not the most efficient approach. 
 
 
-The right way
+Blocking: Case 1
 `````````````````````````````````````````
 
 Instead of a Routine for each block, create a Routine for all your trials and make it behave differently across the blocks:
 
-.. image:: /_images/flowBlocksRight2020.png
+.. image:: /_images/case1_blocks.png
 
-Then you can set the conditions files in your blocks loop to control the block-level changes.
+Then you can set the conditions files in your blocks loop to control the block-level changes. The outer "blocks" loop then takes a (meta) "conditions" file that specifies which of the conditions files will be loaded in each block.
 
-The outer "blocks" loop then takes a (meta) "conditions" file that specifies which of the conditions files will be loaded in each block.
+Blocking: Case 2
+`````````````````````````````````````````
 
-.. nextslide::
+If you do have 2 blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outerloop. 
 
-Imagine we want to extend our Posner task to include a block where invalid trials occur on a higher proportion of trials. 
+.. image:: /_images/case2_blocks.png
+
+Blocking: Our example
+`````````````````````````````````````````
+
+Imagine we want to extend our Posner task to include a block of invalid trials and a block of valid trials. 
 
 We need to create a total of 3 conditions files:
 
-- conditionsA.xlsx
-- conditionsB.xlsx
-- blocks.xlsx
+- valid_conditions.xlsx
+- invalid_conditions.xlsx
+- blocks.xlsx (the conditions file used in the outer loop)
 
-.. nextslide::
+Introducing a block
+`````````````````````````````````````````
 
+Using what we know about blocks, we could add a routine to tell the participants what kind of block they are about to enter. If our `blocks.xlsx` file has a column to label the condition, we can add a routine to introduce the blocktype.
 
-blocks.xlsx:
+.. image:: /_images/block_intro.png
 
-.. image:: /_images/posnerBlocks.png
-
-The `label` variable isn't technically needed but it could be used to tell people what block they are about to enter. The point is that you can still use other variables here, defined at the block level of the program.
-
-.. nextslide::
-
-Now we need to set up the variables inside our experiment:
-
-- the inner (trials) loop will have a conditions file = `$conditions` which is defined in the `blocks.xlsx` file
-- the outer (blocks) loop will have conditions file = `blocks.xlsx`
-
-.. nextslide::
-
-.. image:: /_images/blocksMethodB_blockLoop2020.png
-
-.. nextslide::
-
-We could also tell the participants what kind of block they are about to enter, we can add a text object that takes::
-
-    $label
-
-.. image:: /_images/blocksMethodBFullFlow2020.png
 
 .. nextslide:: Randomised block design complete!
 
@@ -170,7 +154,9 @@ Setting the order
 
 At the moment, PsychoPy doesn't handle the ordering for you - you need to decide how to create the orders and how to assign participants.
 
-So, you need a file per conditions order (e.g. A -> B and B-> A) and then set the blocks loop to be `sequential` rather than `random` to preserve the order you set.
+So, you need a file per conditions order (e.g. A -> B and B-> A), then determine which file will be used for this group and use that file in the blocks loop 
+
+*Remember to set the blocks loop to be `sequential` rather than `random` to preserve the order you set*.
 
 
 How to assign participants to a group
@@ -185,12 +171,19 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 	$"block{}.xlsx".format( expInfo['group'] )
 	$f"block{expInfo['group']}.xlsx"
 
-*Note: This last kind of formatting is termed an 'fstring' in python - we will talk about that more later.*
+*Note: This last kind of formatting is termed an 'fstring' in python - we will talk about that more later. If you are running experiments online, the first method will work best*
+
+.. nextslide::
+
+.. image:: /_images/counterbalancing_loop.png
+
+.. note:: 
+	`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format `dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input recieved at startup!
 
 *Exercises*
 `````````````````````````````````````````
 
-Let's practice counterbalancing in different ways using the counterbalancing exercises in the demo folder. In "excercise 1" you will find a non efficient counterbalanced design. We want to improve this in 2 phases.
+Let's practice counterbalancing in different ways using the exercises in the folder you downloaded ("builder > counterbalancingExercises"). In "excercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
 
 1. Turn this inefficient design into a randomised block design. (the cat and dog images are presented in blocks, but in a random order)
 2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
@@ -201,9 +194,9 @@ When you are finished, come back to the main session, if you run into any error 
 Counterbalancing subtasks
 --------------------------------------
 
-Sometimes we might have to counterbalance subtasks (i.e. routines that contain very different sets of components)
+Sometimes we might have to counterbalance subtasks (i.e. routines that contain very different sets of components). 
 
-You can wrap a loop around any set of routines and control if it presents using nReps. 
+For this we would use the second blocking method we described earlier. You can wrap a loop around any set of routines and control if it presents using nReps. 
 
 .. nextslide::
 
