@@ -16,9 +16,7 @@ What is PsychoJS?
 
 When we make an experiment in PsychoPy builder, it is writing our experiment in Python code under the hood. Now it also writes our experiment to JavaScript via PsychoPy's sister library `PsychoJS <https://psychopy.github.io/psychojs/>`_.
 
-.. image:: /_images/psychopy_pav_psychojs0.png
-    :align: center
-    :scale: 25 %
+.. image:: /_images/psychopy_js_pav.png
 
 .. nextSlide::
 
@@ -91,7 +89,7 @@ Once you have synced your study you will find it in your Dashboard on pavlovia.o
 .. nextSlide::
 
 *   *Piloting versus running* - piloting will produce a token that lets you run your study for free for one hour, a data file will automatically download so that you can inspect it. Running will generate a URL to share with participants - no data will be downloaded locally using that link.
-*   *CSV or DATABASE* - cav will generate a csv file per participant that will be sent to your gitlab repository (so it will be public if you make the repo public). Database will append all participants data to a single file (it will not be sent to gitlab).
+*   *CSV or DATABASE* - csv will generate a csv file per participant that will be sent to your gitlab repository (so it will be public if you make the repo public). Database will append all participants data to a single file (it will not be sent to gitlab).
 
 
 .. nextSlide::

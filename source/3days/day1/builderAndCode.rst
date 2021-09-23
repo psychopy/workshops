@@ -151,38 +151,6 @@ To show the participant the time into a trial, we don't even need a code compone
 
 This might return a value that is quite long, so, to round that we could use :code:`round(t, 3)
 
-Ending a trial early 
------------------------------------
-
-Imagine we want to end the experiment early if your participant takes too long to respond (this might be particularly important for online studies!). Now we know how to time each trial we can use those clocks to end the task early if a trial takes too long. 
-
-.. nextslide::
-
-Add a code component and in the "Each Frame" tab write::
-
-	threshold = 10 # number of seconds before we end the experiment
-	if t > threshold:
-		continueRoutine = False # end the current routine
-		trials.finished = True # exit the current loop 
-
-.. nextslide::
-
-If we have any routines that follow this we will also want to make sure we end those too, so we might also want to extend this code a little::
-
-	threshold = 10 # number of seconds before we end the experiment
-	endTask = False
-	if t > threshold:
-		continueRoutine = False # end the current routine
-		trials.finished = True # exit the current loop 
-		endTask = True
-
-Then add a code component to all routines following this and int he "Begin Routine" tab type::
-
-	if endTask:
-		continueRoutine = False
-
-This way all following routines would also be ended if the participant took too long to respond. 
-
 
 Making a branched experiment
 --------------------------------------
