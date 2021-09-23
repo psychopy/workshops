@@ -120,10 +120,153 @@ Do you want you custom code executed before or after your stimulus?
   *The dir() method is a python specific function - so be careful if you leave that in your code when pushing your experiment online!*
 
 
-What can we do with code in our experiments?
+Example uses of code in PsychoPy
+================================
+
+Inserting a break
+-------------------
+
+Imagine you want to insert a break every 10th trial. You could add a routine in your trial loop, then add a code component and use this in the *Begin Routine* tab::
+
+	if not trials.thisN % 10:
+		continueRoutine = False
+
+.. nextslide::
+
+A few handy bits of code are used here:
+
+- :code:`%` : the modulus operator, returns the remainder of a value.
+- :code:`.thisN` the current iteration number of this loop *Remember: python indexing starts at 0*.
+- :code:`continueRoutine` : if :code:`False` the current routine will end and the experiment will progress. 
+
+Inserting a timer
+-------------------
+
+To show the participant the time into a trial, we don't even need a code component. We can add a Text stimulus, and in the Text field write :code:`str(t)` then make sure to set the field *Each frame*. This is a good example of converting variable "types" in python:
+
+- :code:`str()` : Converts to a string.
+- :code:`int()` : converts to an integer.
+
+.. nextslide::
+
+This might return a value that is quite long, so, to round that we could use :code:`round(t, 3)
+
+Ending a trial early 
+-----------------------------------
+
+Imagine we want to end the experiment early if your participant takes too long to respond (this might be particularly important for online studies!). Now we know how to time each trial we can use those clocks to end the task early if a trial takes too long. 
+
+.. nextslide::
+
+Add a code component and in the "Each Frame" tab write::
+
+	threshold = 10 # number of seconds before we end the experiment
+	if t > threshold:
+		continueRoutine = False # end the current routine
+		trials.finished = True # exit the current loop 
+
+.. nextslide::
+
+If we have any routines that follow this we will also want to make sure we end those too, so we might also want to extend this code a little::
+
+	threshold = 10 # number of seconds before we end the experiment
+	endTask = False
+	if t > threshold:
+		continueRoutine = False # end the current routine
+		trials.finished = True # exit the current loop 
+		endTask = True
+
+Then add a code component to all routines following this and int he "Begin Routine" tab type::
+
+	if endTask:
+		continueRoutine = False
+
+This way all following routines would also be ended if the participant took too long to respond. 
+
+
+Making a branched experiment
+--------------------------------------
+A branched experiment refers to an experiment in which one of two paths could be taken, depending on the response given. A *very* basic example of a branched experiment could be if the participant chooses to consent or not, if they do consent the experiment progresses, otherwise the experiment skips to a thank-you message. 
+
+.. nextslide::
+
+Add a Routine to the start of our experiment called "consent" and add two clickable images (one called "Yes" and one called "No"). Then add a code component, and in the *End Routine* tab, write::
+
+	if consent_mouse.clicked_name[-1] == 'Yes':
+		mainLoopReps = 1
+	else:
+		mainLoopReps = 0
+
+Then add a loop around the rest of your experiment and use :code:`$mainLoopReps` in the :code:`nReps` field. This is a basic example, but you could imagine how this could be used for other branched experiments to show different parts of your experiment to different participants. 
+
+Randomising the order of stimuli (e.g. images)
+------------------------------------------------
+
+Imagine you have 4 images to present in 4 locations. On each trial, you want the location for each image to be selected randomly. You could add a code component, and in the `Begin Routine` tab write::
+	
+	imageList = ['images/im1.jpg', 'images/im2.jpg', 'images/im3.jpg', 'images/im4.jpg']
+	shuffle(imageList)
+
+Then in your image components use :code:`$imageList[0]`, :code:`$imageList[1]` and so on... *making sure to set every repeat*
+
+
+Storing custom variables
+--------------------------------------
+
+It is really handy to be able to save custom variables to our data file. Following the example of randomising image order, we could save the image list to our data file using :code:`thisExp.addData('imageList', imageList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
+
+Adding feedback
+--------------------------------------
+
+**Response time feedback from a mouse** 
+
+In our Posner example, we are using mouse responses. So long as the data from the mouse is set to save *On Click* (see data tab) this will return several values we can use for feedback:
+
+- :code:`mouse.time` the time(s) of the mouse click(s). 
+- :code:`mouse.clicked_name` the name(s) of the last object clicked
+
+.. nextslide::
+Adding a text component and writing :code:`$mouse.time[-1]` in the text field would show the time of the last mouse click. 
+
+.. nextslide::
+
+**Accuracy feedback from a mouse** 
+
+Imagine we wanted to check our participant had selected the correct object. We could add a column to our conditions file e.g. "corrClick" then use a code component to check if this was correct::
+
+	if mouse.clicked_name[-1] == corrClick:
+		correct = 1
+		print('correct!')
+	else:
+		correct = 0
+		print('incorrect')
+
+Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
+
+**Response time feedback from a keypress** 
+
+When we use a keyboard component for our responses, there are a few variables returned on the keypress:
+
+- :code:`key_resp.keys`: Key name(s) that were pressed.
+- :code:`key_resp.rt`: The response time(s) of key presses.
+- :code:`key_resp.corr`: If a correct answer was provided to the component (under "Data" tab) this will return 1/0 for if the response was correct/incorrect.
+
+.. nextslide::
+
+Following this you could use a code component to give response dependant feedback::
+	
+	if key_resp.corr:
+		feedback = ' Correct!'
+	else:
+		feedback = 'Incorrect'
+
+Using :code:`$feedback` in a Text component. 
+
+In our experiment
 ---------------------
+
+Following these examples, let's add different kinds of feedback to our posner task - :ref:`addingFeedback`
 
 We can make more flexible and dynamic experiments using code, including:
    - :ref:`clocksAndTrialCounders`
-   - :ref:`addingFeedback`
    - :ref:`mouse3days`

@@ -7,9 +7,6 @@
 Clocks and trial counters
 ===============================
 
-Clocks
--------------------------------
-
 Keeping track of time is really important to most experiments. In PsychoPy there are many useful clocks that live "under the hood", which we can use in our experiment:
 
 *	:code:`routineClock` : Every routine has it's own clock with this naming convention e.g. a routine called "trial" would have a clock called "trialClock".
@@ -23,7 +20,7 @@ If we want to use a custom clock (e.g. to measure the time across several routin
 	myClock = core.Clock()
 
 .. note::
-	If we are working online we will need to change our code component "type" to be "Both" and use :code:`myClock = util.Clock()` on the JS side - this is because the 'Clock' class lives in different modules in PsychoPy and PsychoJS. 
+	In the current release (2021.2.3) if we are working online we will need to change our code component "type" to be "Both" and use :code:`myClock = util.Clock()` on the JS side.
 
 Useful methods for use with clocks
 -----------------------------------
@@ -58,6 +55,27 @@ The properties of the text component should look like this:
 
 OK now you should have a timer to show participants how far through a trial they are!! If you wanted to show them how far into the experiment they are you could add a code component and in the `Begin Experiment` tab write :code:`expClock = core.Clock()`. Then in your text component replace :code:`t` with :code:`expClock.getTime()`.
 
+
+Trial counters
+-------------------------------
+
+How is PsychoPy counting trials?
+------------------------------------
+
+Each loop we add to our experiment will automatically be counting the number of trials that have occured already (as well as how many repetitions of our trials list have occured!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
+
+.. nextslide::
+
+*	:code:`trials.thisRepN` - the current repetition of your conditions file
+*	:code:`trials.thisTrialN` - the current trialN within this repetition
+*	:code:`trials.thisN` - the current trialN regardless of repetition
+*	:code:`trials.thistrialIndex` - the index of the current trial from within our trialList (the conditions spreadsheet).
+
+Adding a trial counter
+------------------------------------
+
+Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units pos = (-0.4, 0.4)). In the text field add :code:`$trials.thisN`. 
+
 Ending a trial early 
 -----------------------------------
 
@@ -89,32 +107,6 @@ Then add a code component to all routines following this and int he "Begin Routi
 		continueRoutine = False
 
 This way all following routines would also be ended if the participant took too long to respond. 
-
-Trial counters
--------------------------------
-
-How is PsychoPy counting trials?
-------------------------------------
-
-Each loop we add to our experiment will automatically be counting the number of trials that have occured already (as well as how many repetitions of our trials list have occured!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
-
-.. nextslide::
-
-*	:code:`trials.thisRepN` - the current repetition of your conditions file
-*	:code:`trials.thisTrialN` - the current trialN within this repetition
-*	:code:`trials.thisN` - the current trialN regardless of repetition
-*	:code:`trials.thistrialIndex` - the index of the current trial from within our trialList (the conditions spreadsheet).
-
-Adding a trial counter
-------------------------------------
-
-Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units pos = (-0.4, 0.4)). In the text field add :code:`$trials.thisN`. 
-
-trial counters online
-------------------------------------
-
-Currently (PscyhoPy version 2021.1.4) the trial counter variables exist in PsychoPy but not PsychoJS (but they will do soon!). Instead, we can use our own custom trial counters. Add a code component and in the "Begin Experiment" tab type :code:`trialCounter = 0`, then in the "Begin Routine" tab type :code:`trialCounter += 1`. Finally, replace the text in your text component with :code:`$trialCounter` and **set every repeat**. 
-
 
 Quick Exercise
 ------------------------------------
