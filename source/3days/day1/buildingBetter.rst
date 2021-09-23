@@ -9,7 +9,7 @@ Using Builder
 
 All the base knowledge we assume at the start of this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
-In this demo we will work through making a posner task in PsychoPy you can `download the materials here <https://workshops.psychopy.org/psychopy_examples.zip>`_ (upen builder > posnerTargets).
+In this demo we will work through making a posner task in PsychoPy you can `download the materials here <https://workshops.psychopy.org/psychopy_examples.zip>`_ (open builder > posnerTargets).
 
 What makes a PsychoPy experiment?
 --------------------------------------
