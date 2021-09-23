@@ -3,9 +3,6 @@
 Adding feedback
 ===============================
 
-Adding feedback
--------------------------------
-
 Let's try and create a 'Feedback' Routine for the Posner task we want to:
 
 - Add trial by trial feedback on response times 
@@ -82,7 +79,7 @@ On each trial we add to the list::
 
 At the end of the experiment we can average these lists::
 
-    validAv = np.average(validRTList)
+    validAv = average(validRTList)
 
 
 *Exercise*
