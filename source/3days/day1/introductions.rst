@@ -10,42 +10,25 @@
 Introductions
 ----------------
 
-About Open Science Tools
+The Team!
 =========================
 
-**Who am I?** 
-    * *Jon Peirce* - Lecturer at Uni of Nottingham, creator of PsychoPy
+PsychoPy is an Open Source project, the users have access to the code and can contribute at any time! That kind of means the team is technically huge!
 
-**Science Team**
-    * *Rebecca Hirst* - workshops and consultancy (and a Postdoc at Trinity College Dublin)
+.. figure:: /_images/team_slide.png
 
-**Python developers**
-    * *Jon Peirce, Todd Parsons, Matthew Cuttone, Sol Simpson*
-    
-**JavaScript developers**
-    * *Alain Pitiot, Thomas Pronk, Sotiri Bakagiannis*
 
 .. nextslide::
 
-**Credits:**
+In terms of the "core team" , thanks to pavlovia users and grants we can now fund staff to work on developing the tools and supporting users.
 
-The community:
-
-    - >150 code contributors (notably, Jeremy Gray, David Bridges, Richard Höchenberger, Hiroyuki Sogo, ...)
-    - forum contributors (notably, Michael MacAskill, Wakefield Morys-Carter, Jonathan Kominski, Jens Boelte, ...)
-
-Our funders:
-
-    - Nottingham University pay Jon's salary while he works on this
-    - The Wellcome Trust and the Chan Zuckerberg Initiative have paid staff
+.. figure:: /_images/team2021.png
+    :scale: 30%
     
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Not aiming to teach you all of PsychoPy
-
-Hopefully give you some ideas about what's possible
-
+We can't teach you all of PsychoPy (even in 3 days!). But we can hopefully give you some ideas about what's possible and how to get started.
 
 
 Getting to know PsychoPy
@@ -59,10 +42,9 @@ It's `Psychology software in Python`
 PsychoPy is a Python library, an script editor (Coder) an application with a GUI (Builder)
 
 It is, itself, entirely written in Python
-
-    - 2002-2003: Jon began work on this for his own lab (visual neruoscience)
-    - 2003-2017: a purely volunteer-driven, evenings and weekends project
-    - 2017-now: still open source and free to install but with professional support (funded by grants and Pavlovia)
+    * 2002-2003: Jon began work on this for his own lab (visual neruoscience)
+    * 2003-2017: a purely volunteer-driven, evenings and weekends project
+    * 2017-now: still open source and free to install but with professional support (funded by grants and Pavlovia)
 
 Goal of PsychoPy
 ~~~~~~~~~~~~~~~~~~
@@ -81,43 +63,41 @@ Choice of interface
 
 It's hard to make something easy enough for undergrads and novices but flexible enough for everything else.
 
-PsychoPy provides two main options, for programmers and non-programmers, but there are also ways to combine the two.
-
-PsychoPy is written in the Python programming language
+PsychoPy provides two main options, coder view and builder view. But you can also use code inside builder view - which is what we recommend.
 
 .. nextslide::
 
-.. figure:: /_images/coderView2020.png
+.. figure:: /_images/coder_small.gif
 
    The Coder view is used to create experiments from Python scripts
 
 .. nextslide::
 
-.. figure:: /_images/builderView2020.png
+.. figure:: /_images/builder.png
 
    The Builder view is used to create experiments visually
 
 Why do people *Code*?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    - To implement more complex experimental designs/procedures(?)
-    - To know exactly what the code is doing(?)
-    - To break out of the "trials/blocks" structure or drawing loop cycle
-    - To program things that aren't psychology experiments. (e.g. stats, simulations, analyses etc.)
+* To implement more complex experimental designs/procedures(?)
+* To know exactly what the code is doing(?)
+* To break out of the "trials/blocks" structure or drawing loop cycle
+* To program things that aren't psychology experiments. (e.g. stats, simulations, analyses etc.)
 
 Why do people *Build*?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    - It is far faster to develop experiments!
-    - You can still understand (and build on) your experiment next year
-    - You'll probably have fewer bugs
-    - Code Components can be used in nearly all places where Builder isn't enough
-    - Your Builder experiment will also compile to a web (JS/HTML) experiment!
+* It is far faster to develop experiments!
+* You can still understand (and build on) your experiment next year
+* You'll probably have fewer bugs
+* Code Components can be used in nearly all places where Builder isn't enough
+* Your Builder experiment will also compile to a web (JS/HTML) experiment!
 
 What do **we** do?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-My *experiments* are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. 
+Our *experiments* are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. 
 
 I do use code for other things, like making my 'conditions' .csv files, making stimuli and customising the experiments.
 
