@@ -21,7 +21,7 @@ Remember that locally PsychoPy runs a compiled python experiment. Online pavlovi
 
 The PsychoJS library doesn't yet contain everything in PsychoPy, for several reasons:
 
-*	Does a component "make sense" online? e.g. Grating stimuli require a luminance calibrated monitor. Does your participant have a photometer at home?
+*	Does a component "make sense" online? e.g. Grating stimuli ideally require a luminance calibrated monitor. Does your participant have a photometer at home? Input/Output components to connect with EEG might not make sense online either..
 *	PsychoJS is younger than PsychoPy!
 
 Transpiling 
@@ -55,7 +55,7 @@ Common errors
 ----------------------------------
 
 ***Undefined errors***
-These usually mean that something "exists" in Python that does not "exist" in Javascript. This commonly happens with python libraryies e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like this, where there is a handy list of python terms and there equivilant javascript term. 
+These usually mean that something "exists" in Python that does not "exist" in Javascript. This commonly happens with python libraries e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like this, where there is a handy list of python terms and there equivilant javascript term. 
 
 How do we fix errrors? 
 ----------------------------------
