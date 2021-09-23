@@ -14,34 +14,59 @@ This shows you how to make the `posner task in PsychoPy <https://workshops.psych
 What makes a PsychoPy experiment?
 --------------------------------------
 
-Open the posnerHand.psyexp file. An experiment in Builder has:
+A builder experiment has three main sections. To start making an experiment we add routines to our flow and add components to our routines.
 
-- a single *Flow* (specifies the order in which things occur and whether they repeat in a *Loop*)
-- one or more *Routines* that are combined in the *Flow*
-- several *Components* that are combined to form *Routines*
+.. image:: /_images/builder_terms.png
 
-The conditions file
-````````````````````````````````````````
+Changing things trial-by-trial (the "conditions" file)
+````````````````````````````````````````````````````````
 
-Open the conditions.xlsx file...
+If you are going to change something on every repeat of a routine (e.g. stimulus location on each trial) you can use a *Conditions* file. This is fed into the loop surrounding the routine.
 
-If you are going to change something on every repeat of a routine (e.g. stimulus location changes on each trial) you can use a *Conditions* file. This is fed into the loop surrounding the routine.
+.. image:: /_images/loops_and_conditions.png
+
 
 Each header is a parameter, each row corresponds to the value of that parameter on each repeat/trial.
 
+.. nextslide::
+
+Then make sure to use that variable to set the parameter of a component on every repeat of your loop.
+
+.. image:: /_images/set_every_repeat.png
+
 Let's practice making minor edits
+
+Creating a routine
 ````````````````````````````````````````
 
-- Add some instructions
-- Gather some additional info (e.g. age)
+Let's add some instructions to our experiment. Imagine that we have several sets of instructions to present, but in every set, the instructions consist of the same components:
+
+- A text (or image) component to exlain the task.
+- A way of allowing the participant to move on through the instructions (using a keypress or an onscreen button)
+
+.. nextslide::
+
+We could add a basic routine, but we could also add a loop around our instructions routine to iterate over a set of instructions (with that loopType set to "sequential"). 
+
+.. image:: /_images/routines_basics.png
+
+Gather some additional info (e.g. age)
+````````````````````````````````````````
+Every experiment starts with a dialogue box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
+
+.. image:: /_images/exp_info.png
+
+.. note::
+	In the current release (2021.2.3) checkbox options are not yet supported online.
 
 
-*Warm up exercises (5-10 mins)*
+*Warm up exercises (10 mins)*
 ````````````````````````````````````````
 
-- Add a 'neutral' condition to our task (find a double headed arrow for the neutral stimulus)
+- Add a 'neutral' condition to our task:
+	Use the double headed arrow in the images folder for the neutral stimulus. The neutral stimulus can cue a target on the left or the right.
 - Add a 'thanks' message to tell participants when they end the experiment.
-- in the thanks routine ask participants to click a button with the mouse to end the experiment.
+- Replace the series of instructions text with a series of images (see the images/instructions folder for pre-made slides).
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
