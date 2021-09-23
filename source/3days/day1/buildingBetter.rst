@@ -26,7 +26,7 @@ If you are going to change something on every repeat of a routine (e.g. stimulus
 .. image:: /_images/loops_and_conditions.png
 
 
-Each header is a parameter, each row corresponds to the value of that parameter on each repeat/trial.
+Each header is a variable, each row corresponds to the value of that variable on each repeat/trial.
 
 .. nextslide::
 
@@ -178,7 +178,7 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 .. image:: /_images/counterbalancing_loop.png
 
 .. note:: 
-	`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format `dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input recieved at startup!
+	:code:`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format :code:`dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input recieved at startup!
 
 *Exercises*
 `````````````````````````````````````````
