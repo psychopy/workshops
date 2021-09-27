@@ -64,6 +64,8 @@ Why might we fork inside pavlovia instead of using fork + sync in PsychoPy? Isn'
 *   You can avoid some errors by deleting the data folder from the forked project *before* you clone/sync it locally (Web IDE > ... > delete > commit)
 *   Can be easier for use with groups (online you can fork to a group, locally the project will always be forked to your namespace)
 
+.. _pavloviaLaunch:
+
 Syncing our own study to pavlovia
 ----------------------------------
 
@@ -94,10 +96,31 @@ Once you have synced your study you will find it in your Dashboard on pavlovia.o
 
 .. nextSlide::
 
+.. _additionalResources:
+
+Configuring online settings
+----------------------------
+
 Inside the experiment settings of PsychoPy you can configure the online settings of your experiment. 
 
 .. image:: /_images/online_tab.png
     :align: left
+
+*Exercise (5-10 mins)*
+--------------------------
+
+Let's quickly make a basic experiment and put it online:
+
+1. Make a new .psyexp file with some text that simply reads "Hello, I'm online!"
+2. Sync that experiment to pavlovia.org 
+3. Go to your experiment dashboard to find your experiment 
+4. Change your study to piloting and check that it runs by changing it to pilot mode and select "pilot".
+5. Redirect your participant to PsychoPy.org when they have completed the task, redirect them to pavlovia.org if they do not complete the task.
+
+.. nextSlide::
+
+Let's try :ref:`builderToPavlovia`
+
 
 .. _gitlabBrief:
 
@@ -114,7 +137,7 @@ Pavlovia uses a powerful git-based system for storage and version control. Some 
 Version control
 --------------------------
 
-Pavlovia uses a git based system for version conrol called "gitlab". You can see when the last changes were made to the task by looking at the commit history.
+Pavlovia uses a git based system for version control called "gitlab". You can see when the last changes were made to the task by looking at the commit history.
 
 .. image:: /_gifs/git_control.gif
     :align: center
@@ -145,7 +168,7 @@ To add members to your own project, you can use the settings>members option wher
 Making your task public
 --------------------------
 
-You can change the visibility of your task at any time under permissions. **Remember** Once you make your project "public" the data file stored there will also be public. 
+You can change the visibility of your task at any time under permissions. **Remember** Once you make your project "public" the data file stored there will also be public (unless you have your data saving mode set to database). 
 
 .. image:: /_gifs/gitlab_privacy.gif
     :align: center
@@ -156,14 +179,221 @@ You can change the visibility of your task at any time under permissions. **Reme
 *Exercises (10-15 mins)*
 --------------------------
 
-Let's get some practice using pavlovia.org!
+Let's get some practice using gitlab!
 
-1. try forking a task you like (hint: those in the 'demos' group can be useful)
-2. try searching that project from your local psychopy 
-3. make a small edit 
-4. upload and see if the change shows on gitlab!
-5. add someone else in your breakout room as a team member
+1. One person in your breakout room set their "Hello, Im online!" example to public.
+2. Another person in your breakout room find that task and fork + sync it so that you have it locally.
+3. Make a small edit to that task and sync the change.
+4. Pilot your newly updated task to check you can see the edit.
+5. Add someone different in your room as a team member to your project.
 
 NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 
 
+.. _debuggingOnline:
+
+Debugging online
+=================================
+
+Why do we need to debug?
+----------------------------------
+
+So your task was running perfectly offline, then you pushed it online, and it doesn't work - why? There are lot's of reasons something might not work online, but the most common errors are coding errors. 
+
+Remember that locally PsychoPy runs a compiled python experiment. Online pavlovia runs your compiled *Javascript* experiment which uses the `PsychoJS library <https://github.com/psychopy/psychojs>`_. 
+
+.. nextSlide::
+
+The PsychoJS library `doesn't yet contain everything in PsychoPy <https://www.psychopy.org/online/status.html>`_ , for several reasons:
+
+*   Does a component "make sense" online? e.g. Grating stimuli ideally require a luminance calibrated monitor. Does your participant have a photometer at home? Input/Output components to connect with EEG might not make sense online either..
+*   PsychoJS is younger than PsychoPy! (but we're making good progress!)
+
+Transpiling 
+----------------------------------
+
+When we add code components we have the choice to add code as either:
+
+*   *Py* - pure Python
+*   *JS* - pure JavaScript
+*   *Both* - Python and Javascript independantly
+*   *Auto -> JS* - automatically *transpile* python code to javascript. 
+
+The last option is very cool and useful - but it can catch people out if something doesn't translate smoothly!
+
+.. nextSlide::
+
+General tips for getting online
+----------------------------------
+
+1. **Update to the latest release!** Version 2021.2. improved transpiling alot and you can save *alot* of manual debugging online using that version. 
+2. Always check the status of online options `status of online options <https://www.psychopy.org/online/status.html>`_ *before* making your experiment
+3. Push your experiment little and often (don't make your full experiment perfectly locally and then try to push it online)
+4. Read the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_
+5. Check out the `psychoJS documentation <https://psychopy.github.io/psychojs/>`_
+
+
+The `forum <discourse.psychopy.org>`_ is always there!
+
+.. _commonErrors:
+
+Common errors
+====================
+
+There are several kinds of error we might encounter when getting online, but generally these fall in three catagories (you can find a useful `tutorial here <https://gitlab.pavlovia.org/tpronk/assignment_stroop>`_)
+
+.. _syntaxErrors:
+
+Syntax errors: "Initializing experiment"
+------------------------------------------
+
+The experiment is stuck on an "initializing experiment" screen. This usually means that there is some invalid Javascript written - so the experiment code cannot run at all. For this we need to explore the :ref:`developerTools`
+
+.. _semanticErrors:
+
+Semantic errors: "X is not defined"
+------------------------------------
+
+"ReferenceError: X is not defined"
+
+This means that you are referencing a variable that is not yet defined in your Javascript. There are several reasons this could occur...
+
+.. nextSlide::
+
+**Using python modules** 
+
+Semantic errors commonly happen when researchers try to use python libraries or functions that dont exist in Javascript e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like thisthat need manually translating. Here, there is a handy list of python terms and there equivilant javascript term (A huge credit to `Wakefield Morys-Carter <https://uk.linkedin.com/in/wakecarter>`_ for compiling this). 
+
+.. nextSlide::
+
+**Decalring variables**
+
+Another reason a semantic error could occur is if you have created a custom function that can't be accessed from within the location it is called. 
+
+Generally when you make custom variables in code components, PsychoPy will identify those and automatically declare that variable before the experiment initializes i.e. :code:`var myVariable1` will be seen at the start of the experiment. If this doesn't occur it might be that you need to add that yourself to the "Before experiment" tab. 
+
+.. nextSlide::
+
+.. image:: /_images/semantic_error.png
+
+.. _networkErrors:
+
+Network errors: "Unknown Resource"
+----------------------------------
+
+Generally PsychoPy will try to find all the resources you need automatically and load them, but there are some cases this might not work..
+
+.. nextSlide::
+
+**Incorrect file extension**
+
+Your image is a ".jpeg" but you have accidentally used the extension ".png"
+
+.. nextSlide::
+
+**Resources defined through code**
+
+If a resource is defined through code rather than from a conditions file or component field then PsychoPy can fail to "prepare" for the eventuallity that resource is needed. In cases like this it is always a good idea to manually add any additional resources you might need to the *additional resources* section of the experiment settings when :ref:`additionalResources`. 
+
+How do we fix errrors? 
+----------------------------------
+
+**Pre 2021.2.2**
+
+Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to Javascript. If you update you will save alot of headaches. For these undefined errors we recommend looking at the `archived version of the crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ and adding a code component to the first routine where we "tell" javascript what we mean by providing the JS alternatives to anything undefined. 
+
+.. image:: /_images/JSsnippet.png
+    :align: center
+
+
+**Still relevant to 2021.2.2**
+
+Even though we've improved the transpiler, there are some things that either still need updating or that we can't expect to transpile i.e. whole python libraies like numpy. So if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We would also then need to change code type to "Both".
+
+.. _developerTools:
+
+Developers console
+----------------------------------
+
+This is the equivilent to your "StdOut" window in runner view. In fact, it's alot more than that - it's a shell where you can type and try out bits of JavaScript. You can access developer tools in most browsers by right clicking the browser and selecting "inspect" then clicking console. 
+
+*For faster access look up the keyboard shortcut for your specific operating system/browser!*
+
+Finding errors: Developer tools
+-------------------------------
+
+The developer tools are particularly helpful for :ref:`syntaxErrors`, where there is no error message, but things "don't work".
+
+.. image:: /_images/initialisingScreen.png
+    :align: center
+
+.. nextSlide::
+
+You can open developer tools in your browser (the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_) gives tips how to do this on different browsers/operating systems)
+This will tell us where our (which line) error is occuring. Remember, exporting to code is a one-way street. So whilst it is useful to look into the code, we *really* recommend fixing errors back in builder where possibl. 
+
+.. image:: /_images/developerTools.png
+    :align: center
+
+.. nextSlide::
+
+If you are ever unsure where to look in your builder experiment for an error, you can look for the line that indicates what routine this code is being executed in. 
+
+.. image:: /_images/navigate_console_error.png
+
+Clearing your browser cache
+----------------------------------
+
+If you ever make a change in your experiment and it isn't reflected in your online experiment, it is very likely you need to clear your browser cache. How this is done can vary browser to browser - so do search how to do that on your specific operating system/browser.
+
+*Exercise 15-20 mins*
+----------------------------------
+
+Think Escape room, but with bugs...
+
+I am going to give you an experiment with 4 levels, each level contains a bug. Use the skills that we have learnt to find each bug and progress to the next level. 
+
+To start fork or download `this experiment <https://gitlab.pavlovia.org/Hirst/buggy_breakout>`_.
+
+.. image:: /_images/lock.png
+
+
+Useful Javascript commands for debugging
+-----------------------------------------
+
+- :code:`console.log()`: The equivilent of :code:`print()` in python. Useful for when a variable doesn't appear as you expect - you can print out values to your console and check they are updating as you expect. 
+- :code:`window.object = object`: pass an object to the window for inspection e.g. pass a component by replacing :code:`object` with the name of your component. Useful for seeing what attributes and methods an object has.
+
+Useful Javascript commands for other tricks
+--------------------------------------------
+
+- :code:`window.open('myURL')`: open a new window e.g. a questionaire (note: can be blocked as a pop up by some mac users).
+- :code:`alert()` Add a popup alert to the participant. 
+- :code:`prompt('Please enter your name', 'default')` retrieve some info from the participant `via a popup <https://www.w3schools.com/jsref/met_win_prompt.asp>`_
+- :code:`confirm('Please click OK!')` Display a popup box with OK or cancel.
+
+Want to explore Javascript and PsychoJS?
+------------------------------------------
+
+Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS (but remember that this is a one way street! don't be tempted to alter the JS code if you want to continue making edits in builder!)
+
+Other useful tools
+-------------------
+There are several other tools that can be useful including:
+
+- Counterbalancing online using `sequential participant IDs <https://moryscarter.com/vespr/pavlovia.php>`_ 
+
+- `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_ (e.g. so that we can use cm units online).
+
+- `Headphone checkers using huggins pitch <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ 
+
+- `Embedding html forms <https://discourse.psychopy.org/t/new-web-app-form-to-html-for-pavlovia/22626>`_.
+
+- `Eyetracking online <https://workshops.psychopy.org/3days/day2/advancedOnline.html>`_ using the webgazer library. **Note that in 2021.2.2 there is a different way of loading resources** 
+
+Next up!
+-----------------
+
+Let's practice debugging errors, then play with advanced plugins we can use online ( :ref:`advancedOnline`).
+
+Then we will try :ref:`firstExperiment`.
