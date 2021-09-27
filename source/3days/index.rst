@@ -66,12 +66,11 @@ Day 1
 
 Day 2
 
-.. toctree::
-  :maxdepth: 1
-
-  day2/pavlovia
-  day2/debuggingOnline
-  day2/advancedOnline
+- :ref:`pavloviaEnv`
+- :ref:`pavloviaLaunch`
+- :ref:`gitlabBrief`
+- :ref:`debuggingOnline`
+- :ref:`advancedOnline`
 
 Day 3 (Morning)
 

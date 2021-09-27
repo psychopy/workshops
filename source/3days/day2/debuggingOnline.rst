@@ -15,14 +15,14 @@ Why do we need to debug?
 
 So your task was running perfectly offline, then you pushed it online, and it doesn't work - why? There are lot's of reasons something might not work online, but the most common errors are coding errors. 
 
-Remember that locally PsychoPy runs a compiled python experiment. Online pavlovia runs your compiled *Javascript* experiment which uses the PsychoJS library. 
+Remember that locally PsychoPy runs a compiled python experiment. Online, pavlovia runs your compiled *Javascript* experiment which uses the `PsychoJS library`<https://github.com/psychopy/psychojs>_. 
 
 .. nextSlide::
 
 The PsychoJS library doesn't yet contain everything in PsychoPy, for several reasons:
 
 *	Does a component "make sense" online? e.g. Grating stimuli ideally require a luminance calibrated monitor. Does your participant have a photometer at home? Input/Output components to connect with EEG might not make sense online either..
-*	PsychoJS is younger than PsychoPy!
+*	PsychoJS is younger than PsychoPy! But we
 
 Transpiling 
 ----------------------------------
@@ -69,15 +69,14 @@ Before PsychoPy 2021.2, there were lot's of things that did not transpile smooth
 
 **Still relevant to 2021.2.2**
 
-Even though we've improved the transpiler, we can't expect to transpile whole python libraies (e.g. numpy). So if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We might also need to change code type to "Both" and make sure to use the new method (average) instead of refering to :code:`np.average`. 
+Even though we've improved the transpiler, there are some things that either still need updating or that we can't expect to transpile i.e. whole python libraies like numpy. So if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We would also thenneed to change code type to "Both".
 
-.. image:: /_images/both_average.png
-    :align: center
-
-Want to explore Javascript?
+The developers console
 ----------------------------------
 
-Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS (but remember that this is a one way street! don't be tempted to alter the JS code if you want to continue making edits in builder!)
+This is the equivilent to your "StdOut" window in runner view. In fact, it's alot more than that - it's a shell where you can type and try out bits of JavaScript. You can access developer tools in most browsers by right clicking the browser and selecting "inspect" then clicking console. 
+
+*For faster access look up the keyboard shortcut for your specific operating system/browser!*
 
 Finding errors: Developer tools
 -------------------------------
@@ -97,10 +96,25 @@ This will tell us where our (which line) error is occuring
 
 .. nextSlide::
 
-We can then open up our JS file and take a look further. 
+If you are ever unsure where to look in your builder experiment for an error, you can look for the line that indicates what routine this code is being executed in. 
 
-.. image:: /_images/syntaxErrorJS.png
-    :align: center
+.. image:: /_images/navigate_console_error.png
+
+Clearing your browser cache
+----------------------------------
+
+If you ever make a change in your experiment and it isn't reflected in your online experiment, it is very likely you need to clear your browser cache. How this is dont can vary browser to browser - so do search how to do that on your specific operating system/browser.
+
+Useful Javascript commands
+----------------------------------
+
+- :code:`console.log()`: The equivilent of :code:`print()` in python. Useful for when a variable doesn't appear as you expect - you can print out values to your console and check they are updating as you expect. 
+- :code:`window.object = object`: pass an object to the window for inspection e.g. pass a component by replacing :code:`object` with the name of your component. Useful for seeing what attributes and methods an object has.
+
+Want to explore Javascript?
+----------------------------------
+
+Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS (but remember that this is a one way street! don't be tempted to alter the JS code if you want to continue making edits in builder!)
 
 Other useful tools
 -------------------
@@ -110,13 +124,11 @@ There are several other tools that can be useful including:
 
 - `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_ (e.g. so that we can use cm units online).
 
-- `Headphone checkers using huggins pitch <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ (e.g. so that we can use cm units online).
+- `Headphone checkers using huggins pitch <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ 
 
 - `Embedding html forms <https://discourse.psychopy.org/t/new-web-app-form-to-html-for-pavlovia/22626>`_.
 
 - `Eyetracking online <https://workshops.psychopy.org/3days/day2/advancedOnline.html>`_ using the webgazer library. **Note that in 2021.2.2 there is a different way of loading resources** 
-
-- The `assignment <https://gitlab.pavlovia.org/tpronk/assignment_stroop_cep_2021_may19-21>`_ we will complete! (fork the task then find the bugs...)
 
 Next up!
 -----------------
