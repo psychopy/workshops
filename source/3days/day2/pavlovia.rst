@@ -372,10 +372,16 @@ Useful Javascript commands for other tricks
 - :code:`prompt('Please enter your name', 'default')` retrieve some info from the participant `via a popup <https://www.w3schools.com/jsref/met_win_prompt.asp>`_
 - :code:`confirm('Please click OK!')` Display a popup box with OK or cancel.
 
+.. note::
+    If you are running your study in full screen mode these will break into window mode*
+
 Want to explore Javascript and PsychoJS?
 ------------------------------------------
 
-Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS (but remember that this is a one way street! don't be tempted to alter the JS code if you want to continue making edits in builder!)
+Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS, and finding vaiables that will exist "under the hood of your experiment. For example :code:`expInfo['OS']` and :code:`expInfo['frameRate']` might be useful for checking the participants Operating system or screen refresh rate.
+
+.. note::
+    Remember that this is a one-way street! don't be tempted to alter the JS code if you want to continue making edits in builder! implement code from within builder itself!*
 
 Other useful tools
 -------------------
