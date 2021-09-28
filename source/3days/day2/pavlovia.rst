@@ -30,7 +30,7 @@ What is Pavlovia?
 Once we have our experiment written in JS, we need a way to "host" it online.  `Pavlovia <https://pavlovia.org/>`_ is:
 
 * A secure server for running experiments and storing data.
-* A gitbased version control system.
+* A git based version control system.
 * A huge open access library of experiments (that you can add to!)
 
 Finding openly shared experiments
@@ -76,7 +76,7 @@ If the task that you need doesn't already exist - push your own! Before you get 
 
 .. nextSlide::
 
-Once you have made your experiment and made sure that your local folders are organised neatly ( **with one .psyexp file in this location**) you're ready to sync your project to pavlovia!. 
+Once you have made your experiment and made sure that your local folders are organized neatly ( **with one .psyexp file in this location**) you're ready to sync your project to pavlovia!. 
 
 .. image:: /_images/sync_to_pav.png
     :align: left
@@ -150,7 +150,7 @@ Pavlovia uses a git based system for version control called "gitlab". You can se
 If you click on the change you can see deletions and insertions. You can browse the repository at that point in history to retrieve past files!
 
 .. image:: /_images/gitlabComChange0.png
-    :align: cener
+    :align: center
     :scale:70%
 
 .. image:: /_images/gitlabBrowse0.png
@@ -181,7 +181,7 @@ You can change the visibility of your task at any time under permissions. **Reme
 
 Let's get some practice using gitlab!
 
-1. One person in your breakout room set their "Hello, Im online!" example to public.
+1. One person in your breakout room set their "Hello, I'm online!" example to public.
 2. Another person in your breakout room find that task and fork + sync it so that you have it locally.
 3. Make a small edit to that task and sync the change.
 4. Pilot your newly updated task to check you can see the edit.
@@ -216,7 +216,7 @@ When we add code components we have the choice to add code as either:
 
 *   *Py* - pure Python
 *   *JS* - pure JavaScript
-*   *Both* - Python and Javascript independantly
+*   *Both* - Python and Javascript independently
 *   *Auto -> JS* - automatically *transpile* python code to javascript. 
 
 The last option is very cool and useful - but it can catch people out if something doesn't translate smoothly!
@@ -240,7 +240,7 @@ The `forum <discourse.psychopy.org>`_ is always there!
 Common errors
 ====================
 
-There are several kinds of error we might encounter when getting online, but generally these fall in three catagories (you can find a useful `tutorial here <https://gitlab.pavlovia.org/tpronk/assignment_stroop>`_)
+There are several kinds of error we might encounter when getting online, but generally these fall in three categories (you can find a useful `tutorial here <https://gitlab.pavlovia.org/tpronk/assignment_stroop>`_)
 
 .. _syntaxErrors:
 
@@ -262,11 +262,11 @@ This means that you are referencing a variable that is not yet defined in your J
 
 **Using python modules** 
 
-Semantic errors commonly happen when researchers try to use python libraries or functions that dont exist in Javascript e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like thisthat need manually translating. Here, there is a handy list of python terms and there equivilant javascript term (A huge credit to `Wakefield Morys-Carter <https://uk.linkedin.com/in/wakecarter>`_ for compiling this). 
+Semantic errors commonly happen when researchers try to use python libraries or functions that don't exist in Javascript e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like thisthat need manually translating. Here, there is a handy list of python terms and there equivalent JavaScript term (A huge credit to `Wakefield Morys-Carter <https://uk.linkedin.com/in/wakecarter>`_ for compiling this). 
 
 .. nextSlide::
 
-**Decalring variables**
+**Declaring variables**
 
 Another reason a semantic error could occur is if you have created a custom function that can't be accessed from within the location it is called. 
 
@@ -295,12 +295,12 @@ Your image is a ".jpeg" but you have accidentally used the extension ".png"
 
 If a resource is defined through code rather than from a conditions file or component field then PsychoPy can fail to "prepare" for the eventuallity that resource is needed. In cases like this it is always a good idea to manually add any additional resources you might need to the *additional resources* section of the experiment settings when :ref:`additionalResources`. 
 
-How do we fix errrors? 
+How do we fix errors? 
 ----------------------------------
 
 **Pre 2021.2.2**
 
-Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to Javascript. If you update you will save alot of headaches. For these undefined errors we recommend looking at the `archived version of the crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ and adding a code component to the first routine where we "tell" javascript what we mean by providing the JS alternatives to anything undefined. 
+Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to JavaScript. If you update you will save alot of headaches. For these undefined errors we recommend looking at the `archived version of the crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ and adding a code component to the first routine where we "tell" JavaScript what we mean by providing the JS alternatives to anything undefined. 
 
 .. image:: /_images/JSsnippet.png
     :align: center
@@ -308,14 +308,14 @@ Before PsychoPy 2021.2, there were lot's of things that did not transpile smooth
 
 **Still relevant to 2021.2.2**
 
-Even though we've improved the transpiler, there are some things that either still need updating or that we can't expect to transpile i.e. whole python libraies like numpy. So if you are using specific functions you will need to find the JS equivilent and add that to your experiment. We would also then need to change code type to "Both".
+Even though we've improved the transpiler, there are some things that either still need updating or that we can't expect to transpile i.e. whole python libraries like numpy. So if you are using specific functions you will need to find the JS equivalent and add that to your experiment. We would also then need to change code type to "Both".
 
 .. _developerTools:
 
 Developers console
 ----------------------------------
 
-This is the equivilent to your "StdOut" window in runner view. In fact, it's alot more than that - it's a shell where you can type and try out bits of JavaScript. You can access developer tools in most browsers by right clicking the browser and selecting "inspect" then clicking console. 
+This is the equivalent to your "StdOut" window in runner view. In fact, it's alot more than that - it's a shell where you can type and try out bits of JavaScript. You can access developer tools in most browsers by right clicking the browser and selecting "inspect" then clicking console. 
 
 *For faster access look up the keyboard shortcut for your specific operating system/browser!*
 
@@ -330,7 +330,7 @@ The developer tools are particularly helpful for :ref:`syntaxErrors`, where ther
 .. nextSlide::
 
 You can open developer tools in your browser (the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_) gives tips how to do this on different browsers/operating systems)
-This will tell us where our (which line) error is occuring. Remember, exporting to code is a one-way street. So whilst it is useful to look into the code, we *really* recommend fixing errors back in builder where possibl. 
+This will tell us where our (which line) error is occurring. Remember, exporting to code is a one-way street. So whilst it is useful to look into the code, we *really* recommend fixing errors back in builder where possible. 
 
 .. image:: /_images/developerTools.png
     :align: center
@@ -358,32 +358,142 @@ To start fork or download `this experiment <https://gitlab.pavlovia.org/Hirst/bu
 .. image:: /_images/lock.png
 
 
-Useful Javascript commands for debugging
+Useful JavaScript commands for debugging
 -----------------------------------------
 
-- :code:`console.log()`: The equivilent of :code:`print()` in python. Useful for when a variable doesn't appear as you expect - you can print out values to your console and check they are updating as you expect. 
+- :code:`console.log()`: The equivalent of :code:`print()` in python. Useful for when a variable doesn't appear as you expect - you can print out values to your console and check they are updating as you expect. 
 - :code:`window.object = object`: pass an object to the window for inspection e.g. pass a component by replacing :code:`object` with the name of your component. Useful for seeing what attributes and methods an object has.
 
 Useful Javascript commands for other tricks
 --------------------------------------------
 
-- :code:`window.open('myURL')`: open a new window e.g. a questionaire (note: can be blocked as a pop up by some mac users).
-- :code:`alert()` Add a popup alert to the participant. 
+- :code:`window.open('myURL')`: open a new window e.g. a questionnaire (note: can be blocked as a pop up by some mac users).
+- :code:`alert()` Add a pop-up alert to the participant. 
 - :code:`prompt('Please enter your name', 'default')` retrieve some info from the participant `via a popup <https://www.w3schools.com/jsref/met_win_prompt.asp>`_
-- :code:`confirm('Please click OK!')` Display a popup box with OK or cancel.
+- :code:`confirm('Please click OK!')` Display a pop-up box with OK or cancel.
 
 .. note::
     If you are running your study in full screen mode these will break into window mode*
 
-Want to explore Javascript and PsychoJS?
+Want to explore JavaScript and PsychoJS?
 ------------------------------------------
 
-Remember that you can always export your experiment to it's underlying Javascript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS, and finding vaiables that will exist "under the hood of your experiment. For example :code:`expInfo['OS']` and :code:`expInfo['frameRate']` might be useful for checking the participants Operating system or screen refresh rate.
+Remember that you can always export your experiment to it's underlying JavaScript code as well, this can be useful in learning how some things are defined differently in PsychoPy versus PsychoJS, and finding variables that will exist "under the hood of your experiment. For example :code:`expInfo['OS']` and :code:`expInfo['frameRate']` might be useful for checking the participants Operating system or screen refresh rate.
 
 .. note::
     Remember that this is a one-way street! don't be tempted to alter the JS code if you want to continue making edits in builder! implement code from within builder itself!*
 
-Other useful tools
+.. _counterbalancingOnline:
+
+Counterbalancing online
+=========================
+
+When we take a study online, it is often important to automate group assignment in some way. At the moment, Pavlovia does not have an "out-of-box" solution for this - but there are several ways to approach this.
+
+The common error
+-------------------
+
+Quite often, researchers think that if they have several groups they will need several Pavlovia projects (one per group). This is often inefficient and can become quite confusing when collating the data. Instead, we can make a single experiment and start by using the principles we learned in :ref:`blockDesigns`.
+
+.. _queryStrings:
+
+Query strings
+-------------------
+
+When sharing a study with a participant, we can auto-complete fields in the startup GUI using `query strings <https://en.wikipedia.org/wiki/Query_string>`_. You can provide info to your experiment by appending your experiment URL with :code:`?participant=1&group=A` - where "participant" and "group" correspond to parameter names. 
+
+.. nextSlide::
+
+There is no limit on the number of parameter names that you provide, so long as each parameter is separated by an ampersand (:code:`&`)
+
+.. image:: /_images/queryStrings.png
+
+.. nextSlide::
+
+Thanks to query strings we can generate several URLs for the same project but for each group. For example, you might have 4 groups and therefore share the URLs:
+
+* https://run.pavlovia.org/Username/Task/?group=A
+* https://run.pavlovia.org/Username/Task/?group=B
+* https://run.pavlovia.org/Username/Task/?group=C
+* https://run.pavlovia.org/Username/Task/?group=D
+
+.. warning::
+    If you are using this approach and sharing URLs on recruitment websites, you would need to be careful that the same participants do not complete several URLs (i.e. complete your study several times in different groups).
+
+Query strings: Using participant ID
+------------------------------------
+
+A slightly more efficient way might be to generate sequential participant IDs and use that to assign to groups. For this, Wakefield Morys-Carter has developed an `external app <https://moryscarter.com/vespr/pavlovia.php>`_ (Morys-Carter, 2021) to assist. 
+
+So, If your experiment URL is *https://pavlovia.org/a/b* then use *https://moryscarter.com/vespr/pavlovia.php?folder=a&experiment=b/*
+
+.. nextSlide::
+
+Inside PsychoPy, we could then use the code component::
+
+    if int(expInfo['participant']) % 2 == 0:
+        expInfo['group'] = A # Assigns even ID's to group A 
+    else:
+        expInfo['group'] = B
+
+We then would not need the parameter "group" in our experiment settings (because this parameter assignment through code would overwrite it anyway).
+
+More than two groups online
+------------------------------------
+
+Counterbalancing with more than 2 groups online is a little more complex. We can use the sequential participant ID method but we need to be more careful. If we had **40 participants**, in python, we could write::
+
+    # Makes a long list of length 4 * 10
+    groups = ['A', 'B', C', 'D'] * 10
+    # if python index starts at 0 but participant ID starts at 1 the first element 
+    # will be skipped, so add a value to compensate
+    groups.append('A')
+    # use the participant ID to index from this list
+    expInfo['group'] = groups[int(expInfo['participant'])]
+
+*Problem*, the method of list extension used to make the groups list does not translate to JavaScript (as outlined in the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_).
+
+.. nextSlide::
+
+For this reason we would need to change Code Type to "Both" and use the following on the JavaScript side::
+
+    # Makes a long list of length 4 * 10
+    groups = Array(10).fill(['A', 'B', 'C', 'D']).flat();
+    # if  index starts at 0 but participant ID starts at 1 the first element 
+    # will be skipped, so add a value to compensate
+    groups.push('A');
+    # use the participant ID to index from this list
+    thisGroup = groups[Number.parseInt(expInfo["participant"])];
+    expInfo["Group"] = thisGroup;
+
+.. nextSlide::
+
+Remember, we could sanity check that this is working using::
+    console.log('Group: ', expInfo['group'])
+
+The Study Portal
+------------------------------------
+
+*Problem* The tool described so far is great and is free, but it does not take into account how many participants *completed*. So, it is still important to manually check how many complete data sets you have for each group.
+
+We do hope to have an out-of-box solution to this in future, but we are very grateful for alternative solutions contributed by the community. In particular, Wakefield Morys-Carter has developed a `Study Portal <https://moryscarter.com/vespr/portal/>`_ to help group counterbalancing. Taking into account participant completion is a paid feature, but at a low cost (£10).
+
+.. nextSlide::
+
+This allows tracking of how many participants from each group have completed and how many timed out: 
+
+.. image:: /_images/studyPortalGroups.png
+
+.. nextSlide::
+
+Other features the Study Portal could help with:
+
+*   Anonymous withdrawal
+*   Consent/debrief forms
+
+You can watch a presentation of the portal `here <https://youtu.be/qFSGuZoVzaI>`_.
+
+Useful tools
 -------------------
 There are several other tools that can be useful including:
 
@@ -403,3 +513,7 @@ Next up!
 Let's practice debugging errors, then play with advanced plugins we can use online ( :ref:`advancedOnline`).
 
 Then we will try :ref:`firstExperiment`.
+
+References
+----------
+Morys-Carter, W.L. (2021, April 26). Participant IDs for Pavlovia. VESPR. https://moryscarter.com/vespr/pavlovia.php.
