@@ -1,16 +1,16 @@
 .. _builderToPavlovia:
 
-Launching a more complex study on pavlovia
+Launching a more complex study on Pavlovia
 ===========================================
 
 Putting our Posner online
 --------------------------------------------------
 
-Sometimes the tasks that we need to push from PsychoPy to pavlovia are quite complex. In general, if you are going online with your study - we *really* recommend pushing little and often to avoid issues getting online. Let's try and push our Posner online together to practice :ref:`pavloviaLaunch`.
+Sometimes the tasks that we need to push from PsychoPy to Pavlovia are quite complex. In general, if you are going online with your study - we *really* recommend pushing little and often to avoid issues getting online. Let's try and push our Posner online together to practice :ref:`pavloviaLaunch`.
 
 .. _pavloviaDashboard:
 
-Finding your experiment on pavlovia
+Finding your experiment on Pavlovia
 ------------------------------------
 
 Once we have synced our project we can check the project info to quickly explore the project online. 
@@ -19,7 +19,7 @@ Once we have synced our project we can check the project info to quickly explore
 
 .. nextSlide::
 
-You can also find your experiment on pavlovia via the dashboard > experiments. This is where you can view your experiments, check if you have credits etc. 
+You can also find your experiment on Pavlovia via the dashboard > experiments. This is where you can view your experiments, check if you have credits etc. 
 
 .. image:: /_images/pavloviaDashboard.png
     :align: right
