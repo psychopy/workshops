@@ -7,9 +7,9 @@ Building better experiments
 Using Builder
 --------------------------------------
 
-All the base knowledge we assume at the start of this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
+All the base knowledge we assume at the start of this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
-In this demo we will work through making a posner task in PsychoPy you can `download the materials here <https://workshops.psychopy.org/psychopy_examples.zip>`_ (open builder > posnerTargets).
+In this demo we will work through making a Posner task in PsychoPy you can `download the materials here <https://workshops.psychopy.org/psychopy_examples.zip>`_ (open builder > posnerTargets).
 
 What makes a PsychoPy experiment?
 --------------------------------------
@@ -41,8 +41,8 @@ Creating a routine
 
 Let's add some instructions to our experiment. Imagine that we have several sets of instructions to present, but in every set, the instructions consist of the same components:
 
-- A text (or image) component to exlain the task.
-- A way of allowing the participant to move on through the instructions (using a keypress or an onscreen button)
+- A text (or image) component to explain the task.
+- A way of allowing the participant to move on through the instructions (using a key press or an on-screen button)
 
 .. nextslide::
 
@@ -52,12 +52,12 @@ We could add a basic routine, but we could also add a loop around our instructio
 
 Gather some additional info (e.g. age)
 ````````````````````````````````````````
-Every experiment starts with a dialogue box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
+Every experiment starts with a dialog box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
 
 .. image:: /_images/exp_info.png
 
 .. note::
-	In the current release (2021.2.3) checkbox options are not yet supported online.
+	In the current release (2021.2.3) check box options are not yet supported online.
 
 
 *Warm up exercises (10 mins)*
@@ -77,13 +77,13 @@ Block designs and counterbalancing
 ==============================
 
 
-Randomised block designs
+Randomized block designs
 --------------------------------------
 
-A block design is where we have sets of similar trials organised into blocks rather than having trials interleaved.
+A block design is where we have sets of similar trials organized into blocks rather than having trials interleaved.
 
 e.g.
-  - a block of faces to recognise or a block of houses
+  - a block of faces to recognize or a block of houses
   - a block of Stroop task in English and a block in French
   - a block of valid trials versus a block of invalid trials
 
@@ -92,11 +92,11 @@ Note: these are all cases where the components would be identical between blocks
 The natural approach
 `````````````````````````````````````````
 
-When people have several "blocks" the natural move is to add seperate routines for those blocks:
+When people have several "blocks" the natural move is to add separate routines for those blocks:
 
 .. image:: /_images/natural_error.png
 
-However, if both blocks contain the same stimuli/elements (e.g. a posner task with a fixation, cue and image, but where the position of the cue varies between blocks), this is not the most efficient approach. 
+However, if both blocks contain the same stimuli/elements (e.g. a Posner task with a fixation, cue and image, but where the position of the cue varies between blocks), this is not the most efficient approach. 
 
 
 Blocking: Case 1
@@ -111,7 +111,7 @@ Then you can set the conditions files in your blocks loop to control the block-l
 Blocking: Case 2
 `````````````````````````````````````````
 
-If you do have 2 blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outerloop. 
+If you do have 2 blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outer-loop. 
 
 .. image:: /_images/case2_blocks.png
 
@@ -129,12 +129,12 @@ We need to create a total of 3 conditions files:
 Introducing a block
 `````````````````````````````````````````
 
-Using what we know about blocks, we could add a routine to tell the participants what kind of block they are about to enter. If our `blocks.xlsx` file has a column to label the condition, we can add a routine to introduce the blocktype.
+Using what we know about blocks, we could add a routine to tell the participants what kind of block they are about to enter. If our `blocks.xlsx` file has a column to label the condition, we can add a routine to introduce the block type.
 
 .. image:: /_images/block_intro.png
 
 
-.. nextslide:: Randomised block design complete!
+.. nextslide:: Randomized block design complete!
 
 You've sorted out block designs in a relatively neat fashion.
 
@@ -146,7 +146,7 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 Counterbalancing 
 --------------------------------------
 
-Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomise them.
+Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
 
 
 Setting the order
@@ -183,9 +183,9 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 *Exercises*
 `````````````````````````````````````````
 
-Let's practice counterbalancing in different ways using the exercises in the folder you downloaded ("builder > counterbalancingExercises"). In "excercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
+Let's practice counterbalancing in different ways using the exercises in the folder you downloaded ("builder > counterbalancingExercises"). In "exercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
 
-1. Turn this inefficient design into a randomised block design. (the cat and dog images are presented in blocks, but in a random order)
+1. Turn this inefficient design into a randomized block design. (the cat and dog images are presented in blocks, but in a random order)
 2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
 
 When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
@@ -200,7 +200,7 @@ For this we would use the second blocking method we described earlier. You can w
 
 .. nextslide::
 
-In the below we could control create the order C->B->A by using a conditions file where the nReps of each subloop are set per iteration of the outerloop. 
+In the below we could control create the order C->B->A by using a conditions file where the nReps of each sub-loop are set per iteration of the outer-loop. 
 
 .. image:: /_images/counterbalancesubs.png
 
@@ -218,7 +218,7 @@ e.g. using a conditions file like this...
 | 1        | 0           | 1         |
 +----------+-------------+-----------+
 
-Where the nReps argument of each subloop is set using something like '$nRepsA' ect.
+Where the nReps argument of each sub-loop is set using something like '$nRepsA' etc.
 
 
 *Exercise*

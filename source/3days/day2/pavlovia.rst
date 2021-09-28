@@ -478,6 +478,9 @@ The Study Portal
 
 We do hope to have an out-of-box solution to this in future, but we are very grateful for alternative solutions contributed by the community. In particular, Wakefield Morys-Carter has developed a `Study Portal <https://moryscarter.com/vespr/portal/>`_ to help group counterbalancing. Taking into account participant completion is a paid feature, but at a low cost (£10).
 
+.. warning::
+    If you are using the licensed features of the Study Portal to assign participants to group - do not use code within your experiment to assign group based on participant ID. 
+    
 .. nextSlide::
 
 This allows tracking of how many participants from each group have completed and how many timed out: 
