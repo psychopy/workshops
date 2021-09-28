@@ -70,6 +70,7 @@ Day 2
 - :ref:`pavloviaLaunch`
 - :ref:`gitlabBrief`
 - :ref:`debuggingOnline`
+- :ref:`counterbalancingOnline`
 - :ref:`advancedOnline`
 
 Day 3 (Morning)
