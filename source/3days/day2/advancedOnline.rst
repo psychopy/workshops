@@ -20,18 +20,19 @@ If there is an open JS library for it, then it can be imported into PsychoPy and
 .. nextSlide::
 
 Some of the tools we can use online:
-	- Eye tracking (using webgazer here is an example using the `posner <https://run.pavlovia.org/lpxrh6/posner_eyetracking_test/>`_, another for tracking `basic left right eye movements <https://run.pavlovia.org/lpxrh6/demo_eye_tracking/>`_)
-	- Your device sensors (e.g. `gyroscope <https://run.pavlovia.org/tpronk/demo_gyroscope/>`_)
+	- `Eye tracking <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_
+        -Archived (run on PsychoPy versions pre 2021.2): Examples using the `Posner task <https://run.pavlovia.org/lpxrh6/posner_eyetracking_test/>`_, and another for tracking `basic left right eye movements <https://run.pavlovia.org/lpxrh6/demo_eye_tracking/>`_)
+	- Your device sensors such as the `Gyroscope <https://run.pavlovia.org/tpronk/demo_gyroscope/>`_
 
 *Exercise*
 ------------------------------------------------
-In your breakout rooms work through this stepby-step guide to implement some adaptations to an eye tracking demo. 
+In your breakout rooms work through this stepby-step guide to implement some adaptations to an eye tracking demo. This builds on the skills we learned from Mouse tracking.
 
 .. nextSlide::
 
 **Step 1: Forking the demo**
 
-1.	Search for and fork the `demo_eye_tracking2 <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ project in demos.
+1.	Search for and :ref:`forking` the `demo_eye_tracking2 <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ project in demos.
 2.	Click `fork <https://workshops.psychopy.org/3days/day2/pavlovia.html#finding-shared-experiments-from-pavlovia-itself>`_ and select the name space you want to fork this too. 
 3.	Go to Dashboard> Experiments, find your newly forked project and set its’ status to running. Click ‘Run’ and check that it works on your own set up (you may be asked for webcam permissions the first time you run the demo). 
 4.	From your local PsychoPy. Select the ‘search pavlovia’ icon  (central globe icon in the top tool bar) and search ‘demo_eye_tracking’. Find the version that you just forked to your own namespace **Important: make sure it is the copy from your own namespace**
@@ -44,10 +45,10 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 .. nextSlide::
 
-1.	Add a polygon component to the ‘tracking_trial’ routine and position it in the top right corner of your screen, set it to appear for infinite duration. 
+1.	Add a polygon component to the ‘trackingTrial’ routine and position it in the top right corner of your screen, set it to appear for infinite duration. 
 
 .. note::
-    Because this uses Javascript code, your local psychopy won’t run it. So, to check your changes have been made you will need to run it in the browser. In your ‘trials’ loop set ‘Selected Rows’ **temporarily**  to 1, click ‘sync to pavlovia’ (second globe from the right) then check that your polygon appears where you want it on screen (notice, the tracking won’t work well following one calibration trial, but that is fine for now).
+    Because this uses Javascript code, your local psychopy won’t run it. So, to check your changes have been made you will need to sync it and run it in the browser from pavlovia. 
 
 .. nextSlide::
 
@@ -62,8 +63,6 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 3.	Right click your ‘checkTarget’ component and select ‘move up’ so that it appears above the polygon in the routine. 
 4.	In your polygon component. Select Appearance> Color and set the color field to read :code:`$thisCol` with the field set to **set every frame**
-
-4. Open the trials loop and remove any numbers from the Selected Rows field (we want the calibration to work properly this time!)
 
 .. nextSlide::
 

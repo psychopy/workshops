@@ -33,6 +33,7 @@ Once we have our experiment written in JS, we need a way to "host" it online.  `
 * A git based version control system.
 * A huge open access library of experiments (that you can add to!)
 
+
 Finding openly shared experiments
 ----------------------------------
 
@@ -48,7 +49,10 @@ We could directly fork an experiment on pavlovia.
 .. image:: /_images/fork_online0.png
     :align: left
 
-.. nextSlide::
+.. _forking:
+
+Forking
+---------
 
 Then, search for that inside PsychoPy and sync it to our desktop. We could actually fork + sync in PsychoPy itself!
 
@@ -480,7 +484,7 @@ We do hope to have an out-of-box solution to this in future, but we are very gra
 
 .. warning::
     If you are using the licensed features of the Study Portal to assign participants to group - do not use code within your experiment to assign group based on participant ID. 
-    
+
 .. nextSlide::
 
 This allows tracking of how many participants from each group have completed and how many timed out: 
