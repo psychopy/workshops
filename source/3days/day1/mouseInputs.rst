@@ -110,7 +110,7 @@ Alternatively, we could use a 'for' loop...
 
 .. nextslide::
 
-For loops allow us to repeat the same set of code over a predifined n or over a set of objects. e.g.::
+For loops allow us to repeat the same set of code over a predefined n or over a set of objects. e.g.::
 
   polygons=[polygon1, polygon2, polygon3]
   for polygon in polygons:
