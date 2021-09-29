@@ -9,7 +9,7 @@
 .. _pavloviaEnv:
 
 The Pavlovia environment and getting online
-=================================
+==============================================
 
 What is PsychoJS?
 ----------------------------
@@ -118,79 +118,10 @@ Let's quickly make a basic experiment and put it online:
 4. Change your study to piloting and check that it runs by changing it to pilot mode and select "pilot".
 5. Redirect your participant to PsychoPy.org when they have completed the task, redirect them to pavlovia.org if they do not complete the task.
 
-.. nextSlide::
+Let's push the Posner online!
+-------------------------------
 
 Let's try :ref:`builderToPavlovia`
-
-
-.. _gitlabBrief:
-
-Gitlab
-=================================
-
-Pavlovia uses a powerful git-based system for storage and version control. Some of the benefits of using this include:
-
-*   Fork existing projects
-*   Version control
-*   Easy sharing of your task (open science) 
-*   Add lab members to projects
-
-Version control
---------------------------
-
-Pavlovia uses a git based system for version control called "gitlab". You can see when the last changes were made to the task by looking at the commit history.
-
-.. image:: /_gifs/git_control.gif
-    :align: center
-    :scale: 100%
-
-
-.. nextSlide::
-
-
-If you click on the change you can see deletions and insertions. You can browse the repository at that point in history to retrieve past files!
-
-
-.. image:: /_images/gitlabComChange0.png
-    :align: center
-    :scale: 70%
-
-
-.. image:: /_images/gitlabBrowse0.png
-    :align: center
-    :scale: 50%
-
-
-Adding team members
---------------------------
-
-To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
-
-.. image:: /_gifs/add_member.gif
-    :align: center
-
-
-Making your task public
---------------------------
-
-You can change the visibility of your task at any time under permissions. **Remember** Once you make your project "public" the data file stored there will also be public (unless you have your data saving mode set to database). 
-
-.. image:: /_gifs/gitlab_privacy.gif
-    :align: center
-
-
-*Exercises (10-15 mins)*
---------------------------
-
-Let's get some practice using gitlab!
-
-1. One person in your breakout room set their "Hello, I'm online!" example to public.
-2. Another person in your breakout room find that task and fork + sync it so that you have it locally.
-3. Make a small edit to that task and sync the change.
-4. Pilot your newly updated task to check you can see the edit.
-5. Add someone different in your room as a team member to your project.
-
-NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
 
 
 .. _debuggingOnline:
@@ -372,7 +303,7 @@ Useful JavaScript commands for other tricks
 
 - :code:`window.open('myURL')`: open a new window e.g. a questionnaire (note: can be blocked as a pop up by some mac users).
 - :code:`alert()` Add a pop-up alert to the participant. 
-- :code:`prompt('Please enter your name', 'default')` retrieve some info from the participant `via a popup <https://www.w3schools.com/jsref/met_win_prompt.asp>`_
+- :code:`prompt('Please enter your name', 'default')` retrieve some info from the participant `via a pop-up <https://www.w3schools.com/jsref/met_win_prompt.asp>`_
 - :code:`confirm('Please click OK!')` Display a pop-up box with OK or cancel.
 
 .. note::
@@ -385,6 +316,76 @@ Remember that you can always export your experiment to it's underlying JavaScrip
 
 .. note::
     Remember that this is a one-way street! don't be tempted to alter the JS code if you want to continue making edits in builder! implement code from within builder itself!*
+
+.. _gitlabBrief:
+
+Gitlab
+=================================
+
+Pavlovia uses a powerful git-based system for storage and version control. Some of the benefits of using this include:
+
+*   Fork existing projects
+*   Version control
+*   Easy sharing of your task (open science) 
+*   Add lab members to projects
+
+Version control
+--------------------------
+
+Pavlovia uses a git based system for version control called "gitlab". You can see when the last changes were made to the task by looking at the commit history.
+
+.. image:: /_gifs/git_control.gif
+    :align: center
+    :scale: 100%
+
+
+.. nextSlide::
+
+
+If you click on the change you can see deletions and insertions. You can browse the repository at that point in history to retrieve past files!
+
+
+.. image:: /_images/gitlabComChange0.png
+    :align: center
+    :scale: 70%
+
+
+.. image:: /_images/gitlabBrowse0.png
+    :align: center
+    :scale: 50%
+
+
+Adding team members
+--------------------------
+
+To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
+
+.. image:: /_gifs/add_member.gif
+    :align: center
+
+
+Making your task public
+--------------------------
+
+You can change the visibility of your task at any time under permissions. **Remember** Once you make your project "public" the data file stored there will also be public (unless you have your data saving mode set to database). 
+
+.. image:: /_gifs/gitlab_privacy.gif
+    :align: center
+
+
+*Exercises (10-15 mins)*
+--------------------------
+
+Let's get some practice using gitlab!
+
+1. One person in your breakout room set their "Hello, I'm online!" example to public.
+2. Another person in your breakout room find that task and fork + sync it so that you have it locally.
+3. Make a small edit to that task and sync the change.
+4. Pilot your newly updated task to check you can see the edit.
+5. Add someone different in your room as a team member to your project.
+
+NB. don't forget to give stars to the projects you like! this could help future researchers picking tasks!
+
 
 .. _counterbalancingOnline:
 
