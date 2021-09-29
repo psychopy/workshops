@@ -178,14 +178,14 @@ There are several kinds of error we might encounter when getting online, but gen
 
 .. _syntaxErrors:
 
-Syntax errors: "Initializing experiment"
+Syntax errors: Initializing experiment
 ------------------------------------------
 
 The experiment is stuck on an "initializing experiment" screen. This usually means that there is some invalid Javascript written - so the experiment code cannot run at all. For this we need to explore the :ref:`developerTools`
 
 .. _semanticErrors:
 
-Semantic errors: "X is not defined"
+Semantic errors: X is not defined
 ------------------------------------
 
 "ReferenceError: X is not defined"
