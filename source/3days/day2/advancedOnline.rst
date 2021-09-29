@@ -52,9 +52,9 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 .. nextSlide::
 
-2.	Add a code component called ‘checkTarget’ to the ‘tracking_trial’ routine. In the **each frame** tab write
-::
-        if polygon.contains(tracking_square):
+2.	Add a code component called ‘checkTarget’ to the ‘tracking_trial’ routine. In the **each frame** tab write ::
+
+    if polygon.contains(tracking_square):
             thisCol = 'red'
 	else:
             thisCol = 'white'
