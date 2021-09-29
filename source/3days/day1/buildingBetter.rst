@@ -74,7 +74,7 @@ When you are finished, come back to the main session and collect one run of your
 
 
 Block designs and counterbalancing
-==============================
+=========================================
 
 
 Randomized block designs
