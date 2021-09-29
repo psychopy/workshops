@@ -15,7 +15,7 @@ Keeping track of time is really important to most experiments. In PsychoPy there
 Making custom clocks
 -----------------------------
 
-If we want to use a custom clock (e.g. to measure the time across several routines) we can always make a clock wihin a code component::
+If we want to use a custom clock (e.g. to measure the time across several routines) we can always make a clock within a code component::
 
 	myClock = core.Clock()
 
@@ -41,7 +41,7 @@ Now that we know how to make a clock and how to access the time on it, we can ea
 Add a text component to your trial routine and position it in the top right corner (in height units you will want something like `pos = (0.4,0.4)`. Then in the `text` field all we need is to write :code:`$t` and **set every frame**. 
 
 .. note::
-	Depending on your PsychoPy version you might need to use :code:`t` - omiiting the dollar sign. Remember that you only need a $ at the start of a field if there is not already a $ int he parameter name. 
+	Depending on your PsychoPy version you might need to use :code:`t` - omitting the dollar sign. Remember that you only need a $ at the start of a field if there is not already a $ int he parameter name. 
 
 .. nextslide::
 
@@ -62,7 +62,7 @@ Trial counters
 How is PsychoPy counting trials?
 ------------------------------------
 
-Each loop we add to our experiment will automatically be counting the number of trials that have occured already (as well as how many repetitions of our trials list have occured!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
+Each loop we add to our experiment will automatically be counting the number of trials that have occurred already (as well as how many repetitions of our trials list have occurred!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
 
 .. nextslide::
 

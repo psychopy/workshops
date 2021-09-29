@@ -38,7 +38,7 @@ Builder doesn't know your intentions so plans for everything
 Many similar concepts:
 
 - similar imports
-- initialisation of objects
+- initialization of objects
 - creating a dialog box from a dictionary
 - TrailHandler(s) and ExperimentHandler
 
@@ -94,7 +94,7 @@ Making things dynamic could allow you to, for instance:
 Code Components
 ---------------------
 
-This goes to the next step in integrating code with your experiment. You can add code in either python or JavaScript (JS). By default, python code will be **tranpiled** into Javascript. 
+This goes to the next step in integrating code with your experiment. You can add code in either python or JavaScript (JS). By default, python code will be **tranpiled** into JavaScript. 
 
 .. image:: /_images/code_component.png
 
@@ -167,7 +167,7 @@ Add a Routine to the start of our experiment called "consent" and add two clicka
 
 Then add a loop around the rest of your experiment and use :code:`$mainLoopReps` in the :code:`nReps` field. This is a basic example, but you could imagine how this could be used for other branched experiments to show different parts of your experiment to different participants. 
 
-Randomising the order of stimuli (e.g. images)
+Randomizing the order of stimuli (e.g. images)
 ------------------------------------------------
 
 Imagine you have 4 images to present in 4 locations. On each trial, you want the location for each image to be selected randomly. You could add a code component, and in the `Begin Routine` tab write::
@@ -181,7 +181,7 @@ Then in your image components use :code:`$imageList[0]`, :code:`$imageList[1]` a
 Storing custom variables
 --------------------------------------
 
-It is really handy to be able to save custom variables to our data file. Following the example of randomising image order, we could save the image list to our data file using :code:`thisExp.addData('imageList', imageList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
+It is really handy to be able to save custom variables to our data file. Following the example of randomizing image order, we could save the image list to our data file using :code:`thisExp.addData('imageList', imageList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
 
 Adding feedback
 --------------------------------------
@@ -211,9 +211,9 @@ Imagine we wanted to check our participant had selected the correct object. We c
 
 Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
 
-**Response time feedback from a keypress** 
+**Response time feedback from a key press** 
 
-When we use a keyboard component for our responses, there are a few variables returned on the keypress:
+When we use a keyboard component for our responses, there are a few variables returned on the key press:
 
 - :code:`key_resp.keys`: Key name(s) that were pressed.
 - :code:`key_resp.rt`: The response time(s) of key presses.
@@ -221,7 +221,7 @@ When we use a keyboard component for our responses, there are a few variables re
 
 .. nextslide::
 
-Following this you could use a code component to give response dependant feedback::
+Following this you could use a code component to give response dependent feedback::
 	
 	if key_resp.corr:
 		feedback = ' Correct!'
@@ -233,7 +233,7 @@ Using :code:`$feedback` in a Text component.
 In our experiment
 ---------------------
 
-Following these examples, let's add different kinds of feedback to our posner task - :ref:`addingFeedback`
+Following these examples, let's add different kinds of feedback to our Posner task - :ref:`addingFeedback`
 
 We can make more flexible and dynamic experiments using code, including:
    - :ref:`clocksAndTrialCounders`

@@ -20,7 +20,7 @@ PsychoPy is an Open Source project, the users have access to the code and can co
 
 .. nextslide::
 
-In terms of the "core team" , thanks to pavlovia users and grants we can now fund staff to work on developing the tools and supporting users.
+In terms of the "core team" , thanks to Pavlovia users and grants we can now fund staff to work on developing the tools and supporting users.
 
 .. figure:: /_images/team2021.png
     :scale: 30%
@@ -99,7 +99,7 @@ What do **we** do?
 
 Our *experiments* are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. 
 
-I do use code for other things, like making my 'conditions' .csv files, making stimuli and customising the experiments.
+I do use code for other things, like making my 'conditions' .csv files, making stimuli and customizing the experiments.
 
 PsychoPy versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

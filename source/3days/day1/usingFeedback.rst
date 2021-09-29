@@ -6,7 +6,7 @@ Adding feedback
 Let's try and create a 'Feedback' Routine for the Posner task we want to:
 
 - Add trial by trial feedback on response times 
-- Adjust the colour of the feedback based on RT
+- Adjust the color of the feedback based on RT
 - Give feedback at the end on average RT overall, on valid trials and on invalid trials.
 
 What can we give feedback on?
@@ -27,7 +27,7 @@ We would need to add a routine called "feedback", in this feedback routine add a
 
     $'RT was ' + 'str(resp.time)' + ' ms'
 
-Here we are concatinating strings using the + operator and we are also converting our resp.time variable to a string using the :code:`str()` method (we can't concatinate strings and numbers!).
+Here we are concatenating strings using the + operator and we are also converting our resp.time variable to a string using the :code:`str()` method (we can't concatenate strings and numbers!).
 
 .. nextslide::
 
@@ -39,11 +39,11 @@ An alternative way of doing this in python would be to use a "formatted string" 
 
     $f'RT was {resp.time[0] : .3f} ms'
 
-feedback dependant stimuli
+feedback dependent stimuli
 -------------------------------
 
-We can make feedback response dependant by using simple :code:`if` statements.
-To adjust feedback colour based on response time we need a code component::
+We can make feedback response dependent by using simple :code:`if` statements.
+To adjust feedback color based on response time we need a code component::
 
     if resp.time[0] < 0.5:
         feedbackCol = 'green'
@@ -68,7 +68,7 @@ Some useful *Python* methods
 
 .. nextslide::
 
-We can use these to give feedback at the end of our experiment to summarise performance.
+We can use these to give feedback at the end of our experiment to summarize performance.
 
 On each trial we add to the list::
 
@@ -87,7 +87,7 @@ At the end of the experiment we can average these lists::
 
 1. Add a feedback tone that varies in frequency depending on if the RT is fast (e.g. <.05) or slow.
 2. Add a text component to the end routine to tell participants if they showed a Posner cueing effect.
-3. IF participants show a posner cueing effect, tell them how large their effect was in ms. 
+3. IF participants show a Posner cueing effect, tell them how large their effect was in ms. 
 
 What next?
 ---------------------

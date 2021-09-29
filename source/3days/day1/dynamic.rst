@@ -6,7 +6,7 @@ Making things dynamic
 What is dynamic?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In PsychoPy everything is organised in reference to time
+In PsychoPy everything is organized in reference to time
 
   - We don't have "slides" that simply follow each other like in some packages
   - Things overlap in time
@@ -97,7 +97,7 @@ More ideas and working code
 
 Have a play with dynamically changing the various properties of a text stimulus:
 
-    1. Colour
+    1. Color
     2. Orientation
     3. Size
 

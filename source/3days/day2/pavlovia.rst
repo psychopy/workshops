@@ -51,7 +51,7 @@ We could directly fork an experiment on pavlovia.
 
 .. _forking:
 
-Forking
+Fork
 ---------
 
 Then, search for that inside PsychoPy and sync it to our desktop. We could actually fork + sync in PsychoPy itself!
@@ -368,7 +368,7 @@ Useful JavaScript commands for debugging
 - :code:`console.log()`: The equivalent of :code:`print()` in python. Useful for when a variable doesn't appear as you expect - you can print out values to your console and check they are updating as you expect. 
 - :code:`window.object = object`: pass an object to the window for inspection e.g. pass a component by replacing :code:`object` with the name of your component. Useful for seeing what attributes and methods an object has.
 
-Useful Javascript commands for other tricks
+Useful JavaScript commands for other tricks
 --------------------------------------------
 
 - :code:`window.open('myURL')`: open a new window e.g. a questionnaire (note: can be blocked as a pop up by some mac users).
@@ -422,7 +422,7 @@ Thanks to query strings we can generate several URLs for the same project but fo
 * https://run.pavlovia.org/Username/Task/?group=D
 
 .. warning::
-    If you are using this approach and sharing URLs on recruitment websites, you would need to be careful that the same participants do not complete several URLs (i.e. complete your study several times in different groups).
+    If you are using this approach and sharing URLs on recruitment websites, you would need to be careful that the same participants do not complete several URLs (i.e. complete your study several times in different groups). If you are using `Prolific <https://prolific.co/>`_ for recruitment there is guidance on how to do this `here <https://researcher-help.prolific.co/hc/en-gb/articles/360009094374>`_.
 
 Query strings: Using participant ID
 ------------------------------------

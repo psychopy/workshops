@@ -22,12 +22,12 @@ These sessions are designed to build confidence creating experiments and getting
   :align: center
   :width: 600
 
-Note that on day 3 we are currently trialing parallel sessions; Advanced Builder and Pure Python. We hope that there will be a bit of something for everyone and several experience levels!
+Note that on day 3 we are currently trialling parallel sessions; Advanced Builder and Pure Python. We hope that there will be a bit of something for everyone and several experience levels!
 
 What do I need to know in advance?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The only base knowledge we will assume for this workshop can be learnt from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
+The only base knowledge we will assume for this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
 
 What technology and/or software will I need to make the most of the workshops?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +48,7 @@ Tickets can be purchased from the `pavlovia store <https://pavlovia.org/store>`_
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-All of our materials are opnly available in web page (links below) or and `html slide <https://workshops.psychopy.org/slides/3days>`_ format.
+All of our materials are openly available in web page (links below) or and `html slide <https://workshops.psychopy.org/slides/3days>`_ format.
 
 You can also download and unzip  `a range of premade demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
 
