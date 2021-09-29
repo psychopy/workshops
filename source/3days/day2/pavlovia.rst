@@ -150,13 +150,16 @@ Pavlovia uses a git based system for version control called "gitlab". You can se
 
 If you click on the change you can see deletions and insertions. You can browse the repository at that point in history to retrieve past files!
 
+
 .. image:: /_images/gitlabComChange0.png
     :align: center
-    :scale:70%
+    :scale: 70%
+
 
 .. image:: /_images/gitlabBrowse0.png
     :align: center
-    :scale:50%
+    :scale: 50%
+
 
 Adding team members
 --------------------------
@@ -166,6 +169,7 @@ To add members to your own project, you can use the settings>members option wher
 .. image:: /_gifs/add_member.gif
     :align: center
 
+
 Making your task public
 --------------------------
 
@@ -173,8 +177,6 @@ You can change the visibility of your task at any time under permissions. **Reme
 
 .. image:: /_gifs/gitlab_privacy.gif
     :align: center
-
-.. nextSlide::
 
 
 *Exercises (10-15 mins)*
