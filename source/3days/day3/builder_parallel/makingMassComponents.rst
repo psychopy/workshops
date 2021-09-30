@@ -9,17 +9,17 @@ Making many components (a visual search task)
 Why would we need to "make in mass" ?
 ----------------------------------------------
 
-Imagine we are making a visual search task, where there is one target (the letter "L") amongst a lorge number of letter "T"s. We could make one component for each letter, but depending on the size of our search array that could get tricky, and mean **alot** of manual labour in the long run (e.g. if we wanted to change the size of each letter, we would have to change the letter height in *all* the components)....
+Imagine we are making a visual search task, where there is one target (the letter "L") amongst a large number of letter "T"s. We could make one component for each letter, but depending on the size of our search array that could get tricky, and mean **alot** of manual labor in the long run (e.g. if we wanted to change the size of each letter, we would have to change the letter height in *all* the components)....
 
 .. nextslide::
 
-We have already learnt how to draw something with code when we learnt about coding experiments from scratch. This can now be used in builder view by using what we learnt in code components!
+We have already learned how to draw something with code when we learned about coding experiments from scratch. This can now be used in builder view by using what we learned in code components!
 
 
 Exporting builder to code
 ----------------------------------------------
 
-Remember, we can export a builder experiment to coder at any point, but we emphasised this is a **one-way street** and *highly* recommend avoiding editing the underlying python file. But exporting a python file can be useful to study how to do something in python if we are not sure. Start by adding a simple textStim with the letter "T" in the Text field, call the component "myLetter". Save it and export the python file then search for "myLetter". 
+Remember, we can export a builder experiment to coder at any point, but we emphasized this is a **one-way street** and *highly* recommend avoiding editing the underlying python file. But exporting a python file can be useful to study how to do something in python if we are not sure. Start by adding a simple textStim with the letter "T" in the Text field, call the component "myLetter". Save it and export the python file then search for "myLetter". 
 
 .. nextslide::
 
@@ -34,12 +34,12 @@ Hopefully you can see under the hood how to make a textStim component::
 	    depth=0.0))
 
 .. note::
-	When we use these "pinched" bits of python code they might not always translate smoothly to Javascript. If this happens, export your experiment to Javascript and instead use the Javascript version of the component. 
+	When we use these "pinched" bits of python code they might not always translate smoothly to JavaScript. If this happens, export your experiment to JavaScript and instead use the JavaScript version of the component. 
 
 Making many stimuli
 ----------------------------------------------
 
-We have learnt about how to use loops to add to lists, Objects created from components can be treated the same as any other variable i.e. we can have a *list* of *Objects* (also known as "instances" in python - in python lingo, here we have an "instance" of the "TextStim" class). 
+We have learned about how to use loops to add to lists, Objects created from components can be treated the same as any other variable i.e. we can have a *list* of *Objects* (also known as "instances" in python - in python lingo, here we have an "instance" of the "TextStim" class). 
 
 .. nextslide::
 
@@ -84,11 +84,11 @@ This time we would have 3 letters but each would have a different X position, so
 Drawing many stimuli
 ----------------------------------------------
 
-We have already learnt that all classes in the visual module have a method called :code:`draw()` and :code:`setAutoDraw()` and we know that the second of these methods means the object is drawn every time the window flips untill we declare :code:`setAutoDraw(False)`.
+We have already learned that all classes in the visual module have a method called :code:`draw()` and :code:`setAutoDraw()` and we know that the second of these methods means the object is drawn every time the window flips until we declare :code:`setAutoDraw(False)`.
 
 .. nextslide::
 
-Add a routine called "search" and add a fixation point that lasts the duration of our search time, let's give it 10 seconds. OK then we need a code component, let's call it 'drawAll'. In the'Begin Routine' tab, type::
+Add a routine called "search" and add a fixation point that lasts the duration of our search time, let's give it 10 seconds. OK then we need a code component, let's call it 'drawAll'. In the 'Begin Routine' tab, type::
 
 	for letter in myLetters:
 		letter.setAutoDraw(True)
@@ -98,7 +98,7 @@ Then in the 'End Routine' tab type::
 	for letter in myLetters:
 		letter.setAutoDraw(False)
 
-If you run your experiment, you should now see three letter T's displayed onscreen.
+If you run your experiment, you should now see three letter T's displayed on-screen.
 
 making a list of random positions
 ----------------------------------------------
@@ -120,7 +120,7 @@ OK so this works, but with three positions we might think "what's the point", le
 Here the method :code:`random()` is used to generate a random value between 0 and 1. 
 
 .. note::
-	:code:`random()` is a python method, if you are working online you will need the Javascript equivilent which is :code:`Math.random()` (hopefully psychopy will do this for you soon though!)
+	:code:`random()` is a python method, if you are working online you will need the JavaScript equivalent which is :code:`Math.random()` (hopefully PsychoPy will do this for you soon though!)
 
 .. nextslide::
 
