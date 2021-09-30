@@ -5,20 +5,22 @@ Creating Experiments in PsychoPy (3 days)
 Upcoming events
 ~~~~~~~~~~~~~~~~~~~~~~
 
-+-------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------+
-|      Date(s)                        |      Timezone     |  Purchase link                                                                                                 |
-+=====================================+===================+================================================================================================================+
-| 29th Sept - Oct 1st                 | UK                | `Buy tickets <https://pavlovia.org/store/workshops/2021-09-29-psychopy-creating-experiments>`_                 |
-+-------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------+
-| 20th Oct - Oct 22nd                 | US Eastern        | `Buy tickets <https://pavlovia.org/store/workshops/2021-10-20-psychopy-creating-experiments>`_                 |
-+-------------------------------------+-------------------+----------------------------------------------------------------------------------------------------------------+
++-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+|      Date(s)                        |      Timezone     |  Purchase link                                                                                                                             |
++=====================================+===================+============================================================================================================================================+
+| 20th Oct - Oct 22nd                 | US Eastern        | `Buy tickets <https://pavlovia.org/store/workshops/2021-10-20-psychopy-creating-experiments>`_                                             |
++-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| 10th Nov - Nov 11th                 | New Zealand       | `Register interest <https://docs.google.com/forms/d/e/1FAIpQLSey6G_Y7oo-kuXZwuE4Cp9cVqMxuV0cpVhy2NvbWWQtImHcqw/viewform>`_                 |
++-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+| 24th Nov - Nov 26th                 | UK London         | `Register interest <https://docs.google.com/forms/d/e/1FAIpQLSey6G_Y7oo-kuXZwuE4Cp9cVqMxuV0cpVhy2NvbWWQtImHcqw/viewform>`_                 |
++-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 About
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable with appear as follows:
 
-.. image:: /_static/timetable2.png
+.. image:: /_images/timetable.png
   :align: center
   :width: 600
 
@@ -43,14 +45,14 @@ We run the workshops using a combination of zoom and slack. The slack channel is
 How can I purchase tickets?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tickets can be purchased from the `pavlovia store <https://pavlovia.org/store>`_
+Tickets can be purchased from the `Pavlovia store <https://pavlovia.org/store>`_
 
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-All of our materials are openly available in web page (links below) or and `html slide <https://workshops.psychopy.org/slides/3days>`_ format.
+All of our materials are openly available in web page (links below) or and `HTML slide <https://workshops.psychopy.org/slides/3days>`_ format.
 
-You can also download and unzip  `a range of premade demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
+You can also download and unzip  `a range of pre-made demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
 
 Day 1
 
