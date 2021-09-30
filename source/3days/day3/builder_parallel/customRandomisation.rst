@@ -4,10 +4,10 @@
 
 .. _customRandomisation:
 
-Randomising with constraints
+Randomizing with constraints
 ===============================
 
-Making custom randomised orders
+Making custom randomized orders
 ----------------------------------------------
 
 We have already seen that by default builder allows you to present trials in one of three orders, including:
@@ -16,7 +16,7 @@ We have already seen that by default builder allows you to present trials in one
 - Sequential
 - Full Random
 
-From this we know that if we want a pre-specified order, the best way to do this is to use the 'sequential' option and specify that order in our conditions file. But what if we want more "custom", "on-the-fly" randomisation. 
+From this we know that if we want a pre-specified order, the best way to do this is to use the 'sequential' option and specify that order in our conditions file. But what if we want more "custom", "on-the-fly" randomization. 
 
 Using loops for loading stimuli/conditions
 ----------------------------------------------
@@ -79,10 +79,10 @@ Here our column "Word" is the word that will be presented and the column "Fixed"
 Accessing the "fed in" trial info
 ----------------------------------------------
 
-We could load these variables into our experiment in several ways. Remember that the ` Trial Handler <https://www.psychopy.org/api/data.html#psychopy.data.TrialHandler>`_ loads in a conditions file as a list of dictionaries. Infact, we can access that list directly using :code:`trials.trialList` where :code:`trials` is the name of our loop. Or we could access a single trial dictionary using :code:`trials.trialList[n]` where *n* is the index. 
+We could load these variables into our experiment in several ways. Remember that the `Trial Handler <https://www.psychopy.org/api/data.html#psychopy.data.TrialHandler>`_ loads in a conditions file as a list of dictionaries. In fact, we can access that list directly using :code:`trials.trialList` where :code:`trials` is the name of our loop. Or we could access a single trial dictionary using :code:`trials.trialList[n]` where *n* is the index. 
 
 .. note::
-	There are several inbuilt fuctions that can be handy for use with trialHandler:
+	There are several inbuilt functions that can be handy for use with trialHandler:
 
 	:code:`trials.getCurrentTrial()` - fetches the current trial info
 	:code:`trials.getFutureTrial(n)` - fetches the info of the trial n ahead
@@ -91,7 +91,7 @@ We could load these variables into our experiment in several ways. Remember that
 Making a custom trial list
 ----------------------------------------------
 
-Once we have acess to the list of trials we can pick out our random trials::
+Once we have access to the list of trials we can pick out our random trials::
 
 	oldTrials = myLoop.trialList
 
@@ -111,7 +111,7 @@ Then we can piece our trialList back together by randomly sampling without repla
 			# Use this trial
 			newTrials.append(myTrial)
 		else:
-			# resample without replacement
+			# re sample without replacement
 			shuffle(randomTrials)
 			newTrials.append(randomTrials[-1])
 			randomTrials.pop()
@@ -120,7 +120,7 @@ Then we can piece our trialList back together by randomly sampling without repla
 Working through a custom trial list in builder
 ----------------------------------------------
 
-Once we have our custom randomised trial list we need to use that in Builder. Usually we wrap a loop around a routine and feed in a conditions file. Then :code:`nReps` corresponds to the number of times we repeat that file. This time we need to do it a little differently.....
+Once we have our custom randomized trial list we need to use that in Builder. Usually we wrap a loop around a routine and feed in a conditions file. Then :code:`nReps` corresponds to the number of times we repeat that file. This time we need to do it a little differently.....
 
 .. nextslide::
 
@@ -145,5 +145,5 @@ Exercise (15 mins)
 
 Present a list of numbers and alternate numbers between odd and even.
 
-Hint: remember how we can seperate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`
+Hint: remember how we can separate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`
 
