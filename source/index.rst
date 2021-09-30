@@ -12,8 +12,9 @@ Open Science Tools official workshops
 Upcoming events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* **3-day workshop (London time)** *September 29th - Oct 1st* 2021 `Materials and tickets available here <3days/index.html>`_ 
 * **3-day workshop (US East time)** *October 20th - Oct 22nd* 2021 `Materials and tickets available here <3days/index.html>`_ 
+* **3-day workshop (New Zealand time)** *November 10th - November 11th* 2021 `Register interest here <3days/index.html>`_ 
+* **3-day workshop (UK time)** *November 24th - November 26th* 2021 `Register interest here <3days/index.html>`_ 
 
 Organizing a departmental session? contact us workshops@opensciencetools.org
 

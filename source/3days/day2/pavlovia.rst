@@ -212,7 +212,7 @@ Generally when you make custom variables in code components, PsychoPy will ident
 
 .. _networkErrors:
 
-Network errors: "Unknown Resource"
+Network errors: Unknown Resource
 ----------------------------------
 
 Generally PsychoPy will try to find all the resources you need automatically and load them, but there are some cases this might not work..
@@ -228,6 +228,15 @@ Your image is a ".jpeg" but you have accidentally used the extension ".png"
 **Resources defined through code**
 
 If a resource is defined through code rather than from a conditions file or component field then PsychoPy can fail to "prepare" for the eventuallity that resource is needed. In cases like this it is always a good idea to manually add any additional resources you might need to the *additional resources* section of the experiment settings when :ref:`additionalResources`. 
+
+.. _typeError:
+
+Type Error: X is not a constructor
+-----------------------------------
+
+A `type error <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor>`_ occurs when we refer to an object that does not exist.
+
+This can also occur because something exists in PsychoPy that does not exist in PsychoJS. For example :code:`core.Clock()` is not a constructor in JS because Clock lives in the util module of PsychoJS i.e. :code:`util.Clock()`. The `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ can be helpful in helping in these cases. 
 
 How do we fix errors? 
 ----------------------------------
