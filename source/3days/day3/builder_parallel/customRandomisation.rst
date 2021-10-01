@@ -140,10 +140,15 @@ OK finally, we need to use the trial info from each run in our textBox component
 
 If you ran that now you might be surprised to see a full dictionary printed out on each trial. Remember *each trial is a dictionary* we need to access the value corresponding to the key 'Word'. So for the final touch update :code:`newTrials[trials.thisN]` to :code:`newTrials[trials.thisN]['Word']`
 
-Exercise (15 mins)
+Exercise (15-20 mins)
 ----------------------------------------------
 
-Present a list of numbers and alternate numbers between odd and even.
+This exercise will make a list of trials entirely through code, without the need to import an external conditions file. You will need a routine with a code component to create your trialList then a routine with a loop to iterate through that trial list:
 
-Hint: remember how we can separate out specific conditions (e.g. randomTrials) and how we can sample without replacement using :code:`shuffle()` and :code:`pop()`
+1. Make a two lists - one of odd numbers and one of even numbers.
+2. Use a for loop to interleave the numbers from your list and make a larger list that alternates between odd and even. 
+3. Use the numbers in your list to present a series of trials, with one number presented per trial.
+
+
+*Tip: remember we can sample without replacement using :code:`shuffle()` and :code:`pop()` so that the selection of numbers is random each time - this method works locally and online*
 
