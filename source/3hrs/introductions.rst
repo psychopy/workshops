@@ -5,7 +5,7 @@
     :align: left
     :scale: 25%
 
-.. _introduction3days:
+.. _introduction3Hours:
 
 Introductions
 ----------------
@@ -28,7 +28,7 @@ In terms of the "core team" , thanks to Pavlovia users and grants we can now fun
 About the workshop
 ~~~~~~~~~~~~~~~~~~~~~~
 
-We can't teach you all of PsychoPy (even in 3 days!). But we can hopefully give you some ideas about what's possible and how to get started.
+We can't teach you all of PsychoPy. This intro is aimed to give you a basic intro and inspire ideas on what's possible. 
 
 
 Getting to know PsychoPy
