@@ -55,6 +55,7 @@ In your Code Component select the tab for `Begin Routine` and type in::
       thisCol='green'
     else:
       thisCol='red'
+
 Then inside your test component under Appearance > Color type :code:`thisCol` and "set every repeat"
 
 Code Components could get super-complex but you can accomplish a lot with quite simple Python commands.

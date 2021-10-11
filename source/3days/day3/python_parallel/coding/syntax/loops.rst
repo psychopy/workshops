@@ -1,14 +1,14 @@
 .. _loops:
 
 Loops
---------------
+================
 
 Repeating things is what computers are good at and humans find boring! Repetition is controlled with loops, which come in two varieties. :ref:`forLoops` are when you want something to repeat a known **number** of times, whereas :ref:`whileLoops` will run for an unspecified duration until some **condition** is met.
 
 .. _forLoops:
 
 for... loops
-~~~~~~~~~~~~~~~
+----------------
 
 In many languages ``for`` is used for looping over some numbers, which you then use to index some other object (a string or an array).
 
@@ -54,7 +54,7 @@ In Python this would be::
 .. _enumerate:
 
 Enumerate
-~~~~~~~~~~~~~
+----------------
 
 Often you'll want to know not only the current value in a list, but also its location. For instance, if we run some trials like this. e.g. ::
 
@@ -85,7 +85,7 @@ The need to know the current value AND its index in the list is so common that P
 
 
 Common Use-cases
-~~~~~~~~~~~~~~~~
+----------------
 
 Let's use a loop to create a list of dictionaries::
 
@@ -116,7 +116,7 @@ Dictionaries also have an `items` method, which returns a list of key/value pair
         print(f"This man's {thisKey} is {thisVal}")
 
 Nesting loops
-~~~~~~~~~~~~~~~~
+----------------
 
 You can nest one loop inside another (as deeply as you like). The inner loop will perform a full cycle on each pass through the outer loop::
 
@@ -145,7 +145,7 @@ Remember **indentation** is key in deciding which of the loops a code line belon
 .. _whileLoops:
 
 while... loops
-~~~~~~~~~~~~~~~~~
+----------------
 
 If you want your loop to end based on some condition, rather than based on a certain number or iterations, then you could use a while...loop. For instance, an experiment might be based something on time rather than on repeats::
 
@@ -178,7 +178,7 @@ Or you might want to end the loop only when a valid response has occurred.::
 Other than that, ``while...loops`` are really similar to ``for...loops`` (personally I use them less).
 
 `break` and `continue`
-~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 Sometimes you need to end a loop, or this repeat of a loop, prematurely.
 
@@ -228,7 +228,7 @@ And this is how the simulated experiment might run::
             trials.append(thisOri) #also store what this trial was
 
 Loop Timing
-~~~~~~~~~~~
+----------------
 
 A `for` loop can take a variable amount of time to execute depending on how many items are being iterated and how quickly each iteration completes.
 

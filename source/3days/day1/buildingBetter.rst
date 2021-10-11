@@ -19,7 +19,7 @@ A builder experiment has three main sections. To start making an experiment we a
 .. image:: /_images/builder_terms.png
 
 Changing things trial-by-trial (the "conditions" file)
-````````````````````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are going to change something on every repeat of a routine (e.g. stimulus location on each trial) you can use a *Conditions* file. This is fed into the loop surrounding the routine.
 
@@ -37,7 +37,7 @@ Then make sure to use that variable to set the parameter of a component on every
 Let's practice making minor edits
 
 Creating a routine
-````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's add some instructions to our experiment. Imagine that we have several sets of instructions to present, but in every set, the instructions consist of the same components:
 
@@ -51,7 +51,8 @@ We could add a basic routine, but we could also add a loop around our instructio
 .. image:: /_images/routines_basics.png
 
 Gather some additional info (e.g. age)
-````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Every experiment starts with a dialog box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
 
 .. image:: /_images/exp_info.png
@@ -61,7 +62,7 @@ Every experiment starts with a dialog box to gather some info about the particip
 
 
 *Warm up exercises (10 mins)*
-````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Add a 'neutral' condition to our task:
 	Use the double headed arrow in the images folder for the neutral stimulus. The neutral stimulus can cue a target on the left or the right.
@@ -70,7 +71,7 @@ Every experiment starts with a dialog box to gather some info about the particip
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
-.. _blockDesigns:
+.. _blockDesigns3Days:
 
 
 Block designs and counterbalancing
@@ -90,7 +91,7 @@ e.g.
 Note: these are all cases where the components would be identical between blocks.
 
 The natural approach
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When people have several "blocks" the natural move is to add separate routines for those blocks:
 
@@ -100,7 +101,7 @@ However, if both blocks contain the same stimuli/elements (e.g. a Posner task wi
 
 
 Blocking: Case 1
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Instead of a Routine for each block, create a Routine for all your trials and make it behave differently across the blocks:
 
@@ -109,14 +110,14 @@ Instead of a Routine for each block, create a Routine for all your trials and ma
 Then you can set the conditions files in your blocks loop to control the block-level changes. The outer "blocks" loop then takes a (meta) "conditions" file that specifies which of the conditions files will be loaded in each block.
 
 Blocking: Case 2
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you do have 2 blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outer-loop. 
 
 .. image:: /_images/case2_blocks.png
 
 Blocking: Our example
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Imagine we want to extend our Posner task to include a block of invalid trials and a block of valid trials. 
 
@@ -127,7 +128,7 @@ We need to create a total of 3 conditions files:
 - blocks.xlsx (the conditions file used in the outer loop)
 
 Introducing a block
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Using what we know about blocks, we could add a routine to tell the participants what kind of block they are about to enter. If our `blocks.xlsx` file has a column to label the condition, we can add a routine to introduce the block type.
 
@@ -141,16 +142,16 @@ You've sorted out block designs in a relatively neat fashion.
 Just keep clear what differs from one block to the next (for a conditions file) and what stays the same (for the Routine definition).
 
 
-.. _counterbalancedDesigns:
+.. _counterbalancedDesigns3Days:
 
 Counterbalancing 
---------------------------------------
+====================
 
 Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
 
 
 Setting the order
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At the moment, PsychoPy doesn't handle the ordering for you - you need to decide how to create the orders and how to assign participants.
 
@@ -160,7 +161,7 @@ So, you need a file per conditions order (e.g. A -> B and B-> A), then determine
 
 
 How to assign participants to a group
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Easiest way is by hand at the start of the run for the participant. The steps are:
 
@@ -181,7 +182,7 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 	:code:`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format :code:`dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input recieved at startup!
 
 *Exercises*
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's practice counterbalancing in different ways using the exercises in the folder you downloaded ("builder > counterbalancingExercises"). In "exercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
 
@@ -222,7 +223,7 @@ Where the nReps argument of each sub-loop is set using something like '$nRepsA' 
 
 
 *Exercise*
-`````````````````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Open exercise 2 in the counterbalanceExercises folder. This is very similar to our last task, but this time our two routines present different kinds of components, so we need to use a different method of counterbalancing. 
 

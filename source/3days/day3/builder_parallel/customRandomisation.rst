@@ -39,7 +39,7 @@ Some cases where this can be useful:
 and many more! We will practice with the first case example. 
 
 Setting up our conditions file
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this example, we are going to make sure every 5th word is presented in a fixed order, with the other words presented randomly. First, set up your conditions file to be something like this (but with more words). 
 
@@ -77,7 +77,7 @@ Here our column "Word" is the word that will be presented and the column "Fixed"
 
 
 Accessing the "fed in" trial info
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We could load these variables into our experiment in several ways. Remember that the `Trial Handler <https://www.psychopy.org/api/data.html#psychopy.data.TrialHandler>`_ loads in a conditions file as a list of dictionaries. In fact, we can access that list directly using :code:`trials.trialList` where :code:`trials` is the name of our loop. Or we could access a single trial dictionary using :code:`trials.trialList[n]` where *n* is the index. 
 
@@ -89,7 +89,7 @@ We could load these variables into our experiment in several ways. Remember that
 	:code:`trials.getEarlierTrial(n)` - fetches the info of the trial n back
 
 Making a custom trial list
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-
 
 Once we have access to the list of trials we can pick out our random trials::
 
@@ -118,7 +118,7 @@ Then we can piece our trialList back together by randomly sampling without repla
 	print(newTrials)
 
 Working through a custom trial list in builder
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once we have our custom randomized trial list we need to use that in Builder. Usually we wrap a loop around a routine and feed in a conditions file. Then :code:`nReps` corresponds to the number of times we repeat that file. This time we need to do it a little differently.....
 
@@ -140,8 +140,8 @@ OK finally, we need to use the trial info from each run in our textBox component
 
 If you ran that now you might be surprised to see a full dictionary printed out on each trial. Remember *each trial is a dictionary* we need to access the value corresponding to the key 'Word'. So for the final touch update :code:`newTrials[trials.thisN]` to :code:`newTrials[trials.thisN]['Word']`
 
-Exercise (15-20 mins)
-----------------------------------------------
+*Exercise (15-20 mins)*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This exercise will make a list of trials entirely through code, without the need to import an external conditions file. You will need a routine with a code component to create your trialList then a routine with a loop to iterate through that trial list:
 

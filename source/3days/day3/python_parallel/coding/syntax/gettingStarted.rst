@@ -1,10 +1,10 @@
 .. _gettingStarted:
 
 Getting started
------------------------------
+=======================
 
 Python versions
-~~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 You might have been somewhat overwhelmed by the versions of Python and PsychoPy:
 
@@ -16,7 +16,7 @@ You might have been somewhat overwhelmed by the versions of Python and PsychoPy:
 PsychoPy has been providing Python2 and Python3 versions for about a year, but stick to Python3 if possible.
 
 The Coder Shell window
-~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 This is a great place just to try out a quick command and see what happens. You can check a little Python syntax and see the results of commands instantly.
 
@@ -32,7 +32,7 @@ Let's type some commands into the shell panel and see what happens::
 .. nextslide::
 
 Comments
-~~~~~~~~~~~~~
+-------------
 
 *NB Programmers can spend far more time reading code than writing it. Future-you will think of well-written comments as love letters from current-you.*
 
@@ -59,7 +59,7 @@ Descriptive variable names become their own comments, and can be understood rega
     Annoyingly a British Mac keyboard doesn't show you where the `#` is, but you can get it using `Alt-3` if you're running under OS X. If you're using a British Mac keyboard under Windows you need `Ctrl+Alt+3`. Sigh!
 
 Long comments
-~~~~~~~~~~~~~
+------------------
 You can start/end a multi-line comment with three double-quotes::
 
     """This is a potentially long piece of text that
@@ -71,7 +71,7 @@ In the PsychoPy Coder window you can comment out lines with ``Ctrl-'`` and undo 
 If you forget, it’s listed in the `Edit` menu
 
 Shortcuts
-~~~~~~~~~~~~~
+--------------
 
 In the shell window you can see available code-completion options by starting to type a command. Type these lines gradually, taking note of what happens when you type the '.' in the second line:
 
@@ -85,7 +85,7 @@ e.g. Repeat the ``name = 'Jessica'`` statement to go back to its original value.
 
 
 Editing Scripts
-~~~~~~~~~~~~~~~~~~~~~
+-----------------
 
 Although the shell is a handy place to check a quick command, it's often desirable to be able to repeat a set of commands without retyping them. Type this into the editor window and save the script somewhere (e.g. firstScript.py)::
 

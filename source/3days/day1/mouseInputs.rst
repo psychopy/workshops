@@ -78,7 +78,7 @@ OK so we have covered the basics of making a task and how to do exciting dynamic
 :ref:`typedResponses3days`
 
 *Exercise (time pending)*
-````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's practice what we know about mouse inputs to make a dot to dot demo. Participants will see a set of polygons and connect them (this allows us also to try the brush component!). When the mouse enters a polygon change it's colour.
 
@@ -96,7 +96,7 @@ We need:
 *If you still have time* Repeat our dot-to-dot trial 3 times and present the dots in new locations on each trial. Use a clickable button to end each trial.
 
 Side tip:
-````````````````````````````
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 We have already seen how we can use 'conditional if' statements in python. And we could just use several of these statements to check if the mouse is in each polygon individually e.g.::
 
       if mouse.isPressedIn(polygon1):

@@ -83,7 +83,7 @@ At the end of the experiment we can average these lists::
 
 
 *Exercise*
----------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Add a feedback tone that varies in frequency depending on if the RT is fast (e.g. <.05) or slow.
 2. Add a text component to the end routine to tell participants if they showed a Posner cueing effect.

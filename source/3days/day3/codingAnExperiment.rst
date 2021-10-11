@@ -22,7 +22,7 @@ Synopsis of the study:
 
 
 How do we even start?
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Don't be tempted to try and write a script from beginning to end in one go! Break it down into chunks that you can manage. e.g.:
 
@@ -38,7 +38,7 @@ Don't be tempted to try and write a script from beginning to end in one go! Brea
 - make sure data are being saved
 
 Create a window
----------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First we need to import the necessary libraries. For an experiment we nearly always need to import the `visual`, `event`, `data` and `core` modules from PsychoPy::
 
@@ -51,7 +51,7 @@ then creating a window is another single line. We'll use units of pixels for the
 Save your experiment and run it to make sure a window flashes up.
 
 Our trial starts with a fixation
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Immediately after creating our window we usually initialise objects like stimuli and clocks::
 
@@ -66,7 +66,7 @@ Later (on each trial) we'll need to draw the fixation point and then flip the sc
     win.flip()
 
 Create your probe stimulus
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Just for variety, let's create a Gaussian spot for the probe. You need this code where your stimuli are being initialised (doesn't matter if it's before or after probe)::
 
@@ -81,7 +81,7 @@ After drawing the fixation point and flipping, we need to do the same for the pr
     win.flip()
 
 We also need a cue
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We could use some image of an arrow for this. Or we could create some shape of our
 own with custom vertices::
@@ -93,7 +93,7 @@ own with custom vertices::
 Also add draw() code like the other objects. Again, it doesn't matter the order we initialise it, but the drawing needs to be between the fixation and the probe.
 
 Understanding `Window.flip()`
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - All the `draw()` commands operate on a memory buffer called the 'back buffer' on the graphics card.
 - When you `flip()` the window it causes everything in that 'back buffer' to become visible on the physical screen.
@@ -110,7 +110,7 @@ This has various knock-on effects:
 - If you don't call `flip()` for a while, or if you drop a frame, the screen will stay as it is for another frame
 
 Set some timing parameters
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you run now the objects will be presented for a single frame each (1/60th of sec). That's too short for us to see. We need to set times for our objects. we can achieve that with the `core.wait()` function.
 
@@ -126,7 +126,7 @@ Even better: store them in a *dictionary* that we can save easily in the data fi
     info['probeTime'] = 0.2
 
 Pause after flipping the window for each object
-----------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Add a line to wait after each flip of the window::
 
@@ -146,7 +146,7 @@ Add a line to wait after each flip of the window::
 This is not actually a very precise way to control timing, but it's very easy!
 
 Drawing two objects at the same time
-----------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you `draw()` two stimuli before a `win.flip()` then they both appear on the same frame. For the probe presentation let's have the fixation as well::
 
@@ -158,7 +158,7 @@ If you `draw()` two stimuli before a `win.flip()` then they both appear on the s
 If the stimuli overlap in space then the later draw() will occlude the earlier one. You can also set the degree of opacity of stimuli so that they are partially visible.
 
 Let's run two trials
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We could copy and paste the trial code to run repeated trials.
 
@@ -203,14 +203,14 @@ For now we've set the `trialList` simply to an empty list, but later we'll chang
 The code above needs to come somewhere *after* you initialise your stimuli and it needs to include your trial code
 
 Controlling conditions
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We need the stimuli to differ on each trial, which TrialHandler can also help us with. It expects to receive conditions (aka `trialTypes`) as a list of dictionaries, where one dictionary specifies the parameters for one condition. We could write that by code using a for...loop, but it might be easier this time to use a spreadsheet.
 
 You could have achieved exactly the same as this using code to create a list of dictionaries with one dictionary for each type of trial in your conditions.
 
 Create a conditions file
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We can import conditions from either *.xlsx* or *.csv* files.
 
@@ -256,7 +256,7 @@ cueOri    probeX    valid    descr
 Save the file in `xlsx` or `csv` format. e.g. "conditions.csv"
 
 Import that file and put it to use
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The `data` module in PsychoPy has a function to import such files. It gives a *list* of *dicts* that can be used directly in the TrialHandler::
 
@@ -269,7 +269,7 @@ The `data` module in PsychoPy has a function to import such files. It gives a *l
 This will run 5 repeats of our 10 trial types randomly. The way we've set this up we'll get 50 trials with 80% valid probes.
 
 Updating stimuli
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each time through the loop the value `thisTrial` is a dictionary for one trial, with keys that have the column names::
 
@@ -355,7 +355,7 @@ All we need to do is:
 - tell it when one 'entry' is complete (one row in the data file, typically one trial)
 
 Create a base filename
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's create a filename using the participant name and the date. OK, so we'll need to get those!
 
@@ -386,7 +386,7 @@ Now we've collected the information there are various ways to create our filenam
 You can see them looking increasingly obscure, but increasingly brief.
 
 Create ExperimentHandler
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 After your code to create the TrialHandler loop::
 
@@ -406,7 +406,7 @@ After your code to create the TrialHandler loop::
     thisExp.nextEntry()
 
 
-We can't quit during a run
+Quiting during a run
 ----------------------------------------------------
 
 Let's make it possible to end the experiment during a run using the 'escape' key
@@ -423,8 +423,8 @@ Alternatives to `trials.finished=True` ::
 
 NB: If you hit the red stop button in PsychoPy it issues a very severe abort and no data will be saved!
 
-Exercise
-----------------
+*Exercise*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In code: 
 

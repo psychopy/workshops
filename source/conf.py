@@ -13,8 +13,8 @@ import sys
 import os
 
 # JUST CHANGE THESE AND LET THE REST POPULATE
-year = "2020"
-release = 'April 2020'
+year = "2021"
+release = 'September 2021'
 project = u'Workshops for PsychoPy {}'.format(year)
 copyright = u'{}, Open Science Tools'.format(year)
 authors = u'Open Science Tools'
@@ -228,6 +228,8 @@ latex_use_parts = False
 # If false, no module index is generated.
 #latex_domain_indices = True
 
+# Specify the latex engine to use
+latex_engine = 'xelatex'
 
 # -- Options for manual page output ---------------------------------------
 

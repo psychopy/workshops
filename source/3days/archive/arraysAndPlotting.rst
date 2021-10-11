@@ -134,7 +134,7 @@ For example::
 
 .. nextslide::
 
-.. image:: syntax/images/plot_nolabel.png
+.. image:: /_images/plot_nolabel.png
 
 .. nextslide::
 
@@ -146,7 +146,7 @@ arrays. For example::
 
 .. nextslide::
 
-.. image:: syntax/images/plot_wlabels.png
+.. image:: /_images/plot_wlabels.png
 
 
 Other kinds of plots
@@ -169,7 +169,7 @@ To show both figures call plt.show() at the end of the script.
 
 .. nextslide::
 
-.. image:: syntax/images/subplots.png
+.. image:: /_images/subplots.png
 
 More resources
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -282,22 +282,10 @@ Let's plot our data from the posner experiment::
 
 .. nextslide::
 
-.. image:: syntax/images/posner_bar.png
-
-.. nextslide::
-
 If you want to save the Figure::
 
     fig.savefig('my_figure.png')
     fig.savefig('my_figure.pdf')
-
-.. nextslide::
-
-**Exercise** Create a three panel figure, something like this:
-
-.. nextslide::
-
-.. image:: syntax/images/threepanelplot_small2.png
 
 .. nextslide::
 
@@ -393,12 +381,3 @@ Hopefully today you have learnt how to:
 	- Create an experiment using only python code in PsychoPy
 	- Optimise the experiment
 	- Visualise the results (and move forward with analysing them)
-
-What else? :ref:`syntax`
-
-.. toctree::
-    :hidden:
-    :maxdepth: 1
-
-    general/arraysAndPlotting
-    syntax/index

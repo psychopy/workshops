@@ -1,7 +1,7 @@
 ..under development
 
 Code Components - Advanced
-----------------------------------
+==================================
 
 Go and open the demo called 'BART', the Balloon Analog Risk Task. That requires lots of code:
 
@@ -44,10 +44,9 @@ Let's try ending the routine at trial 3 instead of trial 5...
 What happend if you do or do not use continueRoutine? 
 
 
-Additional note
----------------------
+.. note::
 
-Sometimes you might want to set the properties of multiple components at once. For this we could use a for loop (we will talk more about these on Friday)
+	Sometimes you might want to set the properties of multiple components at once. For this we could use a for loop (we will talk more about these on Friday)
 
 Exercises (15-20 minutes)
 -------------------------------------------------------

@@ -52,7 +52,7 @@ We could directly fork an experiment on pavlovia.
 .. _forking:
 
 Fork
----------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Then, search for that inside PsychoPy and sync it to our desktop. We could actually fork + sync in PsychoPy itself!
 
@@ -108,7 +108,7 @@ Inside the experiment settings of PsychoPy you can configure the online settings
     :align: left
 
 *Exercise (5-10 mins)*
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's quickly make a basic experiment and put it online:
 
@@ -343,10 +343,15 @@ Version control
 
 Pavlovia uses a git based system for version control called "gitlab". You can see when the last changes were made to the task by looking at the commit history.
 
-.. image:: /_gifs/git_control.gif
-    :align: center
-    :scale: 100%
+.. only:: html
+    .. image:: /_gifs/git_control.gif
+        :align: center
+        :scale: 100%
 
+.. only:: latex
+    .. image:: /_gifs/git_control.png
+        :align: center
+        :scale: 100%
 
 .. nextSlide::
 
@@ -369,21 +374,29 @@ Adding team members
 
 To add members to your own project, you can use the settings>members option where you can search and invite collaborators.
 
-.. image:: /_gifs/add_member.gif
-    :align: center
+.. only:: html
+    .. image:: /_gifs/add_member.gif
+        :align: center
 
+.. only:: latex
+    .. image:: /_gifs/add_member.png
+        :align: center
 
 Making your task public
 --------------------------
 
 You can change the visibility of your task at any time under permissions. **Remember** Once you make your project "public" the data file stored there will also be public (unless you have your data saving mode set to database). 
 
-.. image:: /_gifs/gitlab_privacy.gif
-    :align: center
+.. only:: html
+    .. image:: /_gifs/gitlab_privacy.gif
+        :align: center
 
+.. only:: latex
+    .. image:: /_gifs/gitlab_privacy.png
+        :align: center
 
 *Exercises (10-15 mins)*
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let's get some practice using gitlab!
 

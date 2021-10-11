@@ -1,12 +1,12 @@
 .. _conditionals:
 
 Conditionals
----------------
+================
 
 We need to be able to control what parts of a script run based on *conditions*. For example, if this trial requires a probe to be presented then run *this code* but if not run *that code*.
 
 Boolean logic
-~~~~~~~~~~~~~~~~~
+--------------------
 
 Python, like most programming languages represents things as being ``True`` or ``False`` and these correspond to 1 or 0. See what these return (some are obvious, some not)::
 
@@ -78,7 +78,7 @@ As soon as Python can determine that the boolean statement is ``False`` the rest
     len(keys)>1 and keys[0]
 
 if... statements
-~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 If statements allow you to say, "if this statement evaluates to be ``True`` then run the next lines of code". To determine what count as the 'next lines' you have to indent the code. These examples are getting longer - you might want to switch to using the script editor panel if you've been using the shell so far::
 
@@ -118,7 +118,7 @@ Would you have spotted what went wrong here without the else statement?
     The fact that Python will interpret either " or ' as a string makes it very easy if you want a string to contain one of those characters. e.g. "Won't hurt" is fine but 'Won't hurt' will cause an error (because the string effectively ends after the `n`). If you want to be really safe you can start or end a string with triple quotes and then the string can contain either type of quote inside.
 
 Nested if
-~~~~~~~~~~~~~~~~~~~~~~~~
+----------------
 
 Statements can nest too. Make sure you understand whether each of the following lines will be run and why::
 
@@ -134,7 +134,7 @@ Statements can nest too. Make sure you understand whether each of the following 
 
 
 Float gotchas
-~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Tattoo this somewhere:
 
@@ -179,6 +179,6 @@ Compare the difference to some tiny value that is nonetheless much bigger than t
 .. ifslides::
 
   That's it
-  ~~~~~~~~~~~~~~~
+  -----------------
 
   Go back to :ref:`day1sched`

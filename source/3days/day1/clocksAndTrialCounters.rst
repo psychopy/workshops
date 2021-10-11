@@ -7,13 +7,16 @@
 Clocks and trial counters
 ===============================
 
+Clocks
+--------
+
 Keeping track of time is really important to most experiments. In PsychoPy there are many useful clocks that live "under the hood", which we can use in our experiment:
 
 *	:code:`routineClock` : Every routine has it's own clock with this naming convention e.g. a routine called "trial" would have a clock called "trialClock".
 *	:code:`t` : We might not need the routineClock, because the variable `t` represents the time since the start of the current routine anyway!
 
 Making custom clocks
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If we want to use a custom clock (e.g. to measure the time across several routines) we can always make a clock within a code component::
 
@@ -23,7 +26,7 @@ If we want to use a custom clock (e.g. to measure the time across several routin
 	In the current release (2021.2.3) if we are working online we will need to change our code component "type" to be "Both" and use :code:`myClock = util.Clock()` on the JS side.
 
 Useful methods for use with clocks
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once we have our clock there are several useful methods we might want to know about. 
 
@@ -32,7 +35,7 @@ Once we have our clock there are several useful methods we might want to know ab
 
 
 Adding a timer to your experiment
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now that we know how to make a clock and how to access the time on it, we can easily add a timer to our experiment to show our participant how far into a trial, or the experiment they are. 
 
@@ -60,7 +63,7 @@ Trial counters
 -------------------------------
 
 How is PsychoPy counting trials?
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each loop we add to our experiment will automatically be counting the number of trials that have occurred already (as well as how many repetitions of our trials list have occurred!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
 
@@ -72,12 +75,12 @@ Each loop we add to our experiment will automatically be counting the number of 
 *	:code:`trials.thistrialIndex` - the index of the current trial from within our trialList (the conditions spreadsheet).
 
 Adding a trial counter
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units pos = (-0.4, 0.4)). In the text field add :code:`$trials.thisN`. 
 
 Ending a trial early 
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Imagine we want to end the experiment early if your participant takes too long to respond (this might be particularly important for online studies!). Now we know how to time each trial we can use those clocks to end the task early if a trial takes too long. 
 
@@ -108,8 +111,8 @@ Then add a code component to all routines following this and int he "Begin Routi
 
 This way all following routines would also be ended if the participant took too long to respond. 
 
-Quick Exercise
-------------------------------------
+*Exercise*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Try to end the experiment on trial 5 using a code component.
 

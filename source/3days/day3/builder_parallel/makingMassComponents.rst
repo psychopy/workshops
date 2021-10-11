@@ -17,7 +17,7 @@ We have already learned how to draw something with code when we learned about co
 
 
 Exporting builder to code
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Remember, we can export a builder experiment to coder at any point, but we emphasized this is a **one-way street** and *highly* recommend avoiding editing the underlying python file. But exporting a python file can be useful to study how to do something in python if we are not sure. Start by adding a simple textStim with the letter "T" in the Text field, call the component "myLetter". Save it and export the python file then search for "myLetter". 
 
@@ -131,8 +131,8 @@ Because these random values are all positive, you might notice all the letters a
 Finally, let's add a target, because there is only one of these we can use a basic component!
 
 
-Exercise (20 mins)
-----------------------------------------------
+*Exercise (20 mins)*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Make all of the distractors random colors.
 
@@ -148,7 +148,8 @@ Exercise (20 mins)
 
 .. nextslide::
 
-The end product should look like this...
 
-.. image:: /_gifs/search-gif.gif
-   :width: 100 %
+.. only:: html
+	The end product should look like this...
+	.. image:: /_gifs/search-gif.gif
+	   :width: 100 %

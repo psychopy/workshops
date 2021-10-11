@@ -18,7 +18,7 @@ What does an n-back consist of?
 So, what makes an n-back? 
 
 - Stimuli (typically letters or numbers) presented on every trial
-- On a proportion of trials the stimulus will be the same as the *n*th back
+- On a proportion of trials the stimulus will be the same as the nth back
 - Participants press a key to identify if this stimulus is the same as the n-th back
 
 Setting up our experiment 

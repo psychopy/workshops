@@ -1,10 +1,10 @@
 .. _dynamic:
 
 Making things dynamic
----------------------------
+===========================
 
 What is dynamic?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 In PsychoPy everything is organized in reference to time
 
@@ -13,7 +13,7 @@ In PsychoPy everything is organized in reference to time
   - Things can *change* their attributes in time
 
 Why is that useful?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You could use this, for instance, to:
 
@@ -24,7 +24,7 @@ You could use this, for instance, to:
 
 
 Code as arguments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------
 
 Most dialog entries have the option to take raw Python code if you start your entry with `$` (or have that by default).
 
@@ -65,7 +65,7 @@ Your mask is a square that moves (note the size and the pos settings).
 ..  _heartThrob:
 
 Create a pulsating heart
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Download an image of a "love" heart, preferably one with a transparent background.
 
@@ -76,7 +76,7 @@ Let's put that into a PsychoPy experiment and set its size to vary on every fram
     :scale: 10
 
 Equation for a pulse
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Getting the maths to look right here is going to be the key.
 
@@ -93,7 +93,7 @@ raise the value to a power before scaling it up:
   - `100+50*sin(t)**4`
 
 More ideas and working code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 Have a play with dynamically changing the various properties of a text stimulus:
 

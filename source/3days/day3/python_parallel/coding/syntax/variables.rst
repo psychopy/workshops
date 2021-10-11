@@ -1,10 +1,10 @@
 .. _variables:
 
 Variables and common types
-----------------------------------
+=================================
 
 Assigning variables
-~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 You've already seen variables being assigned using =. You can also assign multiple things at once. Type these in and then check to see what each variable looks like afterwards::
 
@@ -19,7 +19,7 @@ You've already seen variables being assigned using =. You can also assign multip
 	listOfTwoWords = myString.split()
 
 Comparing variables
-~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 In some programming languages, the '=' sign is used both to assign a value to a variable and to compare variables for equality.
 
@@ -31,7 +31,7 @@ In Python, we use '==' to test if two things are equal::
     True
 
 Types of variable
-~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 In Python almost everything is an `object`. There are a number of built-in objects that are very widely used:
 
@@ -88,7 +88,7 @@ Finding out the type can be essential if things look the same when printed but a
 But there are a huge number of additional objects and you can make your own too.
 
 Integers and floats
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Integers and floats (floating point numbers) are just 2 different types of number. Integers don't store anything after the decimal place.
 
@@ -103,7 +103,7 @@ In Python3 dividing integers returns a float if needed, and you can get the same
     from __future__ import division
 
 Strings
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Python has fantastic string handling options. Try these methods that are attached to strings::
 
@@ -127,7 +127,7 @@ You can also combine strings in nice, simple ways::
 .. _slicing:
 
 Slicing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------
 
 Often you need to fetch a subset of an object, like a string or a list.
 
@@ -144,7 +144,7 @@ Often you need to fetch a subset of an object, like a string or a list.
 >>> a[2:-2].upper()
 
 Converting (aka coercing)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 You can convert between these different types of objects where they make sense::
 
@@ -161,7 +161,7 @@ but not where they don't::
 .. _formattedStrings:
 
 Formatted strings
-~~~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Sometimes you need to combine numbers and strings. Imagine I wanted to make a filename to save my data. Maybe in my script I had a variable to store my subject name and another to store a stimulus attribute which was 10, 50, 100, 200 on different runs. I might try and save the data filename like this::
 
@@ -227,7 +227,7 @@ Containers
 Very often you need variables that store more than one value and keep them organised in some way. The two most common are lists and dictionaries.
 
 Lists
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For storing things that have a defined order::
 
@@ -266,7 +266,7 @@ Other methods::
 
 
 Dictionaries (dicts)
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At times you want to keep things with something that identifies what each element is. That's where you'll use a dict. These can be created in various ways::
 
@@ -308,7 +308,7 @@ Dictionaries are important in PsychoPy. They are often used to hold the informat
 *NB. if a line ends in a comma you can break the line without breaking the code*
 
 Nesting objects within each other
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 Often containers are nested within each other. You might well have a list of dicts, or a dict containing lists etc.::
 
@@ -337,7 +337,7 @@ or a list of lists::
 You can nest objects as deeply as you like. The limit is your own brain being able to keep track of what you're doing!
 
 Indentation
-~~~~~~~~~~~~~~~~~~
+----------------
 
 One of the unusual things in Python is that indentation (whitespace) is actually important. Try to use a genuine programmer's text editor and set it to insert spaces in place of tabs (it's hard to spot errors when you have a mixture of tabs and spaces). Many editors, will try to help you get indentation right::
 
@@ -392,7 +392,7 @@ Or new-style (Python3 or using `from __future__ import print`)::
     print('done')
 
 Importing modules:
-~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Python functions beyond its basic set are organised into `modules` and `packages` (`PsychoPy` is a set of such modules). We need to explicitly  import such packages to be able to access their functions::
 
@@ -407,7 +407,7 @@ You can find out what's in a module using the function ``dir()``::
     Note that in the shell if the command `returns` a value and you didn't provide anything to receive/store that value then it gets printed to the screen instead (this is not the case for scripts run from the editor).
 
 Import statement variants
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Having functions in modules allows us to avoid name space collisions, such as functions that have the same name. Different import styles allow different naming::
 
@@ -422,7 +422,7 @@ Having functions in modules allows us to avoid name space collisions, such as fu
     # numpy.random.shuffle(myList)
 
 PsychoPy imports:
-~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
     >>> from psychopy import visual, core, data, event, sound, gui
 
@@ -430,7 +430,7 @@ PsychoPy imports:
 
 
 Common mistakes & error messages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------
 
 To follow is a list of simple, common mistakes. Remember:
     - every character counts. A single typo/omission causes the script to crash.
@@ -442,7 +442,7 @@ Python is helpful in letting you debug errors.
     - in every error, the bottom line tells you the type of error.
 
 Approaching Errors
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. rst-class:: build
 
@@ -467,7 +467,7 @@ A general strategy for approaching errors is:
 
 
 NameError
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The variable is not defined (yet)::
 
@@ -501,7 +501,7 @@ An error as output from PsychoPy::
     NameError: name 'aVariableThatIHaventDefinedYet' is not defined
 
 TypeError
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The variables are of the wrong type for what you tried to do to them::
 
@@ -517,7 +517,7 @@ The variables are of the wrong type for what you tried to do to them::
 
 
 SyntaxError
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Your statements don’t follow the Python syntax. Because of this, the error message can't give helpful details except where the error occurred (via the line number and caret ^ symbol.
 
@@ -548,7 +548,7 @@ Another syntax error example::
     Cause: Omitted colon.
 
 IndexError
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You tried to access an element of a list using an index which is out of bounds.
 
@@ -561,7 +561,7 @@ You tried to access an element of a list using an index which is out of bounds.
     Did you remember the zero-based indexing?
 
 KeyError
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You tried to access an entry in a dictionary using a key that doesn’t exist.
 
@@ -570,7 +570,7 @@ You tried to access an entry in a dictionary using a key that doesn’t exist.
     KeyError: 'age'
 
 Error resources
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - Try this flow chart: http://i.imgur.com/WRuJV6r.png
     - For the pros, see http://stackoverflow.com/questions/1011431/common-pitfalls-in-python

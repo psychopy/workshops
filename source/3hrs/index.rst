@@ -3,7 +3,7 @@ Creating Experiments in PsychoPy (3 hours)
 `````````````````````````````````````````````````
 
 About 
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We typically deliver these sessions in a 3 hour format, and aim to cover 3 broad topics - in reality, we tend to tailor what we talk about depending on questions fromt he audience!
 
@@ -16,7 +16,7 @@ Our 3hr sessions are designed to give a *broad* introduction to using PsychoPy, 
 If you want a *departmental session* we charge a small fee (£100) - please contact workshops@opensciencetools.org to enquire. 
 
 Upcoming open/free events
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +------------------+-------------------------------+-----------------------------------------------------------------------------------------------------+
 |      Date(s)     |      Time                     |  Registration link                                                                                  |
@@ -26,7 +26,7 @@ Upcoming open/free events
 
 
 What can I do to prepare?
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We recommend watching this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_  in advance of the session, this can get you up to speed on the materials we cover in the workshop. We believe very much in **learning by doing** our workshops work best if attendees follow along with making an experiment on their own computer whilst we talk through it's creation. 
 
@@ -37,21 +37,15 @@ We recommend watching this `15 minute video <https://www.youtube.com/watch?v=fIw
 
 
 Materials
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The slides and materials for this workshop can be accessed Here:
 
-.. toctree::
-    :maxdepth: 1
+- :ref:`introduction3Hours`
+- :ref:`builder3Hrs`
+- :ref:`online3Hrs`
+- :ref:`online3Hrs`
 
-    introductions
-    intermediateBuilder
-    online
-    pavlovia
-    blockDesigns
-    codeComponents
-    mouseInputs
-    textBox
 
 These materials will remain open for you to use and share, but may be updated as we continue developing workshop content. 
 

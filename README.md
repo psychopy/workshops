@@ -38,3 +38,31 @@ or:
 
     conda uninstall sphinx
     conda install sphinx=2.4
+
+## Compiling to pdf
+
+Note that using gif images may prevent the compilation process. To avoid this you can also make a static version of the image and use the syntax:
+```
+.. only:: html
+    .. image:: /_images/coder_small.gif
+       :width: 100 %
+
+.. only:: latex
+    .. image:: /_images/coder_small.png
+       :width: 100 %
+```
+To make the latex file you can then use:
+
+    make latex
+
+And create the pdf in [texWorks](http://www.tug.org/texworks/) by opening the TEX file and running [pdfLatex](https://www.pdfconverters.net/how-to/convert-latex-to-pdf-in-windows/) to compile to pdf. 
+
+In the source > conf.py file you will also want to change how the pdf is configured to show the date of compilation: 
+
+    # JUST CHANGE THESE AND LET THE REST POPULATE
+    year = "2021"
+    release = 'September 2021'
+    project = u'Workshops for PsychoPy {}'.format(year)
+    copyright = u'{}, Open Science Tools'.format(year)
+    authors = u'Open Science Tools'
+    filebase = 'OST_Workshops'

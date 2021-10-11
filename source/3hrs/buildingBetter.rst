@@ -1,5 +1,5 @@
 
-.. _session1:
+.. _builder3Hrs:
 
 Building better experiments
 ==============================

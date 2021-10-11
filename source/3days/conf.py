@@ -13,9 +13,9 @@ import sys
 import os
 
 # JUST CHANGE THESE AND LET THE REST POPULATE
-year = "2019"
-release = 'June 2019'
-project = u'Experiments in PsychoPy {}'.format(year)
+year = "2021"
+release = 'September 2021'
+project = u'Creating Experiments in PsychoPy Workshop {}'.format(year)
 copyright = u'{}, The PsychoPy team'.format(year)
 filebase = u'3days{}'.format(year)
 filebase = '3days'
@@ -191,10 +191,12 @@ htmlhelp_basename = '{}_{}doc'.format(project, year)
 
 
 # -- Options for LaTeX output ---------------------------------------------
+# See here for latex options in sphinx https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-latex_engine
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 'papersize': 'a4paper',
+'classoptions' : 'openany,oneside'
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
@@ -231,6 +233,9 @@ latex_use_parts = False
 # If false, no module index is generated.
 #latex_domain_indices = True
 
+latex_toplevel_sectioning = 'chapter'
+
+latex_engine = 'pdflatex'
 
 # -- Options for manual page output ---------------------------------------
 

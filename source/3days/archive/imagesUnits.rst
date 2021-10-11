@@ -1,6 +1,6 @@
 
 
-.. _improvements:
+.. _improvementsIms:
 
 Improvements: images, timing and units
 ==========================================
@@ -19,7 +19,7 @@ Customise using code:
 
 (Some of this is just an excuse to do unecessarily fancy stuff!)
 
-.. _framesAndTiming:
+.. _framesAndTimingIms:
 
 Understanding timing and frame rates
 ---------------------------------------
@@ -59,7 +59,7 @@ If you have studies that really need millisecond-precise timing (such as EEG) th
 
 Be wary of any software package that simply tells you "sub-millisecond timing guaranteed"
 
-.. _builderImages:
+.. _builderImagesIms:
 
 Using images instead of text
 -------------------------------

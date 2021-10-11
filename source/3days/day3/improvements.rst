@@ -18,7 +18,7 @@ Previously we mentioned a few problems that we will work on in this session:
 - we don't have any practice trials (to learn that the cue is 'informative')
 
 Presenting stimuli by frames
-------------------------
+------------------------------
 
 Previously we used the::
 
@@ -57,7 +57,7 @@ We could use several for loops OR we could use one large for loop with 'if' stat
     win.flip()
 
 Getting an early keypress
-------------------------
+------------------------------
 
 For more precise keypress measurements, we can use the Keyboard class rather than the event module.
 
@@ -170,16 +170,3 @@ Exercises:
 - Add trial-by-trial feedback on correctness and RT
 - End the practice trials early if the participant scores 5 correct in a row
 
-
-
-What else can we talk about...
- :ref:`syntax` (but you will have picked a lot of this up 
-already!) 
-:ref:`plottingPosner` 
-
-.. toctree::
-    :hidden:
-    :maxdepth: 1
-
-    syntax/index
-    arraysAndPlotting

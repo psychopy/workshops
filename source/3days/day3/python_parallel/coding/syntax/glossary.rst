@@ -1,8 +1,8 @@
 GLOSSARY
---------------
+================
 
 Syntax
-~~~~~~~~~~~~~~~~~~~~~~
+----------------
 
     - ``[ ]`` used to create a list ``a=[1,2]`` or to index a dict/list ``a[0] = 10``
     - ``( )`` used to call a function e.g. ``dir()``
@@ -18,7 +18,7 @@ Syntax
     - `""" """` defines a string that can cover multiple lines
 
 Terms
-~~~~~~~~~~
+----------------
 
 returns:
 
