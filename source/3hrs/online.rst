@@ -5,7 +5,7 @@
         :scale: 25 %
 
 
-.. _online:
+.. _online3Hrs:
 
 Running online studies
 =================================
@@ -42,7 +42,7 @@ Once we have our experiment written in JS, we need a way to "host" it online.  `
 
 
 Launching your studies on Pavlovia
-=================================
+===================================
 
 Syncing our own study to pavlovia
 ----------------------------------

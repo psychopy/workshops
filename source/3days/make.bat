@@ -1,3 +1,5 @@
+REM This will be executed on windows and is the equivilent of Makefile 
+
 @ECHO OFF
 
 REM Command file for Sphinx documentation
@@ -6,8 +8,8 @@ if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
 set BUILDDIR=build
-set ALLSPHINXOPTS=-d %BUILDDIR%/doctrees %SPHINXOPTS% source
-set I18NSPHINXOPTS=%SPHINXOPTS% source
+set ALLSPHINXOPTS=-d %BUILDDIR%/doctrees %SPHINXOPTS% .
+set I18NSPHINXOPTS=%SPHINXOPTS% .
 if NOT "%PAPER%" == "" (
 	set ALLSPHINXOPTS=-D latex_paper_size=%PAPER% %ALLSPHINXOPTS%
 	set I18NSPHINXOPTS=-D latex_paper_size=%PAPER% %I18NSPHINXOPTS%
@@ -147,11 +149,13 @@ if "%1" == "latex" (
 
 if "%1" == "latexpdf" (
 	%SPHINXBUILD% -b latex %ALLSPHINXOPTS% %BUILDDIR%/latex
+	REM insert command to temporarily copy the _images and _templates over to this location for access on the build
 	cd %BUILDDIR%/latex
 	make all-pdf
 	cd %BUILDDIR%/..
 	echo.
 	echo.Build finished; the PDF files are in %BUILDDIR%/latex.
+	REM insert command to temporarily remove the _images and _templates folders 
 	goto end
 )
 

@@ -5,13 +5,14 @@
     :align: left
     :scale: 25%
 
+
 .. _introduction3days:
 
 Introductions
-----------------
+=========================
 
 The Team!
-=========================
+-----------------------
 
 PsychoPy is an Open Source project, the users have access to the code and can contribute at any time! That kind of means the team is technically huge!
 
@@ -26,7 +27,7 @@ In terms of the "core team" , thanks to Pavlovia users and grants we can now fun
     :scale: 30%
     
 About the workshop
-~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 We can't teach you all of PsychoPy (even in 3 days!). But we can hopefully give you some ideas about what's possible and how to get started.
 
@@ -35,7 +36,7 @@ Getting to know PsychoPy
 ============================
 
 What is PsychoPy?
-~~~~~~~~~~~~~~~~~~
+-----------------------
 
 It's `Psychology software in Python`
 
@@ -47,7 +48,7 @@ It is, itself, entirely written in Python
     * 2017-now: still open source and free to install but with professional support (funded by grants and Pavlovia)
 
 Goal of PsychoPy
-~~~~~~~~~~~~~~~~~~
+-----------------------
 
 The aim is to enable scientists to run as wide a range of experiments as possible, as easily
 as possible, with standard computer hardware.
@@ -59,7 +60,7 @@ A single piece of software:
     - capable of running studies in the lab or online
 
 Choice of interface
-~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 It's hard to make something easy enough for undergrads and novices but flexible enough for everything else.
 
@@ -67,7 +68,13 @@ PsychoPy provides two main options, coder view and builder view. But you can als
 
 .. nextslide::
 
-.. figure:: /_images/coder_small.gif
+.. only:: html
+    .. image:: /_images/coder_small.gif
+       :width: 100 %
+
+.. only:: latex
+    .. image:: /_images/coder_small.png
+       :width: 100 %
 
    The Coder view is used to create experiments from Python scripts
 
@@ -78,7 +85,7 @@ PsychoPy provides two main options, coder view and builder view. But you can als
    The Builder view is used to create experiments visually
 
 Why do people *Code*?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
 
 * To implement more complex experimental designs/procedures(?)
 * To know exactly what the code is doing(?)
@@ -86,7 +93,7 @@ Why do people *Code*?
 * To program things that aren't psychology experiments. (e.g. stats, simulations, analyses etc.)
 
 Why do people *Build*?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
 
 * It is far faster to develop experiments!
 * You can still understand (and build on) your experiment next year
@@ -95,14 +102,14 @@ Why do people *Build*?
 * Your Builder experiment will also compile to a web (JS/HTML) experiment!
 
 What do **we** do?
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
 
 Our *experiments* are almost always in Builder, with added Code Components. I don't ever break out and switch to pure code. 
 
 I do use code for other things, like making my 'conditions' .csv files, making stimuli and customizing the experiments.
 
 PsychoPy versions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
 
 PsychoPy is changing rapidly, especially now it has full-time programmers
 
@@ -116,7 +123,7 @@ PsychoPy experiments have a setting called `useVersion` that works for Builder/P
 
 
 Going further
-~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Builder interface:
     - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)

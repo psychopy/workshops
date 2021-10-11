@@ -14,18 +14,22 @@ What "Advanced" online options are available?
 
 If there is an open JS library for it, then it can be imported into PsychoPy and used on pavlovia. This allows a broad range of possibilities for making exciting online studies. You don’t need to be a pro JS coder to use these. Several basic demos are available and a key skill is knowing how to adapt and use these demos. In this exercise, we will focus on how to adapt the eye-tracking demo available on pavlovia.org, which uses the webgazer package for eye tracking.
 
-.. image:: /_gifs/posner-eye-gif.gif
-    :align: center
+.. only:: html
+    .. image:: /_gifs/posner-eye-gif.gif
+        :align: center
 
 .. nextSlide::
 
 Some of the tools we can use online:
 	- `Eye tracking <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_
+
         -Archived (run on PsychoPy versions pre 2021.2): Examples using the `Posner task <https://run.pavlovia.org/lpxrh6/posner_eyetracking_test/>`_, and another for tracking `basic left right eye movements <https://run.pavlovia.org/lpxrh6/demo_eye_tracking/>`_)
+
 	- Your device sensors such as the `Gyroscope <https://run.pavlovia.org/tpronk/demo_gyroscope/>`_
 
+
 *Exercise*
-------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In your breakout rooms work through this stepby-step guide to implement some adaptations to an eye tracking demo. This builds on the skills we learned from Mouse tracking.
 
 .. nextSlide::
@@ -52,12 +56,15 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 .. nextSlide::
 
-2.	Add a code component called ‘checkTarget’ to the ‘tracking_trial’ routine. In the **each frame** tab write ::
+2.	Add a code component called ‘checkTarget’ to the ‘tracking_trial’ routine. In the **each frame** tab write:
+
+.. code-block:: python
 
     if polygon.contains(tracking_square):
-            thisCol = 'red'
-	else:
-            thisCol = 'white'
+        thisCol = 'red'
+    else:
+        thisCol = 'white'
+
 
 .. nextSlide::
 
@@ -68,8 +75,9 @@ OK so now we have our own copy of an eye tracking demo! Let’s make some edits!
 
 5.	Sync it online – see what happens! Your polygon should change colour when you look at it.
 
-.. image:: /_gifs/eyetracking-polygon.gif
-    :align: center
+.. only:: html
+    .. image:: /_gifs/eyetracking-polygon.gif
+        :align: center
 
 .. nextSlide::
 

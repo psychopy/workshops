@@ -7,10 +7,10 @@
 
 
 Open Science Tools official workshops
-`````````````````````````````````````````````````
+=======================================
 
 Upcoming events
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
 * **3-day workshop (US East time)** *October 20th - Oct 22nd* 2021 `Materials and tickets available here <3days/index.html>`_ 
 * **3-day workshop (New Zealand time)** *November 10th - November 11th* 2021 `Register interest here <3days/index.html>`_ 
@@ -21,7 +21,7 @@ Organizing a departmental session? contact us workshops@opensciencetools.org
 Need one-to-one training or guidance making a specific task? contact us consultancy@opensciencetools.org
 
 About
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
 There are many resources to help you learn the various aspects of PsychoPy (and most of them are free!)
 
@@ -35,15 +35,18 @@ We were planning also to run a new modular Summer School, called :ref:`pampr`.
 We'll be monitoring the situation to see whether that can run either remotely
 or in-person.
 
+.. only:: html
+	.. image:: /_images/jumpAnimate.gif
+	   :width: 100 %
 
-.. image:: /_images/jumpAnimate.gif
-   :width: 100 %
-
+.. only:: latex
+	.. image:: /_images/jumpAnimate.png
+	   :width: 100 %
 
 .. _pampr:
 
 PaMPR (Programming and Methods in Psychology Research)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------
 
 **2022 dates To Be Confirmed**
 
@@ -83,5 +86,6 @@ Previous events
 .. toctree::
     :maxdepth: 1
     :hidden:
-    Creating better Experiments 3 day workshop <3days/index>
-    Creating better Experiments 3 day workshop <about3Hrs>
+    
+    Creating better Experiments 3 day workshop </3days/index>
+    Creating better Experiments 3 day workshop </3Hrs/index>

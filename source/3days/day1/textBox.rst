@@ -30,7 +30,7 @@ This means we should be very careful as checks will be case and space sensitive.
 
 
 *Exercise*
-----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Make a digit span task. Participants will see 3 numbers and type their response. We need:
 
 - A routine to show the digits one by one in a random order

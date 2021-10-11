@@ -1,7 +1,7 @@
 .. _functions:
 
 Functions
-----------------------------------
+===================
 
 You've learned all the key elements to programming. Variable, conditionals and loops allow you to do pretty much anything your computer can do. But your code will quickly become hard to read if you simply write everything line after line and copy-and-paste pieces of code you want to re-use.
 
@@ -10,7 +10,7 @@ Functions allow you to a) reuse your code and b) make it easier to read by hidin
 guts in clear, descriptive, and reusable commands.
 
 A Simple Example
-~~~~~~~~~~~~~~~~
+-----------------------
 
 For instance, if we have a pair of points in space, pt1 and pt2, with (X,Y) coordinates. We could find the distance between those using Pythagoras' theorem::
 
@@ -69,7 +69,7 @@ Having defined that function you can use it repeatedly::
     Almost any time you're planning to do something multiple times in a script you should think about replacing it with a function.
 
 Function inputs
-~~~~~~~~~~~~~~~~~~
+----------------------
 
 On the whole you should assume that your function only knows about the things that it was given in the first line (you can also have `global` variables that can be seen from anywhere, but these are generally to be avoided). In the function above we required two variables and these were given the names `a` and `b` as we received them (it doesn't matter what names they had in the script).
 
@@ -105,7 +105,7 @@ Because we can use names for the arguments, we don't have to specify all those t
     sep6 = separation(a=pt4, pt2) #error? after a named arg, all others must be named
 
 Function outputs
-~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Some functions don't need to return anything (they just perform an operation like present a stimulus). The function above returns a single value. You can return multiple values too. Or you can choose whether to return one or more values in the function (this might not be wise though!)::
 
@@ -134,7 +134,7 @@ If you don't specify any return values in your function but you then try to assi
 
 
 Operations in-place
-~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Remember that Python passes pointers to objects rather than copies of them, unless you manually make a copy. So again, if you do anything that changes the variable 'in-place' then it will be changed in the code that called your function.::
 
@@ -152,7 +152,7 @@ Modules
 You can group functions that you use repeatedly or have a similar purpose together into a single file so that you don't end up rewriting them over and over again at the top of your script.
 
 Example 1
-~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Save your `separation` function into a file called tools.py. Now, in the same directory, create a new file (e.g. 'importingExercise.py')::
 
@@ -203,7 +203,7 @@ I can do this in any Python script I run if I add `jwpTools` to my path (see bel
     import jwpTools.geometry as geom
 
 Adding a location to your path
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Options:
 
@@ -218,6 +218,6 @@ Options:
 .. ifslides::
 
   That's it
-  ~~~~~~~~~~~~~~~
+  ---------------
 
   Go back to :ref:`day1sched`

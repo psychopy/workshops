@@ -1,21 +1,21 @@
 .. _classes:
 
 Classes
-----------------------------------
+================
 
 Everything in Python is an 'object'. Everything has data stored inside it and has methods that allow that data to be accessed or modified. For instance, a string is an object whose data are the values of the letters and whose methods are `upper()`, `lower()`, `split()`.
 
 We can make our own classes of object too! This is Object-Oriented Programming (OOP).
 
 Do I really need this?
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 A class is just a collection of functions and variables to store/retrieve/modify related data.
 
 Classes aren't essential for most programming of experiments, but if you're comfortable with this object-oriented concept of programming, and comfortable with how to create functions already then classes provide you with a way to create your own custom objects, or to modify existing classes of object. (If you aren't yet comfortable with function definitions then leave this section until another day!)
 
 What is a class?
-~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 A class defines a type of object. You then create instances of the object class that are each different.
 
@@ -35,7 +35,7 @@ In object-oriented programming it's the same. We define a class of object and th
 Here, ``myGrating`` is an instance of the ``GratingStim`` class
 
 Creating Classes
-~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 .. note::
 
@@ -100,7 +100,7 @@ It might be useful to have the dot keep track of time. Then we could find its cu
     print(dot1.getPos(5.0)) #pos at some given point in time
 
 Sub-classing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
 One big advantage of classes is that you can take an existing class and modify just one part of it::
 
@@ -126,6 +126,6 @@ You can also replace existing methods in exactly the same way.
 .. ifslides::
 
   That's it
-  ~~~~~~~~~~~~~~~
+  ----------------
 
   Go back to :ref:`day1sched`

@@ -49,7 +49,7 @@ It can be useful:
     `t` is always the current time in sec since the start of the Routine
 
 One-way streets
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 You could save and run this exported script (that's what Builder does each time you press run).
 
@@ -89,7 +89,7 @@ Making things dynamic could allow you to, for instance:
 - make an object move to make the task harder
 - make an object more interesting for participants (e.g. developmental)
 
-.. _codeComponents:
+.. _codeComps:
 
 Code Components
 ---------------------
@@ -149,7 +149,7 @@ To show the participant the time into a trial, we don't even need a code compone
 
 .. nextslide::
 
-This might return a value that is quite long, so, to round that we could use :code:`round(t, 3)
+This might return a value that is quite long, so, to round that we could use :code:`round(t, 3)`
 
 
 Making a branched experiment
@@ -194,6 +194,7 @@ In our Posner example, we are using mouse responses. So long as the data from th
 - :code:`mouse.clicked_name` the name(s) of the last object clicked
 
 .. nextslide::
+
 Adding a text component and writing :code:`$mouse.time[-1]` in the text field would show the time of the last mouse click. 
 
 .. nextslide::
