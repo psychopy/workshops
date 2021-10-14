@@ -16,9 +16,9 @@ Creating Experiments in PsychoPy (3 days)
   +=====================================+===================+============================================================================================================================================+
   | 20th Oct - Oct 22nd                 | US Eastern        | `Buy tickets <https://pavlovia.org/store/workshops/2021-10-20-psychopy-creating-experiments>`_                                             |
   +-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-  | 10th Nov - Nov 11th                 | New Zealand       | `Register interest <https://docs.google.com/forms/d/e/1FAIpQLSey6G_Y7oo-kuXZwuE4Cp9cVqMxuV0cpVhy2NvbWWQtImHcqw/viewform>`_                 |
+  | 10th Nov - Nov 11th                 | New Zealand       | `Buy tickets <https://pavlovia.org/store/workshops/2021-11-10-psychopy-creating-experiments>`_                                             |
   +-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-  | 24th Nov - Nov 26th                 | UK London         | `Register interest <https://docs.google.com/forms/d/e/1FAIpQLSey6G_Y7oo-kuXZwuE4Cp9cVqMxuV0cpVhy2NvbWWQtImHcqw/viewform>`_                 |
+  | 24th Nov - Nov 26th                 | UK London         | `Buy tickets <https://pavlovia.org/store/workshops/2021-11-24-psychopy-creating-experiments>`_                                             |
   +-------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 
