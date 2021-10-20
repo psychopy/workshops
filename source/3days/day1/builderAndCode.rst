@@ -128,8 +128,12 @@ Inserting a break
 
 Imagine you want to insert a break every 10th trial. You could add a routine in your trial loop, then add a code component and use this in the *Begin Routine* tab::
 
-	if not trials.thisN % 10:
-		continueRoutine = False
+	if (trials.thisN + 1) % 10 > 0:
+	    continueRoutine = False
+
+- :code:`trials.thisN + 1`: *why do we add one?* because python indexing starts at 0, so the first trial is 0. 
+- The modulus operator :code:`%` determines the remainder of a dividion. i.e. if this trial number is divisible by 10 it will return 0. 
+- :code:`continueRoutine` tells us whether this routine should continue or not. If false, this routine will terminate (i.e. not present).
 
 .. nextslide::
 
