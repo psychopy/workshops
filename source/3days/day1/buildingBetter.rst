@@ -147,8 +147,9 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 Counterbalancing 
 ====================
 
-Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
+.. nextslide:: Counterbalancing
 
+Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
 
 Setting the order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
