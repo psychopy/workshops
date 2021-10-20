@@ -144,10 +144,8 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 
 .. _counterbalancedDesigns3Days:
 
-Counterbalancing 
-====================
-
-.. nextslide:: Counterbalancing
+Counterbalanced designs
+--------------------------------------
 
 Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
 
