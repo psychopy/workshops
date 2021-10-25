@@ -63,8 +63,8 @@ To give feedback at the end for each condition let's learn about lists. We want 
 
 Some useful *Python* methods
 
-- .append() - adds to a list
-- np.average() - returns average of a list using the numpy (np) library. 
+- :code:`.append()` - adds to a list
+- :code:`average()` - returns average of a list using the numpy (np) library. 
 
 .. nextslide::
 

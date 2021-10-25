@@ -123,25 +123,7 @@ Do you want you custom code executed before or after your stimulus?
 Example uses of code in PsychoPy
 ================================
 
-Inserting a break
--------------------
 
-Imagine you want to insert a break every 10th trial. You could add a routine in your trial loop, then add a code component and use this in the *Begin Routine* tab::
-
-	if (trials.thisN + 1) % 10 > 0:
-	    continueRoutine = False
-
-- :code:`trials.thisN + 1`: *why do we add one?* because python indexing starts at 0, so the first trial is 0. 
-- The modulus operator :code:`%` determines the remainder of a dividion. i.e. if this trial number is divisible by 10 it will return 0. 
-- :code:`continueRoutine` tells us whether this routine should continue or not. If false, this routine will terminate (i.e. not present).
-
-.. nextslide::
-
-A few handy bits of code are used here:
-
-- :code:`%` : the modulus operator, returns the remainder of a value.
-- :code:`.thisN` the current iteration number of this loop *Remember: python indexing starts at 0*.
-- :code:`continueRoutine` : if :code:`False` the current routine will end and the experiment will progress. 
 
 Inserting a timer
 -------------------
@@ -170,6 +152,18 @@ Add a Routine to the start of our experiment called "consent" and add two clicka
 		mainLoopReps = 0
 
 Then add a loop around the rest of your experiment and use :code:`$mainLoopReps` in the :code:`nReps` field. This is a basic example, but you could imagine how this could be used for other branched experiments to show different parts of your experiment to different participants. 
+
+Inserting a break
+-------------------
+
+Imagine you want to insert a break every 10th trial. You could add a routine in your trial loop, then add a code component and use this in the *Begin Routine* tab::
+
+	if (trials.thisN + 1) % 10 > 0:
+	    continueRoutine = False
+
+- :code:`trials.thisN + 1`: *why do we add one?* because python indexing starts at 0, so the first trial is 0. 
+- The modulus operator :code:`%` determines the remainder of a dividion. i.e. if this trial number is divisible by 10 it will return 0. 
+- :code:`continueRoutine` tells us whether this routine should continue or not. If false, this routine will terminate (i.e. not present).
 
 Randomizing the order of stimuli (e.g. images)
 ------------------------------------------------
@@ -215,6 +209,8 @@ Imagine we wanted to check our participant had selected the correct object. We c
 		print('incorrect')
 
 Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
+
+.. nextslide::
 
 **Response time feedback from a key press** 
 
