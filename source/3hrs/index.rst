@@ -1,28 +1,30 @@
 
-Creating Experiments in PsychoPy (3 hours)
+Creating Experiments in PsychoPy (Open sessions)
 `````````````````````````````````````````````````
+
+Upcoming open/free events
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++-------------------------------------------+----------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Topic                                |      Date(s)         |      Time                     |  Registration link                                                                                                                                            |
++===========================================+======================+===============================+===============================================================================================================================================================+
+| Builder Basics     (session 1)            | Nov 8th              | 17:00 - 18:30 (UK time)       | `Register here  <https://www.eventbrite.co.uk/e/creating-experiments-in-psychopy-builder-basics-session-1-tickets-198333168847>`_                             |
++-------------------------------------------+----------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Getting online + Extra tips   (session 2) | Nov 15th             | 17:00 - 18:30 (UK time)       | `Register here <https://www.eventbrite.co.uk/e/creating-experiments-in-psychopy-getting-online-session-2-tickets-198339768587>`_                              |
++-------------------------------------------+----------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 About 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We typically deliver these sessions in a 3 hour format, and aim to cover 3 broad topics - in reality, we tend to tailor what we talk about depending on questions fromt he audience!
+We typically deliver these sessions in a 3 hour format - but sometimes split the three hour session into 2 shorter 1.5 hour sessions. 
 
 .. image:: /_static/timetable3hr.png
   :align: center
   :width: 600
 
-Our 3hr sessions are designed to give a *broad* introduction to using PsychoPy, we aim to make materials useful for beginners but also include useful tips and tricks for those already familiar with PsychoPy. We deliver our 3hr workshops in "open" format, meaning **anyone can attend for free**, we advertise events on eventbrite and anyone can register.
+These sessions are designed to give a *broad* introduction to using PsychoPy, we aim to make materials useful for beginners but also include useful tips and tricks for those already familiar. We deliver these workshops in "open" format, meaning **anyone can attend for free**, we advertise events on eventbrite and anyone can register.
 
 If you want a *departmental session* we charge a small fee (£100) - please contact workshops@opensciencetools.org to enquire. 
-
-Upcoming open/free events
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-+------------------+-------------------------------+-----------------------------------------------------------------------------------------------------+
-|      Date(s)     |      Time                     |  Registration link                                                                                  |
-+==================+===============================+=====================================================================================================+
-| TBC              | TBC                           | TBC                                                                                                 |
-+------------------+-------------------------------+-----------------------------------------------------------------------------------------------------+
 
 
 What can I do to prepare?
