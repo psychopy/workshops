@@ -44,7 +44,7 @@ The slides and materials for this workshop can be accessed Here:
 - :ref:`introduction3Hours`
 - :ref:`builder3Hrs`
 - :ref:`online3Hrs`
-- :ref:`online3Hrs`
+
 
 
 These materials will remain open for you to use and share, but may be updated as we continue developing workshop content. 
