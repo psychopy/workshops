@@ -12,10 +12,7 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-* **3-day workshop (New Zealand time)** *November 10th - November 11th* 2021 `Register here <3days/index.html>`_ 
 * **3-day workshop (UK time)** *November 24th - November 26th* 2021 `Register here <3days/index.html>`_ 
-* **Open session - Builder Basics** *November 8th 17.00 - 18.30 UK time* 2021 `Register here <3hrs/index.html>`_ 
-* **Open session - Getting online + Extra tips** *November 15th 17.00 - 18.30 UK time* 2021 `Register here <3hrs/index.html>`_ 
 
 Organizing a departmental session? contact us workshops@opensciencetools.org
 
