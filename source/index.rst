@@ -12,7 +12,7 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-* **3-day workshop (US East time)** *January 26th - January 28th* 2021 `Materials and tickets available here <3days/index.html>`_ 
+* **3-day workshop (US East time)** *January 26th - 28th* 2021 `Materials and tickets available here <3days/index.html>`_ 
 
 Organizing a departmental session? contact us workshops@opensciencetools.org
 
