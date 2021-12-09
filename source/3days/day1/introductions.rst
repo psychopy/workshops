@@ -72,6 +72,10 @@ PsychoPy provides two main options, coder view and builder view. But you can als
     .. image:: /_images/coder_small.gif
        :width: 100 %
 
+.. ifslides::
+    .. image:: /_images/coder_small.gif
+       :width: 50 %
+
 .. only:: latex
     .. image:: /_images/coder_small.png
        :width: 100 %

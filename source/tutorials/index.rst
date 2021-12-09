@@ -21,3 +21,10 @@ Builder Basics - Intro to code
 
 -	`Digit span tasks <digit_span_task.html>`_  
 
+
+Other
+----------------------------------------------
+
+Using other python interpreters
+
+-	`Getting started using Pycharm <pycharm_basics.html>`_  
