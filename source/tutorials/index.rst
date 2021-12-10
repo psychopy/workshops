@@ -7,7 +7,7 @@
 An Experiment Recipe Book
 =====================================
 
-Nothing beats learning through doing! There are many openly available experiments and demos at `pavlovia.org <https://pavlovia.org/explore>`_ but sometimes seeing the end product isn't as helpful as following the whol process. In this "recipie book" we provide a set of tutorials on how to make a range of experiments, from builder basics to more complex requirements.
+Nothing beats learning through doing! There are many openly available experiments and demos at `pavlovia.org <https://pavlovia.org/explore>`_ but sometimes seeing the end product isn't as helpful as following the whole process. In this "recipe book", we provide a set of tutorials on how to make a range of experiments, from builder basics to more complex requirements.
 
 Builder Basics
 ----------------------------------------------
