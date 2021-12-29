@@ -89,7 +89,7 @@ For first time users, most modules have not been installed and therefore an erro
 To install modules:
 
 |
-.. image:: /_images/settings.png.
+.. image:: /_images/settings.png
 |
 .. image:: /_images/settingsMac.png
 |
