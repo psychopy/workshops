@@ -15,26 +15,30 @@ Interested in being a contributor for PsychoPy? As an open-source software, you 
 
 PyCharm is a dedicated Python Integrated Development Environment (IDE), which includes, code assistance, visual debugging and version control integration (jetbrains.com, December 2021).
 
-Below you will find step-by-step guidance on how to install PyCharm and accessing the PsychoPy source code. Before you get started, you will first need to install PyCharm onto your computer. The version of PyCharm used in this tutorial is PyCharm Community as it is also free and open-sourced. You will also need a Github account.
+Below you will find step-by-step guidance on how to install PyCharm and accessing the PsychoPy source code. Before you get started, you will first need to install PyCharm onto your computer. The version of PyCharm used in this tutorial is PyCharm Community as it is also free and open-sourced. You will also need a Github account. **Finally, we do not recommend running your studies via PyCharm but instead use it only for debugging and development purposes.**
 
 |
 Getting Started: Creating a new project
 ---------------------------------------
 
+Once you have downloaded and installed PyCharm, when you open it for the first time, you will be shown a Welcome Screen and be prompted to create a new project, open or check out an existing project.
+
+|
 .. image:: /_images/createProject.png
 
-.. nextSlide::
 |
-Once PyCharm is opened:
+After selecting new project:
 
-1) Select new project.
-2) Check that the base interpreter (i.e. which version of python you're using) is the one you want to use - currently should be set to python 3.8).
-3) Click on create once you have named your project.
+1) Check that the base interpreter (i.e. which version of python you're using) is the one you want to use - currently should be set to python 3.8).
+2) Click on create once you have named your project.
 
 |
 Connect PyCharm to Github
 ----------------------------
 
+To access the PsychoPy source code, you would need to connect PyCharm to Github.
+
+|
 .. image:: /_images/VCS_1.png
 |
 .. image:: /_images/VCS_2.png
@@ -46,8 +50,11 @@ Connect PyCharm to Github
 
 |
 Share project to Github
-----------------------------------
+------------------------
 
+When you sync your PsychoPy experiment to Pavlovia, you are pushing or sharing it onto Gitlab. It is the same principle here when you have made some edits to the source code or documentation. When you are happy with your changes, you can share it to Github, similar to syncing your studies to Pavlovia. And when you open Github, you will see the project you just shared in your branch, like when you see your studies in Dashboard -> Experiments on Pavlovia.   
+
+|
 .. image:: /_images/Git.png
 |
 .. image:: /_images/shareGit.png
@@ -66,6 +73,9 @@ Share project to Github
 Clone from Github
 ------------------
 
+To have local access to the PsychoPy source code on your computer, you need to clone it from Github. This is similar to how we would fork a demo from Pavlovia.
+
+|
 .. image:: /_images/gitClone_1.png
 |
 .. image:: /_images/gitClone_2.png
@@ -73,7 +83,7 @@ Clone from Github
 .. image:: /_images/release.png
 
 |
-1) To access a project already on Github, click Git > Clone.
+1) Click Git > Clone.
 2) Click on psychopy or enter the URL.
 3) Click on release at the bottom right to see all the different versions of PsychoPy.
 
@@ -81,6 +91,9 @@ Clone from Github
 Running different versions of PsychoPy
 --------------------------------------
 
+To have a sneak peek at the newest version of PsychoPy or even access previous versions, you can do so by following the instructions below.
+
+|
 .. image:: /_images/psychopyApp.png
 
 |
@@ -91,7 +104,7 @@ Running different versions of PsychoPy
 Installing modules
 ----------------------------
 
-For first time users, most modules have not been installed and therefore an error message would appear:
+For first time users, most modules to run PsychoPy not as a standalone version will have not been installed and therefore an error message would appear.
 
 To install modules:
 
@@ -116,8 +129,11 @@ To install modules:
 
 |
 Accessing specific component from developer version
------------------------------------------------------
+----------------------------------------------------
 
+We are always taking note of feedback from users and aim to develop and improve components to make better experiments. Therefore, if you would like to try out a specific new feature, you can do so by following the steps below.
+
+|
 .. image:: /_images/remote_1.png
 |
 .. image:: /_images/remote_2.png
