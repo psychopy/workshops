@@ -8,11 +8,18 @@
         
 .. _pycharmIntro:
 
-Getting Started
-==============================================
+Being a contributor
+====================
 
-Creating a new project
-----------------------------
+Interested in being a contributor for PsychoPy? As an open-source software, you can have access to all the source code to add or change something. You can also have a first peek at what new features are being developed and provide feedback! And one of the ways you can do this is by accessing the source code using PyCharm. 
+
+PyCharm is a dedicated Python Integrated Development Environment (IDE), which includes, code assistance, visual debugging and version control integration (jetbrains.com, December 2021).
+
+Below you will find step-by-step guidance on how to install PyCharm and accessing the PsychoPy source code. Before you get started, you will first need to install PyCharm onto your computer. The version of PyCharm used in this tutorial is PyCharm Community as it is also free and open-sourced. You will also need a Github account.
+
+|
+Getting Started: Creating a new project
+---------------------------------------
 
 .. image:: /_images/createProject.png
 
@@ -89,7 +96,7 @@ For first time users, most modules have not been installed and therefore an erro
 To install modules:
 
 |
-.. image:: /_images/settings.png.
+.. image:: /_images/settings.png
 |
 .. image:: /_images/settingsMac.png
 |
