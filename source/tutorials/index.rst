@@ -21,11 +21,11 @@ Builder Basics - Intro to code
 
 -	`Digit span tasks <digit_span_task.html>`_  
 
-Code
+Python Code (local use)
 ---------------------------------------------
 
 
-Below are various tips/tricks/recipes/how-tos for PsychoPy. They involve something that is a little more involved than you would find in FAQs, but too specific for the manual as such (should they be there?).
+Below are various tips/tricks/recipes/how-tos for using python in PsychoPy. They involve something that is a little more involved than you would find in FAQs, but too specific for the manual.
 
 .. toctree::
    :maxdepth: 1
