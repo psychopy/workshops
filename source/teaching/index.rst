@@ -42,9 +42,9 @@ The **most comprehensive guide** is the book `Building Experiments in PsychoPy`_
 
 Undergraduate course material
 `````````````````````````````
-At `School of Psychology, University of Nottingham`_, PsychoPy is now used for all first year practical class teaching. The classes that comprise that first year course are provided below. They were created partially with funding from the former `Higher Education Academy Psychology Network`_. Note that the materials here will be updated soon - so make sure you have the latest version of them!
+At `School of Psychology, University of Nottingham`_, PsychoPy is now used for all first year practical class teaching. The classes that comprise that first year course are provided below. They were created partially with funding from the former `Higher Education Academy Psychology Network`_.
 
-- `PsychoPy_pracs_2011v2.zip (21MB) <PsychoPy_pracs_2011v2.zip>`_ (last updated: 15 Dec 2011)
+- `PsychoPy Undergraduate Practicals <https://psychology.nottingham.ac.uk/staff/lpzjd/psgy1001-21/psychopy-basics.html>`_ (last updated: 12 Jan 2022). Thanks `Jan Derfuss <https://www.nottingham.ac.uk/psychology/people/jan.derrfuss>`_
 
 We have started putting together an  `experiment recipe book <https://workshops.psychopy.org/tutorials/index.html>`_ with a range of basic experiments and exercises pitched at a range of levels (open to submissions and contributions!). 
 
