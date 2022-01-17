@@ -23,7 +23,7 @@ PsychoPy is an Open Source project, the users have access to the code and can co
 
 In terms of the "core team" , thanks to Pavlovia users and grants we can now fund staff to work on developing the tools and supporting users.
 
-.. figure:: /_images/team2021.png
+.. figure:: /_images/team2022.png
     :scale: 30%
     
 About the workshop
