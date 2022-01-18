@@ -36,7 +36,7 @@ After selecting new project:
 Connect PyCharm to Github
 ----------------------------
 
-To access the PsychoPy source code, you would need to connect PyCharm to Github.
+The PsychoPy source code is located at Github. To access it, you would need to connect PyCharm to Github.
 
 |
 .. image:: /_images/VCS_1.png
