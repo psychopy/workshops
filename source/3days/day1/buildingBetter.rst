@@ -65,6 +65,26 @@ Every experiment starts with a dialog box to gather some info about the particip
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
+.. _keyboardAccuracy:
+
+Storing accuracy 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+It is very easy to store accuracy from a keyboard in PsychoPy. In our experiment, the participant can press either the left or right arrow key. So, we add a column to our spreadsheet to indicate what the correct answer is. 
+
+.. figure:: /_images/keyboard_acc_spreadsheet.png
+
+	In this examle, the numerically larger number is the correct answe. The corrAns column tells us which key is the correct answer. 
+
+.. nextslide::
+
+In our keyboard component, we can then select "Store correct" and use the variable :code:`$corrAns` in the field. 
+
+.. figure:: /_images/store_correct_keyboard.png
+	
+	The data tab of the keyboard component, to store the correct answer click "store correct" if the correct answer changes trial by trial use a variable that is set from the spreadsheet.
+
+
 .. _blockDesigns3Days:
 
 
