@@ -91,7 +91,7 @@ When people have several "blocks" the natural move is to add separate routines f
 
 .. image:: /_images/natural_error.png
 
-However, if both blocks contain the same stimuli/elements (e.g. a Posner task with a fixation, cue and image, but where the position of the cue varies between blocks), this is not the most efficient approach. 
+However, if both blocks contain the same stimuli/elements (e.g. in a number stroop both valid/congruent trials and incongruent trials contain two numbers and a keyboard response), this is not the most efficient approach. 
 
 
 Blocking: Case 1
@@ -113,12 +113,12 @@ If you do have 2 blocks that contain very different stimuli the approach to take
 Blocking: Our example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Imagine we want to extend our Posner task to include a block of invalid trials and a block of valid trials. 
+Imagine we want our task to include a block of neutral trials and a block of congruent/incongruent trials. 
 
 We need to create a total of 3 conditions files:
 
-- valid_conditions.xlsx
-- invalid_conditions.xlsx
+- neutral_conditions.xlsx
+- congruency_conditions.xlsx
 - blocks.xlsx (the conditions file used in the outer loop)
 
 Introducing a block
@@ -162,10 +162,6 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 - For the block loop use that value by calling `expInfo['group']` using one of the alternatives below::
 
 	$"block" + expInfo['group'] + ".xlsx"
-	$"block{}.xlsx".format( expInfo['group'] )
-	$f"block{expInfo['group']}.xlsx"
-
-*Note: This last kind of formatting is termed an 'fstring' in python - we will talk about that more later. If you are running experiments online, the first method will work best*
 
 .. nextslide::
 
