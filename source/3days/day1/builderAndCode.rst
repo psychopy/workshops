@@ -49,7 +49,7 @@ It can be useful:
     `t` is always the current time in sec since the start of the Routine
 
 One-way streets
-^^^^^^^^^^^^^^^^^
+------------------
 
 You could save and run this exported script (that's what Builder does each time you press run).
 
@@ -120,10 +120,74 @@ Do you want you custom code executed before or after your stimulus?
   *The dir() method is a python specific function - so be careful if you leave that in your code when pushing your experiment online!*
 
 
-Example uses of code in PsychoPy
-================================
+.. _addingFeedback:
 
 
+Adding feedback
+=========================
+
+Trial-by-trial (from a key press)
+-----------------------------------
+
+When we use a keyboard component for our responses, there are a few variables returned on the key press:
+
+- :code:`key_resp.keys`: Key name(s) that were pressed.
+- :code:`key_resp.rt`: The response time(s) of key presses.
+- :code:`key_resp.corr`: If a correct answer was provided to the component (under "Data" tab) this will return 1/0 for if the response was correct/incorrect.
+
+.. nextslide::
+
+Following this you could use a code component to give response dependent feedback::
+	
+	if key_resp.corr:
+		feedback = ' Correct!'
+	else:
+		feedback = 'Incorrect'
+
+Using :code:`$feedback` in a Text component. 
+
+
+Overall feedback (from a key press)
+-----------------------------------
+
+Sometimes we might want to tell our participant how well they did overall. For example, we might want to tell them the percentage of correct answers they got. 
+
+.. nextslide::
+
+For this we would need two variables, the number of trials and the number of correct responses. 
+
+In the Begin Experiment tab, we could use:
+
+.. code::
+
+	totalTrials = 0
+	totalCorrect = 0
+
+Then in the End Routine tab we could use:
+
+.. code::
+
+	totalTrials += 1
+	totalCorrect += key_resp.corr
+
+.. nextslide::
+
+Finally, at the end of our experiment we could add a text component and use some code in the text field :code:`$'You scored' + str((totalCorrect/totalTrials)*100) + '% correct!'`. If you want to be kind to future you, you could even save this summary variable to your data file by adding a code component to your last routine :code:`thisExp.addData('percent_correct', (totalCorrect/totalTrials)*100)`
+
+.. nextslide::
+
+We can also obtain similar fedback when :ref:`usingMouse` (but let's save that for later!)
+
+*Exercise (10 mins)*
+---------------------
+
+So far we've covered feedback on accuracy, but not feedback on response times. We can access response times in a similar way using :code:`key_resp.rt`:
+
+* Give trial-by-trial feedback on how fast the participant was. 
+* Use a conditional (if/then) code component to set the color of the feedback to be red if the response is slow ( > 1 second) and green if it is fast ( < 1 second). 
+
+More code examples
+=========================
 
 Inserting a timer
 -------------------
@@ -181,60 +245,11 @@ Storing custom variables
 
 It is really handy to be able to save custom variables to our data file. Following the example of randomizing image order, we could save the image list to our data file using :code:`thisExp.addData('imageList', imageList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
 
-Adding feedback
---------------------------------------
-
-**Response time feedback from a mouse** 
-
-In our Posner example, we are using mouse responses. So long as the data from the mouse is set to save *On Click* (see data tab) this will return several values we can use for feedback:
-
-- :code:`mouse.time` the time(s) of the mouse click(s). 
-- :code:`mouse.clicked_name` the name(s) of the last object clicked
-
-.. nextslide::
-
-Adding a text component and writing :code:`$mouse.time[-1]` in the text field would show the time of the last mouse click. 
-
-.. nextslide::
-
-**Accuracy feedback from a mouse** 
-
-Imagine we wanted to check our participant had selected the correct object. We could add a column to our conditions file e.g. "corrClick" then use a code component to check if this was correct::
-
-	if mouse.clicked_name[-1] == corrClick:
-		correct = 1
-		print('correct!')
-	else:
-		correct = 0
-		print('incorrect')
-
-Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
-
-.. nextslide::
-
-**Response time feedback from a key press** 
-
-When we use a keyboard component for our responses, there are a few variables returned on the key press:
-
-- :code:`key_resp.keys`: Key name(s) that were pressed.
-- :code:`key_resp.rt`: The response time(s) of key presses.
-- :code:`key_resp.corr`: If a correct answer was provided to the component (under "Data" tab) this will return 1/0 for if the response was correct/incorrect.
-
-.. nextslide::
-
-Following this you could use a code component to give response dependent feedback::
-	
-	if key_resp.corr:
-		feedback = ' Correct!'
-	else:
-		feedback = 'Incorrect'
-
-Using :code:`$feedback` in a Text component. 
 
 In our experiment
 ---------------------
 
-Following these examples, let's add different kinds of feedback to our Posner task - :ref:`addingFeedback`
+Following these examples, let's add different kinds of feedback to our task - :ref:`addingFeedback`
 
 We can make more flexible and dynamic experiments using code, including:
    - :ref:`clocksAndTrialCounders`
