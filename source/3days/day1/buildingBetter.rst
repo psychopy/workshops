@@ -9,7 +9,7 @@ Using Builder
 
 All the base knowledge we assume at the start of this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
-In this demo we will work through making a Posner task in PsychoPy you can `download the materials here <https://workshops.psychopy.org/psychopy_examples.zip>`_ (open builder > posnerTargets).
+In this demo we will work through making a `Numerical Stroop <https://run.pavlovia.org/demos/numericalstroop/html/>`_  task in PsychoPy.
 
 What makes a PsychoPy experiment?
 --------------------------------------
@@ -18,15 +18,23 @@ A builder experiment has three main sections. To start making an experiment we a
 
 .. image:: /_images/builder_terms.png
 
+Creating a routine
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A Routine is the basic building block of PsychoPy experiments. They could be complex (e.g. a single trial) or simple (e.g. an Inter-Trial-Interval presenting a fixation cross). 
+
+.. image:: /_images/routines_basics.png
+
+To begin with, we want a routine to present two numbers on the screen.
+
 Changing things trial-by-trial (the "conditions" file)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you are going to change something on every repeat of a routine (e.g. stimulus location on each trial) you can use a *Conditions* file. This is fed into the loop surrounding the routine.
+To present several trials, add a loop around the routine to repeat. If something changes trial-by-trial, we make a spreadsheet (this can be made in excel). Each header is a variable, each row corresponds to the value of that variable on each trial.
 
-.. image:: /_images/loops_and_conditions.png
-
-
-Each header is a variable, each row corresponds to the value of that variable on each repeat/trial.
+.. figure:: /_images/loops_and_conditions.png
+	
+	Once we have inserted a loop we can add a spreadsheet of trials to the "conditions" field.
 
 .. nextslide::
 
@@ -34,21 +42,8 @@ Then make sure to use that variable to set the parameter of a component on every
 
 .. image:: /_images/set_every_repeat.png
 
-Let's practice making minor edits
+Let's start by presenting a different pair of numbers on each trial and allowing the participant to press the left and right arrow keys to press a number.
 
-Creating a routine
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Let's add some instructions to our experiment. Imagine that we have several sets of instructions to present, but in every set, the instructions consist of the same components:
-
-- A text (or image) component to explain the task.
-- A way of allowing the participant to move on through the instructions (using a key press or an on-screen button)
-
-.. nextslide::
-
-We could add a basic routine, but we could also add a loop around our instructions routine to iterate over a set of instructions (with that loopType set to "sequential"). 
-
-.. image:: /_images/routines_basics.png
 
 Gather some additional info (e.g. age)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -61,13 +56,12 @@ Every experiment starts with a dialog box to gather some info about the particip
 	In the current release (2021.2.3) check box options are not yet supported online.
 
 
-*Warm up exercises (10 mins)*
+*Warm up exercise (10 mins)*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Add a 'neutral' condition to our task:
-	Use the double headed arrow in the images folder for the neutral stimulus. The neutral stimulus can cue a target on the left or the right.
-- Add a 'thanks' message to tell participants when they end the experiment.
-- Replace the series of instructions text with a series of images (see the images/instructions folder for pre-made slides).
+- Make the size (letter height) of the numbers change trial.
+- Add a column to the conditions spreadsheet to note if this trial is congruent (numerically larger number is also physically larger) or incongruent (numerically larger number is physically smaller). 
+- Add an instructions routine and a thanks routine to the experiment. 
 
 When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
 
