@@ -340,12 +340,10 @@ Each loop we add to our experiment will automatically be counting the number of 
 Showing trial progress
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units pos = (-0.4, 0.4)). In the text field add :code:`$'Progress: ' + str(trials.thisN) + '/' + str(trials.nTotal)`. 
+Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units :code:`pos = (-0.4, 0.4)`). In the text field add :code:`$'Progress: ' + str(trials.thisN) + '/' + str(trials.nTotal)`. 
 
 
-In our experiment
+What next?
 ---------------------
 
-We can make more flexible and dynamic experiments using code, including:
-   - :ref:`clocksAndTrialCounders`
-   - :ref:`mouse3days`
+OK so we've covered ALOT if we have time let's talk more on other response options including :ref:`mouse3days`
