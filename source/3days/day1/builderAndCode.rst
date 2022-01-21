@@ -181,10 +181,10 @@ We can also obtain similar fedback when :ref:`usingMouse` (but let's save that f
 *Exercise (10 mins)*
 ---------------------
 
-So far we've covered feedback on accuracy, but not feedback on response times. We can access response times in a similar way using :code:`key_resp.rt`:
 
-* Give trial-by-trial feedback on how fast the participant was. 
-* Use a conditional (if/then) code component to set the color of the feedback to be red if the response is slow ( > 1 second) and green if it is fast ( < 1 second). 
+
+* Use a conditional (if/then) code component to set the color of the feedback to be green if the response is correct and red if incorrect. 
+* Give trial-by-trial feedback on how fast the participant was. Hint: you can access response times from a keypress using  :code:`key_resp.rt` and convert numbers to strings using :code:`str(x)` where :code:`x` is your number. 
 
 More code examples
 =========================
@@ -202,6 +202,38 @@ To show the participant the time into a trial, we don't even need a code compone
 This might return a value that is quite long, so, to round that we could use :code:`round(t, 3)`
 
 
+Ending a set of trials early
+-----------------------------------------------
+
+Imagine we want a set of practice trials, that will end when your participant gets 5 correct. 
+
+You can use the code :code:`trials.finished = True` to end a loop early. So, you could say:
+
+.. code::
+	if totalCorrect >= 5:
+		practice_trials.finished = True # practice_trials is the name of the loop
+
+Ending or skippng a routine
+-----------------------------------------------
+
+Imagine we want to skip a routine/trial (for example to only show a routine on some trials). You can add a code component and use
+
+.. code::
+    continueRoutine = False
+
+To end or skip a routine. 
+
+.. nextslide::
+
+This can be extended to insert a break. The modulus operator :code:`%` can be used to say if a number has any remainders following a division, so, if we want a break every 5th trial we could add a routine in our trial loop called "breakMsg" and add a code component with the following in the begin routine:
+
+.. code::
+    if trials.thisN + 1 % 5 > 0:
+        continueRoutine = False
+
+Note that we add 1 because pytohn indexing starts at 0. 
+
+
 Making a branched experiment
 --------------------------------------
 A branched experiment refers to an experiment in which one of two paths could be taken, depending on the response given. A *very* basic example of a branched experiment could be if the participant chooses to consent or not, if they do consent the experiment progresses, otherwise the experiment skips to a thank-you message. 
@@ -217,33 +249,21 @@ Add a Routine to the start of our experiment called "consent" and add two clicka
 
 Then add a loop around the rest of your experiment and use :code:`$mainLoopReps` in the :code:`nReps` field. This is a basic example, but you could imagine how this could be used for other branched experiments to show different parts of your experiment to different participants. 
 
-Inserting a break
--------------------
 
-Imagine you want to insert a break every 10th trial. You could add a routine in your trial loop, then add a code component and use this in the *Begin Routine* tab::
-
-	if (trials.thisN + 1) % 10 > 0:
-	    continueRoutine = False
-
-- :code:`trials.thisN + 1`: *why do we add one?* because python indexing starts at 0, so the first trial is 0. 
-- The modulus operator :code:`%` determines the remainder of a dividion. i.e. if this trial number is divisible by 10 it will return 0. 
-- :code:`continueRoutine` tells us whether this routine should continue or not. If false, this routine will terminate (i.e. not present).
-
-Randomizing the order of stimuli (e.g. images)
-------------------------------------------------
+Randomizing the position of stimuli (e.g. images)
+---------------------------------------------------
 
 Imagine you have 4 images to present in 4 locations. On each trial, you want the location for each image to be selected randomly. You could add a code component, and in the `Begin Routine` tab write::
 	
-	imageList = ['images/im1.jpg', 'images/im2.jpg', 'images/im3.jpg', 'images/im4.jpg']
-	shuffle(imageList)
+	xList= [-.5, -.25, .25, .5]
+	shuffle(xList)
 
-Then in your image components use :code:`$imageList[0]`, :code:`$imageList[1]` and so on... *making sure to set every repeat*
-
+Then in the position field of each image component  use :code:`[xList[0], 0]`, :code:`[xList[1], 0]` and so on... *making sure to set every repeat* 
 
 Storing custom variables
 --------------------------------------
 
-It is really handy to be able to save custom variables to our data file. Following the example of randomizing image order, we could save the image list to our data file using :code:`thisExp.addData('imageList', imageList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
+It is really handy to be able to save custom variables to our data file. Following the example of randomizing image position, we could save the xlist to our data file using :code:`thisExp.addData('xList', xList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
 
 
 In our experiment
