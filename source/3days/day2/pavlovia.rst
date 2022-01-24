@@ -118,10 +118,10 @@ Let's quickly make a basic experiment and put it online:
 4. Change your study to piloting and check that it runs by changing it to pilot mode and select "pilot".
 5. Redirect your participant to PsychoPy.org when they have completed the task, redirect them to pavlovia.org if they do not complete the task.
 
-Let's push the Posner online!
+Let's push our task online!
 -------------------------------
 
-Let's try :ref:`builderToPavlovia`
+Let's try putting the task we made in day 1 online and getting some data together!
 
 
 .. _debuggingOnline:
@@ -134,7 +134,7 @@ Why do we need to debug?
 
 So your task was running perfectly offline, then you pushed it online, and it doesn't work - why? There are lot's of reasons something might not work online, but the most common errors are coding errors. 
 
-Remember that locally PsychoPy runs a compiled python experiment. Online pavlovia runs your compiled *Javascript* experiment which uses the `PsychoJS library <https://github.com/psychopy/psychojs>`_. 
+Remember that locally PsychoPy runs a compiled python experiment. Online pavlovia runs your compiled *JavaScript* experiment which uses the `PsychoJS library <https://github.com/psychopy/psychojs>`_. 
 
 .. nextSlide::
 
@@ -196,13 +196,13 @@ This means that you are referencing a variable that is not yet defined in your J
 
 **Using python modules** 
 
-Semantic errors commonly happen when researchers try to use python libraries or functions that don't exist in Javascript e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like thisthat need manually translating. Here, there is a handy list of python terms and there equivalent JavaScript term (A huge credit to `Wakefield Morys-Carter <https://uk.linkedin.com/in/wakecarter>`_ for compiling this). 
+Semantic errors commonly happen when researchers try to use python libraries or functions that don't exist in Javascript e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like this that need manually translating. Here, there is a handy list of python terms and there equivalent JavaScript term (A huge credit to `Wakefield Morys-Carter <https://uk.linkedin.com/in/wakecarter>`_ for compiling this). 
 
 .. nextSlide::
 
 **Declaring variables**
 
-Another reason a semantic error could occur is if you have created a custom function that can't be accessed from within the location it is called. 
+This is a rarer one, but handy to know about. Another reason a semantic error could occur is if you have created a custom function that can't be accessed from within the location it is called. 
 
 Generally when you make custom variables in code components, PsychoPy will identify those and automatically declare that variable before the experiment initializes i.e. :code:`var myVariable1` will be seen at the start of the experiment. If this doesn't occur it might be that you need to add that yourself to the "Before experiment" tab. 
 
@@ -227,7 +227,7 @@ Your image is a ".jpeg" but you have accidentally used the extension ".png"
 
 **Resources defined through code**
 
-If a resource is defined through code rather than from a conditions file or component field then PsychoPy can fail to "prepare" for the eventuallity that resource is needed. In cases like this it is always a good idea to manually add any additional resources you might need to the *additional resources* section of the experiment settings when :ref:`additionalResources`. 
+If a resource is defined through code rather than from a conditions file or component field then PsychoPy can fail to "prepare" for the eventuality that resource is needed. In cases like this it is always a good idea to manually add any additional resources you might need to the *additional resources* section of the experiment settings when :ref:`additionalResources`. 
 
 .. _typeError:
 
@@ -243,10 +243,12 @@ How do we fix errors?
 
 **Pre 2021.2.2**
 
-Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to JavaScript. If you update you will save alot of headaches. For these undefined errors we recommend looking at the `archived version of the crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ and adding a code component to the first routine where we "tell" JavaScript what we mean by providing the JS alternatives to anything undefined. 
+Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to JavaScript. If you update you will save a lot of headaches. For these undefined errors we recommend looking at the `archived version of the crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ and adding a code component to the first routine where we "tell" JavaScript what we mean by providing the JS alternatives to anything undefined. 
 
-.. image:: /_images/JSsnippet.png
+.. figure:: /_images/JSsnippet.png
     :align: center
+
+    A code component pre 2021.2 where we would have to add a lot of manual translations at the beginning of the experiment - ew!
 
 
 **Still relevant to 2021.2.2**
@@ -394,6 +396,11 @@ You can change the visibility of your task at any time under permissions. **Reme
 .. only:: latex
     .. image:: /_gifs/gitlab_privacy.png
         :align: center
+
+Making suggested edits to a shared project
+----------------------------------------------
+A handy thing is that if you fork a project and edit *your own version of that project* you can later make a merge request to the original project to suggest changes, this can be handy if you are working as a team on the same experiment.
+
 
 *Exercises (10-15 mins)*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
