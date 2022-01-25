@@ -74,7 +74,7 @@ It is very easy to store accuracy from a keyboard in PsychoPy. In our experiment
 
 .. figure:: /_images/keyboard_acc_spreadsheet.png
 
-	In this examle, the numerically larger number is the correct answe. The corrAns column tells us which key is the correct answer. 
+	In this example, the numerically larger number is the correct answer. The corrAns column tells us which key is the correct answer. 
 
 .. nextslide::
 
@@ -111,7 +111,7 @@ When people have several "blocks" the natural move is to add separate routines f
 
 .. image:: /_images/natural_error.png
 
-However, if both blocks contain the same stimuli/elements (e.g. in a number stroop both valid/congruent trials and incongruent trials contain two numbers and a keyboard response), this is not the most efficient approach. 
+However, if both blocks contain the same stimuli/elements (e.g. in a number Stroop both valid/congruent trials and incongruent trials contain two numbers and a keyboard response), this is not the most efficient approach. 
 
 
 Blocking: Case 1
@@ -126,7 +126,7 @@ Then you can set the conditions files in your blocks loop to control the block-l
 Blocking: Case 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you do have 2 blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outer-loop. 
+If you do have two blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outer-loop. 
 
 .. image:: /_images/case2_blocks.png
 
@@ -188,12 +188,12 @@ Easiest way is by hand at the start of the run for the participant. The steps ar
 .. image:: /_images/counterbalancing_loop.png
 
 .. note:: 
-	:code:`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format :code:`dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input recieved at startup!
+	:code:`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format :code:`dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input received at startup!
 
 *Exercises*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Let's practice counterbalancing in different ways using the exercises in the folder you downloaded ("builder > counterbalancingExercises"). In "exercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
+Let's practice counterbalancing in different ways using the exercises in `this folder  <https://workshops.psychopy.org/psychopy_examples.zip>`_  ("builder > counterbalancingExercises"). In "exercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
 
 1. Turn this inefficient design into a randomized block design. (the cat and dog images are presented in blocks, but in a random order)
 2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
@@ -246,10 +246,7 @@ You can now create trials and blocks in any order, fixed or random and counterba
 
 You're in complete control (but you need to understand what orders you want!)
 
-*Up next* 
+*Up next* :ref:`builderAndCode`
 
-:ref:`builderAndCode`
-
-:ref:`mouse3days`
 
 

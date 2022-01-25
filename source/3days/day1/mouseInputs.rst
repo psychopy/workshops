@@ -1,10 +1,54 @@
+.. _usingMouse:
+
+Using mouse/touchscreen responses
+===================================
+
+Mouse responses register as touch responses on touch screen devices, so they do make for a more portable online study. 
+
+.. figure:: /_images/mouse_component.png
+            
+            The parameters of a mouse component. To store click times use he settings in the "Data" tab.
+
+.. _mouseFeedback:
+
+Feedback from a mouse
+-----------------------------------
+
+**Response time feedback from a mouse** 
+
+In our example, we could use a mouse response by allowing the participant to click on one of the numbers. So long as the data from the mouse is set to save *On Click* (see data tab) this will return several values we can use for feedback:
+
+- :code:`mouse.time` the time(s) of the mouse click(s). 
+- :code:`mouse.clicked_name` the name(s) of the last object clicked
+
+.. nextslide::
+
+Adding a text component and writing :code:`$mouse.time[-1]` in the text field would show the time of the last mouse click. 
+
+.. nextslide::
+
+**Accuracy feedback from a mouse** 
+
+Imagine we wanted to check our participant had selected the correct object. We could add a column to our conditions file e.g. "corrClick" then use a code component to check if this was correct::
+
+    if mouse.clicked_name[-1] == corrClick:
+        correct = 1
+        print('correct!')
+    else:
+        correct = 0
+        print('incorrect')
+
+Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
+
+
 
 .. _mouse3days:
 
 Making the most of mouse inputs
 =================================
 
-There are some neat aspects to the mouse that can make for interesting interactive experiments
+There are some neat aspects to the mouse that can make for interesting interactive experiments.
+
 
 Stimuli that move with the mouse
 ----------------------------------
@@ -131,4 +175,5 @@ For loops allow us to repeat the same set of code over a predefined n or over a 
     - `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_
     - `The psychoJS API <https://psychopy.github.io/psychojs/module-visual.Polygon.html>`_
     - `The forum <https://discourse.psychopy.org/>`_
+
 

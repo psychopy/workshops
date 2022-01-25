@@ -13,8 +13,8 @@ import sys
 import os
 
 # JUST CHANGE THESE AND LET THE REST POPULATE
-year = "2021"
-release = 'September 2021'
+year = "2022"
+release = 'January 2022'
 project = u'Workshops for PsychoPy {}'.format(year)
 copyright = u'{}, Open Science Tools'.format(year)
 authors = u'Open Science Tools'
