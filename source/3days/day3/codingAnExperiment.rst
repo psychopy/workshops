@@ -15,7 +15,7 @@ In this session we'll create an experiment from scratch using only Python code. 
 
 - It's useful to learn how to code anyway, and an experiment is a good visual goal. 
 - You will get a better understanding of how builder is working
-- You can transfer most of the code you elarn back into builder
+- You can transfer most of the code you learn back into builder
 
 .. nextslide::
 
