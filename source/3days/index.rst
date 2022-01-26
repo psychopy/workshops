@@ -70,7 +70,6 @@ Day 1: Building Better Experiments
   day1/builderAndCode
   day1/clocksAndTrialCounters
   day1/usingFeedback
-  day1/mouseInputs
 
 Day 2: Taking experiments online with Pavlovia
 ------------------------------------------------
