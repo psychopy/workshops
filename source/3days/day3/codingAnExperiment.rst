@@ -7,7 +7,19 @@
 Coding a full experiment
 ============================================
 
-In this session we'll create an experiment from scratch using only Python code.
+In this session we'll create an experiment from scratch using only Python code. We've provided more specific detail on :ref:`syntax` later in this material for future reference. 
+
+.. nextslide::
+
+**Why are we coding an experiment when we just spent two days telling you even good coders should use builder?**
+
+- It's useful to learn how to code anyway, and an experiment is a good visual goal. 
+- You will get a better understanding of how builder is working
+- You can transfer most of the code you elarn back into builder
+
+.. nextslide::
+
+To start with we will learn the fastest way to code an experiment (with the simplest code), but this doesn't mean it is the "best" way - so do check out the suggested :ref:`Improvements3days`.
 
 The Posner Cuing task
 ------------------------
@@ -109,6 +121,9 @@ This has various knock-on effects:
 - Also, if Python/PsychoPy has to run too much code between flips you might 'drop' a frame (fail to get it drawn by the time of the screen refresh)
 - If you don't call `flip()` for a while, or if you drop a frame, the screen will stay as it is for another frame
 
+.. note::
+    If you want to check how reliable your frame rate is. Open PsychoPy coder, select "Demos > timing > timeByFrames.py" this will show you a frequency distribution of the recorded frame intervals. On a 60Hz monitor, you would want a tight normal distribution around 16.66ms. 
+
 Set some timing parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -185,12 +200,16 @@ Solution::
         win.flip()
         info['probeTime']
 
+.. nextSlide::
+
+Remember us mentioning makign an experiment was a good way to learn to code? Well, this is a useful point for us to practice different methods for :ref:`loops` in Python. 
+
 .. _trialHandler:
 
 TrialHandler
 ------------------------
 
-This allows you to run multiple trials of different conditions in various ways (random or sequential etc.). It lives in the PsychoPy's `data` module, which we already imported.
+The ` TrialHandler <https://psychopy.org/api/data.html#psychopy.data.TrialHandler>`_ allows you to run multiple trials of different conditions in various ways (random or sequential etc.). It lives in the PsychoPy's `data` module, which we already imported. You can think of it as representing the properties of a loop dialogue box in builder. 
 
 To repeat our trials using the TrialHandler instead of the basic for loop we can do this::
 
@@ -212,7 +231,7 @@ You could have achieved exactly the same as this using code to create a list of 
 Create a conditions file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We can import conditions from either *.xlsx* or *.csv* files.
+We can import conditions from either *.xlsx* or *.csv* files (the same way we do in builder).
 
 Create a file with:
 
@@ -335,7 +354,7 @@ And store the responses in the TrialHandler::
 Using the ExperimentHandler
 -------------------------------
 
-For today the `ExperimentHandler` isn't strictly needed, but it allows some nice things so we'll use it:
+For today the `ExperimentHandler <https://psychopy.org/api/data.html#psychopy.data.ExperimentHandler>`_ isn't strictly needed, but it allows some nice things so we'll use it:
 
 - it allows multiple loops/handlers to be combined into one (e.g. we could have a loop of practice trials and another loop of main trials)
 - it saves data automatically in 3 formats even if there's an error:
@@ -343,6 +362,9 @@ For today the `ExperimentHandler` isn't strictly needed, but it allows some nice
   - log file for detail but not for analysis
   - csv file trial-by-trial is easy for analysis
   - psydat file contains more info about trials than csv file (and can regenerate the csv!)
+
+.. note::
+    The experiment handler kind of represents your flow in builder, it can handle several loops and routines. You can also make useful calls like `thisExp.addData()` and `thisExp.nextEntry()`
 
 
 .. nextslide::
