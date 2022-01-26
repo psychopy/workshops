@@ -265,7 +265,7 @@ Storing custom variables
 
 It is really handy to be able to save custom variables to our data file. Following the example of randomizing image position, we could save the xlist to our data file using :code:`thisExp.addData('xList', xList)` the function :code:`addData()` takes 2 arguments - the first is the value for the column header in the output file, the second it the value of the variable to save. 
 
-.. _clocksAndTrialCounders:
+.. _clocksAndTrialCounters:
 
 Clocks and trial counters
 ===============================
@@ -343,7 +343,181 @@ Showing trial progress
 Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units :code:`pos = (-0.4, 0.4)`). In the text field add :code:`$'Progress: ' + str(trials.thisN) + '/' + str(trials.nTotal)`. 
 
 
-What next?
----------------------
+.. _usingMouse:
 
-OK so we've covered ALOT if we have time let's talk more on other response options including :ref:`mouse3days`
+Using mouse/touchscreen responses
+===================================
+
+Mouse responses register as touch responses on touch screen devices, so they do make for a more portable online study. 
+
+.. figure:: /_images/mouse_component.png
+            
+            The parameters of a mouse component. To store click times use he settings in the "Data" tab.
+
+.. _mouseFeedback:
+
+Feedback from a mouse
+-----------------------------------
+
+**Response time feedback from a mouse** 
+
+In our example, we could use a mouse response by allowing the participant to click on one of the numbers. So long as the data from the mouse is set to save *On Click* (see data tab) this will return several values we can use for feedback:
+
+- :code:`mouse.time` the time(s) of the mouse click(s). 
+- :code:`mouse.clicked_name` the name(s) of the last object clicked
+
+.. nextslide::
+
+Adding a text component and writing :code:`$mouse.time[-1]` in the text field would show the time of the last mouse click. 
+
+.. nextslide::
+
+**Accuracy feedback from a mouse** 
+
+Imagine we wanted to check our participant had selected the correct object. We could add a column to our conditions file e.g. "corrClick" then use a code component to check if this was correct::
+
+    if mouse.clicked_name[-1] == corrClick:
+        correct = 1
+        print('correct!')
+    else:
+        correct = 0
+        print('incorrect')
+
+Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
+
+
+
+.. _mouse3days:
+
+Making the most of mouse inputs
+=================================
+
+There are some neat aspects to the mouse that can make for interesting interactive experiments.
+
+
+Stimuli that move with the mouse
+----------------------------------
+
+It's the easiest thing in the world to make a stimulus appear at the location of the mouse:
+
+- add a Mouse Component (let's call it `mouse`)
+- set the position of your stimulus to be at `mouse.getPos()` and **update on every frame**
+
+Stimuli that act as buttons
+----------------------------------
+
+To turn a stimulus (almost any stimulus) into a button:
+
+- Add a Mouse Component (let's call it `resp`)
+- In the Mouse object, provide the names of stimuli that are "clickable"
+- Optionally, insert whatever attributes about that stimulus you want to store
+
+Is the mouse in *this* area?
+---------------------------------------------
+
+Most stimuli (except for text) have a method `.contains()` and so we can test whether the mouse is at that location.
+
+Let's create a circle called `myStim` and an object that tracks the mouse, called `marker` and make `marker` change color if it goes inside the circle.
+
+All we need is a Code Component with "Each Frame" set to::
+
+  if myStim.contains(mouse):
+    marker.color = 'red'
+  else:
+    marker.color = 'blue'
+
+.. note::
+  To take this online we need a slight edit::
+  
+    polygon.fillColor = new util.Color("red");
+
+  instead of::
+
+    polygon.color = 'red'
+
+
+.. nextslide::
+
+The stimulus that you test can be moving and that's fine too. The `.contains()` method doesn't care if the position is changing!
+
+The "stimulus" can also be invisible (so you're effectively just using it to define an "area" rather than a stimulus).
+
+Is the mouse "pressed in"
+---------------------------------------------
+
+You can continuously check if a mouse is pressed in an object using the mouse.isPressedIn(x) method. To check if the mouse is in the area of x and if one of the buttons is pressed in. 
+
+Creating a button
+---------------------------------------------
+
+Using the fact that we can easily work out where a mouse is we can create dynamic "buttons" with a bit of code as well:
+
+- create a stimulus
+- test whether the mouse is contained in that stimulus
+- test whether the mouse button(s) are being pressed
+
+You can even make your button change when it has been pressed (e.g. stimuli that disappear once you click them?) or when you hover over them
+
+
+What next?
+---------------------------------------------
+
+OK so we have covered the basics of making a task and how to do exciting dynamic things with the mouse. Let's touch on a relatively new response type...
+
+:ref:`typedResponses3days`
+
+*Exercise (time pending)*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Let's practice what we know about mouse inputs to make a dot to dot demo. Participants will see a set of polygons and connect them (this allows us also to try the brush component!). When the mouse enters a polygon change it's colour.
+
+.. nextslide::
+
+We need:
+
+- A number of polygons (keep the number small for now)
+- A mouse
+- The 'brush' component (our pencil to join the dots)
+- A code component to turn the polygons red when the mouse is clicked in their location
+
+.. nextslide::
+
+*If you still have time* Repeat our dot-to-dot trial 3 times and present the dots in new locations on each trial. Use a clickable button to end each trial.
+
+Side tip:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+We have already seen how we can use 'conditional if' statements in python. And we could just use several of these statements to check if the mouse is in each polygon individually e.g.::
+
+      if mouse.isPressedIn(polygon1):
+        polygon1.color = 'red'
+      if mouse.isPressedIn(polygon2):
+        polygon1.color = 'red'
+      if mouse.isPressedIn(polygon3):
+        polygon1.color = 'red'
+
+Alternatively, we could use a 'for' loop... 
+
+.. nextslide::
+
+For loops allow us to repeat the same set of code over a predefined n or over a set of objects. e.g.::
+
+  polygons=[polygon1, polygon2, polygon3]
+  for polygon in polygons:
+    if mouse.isPressedIn(polygon):
+        polygon.color = 'red'
+
+
+.. note::
+  To take this online we need a slight edit::
+  
+    polygon.fillColor = new util.Color("red");
+
+  instead of::
+
+    polygon.color = 'red'
+
+  For useful tips on getting things online use:
+    - `The psychopy to JS crib sheet <https://docs.google.com/document/d/13jp0QAqQeFlYSjeZS0fDInvgaDzBXjGQNe4VNKbbNHQ/edit#>`_
+    - `The psychoJS API <https://psychopy.github.io/psychojs/module-visual.Polygon.html>`_
+    - `The forum <https://discourse.psychopy.org/>`_
+

@@ -68,8 +68,6 @@ Day 1: Building Better Experiments
   day1/introductions
   day1/buildingBetter
   day1/builderAndCode
-  day1/clocksAndTrialCounters
-  day1/usingFeedback
 
 Day 2: Taking experiments online with Pavlovia
 ------------------------------------------------
