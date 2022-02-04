@@ -11,7 +11,8 @@ Open Science Tools official workshops
 
 Upcoming events
 ------------------
-* Upcoming dates to be confirmed
+
+* Upcoming dates to be confirmed, check back soon for updates!
 
 Organizing a departmental session? contact us workshops@opensciencetools.org
 
