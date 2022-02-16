@@ -5,13 +5,7 @@ Creating Experiments in PsychoPy (Open sessions)
 Upcoming open/free events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+-------------------------------------------+----------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|      Topic                                |      Date(s)         |      Time                     |  Registration link                                                                                                                                            |
-+===========================================+======================+===============================+===============================================================================================================================================================+
-| Builder Basics     (session 1)            | Nov 8th              | 17:00 - 18:30 (UK time)       | `Register here  <https://www.eventbrite.co.uk/e/creating-experiments-in-psychopy-builder-basics-session-1-tickets-198333168847>`_                             |
-+-------------------------------------------+----------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Getting online + Extra tips   (session 2) | Nov 15th             | 17:00 - 18:30 (UK time)       | `Register here <https://www.eventbrite.co.uk/e/creating-experiments-in-psychopy-getting-online-session-2-tickets-198339768587>`_                              |
-+-------------------------------------------+----------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Dates of our next open event to be confirmed, check back soon for updates!
 
 About 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,7 +24,7 @@ If you want a *departmental session* we charge a small fee (£100) - please cont
 What can I do to prepare?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We recommend watching this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_  in advance of the session, this can get you up to speed on the materials we cover in the workshop. We believe very much in **learning by doing** our workshops work best if attendees follow along with making an experiment on their own computer whilst we talk through it's creation. 
+We recommend watching this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_  in advance of the session, this can get you up to speed on the materials we cover in the workshop. We believe very much in **learning by doing**, our workshops work best if attendees follow along with making an experiment on their own computer whilst we talk through its creation.
 
 - Please make sure that you have a `recent version of PsychoPy installed <https://www.psychopy.org/download.html>`_
 - Make sure that you have `registered for a free pavlovia.org account <https://pavlovia.org/>`_
@@ -41,7 +35,7 @@ We recommend watching this `15 minute video <https://www.youtube.com/watch?v=fIw
 Materials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The slides and materials for this workshop can be accessed Here:
+The slides and materials for this workshop can be accessed here:
 
 - :ref:`introduction3Hours`
 - :ref:`builder3Hrs`

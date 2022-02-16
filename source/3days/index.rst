@@ -5,11 +5,9 @@ Creating Experiments in PsychoPy (3 days)
 
 .. only:: html
 
-  About 
-  ---------
-
   Info
-  ^^^^^^^^^^^^^^^^
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  * Check our `Workshops <https://workshops.psychopy.org/>`_ page for dates of upcoming events!
 
   +----------------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
   |      Date                  |      Timezone                 |  Registration link                                                                                                                                            |
@@ -19,8 +17,9 @@ Creating Experiments in PsychoPy (3 days)
   | April 27th-29th              | US East Coast      | `Register here  <https://pavlovia.org/store/workshops/2022-4-27-psychopy-creating-experiments>`                                       |
   +----------------------------+-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
- 
-  These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable with appear as follows:
+  About
+  ---------
+  These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable will appear as follows:
 
 
   .. image:: /_images/timetable.png
@@ -32,7 +31,7 @@ Creating Experiments in PsychoPy (3 days)
   What do I need to know in advance?
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  The only base knowledge we will assume for this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_ .
+  The only base knowledge we will assume for this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_.
 
   What technology and/or software will I need to make the most of the workshops?
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -70,9 +69,6 @@ Day 1: Building Better Experiments
   day1/introductions
   day1/buildingBetter
   day1/builderAndCode
-  day1/clocksAndTrialCounters
-  day1/usingFeedback
-  day1/mouseInputs
 
 Day 2: Taking experiments online with Pavlovia
 ------------------------------------------------

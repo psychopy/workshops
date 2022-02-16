@@ -1,9 +1,10 @@
+
 .. _builderToPavlovia:
 
 Launching a more complex study on Pavlovia
 ===========================================
 
-Putting our Posner online
+Putting our task online
 --------------------------------------------------
 
 Sometimes the tasks that we need to push from PsychoPy to Pavlovia are quite complex. In general, if you are going online with your study - we *really* recommend pushing little and often to avoid issues getting online. Let's try and push our Posner online together to practice :ref:`pavloviaLaunch`.
