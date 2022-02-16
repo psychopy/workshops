@@ -22,7 +22,7 @@ PsychoPy is an Open Source project, the users have access to the code and can co
 
 In terms of the "core team" , thanks to Pavlovia users and grants we can now fund staff to work on developing the tools and supporting users.
 
-.. figure:: /_images/team2021.png
+.. figure:: /_images/team2022.png
     :scale: 30%
     
 About the workshop
@@ -119,8 +119,8 @@ Going further
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Builder interface:
-    - `Building Experiments in PsychoPy <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)
-    - New edition coming in January 2022
+    - `Building Experiments in PsychoPy (Second Edition) <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book273700>`_ by Peirce, Hirst and MacAskill (2022, Sage Publications)
+    - `Building Experiments in PsychoPy (First Edition) <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)
 
 Python programming (for experimental psych) but these are a bit outdated:
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
