@@ -22,7 +22,7 @@ Creating Experiments in PsychoPy (3 days)
   These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable will appear as follows:
 
 
-  .. image:: /_images/timetable.png
+  .. image:: /_images/timetable3day.png
     :align: center
     :width: 600
 
