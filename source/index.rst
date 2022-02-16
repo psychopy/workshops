@@ -12,7 +12,9 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-* **3-day workshop (US east coast time)** *January 26th - January 28th* 2022 `Information here <3days/index.html>`_ 
+* **3-day workshop** `Information here <3days/index.html>`_
+- UK - *20th - 22nd January 22th 2022* 
+- US east coast time - *27th - 29th January 2022*  
 
 Organizing a departmental session? contact us workshops@opensciencetools.org
 
