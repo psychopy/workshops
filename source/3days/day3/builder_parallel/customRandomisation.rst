@@ -89,7 +89,7 @@ We could load these variables into our experiment in several ways. Remember that
 	:code:`trials.getEarlierTrial(n)` - fetches the info of the trial n back
 
 Making a custom trial list
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once we have access to the list of trials we can pick out our random trials::
 
