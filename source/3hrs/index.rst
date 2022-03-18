@@ -5,7 +5,8 @@ Creating Experiments in PsychoPy (Open sessions)
 Upcoming open/free events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Dates of our next open event to be confirmed, check back soon for updates!
+- Session 1: 1st April 2022, 1 - 2.30pm (UK timezone)
+- Session 2: 8th April 2022, 1 - 2.30pm (UK timezone)
 
 About 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
