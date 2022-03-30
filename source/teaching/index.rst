@@ -29,14 +29,13 @@ Materials for Builder
     :alt: PsychoPy Builder book cover
     :target: https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480
 
-The **most comprehensive guide** is the book `Building Experiments in PsychoPy`_ by Peirce and MacAskill.
+The **most comprehensive guide** is the book `Building Experiments in PsychoPy <https://us.sagepub.com/en-us/nam/building-experiments-in-psychopy/book273700>`_ by Peirce, Hirst and MacAskill.
   The book is suitable for a wide range of needs and skill sets, with 3 sections for:
 
 - The Beginner (suitable for undergraduate teaching)
 - The Professional (more detail for creating more precise studies)
 - The Specialist (with info about specialist needs such as studies in fMRI, EEG, ...)
 
-**Note that a new release of this book is now due January 2022!**
 
 - `Susan Benear <https://sites.temple.edu/cnltu/susan-benear/>`_ has created some fantastic `content on using PsychoPy builder <https://tu-coding-outreach-group.github.io/cog_summer_workshops_2021/psychopy/index.html>`_  delivered as part of the Coding Outreach Group Summer Workshop. All materials are also share on `github <https://github.com/TU-Coding-Outreach-Group/cog_summer_workshops_2021/tree/main/psychopy>`_
 
