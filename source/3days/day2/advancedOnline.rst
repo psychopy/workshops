@@ -36,6 +36,13 @@ In your breakout rooms work through this stepby-step guide to implement some ada
 
 **Step 1: Forking the demo**
 
+This step is optional, it gives you a chance to learn how to fork in gitlab, but if this step is less interesting to you, and you want to get stuck in, you can just go straight to the `demo <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ and click "download". 
+
+.. image:: /_images/download_gitlab.png
+    :align: left
+
+If you want to fork here are the steps:
+
 1.	Search for and :ref:`forking` the `demo_eye_tracking2 <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ project in demos.
 2.	Click `fork <https://workshops.psychopy.org/3days/day2/pavlovia.html#finding-shared-experiments-from-pavlovia-itself>`_ and select the name space you want to fork this too. 
 3.	Go to Dashboard> Experiments, find your newly forked project and set its’ status to running. Click ‘Run’ and check that it works on your own set up (you may be asked for webcam permissions the first time you run the demo). 
