@@ -41,7 +41,7 @@ This step is optional, it gives you a chance to learn how to fork in gitlab, but
 .. image:: /_images/download_gitlab.png
     :align: left
 
-If you want to fork here are the steps:
+If you want to fork here are the steps (otherwise go straight to step 2):
 
 1.	Search for and :ref:`forking` the `demo_eye_tracking2 <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ project in demos.
 2.	Click `fork <https://workshops.psychopy.org/3days/day2/pavlovia.html#finding-shared-experiments-from-pavlovia-itself>`_ and select the name space you want to fork this too. 
@@ -53,6 +53,9 @@ If you want to fork here are the steps:
 **Step 2: Making local edits**
 
 OK so now we have our own copy of an eye tracking demo! Let’s make some edits! An important part of this exercise is that we don’t *need* to know JS in order to use this demo (but we can learn some bits along the way if we want!). We just need to know how to navigate code and what is possible. We are going to adapt the ‘tracking_trial’ routine .
+
+.. image:: /_images/tricking_routine.png
+    :align: left
 
 .. nextSlide::
 
