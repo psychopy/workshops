@@ -202,13 +202,15 @@ Semantic errors commonly happen when researchers try to use python libraries or 
 
 **Declaring variables**
 
-This is a rarer one, but handy to know about. Another reason a semantic error could occur is if you have created a custom function that can't be accessed from within the location it is called. 
+This is a rarer one, but handy to know about. Another reason a semantic error could occur is if you have created a variable in a loop, and PsychoPy hasn't "caught" that variable to declare it in JavaScript. An easy way to avoid this it to also declare that variable outside of the loop::
 
-Generally when you make custom variables in code components, PsychoPy will identify those and automatically declare that variable before the experiment initializes i.e. :code:`var myVariable1` will be seen at the start of the experiment. If this doesn't occur it might be that you need to add that yourself to the "Before experiment" tab. 
+    thisVariable = 0
+    
+    things = [1, 2, 3]
+    for thing in things:
+        if thing == 2:
+            thisVariable = 'FOUND NUMBER 2'
 
-.. nextSlide::
-
-.. image:: /_images/semantic_error.png
 
 .. _networkErrors:
 
