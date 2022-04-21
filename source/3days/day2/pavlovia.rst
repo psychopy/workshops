@@ -243,19 +243,7 @@ This can also occur because something exists in PsychoPy that does not exist in 
 How do we fix errors? 
 ----------------------------------
 
-**Pre 2021.2.2**
-
-Before PsychoPy 2021.2, there were lot's of things that did not transpile smoothly from python to JavaScript. If you update you will save a lot of headaches. For these undefined errors we recommend looking at the `archived version of the crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ and adding a code component to the first routine where we "tell" JavaScript what we mean by providing the JS alternatives to anything undefined. 
-
-.. figure:: /_images/JSsnippet.png
-    :align: center
-
-    A code component pre 2021.2 where we would have to add a lot of manual translations at the beginning of the experiment - ew!
-
-
-**Still relevant to 2021.2.2**
-
-Even though we've improved the transpiler, there are some things that either still need updating or that we can't expect to transpile i.e. whole python libraries like numpy. So if you are using specific functions you will need to find the JS equivalent and add that to your experiment. We would also then need to change code type to "Both".
+Let's find out...
 
 .. _developerTools:
 
