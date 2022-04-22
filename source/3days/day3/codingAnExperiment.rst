@@ -209,7 +209,7 @@ Remember us mentioning makign an experiment was a good way to learn to code? Wel
 TrialHandler
 ------------------------
 
-The ` TrialHandler <https://psychopy.org/api/data.html#psychopy.data.TrialHandler>`_ allows you to run multiple trials of different conditions in various ways (random or sequential etc.). It lives in the PsychoPy's `data` module, which we already imported. You can think of it as representing the properties of a loop dialogue box in builder. 
+The *TrialHandler* allows you to run multiple trials of different conditions in various ways (random or sequential etc.). It lives in the PsychoPy's `data` module, which we already imported. You can think of it as representing the properties of a loop dialogue box in builder. 
 
 To repeat our trials using the TrialHandler instead of the basic for loop we can do this::
 
