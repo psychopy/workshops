@@ -35,12 +35,12 @@ We'll be monitoring the situation to see whether that can run either remotely
 or in-person.
 
 .. only:: html
-	.. image:: /_images/jumpAnimate.gif
-	   :width: 100 %
+    .. image:: /_images/jumpAnimate.gif
+       :width: 100 %
 
 .. only:: latex
-	.. image:: /_images/jumpAnimate.png
-	   :width: 100 %
+    .. image:: /_images/jumpAnimate.png
+       :width: 100 %
 
 .. _pampr:
 

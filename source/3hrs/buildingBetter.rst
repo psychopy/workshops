@@ -247,6 +247,6 @@ You're in complete control (but you need to understand what orders you want!)
 *Up next* 
 :ref:`online`
 
-:ref:`builderAndCode`
+:ref:`codeComponents`
 
 

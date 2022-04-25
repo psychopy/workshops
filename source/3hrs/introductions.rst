@@ -15,7 +15,7 @@ The Team!
 
 PsychoPy is an Open Source project, the users have access to the code and can contribute at any time! That kind of means the team is technically huge!
 
-.. figure:: /_images/team_slide.png
+.. figure:: _images/team_slide.png
 
 
 .. nextslide::
@@ -67,7 +67,7 @@ PsychoPy provides two main options, coder view and builder view. But you can als
 
 .. nextslide::
 
-.. figure:: /_images/coder_small.gif
+.. figure:: /_images/coder_small.png
 
    The Coder view is used to create experiments from Python scripts
 
