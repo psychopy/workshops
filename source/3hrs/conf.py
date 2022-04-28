@@ -13,12 +13,12 @@ import sys
 import os
 
 # JUST CHANGE THESE AND LET THE REST POPULATE
-year = "2019"
-release = year
-project = u'Building better experiments with PsychoPy {}'.format(year)
+year = "2022"
+release = 'January 2022'
+project = u'Creating Experiments in PsychoPy Workshop {}'.format(year)
 copyright = u'{}, The PsychoPy team'.format(year)
-filebase = u'3hrs'
-
+filebase = u'3hrs{}'.format(year)
+filebase = '3hrs'
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -41,6 +41,7 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.ifconfig',
     'sphinx.ext.graphviz',
+    'rinoh.frontend.sphinx',
 ]
 
 graphviz_output_format = 'png'
@@ -190,10 +191,12 @@ htmlhelp_basename = '{}_{}doc'.format(project, year)
 
 
 # -- Options for LaTeX output ---------------------------------------------
+# See here for latex options in sphinx https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-latex_engine
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 'papersize': 'a4paper',
+'classoptions' : 'openany,oneside'
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
@@ -216,7 +219,7 @@ latex_documents = [
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
-#latex_use_parts = False
+latex_use_parts = False
 
 # If true, show page references after internal links.
 #latex_show_pagerefs = False
@@ -230,6 +233,9 @@ latex_documents = [
 # If false, no module index is generated.
 #latex_domain_indices = True
 
+latex_toplevel_sectioning = 'chapter'
+
+latex_engine = 'pdflatex'
 
 # -- Options for manual page output ---------------------------------------
 
@@ -360,6 +366,10 @@ epub_exclude_files = ['search.html']
 # If false, no index is generated.
 #epub_use_index = True
 
+rinoh_documents = [('index',            # top-level file (index.rst)
+                    'days',           # output (target.pdf)
+                    'Main Title',   # document title
+                    'John A. Uthor')]   # document author
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'python':('https://docs.python.org/2/', None),

@@ -14,7 +14,7 @@ Creating Experiments in PsychoPy (3 days)
   +============================+====================+=======================================================================================================================================+
   | April 20th-22th            | UK                 | `Register here  <https://pavlovia.org/store/workshops/2022-4-20-psychopy-creating-experiments>`_                                      |
   +----------------------------+--------------------+----------------------+-------------------------------+--------------------------------------------------------------------------------+
-  | April 27th-29th            | US East Coast      | `Register here  <https://pavlovia.org/store/workshops/2022-4-27-psychopy-creating-experiments>`_                                      |
+  | May 25th-27th              | US East Coast      | `Register here  <https://pavlovia.org/store/workshops/2022-5-25-psychopy-creating-experiments>`_                                      |
   +----------------------------+--------------------+---------------------------------------------------------------------------------------------------------------------------------------+
 
   About 

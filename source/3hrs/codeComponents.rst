@@ -4,7 +4,7 @@
 Code Components
 =====================
 
-Integrating code with your experiment is not necissary, but can allow greater flexibility in your experiments (and allows you to learn some code!)
+Integrating code with your experiment is not necessary, but can allow greater flexibility in your experiments (and allows you to learn some code!)
 
 Code Components
 ----------------------------
