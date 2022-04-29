@@ -62,3 +62,7 @@ Exercise (15 mins)
 3. add a neutral condition. 
 4. Add a routine for participants to practice *Hint: you can use the same routine several times in an experiment, which can really save work in the long run!*
 
+Youtube tutorial
+----------------
+`Building a Stroop Task <https://www.youtube.com/watch?v=VV6qhuQgsiI>`_
+
