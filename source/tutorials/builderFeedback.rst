@@ -70,6 +70,6 @@ Using one of the above methods to generate your `msg` in a :ref:`code`, you then
 
 Youtube tutorial
 ----------------
-- `Trial by trial feedback <https://www.youtube.com/watch?v=o6gG1LRngmU>`_
-- `Trial by trial feedback for Posner Task  <https://www.youtube.com/watch?v=bfbtqGCKf-A>`_
+- `Trial by trial accuracy feedback <https://www.youtube.com/watch?v=o6gG1LRngmU>`_
+- `Trial by trial reaction time feedback  <https://www.youtube.com/watch?v=bfbtqGCKf-A>`_
 - `Feedback for typed responses  <https://www.youtube.com/watch?v=-Fto45M7bS0>`_
