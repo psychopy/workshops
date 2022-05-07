@@ -12,7 +12,7 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-* Our next **3-day workshop** in **May 25th - 27th!** see`information on content and how to book here <3days/index.html>`_
+* Our next **3-day workshop** in **May 25th - 27th!** see `information on content and how to book here <3days/index.html>`_
 
 
 Organizing a departmental session? contact us workshops@opensciencetools.org
