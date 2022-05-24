@@ -52,3 +52,12 @@ e.g. if your screen refresh rate is 60 Hz, then entering:
 would cycle the opacity linearly from 0 to 1.0 over 2s (it will then continue incrementing but it doesn't seem to matter if the value exceeds 1.0).
 
 Using a code component might allow you to do more sophisticated things (e.g. fade in for a while, hold it, then fade out). Or more simply, you just create multiple successive Patch stimulus components, each with a different equation or value in the opacity field depending on their place in the timeline.
+
+
+Typing effects
+==============
+Key idea: vary the **onset/offset** of stimulus
+
+Question: I'd like to present my text using a typing effect.
+
+Answer: Please click here to watch youtube tutorial `Typing effect without code <https://www.youtube.com/watch?v=Kcr3--LTvBk>`_
