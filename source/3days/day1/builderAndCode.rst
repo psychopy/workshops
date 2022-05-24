@@ -94,7 +94,7 @@ Making things dynamic could allow you to, for instance:
 Code Components
 ---------------------
 
-This goes to the next step in integrating code with your experiment. You can add code in either python or JavaScript (JS). By default, python code will be **tranpiled** into JavaScript. 
+This goes to the next step in integrating code with your experiment. You can add code in either python or JavaScript (JS). By default, python code will be **transpiled** into JavaScript.
 
 .. image:: /_images/code_component.png
 
@@ -138,11 +138,11 @@ When we use a keyboard component for our responses, there are a few variables re
 .. nextslide::
 
 Following this you could use a code component to give response dependent feedback::
-	
-	if key_resp.corr:
-		feedback = ' Correct!'
-	else:
-		feedback = 'Incorrect'
+
+   if key_resp.corr:
+      feedback = ' Correct!'
+   else:
+      feedback = 'Incorrect'
 
 Using :code:`$feedback` in a Text component. 
 
@@ -160,15 +160,15 @@ In the Begin Experiment tab, we could use:
 
 .. code::
 
-	totalTrials = 0
-	totalCorrect = 0
+   totalTrials = 0
+   totalCorrect = 0
 
 Then in the End Routine tab we could use:
 
 .. code::
 
-	totalTrials += 1
-	totalCorrect += key_resp.corr
+   totalTrials += 1
+   totalCorrect += key_resp.corr
 
 .. nextslide::
 
@@ -176,7 +176,7 @@ Finally, at the end of our experiment we could add a text component and use some
 
 .. nextslide::
 
-We can also obtain similar fedback when :ref:`usingMouse` (but let's save that for later!)
+We can also obtain similar feedback when :ref:`usingMouse` (but let's save that for later!)
 
 *Exercise (10 mins)*
 ---------------------
@@ -192,7 +192,7 @@ More code examples
 Inserting a timer
 -------------------
 
-To show the participant the time into a trial, we don't even need a code component. We can add a Text stimulus, and in the Text field write :code:`str(t)` (*t is a special variable that lives under the hood of PsychoPy, it indcated the time since the trial started*) then make sure to set the field *Each frame*. This is a good example of converting variable "types" in python:
+To show the participant the time into a trial, we don't even need a code component. We can add a Text stimulus, and in the Text field write :code:`str(t)` (*t is a special variable that lives under the hood of PsychoPy, it indicates the time since the trial started*) then make sure to set the field *Each frame*. This is a good example of converting variable "types" in python:
 
 - :code:`str()` : Converts to a string.
 - :code:`int()` : converts to an integer.
@@ -207,31 +207,28 @@ Ending a set of trials early
 
 Imagine we want a set of practice trials, that will end when your participant gets 5 correct. 
 
-You can use the code :code:`trials.finished = True` to end a loop early. So, you could say:
+You can use the code :code:`trials.finished = True` to end a loop early. So, you could say::
 
-.. code::
-	if totalCorrect >= 5:
-		practice_trials.finished = True # practice_trials is the name of the loop
+   if totalCorrect >= 5:
+      practice_trials.finished = True # practice_trials is the name of the loop
 
-Ending or skippng a routine
+Ending or skipping a routine
 -----------------------------------------------
 
-Imagine we want to skip a routine/trial (for example to only show a routine on some trials). You can add a code component and use
+Imagine we want to skip a routine/trial (for example to only show a routine on some trials). You can add a code component and use::
 
-.. code::
-    continueRoutine = False
+   continueRoutine = False
 
 To end or skip a routine. 
 
 .. nextslide::
 
-This can be extended to insert a break. The modulus operator :code:`%` can be used to say if a number has any remainders following a division, so, if we want a break every 5th trial we could add a routine in our trial loop called "breakMsg" and add a code component with the following in the begin routine:
+This can be extended to insert a break. The modulus operator :code:`%` can be used to say if a number has any remainders following a division, so, if we want a break every 5th trial we could add a routine in our trial loop called "breakMsg" and add a code component with the following in the begin routine::
 
-.. code::
-    if trials.thisN + 1 % 5 > 0:
+   if trials.thisN + 1 % 5 > 0:
         continueRoutine = False
 
-Note that we add 1 because pytohn indexing starts at 0. 
+Note that we add 1 because python indexing starts at 0.
 
 
 Making a branched experiment
@@ -242,10 +239,10 @@ A branched experiment refers to an experiment in which one of two paths could be
 
 Add a Routine to the start of our experiment called "consent" and add two clickable images (one called "Yes" and one called "No"). Then add a code component, and in the *End Routine* tab, write::
 
-	if consent_mouse.clicked_name[-1] == 'Yes':
-		mainLoopReps = 1
-	else:
-		mainLoopReps = 0
+   if consent_mouse.clicked_name[-1] == 'Yes':
+      mainLoopReps = 1
+   else:
+      mainLoopReps = 0
 
 Then add a loop around the rest of your experiment and use :code:`$mainLoopReps` in the :code:`nReps` field. This is a basic example, but you could imagine how this could be used for other branched experiments to show different parts of your experiment to different participants. 
 
@@ -254,9 +251,9 @@ Randomizing the position of stimuli (e.g. images)
 ---------------------------------------------------
 
 Imagine you have 4 images to present in 4 locations. On each trial, you want the location for each image to be selected randomly. You could add a code component, and in the `Begin Routine` tab write::
-	
-	xList= [-.5, -.25, .25, .5]
-	shuffle(xList)
+
+   xList= [-.5, -.25, .25, .5]
+   shuffle(xList)
 
 Then in the position field of each image component  use :code:`[xList[0], 0]`, :code:`[xList[1], 0]` and so on... *making sure to set every repeat* 
 
@@ -283,10 +280,10 @@ Making custom clocks
 
 If we want to use a custom clock (e.g. to measure the time across several routines) we can always make a clock within a code component::
 
-	myClock = core.Clock()
+   myClock = core.Clock()
 
 .. note::
-	In the current release (2021.2.3) if we are working online we will need to change our code component "type" to be "Both" and use :code:`myClock = util.Clock()` on the JS side.
+   In the current release (2021.2.3) if we are working online we will need to change our code component "type" to be "Both" and use :code:`myClock = util.Clock()` on the JS side.
 
 Useful methods for use with clocks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -307,7 +304,7 @@ Now that we know how to make a clock and how to access the time on it, we can ea
 Add a text component to your trial routine and position it in the top right corner (in height units you will want something like `pos = (0.4,0.4)`. Then in the `text` field all we need is to write :code:`$t` and **set every frame**. 
 
 .. note::
-	Depending on your PsychoPy version you might need to use :code:`t` - omitting the dollar sign. Remember that you only need a $ at the start of a field if there is not already a $ int he parameter name. 
+   Depending on your PsychoPy version you might need to use :code:`t` - omitting the dollar sign. Remember that you only need a $ at the start of a field if there is not already a $ int he parameter name.
 
 .. nextslide::
 
@@ -351,7 +348,7 @@ Using mouse/touchscreen responses
 Mouse responses register as touch responses on touch screen devices, so they do make for a more portable online study. 
 
 .. figure:: /_images/mouse_component.png
-            
+
             The parameters of a mouse component. To store click times use he settings in the "Data" tab.
 
 .. _mouseFeedback:
