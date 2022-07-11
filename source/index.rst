@@ -12,10 +12,9 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-* Our next **3-day workshop** in **May 25th - 27th!** and is on **Eastern Standard** timezone. See `information on content and how to book here <3days/index.html>`_
-* **TBC** `3 hour introductory sessions <3hrs/index.html>`_
+We usually take a break from 3 day workshops over the summer, as many scientists are attending conferences in this time! We plan to pick things up again in the Autumn, dates to be confrirmed. 
 
-Would you like a workshop for your department or on a timezone we don't currently offer? Contact us workshops@opensciencetools.org
+Alternatively, if you would you like a workshop specifically for your department? or one-to-one training? Contact us workshops@opensciencetools.org.
 
 Need one-to-one training or guidance making a specific task? contact us consultancy@opensciencetools.org
 
