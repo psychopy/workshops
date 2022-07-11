@@ -10,7 +10,7 @@ Info
 
 About 
 ---------
-These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable will appear as follows:
+These sessions are designed to build confidence creating experiments and getting them online, as well as start learning the basics of python programming. We can be quite flexible with what we cover in these sessions but we keep to some broad themes to facilitate most attendees. Typically the timetable will appear as follows (though this can be adjusted for department specific workshops!):
 
 
 .. image:: /_images/timetable3day.png
@@ -20,26 +20,19 @@ These sessions are designed to build confidence creating experiments and getting
 
 Note that on day 3 we are currently trialling 2 parallel sessions on Advanced Builder. We hope that there will be a bit of something for everyone with several experience levels!
 
-What do I need to know in advance?
+What do I need in advance?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The only base knowledge we will assume for this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_.
-
-What technology and/or software will I need to make the most of the workshops?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You will need to `download a recent version of PsychoPy <https://www.psychopy.org/download.html>`_ and register for a free `pavlovia.org <https://pavlovia.org/>`_ account to follow along with the tasks we create in the workshop. If you have access to *two monitors* that can be beneficial, although not essential. 
-
-We run the workshops using a combination of zoom and slack. The slack channel is designed to encourage interaction throughout and provides a few benefits:
-
-- This provides a location to ask questions throughout (for those apprehensive to use the mic).
-- Questions are monitored by other PsychoPy team members, meaning you can get feedback from the whole team.
-- The conversations are archived, so you can come back to the answers to yours and others questions later. 
+* The only base knowledge we will assume for this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_.
+* Download a `recent version of PsychoPy <https://www.psychopy.org/download.html>`_.
+* A free `pavlovia.org <https://pavlovia.org/>`_ account 
+* [For virtual/hybrid workshops]  *two monitors* that can be beneficial, although not essential. 
+* [For virtual/hybrid workshops] a Zoom and Slack account.
 
 How can I purchase tickets?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Tickets can be purchased from the `Pavlovia store <https://pavlovia.org/store>`_
+Tickets can be purchased from the `Pavlovia store <https://pavlovia.org/store>`_ (For department workshops please contact workshops@opensciencetools.org for pricing).
 
 Materials
 ^^^^^^^^^^^^^^^^
@@ -48,8 +41,8 @@ All of our materials are openly available in web page (links below) or and `HTML
 
 You can also download and unzip  `a range of pre-made demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
 
-Accessibility
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Accessibility for online workshops
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 We are aware that online teaching via zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements or want to arrange one-to-one training please contact us directly at workshops@opensciencetools.org 
 
 Day 1: Building Better Experiments
