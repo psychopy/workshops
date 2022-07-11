@@ -19,7 +19,7 @@ Serial port addresses are different depending on whether you're using a Mac or a
 
 * In the terminal window, you'll see a long list of port names like in the screenshot below:
 
-.. figure:: /images/terminalPorts.png
+.. figure:: /_images/terminalPorts.png
     :scale: 50%
 
 * To find out which one your device is connected to, you can remove and replace your device to see which port name is changing.
@@ -29,7 +29,7 @@ Serial port addresses are different depending on whether you're using a Mac or a
 
 * Open the `Device Manager` and click on the `Ports` drop down to show available ports like in the screenshot below:
 
-.. figure:: /images/deviceManager.png
+.. figure:: /_images/deviceManager.png
 
 * If it's not obvious which port your device is connected to, remove and replace your device to see which port name changes.
 
@@ -41,14 +41,14 @@ If you're using PsychoPy version 2022.2 or later, you can use the serial port co
 
 * The serial port component can be found in both the I/O and EEG component drop down menus. Add in a serial port component to the routine that you'd like triggers to be sent from by selecting it from the menu:
 
-.. figure:: /images/serial1.png
+.. figure:: /_images/serial1.png
 
     Select the `SerialPort` component from the `I/O` or `EEG` component drop-down menus.
 
 * Now, imagine we want our trigger sent to indicate stimulus onset. We *could* do this by simply setting the onset time of the trigger to match that of our stimulus. But this is not the **most** precise way to do this. Also, this doesn't help us if we want to send our trigger to indicate something with variable timing, such as when a response is made.
 * For maximum precision, we'll set the trigger to be sent when the status of our stimulus is set to `started`:
 
-.. figure:: /images/serial2.png
+.. figure:: /_images/serial2.png
 
     In the `Basic` tab, we'll choose to start our trigger when a condition is met by selecting `condition` from the `Start` drop down.
 
@@ -58,13 +58,13 @@ If you're using PsychoPy version 2022.2 or later, you can use the serial port co
 
 * Next, we need to set the address of the serial port that we want to use. To do this, write the address of the port in the `Port` field:
 
-.. figure:: /images/serial3.png
+.. figure:: /_images/serial3.png
 
     Type in the address of your serial port.
 
 * Next, we'll set the data that we'd like to send to the device at the start of the pulse, and what we want it to be reset to at the end of the pulse. Do this by completing the `Start data` and `Stop data` fields:
 
-.. figure:: /images/serial4.png
+.. figure:: /_images/serial4.png
 
     What do you want PsychoPy to send at the start of your trigger pulse, and what do you want it to be reset to at the end of the pulse?
 
@@ -83,7 +83,7 @@ Using a Code Component to communicate via Serial Port
 
 * First, add in a code component to your `Instructions` routine (or something similar, at the start of your experiment):
 
-.. figure:: /images/insertCode.png
+.. figure:: /_images/insertCode.png
 
     Select the `Code component` from the `Custom` component drop-down
 
@@ -125,7 +125,7 @@ Test your triggers
 
 * To check that everything works, we recommend that you set up a very basic experiment that looks similar to this:
 
-.. figure:: /images/serialExp.png
+.. figure:: /_images/serialExp.png
 
 
 

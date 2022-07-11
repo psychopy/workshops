@@ -14,7 +14,7 @@ import os
 
 # JUST CHANGE THESE AND LET THE REST POPULATE
 year = "2022"
-release = 'April 2022'
+release = 'July 2022'
 project = u'Creating Experiments in PsychoPy Workshop {}'.format(year)
 copyright = u'{}, The PsychoPy team'.format(year)
 filebase = u'3days{}'.format(year)
