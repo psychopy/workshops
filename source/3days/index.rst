@@ -1,12 +1,9 @@
-
+.. _3dayIndex:
 
 Creating Experiments in PsychoPy (3 days)
 ===========================================
 
 .. only:: html
-
-Info
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 About 
 ---------
@@ -26,8 +23,8 @@ What do I need in advance?
 * The only base knowledge we will assume for this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_.
 * Download a `recent version of PsychoPy <https://www.psychopy.org/download.html>`_.
 * A free `pavlovia.org <https://pavlovia.org/>`_ account 
-* [For virtual/hybrid workshops]  *two monitors* that can be beneficial, although not essential. 
-* [For virtual/hybrid workshops] a Zoom and Slack account.
+* *[For virtual/hybrid workshops]*  two monitors that can be beneficial. 
+* *[For virtual/hybrid workshops]* a Zoom and Slack account.
 
 How can I purchase tickets?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -41,7 +38,7 @@ All of our materials are openly available in web page (links below) or and `HTML
 
 You can also download and unzip  `a range of pre-made demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
 
-Accessibility for online workshops
+Accessibility
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 We are aware that online teaching via zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements or want to arrange one-to-one training please contact us directly at workshops@opensciencetools.org 
 
