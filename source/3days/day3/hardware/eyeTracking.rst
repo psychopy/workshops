@@ -13,7 +13,7 @@ PsychoPy supports many of the commonly used eyetrackers, you can find out if you
 * Click on the `Experiment Settings` icon (the one that looks like a cog, near the top left-hand side of the Builder window).
 * Click on the `Eyetracking` tab:
 
-.. figure:: /images/eyeTrackers.png
+.. figure:: /_images/eyeTrackers.png
 
 * The `SR Research` option is also known as `Eyelink`, so if you have an Eyelink device this is the option to choose.
 * When you've found your eyetracker, just select it and click `OK`.
@@ -23,7 +23,7 @@ Step two: Set up your Eyetracker
 -------------------------------------------------------------
 When you've selected your eyetracker from the drop-down menu, a set of options that are specific to that device will appear, such as the model and serial number of your device. Here we will follow through with the MouseGaze options:
 
-.. figure:: /images/mouseGaze.png
+.. figure:: /_images/mouseGaze.png
 
 * Choose which mouse button you'd like to use to simulate blinks by clicking on the boxes.
 * The `Move Button` option allows you to select whether PsychoPy monitors your mouse movement continuously, or just when you press and hold one of the mouse buttons.
@@ -44,7 +44,7 @@ Sometimes different eyetracking systems will have their own set of "screens" or 
 
 The general protocol you will see is shown below.
 
-.. figure:: /images/eyelink_calibration_flow.png
+.. figure:: /_images/eyelink_calibration_flow.png
 
     The set of screens that will appear on your experiment presentation screen during calibration/validation, and what to press when.
 
@@ -54,7 +54,7 @@ You can find the eyetracker components in the eyetracker component drop-down on 
 
 * The first component to add is the **'Eyetracker Record'** component as this starts and stops the eyetracker recording. Usually, you would add this component to your instructions routine or something similar, so that your eyetracker is set off recording before your trials start, but you can add them in wherever makes sense for your experiment:
 
-.. figure:: /images/eyeRecord.png
+.. figure:: /_images/eyeRecord.png
 
     You can choose whether you want this component to just start your eyetracker recording, just stop the recording, or whether you want the component to start the recording and then stop it after a certain duration.
 
@@ -63,27 +63,27 @@ You can find the eyetracker components in the eyetracker component drop-down on 
 
 * If you want to record information on gaze position, or you want your trial to move on when your participant has looked at or away from a target, you'll need to add in an **ROI component**. The ROI component has lots of options - you can choose what you want to happen when the participant looks at or away from a certain part of the screen, what shape your ROI is etc. All of which can also be defined in your conditions file, just like any other component. Choose the options that fit the needs of your experiment. Here, the component is set such that when a participant looks at a circular target for at least 0.1s (set by the min look time), the trial will end:
 
-.. figure:: /images/eyeROI.png
+.. figure:: /_images/eyeROI.png
 
 * On the `layout` tab of the ROI component, you set the position and size of the ROI in the same way as you would set the position of any visual component:
 
-.. figure:: /images/eyeROIPos.png
+.. figure:: /_images/eyeROIPos.png
 
 * It's also vitally important that you calibrate and validate your eyetracker. To do this, you will use two standalone components: **Eyetracker calibrate** and **Eyetracker validate**.
 * These are a little different from other components in that they form a routine all on their own. You'll need to add them in right at the start of your experiment Flow.
 * The **Eyetracker calibrate** component has all of the options you would expect from an eyetracker calibration:
 
-.. figure:: /images/eyeCaliBasic.png
+.. figure:: /_images/eyeCaliBasic.png
     :scale: 20%
 
     Set the basic properties of the calibration routine here.
 
-.. figure:: /images/eyeCaliTarget.png
+.. figure:: /_images/eyeCaliTarget.png
     :scale: 20%
 
     Set the properties of the target on this tab.
 
-.. figure:: /images/eyeCaliAni.png
+.. figure:: /_images/eyeCaliAni.png
     :scale: 20%
 
     This tab allows you to set the properties of the target animation.
@@ -97,7 +97,7 @@ What about the data?
 * The eyetracking data from the ROI will be saved in your usual data file. Extra columns are created and populated by PsychoPy, depending on what you've asked to record.
 * In the example below, the trial ended when a participant looked at a target on the screen. You can see what each column represents in the figure below:
 
-.. figure:: /images/eyeData.png
+.. figure:: /_images/eyeData.png
     :scale: 20%
 
     The data output will vary according to what you've asked PsychoPy to record about gaze.

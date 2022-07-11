@@ -18,7 +18,7 @@ If you're using PsychoPy version 2022.1.3 or older, you'll need to install the E
 * Finally, add ``-m pip install egi-pynetstation`` to the line.
 * Your line should now look similar to this: ``"C:\Program Files\PsychoPy\python.exe" -m pip install egi-pynetstation`` as shown in the following screenshot:
 
-.. figure:: /images/cmd.png
+.. figure:: /_images/cmd.png
 
 You're now ready to go!
 
@@ -28,7 +28,7 @@ To communicate with your NetStation EEG hardware, you'll need to add in some Pyt
 
 * First, add in a code component to your `Instructions` routine (or something similar, at the start of your experiment):
 
-.. figure:: /images/insertCode.png
+.. figure:: /_images/insertCode.png
 
     Select the `Code component` from the `Custom` component drop-down
 
@@ -81,7 +81,7 @@ Step three: Test your triggers
 
 * To check that everything works, we recommend that you set up a very basic experiment that looks similar to this:
 
-.. figure:: /images/serialExp.png
+.. figure:: /_images/serialExp.png
 
 
 
