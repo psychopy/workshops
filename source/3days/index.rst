@@ -69,6 +69,7 @@ Day 3: Coding Experiments
   
   day3/codingAnExperiment
   day3/improvements
+  day3/hardware/index
 
 Day 3: Parallel sessions
 ----------------------------
