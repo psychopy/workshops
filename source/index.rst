@@ -12,11 +12,10 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-We usually take a break from 3 day workshops over the summer, as many scientists are attending conferences in this time! We plan to pick things up again in the Autumn, dates to be confrirmed. 
+We usually take a break from 3 day workshops over the summer, as many scientists are attending conferences in this time! We plan to pick things up again in the Autumn, dates to be confirmed. 
 
 Alternatively, if you would you like a workshop specifically for your department? or one-to-one training? Contact us workshops@opensciencetools.org.
 
-Need one-to-one training or guidance making a specific task? contact us consultancy@opensciencetools.org
 
 .. only:: html
     .. image:: /_images/jumpAnimate.gif
