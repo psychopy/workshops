@@ -40,6 +40,13 @@ We have a unique model to try and sustain open source software, whilst trying to
 .. image:: /_images/Buisiness_model.png
     :align: left
 
+So.. how do we use pavlovia.org?
+----------------------------------
+
+We might want to use Pavlovia.org to:
+
+* Find and reuse others studies
+* Launch our own study in browser
 
 Finding openly shared experiments
 ----------------------------------
@@ -55,25 +62,6 @@ We could directly download an experiment on pavlovia.
 
 .. image:: /_images/fork_online0.png
     :align: left
-
-.. _forking:
-
-Fork
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Then, search for that inside PsychoPy and sync it to our desktop. We could actually fork + sync in PsychoPy itself!
-
-.. image:: /_images/fork_local0.png
-    :align: left
-
-.. nextSlide::
-
-*Side Tip*
-
-Why might we fork inside pavlovia instead of using fork + sync in PsychoPy? Isn't this more work? 
-
-*   You can avoid some errors by deleting the data folder from the forked project *before* you clone/sync it locally (Web IDE > ... > delete > commit)
-*   Can be easier for use with groups (online you can fork to a group, locally the project will always be forked to your namespace)
 
 .. _pavloviaLaunch:
 
