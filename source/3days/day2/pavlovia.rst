@@ -33,6 +33,13 @@ Once we have our experiment written in JS, we need a way to "host" it online.  `
 * A git based version control system.
 * A huge open access library of experiments (that you can add to!)
 
+What is our "Buisiness model"?
+--------------------------------
+We have a unique model to try and sustain open source software, whilst trying to be as low cost as possible.
+
+.. image:: /_images/Buisiness_model.png
+    :align: left
+
 
 Finding openly shared experiments
 ----------------------------------
@@ -44,7 +51,7 @@ There are two ways we can find and use existing experiments from Pavlovia:
 
 .. nextSlide::
 
-We could directly fork an experiment on pavlovia.
+We could directly download an experiment on pavlovia.
 
 .. image:: /_images/fork_online0.png
     :align: left
