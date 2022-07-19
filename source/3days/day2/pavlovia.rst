@@ -63,6 +63,14 @@ We could directly download an experiment on pavlovia.
 .. image:: /_images/fork_online0.png
     :align: left
 
+
+.. nextSlide::
+
+Or we could search for that experiment and download it directly in PsychoPy:
+
+.. image:: /_images/fork_local0.png
+    :align: left
+
 .. _pavloviaLaunch:
 
 Syncing our own study to pavlovia
