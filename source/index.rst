@@ -12,7 +12,7 @@ Open Science Tools official workshops
 Upcoming events
 ------------------
 
-We usually take a break from :ref:`3 day workshops <3dayIndex>` over the summer, as many scientists are attending conferences in this time! We plan to pick things up again in the Autumn, dates to be confirmed. 
+* **October 19th 2022 - October 21st 2022** (Uk timezone) - 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
 
 Alternatively, if you would you like a workshop specifically for your department? or one-to-one training? Contact us workshops@opensciencetools.org.
 
