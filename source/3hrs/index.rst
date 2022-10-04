@@ -5,6 +5,7 @@ Creating Experiments in PsychoPy (Open sessions)
 Upcoming open/free events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+* Upcoming events TBC
 
 About 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
