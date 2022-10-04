@@ -68,8 +68,6 @@ PsychoPy provides two main options, coder view and builder view. But you can als
 .. nextslide::
 
 .. figure:: /_images/coder_small.png
-    :scale: 120%
-
 
    The Coder view is used to create experiments from Python scripts
 
@@ -122,7 +120,6 @@ Going further
 
 Builder interface:
     - `Building Experiments in PsychoPy (Second Edition) <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book273700>`_ by Peirce, Hirst and MacAskill (2022, Sage Publications)
-    - `Building Experiments in PsychoPy (First Edition) <https://uk.sagepub.com/en-gb/eur/building-experiments-in-psychopy/book253480>`_ by Peirce and MacAskill (2018, Sage Publications)
 
 Python programming (for experimental psych) but these are a bit outdated:
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
