@@ -5,8 +5,6 @@ Creating Experiments in PsychoPy (Open sessions)
 Upcoming open/free events
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Session 1: 1st April 2022, 1 - 2.30pm (UK timezone) `Register here <https://www.eventbrite.co.uk/e/creating-experiments-in-psychopy-builder-basics-session-1-tickets-301383725837?ref=estw>`_
-- Session 2: 8th April 2022, 1 - 2.30pm (UK timezone) `Register here <https://www.eventbrite.co.uk/e/creating-experiments-in-psychopy-getting-online-session-2-tickets-301386504147?ref=estw>`_
 
 About 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
