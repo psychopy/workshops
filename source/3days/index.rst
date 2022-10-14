@@ -9,7 +9,7 @@ Creating Experiments in PsychoPy (3 days)
   -------------------
 
   * **October 19th 2022 - October 21st 2022** (Uk timezone) - 3 day comprehensive workshop. `Tickets here <https://pavlovia.org/store/workshops/2022-10-19-psychopy-creating-experiments>`_
-   * **November 30th 2022 - December 2nd 2022** (US East Coast) - 3 day comprehensive workshop. `Tickets here <https://pavlovia.org/store/workshops/2022-11-30-psychopy-creating-experiments>`_
+  * **November 30th 2022 - December 2nd 2022** (US East Coast) - 3 day comprehensive workshop. `Tickets here <https://pavlovia.org/store/workshops/2022-11-30-psychopy-creating-experiments>`_
 
   About 
   ---------

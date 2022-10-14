@@ -23,9 +23,9 @@ Creating a routine
 
 A Routine is the basic building block of PsychoPy experiments. They could be complex (e.g. a single trial) or simple (e.g. an Inter-Trial-Interval presenting a fixation cross).
 
+
 .. image:: /_images/routines_basics.png
 
-To begin with, we want a routine to present two numbers on the screen.
 
 Changing things trial-by-trial (the "conditions" file)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

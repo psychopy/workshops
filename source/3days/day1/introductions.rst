@@ -17,6 +17,7 @@ The Team!
 PsychoPy is an Open Source project, the users have access to the code and can contribute at any time! That kind of means the team is technically huge!
 
 .. figure:: /_images/team_slide.png
+    :width: 100 %
 
 
 .. nextslide::
@@ -24,7 +25,7 @@ PsychoPy is an Open Source project, the users have access to the code and can co
 In terms of the "core team" , thanks to Pavlovia users and grants we can now fund staff to work on developing the tools and supporting users.
 
 .. figure:: /_images/team2022.png
-    :scale: 30%
+    :width: 100 %
     
 About the workshop
 -----------------------
@@ -38,11 +39,15 @@ Getting to know PsychoPy
 What is PsychoPy?
 -----------------------
 
+
 It's `Psychology software in Python`
 
 PsychoPy is a Python library, an script editor (Coder) an application with a GUI (Builder)
 
 It is, itself, entirely written in Python
+
+.. rst-class:: build
+
     * 2002-2003: Jon began work on this for his own lab (visual neruoscience)
     * 2003-2017: a purely volunteer-driven, evenings and weekends project
     * 2017-now: still open source and free to install but with professional support (funded by grants and Pavlovia)
@@ -54,6 +59,9 @@ The aim is to enable scientists to run as wide a range of experiments as possibl
 as possible, with standard computer hardware.
 
 A single piece of software:
+
+.. rst-class:: build
+
     - precise enough for psychophysics
     - intuitive enough for undergraduate psychology
     - flexible enough for everything else
@@ -75,6 +83,7 @@ PsychoPy provides two main options, coder view and builder view. But you can als
 .. ifslides::
     .. image:: /_images/coder_small.gif
        :width: 50 %
+       :align: center
 
 .. only:: latex
     .. image:: /_images/coder_small.png
@@ -91,6 +100,8 @@ PsychoPy provides two main options, coder view and builder view. But you can als
 Why do people *Code*?
 ----------------------------------------------
 
+.. rst-class:: build
+
 * To implement more complex experimental designs/procedures(?)
 * To know exactly what the code is doing(?)
 * To break out of the "trials/blocks" structure or drawing loop cycle
@@ -98,6 +109,8 @@ Why do people *Code*?
 
 Why do people *Build*?
 ----------------------------------------------
+
+.. rst-class:: build
 
 * It is far faster to develop experiments!
 * You can still understand (and build on) your experiment next year
@@ -137,4 +150,4 @@ Python programming (for experimental psych) but these are a bit outdated:
     - `Programming Visual Illusions for Everyone <http://www.springer.com/gb/book/9783319640655>`_ by Marco Bertamimi (2017, Springer) 
     - `Python for Experimental Psychologists <https://www.amazon.co.uk/Python-Experimental-Psychologists-Edwin-Dalmaijer/dp/1138671576>`_ by Edwin Dalmaijer (2017, Routledge)
 
-So, let's go on and learn some :ref:`session13Days`...
+:ref:`Next <session13Days>`
