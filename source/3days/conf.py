@@ -281,7 +281,7 @@ extensions += [
 ]
 
 # Add extension to allow compilation to pdf
-extensions += ['rst2pdf.pdfbuilder']
+#extensions += ['rst2pdf.pdfbuilder']
 pdf_documents = [('index', u'sample', u'Sample rst2pdf doc', u'Your Name'),]
 slide_theme_path = ['_templates']
 
