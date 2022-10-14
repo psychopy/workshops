@@ -46,7 +46,8 @@ Creating Experiments in PsychoPy (3 days)
 
   Accessibility
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  We are aware that online teaching via zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements or want to arrange one-to-one training please contact us directly at workshops@opensciencetools.org 
+  
+  We are aware that online teaching via zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements or want to arrange one-to-one training please contact us directly at workshops@opensciencetools.org .
 
 Day 1: Building Better Experiments
 --------------------------------------
