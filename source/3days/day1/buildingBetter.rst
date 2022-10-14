@@ -7,9 +7,13 @@ Building better experiments
 Using Builder
 --------------------------------------
 
-The base knowledge that we assume at the start of this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
+Today we will work through making a `Numerical Stroop <https://run.pavlovia.org/Hirst/workshopnumberstroop/>`_  task in PsychoPy. (Try it on your phone!)
 
-In this demo we will work through making a `Numerical Stroop <https://run.pavlovia.org/demos/numericalstroop/>`_  task in PsychoPy.
+.. image:: /_images/number_stroop_qr.png
+	:width: 40%
+	:align: center
+
+If your PsychoPy isn't open already - open it now!
 
 What makes a PsychoPy experiment?
 --------------------------------------
@@ -18,19 +22,33 @@ A builder experiment has three main sections. To start making an experiment we a
 
 .. image:: /_images/builder_terms.png
 
+Gather participant info
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Every experiment starts with a dialog box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
+
+.. image:: /_images/exp_info.png
+	:width: 40%
+	:align: center
+
+.. note::
+	In the current release (2022.2.4) check box options are not yet supported online.
+
 Creating a routine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A Routine is the basic building block of PsychoPy experiments. They could be complex (e.g. a single trial) or simple (e.g. an Inter-Trial-Interval presenting a fixation cross). 
 
 .. image:: /_images/routines_basics.png
+	:width: 90%
+	:align: center
 
 To begin with, we want a routine to present two numbers on the screen.
 
-Changing things trial-by-trial (the "conditions" file)
+Changing things trial-by-trial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To present several trials, add a loop around the routine to repeat. If something changes trial-by-trial, we make a spreadsheet (this can be made in excel). Each header is a variable, each row corresponds to the value of that variable on each trial.
+To present several trials, add a loop around the routine to repeat. If something changes trial-by-trial, we make a spreadsheet. Each header is a variable, each row corresponds to the value of that variable on each trial.
 
 .. figure:: /_images/loops_and_conditions.png
 	
@@ -41,19 +59,10 @@ To present several trials, add a loop around the routine to repeat. If something
 Then make sure to use that variable to set the parameter of a component on every repeat of your loop.
 
 .. image:: /_images/set_every_repeat.png
+	:width: 60%
+	:align: center
 
 Let's start by presenting a different pair of numbers on each trial and allowing the participant to press the left and right arrow keys to press a number.
-
-
-Gather some additional info (e.g. age)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Every experiment starts with a dialog box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
-
-.. image:: /_images/exp_info.png
-
-.. note::
-	In the current release (2021.2.3) check box options are not yet supported online.
 
 
 *Warm up exercise (10 mins)*
