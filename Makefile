@@ -112,16 +112,16 @@ latex:
 	@echo "Run \`make' in that directory to run these through (pdf)latex" \
 	      "(use \`make latexpdf' here to do that automatically)."
 
-#pdf:
-#	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
-#	@echo "Running LaTeX files through pdflatex..."
-#	$(MAKE) -C $(BUILDDIR)/latex all-pdf >last_latex.log
-#	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
-
 pdf:
-    $(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
-    @echo
-    @echo "Build finished. The PDF is in $(BUILDDIR)/pdf."
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	@echo "Running LaTeX files through pdflatex..."
+	$(MAKE) -C $(BUILDDIR)/latex all-pdf >last_latex.log
+	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
+
+#pdf:
+#    $(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+#    @echo
+#    @echo "Build finished. The PDF is in $(BUILDDIR)/pdf."
 
 latexpdf:
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
