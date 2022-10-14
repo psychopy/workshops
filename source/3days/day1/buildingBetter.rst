@@ -7,9 +7,9 @@ Building better experiments
 Using Builder
 --------------------------------------
 
-All the base knowledge we assume at the start of this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
+The base knowledge that we assume at the start of this workshop can be learned from this `15 minute video <https://www.youtube.com/watch?v=fIw1e1GqroQ>`_
 
-In this demo we will work through making a `Numerical Stroop <https://run.pavlovia.org/demos/numericalstroop/html/>`_  task in PsychoPy.
+In this demo we will work through making a `Numerical Stroop <https://run.pavlovia.org/demos/numericalstroop/>`_  task in PsychoPy.
 
 What makes a PsychoPy experiment?
 --------------------------------------
