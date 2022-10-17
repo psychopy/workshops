@@ -28,7 +28,7 @@ Gather participant info
 Every experiment starts with a dialog box to gather some info about the participant/experiment. By default "participant" and "session" are gathered - and these are used to set the filename of that participant. 
 
 .. image:: /_images/exp_info.png
-	:width: 40%
+	:width: 80%
 	:align: center
 
 .. note::
@@ -119,23 +119,24 @@ The natural approach
 When people have several "blocks" the natural move is to add separate routines for those blocks:
 
 .. image:: /_images/natural_error.png
+	:align: center
 
-However, if both blocks contain the same stimuli/elements (e.g. in a number Stroop both valid/congruent trials and incongruent trials contain two numbers and a keyboard response), this is not the most efficient approach. 
+But then, how do we randomise the order of the blocks in the experiment?
 
 
 Blocking: Case 1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Instead of a Routine for each block, create a Routine for all your trials and make it behave differently across the blocks:
+Instead of a Routine for each block, create one Routine and reuse it for different blocks. You can feed in a different spreadsheet per block by nesting your loops!:
+
 
 .. image:: /_images/case1_blocks.png
 
-Then you can set the conditions files in your blocks loop to control the block-level changes. The outer "blocks" loop then takes a (meta) "conditions" file that specifies which of the conditions files will be loaded in each block.
 
 Blocking: Case 2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you do have two blocks that contain very different stimuli the approach to take is to control the number of times each block repeats using an outer-loop. 
+If you do have two blocks that contain very different stimuli/components the approach to take is to control the number of times each block repeats using an outer-loop. 
 
 .. image:: /_images/case2_blocks.png
 
@@ -146,23 +147,27 @@ Imagine we want our task to include a block of neutral trials and a block of con
 
 We need to create a total of 3 conditions files:
 
-- neutral_conditions.xlsx
-- congruency_conditions.xlsx
-- blocks.xlsx (the conditions file used in the outer loop)
+- neutral_conditions.xlsx - A spreadsheet with neutral trials.
+- congruency_conditions.xlsx - A spreadsheet with con/incon trials.
+- blocks.xlsx - A spreadsheet listing neutral_conditions.xlsx and congruency_conditions.xls
 
-Introducing a block
+
+*Exercise (15 mins)*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using what we know about blocks, we could add a routine to tell the participants what kind of block they are about to enter. If our `blocks.xlsx` file has a column to label the condition, we can add a routine to introduce the block type.
+- Rather than a randomised order of blocks, make it so that the neutral block always occurs first.
+- Add a routine on your flow to introduce each block. 
+- Add a column to your spreadsheet to present different text before each block e.g. "Block 1 of 2" or "Block 2 of 2"
+
+
+Solution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To make blocks appear in a set order, we would set our loop type to "sequential".
+
+For our block introduction, if a routine should be presented once per block, it would be inside the blocks loop, but *before* the trials loop. 
 
 .. image:: /_images/block_intro.png
-
-
-.. nextslide:: Randomized block design complete!
-
-You've sorted out block designs in a relatively neat fashion.
-
-Just keep clear what differs from one block to the next (for a conditions file) and what stays the same (for the Routine definition).
 
 
 .. _counterbalancedDesigns3Days:
@@ -170,92 +175,40 @@ Just keep clear what differs from one block to the next (for a conditions file) 
 Counterbalanced designs
 --------------------------------------
 
-Counterbalancing your blocks is really just an extension of the blocking scenario, except that you set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
+Counterbalancing your blocks is really just an extension of our exercise, where we've set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
 
-Setting the order
+The only difference is, we need two (or more) orders, one per group.
+
+The steps we need for counterbalancing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-At the moment, PsychoPy doesn't handle the ordering for you - you need to decide how to create the orders and how to assign participants.
+.. rst-class:: build
 
-So, you need a file per conditions order (e.g. A -> B and B-> A), then determine which file will be used for this group and use that file in the blocks loop 
-
-*Remember to set the blocks loop to be `sequential` rather than `random` to preserve the order you set*.
+	* A spreadsheet listing the block orders for each group.
+	* An input at the start of the experiment to determine which spreadsheet to use for this participant.
+	* A way for the Loop to use the input from the startup dialogue, to select the right spreadsheet. 
 
 
 How to assign participants to a group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Easiest way is by hand at the start of the run for the participant. The steps are:
+.. image:: /_images/counterbalancing_loop.png
 
-- In Experiment Settings add a field for `group` (which will be A, B, C... for however many orders you need)
-- For the block loop use that value by calling `expInfo['group']` using one of the alternatives below::
+For the "Conditions" field in the block loop we access the "group" field from the start dialogue by refering to "expInfo" ::
 
 	$"block" + expInfo['group'] + ".xlsx"
-
-.. nextslide::
-
-.. image:: /_images/counterbalancing_loop.png
 
 .. note:: 
 	:code:`expInfo` is a python "dictionary" that stores all information from the startup GUI. Fields of a python dictionary are accessed using the format :code:`dictName['fieldName']`. It works the same locally and online and means you can set features of your experiment based on the input received at startup!
 
-*Exercises*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Let's practice counterbalancing in different ways using the exercises in `this folder  <https://workshops.psychopy.org/psychopy_examples.zip>`_  ("builder > counterbalancingExercises"). In "exercise 1" you will find an inefficiently counterbalanced design. We want to improve this in two phases.
-
-1. Turn this inefficient design into a randomized block design. (the cat and dog images are presented in blocks, but in a random order)
-2. Then turn this into a counterbalanced design. So that group A see cats first and group B see dogs first. (You should be able to input group in the GUI at the start)
-
-When you are finished, come back to the main session, if you run into any error messages please share them (on slack) and we can discuss them.
-
-
-Counterbalancing subtasks
---------------------------------------
-
-Sometimes we might have to counterbalance subtasks (i.e. routines that contain very different sets of components). 
-
-For this we would use the second blocking method we described earlier. You can wrap a loop around any set of routines and control if it presents using nReps. 
-
-.. nextslide::
-
-In the below we could control create the order C->B->A by using a conditions file where the nReps of each sub-loop are set per iteration of the outer-loop. 
-
-.. image:: /_images/counterbalancesubs.png
-
-.. nextslide::
-
-e.g. using a conditions file like this...
-
-+----------+-------------+-----------+
-| nRepsA   | nRepsB      |  nRepsC   |
-+==========+=============+===========+
-| 0        | 0           | 1         |
-+----------+-------------+-----------+
-| 0        | 1           | 0         |
-+----------+-------------+-----------+
-| 1        | 0           | 1         |
-+----------+-------------+-----------+
-
-Where the nReps argument of each sub-loop is set using something like '$nRepsA' etc.
-
-
-*Exercise*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Open exercise 2 in the counterbalanceExercises folder. This is very similar to our last task, but this time our two routines present different kinds of components, so we need to use a different method of counterbalancing. 
-
-We want a design where groupA sees cat images first and group B sees cat words first. Counterbalance this flow using the nReps arguments in the loops.
 
 
 All done
 --------------------------------------
 
-You can now create trials and blocks in any order, fixed or random and counterbalance subtasks!
+You now know the building blocks to making basic and complex blocked designs! 
 
-You're in complete control (but you need to understand what orders you want!)
-
-*Up next* :ref:`builderAndCode`
+:ref:`Next <builderAndCode>`
 
 
 
