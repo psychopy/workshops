@@ -42,6 +42,8 @@ Many similar concepts:
 - creating a dialog box from a dictionary
 - TrailHandler(s) and ExperimentHandler
 
+.. nextslide::
+
 It can be useful:
 
 - to get ideas for how to do things
@@ -61,7 +63,7 @@ Hacking the script is useful to see how things work but it's better to add your 
 
 .. _codeArguments:
 
-Code as arguments
+Code "as arguments"
 ---------------------
 
 Most dialog entries have the option to take raw Python code if you start your entry with `$` (or have that by default).
@@ -172,19 +174,26 @@ Then in the End Routine tab we could use:
 
 .. nextslide::
 
-Finally, at the end of our experiment we could add a text component and use some code in the text field :code:`$'You scored' + str((totalCorrect/totalTrials)*100) + '% correct!'`. If you want to be kind to future you, you could even save this summary variable to your data file by adding a code component to your last routine :code:`thisExp.addData('percent_correct', (totalCorrect/totalTrials)*100)`
+Finally, at the end of our experiment we could add a text component and use some code in the text field::
+  
+  $'You scored' + str((totalCorrect/totalTrials)*100) + '% correct!'.
+
+If you want to be kind to future you, you could even save this summary variable to your data file by adding a code component to your last routine::
+  
+  thisExp.addData('percent_correct', (totalCorrect/totalTrials)*100)
 
 .. nextslide::
 
 We can also obtain similar feedback when :ref:`usingMouse` (but let's save that for later!)
 
-*Exercise (10 mins)*
+*Exercise (20 mins)*
 ---------------------
 
 
 
-* Use a conditional (if/then) code component to set the color of the feedback to be green if the response is correct and red if incorrect. 
-* Give trial-by-trial feedback on how fast the participant was. Hint: you can access response times from a keypress using  :code:`key_resp.rt` and convert numbers to strings using :code:`str(x)` where :code:`x` is your number. 
+* set the color of the feedback to be green if the response is correct and red if incorrect. 
+* give trial-by-trial feedback on how fast the participant was. Hint: you can access response times from a keypress using  :code:`key_resp.rt` and convert numbers to strings using :code:`str(x)` where :code:`x` is your number. 
+* *if there's time* download the images `here <https://gitlab.pavlovia.org/Hirst/workshopnumberstroop/tree/master/images>`_ to show a celebration image if correct, and a sad face if incorrect. 
 
 More code examples
 =========================
@@ -346,10 +355,6 @@ Using mouse/touchscreen responses
 ===================================
 
 Mouse responses register as touch responses on touch screen devices, so they do make for a more portable online study. 
-
-.. figure:: /_images/mouse_component.png
-
-            The parameters of a mouse component. To store click times use he settings in the "Data" tab.
 
 .. _mouseFeedback:
 
