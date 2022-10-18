@@ -13,6 +13,7 @@ Upcoming events
 ------------------
 
 * **October 19th 2022 - October 21st 2022** (Uk timezone) - 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **October 28th 2022 15:00 BST** `Pavlovia Surveys Live Launch Webinar! (Free) <https://www.eventbrite.co.uk/e/pavlovia-surveys-launch-webinar-tickets-443298055417>`_.  
 * **November 30th 2022 - December 2nd 2022** (US East Coast timezone) - 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
 
 Alternatively, if you would you like a workshop specifically for your department? or one-to-one training? Contact us workshops@opensciencetools.org.
