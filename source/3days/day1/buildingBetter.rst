@@ -204,7 +204,7 @@ For the "Conditions" field in the block loop we access the "group" field from th
 
 
 All done
---------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You now know the building blocks to making basic and complex blocked designs! 
 
