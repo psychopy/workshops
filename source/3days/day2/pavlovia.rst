@@ -38,6 +38,7 @@ What is our "Buisiness model"?
 We have a unique model to try and sustain open source software, whilst trying to be as low cost as possible.
 
 .. image:: /_images/Buisiness_model.png
+    :width: 90%
     :align: left
 
 So.. how do we use pavlovia.org?
@@ -47,6 +48,7 @@ We might want to use Pavlovia.org to:
 
 * Find and reuse others studies
 * Launch our own study in browser
+* **Since Yesterday** to build surveys!
 
 Finding openly shared experiments
 ----------------------------------
@@ -126,6 +128,33 @@ Let's push our task online!
 
 Let's try putting the task we made in day 1 online and getting some data together!
 
+.. _onlineConsiderations:
+
+Special considerations online
+=================================
+
+General Tips
+----------------------------------------
+
+* Check if the components you want to use are supported online. 
+* Specify the resources needed for yoru experiment.
+* Use height units as they will scale across devices.
+
+What device is my participant using?
+----------------------------------------
+
+Participants can use any device (movbile phones, tablets, laptops...). If we want to make our task touchscreen compatible we can explore the :ref:`usingMouse`.
+
+* You can check the window size at anypoint using :code:`win.size()`
+* Pavlovia will automatically try to save frame rate and OS (but be careful, browser security can "fake" OS)
+
+
+Special checks
+----------------------------------------
+
+
+* Headphone checkers - `Can be easily added thanks to Milne et al 2020 <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ 
+* Viewing distance checks - `Using easy eyes <https://gitlab.pavlovia.org/Consultancy/easyeyesdemo/>`_
 
 .. _debuggingOnline:
 
@@ -143,7 +172,8 @@ Remember that locally PsychoPy runs a compiled python experiment. Online pavlovi
 
 The PsychoJS library `doesn't yet contain everything in PsychoPy <https://www.psychopy.org/online/status.html>`_ , for several reasons:
 
-*   Does a component "make sense" online? e.g. Grating stimuli ideally require a luminance calibrated monitor. Does your participant have a photometer at home? Input/Output components to connect with EEG might not make sense online either..
+*   Online experiments need all their resources "explicitly" stating - we oly have access to what our browser has available.
+*   Are you trying to use a Python Library? Browsers need JavaScript.
 *   PsychoJS is younger than PsychoPy! (but we're making good progress!)
 
 Transpiling 
