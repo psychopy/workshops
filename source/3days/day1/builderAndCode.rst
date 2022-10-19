@@ -162,38 +162,33 @@ In the Begin Experiment tab, we could use:
 
 .. code::
 
-   totalTrials = 0
-   totalCorrect = 0
+   accuracy_list = []
 
 Then in the End Routine tab we could use:
 
 .. code::
 
-   totalTrials += 1
-   totalCorrect += key_resp.corr
+   accuracy_list.append(key_resp.corr)
 
 .. nextslide::
 
 Finally, at the end of our experiment we could add a text component and use some code in the text field::
   
-  $'You scored' + str((totalCorrect/totalTrials)*100) + '% correct!'.
+  $'You scored' + str((sum(accuracy_list)/len(accuracy_list))*100) + '% correct!'.
 
 If you want to be kind to future you, you could even save this summary variable to your data file by adding a code component to your last routine::
   
-  thisExp.addData('percent_correct', (totalCorrect/totalTrials)*100)
-
-.. nextslide::
-
-We can also obtain similar feedback when :ref:`usingMouse` (but let's save that for later!)
+  thisExp.addData('percent_correct', (sum(accuracy_list)/len(accuracy_list))*100)
 
 *Exercise (20 mins)*
 ---------------------
 
 
-
-* set the color of the feedback to be green if the response is correct and red if incorrect. 
+* set the color of the trial-by-trial feedback to be green if the response is correct and red if incorrect. 
 * give trial-by-trial feedback on how fast the participant was. Hint: you can access response times from a keypress using  :code:`key_resp.rt` and convert numbers to strings using :code:`str(x)` where :code:`x` is your number. 
-* *if there's time* download the images `here <https://gitlab.pavlovia.org/Hirst/workshopnumberstroop/tree/master/images>`_ to show a celebration image if correct, and a sad face if incorrect. 
+*if there's time*
+* download the images `here <https://gitlab.pavlovia.org/Hirst/workshopnumberstroop/tree/master/images>`_ to show a celebration image if the answer is correct, and a sad face if incorrect on each trial.
+* make a list to track response time over trials and tell participants their average response time at the end. Hint: you can get the average of a list using :code:`average` 
 
 More code examples
 =========================
