@@ -136,14 +136,15 @@ Special considerations online
 General Tips
 ----------------------------------------
 
+* **Use the most recent release** developement is happening so much faster now!
 * Check if the components you want to use are supported online. 
-* Specify the resources needed for yoru experiment.
+* Specify the resources needed for your experiment.
 * Use height units as they will scale across devices.
 
 What device is my participant using?
 ----------------------------------------
 
-Participants can use any device (movbile phones, tablets, laptops...). If we want to make our task touchscreen compatible we can explore the :ref:`usingMouse`.
+Participants can use any device (mobile phones, tablets, laptops...). If we want to make our task touchscreen compatible we can explore the :ref:`usingMouse`.
 
 * You can check the window size at anypoint using :code:`win.size()`
 * Pavlovia will automatically try to save frame rate and OS (but be careful, browser security can "fake" OS)
@@ -170,9 +171,9 @@ Remember that locally PsychoPy runs a compiled python experiment. Online pavlovi
 
 .. nextSlide::
 
-The PsychoJS library `doesn't yet contain everything in PsychoPy <https://www.psychopy.org/online/status.html>`_ , for several reasons:
+Not everything in Python will transpile smoothly to JS, why?
 
-*   Online experiments need all their resources "explicitly" stating - we oly have access to what our browser has available.
+*   Online experiments need all their resources "explicitly" stating - we only have access to what our browser has available.
 *   Are you trying to use a Python Library? Browsers need JavaScript.
 *   PsychoJS is younger than PsychoPy! (but we're making good progress!)
 
