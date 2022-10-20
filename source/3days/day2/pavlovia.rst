@@ -78,17 +78,20 @@ Or we could search for that experiment and download it directly in PsychoPy:
 Syncing our own study to pavlovia
 ----------------------------------
 
-If the task that you need doesn't already exist - push your own! Before you get started try to make sure you:
+If the task that you need doesn't already exist - upload your own! Before you get started try to make sure you:
 
-*    Have a fresh folder that contains only **one .psyexp file and the resources needed by that file**. 
-*   It can also be helpful to make sure your folder is not in a location already under git version control. 
+.. rst-class:: build
+
+    *    Have a fresh folder that contains only **one .psyexp file and the resources needed by that file**. 
+    *   It can also be helpful to make sure your folder is not in a location already under git version control (if you're not sure, you can show hidden files, if your folder or any folder above it in the path has a .git file - that area ia under version control). 
 
 .. nextSlide::
 
 Once you have made your experiment and made sure that your local folders are organized neatly ( **with one .psyexp file in this location**) you're ready to sync your project to pavlovia!. 
 
 .. image:: /_images/sync_to_pav.png
-    :align: left
+    :width: 80%
+    :align: center
 
 .. nextSlide::
 
@@ -99,8 +102,16 @@ Once you have synced your study you will find it in your Dashboard on pavlovia.o
 
 .. nextSlide::
 
-*   *Piloting versus running* - piloting will produce a token that lets you run your study for free for one hour, a data file will automatically download so that you can inspect it. Running will generate a URL to share with participants - no data will be downloaded locally using that link.
-*   *CSV or DATABASE* - csv will generate a csv file per participant that will be sent to your gitlab repository (so it will be public if you make the repo public). Database will append all participants data to a single file (it will not be sent to gitlab).
+.. rst-class:: build
+
+    *   *Piloting versus running*:
+
+        *   Piloting will produce a token that lets you run your study for free for one hour, a data file will automatically download so that you can inspect it. 
+        *   Running will generate a URL to share with participants - no data will be downloaded locally using that link.
+    *   *CSV or DATABASE*:
+    
+        *   CSV will generate a csv file per participant that will be sent to your gitlab repository (so it will be public if you make the repo public).
+        *   DATABASE will append all participants data to a single file (it will not be sent to gitlab).
 
 .. _additionalResources:
 
