@@ -248,14 +248,6 @@ You can continuously check if a mouse is pressed in an object using :code:`mouse
 
 For a more advanced drag and drop demo `see here <https://run.pavlovia.org/demos/draganddrop/>`_
 
-Stimuli that act as buttons
-----------------------------------
-
-To turn a stimulus (almost any stimulus) into a button:
-
-- Add a Mouse Component (let's call it `resp`)
-- In the Mouse object, provide the names of stimuli that are "clickable"
-- Optionally, insert whatever attributes about that stimulus you want to store
 
 Hover effects
 ---------------------------------------------
