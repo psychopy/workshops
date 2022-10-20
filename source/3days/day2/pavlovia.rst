@@ -82,8 +82,8 @@ If the task that you need doesn't already exist - upload your own! Before you ge
 
 .. rst-class:: build
 
-    *    Have a fresh folder that contains only **one .psyexp file and the resources needed by that file**. 
-    *   It can also be helpful to make sure your folder is not in a location already under git version control (if you're not sure, you can show hidden files, if your folder or any folder above it in the path has a .git file - that area ia under version control). 
+    *   Have a fresh folder that contains only **one .psyexp file and the resources needed by that file**. 
+    *   Check your folder is not in a location already under git version control (if you're not sure, you can show hidden files, if your folder or any folder above it in the path has a .git file - that area ia under version control). 
 
 .. nextSlide::
 
@@ -168,9 +168,11 @@ What device is my participant using?
 
 Participants can use any device (mobile phones, tablets, laptops...).
 
-* You can check the window size at anypoint using :code:`win.size()`
-* Pavlovia will automatically try to save frame rate and OS (but be careful, browser security can "fake" OS)
-* You can make experiments touchscreen compatible using the Mouse component...
+.. rst-class:: build
+
+    * You can check the window size at anypoint using :code:`win.size()`
+    * Pavlovia will automatically try to save frame rate and OS (but be careful, browser security can "fake" OS)
+    * You can make experiments touchscreen compatible using the Mouse component...
 
 .. _usingMouse:
 
@@ -224,10 +226,27 @@ There are some neat aspects to the mouse that can make for interesting interacti
 Stimuli that move with the mouse
 ----------------------------------
 
-It's the easiest thing in the world to make a stimulus appear at the location of the mouse:
+It's **very** easy to make a stimulus appear at the location of the mouse:
 
 - add a Mouse Component (let's call it `mouse`)
 - set the position of your stimulus to be at `mouse.getPos()` and **update on every frame**
+
+Tracking the mouse
+----------------------------------
+
+You can track the mouse by setting data to save on "every frame".
+
+
+Dragging and dropping
+----------------------------------
+
+You can continuously check if a mouse is pressed in an object using :code:`mouse.isPressedIn(x) method`. 
+
+* If dragging one thing, you set the position of something to be the location of the mouse if it's pressed in that object. 
+* If dragging more things, there are more considerations. Here is a `demo <https://run.pavlovia.org/lpxrh6/christmas_dragndrop/>`_ and `experiment files <https://gitlab.pavlovia.org/lpxrh6/christmas_dragndrop/>`_. 
+
+
+For a more advanced drag and drop demo `see here <https://run.pavlovia.org/demos/draganddrop/>`_
 
 Stimuli that act as buttons
 ----------------------------------
@@ -238,7 +257,7 @@ To turn a stimulus (almost any stimulus) into a button:
 - In the Mouse object, provide the names of stimuli that are "clickable"
 - Optionally, insert whatever attributes about that stimulus you want to store
 
-Is the mouse in *this* area?
+Hover effects
 ---------------------------------------------
 
 Most stimuli (except for text) have a method `.contains()` and so we can test whether the mouse is at that location.
@@ -268,21 +287,7 @@ The stimulus that you test can be moving and that's fine too. The `.contains()` 
 
 The "stimulus" can also be invisible (so you're effectively just using it to define an "area" rather than a stimulus).
 
-Is the mouse "pressed in"
----------------------------------------------
 
-You can continuously check if a mouse is pressed in an object using the mouse.isPressedIn(x) method. To check if the mouse is in the area of x and if one of the buttons is pressed in. 
-
-Creating a button
----------------------------------------------
-
-Using the fact that we can easily work out where a mouse is we can create dynamic "buttons" with a bit of code as well:
-
-- create a stimulus
-- test whether the mouse is contained in that stimulus
-- test whether the mouse button(s) are being pressed
-
-You can even make your button change when it has been pressed (e.g. stimuli that disappear once you click them?) or when you hover over them
 .. _debuggingOnline:
 
 Debugging online
