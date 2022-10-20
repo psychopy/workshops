@@ -109,7 +109,7 @@ Once you have synced your study you will find it in your Dashboard on pavlovia.o
         *   Piloting will produce a token that lets you run your study for free for one hour, a data file will automatically download so that you can inspect it. 
         *   Running will generate a URL to share with participants - no data will be downloaded locally using that link.
     *   *CSV or DATABASE*:
-    
+
         *   CSV will generate a csv file per participant that will be sent to your gitlab repository (so it will be public if you make the repo public).
         *   DATABASE will append all participants data to a single file (it will not be sent to gitlab).
 
@@ -147,18 +147,12 @@ Special considerations online
 General Tips
 ----------------------------------------
 
-* **Use the most recent release** developement is happening so much faster now!
-* Check if the components you want to use are supported online. 
-* Specify the resources needed for your experiment.
-* Use height units as they will scale across devices.
+.. rst-class:: build
 
-What device is my participant using?
-----------------------------------------
-
-Participants can use any device (mobile phones, tablets, laptops...). If we want to make our task touchscreen compatible we can explore the :ref:`usingMouse`.
-
-* You can check the window size at anypoint using :code:`win.size()`
-* Pavlovia will automatically try to save frame rate and OS (but be careful, browser security can "fake" OS)
+    * **Use the most recent release** developement is happening so much faster now!
+    * Check if the components you want to use are supported online. 
+    * Specify the resources needed for your experiment.
+    * Use height units as they will scale across devices.
 
 
 Special checks
@@ -168,6 +162,127 @@ Special checks
 * Headphone checkers - `Can be easily added thanks to Milne et al 2020 <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ 
 * Viewing distance checks - `Using easy eyes <https://gitlab.pavlovia.org/Consultancy/easyeyesdemo/>`_
 
+
+What device is my participant using?
+----------------------------------------
+
+Participants can use any device (mobile phones, tablets, laptops...).
+
+* You can check the window size at anypoint using :code:`win.size()`
+* Pavlovia will automatically try to save frame rate and OS (but be careful, browser security can "fake" OS)
+* You can make experiments touchscreen compatible using the Mouse component...
+
+.. _usingMouse:
+
+Using mouse/touchscreen responses
+===================================
+
+Mouse responses register as touch responses on touch screen devices, so they do make for a more portable online study. 
+
+.. _mouseFeedback:
+
+Data from the mouse
+-----------------------------------
+
+In our example, we can allow participants to click on numbers by making the mouse end and save data on "valid clicks", this returns:
+
+- :code:`mouse.time` the time(s) of the mouse click(s). 
+- :code:`mouse.clicked_name` the name(s) of the last object clicked 
+
+.. nextslide::
+
+**Accuracy feedback from a mouse** 
+
+Imagine we wanted to check our participant had selected the correct object. We could add a column to our conditions file e.g. "corrClick" then use a code component to check if this was correct::
+
+    if mouse.clicked_name[-1] == corrClick:
+        correct = 1
+        print('correct!')
+    else:
+        correct = 0
+        print('incorrect')
+
+Note that we use :code:`[-1]` to retrieve the last object/time that was clicked. 
+
+
+*Exercise (20 mins)*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Make the rest of your experiment touchscreen compatible. You will need to add mouse responses that can be used instead of/alongside keyboard responses. Remember:
+
+* If it doesn’t matter what the response is “any click” is fine
+* If it does matter what the response it (e.g. the consent page) You’ll need to add some Text, and list it s “Clickable”. 
+
+.. _mouse3days:
+
+Making the most of mouse inputs
+=================================
+
+There are some neat aspects to the mouse that can make for interesting interactive experiments.
+
+
+Stimuli that move with the mouse
+----------------------------------
+
+It's the easiest thing in the world to make a stimulus appear at the location of the mouse:
+
+- add a Mouse Component (let's call it `mouse`)
+- set the position of your stimulus to be at `mouse.getPos()` and **update on every frame**
+
+Stimuli that act as buttons
+----------------------------------
+
+To turn a stimulus (almost any stimulus) into a button:
+
+- Add a Mouse Component (let's call it `resp`)
+- In the Mouse object, provide the names of stimuli that are "clickable"
+- Optionally, insert whatever attributes about that stimulus you want to store
+
+Is the mouse in *this* area?
+---------------------------------------------
+
+Most stimuli (except for text) have a method `.contains()` and so we can test whether the mouse is at that location.
+
+Let's create a circle called `myStim` and an object that tracks the mouse, called `marker` and make `marker` change color if it goes inside the circle.
+
+All we need is a Code Component with "Each Frame" set to::
+
+  if myStim.contains(mouse):
+    marker.color = 'red'
+  else:
+    marker.color = 'blue'
+
+.. note::
+  To take this online we need a slight edit::
+  
+    polygon.fillColor = new util.Color("red");
+
+  instead of::
+
+    polygon.color = 'red'
+
+
+.. nextslide::
+
+The stimulus that you test can be moving and that's fine too. The `.contains()` method doesn't care if the position is changing!
+
+The "stimulus" can also be invisible (so you're effectively just using it to define an "area" rather than a stimulus).
+
+Is the mouse "pressed in"
+---------------------------------------------
+
+You can continuously check if a mouse is pressed in an object using the mouse.isPressedIn(x) method. To check if the mouse is in the area of x and if one of the buttons is pressed in. 
+
+Creating a button
+---------------------------------------------
+
+Using the fact that we can easily work out where a mouse is we can create dynamic "buttons" with a bit of code as well:
+
+- create a stimulus
+- test whether the mouse is contained in that stimulus
+- test whether the mouse button(s) are being pressed
+
+You can even make your button change when it has been pressed (e.g. stimuli that disappear once you click them?) or when you hover over them
 .. _debuggingOnline:
 
 Debugging online
