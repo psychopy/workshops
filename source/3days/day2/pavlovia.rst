@@ -222,33 +222,6 @@ Making the most of mouse inputs
 
 There are some neat aspects to the mouse that can make for interesting interactive experiments.
 
-
-Stimuli that move with the mouse
-----------------------------------
-
-It's **very** easy to make a stimulus appear at the location of the mouse:
-
-- add a Mouse Component (let's call it `mouse`)
-- set the position of your stimulus to be at `mouse.getPos()` and **update on every frame**
-
-Tracking the mouse
-----------------------------------
-
-You can track the mouse by setting data to save on "every frame".
-
-
-Dragging and dropping
-----------------------------------
-
-You can continuously check if a mouse is pressed in an object using :code:`mouse.isPressedIn(x) method`. 
-
-* If dragging one thing, you set the position of something to be the location of the mouse if it's pressed in that object. 
-* If dragging more things, there are more considerations. Here is a `demo <https://run.pavlovia.org/lpxrh6/christmas_dragndrop/>`_ and `experiment files <https://gitlab.pavlovia.org/lpxrh6/christmas_dragndrop/>`_. 
-
-
-For a more advanced drag and drop demo `see here <https://run.pavlovia.org/demos/draganddrop/>`_
-
-
 Hover effects
 ---------------------------------------------
 
@@ -278,6 +251,33 @@ All we need is a Code Component with "Each Frame" set to::
 The stimulus that you test can be moving and that's fine too. The `.contains()` method doesn't care if the position is changing!
 
 The "stimulus" can also be invisible (so you're effectively just using it to define an "area" rather than a stimulus).
+
+
+Stimuli that move with the mouse
+----------------------------------
+
+It's **very** easy to make a stimulus appear at the location of the mouse:
+
+- add a Mouse Component (let's call it `mouse`)
+- set the position of your stimulus to be at `mouse.getPos()` and **update on every frame**
+
+Tracking the mouse
+----------------------------------
+
+You can track the mouse by setting data to save on "every frame".
+
+
+Dragging and dropping
+----------------------------------
+
+You can continuously check if a mouse is pressed in an object using :code:`mouse.isPressedIn(x) method`. 
+
+* If dragging one thing, you set the position of something to be the location of the mouse if it's pressed in that object. 
+* If dragging more things, there are more considerations. Here is a `demo <https://run.pavlovia.org/lpxrh6/christmas_dragndrop/>`_ and `experiment files <https://gitlab.pavlovia.org/lpxrh6/christmas_dragndrop/>`_. 
+
+
+For a more advanced drag and drop demo `see here <https://run.pavlovia.org/demos/draganddrop/>`_
+
 
 
 .. _debuggingOnline:
