@@ -22,9 +22,8 @@ If there is an open JS library for it, then it can be imported into PsychoPy and
 
 Some of the tools we can use online:
 	- `Eye tracking <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_
-
-        -Archived (run on PsychoPy versions pre 2021.2): Examples using the `Posner task <https://run.pavlovia.org/lpxrh6/posner_eyetracking_test/>`_, and another for tracking `basic left right eye movements <https://run.pavlovia.org/lpxrh6/demo_eye_tracking/>`_)
-
+    - `face expression and landmark detection <https://run.pavlovia.org/lpxrh6/demo_faceapi/>`_
+    - `voice transcription <https://run.pavlovia.org/lpxrh6/demo_transcribe/>`_ - though do set up your google speech api key! (here is a `YouTube video <https://youtu.be/VRDtj9S9pu8>`_)
 	- Your device sensors such as the `Gyroscope <https://run.pavlovia.org/tpronk/demo_gyroscope/>`_
 
 
@@ -34,25 +33,19 @@ In your breakout rooms work through this stepby-step guide to implement some ada
 
 .. nextSlide::
 
-**Step 1: Forking the demo**
+**Step 1: Download the demo**
 
-This step is optional, it gives you a chance to learn how to fork in gitlab, but if this step is less interesting to you, and you want to get stuck in, you can just go straight to the `demo <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ and click "download". 
+Go to the `demo <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ and click "download". 
 
 .. image:: /_images/download_gitlab.png
     :align: left
 
-If you want to fork here are the steps (otherwise go straight to step 2):
-
-1.	Search for and :ref:`forking` the `demo_eye_tracking2 <https://gitlab.pavlovia.org/demos/demo_eye_tracking2>`_ project in demos.
-2.	Click `fork <https://workshops.psychopy.org/3days/day2/pavlovia.html#finding-shared-experiments-from-pavlovia-itself>`_ and select the name space you want to fork this too. 
-3.	Go to Dashboard> Experiments, find your newly forked project and set its’ status to running. Click ‘Run’ and check that it works on your own set up (you may be asked for webcam permissions the first time you run the demo). 
-4.	From your local PsychoPy. Select the ‘search pavlovia’ icon  (central globe icon in the top tool bar) and search ‘demo_eye_tracking’. Find the version that you just forked to your own namespace **Important: make sure it is the copy from your own namespace**
 
 .. nextSlide::
 
 **Step 2: Making local edits**
 
-OK so now we have our own copy of an eye tracking demo! Let’s make some edits! An important part of this exercise is that we don’t *need* to know JS in order to use this demo (but we can learn some bits along the way if we want!). We just need to know how to navigate code and what is possible. We are going to adapt the ‘tracking_trial’ routine .
+OK so now we have our own copy of an eye tracking demo! Let’s make some edits! An important part of this exercise is that we don’t *need* to know JS in order to use this demo, we just need to know how to navigate code and what is possible. We are going to adapt the ‘tracking_trial’ routine .
 
 .. image:: /_images/tricking_routine.png
     :align: left
@@ -109,3 +102,6 @@ Ok imagine we want several trials, where each trial ends when the participant lo
         thisCol = 'white'
 
 
+**Additional links**
+
+* Archived (run on PsychoPy versions pre 2021.2): Examples using the `Posner task <https://run.pavlovia.org/lpxrh6/posner_eyetracking_test/>`_, and another for tracking `basic left right eye movements <https://run.pavlovia.org/lpxrh6/demo_eye_tracking/>`_)
