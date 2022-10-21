@@ -24,15 +24,6 @@ In this session we'll create an experiment from scratch using only Python code. 
 
 To start with we will learn the fastest way to code an experiment (with the simplest code), but this doesn't mean it is the "best" way - so do check out the suggested :ref:`Improvements3days`.
 
-Basic Lingo
-------------------------
-
-* **Integer** A whole number. 
-* **Float** A decimal value.
-* **String** Characters enclosed in quotations e.g. "hello"
-* **List** Square brackets containing a list of elements
-* **Dictionary** Curly brackets containing sets of "key value pairings".
-
 The Posner Cuing task
 ------------------------
 
@@ -61,12 +52,23 @@ Don't be tempted to try and write a script from beginning to end in one go! Brea
     - need to alter cues
 - make sure data are being saved
 
+Basic Lingo
+------------------------
+
+* **Integer** A whole number. 
+* **Float** A decimal value.
+* **String** Characters enclosed in quotations e.g. "hello"
+* **List** Square brackets containing a list of elements
+* **Dictionary** Curly brackets containing sets of "key value pairings". 
+
+:code:`{'name':'Becca', 'height':165, 'hungry': True, 'food choices':['chocholate', 'pizza', 'cheese']}`
+
 Create a window
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First we need to import the necessary libraries. For an experiment we nearly always need to import the `visual`, `event`, `data` and `core` modules from PsychoPy::
 
-    from psychopy import visual, event, core, data
+    from psychopy import visual, event, core, data, gui
 
 then creating a window is another single line. We'll use units of pixels for the window for simplicity. Then all our stimulus dimensions will be in pixels::
 
