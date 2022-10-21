@@ -77,6 +77,8 @@ Day 3: Coding Experiments
   day3/codingAnExperiment
   day3/improvements
   day3/hardware/index
+  day3/builder_parallel/customRandomisation
+  day3/builder_parallel/makingMassComponents
 
 
 General Python Syntax
