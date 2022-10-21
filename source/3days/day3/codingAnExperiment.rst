@@ -24,6 +24,15 @@ In this session we'll create an experiment from scratch using only Python code. 
 
 To start with we will learn the fastest way to code an experiment (with the simplest code), but this doesn't mean it is the "best" way - so do check out the suggested :ref:`Improvements3days`.
 
+Basic Lingo
+------------------------
+
+* **Integer** A whole number. 
+* **Float** A decimal value.
+* **String** Characters enclosed in quotations e.g. "hello"
+* **List** Square brackets containing a list of elements
+* **Dictionary** Curly brackets containing sets of "key value pairings".
+
 The Posner Cuing task
 ------------------------
 
