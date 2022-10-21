@@ -7,6 +7,9 @@
 Coding a full experiment
 ============================================
 
+Why code an experiment?
+-------------------------
+
 In this session we'll create an experiment from scratch using only Python code. We've provided more specific detail on :ref:`syntax` later in this material for future reference. 
 
 .. nextslide::
