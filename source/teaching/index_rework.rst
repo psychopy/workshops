@@ -1,6 +1,17 @@
 Resources for teaching and learning
 =====================================
 
+.. list-table:: Power-point slides
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Topic
+     - Link
+   * - Row 1, column 1
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+
 There are a number of further resources to help learn/teach about PsychoPy.
 
 If you also have PsychoPy materials/course then please let us know so that we can link to them from here too!

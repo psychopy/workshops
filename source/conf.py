@@ -41,6 +41,7 @@ extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.ifconfig',
     'sphinx.ext.graphviz',
+    "sphinx_carousel.carousel",
 ]
 
 graphviz_output_format = 'png'

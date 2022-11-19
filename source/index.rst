@@ -6,65 +6,50 @@
         :scale: 25 %
 
 
-Open Science Tools official workshops
-=======================================
+Official PsychoPy and Pavlovia workshops
+=========================================
+
+Come an join us in learning PsychoPy! Book onto one of our scheduled events or book a bespoke event for your department. We offer both in person, online or hybrid formats. Contact us workshops@opensciencetools.org.
+
+.. only:: html
+
+  .. carousel::
+      :data-bs-interval: 5000
+      :data-bs-ride: carousel
+      :show_captions_below:
+      :show_shadows:
+      :show_buttons_on_top:
+      :show_controls:
+
+      .. figure:: /_images/3dayadvert_Nov2022.jpg
+        :target: https://workshops.psychopy.org/3days/index.html#dayindex
+
+        Join the team for our virtual 3 day comprehensive workshop!
+
+      .. figure:: /_images/SurveysLaunch.jpg
+        :target: https://www.youtube.com/watch?v=1fs8CVKBPGk
+
+        You can now make surveys directly in Pavlovia - learn how!
+
+      .. figure:: /_images/TobiiWorkshopAd.jpg
+        :target: https://run.pavlovia.org/pavlovia/survey/?surveyId=b86605ad-9851-45b6-a70b-a963c9f72e13
+
+        Get started making your eye tracking experiment in this workshop with the PsychoPy and Tobii team.
+
+      .. figure:: /_images/LJM_2022.jpg
+
+        Liverpool John Moore University - Bespoke 3 day workshop - July 2022
+
+      .. figure:: /_images/Cambridge_2022.jpg
+
+          University of Cambridge - 3 hour getting started workshop - October 2022
 
 Upcoming events
 ------------------
 
 * **November 30th 2022 - December 2nd 2022** (US East Coast timezone) - 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **January 13th 2023** Making eyetracking experiments with Tobii and PsychoPy. *In Person Event at The University of Nottingham* :ref:`Details here <tobiievent>` 
 
-Alternatively, if you would you like a workshop specifically for your department? or one-to-one training? Contact us workshops@opensciencetools.org.
-
-
-.. only:: html
-    .. image:: /_images/jumpAnimate.gif
-       :width: 100 %
-
-.. only:: latex
-    .. image:: /_images/jumpAnimate.png
-       :width: 100 %
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Past events
---------------------
-
--	23rd July 2021 - `New and Upcoming Features in PsychoPy <https://osf.io/u2e5a/>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
-- 21st July 2021 `Conducting online research with Pavlovia and PsychoPy  <https://osf.io/u2e5a/>`_ *Society for Applied Research in Memory and Cognition (SARMAC)*
-- 24th June 2021 -  `Taking experiments online with Pavlovia <https://osf.io/472zf/>`_ *Society for Improvement of Psychological Science (SIPS)*
-- ECEM, August 2013 : Python for eye-tracking workshop with (Sol Simpson, Michael MacAskill and Jon Peirce). `Download Python-for-eye-tracking materials <ECEM_Python_materials.zip>`_
 
 
 .. toctree::
