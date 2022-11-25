@@ -9,12 +9,14 @@ PsychoPy-Tobii eye tracking workshop
   About 
   ---------
 
+  `Purchase tickets here <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking>`_ 
+
   Come and learn PsychoPy AND make your Tobii eye tracking experiment with us! 
 
   .. image:: /_images/TobiiWorkshopAd.jpg
     :align: center
 
-  This workshop is designed to equip researchers with the skills needed to make an eye tracking experiment in PsychoPy using Tobii eye tracking equipment. The workshop will be divided into two goals; the morning session will be tailored towards a general introduction to PsychoPy, making experiments and getting started with inbuilt eye tracking functionality. The afternoon will be focused time allowing researchers to start creating their own eye tracking experiment- with the PsychoPy and Tobii team on hand to assist! Attendees can either bring their own Tobii or use Tobii equipment available in the session. Tickets will be limited, and will cost £150 + VAT per person. `Register interest to be notified when tickets are available <https://run.pavlovia.org/pavlovia/survey/?surveyId=b86605ad-9851-45b6-a70b-a963c9f72e13>`_.
+  This workshop is designed to equip researchers with the skills needed to make an eye tracking experiment in PsychoPy using Tobii eye tracking equipment. The workshop will be divided into two goals; the morning session will be tailored towards a general introduction to PsychoPy, making experiments and getting started with inbuilt eye tracking functionality. The afternoon will be focused time allowing researchers to start creating their own eye tracking experiment- with the PsychoPy and Tobii team on hand to assist! Attendees can either bring their own Tobii or use Tobii equipment available in the session. Tickets will be limited, and will cost £150 + VAT per person. `Tickets can be purchases through the University of Nottingham Store <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking>`_.
 
   *Draft timetable*
 
@@ -130,7 +132,7 @@ PsychoPy-Tobii eye tracking workshop
   How can I purchase tickets?
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Tickets will soon be available from The University of Nottingham Store and they will be charged at £150 + VAT. If you would like alerting when tickets come on sale `please register interest via this form <https://run.pavlovia.org/pavlovia/survey/?surveyId=b86605ad-9851-45b6-a70b-a963c9f72e13>`_
+  Tickets are available from The University of Nottingham Store and they will be charged at £150 + VAT. `Purchase tickets here <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking>`_
 
   Accessibility
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
