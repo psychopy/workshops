@@ -32,7 +32,7 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
         You can now make surveys directly in Pavlovia - learn how!
 
       .. figure:: /_images/TobiiWorkshopAd.jpg
-        :target: https://run.pavlovia.org/pavlovia/survey/?surveyId=b86605ad-9851-45b6-a70b-a963c9f72e13
+        :target: https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking
 
         Get started making your eye tracking experiment in this workshop with the PsychoPy and Tobii team.
 
