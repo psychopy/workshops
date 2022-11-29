@@ -113,6 +113,21 @@ e.g.
 
 Note: these are all cases where the components would be identical between blocks.
 
+
+Blocking: Our example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Imagine we want our task to include a block of neutral trials (i.e. both numbers always the same size) and a block of congruent incongruent trials (i.e. the size of the numbers change trial by trial). 
+
+We need to create a total of 3 conditions files:
+
+.. rst-class:: build
+
+	* neutral_conditions.xlsx - A spreadsheet with neutral trials.
+	* congruency_conditions.xlsx - A spreadsheet with con/incon trials.
+	* blocks.xlsx - A spreadsheet listing neutral_conditions.xlsx and congruency_conditions.xls
+
+
 The natural approach
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -139,17 +154,6 @@ Blocking: Case 2
 If you do have two blocks that contain very different stimuli/components the approach to take is to control the number of times each block repeats using an outer-loop. 
 
 .. image:: /_images/case2_blocks.png
-
-Blocking: Our example
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Imagine we want our task to include a block of neutral trials and a block of congruent/incongruent trials. 
-
-We need to create a total of 3 conditions files:
-
-- neutral_conditions.xlsx - A spreadsheet with neutral trials.
-- congruency_conditions.xlsx - A spreadsheet with con/incon trials.
-- blocks.xlsx - A spreadsheet listing neutral_conditions.xlsx and congruency_conditions.xls
 
 
 *Exercise (15 mins)*
