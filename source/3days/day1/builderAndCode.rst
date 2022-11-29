@@ -185,8 +185,6 @@ If you want to be kind to future you, you could even save this summary variable 
 
 
 * set the color of the trial-by-trial feedback to be green if the response is correct and red if incorrect. 
-* give trial-by-trial feedback on how fast the participant was. Hint: you can access response times from a keypress using  :code:`key_resp.rt` and convert numbers to strings using :code:`str(x)` where :code:`x` is your number. 
-*if there's time*
 * download the images `here <https://gitlab.pavlovia.org/Hirst/workshopnumberstroop/tree/master/images>`_ to show a celebration image if the answer is correct, and a sad face if incorrect on each trial.
 * make a list to track response time over trials and tell participants their average response time at the end. Hint: you can get the average of a list using :code:`average` 
 
@@ -268,16 +266,37 @@ It is really handy to be able to save custom variables to our data file. Followi
 
 .. _clocksAndTrialCounters:
 
-Clocks and trial counters
+Trial counters and clocks
 ===============================
+
+
+Trial counters
+-------------------------------
+
+How is PsychoPy counting trials?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Each loop we add to our experiment will automatically be counting the number of trials that have occurred already (as well as how many repetitions of our trials list have occurred!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
+
+.. nextslide::
+
+* :code:`trials.thisRepN` - the current repetition of your conditions file
+* :code:`trials.thisTrialN` - the current trialN within this repetition
+* :code:`trials.thisN` - the current trialN regardless of repetition
+* :code:`trials.thistrialIndex` - the index of the current trial from within our trialList (the conditions spreadsheet).
+
+Showing trial progress
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units :code:`pos = (-0.4, 0.4)`). In the text field add :code:`$'Progress: ' + str(trials.thisN) + '/' + str(trials.nTotal)`. 
+
 
 Clocks
 --------
 
 Keeping track of time is really important to most experiments. In PsychoPy there are many useful clocks that live "under the hood", which we can use in our experiment:
 
-*	:code:`routineClock` : Every routine has it's own clock with this naming convention e.g. a routine called "trial" would have a clock called "trialClock".
-*	:code:`t` : We might not need the routineClock, because the variable `t` represents the time since the start of the current routine anyway!
+*	:code:`t` : the variable `t` represents the time since the start of the current routine anyway!
 
 Making custom clocks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -321,28 +340,6 @@ The properties of the text component should look like this:
 .. nextslide::
 
 OK now you should have a timer to show participants how far through a trial they are!! If you wanted to show them how far into the experiment they are you could add a code component and in the `Begin Experiment` tab write :code:`expClock = core.Clock()`. Then in your text component replace :code:`t` with :code:`expClock.getTime()`.
-
-
-Trial counters
--------------------------------
-
-How is PsychoPy counting trials?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Each loop we add to our experiment will automatically be counting the number of trials that have occurred already (as well as how many repetitions of our trials list have occurred!). Run your experiment and have a loop at the output. You will see some useful information in the headers of your file.
-
-.. nextslide::
-
-*	:code:`trials.thisRepN` - the current repetition of your conditions file
-*	:code:`trials.thisTrialN` - the current trialN within this repetition
-*	:code:`trials.thisN` - the current trialN regardless of repetition
-*	:code:`trials.thistrialIndex` - the index of the current trial from within our trialList (the conditions spreadsheet).
-
-Showing trial progress
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Now we know how PsychoPy counts trials, we can use this info to add a trial counter and show how far through the experiment participants are. Add a text component and position it in the top left (in height units :code:`pos = (-0.4, 0.4)`). In the text field add :code:`$'Progress: ' + str(trials.thisN) + '/' + str(trials.nTotal)`. 
-
 
 
 What next?
