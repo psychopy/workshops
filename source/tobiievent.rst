@@ -81,7 +81,7 @@ PsychoPy-Tobii eye tracking workshop
         </tr>
         <tr>
           <td>13:00 - 13:30</td>
-          <td rowspan="2">Tobii demonstration</td>
+          <td rowspan="2">Use of Tobii Pro Lab and Psychopy with the Titta toolbox</td>
         </tr>
         <tr>
           <td>13:30 - 14:00</td>
