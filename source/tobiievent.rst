@@ -117,6 +117,7 @@ PsychoPy-Tobii eye tracking workshop
 
 
 
+
   What do I need in advance?
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -125,8 +126,9 @@ PsychoPy-Tobii eye tracking workshop
   Checklist:
 
   * Laptop/Computer
-  * Tobii (if you want to use your own!)
+  * Tobii (if you want to use your own!) - If you cannot bring your own Tobii, there will be four `Tobii Fusion <https://www.tobii.com/products/eye-trackers/screen-based/tobii-pro-fusion?gclid=Cj0KCQiAm5ycBhCXARIsAPldzoUtOECEKlCLzjlPSzvSLNf9suW6lOEAHVmBVZztiI5A0RJ7oq6ogywaAjAgEALw_wcB>`_ models available at the workshop. 
   * Stimuli/task materials you will need to make your experiment
+  *Tobii Pro Lab installed (if you wish to follow along with that part of the demonstration on your own laptop).
 
 
   How can I purchase tickets?
