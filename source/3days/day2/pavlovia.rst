@@ -32,14 +32,16 @@ Once we have our experiment written in JS, we need a way to "host" it online.  `
 * A secure server for running experiments and storing data.
 * A git based version control system.
 * A huge open access library of experiments (that you can add to!)
+* A place for creating and running Surveys (using Pavlovia Surveys)
 
 What is our "Buisiness model"?
 --------------------------------
 We have a unique model to try and sustain open source software, whilst trying to be as low cost as possible.
 
-.. image:: /_images/Buisiness_model.png
-    :width: 90%
-    :align: left
+.. figure:: /_images/Buisiness_model.png
+    :width: 80%
+
+    As of Jan 2023 Licences will be £1800/£0.24 credit (£900 for emergine economies)
 
 So.. how do we use pavlovia.org?
 ----------------------------------
@@ -48,7 +50,7 @@ We might want to use Pavlovia.org to:
 
 * Find and reuse others studies
 * Launch our own study in browser
-* **Since Yesterday** to build surveys!
+* Build surveys
 
 Finding openly shared experiments
 ----------------------------------
@@ -213,7 +215,7 @@ Note that we use :code:`[-1]` to retrieve the last object/time that was clicked.
 Make the rest of your experiment touchscreen compatible. You will need to add mouse responses that can be used instead of/alongside keyboard responses. Remember:
 
 * If it doesn’t matter what the response is “any click” is fine
-* If it does matter what the response it (e.g. the consent page) You’ll need to add some Text, and list it s “Clickable”. 
+* If it does matter what the response it (e.g. a consent page) You’ll need to add some Text, and list it as “Clickable”. 
 
 .. _mouse3days:
 
