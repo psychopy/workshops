@@ -41,7 +41,7 @@ We have a unique model to try and sustain open source software, whilst trying to
 .. figure:: /_images/Buisiness_model.png
     :width: 80%
 
-    As of Jan 2023 Licences will be £1800/£0.24 credit (£900 for emergine economies)
+    As of Jan 2023 Licences will be £1800/£0.24 credit (£900 for emerging economies)
 
 So.. how do we use pavlovia.org?
 ----------------------------------
@@ -298,7 +298,7 @@ Remember that locally PsychoPy runs a compiled python experiment. Online pavlovi
 
 Not everything in Python will transpile smoothly to JS, why?
 
-*   Online experiments need all their resources "explicitly" stating - we only have access to what our browser has available.
+*   Online experiments only have access to what our browser has available, not all resouces on your desktop.
 *   Are you trying to use a Python Library? Browsers need JavaScript.
 *   PsychoJS is younger than PsychoPy! (but we're making good progress!)
 
@@ -320,7 +320,7 @@ General tips for getting online
 ----------------------------------
 
 1. **Update to the latest release!** Version 2021.2. improved transpiling alot and you can save *alot* of manual debugging online using that version. 
-2. Always check the status of online options `status of online options <https://www.psychopy.org/online/status.html>`_ *before* making your experiment
+2. Always check the status of online options (you can filter your components in the PsychoPy app to show what works online)
 3. Push your experiment little and often (don't make your full experiment perfectly locally and then try to push it online)
 4. Read the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_
 5. Check out the `psychoJS documentation <https://psychopy.github.io/psychojs/>`_
@@ -357,19 +357,6 @@ This means that you are referencing a variable that is not yet defined in your J
 
 Semantic errors commonly happen when researchers try to use python libraries or functions that don't exist in Javascript e.g. *"np is not defined"* We recommend taking a look at the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ in cases like this that need manually translating. Here, there is a handy list of python terms and there equivalent JavaScript term (A huge credit to `Wakefield Morys-Carter <https://uk.linkedin.com/in/wakecarter>`_ for compiling this). 
 
-.. nextSlide::
-
-**Declaring variables**
-
-This is a rarer one, but handy to know about. Another reason a semantic error could occur is if you have created a variable in a loop, and PsychoPy hasn't "caught" that variable to declare it in JavaScript. An easy way to avoid this it to also declare that variable outside of the loop::
-
-    thisVariable = 0
-    
-    things = [1, 2, 3]
-    for thing in things:
-        if thing == 2:
-            thisVariable = 'FOUND NUMBER 2'
-
 
 .. _networkErrors:
 
@@ -395,7 +382,7 @@ If a resource is defined through code rather than from a conditions file or comp
 Type Error: X is not a constructor
 -----------------------------------
 
-A `type error <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor>`_ occurs when we refer to an object that does not exist.
+A `type error <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Not_a_constructor>`_ occurs when we use the wrong type of variable in order to do something. In this case we try to use something to "construct" an object when this variable cannot be used in this way.
 
 This can also occur because something exists in PsychoPy that does not exist in PsychoJS. For example :code:`core.Clock()` is not a constructor in JS because Clock lives in the util module of PsychoJS i.e. :code:`util.Clock()`. The `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_ can be helpful in helping in these cases. 
 
