@@ -61,7 +61,7 @@ Basic Lingo
 * **List** Square brackets containing a list of elements
 * **Dictionary** Curly brackets containing sets of "key value pairings". 
 
-:code:`{'name':'Becca', 'height':165, 'hungry': True, 'food choices':['chocholate', 'pizza', 'cheese']}`
+:code:`{'name':'Becca', 'height':165, 'hungry': True, 'food choices':['chocolate', 'pizza', 'cheese']}`
 
 Create a window
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
