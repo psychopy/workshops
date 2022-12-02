@@ -462,11 +462,14 @@ NB: If you hit the red stop button in PsychoPy it issues a very severe abort and
 *Exercise*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+You can use the Coder "demos" to help find relevant code snippets. 
+
 In code: 
 
-1. Add instructions, participants must press a key to start. 
-2. Add some feedback text for response time. 
-3. Make this feedback red if slow and green if fast. 
+1. Store if the participant was correct or incorrect to the data file.
+2. Add some feedback text to tell the participant if they were correct or incorrect. 
+3. Make this feedback green/red for correct/incorrect responses.
+4. Add instructions to the start of the experiment. 
 
 All done!
 -------------
