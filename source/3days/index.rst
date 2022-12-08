@@ -8,7 +8,10 @@ Creating Experiments in PsychoPy (3 days)
   Upcoming Events
   -------------------
 
-  * **November 30th 2022 - December 2nd 2022** (US East Coast) - 3 day comprehensive workshop. `Tickets here <https://pavlovia.org/store/workshops/2022-11-30-psychopy-creating-experiments>`_
+  * **February 8th - 10th 2023** (UK timezone) - Virtual- 3 day comprehensive workshop. `Purchase tickets here <https://pavlovia.org/store/workshops/2023-2-8-psychopy-creating-experiments>`_
+  * **April 17th - 19th 2023** - In person event, hosted at the University of Nottingham- 3 day comprehensive workshop. `Register interest here <https://run.pavlovia.org/pavlovia/survey/?surveyId=dfb7d35c-8a1f-4a93-a35b-aac0e8653b6a>`_
+
+  
 
   About 
   ---------
