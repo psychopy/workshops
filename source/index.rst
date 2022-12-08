@@ -26,13 +26,18 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
 
         Join the team for our virtual 3 day comprehensive workshop!
 
+      .. figure:: /_images/UoNadvert.jpg
+        :target: https://workshops.psychopy.org/3days/index.html#dayindex
+
+        Join the team in person at the University of Nottingham!
+
+      .. figure:: /_images/TobiiWorkshopAd.jpg
+        :target: https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking
+        
       .. figure:: /_images/SurveysLaunch.jpg
         :target: https://www.youtube.com/watch?v=1fs8CVKBPGk
 
         You can now make surveys directly in Pavlovia - learn how!
-
-      .. figure:: /_images/TobiiWorkshopAd.jpg
-        :target: https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking
 
         Get started making your eye tracking experiment in this workshop with the PsychoPy and Tobii team.
 
@@ -47,8 +52,9 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
 Upcoming events
 ------------------
 
-* **November 30th 2022 - December 2nd 2022** (US East Coast timezone) - 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
 * **January 13th 2023** Making eyetracking experiments with Tobii and PsychoPy. *In Person Event at The University of Nottingham* :ref:`Details here <tobiievent>` 
+* **February 8th - 10th 2023** (UK timezone) - Virtual- 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **April 17th - 19th 2023** - In person event, hosted at the University of Nottingham- 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
 
 
 
