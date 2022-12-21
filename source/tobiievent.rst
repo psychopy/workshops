@@ -9,7 +9,7 @@ PsychoPy-Tobii eye tracking workshop
   About 
   ---------
 
-  `Purchase tickets here <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking>`_ 
+  This event is now **sold out ** please `register interest here <https://run.pavlovia.org/pavlovia/survey/?surveyId=b86605ad-9851-45b6-a70b-a963c9f72e13>`_ 
 
   Come and learn PsychoPy AND make your Tobii eye tracking experiment with us! 
 

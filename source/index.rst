@@ -32,7 +32,7 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
         Join the team in person at the University of Nottingham!
 
       .. figure:: /_images/TobiiWorkshopAd.jpg
-        :target: https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking
+        :target: https://workshops.psychopy.org/tobiievent.html#tobiievent
         
       .. figure:: /_images/SurveysLaunch.jpg
         :target: https://www.youtube.com/watch?v=1fs8CVKBPGk
