@@ -76,7 +76,7 @@ Materials for Coder
 - Jonas Kristoffer Lindeløv openly shares materials for `Stimulus delivery for neuroscience and psychophysics: a PsychoPy course <https://lindeloev.net/psychopy-course/>`_
 - `Programming for Psychology in Python  <https://www.djmannion.net/psych_programming/vision/intro/intro.html>`_
   has lessons and screencasts on PsychoPy (by `Damien Mannion <http://www.djmannion.net/>`_, UNSW Australia).
-- Marco Bertamimi's book, `Programming Illusions for Everyone`_ is a fun way to
+- Marco Bertamini's book, `Programming Illusions for Everyone`_ is a fun way to
   learn about stimulus rendering in PsychoPy by learning how to create visual illusions
   `on this wiki <http://sapir.psych.wisc.edu/wiki/index.php/Psych711>`_
 - The `GestaltReVision group (University of Leuven) <http://gestaltrevision.be>`_
