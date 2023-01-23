@@ -9,7 +9,7 @@
 Official PsychoPy and Pavlovia workshops
 =========================================
 
-Come an join us in learning PsychoPy! Book onto one of our scheduled events or book a bespoke event for your department. We offer both in person, online or hybrid formats. Contact us workshops@opensciencetools.org.
+Come and join us in learning PsychoPy! Book onto one of our scheduled events or book a bespoke event for your department. We offer both in-person, online or hybrid formats. Contact us workshops@opensciencetools.org.
 
 .. only:: html
 
@@ -21,10 +21,15 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
       :show_buttons_on_top:
       :show_controls:
 
+      .. figure:: /_images/contribWkshpFeb23Ad.jpg
+        :target: https://www.eventbrite.co.uk/e/contributing-to-psychpy-workshop-tickets-504372570937
+
+        Attend a 1-day workshop on how to contribute to the Psychpy/JS project on GitHub!
+
       .. figure:: /_images/3dayadvert_Nov2022.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
 
-        Join the team for our virtual 3 day comprehensive workshop!
+        Join the team for our virtual 3-day comprehensive workshop!
 
       .. figure:: /_images/UoNadvert.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
@@ -32,7 +37,7 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
         Join the team in person at the University of Nottingham!
 
       .. figure:: /_images/TobiiWorkshopAd.jpg
-        :target: https://workshops.psychopy.org/tobiievent.html#tobiievent
+        :target: https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking
         
       .. figure:: /_images/SurveysLaunch.jpg
         :target: https://www.youtube.com/watch?v=1fs8CVKBPGk
@@ -52,9 +57,9 @@ Come an join us in learning PsychoPy! Book onto one of our scheduled events or b
 Upcoming events
 ------------------
 
-* **January 13th 2023** Making eyetracking experiments with Tobii and PsychoPy. *In Person Event at The University of Nottingham* :ref:`Details here <tobiievent>` 
-* **February 8th - 10th 2023** (UK timezone) - Virtual- 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
-* **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham- 3 day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **February 8th - 10th 2023** (UK timezone) - Virtual 3-day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **February 17th 2023** (UK timezone) - Virtual 1-day training on how to contribute to the Psychopy/JS project on Github. :ref:`Details here <contribwkshpFeb23>` 
+* **April 17th - 19th 2023** - In person event, hosted at the University of Nottingham, 3-day comprehensive workshop. :ref:`Details here 
 
 
 
@@ -62,5 +67,5 @@ Upcoming events
     :maxdepth: 1
     :hidden:
     
-    Creating better Experiments 3 day workshop </3days/index>
-    Creating better Experiments 3 day workshop </3Hrs/index>
+    Creating better Experiments 3-day workshop </3days/index>
+    Creating better Experiments 3-day workshop </3Hrs/index>
