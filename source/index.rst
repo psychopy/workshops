@@ -57,10 +57,9 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 Upcoming events
 ------------------
 
-* **January 13th 2023** Making eyetracking experiments with Tobii and PsychoPy. *In Person Event at The University of Nottingham* :ref:`Details here <tobiievent>` 
 * **February 8th - 10th 2023** (UK timezone) - Virtual 3-day comprehensive workshop. :ref:`Details here <3dayIndex>` 
 * **February 17th 2023** (UK timezone) - Virtual 1-day training on how to contribute to the Psychopy/JS project on Github. :ref:`Details here <contribwkshpFeb23>` 
-* **April 17th - 19th 2023** - In person event, hosted at the University of Nottingham, 3-day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham, 3-day comprehensive workshop. :ref:`Details here 
 
 
 
