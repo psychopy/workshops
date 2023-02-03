@@ -26,18 +26,11 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 
         Attend a 1-day workshop on how to contribute to the Psychpy/JS project on GitHub!
 
-      .. figure:: /_images/3dayadvert_Nov2022.jpg
-        :target: https://workshops.psychopy.org/3days/index.html#dayindex
-
-        Join the team for our virtual 3-day comprehensive workshop!
-
       .. figure:: /_images/UoNadvert.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
 
         Join the team in person at the University of Nottingham!
 
-      .. figure:: /_images/TobiiWorkshopAd.jpg
-        :target: https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking
         
       .. figure:: /_images/SurveysLaunch.jpg
         :target: https://www.youtube.com/watch?v=1fs8CVKBPGk
@@ -57,7 +50,7 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 Upcoming events
 ------------------
 
-* **February 8th - 10th 2023** (UK timezone) - Virtual 3-day comprehensive workshop. :ref:`Details here <3dayIndex>` 
+* **March 8th - 10th 2023** (UK timezone) - Virtual 3-day comprehensive workshop. :ref:`Details here <3dayIndex>` 
 * **February 17th 2023** (UK timezone) - Virtual 1-day training on how to contribute to the Psychopy/JS project on Github. :ref:`Details here <contribwkshpFeb23>` 
 * **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham, 3-day comprehensive workshop. :ref:`Details here 
 
