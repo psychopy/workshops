@@ -13,8 +13,8 @@ import sys
 import os
 
 # JUST CHANGE THESE AND LET THE REST POPULATE
-year = "2022"
-release = 'January 2022'
+year = "2023"
+release = 'February 2023'
 project = u'Creating Experiments in PsychoPy Workshop {}'.format(year)
 copyright = u'{}, The PsychoPy team'.format(year)
 filebase = u'3hrs{}'.format(year)
