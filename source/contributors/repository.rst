@@ -5,14 +5,20 @@ Using PsychoPy's GitHub repo
 
 Any code that you want to be included into |PsychoPy| is done via Git in the GitHub repository.
 
-**For developers experienced with Git from other projects** the only things you need to note are:
+For developers experienced with Git
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The only things you need to note are:
 
 - the :ref:`gitWorkflow` for branches (which does not have a `master` or `main` but two branches, `dev` and `release`). **Please use the `release` branch as the base for bug fixes and the `dev` branch for feature development.**
 - the format of :ref:`commitMessages` is important so that we can see what changes have been made from a quick view of the git log
 
 If your copy of the repository comes from before we used the 2-trunk GitFlow then you may also want to read the :ref:`convertGitFlow` section to update your repository to the new structure.
 
-**If you're new to git and/or contributing** to open-source projects then you may want to go through as below:
+If you're new to git and/or contributing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To open-source projects then you may want to go through as below:
 
 - start at :ref:`setupRepo`
 - :ref:`fixBugs`
@@ -30,30 +36,44 @@ Unlike many projects, the PsychoPy repository has TWO main branches, `dev` and `
     
 The system is designed to support our release pattern, with "feature releases" 2 or 3 times per year and bug-fix releases several times for each feature release. Major changes to the code, that potentially include new bugs, should not be included in bug-fix releases. So then the two main branches are as follows.
 
-**The dev branch:** is for work that is going **to be held back for the next feature release**. Only fix bugs here if they are related to other un-released code or if the fixes require substantial code changes that might introduce new bugs. Those larger fixes will probably be held back for the next feature release. Simple bug fixes that get based on the `dev` branch might be hard to reincorporate back into the `release` branch .
+.. nextslide::
 
-**The release branch:** is for fixes that need **to be included in the next release**. It includes code changes that do not knowingly break/change existing experiments, and are small enough that we can be relatively confident that they do not introduce new bugs. Do not use this trunk for substantial pieces of development where new bugs might be introduced.
+**The dev branch:** 
 
-.. figure:: /images/psychopyGitFlow.png
+For work that is going **to be held back for the next feature release**. Only fix bugs here if they are related to other un-released code or if the fixes require substantial code changes that might introduce new bugs. Those larger fixes will probably be held back for the next feature release. Simple bug fixes that get based on the `dev` branch might be hard to reincorporate back into the `release` branch .
+
+.. nextslide::
+
+**The release branch:** 
+
+For fixes that need **to be included in the next release**. It includes code changes that do not knowingly break/change existing experiments, and are small enough that we can be relatively confident that they do not introduce new bugs. Do not use this trunk for substantial pieces of development where new bugs might be introduced.
+
+.. nextslide::
+
+.. figure:: /_images/psychopyGitFlow.png
     :alt:  Git Flow used by the PsychoPy project, with 2 main trunks for 'dev' and 'release'
 
     Git Flow used by the PsychoPy project, with 2 main trunks for 'dev' and 'release'. Bug fixes should be based on the `release` branch while new features or substantial code changes are built on the `dev` branch
 
+.. nextslide::
 
-Always create a branch for the work you are doing and take that branch from the tip of either `dev` or `release`.
+Always create a branch for the work you are doing and take that branch from the tip of either `dev` or `release`. Make sure your pull request targets the same one.
 
 After a major release (roughly twice per year) the two trunks will generally become synchronised.
 
-.. note::
-
-    If you have an older copy of the repository with a `master` branch then you will need to follow `these steps <https://psychopy.org/developers/repository.html#converting-to-the-2-trunk-flow>`_ to get back in sync with the new :ref:`gitWorkflow`:. 
+If you have an older copy of the repository with a `master` branch then you will need to follow `these steps <https://psychopy.org/developers/repository.html#converting-to-the-2-trunk-flow>`_ to get back in sync with the new 2-trunk workflow. 
 
 .. _commitMessages:
 
 PsychoPy commit messages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Informative commit messages are really useful when we have to go back through the repository finding the time that a particular change to the code occurred. Precede your message with one or more of the following:
+Informative commit messages are really useful when we have to go back through the repository finding the time that a particular change to the code occurred. 
+
+
+.. nextslide::
+    
+Precede your message with one or more of the following:
 
 * *BF* : bug fix
 * *FF* : 'feature' fix. This is for fixes to code that hasn't been released
@@ -62,6 +82,8 @@ Informative commit messages are really useful when we have to go back through th
 * *ENH* : enhancement (improvement to existing code)
 * *DOC*: for all kinds of documentation-related commits
 * *TEST*: for adding or changing tests
+
+.. nextslide::
 
 When making commits that fall into several commit categories (e.g., BF and TEST), **please make separate commits for each category** and **avoid concatenating commit message prefixes**. E.g., please do not use `BF/TEST`, because this will affect how commit messages are sorted when we pull in fixes for each release.
 
