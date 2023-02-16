@@ -13,21 +13,17 @@ Contributing to PsychoPy/JS (1 day, virtual)
   .. image:: /_images/contribWkshpFeb23Ad.jpg
     :align: center
 
-  Draft timetable
+  Draft timetable and Materials
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  Coming soon.
+  See :ref:`contribsWorkshopIndex`
 
   What can I do to prepare?
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   
-  Coming soon.
+  No need to prepare - we'll take you through everything on the day
   
-  Materials
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Coming soon.
-
   Accessibility
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
   We are aware that online teaching via Zoom can raise accessibility issues and we want to ensure everyone gets the training they need. If you have special requirements, please contact us directly at workshops@opensciencetools.org
