@@ -18,8 +18,6 @@ We're going to work flexibly through the following topics
     repository
     psychopyDevEnv
     contribTypes
-    repository
-
 
 .. nextslide::
 

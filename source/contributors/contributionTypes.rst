@@ -70,6 +70,16 @@ You might find a bug:
 
 The best advice is to start small
 
+.. _contribTests:
+
+Contributing to the test suite
+----------------------------------
+
+There is an automated test suite that runs on every "pull request" to psychopy/psychopy
+We'd love that to be more comprehensive!
+
+There are docs on this at https://psychopy.org/developers/testsuitecontributing.html
+
 .. _contribFeatures:
 
 Contributing features
