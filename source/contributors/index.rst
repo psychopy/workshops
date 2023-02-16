@@ -3,7 +3,22 @@
 PsychoPy/JS Contributors workshop
 =====================================
 
-A lot of the material we will cover is also listed at `the Developers page on psychopy.org <https://psychopy.org/developers/index.html>`_
+These materials at:
+https://workshops.psychopy.org/contributors
+
+Slides:
+https://workshops.psychopy.org/contributors/slides 
+
+Also see `the Developers page on psychopy.org <https://psychopy.org/developers/index.html>`_
+
+Introductions and expectations
+--------------------------------
+
+Who are we?
+
+Who are you?
+
+What are we trying to achieve?
 
 Topics we'll be discussing today
 --------------------------------
@@ -17,11 +32,12 @@ We're going to work flexibly through the following topics
     gitVersionControl
     repository
     psychopyDevEnv
-    contribTypes
+    contributionTypes
 
-.. nextslide::
-
-Working together
+Working together on...
+--------------------------------
 
 - navigate the issues and find something to work on
 - breakout/workshops
+
+Hopefully you'll all put in your first "pull request" today
