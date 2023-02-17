@@ -13,9 +13,8 @@ What sorts of contribution are useful?
 - :ref:`contribForum`
 - :ref:`contribDocs`
 - :ref:`contribFixes`
-- :ref:`contribPlugins` and :ref:`contribBuilderCompons`
+- :ref:`contribPlugins`
 - :ref:`contribFeatures`
-- :ref:`contribOrganisation`
 
 Do I need permission?
 
