@@ -6,8 +6,7 @@ PsychoPy/JS Contributors workshop
 These materials at:
 https://workshops.psychopy.org/contributors
 
-Slides:
-https://workshops.psychopy.org/contributors/slides 
+Or you can `view as slides <https://workshops.psychopy.org/slides/contributors>`_
 
 Also see `the Developers page on psychopy.org <https://psychopy.org/developers/index.html>`_
 
