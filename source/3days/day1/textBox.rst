@@ -2,7 +2,7 @@
 
 Typed responses
 =================
-PsychoPy now has an editable text box component to get typed responses. It is under development, but worth touching on.
+PsychoPy now has an editable text box component to get typed responses.
 
 textBox
 ----------------------------------
