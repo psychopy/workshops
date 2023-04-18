@@ -587,83 +587,13 @@ Thanks to query strings we can generate several URLs for the same project but fo
 * https://run.pavlovia.org/Username/Task/?group=D
 
 .. warning::
-    If you are using this approach and sharing URLs on recruitment websites, you would need to be careful that the same participants do not complete several URLs (i.e. complete your study several times in different groups). If you are using `Prolific <https://prolific.co/>`_ for recruitment there is guidance on how to do this `here <https://researcher-help.prolific.co/hc/en-gb/articles/360009094374>`_.
+    If you are using this approach and sharing URLs on recruitment websites, be careful that the same participants do not complete several URLs.
 
-Query strings: Using participant ID
-------------------------------------
+The Shelf
+-------------------
+The Shelf is a newer feature of Pavlovia.org it allows "persistent storage" of information so that a variable can be accessed and updated by the same experiment several times, or accessed and updated by several experiments. 
 
-A slightly more efficient way might be to generate sequential participant IDs and use that to assign to groups. For this, Wakefield Morys-Carter has developed an `external app <https://moryscarter.com/vespr/pavlovia.php>`_ (Morys-Carter, 2021) to assist. 
-
-So, If your experiment URL is *https://pavlovia.org/a/b* then use *https://moryscarter.com/vespr/pavlovia.php?folder=a&experiment=b/*
-
-.. nextSlide::
-
-Inside PsychoPy, we could then use the code component::
-
-    if int(expInfo['participant']) % 2 == 0:
-        expInfo['group'] = A # Assigns even ID's to group A 
-    else:
-        expInfo['group'] = B
-
-We then would not need the parameter "group" in our experiment settings (because this parameter assignment through code would overwrite it anyway).
-
-More than two groups online
-------------------------------------
-
-Counterbalancing with more than 2 groups online is a little more complex. We can use the sequential participant ID method but we need to be more careful. If we had **40 participants**, in python, we could write::
-
-    # Makes a long list of length 4 * 10
-    groups = ['A', 'B', C', 'D'] * 10
-    # if python index starts at 0 but participant ID starts at 1 the first element 
-    # will be skipped, so add a value to compensate
-    groups.append('A')
-    # use the participant ID to index from this list
-    expInfo['group'] = groups[int(expInfo['participant'])]
-
-*Problem*, the method of list extension used to make the groups list does not translate to JavaScript (as outlined in the `crib sheet <https://discourse.psychopy.org/t/psychopy-python-to-javascript-crib-sheet/14601>`_).
-
-.. nextSlide::
-
-For this reason we would need to change Code Type to "Both" and use the following on the JavaScript side::
-
-    # Makes a long list of length 4 * 10
-    groups = Array(10).fill(['A', 'B', 'C', 'D']).flat();
-    # if  index starts at 0 but participant ID starts at 1 the first element 
-    # will be skipped, so add a value to compensate
-    groups.push('A');
-    # use the participant ID to index from this list
-    thisGroup = groups[Number.parseInt(expInfo["participant"])];
-    expInfo["Group"] = thisGroup;
-
-.. nextSlide::
-
-Remember, we could sanity check that this is working using::
-    console.log('Group: ', expInfo['group'])
-
-The Study Portal
-------------------------------------
-
-*Problem* The tool described so far is great and is free, but it does not take into account how many participants *completed*. So, it is still important to manually check how many complete data sets you have for each group.
-
-We do hope to have an out-of-box solution to this in future, but we are very grateful for alternative solutions contributed by the community. In particular, Wakefield Morys-Carter has developed a `Study Portal <https://moryscarter.com/vespr/portal/>`_ to help group counterbalancing. Taking into account participant completion is a paid feature, but at a low cost (£10).
-
-.. warning::
-    If you are using the licensed features of the Study Portal to assign participants to group - do not use code within your experiment to assign group based on participant ID. 
-
-.. nextSlide::
-
-This allows tracking of how many participants from each group have completed and how many timed out: 
-
-.. image:: /_images/studyPortalGroups.png
-
-.. nextSlide::
-
-Other features the Study Portal could help with:
-
-*   Anonymous withdrawal
-*   Consent/debrief forms
-
-You can watch a presentation of the portal `here <https://youtu.be/qFSGuZoVzaI>`_.
+As the Shelf is a newer feature, you do need to interact with it via code, you can find a set of examples how to do this `here <https://www.psychopy.org/online/shelf.html>`_.
 
 Useful tools
 -------------------
