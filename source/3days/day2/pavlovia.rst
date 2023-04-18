@@ -595,20 +595,6 @@ The Shelf is a newer feature of Pavlovia.org it allows "persistent storage" of i
 
 As the Shelf is a newer feature, you do need to interact with it via code, you can find a set of examples how to do this `here <https://www.psychopy.org/online/shelf.html>`_.
 
-Useful tools
--------------------
-There are several other tools that can be useful including:
-
-- Counterbalancing online using `sequential participant IDs <https://moryscarter.com/vespr/pavlovia.php>`_ 
-
-- `Scaling your screen <https://pavlovia.org/Wake/screenscale>`_ (e.g. so that we can use cm units online).
-
-- `Headphone checkers using huggins pitch <https://github.com/ChaitLabUCL/HeadphoneCheck_Test>`_ 
-
-- `Embedding html forms <https://discourse.psychopy.org/t/new-web-app-form-to-html-for-pavlovia/22626>`_.
-
-- `Eyetracking online <https://workshops.psychopy.org/3days/day2/advancedOnline.html>`_ using the webgazer library. **Note that in 2021.2.2 there is a different way of loading resources** 
-
 Next up!
 -----------------
 
@@ -616,6 +602,3 @@ Let's practice debugging errors, then play with advanced plugins we can use onli
 
 Then we will try :ref:`firstExperiment`.
 
-References
-----------
-Morys-Carter, W.L. (2021, April 26). Participant IDs for Pavlovia. VESPR. https://moryscarter.com/vespr/pavlovia.php.
