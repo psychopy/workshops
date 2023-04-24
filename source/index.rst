@@ -21,10 +21,11 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
       :show_buttons_on_top:
       :show_controls:
 
-      .. figure:: /_images/contribWkshpFeb23Ad.jpg
-        :target: https://www.eventbrite.co.uk/e/contributing-to-psychpy-workshop-tickets-504372570937
+      .. figure:: /_images/contribWkshpApr26Ad.jpg
+        :target: https://www.eventbrite.co.uk/e/contributing-to-psychopy-workshop-3-tickets-587696194137
+        
 
-        Attend a 1-day workshop on how to contribute to the Psychpy/JS project on GitHub!
+        Attend two half-day workshop on how to contribute to the Psychpy/JS project on GitHub!
 
       .. figure:: /_images/UoNadvert.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
