@@ -51,7 +51,7 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 Upcoming events
 ------------------
  
-* **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham, 3-day comprehensive workshop. `Details here <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology>`_
+* **April 26th & 28th 2023** - Online event, two half-days, contributor workshop.
 
 
 
