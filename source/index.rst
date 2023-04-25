@@ -21,10 +21,11 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
       :show_buttons_on_top:
       :show_controls:
 
-      .. figure:: /_images/contribWkshpFeb23Ad.jpg
-        :target: https://www.eventbrite.co.uk/e/contributing-to-psychpy-workshop-tickets-504372570937
+      .. figure:: /_images/contribWkshpApr26Ad.jpg
+        :target: https://www.eventbrite.co.uk/e/contributing-to-psychopy-workshop-3-tickets-587696194137
+        
 
-        Attend a 1-day workshop on how to contribute to the Psychpy/JS project on GitHub!
+        Attend two half-day workshop on how to contribute to the Psychpy/JS project on GitHub!
 
       .. figure:: /_images/UoNadvert.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
@@ -50,7 +51,7 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 Upcoming events
 ------------------
  
-* **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham, 3-day comprehensive workshop. `Details here <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology>`_
+* **April 26th & 28th 2023** - Online event, two half-days, contributor workshop.
 
 
 
