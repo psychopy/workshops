@@ -72,6 +72,14 @@ Jon typically uses git gui to create commits (selecting files/lines) and then co
 Basic git concepts/terms
 -------------------------
 
+From setup to workflow on GitHub
+
+.. image:: ../_images/openSourceGitFlow.png
+  :align: center
+  :width: 550
+  :alt: Image of a typical, seven-step workflow for open-source software projects, from initial setup to pull requests (Creative Commons license, courtesy of openclipart.org, image `278845`, git-opensource-workflow, by developingo)
+
+.. nextslide::
 
 Git *can be* used just by you on your own machine to version control text files (e.g. data/analysis files):
 
