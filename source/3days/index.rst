@@ -8,7 +8,8 @@ Creating Experiments in PsychoPy (3 days)
   Upcoming Events
   -------------------
 
-  * **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham- 3 day comprehensive workshop. `Book through the University of Nottingham Store <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology>`_
+  * **September 20th - 23rd 2023** - Virtual event. 3 day comprehensive workshop UK timezone. `Book Here <https://pavlovia.org/store/workshops/2023-9-20-psychopy-creating-experiments>`_
+  * **October 10th - 13th 2023** - Virtual event. 3 day comprehensive workshop US (East Coast) timezone. `Book Here <https://pavlovia.org/store/workshops/2023-10-11-psychopy-creating-experiments>`_
 
   
 
