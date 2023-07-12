@@ -23,8 +23,6 @@ Creating Experiments in PsychoPy (3 days)
     :width: 600
 
 
-  Note that on day 3 we are currently trialling 2 parallel sessions on Advanced Builder. We hope that there will be a bit of something for everyone with several experience levels!
-
   What do I need in advance?
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
