@@ -42,8 +42,6 @@ Creating Experiments in PsychoPy (3 days)
 
   All of our materials are openly available in web page (links below) or and `HTML slide <https://workshops.psychopy.org/slides/3days>`_ format.
 
-  You can also download and unzip  `a range of pre-made demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
-
   Accessibility
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
