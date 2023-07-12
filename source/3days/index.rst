@@ -8,10 +8,14 @@ Creating Experiments in PsychoPy (3 days)
   Upcoming Events
   -------------------
 
-  * **September 20th - 23rd 2023** - Virtual event. 3 day comprehensive workshop UK timezone. `Book Here <https://pavlovia.org/store/workshops/2023-9-20-psychopy-creating-experiments>`_
-  * **October 10th - 13th 2023** - Virtual event. 3 day comprehensive workshop US (East Coast) timezone. `Book Here <https://pavlovia.org/store/workshops/2023-10-11-psychopy-creating-experiments>`_
+  +----------------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
+  |      Time zone.            |      Date                     |  Information                                                                                           |
+  +============================+===============================+========================================================================================================+
+  | UK.                        | September 20th - 23rd 2023    | `Booking link <https://pavlovia.org/store/workshops/2023-9-20-psychopy-creating-experiments>`_         |
+  +----------------------------+-------------------------------+----------------------+-------------------------------+-------------------------------------------------+
+  | US Eastern.                | October 10th - 13th 2023      | `Booking link <https://pavlovia.org/store/workshops/2023-10-11-psychopy-creating-experiments>`_        |
+  +----------------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
 
-  
 
   About 
   ---------

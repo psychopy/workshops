@@ -44,11 +44,14 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 
 Upcoming events
 ------------------
- 
-* **September 20th & 23rd 2023** - Online event, three day workshop UK timezone.
-* **October 10th & 13th 2023** - Online event, three day workshop US (East Coast) timezone.
 
-
++----------------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
+|      Workshop format       |      Date                     |  Information                                                                                           |
++============================+===============================+========================================================================================================+
+| 3 day - virtual            | September 20th - 23rd 2023    | `Details and booking <https://workshops.psychopy.org/3days/index.html#>`_                              |
++----------------------------+-------------------------------+----------------------+-------------------------------+-------------------------------------------------+
+| 3 day - virtual            | October 10th - 13th 2023      | `Details and booking <https://workshops.psychopy.org/3days/index.html#>`_                              |
++----------------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
 
 
 .. toctree::
