@@ -103,8 +103,11 @@ Now we'll go through setting up the *Git* workflow for |PsychoPy|
 Step 1: Get *Git* and *GitHub* working
 ----------------------------------------
 
+* *Git* is software for your computer
+* *GitHub* is an free online system, for which you need to sign up
+
 Step 1a: Install *Git*
--------------------------
+------------------------
 
 - download *Git* here: 
 
@@ -141,8 +144,7 @@ Step 2: *Fork* the *psychopy* repository
     - just copying an existing repository already on *GitHub* somewhere
     - and making it your own, on your own, online *GitHub* account
 
-.. note:: 
-   Technically and more generally, it's copying a repository, and disconnecting it from previous committers
+**NOTE**: Technically and more generally, it's copying a repository, and disconnecting it from previous committers
 
 Step 2a: Find the *psychopy* repository
 -----------------------------------------
@@ -159,9 +161,7 @@ Step 2a: Find the *psychopy* repository
 Step 2b: Ensure you are on the *release* branch
 ------------------------------------------------
 
-.. note:: 
-   
-   *Branches* are copies of a repository that can develop independently of each other, usually to be merged back together again later. More on this later.
+**NOTE**: *Branches* are copies of a repository that can develop independently of each other, usually to be merged back together again later. More on this later.
 
 - |PsychoPy| has two branches: *dev* and *release*
 - How to check you are on the *release* branch: 
@@ -188,10 +188,9 @@ Step 2c: *Fork* the *release* branch
 ..
 
 - Choose the following: ``+ Create a new fork``
-- Check the box labeled as follows: ``Copy the`` *release* ``branch only``
+- Check the box labeled as follows: ``Copy the release branch only``
 
-.. note:: 
-   There's no need to fork the *dev* branch -- you *could*, but only if you wanted your translations to initially come out with the next major release for some reason
+**NOTE**: There's no need to fork the *dev* branch -- you *could*, but only if you wanted your translations to initially come out with the next **major** release for some reason
 
 What is a *fork*?
 ------------------
@@ -202,7 +201,11 @@ What is a *fork*?
   - it is now disconnected from all other users (unless you add them)
   - you are free to modify it for your own purposes (unusual)
   - or modify it in order to contribute back to the project (common) 
-- but it is **not** yours in the sense that...
+
+Caveat: How it's *not* yours
+---------------------------------
+
+- Keep in mind that |PsychoPy| is **not** yours in the sense that...
   
   - you still need to abide by the the particular license that |PsychoPy| uses: 
     
@@ -219,6 +222,10 @@ Why just the *release* branch?
     - new features
     - deprecation, etc.
   - Changes to the *dev* branch are released about twice a year only 
+
+What is the *release* branch then?
+------------------------------------
+
 - The *release* branch 
 
   - for **minor** releases of |PsychoPy|, where changes can't really "break" anything
@@ -232,20 +239,22 @@ Step 3: Download and install *GitHub Desktop*
 
 - Go to: `https://desktop.github.com/ <https://desktop.github.com/>`_ 
 - Download and install the appropriate version
-- Mac users with *Apple silicon* chips (*M1*, *M2*)
-      
-  - The website doesn't automatically detect whether you have such a processor
-      
-    - It seems to assume you have an *Intel* processor 
-  - The appropriate download is under the heading at the bottom:
-      
-    - ``Apple silicon?``
-  - Ultimately, the download should have an ``..arm-64`` extension instead of ``..x-64``
 
-.. note:: 
-   The *Intel* version will work, just a little bit slower as it has to go through *Rosetta 2*
+Note for users with *Apple silicon* chips (*M1*, *M2*)
+------------------------------------------------------- 
+      
+- The website doesn't automatically detect whether you have such a processor
+      
+  - It seems to assume you have an *Intel* processor 
+- The appropriate download is under the heading at the bottom:
+      
+  - ``Apple silicon?``
+- Ultimately, the download should have an ``..arm-64`` extension instead of ``..x-64``
+- But the *Intel* version will actually work
 
-Step 4: Clone the *psychopy* repository
+  - just a little bit slower as it has to go through *Rosetta 2*
+
+Step 4: Cloning
 -----------------------------------------
 
 - *Cloning* involves downloading files to your computer
@@ -255,7 +264,8 @@ Step 4: Clone the *psychopy* repository
   
     - You will remain as the sole committer 
 
-Step 4a:                                            
+Step 4a: How to start cloning from *GitHub Desktop*
+-----------------------------------------------------
 
 - in *GitHub Desktop*
 
@@ -265,14 +275,16 @@ Step 4a:
   - ``File`` > ``Clone repository``
     
     - choose *psychopy* 
+
+Step 4b: How to finish cloning
+--------------------------------
   
-.. note:: 
-   *psychopy* should be listed because it's forked in your online account
+- *psychopy* should be listed because it's already forked in your online account
  
-     - under ``Local Path`` at the bottom, choose a **logical** place on your computer for the repository (e.g., not your desktop)
+  - under ``Local Path`` at the bottom, choose a **logical** place on your computer for the repository (e.g., not your desktop)
   
-       - click ``Clone``
-       - This might take a minute, depending on your connection speed
+    - click ``Clone``
+    - This might take a minute, depending on your connection speed
 
 The result of cloning
 -----------------------
@@ -285,8 +297,6 @@ The result of cloning
 
 Nomenclature after forking and cloning
 -----------------------------------------
-
-(at least the ones most people use)
 
 - *Origin*
 
@@ -307,23 +317,22 @@ Nomenclature after forking and cloning
 What does all this mean?
 ----------------------------
 
-  - You have establish a back-and-forth between you and your online fork on *GitHub* 
+- You have establish a back-and-forth between you and your online fork on *GitHub* 
   
-    - You can manipulate files without interfering with anyone else
-  - But now, you can contribute your changes to the original repository from via *pull requests* online
+  - You can manipulate files without interfering with anyone else
+- But now, you can contribute your changes to the original repository from via *pull requests* online
   
-    - In GitHub jargon, you would make a *pull request* from *origin* to *upstream*
+  - In GitHub jargon, you would make a *pull request* from *origin* to *upstream*
 
-  - The importance of this will become clear later 
+- The importance of this will become clear later 
 
 What about the name for the repository on my own computer?
 ------------------------------------------------------------
 
 - no special name for the repository on your local computer
 
-  - "my local copy"?
-
-- *clone*(?)
+  - most people say "my local copy"?
+- how about *clone*?
 
   - would be a good name
   - but no one seems to use it
@@ -334,7 +343,7 @@ What about the name for the repository on my own computer?
 Done setting up *Git* and *GitHub*
 ------------------------------------
 
-... but... What about the *-flow* in *workflow*?
+... but... what about the *-flow* in *workflow*?
 
 Step 5: Continual *Git* workflow
 ------------------------------------
@@ -351,9 +360,9 @@ Step 5: Continual *Git* workflow
 - merge conflicts = minor headaches to fix
 - better to avoid them altogether
 
-.. note:: 
-   At the "end of the day," you follow this with a *commit*, a *push* and a *pull request*. We cover this later. 
+**IMPORTANT NOTE** At the "end of the day," you follow this with a *commit*, a *push* and a *pull request*. We cover this later. 
 
+.. Perhaps delete bits about .mo files if they're going to be compiled automatically
 
 5a: *Sync* to *origin*
 -----------------------
@@ -387,9 +396,6 @@ Alternative: *pull* then *push*
 There is an alternative to the *sync-pull* approach
 
 - *pull* from *upstream*, then *push* to *origin*
-
-.. note:: 
-   I just tend not to do this since I (personally) am wary of interacting with *upstream* directly from my local repository. This is an artifact of me being new to *Git* myself.
 
 - ``Branch > Update from upstream/master``
   

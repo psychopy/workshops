@@ -29,7 +29,7 @@ Need for translations
 
   - changes the language that the **experiment-ER** sees
   
-.. note:: This is **not** what the participant sees, which is under the control of the experimenter 
+**NOTE**: This is **not** what the participant sees, which is under the control of the experimenter 
 
 
 Overview of how |PsychoPy| works in a different language
@@ -65,7 +65,7 @@ Translators...
 3. commit and push those changes to *GitHub*
 4. make a *pull request* on *GitHub* to incorporate those changes in the current release of |PsychoPy|
 
-.. note:: They also translate *Start-up tips*, but this is a slightly different process that involves a simple ``.txt`` file
+**NOTE**: They also translate *Start-up tips*, but this is a slightly different process that involves a simple ``.txt`` file
 
 Prerequisites to translating
 -------------------------------
@@ -101,7 +101,7 @@ We're going to work through these one by one
 .. toctree::
     :maxdepth: 1
 
-    preliminaries
+    preliminaries.rst
     setUpGit.rst
     workOnTranslations.rst
     makePullRequest.rst

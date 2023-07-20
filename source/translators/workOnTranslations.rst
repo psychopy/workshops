@@ -18,8 +18,7 @@ Overview
 - Step 4: Translating "Start-up tips" in |PsychoPy| with a text editor
 - Step 5: Use *Poedit* to compile ``.mo`` file
   
-.. note:: 
-   Steps 3 and 4 don't have to be sequential; they're just different translation processes
+**NOTE**: Steps 3 and 4 don't have to be sequential; they're just different translation processes
 
 Step 1: What is the ``[ll_CC]`` locale name for my language?
 --------------------------------------------------------------
@@ -78,9 +77,7 @@ First, we need to discuss how locale names work
 
 ..
 
-.. note::
-   - Ignore the intermediate ``LC_MESSAGE`` level
-   - And **for now** (only),  ignore the ``messages.mo`` alongside the ``messages.po`` file
+**NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, And (for now) ignore the ``messages.mo`` located in the same folder as the ``messages.po`` file
 
 
 1d: Is your locale listed?
@@ -126,8 +123,7 @@ Step 2a: Open a text editor
 
 - Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*)
 
-.. note::
-   Just be careful with older versions of *Notepad* in Windows. Traditionally, it was incompatible with Unix style line endings. But as of Windows 10, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
+**NOTE**: Just be careful with older versions of *Notepad* in Windows. Traditionally, it was incompatible with Unix style line endings. But as of Windows 10, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
 
 2b: add the ``[ll_CC]`` code
 ----------------------------------
@@ -147,8 +143,7 @@ Step 2a: Open a text editor
   
   - These can be found in the rightmost column (``Language code``) on Microsoft's list of `Language Identifiers and and Locales <https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10)?redirectedfrom=MSDN>`_.
   
-  .. note:: 
-     If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
+**NOTE**: If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
 
 2d: language label
 ----------------------
@@ -247,8 +242,7 @@ Poedit download page:
       
 ``..THE/PATH/ON/YOUR/COMPUTER/TO/psychopy/psychopy``
 
-.. note::
-   this setting does not make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
+**NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
 
 4c3: Paths (2)
 -----------------
@@ -321,7 +315,7 @@ Poedit download page:
   
     - i.e., ``Translation > Properties > Sources Keywords > Additional keywords``
 
-.. note:: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
+**NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
 
 4f: Translate the strings
 ----------------------------
@@ -342,11 +336,9 @@ Poedit download page:
 
 - In contrast to the ``.po`` file, the ``.mo`` file has the following characteristics:
 
-  - It can only be compiled through *Poedit*
+  - You can only compile it through *Poedit* (or with some command-line tools, which we won't cover)
   - You can't edit it directly yourself (it looks like uninterpretable gibberish to humans)
   - It is the file actually *used* by the |PsychoPy| app during operation
-
-.. note:: Technically, you could also use the ``msgfmt`` command the Python implementation of *gettext*. I don't know how to set this up though.
 
 Translation note 1a: Leave certain technical terms alone
 ----------------------------------------------------------
@@ -359,14 +351,15 @@ Translation note 1a: Leave certain technical terms alone
   - ``Flow``
   - ``Routine``, and so on
 - These are usually indicated with an uppercase first letter
+- The next slide covers cases of uncertainty
 
-Translation note 1b: What if I'm not sure?
---------------------------------------------
+Translation note 1b: What if I'm not sure whether I should translate or not?
+-----------------------------------------------------------------------------
 
 - The Japanese translation is nearly completely
 - You have it since you forked and cloned the repository
 - Open: ``.../psychopy/psychopy/app/locale/ja_JP/LC_MESSAGES/messages.po``
-- Look up the same string in the Japanese ``messages.po`` file
+- Look up the string you're having difficulty with in the Japanese ``messages.po`` file
 - Use that as a model for your own ``.po`` file
 
 Translation note 2: Formatting arguments
@@ -382,7 +375,7 @@ If there are formatting arguments in the original string (``%s``, ``%(first)i``)
   - here, ``first`` is a python name
   - that part should not be translated
 
-.. PB - I really just copied this from the original poedit file by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
+.. PB - I really just copied this from the original explanation by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
 
 Translation note 3: When you are unsure
 ------------------------------------------
@@ -470,7 +463,6 @@ Copy the file
   - ``tips_zh_CN.txt``
   
     - (simplified Chinese)
-
   - ``tips_ar_001.txt``
   
     - (Modern Standard Arabic)
@@ -481,8 +473,7 @@ Copy the file
 - Open the new, renamed file using your preferred text editor
 - Translate the English-language tips by replacing them entirely with those of the language you are working on
 
-.. warning:: 
-   Do *not* delete any English entry in the new ``.txt`` file before you have completely translated it. Instead. insert the relevant translation below the English entry. Then (and only then) delete the English entry. Save your work, of course.
+**WARNING**: Do *not* delete any English entry in the new ``.txt`` file before you have completely translated it. Instead. insert the relevant translation below the English entry. Then (and only then) delete the English entry. Save your work, of course.
 
 5c: add the new ``.txt`` file as a "translation"
 ------------------------------------------------------------
@@ -531,8 +522,7 @@ Recall the following:
 
     - It's that simple
 
-.. warning:: 
-   *Poedit* uses the ``.po`` file to compile the ``.mo`` file, so remember to finish with your translations in the ``.po`` file "for the day" before you compile the ``.mo`` file
+**WARNING**: *Poedit* uses the ``.po`` file to compile the ``.mo`` file, so remember to finish with your translations in the ``.po`` file "for the day" before you compile the ``.mo`` file
 
 Done with translating
 ------------------------

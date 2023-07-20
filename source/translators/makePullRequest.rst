@@ -25,7 +25,7 @@ Steps on the way to a pull request
 What *Git* tracks
 ---------------------
 
-- all changes in a directory
+- **ALL** changes in a directory and its subdirectories
 
   - the same directory where the hidden ``.git`` file resides 
 - what should you put into a single *commit*?
@@ -34,8 +34,7 @@ What *Git* tracks
   - *unrelated* changes in *commit* creates a confusing version history
 - this is the purpose of *staging*
 
-.. note::
-   You can manually blindfold *Git* to certain files or filetypes by listing them in a ``.gitignore`` file, which is also hidden. 
+**NOTE**: You can manually blindfold *Git* to certain files or filetypes by listing them in a ``.gitignore`` file, which is also hidden (and in the same directory as the ``.git`` file). 
 
 *Stage* related changes
 -------------------------
@@ -140,7 +139,7 @@ Why the prefix?
   - No character limit, but try to be succinct 
   - If your description needs upwards of 100 characters, it might be worth splitting your commit into two or more commits
 
-.. note:: All that said, it would be a bit strange for a translation to need a description. The commit message should suffice in almost all cases.
+**NOTE**: All that said, it would be a bit strange for a translation to need a description. The commit message should suffice in almost all cases.
 
 2e: Commit
 ------------
@@ -242,10 +241,9 @@ Step 4: The pull request
 4c: Double-checking changes
 ------------------------------------
 
-.. warning::
-   If you see many more file changes than you were expecting, then you might be on the wrong branch(es)
-.. note::
-   If it says *There isn't anything to compare*, you probably didn't yet push the commit from your local copy to *origin*
+**WARNING**: If you see many more file changes than you were expecting, then you might be on the wrong branch(es)
+
+**NOTE**: If it says *There isn't anything to compare*, you probably didn't yet push the commit from your local copy to *origin*
 
 .. PB - test this with real pull request
 
