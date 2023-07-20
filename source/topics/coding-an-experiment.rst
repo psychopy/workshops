@@ -21,8 +21,11 @@ Coding an experiment using PsychoPy coder
      }
      </style>
 
-  
-  This workshop will introduce you to how to code an experiment from scratch using python code. **This is a beginners python workshop, we will not assume any knowledge of python code in advance of this session**. The topics covered in this session will include:
+  **When?** September 18th, 15:30 - 17:00 (UK time)
+
+  **Where?** Virtual (Zoom)
+
+  **What will I learn?** This workshop will introduce you to how to code an experiment from scratch using python code. **This is a beginners python workshop, we will not assume any knowledge of python code in advance of this session**. The topics covered in this session will include:
 
   * Basic variable types (Integers, Strings, Dictionaries).
   * Presenting stimuli and gathering responses using code.  
@@ -30,7 +33,14 @@ Coding an experiment using PsychoPy coder
 
   In general, we do not recommend coding experiments from scratch (even the developers of PsychoPy use PsychoPy Builder to make experiments!). However, coding experiments is a fun, visual approach to learning to code. Also, coding an experiment from scratch gives a better idea what is going on "under the hood" of PsychoPy Builder!
 
+  **Why attend a workshop?** Unlike a YouTube video or webinar, this is a "hands on" learning experience with a member of our team to guide you. You make an experiment at the same time as us, you can ask questions in real-time. 
 
+  **How can I register?** Book a ticket or apply for a waiver. 
+
+  .. raw:: html
+
+   <span style="color: green;">Spaces limited to 20 per session. </span>
+   
   .. raw:: html
 
    <span style="color: green;">Booking link coming soon... (we will charge £20 per booking - waiver options available)</span>
