@@ -51,6 +51,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.graphviz',
     "sphinx_carousel.carousel",
+    'sphinxcontrib.youtube'
 ]
 
 graphviz_output_format = 'png'
