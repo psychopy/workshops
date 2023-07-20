@@ -8,9 +8,14 @@ Creating Experiments in PsychoPy (3 days)
   Upcoming Events
   -------------------
 
-  * **April 19th - 21st 2023** - In person event, hosted at the University of Nottingham- 3 day comprehensive workshop. `Book through the University of Nottingham Store <https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology>`_
+  +----------------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
+  |      Time zone.            |      Date                     |  Information                                                                                           |
+  +============================+===============================+========================================================================================================+
+  | UK.                        | September 20th - 23rd 2023    | `Booking link <https://pavlovia.org/store/workshops/2023-9-20-psychopy-creating-experiments>`_         |
+  +----------------------------+-------------------------------+----------------------+-------------------------------+-------------------------------------------------+
+  | US Eastern.                | October 10th - 13th 2023      | `Booking link <https://pavlovia.org/store/workshops/2023-10-11-psychopy-creating-experiments>`_        |
+  +----------------------------+-------------------------------+--------------------------------------------------------------------------------------------------------+
 
-  
 
   About 
   ---------
@@ -21,8 +26,6 @@ Creating Experiments in PsychoPy (3 days)
     :align: center
     :width: 600
 
-
-  Note that on day 3 we are currently trialling 2 parallel sessions on Advanced Builder. We hope that there will be a bit of something for everyone with several experience levels!
 
   What do I need in advance?
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -42,8 +45,6 @@ Creating Experiments in PsychoPy (3 days)
   ^^^^^^^^^^^^^^^^
 
   All of our materials are openly available in web page (links below) or and `HTML slide <https://workshops.psychopy.org/slides/3days>`_ format.
-
-  You can also download and unzip  `a range of pre-made demos <https://workshops.psychopy.org/psychopy_examples.zip>`_ that we work from. 
 
   Accessibility
   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

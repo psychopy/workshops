@@ -21,16 +21,10 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
       :show_buttons_on_top:
       :show_controls:
 
-      .. figure:: /_images/contribWkshpApr26Ad.jpg
-        :target: https://www.eventbrite.co.uk/e/contributing-to-psychopy-workshop-3-tickets-587696194137
-        
-
-        Attend two half-day workshop on how to contribute to the Psychpy/JS project on GitHub!
-
-      .. figure:: /_images/UoNadvert.jpg
+      .. figure:: /_images/3daySept23ad.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
 
-        Join the team in person at the University of Nottingham!
+        Join us for a comprehensive workshop with content suitable for beginners to advanced users. Available in UK and US (East Coast) timezones.
 
         
       .. figure:: /_images/SurveysLaunch.jpg
@@ -50,9 +44,24 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
 
 Upcoming events
 ------------------
- 
-* **April 26th & 28th 2023** - Online event, two half-days, contributor workshop.
 
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+|      Workshop format       |      Date                     |      Topic                                        |  Information                                                                                           |
++============================+===============================+===================================================+========================================================================================================+
+| 1.5 hour   virtual         | August 7th 2023               | Getting started with PsychoPy Builder             | :ref:`Details and booking<topicsCreatingExps>`                                                         |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| 1.5 hour   virtual         | August 14th 2023              | Extending experiments with Python code            | :ref:`Details and booking<topicsCodeComps>`                                                            |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| 1.5 hour   virtual         | August 21st 2023              | Getting experiments online with Pavlovia          | :ref:`Details and booking<topicsOnline>`                                                               |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| 1.5 hour   virtual         | August 30th 2023              | Making Surveys and Questionnaires using Pavlovia  | :ref:`Details and booking<topicsSurveys>`                                                              |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| 1.5 hour   virtual         | September 18th 2023           | Coding an experiment from scratch in python       | :ref:`Details and booking <topicsCode>`                                                                |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| 3 day - virtual            | September 20th - 23rd 2023    | 3 day comprehensive: In lab, online, coder        | `Details and booking <https://workshops.psychopy.org/3days/index.html#>`_                              |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| 3 day - virtual            | October 10th - 13th 2023      | 3 day comprehensive: In lab, online, coder        |`Details and booking <https://workshops.psychopy.org/3days/index.html#>`_                               |
++----------------------------+-------------------------------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 
 
 .. toctree::
