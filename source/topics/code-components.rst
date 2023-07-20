@@ -21,13 +21,23 @@ Extending Experiments with Python Code
      }
      </style>
 
-  
-  This workshop will introduce you to python code by adding code components in your experiments. Code components allow you to achieve anything possible in python by augmenting your Builder experiment with python code. The topics covered in this session will include:
+  **When?** August 14th, 15:30 - 17:00 (UK time)
+
+  **Where?** Virtual (Zoom)
+
+  **What will I learn?**  This workshop will introduce you to python code by adding code components in your experiments. Code components allow you to achieve anything possible in python by augmenting your Builder experiment with python code. The topics covered in this session will include:
 
   * Basic If/Else logic 
   * For loops 
   * Useful PsychoPy functions (e.g. custom timers, ending trials early)
 
+  **Why attend a workshop?** Unlike a YouTube video or webinar, this is a "hands on" learning experience with a member of our team to guide you. You make an experiment at the same time as us, you can ask questions in real-time. 
+
+  **How can I register?** Book a ticket or apply for a waiver. 
+
+  .. raw:: html
+
+   <span style="color: green;">Spaces limited to 20 per session. </span>
 
   .. raw:: html
 

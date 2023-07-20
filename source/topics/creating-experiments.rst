@@ -22,14 +22,23 @@ Creating Experiments in PsychoPy
      }
      </style>
 
+  **When?** August 7th, 15:30 - 17:00 (UK time)
 
+  **Where?** Virtual (Zoom)
 
-  This workshop will cover the basics of getting started with PsychoPy Builder to make experiments. The session is suitable for beginners with little experience of PsychoPy. Topics will include:
+  **What will I learn?** This workshop will cover the basics of getting started with PsychoPy Builder to make experiments. The session is suitable for beginners with little experience of PsychoPy. Topics will include:
 
   - Presenting stimuli (e.g. images, text)
   - Gathering keyboard responses (measuring response times and accuracy)
   - Block designs and counterbalancing
 
+  **Why attend a workshop?** Unlike a YouTube video or webinar, this is a "hands on" learning experience with a member of our team to guide you. You make an experiment at the same time as us, you can ask questions in real-time. 
+
+  **How can I register?** Book a ticket or apply for a waiver. 
+
+  .. raw:: html
+
+   <span style="color: green;">Spaces limited to 20 per session. </span>
 
   .. raw:: html
 
