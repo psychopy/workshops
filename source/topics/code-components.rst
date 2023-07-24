@@ -21,17 +21,27 @@ Extending Experiments with Python Code
      }
      </style>
 
-  
-  This workshop will introduce you to python code by adding code components in your experiments. Code components allow you to achieve anything possible in python by augmenting your Builder experiment with python code. The topics covered in this session will include:
+  **When?** August 14th, 15:30 - 17:00 (UK time)
+
+  **Where?** Virtual (Zoom)
+
+  **What will I learn?**  This workshop will introduce you to python code by adding code components in your experiments. Code components allow you to achieve anything possible in python by augmenting your Builder experiment with python code. The topics covered in this session will include:
 
   * Basic If/Else logic 
   * For loops 
   * Useful PsychoPy functions (e.g. custom timers, ending trials early)
 
+  **Why attend a workshop?** Unlike a YouTube video or webinar, this is a "hands on" learning experience with a member of our team to guide you. You make an experiment at the same time as us, you can ask questions in real-time. 
+
+  **How can I register?** Book a ticket or apply for a waiver. 
 
   .. raw:: html
 
-   <span style="color: green;">Booking link coming soon... (we will charge £20 per booking - waiver options available)</span>
+   <span style="color: green;">Spaces limited to 20 per session. </span>
+
+  `Book (£20) <https://pavlovia.org/store/workshops/2023-8-14-psychopy-creating-experiments-codecomptopic>`_
+
+  `Apply for waiver <https://forms.clickup.com/4570406/f/4bf96-7128/38SE053NS2O5A8Z6SR>`_
 
 
   .. figure:: /_images/Topics2.png
