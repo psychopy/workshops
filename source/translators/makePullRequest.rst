@@ -6,45 +6,39 @@ Committing and making a pull request
 - time to get your translations into |PsychoPy|
 - time to work towards a *pull request*
 
-  - *stage* > *commit* > *push* > *pull request*
-
 Steps on the way to a pull request
 -------------------------------------
-- on your local copy
 
-  - Step 1: *Stage* the changes you made
-  - Step 2: *Commit* staged files with an informative message 
-- online (to *GitHub*)
+1. *stage* (local copy)
+2. *commit* (local copy)
+3. *push* (local copy to *origin*)
+4. *pull request* (*origin* to *upstream*)
+5. clean up
 
-  - Step 3: *Push* the *Commit* to *Origin*
-  - Step 4: Make a *pull request* to *Upstream* from *Origin*
-- online and local
+What does *Git* track?
+------------------------
 
-  - Step 5: Clean up
+- answer
 
-What *Git* tracks
----------------------
-
-- **ALL** changes in a directory and its subdirectories
-
-  - the same directory where the hidden ``.git`` file resides 
+  - **ALL** changes in a directory (where the hidden ``.git`` file reside) and its subdirectories
+  
+    - unless you list that file or file type in the hidden ``.gitignore`` file
 - what should you put into a single *commit*?
   
-  - related changes
-  - *unrelated* changes in *commit* creates a confusing version history
+  - just related changes
+  
+    - *unrelated* changes in a single *commit* can lead to a confusing version history
 - this is the purpose of *staging*
-
-**NOTE**: You can manually blindfold *Git* to certain files or filetypes by listing them in a ``.gitignore`` file, which is also hidden (and in the same directory as the ``.git`` file). 
 
 *Stage* related changes
 -------------------------
 
 - *Staging*
 
-  - tells *Git* which files you want to put into a single commit
+  - *Stage* files to tell *Git* you want them in a single commit
   
-    - typically files that are related to each other  
-    - often a subset of all the files you've recently worked on in the project
+    - typically, files that are related to each other
+    - critically, often a **subset** of all the files you've recently worked on in the project
 
 Step 1: *Stage* your changes
 -----------------------------
@@ -89,22 +83,26 @@ At the bottom of the same tab, ``Changes``, you'll see two boxes
 - The convention in |PsychoPy| is to append an UPPERCASE prefix to every commit message
 - Examples:
 
-  - *BF:* for *bug fix*
-  - *FF:* for *feature fix*
+  - *BF:* 
+  
+    - for *bug fix*
+  - *FF:* 
+  
+    - for *feature fix*
 
 Why the prefix?
 ----------------------
 
 - The prefixes help administrators search for key changes to the project
-- Without them, they'd have to sift through all changes to a project when, in fact, they knew they only wanted to search through, say, bug fixes (BFs)
+- Without them, they'd have to sift through all changes to a project when, say, they knew they only wanted to search through bug fixes (BFs)
 
 2b: The prefix for translations
 --------------------------------
 - The one for all translations should be as follows:
 
   - *DOCS:*
-- This typically refers to documentation, but it also refers to changes to |PsychoPy| that do not affect code and how |PsychoPy| runs
-- In other words, it's a safe change to |PsychoPy| that won't "break" anything
+- usually for documentation
+- but also for changes that cannot "break" |PsychoPy|
 
 2c: The commit message itself
 ------------------------------------
@@ -125,6 +123,7 @@ Why the prefix?
   - ``DOCS: Add Spanish translations d-g``
 
   - ``DOCS: Add start-up tips in Hebrew`` 
+- Just use English as the maintainers at |PsychoPy| probably don't speak your language 
 
 2e: a description (optional)
 ------------------------------------
@@ -136,10 +135,14 @@ Why the prefix?
 - But sometimes you feel that the commit message is just not enough
 
   - This is when you use a description
-  - No character limit, but try to be succinct 
-  - If your description needs upwards of 100 characters, it might be worth splitting your commit into two or more commits
+  - No character limit
+  
+    - but try to be succinct 
+  - > 100 characters?
+  
+    - split your commit into two or more commits?
 
-**NOTE**: All that said, it would be a bit strange for a translation to need a description. The commit message should suffice in almost all cases.
+**NOTE**: All that said, messages alone should suffice in almost all translation cases
 
 2e: Commit
 ------------
@@ -157,18 +160,21 @@ Step 3: *Push* to *origin*
 
 - The commit is like sealing an envelope you want to send
 
-  - You still need to mail it in
+  - It's still just on your computer
+  - You still need to "mail it in" to your online repository
   - This is done through a *push*
 
 Where you can and cannot push directly to
 --------------------------------------------
 
-- You can push directly to your own fork on GitHub
-- But you cannot *push* directly to the main (*upstream*) repository at ``https://github.com/psychopy/psychopy``
+- You **can** push directly to your own fork on GitHub
+- But you **cannot** *push* directly to the main, *upstream*, repository at ``https://github.com/psychopy/psychopy``
   
-  - If anyone could just push to *upstream*, the whole open-source world would probably collapse
-- Instead, you first *push* to *origin* (your own copy of the the |PsychoPy| repository, located in your own *GitHub* account)
-- Afterwards, you make a *pull request* on *GitHub* to *upstream*
+  - If just anyone could do that, the whole open-source world would probably collapse
+- Instead
+
+  1. You first *push* to *origin*
+  2. Then you make a *pull request* on *GitHub* to *upstream*
 
 3a: how to push in *GitHub Desktop*
 --------------------------------------
@@ -179,19 +185,19 @@ Where you can and cannot push directly to
   - Or click the ``Push origin`` tab (which should have replaced the ``Fetch origin`` tab)
 
 Step 4: The pull request
-----------------------------------------------
+--------------------------
 
 - Now your changes should be on *origin*
 - But you'll see a note probably saying that you're one commit ahead of *upstream* 
-- To make them identical, you need to perform a *pull request*
+- To initiate the process of making them identical, you need to perform a *pull request*
   
-  - (you're "requesting" that adminstators of *upstream* "pull" your changes in, like "Pull me, please.")  
+  - (you're "requesting" that the maintainers of *upstream* "pull" your changes in, like "Pull me in, please.")  
 - This *can* be done directly from *GitHub Desktop*, but it's not completely clear what that's doing
 
   - So I tend to go to *GitHub* and make the pull request from there 
 
 4a: Selecting the right branch
-------------------------------------
+--------------------------------
 
 - Go to your fork of the repository on *GitHub* (i.e., *origin*)
 - Select the branch that you just made the commit to
@@ -201,9 +207,12 @@ Step 4: The pull request
 
 - *GitHub* should detect that your latest commit is probably awaiting a *pull request* to *upstream*
 
-  - Look for a yellow banner at the top with a note about the recent commit, and a green button with the following message:
+4b: Make the pull request
+----------------------------
 
-  ``Compare and pull request``
+- Look for a yellow banner at the top with a note about the recent commit, and a green button with the following message:
+
+``Compare and pull request``
 
 - Click that button
 - If it's not there
@@ -213,7 +222,7 @@ Step 4: The pull request
     - the ``Pull requests`` tab at the top
     - the ``Contribute`` tab next to the ``Sync fork`` tab
 
-4b: Double-checking source and destination
+4c: Double-checking source and destination
 -------------------------------------------
 
 - You should now be switched to the *upstream* repository at ``psychopy/psychopy``
@@ -238,7 +247,7 @@ Step 4: The pull request
   
     - (the appropriate **branch** on *origin* to merge *from*)
 
-4c: Double-checking changes
+4d: Double-checking changes
 ------------------------------------
 
 **WARNING**: If you see many more file changes than you were expecting, then you might be on the wrong branch(es)
@@ -247,7 +256,7 @@ Step 4: The pull request
 
 .. PB - test this with real pull request
 
-4d: Will your changes merge?
+4e: Will your changes merge?
 ------------------------------
 
 - Hopefully, you see the following directly below the information covered in the last slide
@@ -265,7 +274,7 @@ Step 4: The pull request
 
 .. PB - add a strategy to deal with this
 
-4e1: Adding a description
+4f1: Adding a description
 -------------------------------
 
 - *description* 
@@ -274,7 +283,7 @@ Step 4: The pull request
   - can be useful to administrators if the changes are complex
   - answers the *what*, *why*, *how*, etc. of the *pull request*
 
-4e2: Is a description necessary?
+4f2: Is a description necessary?
 ------------------------------------
 
 - But truth be told, descriptions generally won't be of much use to translators
@@ -282,7 +291,7 @@ Step 4: The pull request
   - A *pull request* for a translations is only going to involve 2-3 files (though there may be many, many lines changed)
   - But even if there are many lines changed, the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language
 
-4f: Extra responsibility
+4g: Extra responsibility
 ---------------------------
 
 - From the last slide
@@ -293,7 +302,7 @@ Step 4: The pull request
 - This is because administrators will probably be forced to "rubber stamp" your proposed changes 
 - Translate responsibly ;)
 
-4g: Subsequent commits
+4h: Subsequent commits
 ------------------------
 
 - If you make further *commits* before the *pull request* is merged in by the administrators

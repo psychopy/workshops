@@ -44,19 +44,16 @@ First, we need to discuss how locale names work
 1b: What our team speaks more than one dialect?
 -------------------------------------------------
 
-- group decision
-- Important point
-
-  - You can start on one, finish it, then copy to it to another and make minor adjustments
+- group decision on team strategy
   
-    - For example (one possibility):
+  - For example (one possibility):
 
-      - fully translate for Iberian Spanish (``es_ES``)
-      - copy the entire ``es_ES`` folder
-      - rename it to ``es_CL`` (Spanish in Chile)
-      - make adjustments to the new ``messages.po`` file to account for Chilean variations on the language  
-      - compile the new ``.mo`` file
-      - add Chilean Spanish to the ``mappings.txt`` file
+    - fully translate for Iberian Spanish (``es_ES``)
+    - copy the entire ``es_ES`` folder
+    - rename it to ``es_CL`` (Spanish in Chile)
+    - make adjustments to the new ``messages.po`` file to account for Chilean variations on the language  
+    - compile the new ``.mo`` file
+    - add Chilean Spanish to the ``mappings.txt`` file
 
 1c: ``[ll_CC]`` folder/file structure
 -------------------------------------
@@ -68,7 +65,7 @@ First, we need to discuss how locale names work
   
 - For example for Farsi (Persian) in Iran: 
 
-  - ``psychopy/psychopy/app/locale/fa_IR/LC_MESSAGE/messages.po`` 
+``psychopy/psychopy/app/locale/...`` 
 
 .. image:: ../_images/trnslWkshp_folderStructure.png
   :align: center
@@ -115,7 +112,7 @@ First, we need to discuss how locale names work
 Step 2: ``mappings.txt``
 -------------------------
 
-- Do this once, and it's done forever
+- Do this once per translated language, and it's done forever (for that localisation)
 - This file just tells the experimenter which translations are available in |PsychoPy|
 
 Step 2a: Open a text editor
@@ -130,7 +127,7 @@ Step 2a: Open a text editor
 
 - Open the following file (there's only one)
 
-  - ``.../psychopy/psychopy/app/localization/mappings.txt``
+``/psychopy/psychopy/app/localization/mappings.txt``
 
 - Is the ``[ll_CC]`` code listed?
 
@@ -141,7 +138,7 @@ Step 2a: Open a text editor
 
 - Add the 3-letter Microsoft code that refers to the language
   
-  - These can be found in the rightmost column (``Language code``) on Microsoft's list of `Language Identifiers and and Locales <https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10)?redirectedfrom=MSDN>`_.
+  - These can be found in the rightmost column (``Language code``) on Microsoft's list of *Language Identifiers and and Locales* at `https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10) <https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10)>`_.
   
 **NOTE**: If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
 
@@ -202,7 +199,7 @@ Poedit download page:
 
 - For example, for Thai in Thailand:
 
-  - ``.../psychopy/psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
+``psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
 
 4c: Once-and-done settings
 ----------------------------
@@ -280,10 +277,9 @@ Poedit download page:
 - Find the following tab: ``General``
 - Add your name and e-mail address where indicated
 
-.. note:: 
-   The fields can only hold one name and email, respectively. Apparently, you should change this each time you work on the ``.po`` file after pulling the most recent commits from *upstream*. *Poedit* shows the following message under *Name* and *E-mail*:
-   
-     Your name and e-mail address are only used to set the ``Last-Translator`` header of GNU gettext files
+**NOTE**: The fields can only hold one name and email, respectively. You should change this each time you work on the ``.po`` file after pulling the most recent commits from *upstream*. *Poedit* shows the following message under *Name* and *E-mail*: 
+
+*Your name and e-mail address are only used to set the Last-Translator header of GNU gettext files*.
 
 .. PB - These settings and settings on the following slides are largely based on Hiroyuki's settings for Japanese
 
@@ -358,7 +354,10 @@ Translation note 1b: What if I'm not sure whether I should translate or not?
 
 - The Japanese translation is nearly completely
 - You have it since you forked and cloned the repository
-- Open: ``.../psychopy/psychopy/app/locale/ja_JP/LC_MESSAGES/messages.po``
+- Open: 
+
+``/psychopy/app/locale/ja_JP/LC_MESSAGES/messages.po``
+
 - Look up the string you're having difficulty with in the Japanese ``messages.po`` file
 - Use that as a model for your own ``.po`` file
 
@@ -395,15 +394,20 @@ If you think your translation might have room for improvement
 Simple strategy to resolve uncertainty: *Ask*
 ---------------------------------------------------
   
-- Go to the `forum <https://discourse.psychopy.org/>`_
+- Go to the forum on *discourse*:
+
+`https://discourse.psychopy.org/ <https://discourse.psychopy.org/>`_
+
 - There are friendly, useful experts there
 
-  - There are probably few who could help you with your language
+  - There are probably very few who could help you with your language
   - But there are many more who can help you understand the code underlying |PsychoPy|
   
 Advanced strategy to resolve uncertainty: *Determine it yourself*
 ----------------------------------------------------------------------
-§
+
+**NOTE**: You need to understand *Python* quite well to take the following approach
+
 - Select the relevant string in the following box: ``Source text - English``
 
   - Right-click the string (control-click on a Mac)
@@ -411,23 +415,18 @@ Advanced strategy to resolve uncertainty: *Determine it yourself*
 
   - Below that, you will see the (partial) path(s) to the file(s), followed by a colon, ``:``, then the respective line number in the file
 
-Advanced strategy to resolve uncertainty: *Determine it yourself* (cont'd)
+*Determine it yourself* (cont'd)
 ----------------------------------------------------------------------------
 
 - For example, for the string ``Yes`` in one version of |PsychoPy|:
-    
-  - ``../app/connections/update.py:232``
-  
-    - (meaning line 232 in the ``update.py`` file under the ``connections`` folder)
-  - ``../app/dialogues.py:51``
-  
-    - (meaning line 51 in the ``dialogues.py`` file under the ``app`` folder)
-  - ``../app/dialogues.py:71``
-  
-    - (etc.)
 
-- You can then go into that file (or those files) to determine the function
-- Naturally, you need to understand *Python* quite well to take this approach   
+  - ``../app/connections/update.py:232`` (meaning line 232 in the ``update.py`` file under the ``connections`` folder)
+
+  - ``../app/dialogues.py:51`` (meaning line 51 in the ``dialogues.py`` file under the ``app`` folder)
+
+  - ``../app/dialogues.py:71`` (etc.)
+
+- You can then go into that file (or those files) to determine the function   
 
 Last resort: *Do nothing*
 ----------------------------
@@ -450,22 +449,17 @@ Step 5: Translating the *Start-up Tips*
 5a: Copy ``tips.txt`` to a new file
 --------------------------------------------
 
-- The default *Start-up Tips* file (in English) is named ``tips.txt``
-- It is located in the following directory ``psychopy/app/Resources/``
+- Find the default *Start-up Tips* (in English) file
 
-Copy the file
+  - ``psychopy/app/Resources/tips.txt``
+- Copy it
 
-- Go to ``psychopy/app/Resources/``
-- Paste ``tips.txt`` as a new file
-- Rename it according to the ``[ll_CC]`` convention consistent with the language you're working on
-- For example:
+  - Paste it as a new file (``tips copy.txt``, perhaps)
+  - Rename it according to the ``[ll_CC]`` convention consistent with the language you're working on
+- For Example
 
-  - ``tips_zh_CN.txt``
-  
-    - (simplified Chinese)
-  - ``tips_ar_001.txt``
-  
-    - (Modern Standard Arabic)
+  - ``tips_zh_CN.txt`` (simplified Chinese)
+  - ``tips_ar_001.txt`` (Modern Standard Arabic)
 
 5b: translate
 ----------------------
@@ -473,15 +467,13 @@ Copy the file
 - Open the new, renamed file using your preferred text editor
 - Translate the English-language tips by replacing them entirely with those of the language you are working on
 
-**WARNING**: Do *not* delete any English entry in the new ``.txt`` file before you have completely translated it. Instead. insert the relevant translation below the English entry. Then (and only then) delete the English entry. Save your work, of course.
+**WARNING**: Do *not* delete any English entry in the new ``.txt`` file before you have completely translated it. Instead, insert the relevant translation below the English entry. Then (and only then) delete the English entry. Save your work, of course.
 
 5c: add the new ``.txt`` file as a "translation"
 ------------------------------------------------------------
 
 - Open *Poedit*
 - Find ``tips.txt`` under the following heading: ``Source text - English``
-  
-  - (Yes, the file is listed as a string to "translate")
 - Simply provide the name of the new ``.txt`` file that you just created as the translation for ``tips.txt``
 
   - Naturally, this would be under the following heading: ``Translation - [your language]`` 
@@ -491,10 +483,10 @@ Copy the file
    :widths: 100 100
    :header-rows: 1
 
-   * - Source text - English
-     - Translation - Japanese
-   * - tips.txt
-     - tips_ja_JP.txt
+   * - ``Source text - English``
+     - ``Translation - Japanese``
+   * - ``tips.txt``
+     - ``tips_ja_JP.txt``
 
 Note on humor in *Start-up tips*
 --------------------------------------
