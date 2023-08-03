@@ -59,13 +59,12 @@ Step 1: *Stage* your changes
 All that said...
 --------------------
 
-- After the initial setup, most translators will be working on just a few files anyway, i.e.:
+- After the initial setup, most translators will be working on just a couple of files anyway, i.e.:
   
   - ``messages.po``
-  - ``messages.mo``
   - (and maybe) ``tips...txt``
   
-- So 99% of the time, you'll just leave those 2-3 boxes checked anyway 
+- So 99% of the time, you'll just leave those 1-2 boxes checked anyway 
 
 Step 2: The commit
 ---------------------
@@ -144,7 +143,7 @@ Why the prefix?
 
 **NOTE**: All that said, messages alone should suffice in almost all translation cases
 
-2e: Commit
+2f: Commit
 ------------
 
 - When you are ready to commit
@@ -181,7 +180,7 @@ Where you can and cannot push directly to
 
 - Select the following:
 
-  - ``Repository`` > ``Push``
+  - ``Repository > Push``
   - Or click the ``Push origin`` tab (which should have replaced the ``Fetch origin`` tab)
 
 Step 4: The pull request
@@ -268,7 +267,7 @@ Step 4: The pull request
   - You are trying to merge to or from the wrong branch (or both)
   
     - Double check your branches (see previous slide)
-  - Another translator has worked on the same files from the same branch, and then submitted a pull request before you did
+  - Another translator has worked on the same files on the same translations, and then submitted a pull request before you did
   
     - In this case, you could have a merge conflict
 
@@ -286,7 +285,7 @@ Step 4: The pull request
 4f2: Is a description necessary?
 ------------------------------------
 
-- But truth be told, descriptions generally won't be of much use to translators
+- But truth be told, descriptions generally won't be of much use to translators unless you've done something unusual
   
   - A *pull request* for a translations is only going to involve 2-3 files (though there may be many, many lines changed)
   - But even if there are many lines changed, the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language
@@ -369,7 +368,7 @@ Yes
 
 - From *GitHub Desktop*
   
-  - ``Repository`` > ``Pull``
+  - ``Repository > Pull``
  
 FINISHED!! 
 -------------

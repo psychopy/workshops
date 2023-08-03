@@ -29,19 +29,31 @@ Need for translations
 
   - changes the language that the **experiment-ER** sees
   
-**NOTE**: This is **not** what the participant sees, which is under the control of the experimenter 
+**NOTE**: This is **NOT** what the participant sees. **THAT** is under the control of the experimenter 
 
 
-Overview of how |PsychoPy| works in a different language
-----------------------------------------------------------
+Overview of how |PsychoPy| works in a language other than US English
+-----------------------------------------------------------------------
 
-- |PsychoPy| "looks" for a language every time it displays items to the experimenter (e.g., menu items, errors)
+- |PsychoPy| uses `gettext` to "look" for a language every time it displays items to the experimenter (e.g., menu items, errors)
 - If found
 
-  - consults the ``messages.mo`` file for that language
+  - consults the ``messages.mo`` file under the directory for that language
 - If **not** found
 
-  - consults the ``messages.mo`` file for American English
+  - consults the ``messages.mo`` file under the directory (``en_US``) for American English
+  
+    - i.e., ``psychopy/app/locale/en_US/LC_MESSAGE/messages.po`` 
+
+Visualisation
+----------------
+
+.. image:: ../_images/trnslWkshp_poMoPsychoPy.png
+  :align: center
+  :width: 550
+  :alt: Image of a how .po and .mo files interact to allow PsychoPy to implement translations into other languages
+
+..
 
 Further reading
 -------------------
@@ -61,9 +73,8 @@ Overview of how translators make this happen
 Translators...
 
 1. translate "strings" in a ``messages.po`` file
-2. compile the ``.mo`` file from the ``.po`` file
-3. commit and push those changes to *GitHub*
-4. make a *pull request* on *GitHub* to incorporate those changes in the current release of |PsychoPy|
+2. commit and push those changes to *GitHub*
+3. make a *pull request* on *GitHub* to incorporate those changes in the current release of |PsychoPy|
 
 **NOTE**: They also translate *Start-up tips*, but this is a slightly different process that involves a simple ``.txt`` file
 

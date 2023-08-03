@@ -3,42 +3,48 @@
 Preliminaries
 ================
 
-What is software localization?
------------------------------------
+Some terminology
+-------------------
 
-- a translations of particular languages that are specified, respectively, for specific geographic *locale*\s
+- ``I18n`` or *Internationalization*
 
-  - *locale* 
-  
-    - usually = specific country  
+  - ``18``: the number of letters between *I* and *n* in *Internationalization*
+  - making software available in various languages
+- ``L10n`` or *Localization*
 
-Why *localization* and not *translation*?
---------------------------------------------
+  - ``10``: the number of letters between *L* and *n* in *Localization*
+  - making software suitable for cultural regions
+    
+    -  *locale* = usually a specific country
+
+Why *internationalization* / *localization* (not *translation*)?
+-----------------------------------------------------------------
   
 - not restricted to linguistic differences  
-- includes differences in the following (for example):
+
+  - includes differences in the following (for example):
     
-  - orthography  
-  - writing conventions
+    - orthography  
+    - writing conventions
   
-    - e.g., commas, whether decimal places are represented with commas or full stops, etc.
+      - e.g., commas, whether decimal places are represented with commas or full stops, etc.
   - general cultural differences
 
-What is a *locale*?
-----------------------
+What is a *locale* in |PsychoPy|?
+-----------------------------------
 
-*locale*
-
-- a language-country combination, most of the time
-
-- ultimately realised as a folder with the following label: ``ll_CC``
+- a folder with the following label: ``ll_CC``
   
-  - the lowercase ``ll`` = a language
+  - the lowercase ``ll_``
   
-    - e.g., ``pt`` for portuguese
-  - the uppercase ``CC`` = a country
+    - a language
+  
+      - e.g., ``pt_`` for portuguese
+  - the uppercase ``_CC``
     
-    - e.g., ``BR`` for Brazil
+    - a country
+    
+      - e.g., ``_BR`` for Brazil
 - thus, the folder holding the translations for Brazilian Portuguese:
   
   - ``pt_BR``
@@ -46,7 +52,7 @@ What is a *locale*?
 Language variation by region
 -----------------------------
 
-- Language
+- language
 
   - often varies by region  
   - but sometimes not
@@ -65,9 +71,12 @@ Minor language differences that *don't* matter for end-users
 - US  
 
   - *color*, without a <u>  
-- Almost inconceivable that this difference would matter
+- Almost inconceivable that this difference would matter to anyone
    
-- Localization to British English *not* merited in this case  
+- Localization to British English *not* really merited in this case 
+
+  - But there's nothing stopping anyone if they want to
+  - (It would be very little work)
 
 Major language differences that *do* matter for end-users
 -------------------------------------------------------------
@@ -93,7 +102,6 @@ Simplified vs. traditional Examples
 - Reading each other's scripts possible, but annoying  
 - Localization merited 
 
-
 Translator teams: *Choice of locale*
 ---------------------------------------
 
@@ -105,9 +113,9 @@ Translator teams: *Choice of locale*
 
     - **Start** with Iberian Spanish (European)
     - **Finish** all translations in that language variety
-    - **Copy** the ``es_ES``` folder
+    - **Copy** the ``es_ES`` folder
     - **Rename** the copied folder: ``es_MX`` (Spanish in Mexico)
-    - **Adjust** for Mexican Spanish
+    - Finally, **adjust** for Mexican Spanish
 
 Translator teams: *Division of labor*
 ---------------------------------------

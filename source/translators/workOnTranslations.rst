@@ -16,7 +16,6 @@ Overview
   - configure settings of the ``messages.po`` file
   - translate the "strings" in that same file
 - Step 4: Translating "Start-up tips" in |PsychoPy| with a text editor
-- Step 5: Use *Poedit* to compile ``.mo`` file
   
 **NOTE**: Steps 3 and 4 don't have to be sequential; they're just different translation processes
 
@@ -52,7 +51,6 @@ First, we need to discuss how locale names work
     - copy the entire ``es_ES`` folder
     - rename it to ``es_CL`` (Spanish in Chile)
     - make adjustments to the new ``messages.po`` file to account for Chilean variations on the language  
-    - compile the new ``.mo`` file
     - add Chilean Spanish to the ``mappings.txt`` file
 
 1c: ``[ll_CC]`` folder/file structure
@@ -201,13 +199,39 @@ Poedit download page:
 
 ``psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
 
-4c: Once-and-done settings
-----------------------------
+4c: Settings that don't change
+--------------------------------
 
-- Some of the settings in *Poedit* won't change
-- We cover these first
+- Once set, the settings below in *Poedit* don't really change
 
-4c1: Language and language team
+  - unless you change your email, or the location of your files on your computer, etc.
+- One exception is the version of |PsychoPy| you're using to translate
+
+  - This is covered last   
+
+.. PB - These settings and settings on the following slides are largely based on Hiroyuki's settings for Japanese
+
+4c1: ``General`` (Name and email)
+----------------------------------------
+
+- On a PC, choose the following: ``File > Preferences``
+- On a Mac, choose this instead: ``Poedit > Settings``
+- Find the following tab: ``General``
+- Add your name and e-mail address where indicated
+
+4c2: ``Advanced``
+---------------------
+
+- Just make sure that the following are set correctly
+
+  - ``Line endings:``
+  
+    - set to ``Unix (recommended)``
+  - ``Preserve formatting of existing files``
+    
+    - make sure this is checked
+
+4c3: Language and language team
 -----------------------------------
 
 - Go to: ``Translation > Properties``
@@ -225,9 +249,9 @@ Poedit download page:
   
   - *UTF-8 (recommended)* 
 
-.. PB - How should groups communicate with each other? listserv? Google Group?
+.. PB - How should groups communicate with each other? listserv? Google Group? Gaggle Mail?
 
-4c2: Paths (1)
+4c4: Paths (1)
 ------------------
 
 - under the tab labeled: ``Sources Paths``
@@ -241,7 +265,7 @@ Poedit download page:
 
 **NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
 
-4c3: Paths (2)
+4c5: Paths (2)
 -----------------
 
 - under the tab labeled: ``Sources Paths``
@@ -259,32 +283,14 @@ Poedit download page:
  
   - ``_translate`` 
 - If it **isn't**, type it in  
-- Save your work (``File > Save``)   
+- Save your work (``File > Save``)
 
 .. PB - Hiroyuki also has _, gettext, and gettext_noop as keywords. Are these necessary or helpful?
 
-4d: Settings that can change over time
-----------------------------------------
+4d: The setting that does change
+---------------------------------
 
-- These are settings that may change over time
-- You need to check them each time you resume work
-
-4d1: ``General`` (Name and email)
-----------------------------------------
-
-- On a PC, choose the following: ``File > Preferences``
-- On a Mac, choose this instead: ``Poedit > Settings``
-- Find the following tab: ``General``
-- Add your name and e-mail address where indicated
-
-**NOTE**: The fields can only hold one name and email, respectively. You should change this each time you work on the ``.po`` file after pulling the most recent commits from *upstream*. *Poedit* shows the following message under *Name* and *E-mail*: 
-
-*Your name and e-mail address are only used to set the Last-Translator header of GNU gettext files*.
-
-.. PB - These settings and settings on the following slides are largely based on Hiroyuki's settings for Japanese
-
-4d2: Translation properties
------------------------------
+This is the setting that will change over time, as |PsychoPy| comes out with new versions
 
 - go to: ``Translation > Properties``
 
@@ -297,7 +303,7 @@ Poedit download page:
     - ``PsychoPy 2023.1.0``
       
       - usually the most recently released version of |PsychoPy|
-  - This will tell subsequent translators whether they need to update the strings
+  - This will tell subsequent translators whether they need to update the strings (i.e., if their version of |PsychoPy| is more recent)
 
 4e: Generate current list of translatable strings
 --------------------------------------------------------
@@ -322,19 +328,6 @@ Poedit download page:
 - Below that, there is a box labeled as follows: ``Translation``
 - Type your translation into that box
 - Save your work as you go
-
-4g: When you are "done for the day"
---------------------------------------------
-
-- Compile the ``.mo`` file:
-
-  - ``File`` > ``Compile to MO..``
-
-- In contrast to the ``.po`` file, the ``.mo`` file has the following characteristics:
-
-  - You can only compile it through *Poedit* (or with some command-line tools, which we won't cover)
-  - You can't edit it directly yourself (it looks like uninterpretable gibberish to humans)
-  - It is the file actually *used* by the |PsychoPy| app during operation
 
 Translation note 1a: Leave certain technical terms alone
 ----------------------------------------------------------
@@ -391,8 +384,8 @@ If you think your translation might have room for improvement
     - This should be located at lower-right of the app window if you have the sidebar visible
   - Add your notes for that string into the pop-up window
 
-Simple strategy to resolve uncertainty: *Ask*
----------------------------------------------------
+Simple strategy to resolve uncertainty: Ask the experts
+--------------------------------------------------------
   
 - Go to the forum on *discourse*:
 
@@ -400,8 +393,8 @@ Simple strategy to resolve uncertainty: *Ask*
 
 - There are friendly, useful experts there
 
-  - There are probably very few who could help you with your language
-  - But there are many more who can help you understand the code underlying |PsychoPy|
+  - few, if any, can help you with your language, of course
+  - many more who can help you understand the underlying code of |PsychoPy|
   
 Advanced strategy to resolve uncertainty: *Determine it yourself*
 ----------------------------------------------------------------------
@@ -499,22 +492,6 @@ Note on humor in *Start-up tips*
 - Don't get too creative here
 - If you have any doubt, it is better to leave it out
 - It goes without saying that you should avoid any religious, political, disrespectful, or sexist material
-
-Step 6: Compile the ``.mo`` file
-----------------------------------
-
-Recall the following:
-
-- |PsychoPy| doesn't read the ``.po`` file (``messages.po``) during operation
-- Rather, it reads the ``.mo`` file (``messages.mo``)
-- But the file, ``messages.mo``, is a binary file that you cannot edit
-- Use *Poedit* to compile the ``.mo`` file
-  
-  - ``File`` > ``Compile to MO..``
-
-    - It's that simple
-
-**WARNING**: *Poedit* uses the ``.po`` file to compile the ``.mo`` file, so remember to finish with your translations in the ``.po`` file "for the day" before you compile the ``.mo`` file
 
 Done with translating
 ------------------------

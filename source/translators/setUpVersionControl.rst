@@ -32,8 +32,8 @@ What is *Git*?
     - folder and all its subfolders = *repository* 
   - runs on your computer (not online)
 
-.. note::
-   *Git* is designed to track plain-text documents, not binary files (e.g., *Microsoft Word* documents). Fortunately, translations are text, except for the ``.mo`` file (more on that later)
+
+**NOTE**: *Git* is designed to track plain-text documents, not binary files (e.g., *Microsoft Word* documents). Fortunately, translations are text, except for the ``.mo`` file (more on that later)
 
 What is *GitHub*?
 ------------------
@@ -43,6 +43,7 @@ What is *GitHub*?
   
   - (literally an online *hub* for *Git* repositories) 
 - much more convenient for collaboration on complex projects
+- kind of like *Dropbox* for *Git*
 
 Tools to interface with *Git* and *GitHub*
 ---------------------------------------------
@@ -54,6 +55,7 @@ Tools to interface with *Git* and *GitHub*
 - ideal starter option for translators: 
 
   - *GitHub Desktop*
+  - Why?
 
     - free
     - retains the native terminology of *Git*
@@ -73,12 +75,16 @@ One disadvantages of *GitHub Desktop*
       
         - *GitFiend* seems to be just as easy to use as *GitHub Desktop*, perhaps easier
 
-Important note on *Git* interfaces
--------------------------------------
+Important note on *Git*-interface tools
+-----------------------------------------
 
-- They are all windows into *Git*
+- *Git* is almost entirely run from two hidden files in the most superordinate directory of any project:
+
+  - ``.git``
+  - ``.gitignore``
+- The software tools are simply windows into those two files
 - Therefore, you can switch between them seamlessly
-- One will pick up where the other has left off
+- One will pick up where the other has left off because they're only implementing and tracking changes to the ``.git`` and ``.gitignore`` files
 - This will make more sense later
 
 Basic *Git* concepts/terms
@@ -103,7 +109,7 @@ Now we'll go through setting up the *Git* workflow for |PsychoPy|
 Step 1: Get *Git* and *GitHub* working
 ----------------------------------------
 
-* *Git* is software for your computer
+* *Git* is free software for your computer
 * *GitHub* is an free online system, for which you need to sign up
 
 Step 1a: Install *Git*
@@ -137,7 +143,7 @@ Step 1b: Sign up for *GitHub*
 Step 2: *Fork* the *psychopy* repository
 ------------------------------------------
 
-- *Forking* on *GitHub*
+- What is *forking* on *GitHub*?
 
   - for most users
 
@@ -161,7 +167,7 @@ Step 2a: Find the *psychopy* repository
 Step 2b: Ensure you are on the *release* branch
 ------------------------------------------------
 
-**NOTE**: *Branches* are copies of a repository that can develop independently of each other, usually to be merged back together again later. More on this later.
+**NOTE**: *Branches* are copies of a repository that can develop independently of each other, usually only to be merged back together again later. More on this later.
 
 - |PsychoPy| has two branches: *dev* and *release*
 - How to check you are on the *release* branch: 
@@ -252,12 +258,12 @@ Note for users with *Apple silicon* chips (*M1*, *M2*)
 - Ultimately, the download should have an ``..arm-64`` extension instead of ``..x-64``
 - But the *Intel* version will actually work
 
-  - just a little bit slower as it has to go through *Rosetta 2*
+  - just a little bit slower as it has to go through *Rosetta 2*, *Apple*'s way of translating chip instructions from *Intel* to *Apple Silicon*
 
 Step 4: Cloning
 -----------------------------------------
 
-- *Cloning* involves downloading files to your computer
+- *Cloning* involves downloading files from an online *Git* repository to your computer
   
   - Unlike *forking* it doesn't disassociate anyone
   - So if you clone your online fork (which is just you),
@@ -269,10 +275,10 @@ Step 4a: How to start cloning from *GitHub Desktop*
 
 - in *GitHub Desktop*
 
-  - ``GitHub Desktop`` > ``Settings`` > ``Accounts``
+  - ``GitHub Desktop > Settings > Accounts``
 
     - Sign in using your credentials to *GitHub.com* (not *GitHub Enterprise*)
-  - ``File`` > ``Clone repository``
+  - ``File > Clone repository``
     
     - choose *psychopy* 
 
@@ -317,12 +323,12 @@ Nomenclature after forking and cloning
 What does all this mean?
 ----------------------------
 
-- You have establish a back-and-forth between you and your online fork on *GitHub* 
+- You have establish a direct back-and-forth between you and your online fork on *GitHub* 
   
   - You can manipulate files without interfering with anyone else
 - But now, you can contribute your changes to the original repository from via *pull requests* online
   
-  - In GitHub jargon, you would make a *pull request* from *origin* to *upstream*
+  - In GitHub jargon, you would make a *pull request* from *origin* (your online, forked repository) to *upstream* (the main *psychopy* repository)
 
 - The importance of this will become clear later 
 
@@ -332,10 +338,10 @@ What about the name for the repository on my own computer?
 - no special name for the repository on your local computer
 
   - most people say "my local copy"?
-- how about *clone*?
+- why not *clone*?
 
   - would be a good name
-  - but no one seems to use it
+  - but few seem to use it
   
     - maybe because it's awkward to say, "I'm working on my clone" 
   - Fortunately, it's not important either
@@ -353,16 +359,12 @@ Step 5: Continual *Git* workflow
   - any time you begin working "for the day" 
   - helps you avoid *merge conflicts*
   
-    - a particular danger for translators in teams since they'll be working on the same files 
-- the most likely candidate for a merge conflict:
+    - might happen if two translators translate the same string 
   
-  - compiled, binary ``.mo`` file
 - merge conflicts = minor headaches to fix
-- better to avoid them altogether
+- but better to avoid them altogether
 
 **IMPORTANT NOTE** At the "end of the day," you follow this with a *commit*, a *push* and a *pull request*. We cover this later. 
-
-.. Perhaps delete bits about .mo files if they're going to be compiled automatically
 
 5a: *Sync* to *origin*
 -----------------------
@@ -391,7 +393,7 @@ Step 5: Continual *Git* workflow
   - The reason is that other translators on your team may have changed things since you last did 
 
 Alternative: *pull* then *push*
------------------------------------
+---------------------------------
 
 There is an alternative to the *sync-pull* approach
 
