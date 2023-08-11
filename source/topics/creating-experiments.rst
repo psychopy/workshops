@@ -22,7 +22,7 @@ Creating Experiments in PsychoPy
      }
      </style>
 
-  **When?** August 7th, 15:30 - 17:00 (UK time)
+  **When?** Next session to be confirmed
 
   **Where?** Virtual (Zoom)
 
@@ -38,11 +38,7 @@ Creating Experiments in PsychoPy
 
   .. raw:: html
 
-   <span style="color: green;">Spaces limited to 20 per session. </span>
-
-  `Book (£20) <https://pavlovia.org/store/workshops/2023-8-7-psychopy-creating-experiments-topiconly>`_
-
-  `Apply for waiver <https://forms.clickup.com/4570406/f/4bf96-7128/38SE053NS2O5A8Z6SR>`_
+   <span style="color: green;">Links will appear when dates available</span>
 
   .. figure:: /_images/Topics1.png
    :align: center

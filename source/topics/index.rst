@@ -7,7 +7,7 @@ Topic workshops
   
   About 
   ---------
-  Fancy attending our 3 day workshop but only want to learn a specific topic? The goal of topic focused workshops is to provide you with "hands on" training focused on a specific topics taken from our 3 day workshops. Group sizes will be small enough to ask questions with the team (less than 20 people). You can register for topic workshops using the links below. :ref:`topicsCreatingExps` 
+  Fancy attending our 3 day workshop but only want to learn a specific topic? The goal of topic focused workshops is to provide you with "hands on" training focused on a specific topics taken from our 3 day workshops. Group sizes will be small enough to ask questions with the team (less than 20 people). You can register for topic workshops using the links below.  
 
 
   Upcoming Events
