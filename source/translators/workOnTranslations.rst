@@ -18,6 +18,7 @@ Overview
 - Step 4: Translating "Start-up tips" in |PsychoPy| with a text editor
   
 **NOTE**: Steps 3 and 4 don't have to be sequential; they're just different translation processes
+**NOTE**: Steps 3 and 4 don't have to be sequential; they're just different translation processes
 
 Step 1: What is the ``[ll_CC]`` locale name for my language?
 --------------------------------------------------------------
@@ -73,6 +74,7 @@ First, we need to discuss how locale names work
 ..
 
 **NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, And (for now) ignore the ``messages.mo`` located in the same folder as the ``messages.po`` file
+**NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, And (for now) ignore the ``messages.mo`` located in the same folder as the ``messages.po`` file
 
 
 1d: Is your locale listed?
@@ -119,6 +121,7 @@ Step 2a: Open a text editor
 - Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*)
 
 **NOTE**: Just be careful with older versions of *Notepad* in Windows. Traditionally, it was incompatible with Unix style line endings. But as of Windows 10, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
+**NOTE**: Just be careful with older versions of *Notepad* in Windows. Traditionally, it was incompatible with Unix style line endings. But as of Windows 10, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
 
 2b: add the ``[ll_CC]`` code
 ----------------------------------
@@ -138,6 +141,7 @@ Step 2a: Open a text editor
   
   - These can be found in the rightmost column (``Language code``) on Microsoft's list of *Language Identifiers and and Locales* at `https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10) <https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10)>`_.
   
+**NOTE**: If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
 **NOTE**: If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
 
 2d: language label
@@ -264,6 +268,7 @@ Poedit download page:
 ``..THE/PATH/ON/YOUR/COMPUTER/TO/psychopy/psychopy``
 
 **NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
+**NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
 
 4c5: Paths (2)
 -----------------
@@ -318,6 +323,7 @@ This is the setting that will change over time, as |PsychoPy| comes out with new
     - i.e., ``Translation > Properties > Sources Keywords > Additional keywords``
 
 **NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
+**NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
 
 4f: Translate the strings
 ----------------------------
@@ -341,7 +347,10 @@ Translation note 1a: Leave certain technical terms alone
   - ``Routine``, and so on
 - These are usually indicated with an uppercase first letter
 - The next slide covers cases of uncertainty
+- The next slide covers cases of uncertainty
 
+Translation note 1b: What if I'm not sure whether I should translate or not?
+-----------------------------------------------------------------------------
 Translation note 1b: What if I'm not sure whether I should translate or not?
 -----------------------------------------------------------------------------
 
@@ -367,6 +376,7 @@ If there are formatting arguments in the original string (``%s``, ``%(first)i``)
   - here, ``first`` is a python name
   - that part should not be translated
 
+.. PB - I really just copied this from the original explanation by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
 .. PB - I really just copied this from the original explanation by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
 
 Translation note 3: When you are unsure

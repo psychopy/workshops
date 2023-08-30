@@ -3,7 +3,7 @@
 Committing and making a pull request
 ==========================================
 
-- time to get your translations into |PsychoPy|
+- time to get your translations into the upcoming |PsychoPy| release
 - time to work towards a *pull request*
 
 Steps on the way to a pull request
@@ -18,11 +18,11 @@ Steps on the way to a pull request
 What does *Git* track?
 ------------------------
 
-- answer
+- answer:
 
-  - **ALL** changes in a directory (where the hidden ``.git`` file reside) and its subdirectories
+  - **ALL** changes in a directory (where the hidden ``.git`` folder resides) and its subdirectories
   
-    - unless you list that file or file type in the hidden ``.gitignore`` file
+    - unless you list that file or file type in the ``.gitignore`` file
 - what should you put into a single *commit*?
   
   - just related changes
@@ -30,31 +30,26 @@ What does *Git* track?
     - *unrelated* changes in a single *commit* can lead to a confusing version history
 - this is the purpose of *staging*
 
-*Stage* related changes
--------------------------
+*Stage* related changes before committing them
+--------------------------------------------------
 
 - *Staging*
 
   - *Stage* files to tell *Git* you want them in a single commit
   
     - typically, files that are related to each other
-    - critically, often a **subset** of all the files you've recently worked on in the project
+    - often just a **subset** of all the files you've recently worked on in the project
 
 Step 1: *Stage* your changes
 -----------------------------
 
-- *GitHub Desktop* stages changed files by default
-
-  - Look at the far left under the tab labeled as follows: ``Changes``
-  - If a file is staged, it has a checkmark next to it
+- Look at the far left under the tab labeled as follows: ``Changes``
+- If a file is staged, it has a checkmark next to it
 - If you **don't** want that file to go into your next commit, you'll need to un-check it
 
-  - To un-check the boxes
-  
-    - First un-check the top box
-    
-      - This will un-stage everything
-    - Second, check the boxes you want to stage for your next commit
+  - To un-check the boxes, un-check the top box
+  - This will un-stage everything
+- Next, check the boxes you want to stage for your next commit
 
 All that said...
 --------------------
@@ -69,17 +64,23 @@ All that said...
 Step 2: The commit
 ---------------------
 
-At the bottom of the same tab, ``Changes``, you'll see two boxes
+- At the bottom of the same tab, ``Changes``, you'll see two boxes
 
-- The one on top says: ``Summary (required)``
-- The one below that says: ``Description``
+  - The one on top says: ``Summary (required)``
+  - The one below that says: ``Description``
 
-- The top one is a commit message and it's required for every commit in *Git*
+- The top one is a commit message
+
+  - required by *Git* for every commit
+
+    - (there is no way around this)
 
 2a: The commit message prefix
 -----------------------------------
 
-- The convention in |PsychoPy| is to append an UPPERCASE prefix to every commit message
+- convention established by the maintainers at |PsychoPy|
+
+  - append an UPPERCASE prefix to every commit message
 - Examples:
 
   - *BF:* 
@@ -92,46 +93,42 @@ At the bottom of the same tab, ``Changes``, you'll see two boxes
 Why the prefix?
 ----------------------
 
-- The prefixes help administrators search for key changes to the project
-- Without them, they'd have to sift through all changes to a project when, say, they knew they only wanted to search through bug fixes (BFs)
-
+- help maintainers search for key changes to the project
+- Otherwise, they'd have to sift through all changes to a project when, say, they knew they only wanted to search through bug fixes (BFs)
+  
 2b: The prefix for translations
 --------------------------------
-- The one for all translations should be as follows:
+- for all translations:
 
   - *DOCS:*
 - usually for documentation
-- but also for changes that cannot "break" |PsychoPy|
+- but also for changes that cannot "break" the software
 
 2c: The commit message itself
 ------------------------------------
 
-- The commit message should summarize what all the changes in the commit do as a single unit
+- summary of what all the changes in the commit do as a single unit
+- The standard convention
 
-  - If you're having difficulty with this, consider splitting your commit into two or more 
-- The usual convention is to start with a verb in the imperative mood (i.e., a command)
+  - start with a verb in the imperative mood (i.e., a command)
 
-2d: The commit message for translations
------------------------------------------
-
-- For translations, this should be fairly easy most of the time
 - For example:
 
-  - ``DOCS: Add Spanish translations a-c``
+  - ``DOCS: Add Spanish translations 1-50``
 
-  - ``DOCS: Add Spanish translations d-g``
+  - ``DOCS: Add Spanish translations 62-85``
 
   - ``DOCS: Add start-up tips in Hebrew`` 
-- Just use English as the maintainers at |PsychoPy| probably don't speak your language 
+- Use English, naturally, as the maintainers at |PsychoPy| probably don't speak your language 
 
-2e: a description (optional)
+2d: a description (optional)
 ------------------------------------
 
-- Sometimes it's very clear what a particular commit is going to do from the commit message alone, for example:
+- Sometimes commit messsage is clear
   
   - ``DOCS: add start-up tips in Yoruba``
 
-- But sometimes you feel that the commit message is just not enough
+- Sometimes not possible
 
   - This is when you use a description
   - No character limit
@@ -143,117 +140,120 @@ Why the prefix?
 
 **NOTE**: All that said, messages alone should suffice in almost all translation cases
 
-2f: Commit
+2e: Commit
 ------------
 
-- When you are ready to commit
+- When your changes are ready and staged, and you have a commit message
 
   - Click the button at the bottom of the same tab:
 
-    - ``Commit to [the name of your current branch]``
-
-- for example: ``Commit to Korean-translations`` 
+    - ``Commit to release``
+  
+  **NOTE**: If you're contributing to |PsychoPy| in other ways, you probably want to make sure you add a new branch for translations.
 
 Step 3: *Push* to *origin*
 ----------------------------
 
-- The commit is like sealing an envelope you want to send
+- The commit is like sealing an envelope you want to send in the mail
 
   - It's still just on your computer
   - You still need to "mail it in" to your online repository
   - This is done through a *push*
 
-Where you can and cannot push directly to
---------------------------------------------
+Why two steps? A *push* then a *pull request*?
+-----------------------------------------------
 
-- You **can** push directly to your own fork on GitHub
-- But you **cannot** *push* directly to the main, *upstream*, repository at ``https://github.com/psychopy/psychopy``
+- **can** push directly to your own fork on GitHub
+- **cannot** *push* directly to the main, *upstream*, repository at ``https://github.com/psychopy/psychopy``
   
   - If just anyone could do that, the whole open-source world would probably collapse
 - Instead
 
-  1. You first *push* to *origin*
-  2. Then you make a *pull request* on *GitHub* to *upstream*
+  1. first *push* to your fork at *origin*
+  2. Then go to your fork on *GitHub* and make a *pull request* from there to *upstream*
 
-3a: how to push in *GitHub Desktop*
+**NOTE**: You *can* make a *pull request* directly from *GitHub Desktop*, but I'm not completely sure what the implications of that are.
+
+3a: how to push to *origin* in *GitHub Desktop*
 --------------------------------------
 
 - Select the following:
 
   - ``Repository > Push``
-  - Or click the ``Push origin`` tab (which should have replaced the ``Fetch origin`` tab)
+  - Or click the ``Push origin`` tab
+  
+    - (this should have replaced the ``Fetch origin`` tab at the upper-right)
 
 Step 4: The pull request
 --------------------------
 
-- Now your changes should be on *origin*
-- But you'll see a note probably saying that you're one commit ahead of *upstream* 
-- To initiate the process of making them identical, you need to perform a *pull request*
+- changes should be on *origin* (online)
+- should see a note saying that you're one commit ahead of *upstream* 
+
+  - This is good
   
-  - (you're "requesting" that the maintainers of *upstream* "pull" your changes in, like "Pull me in, please.")  
-- This *can* be done directly from *GitHub Desktop*, but it's not completely clear what that's doing
+    - your translations are new, and need to be incorporated into the main project 
+- To initiate the process of making them identical, you need to make a *pull request*
 
-  - So I tend to go to *GitHub* and make the pull request from there 
+4a: "Pull request"???
+------------------------
 
-4a: Selecting the right branch
---------------------------------
+- terminology a little counter-intuitive
+  
+  - You're not asking permission to pull changes yourself
+  - Rather, you're "requesting" that the maintainers of *upstream* "pull" your changes in
+
+  - like "Pull me in, please."
+- (if that helps) 
+ 
+4b: Go to the right branch on *GitHub*
+----------------------------------------
 
 - Go to your fork of the repository on *GitHub* (i.e., *origin*)
 - Select the branch that you just made the commit to
 
-  - e.g., ``portuguese-translation``
-  - Branches are located in a little pull-down menu at the upper left
+  - probably ``release``, but possibly something like ``portuguese-translations`` if you have other projects (e.g., bug fixes)
+- Branches are located in a little pull-down menu at the upper left
+- Once there, *GitHub* should indicate that your latest commit is probably awaiting a *pull request* to *upstream*
 
-- *GitHub* should detect that your latest commit is probably awaiting a *pull request* to *upstream*
-
-4b: Make the pull request
+4c: Make the pull request
 ----------------------------
 
-- Look for a yellow banner at the top with a note about the recent commit, and a green button with the following message:
-
-``Compare and pull request``
-
+- Look for a banner at the top with a note about the recent commit, and a green button with the following message: ``Compare and pull request``
 - Click that button
-- If it's not there
+- But if it's not there
 
   - you can start a pull request from either of the following:
   
     - the ``Pull requests`` tab at the top
     - the ``Contribute`` tab next to the ``Sync fork`` tab
 
-4c: Double-checking source and destination
+4c1: Double-checking source and destination
 -------------------------------------------
 
 - You should now be switched to the *upstream* repository at ``psychopy/psychopy``
 - And you should see a screen with the following title: ``Comparing changes``
-- There should be four pull-down menus, labeled as follows, from left to right:
+- There should be four pull-down menus, labeled as follows on the next slide, from left to right
 
-  - ``base repository: psychopy/psychopy``
-  
-    - (this refers to the *upstream* **repository**)
-  
-  - ``base: release`` 
-  
-    - (the appropriate **branch** on *upstream* to merge *into*)
-  
-  - :raw-html:`&larr;` (showing you the direction of the pull request) 
+4c2: Source and destination
+------------------------------
 
-  - ``head repository: [your own GitHub account]/psychopy``
+- ``base repository: psychopy/psychopy`` (this refers to the *upstream* **repository**)
   
-    - (this refers to your forked *origin* **repository**)
+- ``base: release`` (the appropriate **branch** on *upstream* to merge *into*)
   
-  - ``compare: [your branch for the translation, e.g., portuguese-translation]``
+- :raw-html:`&larr;` (showing you the direction of the pull request) 
+
+- ``head repository: [your own GitHub account]/psychopy`` (this refers to your forked *origin* **repository**)
   
-    - (the appropriate **branch** on *origin* to merge *from*)
+- ``compare: release`` (the appropriate **branch** on *origin* to merge *from* [unless you created a new branch])
 
 4d: Double-checking changes
 ------------------------------------
 
-**WARNING**: If you see many more file changes than you were expecting, then you might be on the wrong branch(es)
+**WARNING**: If you see many more file changes than you were expecting, then you might be on the wrong branch
 
 **NOTE**: If it says *There isn't anything to compare*, you probably didn't yet push the commit from your local copy to *origin*
-
-.. PB - test this with real pull request
 
 4e: Will your changes merge?
 ------------------------------
@@ -261,7 +261,13 @@ Step 4: The pull request
 - Hopefully, you see the following directly below the information covered in the last slide
   
   - a green check mark
-  - a message next to it that says *Able to merge. These branches can be automatically merged.*
+  - a message next to it that says the following:
+  
+    -  *Able to merge. These branches can be automatically merged.*
+
+4f: What if they did not?
+----------------------------
+
 - If you do not, then one of the following might have occurred
 
   - You are trying to merge to or from the wrong branch (or both)
@@ -270,10 +276,12 @@ Step 4: The pull request
   - Another translator has worked on the same files on the same translations, and then submitted a pull request before you did
   
     - In this case, you could have a merge conflict
+    - Contact one of the maintainers
+    
+      - They can fix it
+      - It's not a big deal 
 
-.. PB - add a strategy to deal with this
-
-4f1: Adding a description
+4g1: Adding a description
 -------------------------------
 
 - *description* 
@@ -282,26 +290,26 @@ Step 4: The pull request
   - can be useful to administrators if the changes are complex
   - answers the *what*, *why*, *how*, etc. of the *pull request*
 
-4f2: Is a description necessary?
+4g2: Is a description necessary?
 ------------------------------------
 
 - But truth be told, descriptions generally won't be of much use to translators unless you've done something unusual
   
-  - A *pull request* for a translations is only going to involve 2-3 files (though there may be many, many lines changed)
+  - A *pull request* for a translation is only going to involve 1-3 files (though there may be many, many lines changed)
   - But even if there are many lines changed, the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language
 
-4g: Extra responsibility
+4h: Extra responsibility
 ---------------------------
 
 - From the last slide
 
-  - *the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language*
+  - *the administrators at PsychoPy will probably not be able to review translations in much detail since they probably won't speak the language*
 
 - In this sense, translators carry more responsibility than even someone adding new features to |PsychoPy|
 - This is because administrators will probably be forced to "rubber stamp" your proposed changes 
-- Translate responsibly ;)
+- Translate responsibly
 
-4h: Subsequent commits
+4i: Subsequent commits
 ------------------------
 
 - If you make further *commits* before the *pull request* is merged in by the administrators
@@ -309,52 +317,7 @@ Step 4: The pull request
   - don't worry
   - your commits will automatically be incorporated into the previous *pull request* 
 
-.. PB - I need to work on this. I don't quite understand it yet.
-
-Step 5: Clean-up
---------------------
-
-- There's a process to clean everything up
-- Otherwise, things can eventually get confusing
-
-5a: Check to see if your *pull request* was merged in
--------------------------------------------------------------
-
-- Wait for your *pull request* to be approved
-- If you don't get an email, you can check the *upstream* repository
-  
-  - Go to ``psychopy/psychopy``
-  - Click ``Pull requests``
-  - Find the pull-down menu for ``Author`` and choose your name
-  - Check to see if your particular commit is ``Open`` or ``Closed``
-    
-    - ``Open`` means it has **not** yet been merged in
-    - ``Closed`` means that it **has** been merged in 
-
-5b: switch branches on *origin*, sync, and delete
----------------------------------------------------------
-
-- Switch to the *release* branch on your own *GitHub* account
-- Synchronize it with *upstream* (*release* with *release*)
-  
-  - Click: ``Sync fork``
-
-- Delete the branch you created to work on the translation (e.g., ``hindi-translation``)
-    
-  - Click: ``# branches``
-    
-    - (where ``#`` will be replaced by the number of branches in your repository) 
-  - Find the working branch under ``Your branches`` (e.g., ``hindi-translation``)
-  - Click the trash-can icon to the right of it
-
-5c: delete the local branch
-----------------------------------
-
-- In *GitHub* desktop
-
-  - Go to ``Branch > Delete``
-
-5d: Continual *Git* workflow
+5: Continual *Git* workflow
 -----------------------------------
 
 **Again!!??**
@@ -369,6 +332,7 @@ Yes
 - From *GitHub Desktop*
   
   - ``Repository > Pull``
+
+FINISHED!!
  
-FINISHED!! 
--------------
+On to :ref:`other things to consider`

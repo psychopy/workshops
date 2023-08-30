@@ -3,24 +3,24 @@
 Setting up version control
 ===============================
 
-- Many tutorials on the web for this
-- We'll just go through the basics
+- many tutorials on the web for this
+- just the basics here
 
-But first of all, what is version control?
------------------------------------------------
+What is *version control*?
+------------------------------
 
 - Similar to *Google Drive* and *MS 365*
     
-  - each tool (e.g., *Google Docs*) contains a *version history* 
+  - each such document (e.g., a *Google Doc*) contains a *version history* 
     
     - go back and forth "in time" to look at (and even revert to) older versions of the document
 
-- But what about mulitiple files and folders?
+- What about mulitiple files and folders?
   
   - *Git* and *GitHub*
-  - You can also go back and forth "in time"
+  - You can also go "back and forth in time"
     
-    - More complex as they have to account for multiple documents
+    - More complex as they account for multiple documents
     
 What is *Git*?
 ----------------
@@ -29,11 +29,13 @@ What is *Git*?
 
   - tracks an entire folder (not just a single file)
   
-    - folder and all its subfolders = *repository* 
-  - runs on your computer (not online)
+    - *repository* 
+    
+      - the folder (and all its subfolders) that you're tracking 
+- runs on your computer (not online)
 
 
-**NOTE**: *Git* is designed to track plain-text documents, not binary files (e.g., *Microsoft Word* documents). Fortunately, translations are text, except for the ``.mo`` file (more on that later)
+**NOTE**: *Git* works best with plain-text documents (UTF-8 encoding included), but not binary files like *Microsoft Word* or *Excel* documents
 
 What is *GitHub*?
 ------------------
@@ -42,59 +44,14 @@ What is *GitHub*?
 - centralizes *Git* repositories in the cloud
   
   - (literally an online *hub* for *Git* repositories) 
-- much more convenient for collaboration on complex projects
-- kind of like *Dropbox* for *Git*
+- simplifies collaboration
 
-Tools to interface with *Git* and *GitHub*
----------------------------------------------
-
-- popular, but relatively sophisticated GUI tools for working with *Git*
-
-  - *GitKraken*, *PyCharm*, *Visual Studio Code*, etc.
-  
-- ideal starter option for translators: 
-
-  - *GitHub Desktop*
-  - Why?
-
-    - free
-    - retains the native terminology of *Git*
-    - less confusing in the end
-- We will download and install *GitHub Desktop* in a bit
-
-
-One disadvantages of *GitHub Desktop*
----------------------------------------
-
-- Not designed for *Linux* 
-  
-    - If you're using *Linux*, try one of the following:
-    
-      - install the *GitHub Desktop* fork for Linux (`https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc <https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc>`_)
-      - install *GitFiend* (`https://gitfiend.com/ <https://gitfiend.com/>`_), which is cross-platform, but originally designed for *Linux*
-      
-        - *GitFiend* seems to be just as easy to use as *GitHub Desktop*, perhaps easier
-
-Important note on *Git*-interface tools
------------------------------------------
-
-- *Git* is almost entirely run from two hidden files in the most superordinate directory of any project:
-
-  - ``.git``
-  - ``.gitignore``
-- The software tools are simply windows into those two files
-- Therefore, you can switch between them seamlessly
-- One will pick up where the other has left off because they're only implementing and tracking changes to the ``.git`` and ``.gitignore`` files
-- This will make more sense later
-
-Basic *Git* concepts/terms
-----------------------------
-
-From setup to workflow on GitHub
+Basic *Git* workflow and terminology
+--------------------------------------
 
 .. image:: ../_images/openSourceGitFlow.png
   :align: center
-  :width: 550
+  :width: 500
   :alt: Image of a typical, seven-step workflow for open-source software projects, from initial setup to pull requests (Creative Commons license, courtesy of openclipart.org, image `278845`, git-opensource-workflow, by developingo)
 
 ..
@@ -118,23 +75,25 @@ Step 1a: Install *Git*
 - download *Git* here: 
 
   - `https://git-scm.com/downloads <https://git-scm.com/downloads>`_
-  - (the binary installer is easiest)
-- The following *YouTube* video quickly shows you how to do this on both Mac and Windows
+
+    - (the binary installer is easiest)
+    - You can just choose the defaults 
+
+- If you need it, the following *YouTube* video quickly shows you how to do this on both Mac and Windows
 
   - `https://youtu.be/F02LEVYEmQw <https://youtu.be/F02LEVYEmQw>`_ 
-- The Windows installation process involves clicking through more screens
-
-  - But you can just choose the defaults 
+  
+    - The Windows installation process involves clicking through more screens
 
 Step 1b: Sign up for *GitHub*
 ------------------------------
 
 - Go to `https://github.com/ <https://github.com/>`_
-- Click the button: ``Sign up for GitHub``
+- Click the following button: ``Sign up for GitHub``
 - Provide your email, then create a password and username
 - Verify that you're a human
 - Enter the launchcode that was sent to your email
-- You can glide through the rest of the options
+- You can accept the defaults through the rest of the options
   
   - If asked *How many team members will be working with you*
   
@@ -150,7 +109,7 @@ Step 2: *Fork* the *psychopy* repository
     - just copying an existing repository already on *GitHub* somewhere
     - and making it your own, on your own, online *GitHub* account
 
-**NOTE**: Technically and more generally, it's copying a repository, and disconnecting it from previous committers
+**NOTE**: Technically and more generally, it's copying a repository, while also disconnecting it from previous committers
 
 Step 2a: Find the *psychopy* repository
 -----------------------------------------
@@ -166,8 +125,7 @@ Step 2a: Find the *psychopy* repository
 
 Step 2b: Ensure you are on the *release* branch
 ------------------------------------------------
-
-**NOTE**: *Branches* are copies of a repository that can develop independently of each other, usually only to be merged back together again later. More on this later.
+**NOTE**: more on *branches* later
 
 - |PsychoPy| has two branches: *dev* and *release*
 - How to check you are on the *release* branch: 
@@ -196,62 +154,120 @@ Step 2c: *Fork* the *release* branch
 - Choose the following: ``+ Create a new fork``
 - Check the box labeled as follows: ``Copy the release branch only``
 
-**NOTE**: There's no need to fork the *dev* branch -- you *could*, but only if you wanted your translations to initially come out with the next **major** release for some reason
-
 What is a *fork*?
 ------------------
 
 - a *fork* is your own (online) copy (on *GitHub*) of the all the code required to build the current (in this case, *release*) version of |PsychoPy|
-- it is "yours" in the sense that....
+- it is "yours" in the sense that...
   
-  - it is now disconnected from all other users (unless you add them)
-  - you are free to modify it for your own purposes (unusual)
-  - or modify it in order to contribute back to the project (common) 
+  - it is now disconnected from all other users
+  - you are free to modify it 
+  
+    - for your own purposes (it's open source, after all); or
+    - in order to contribute back to the project (more common)
+  
+    - The latter is what you'll be doing as translators
 
 Caveat: How it's *not* yours
 ---------------------------------
 
 - Keep in mind that |PsychoPy| is **not** yours in the sense that...
-  
-  - you still need to abide by the the particular license that |PsychoPy| uses: 
+
+  - you still need to abide by the the particular license that applies to |PsychoPy|: 
     
     - `https://github.com/psychopy/psychopy/blob/dev/LICENSE <https://github.com/psychopy/psychopy/blob/dev/LICENSE>`_
     - `https://psychopy.org/about/index.html#license-for-use <https://psychopy.org/about/index.html#license-for-use>`_
 
-Why just the *release* branch?
+Why the *release* branch?
 --------------------------------
 
 - the *dev* branch
 
-  - for *major* changes to |PsychoPy| that need to be tested extensively so that they don't "break" the software
-  
-    - new features
-    - deprecation, etc.
+  - for *major* changes to |PsychoPy| that need to be tested extensively so that they don't "break" the software (e.g., new features, deprecation, etc.)
   - Changes to the *dev* branch are released about twice a year only 
+    
+**NOTE 1**: At the end of this workshop, I will cover a situation when you might want to move your focus over to the *dev* branch 
+
+**NOTE 2**: You yourself can create branches as well. Normally, you would do this only when you are working on very different aspects of a project (e.g., both translations and bug fixes)
 
 What is the *release* branch then?
 ------------------------------------
 
 - The *release* branch 
 
-  - for **minor** releases of |PsychoPy|, where changes can't really "break" anything
+  - for **minor** (aka "bug fix") releases of |PsychoPy|, where changes can't really "break" anything
   
     - bug fixes, documentation typos, etc.
     - and critically, **translations**
   - Changes to the *release* branch are made public much more often
 
-Step 3: Download and install *GitHub Desktop*
+- Therefore
+
+  - since translations can't break code, they normally go under the *release* branch 
+
+Step 3: download a tool to avoid using the command line
+-------------------------------------------------------------
+
+- Command-line *Git* actually turns out to be very useful
+- But it might be intimidating at first
+- So there are many GUIs to make *Git* easier to use
+
+Popular tools
+---------------
+
+- popular, but relatively complex GUI tools for working with *Git*
+
+  - *GitKraken*, *PyCharm*, *Visual Studio Code*, etc.
+  
+- ideal starter option for translators: 
+
+  - `GitHub Desktop <https://desktop.github.com/>`_
+  - Why?
+
+    1. free
+    2. retains the native terminology of *Git*
+    3. simpler, and therefore, less confusing
+
+Disadvantage of *GitHub Desktop*
+---------------------------------------
+
+- Not designed for *Linux* 
+  
+- If you're using *Linux*, try one of the following:
+    
+  - install the *GitHub Desktop* fork for Linux (`https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc <https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc>`_)
+  - install *GitFiend* (`https://gitfiend.com/ <https://gitfiend.com/>`_), which is cross-platform, but originally designed for *Linux*
+    
+    - just as easy to use as *GitHub Desktop*, perhaps easier
+
+Minor note on *Git*-interface tools
+------------------------------------
+
+- *Git* depends on a hidden folder in the most superordinate directory of any project:
+
+  - ``.git`` (required, the *sine qua non*, actually)
+There is also usually a hidden ``.gitignore`` file there (though it's technically optional)
+
+- Software tools like *GitHub Desktop* and *GitKraken* and even command-line *Git* simply refer to the ``.git`` folder and the ``.gitignore`` file
+- Therefore, you can switch among the various *Git* interfaces seamlessly
+- This will make more sense later, but it's not that important for now
+
+Step 3a: Download and install *GitHub Desktop*
 -----------------------------------------------
 
 - Go to: `https://desktop.github.com/ <https://desktop.github.com/>`_ 
-- Download and install the appropriate version
+
+  - Download and install the appropriate version
+  - If your computer uses an *Apple silicon* chip (*M1*, *M2*), see the next slide
+  
+- Linux users can download *GitFiend*
+  
+  - `https://gitfiend.com/ <https://gitfiend.com/>`_
+- (Note for users of *Apple silicon* chips on next slide) 
 
 Note for users with *Apple silicon* chips (*M1*, *M2*)
 ------------------------------------------------------- 
       
-- The website doesn't automatically detect whether you have such a processor
-      
-  - It seems to assume you have an *Intel* processor 
 - The appropriate download is under the heading at the bottom:
       
   - ``Apple silicon?``
@@ -261,14 +277,14 @@ Note for users with *Apple silicon* chips (*M1*, *M2*)
   - just a little bit slower as it has to go through *Rosetta 2*, *Apple*'s way of translating chip instructions from *Intel* to *Apple Silicon*
 
 Step 4: Cloning
------------------------------------------
+------------------
 
 - *Cloning* involves downloading files from an online *Git* repository to your computer
   
   - Unlike *forking* it doesn't disassociate anyone
-  - So if you clone your online fork (which is just you),
+  - So if you clone your online fork (which is just you)
   
-    - You will remain as the sole committer 
+    - you will remain as the sole committer 
 
 Step 4a: How to start cloning from *GitHub Desktop*
 -----------------------------------------------------
@@ -287,7 +303,7 @@ Step 4b: How to finish cloning
   
 - *psychopy* should be listed because it's already forked in your online account
  
-  - under ``Local Path`` at the bottom, choose a **logical** place on your computer for the repository (e.g., not your desktop)
+  - under ``Local Path`` at the bottom, choose a **logical** place on your computer for the cloned repository (e.g., not your desktop)
   
     - click ``Clone``
     - This might take a minute, depending on your connection speed
@@ -295,16 +311,19 @@ Step 4b: How to finish cloning
 The result of cloning
 -----------------------
 
-- full copy on your local computer of all the files from current release of |PsychoPy|
+- full, updated\* copy on your local computer of all the files from current release of |PsychoPy|
 
   - including all the currently available localization folders
   - though you *may* need to add a new one (more on this soon)
+- Fully connected to your online fork of the repository on *GitHub* 
+
+\* It's updated at the moment you clone it, but as soon as someone else gets their commit(s) pulled in *upstream*, yours will be out of date. But there's a way to deal with this. I will cover this quite soon below.
  
 
 Nomenclature after forking and cloning
 -----------------------------------------
 
-- *Origin*
+- **origin**
 
   - your fork of the original repository on *GitHub*
     
@@ -312,7 +331,7 @@ Nomenclature after forking and cloning
   
       - ``[your-github-account-name]/psychopy`` 
       - e.g., ``johndoe/psychopy``
-- *Upstream*
+- **upstream**
 
   - the original repository on *GitHub*
     
@@ -323,12 +342,13 @@ Nomenclature after forking and cloning
 What does all this mean?
 ----------------------------
 
-- You have establish a direct back-and-forth between you and your online fork on *GitHub* 
+- You have established a direct back-and-forth between you and your online fork on *GitHub* 
   
   - You can manipulate files without interfering with anyone else
-- But now, you can contribute your changes to the original repository from via *pull requests* online
-  
-  - In GitHub jargon, you would make a *pull request* from *origin* (your online, forked repository) to *upstream* (the main *psychopy* repository)
+- But now
+
+  - you can contribute your changes to the original repository from via *pull requests* online
+  - In *GitHub* jargon, you would make a *pull request* from *origin* (your online, forked repository) to *upstream* (the main *psychopy* repository)
 
 - The importance of this will become clear later 
 
@@ -341,44 +361,44 @@ What about the name for the repository on my own computer?
 - why not *clone*?
 
   - would be a good name
-  - but few seem to use it
+  - but few seem to use it (or at least I haven't heard it in my limited experience)
   
-    - maybe because it's awkward to say, "I'm working on my clone" 
+    - maybe because it's awkward or creepy to say, "My clone" 
   - Fortunately, it's not important either
 
 Done setting up *Git* and *GitHub*
 ------------------------------------
 
-... but... what about the *-flow* in *workflow*?
+- ... but... what about the *-flow* in *workflow*?
+- The next section is about keeping your repository up to date
 
 Step 5: Continual *Git* workflow
 ------------------------------------
 
-- **synchronize frequently across all repository instances**
+- **synchronize your repository frequently with the upstream repository**
   
-  - any time you begin working "for the day" 
+  - any time you begin work\*
   - helps you avoid *merge conflicts*
   
-    - might happen if two translators translate the same string 
+    - which might happen if two translators translate the same string 
   
-- merge conflicts = minor headaches to fix
+- merge conflicts = minor headaches to fix by maintainers 
 - but better to avoid them altogether
 
-**IMPORTANT NOTE** At the "end of the day," you follow this with a *commit*, a *push* and a *pull request*. We cover this later. 
+\* And follow up any work fairly soon with a commit, push, and pull request (more on this later)
 
-5a: *Sync* to *origin*
------------------------
+5a: *Sync* (from *upstream*) to *origin*
+-------------------------------------------
 
 - Go to your *fork* online
-  - (your copy of the *psychopy* repository on *GitHub*, aka *origin*)
+ 
+  - (again, this is your copy of the *psychopy* repository on *GitHub*, aka *origin*)
 - Make sure you're on the *release* branch
 
-  - the pull-down menu at the upper-left shouldn't say ``dev``, but rather ``release`` 
-  
-    - (use that same pull-down menu to choose ``release`` if you have to)
-- Click: ``Sync fork`` (located a bit to the right)
+  - (The pull-down menu at the upper-left shouldn't say ``dev``, but rather ``release``. Use that same pull-down menu to choose ``release`` if you have to)
+- Click: ``Sync fork`` (located a bit to the right)\*
  
-  - (this only does anything if there is, indeed, something new to synchronize from *upstream*) 
+\* Note that this can only do something if there is, indeed, something new to synchronize from *upstream* 
 
 5b: *Pull* from *origin*
 --------------------------
@@ -388,9 +408,9 @@ Step 5: Continual *Git* workflow
 
   - This updates your local copy (your clone) with your fork (*origin*), which was just synchronized with the *upstream* repository
   - Now all three should be identical
-- Complete steps 5a and 5b each time before you begin work on a new set of translations 
+- Complete this step after the one before it, each time before you begin work on a new set of translations 
 
-  - The reason is that other translators on your team may have changed things since you last did 
+  - The reason is that other translators on your team may have changed things since you last did, making your copy out of date
 
 Alternative: *pull* then *push*
 ---------------------------------
@@ -404,13 +424,15 @@ There is an alternative to the *sync-pull* approach
   - (It might tell you that it's already up to date) 
 - ``Repository > Push`` (if there were changes from *upstream*)
 
+**NOTE**: This is faster, but I tend to avoid it because my understanding of *Git* is limited, and this allows me to keep things simple.
+
 Step 6: Continual *Git* workflow
 -----------------------------------
 
 - Yes, this slide is repeated
 - Why?
 
-  - to emphasize that keeping your different copies of the repository up to date is a **daily routine**
+  - to emphasize that keeping one's repository up to date is a **common routine**
 
     - not something that you do once and forget about
     - or only do occasionally

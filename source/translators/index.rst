@@ -19,7 +19,8 @@ Need for translations
 -------------------------
 
 - |PsychoPy| now used worldwide
-- so needs to be available in different languages
+
+  - needs to be available in different languages
 - starting with v1.81
 
   - many parts of the |PsychoPy| app 
@@ -32,68 +33,75 @@ Need for translations
 **NOTE**: This is **NOT** what the participant sees. **THAT** is under the control of the experimenter 
 
 
-Overview of how |PsychoPy| works in a language other than US English
------------------------------------------------------------------------
+|PsychoPy| and languages
+---------------------------
 
-- |PsychoPy| uses `gettext` to "look" for a language every time it displays items to the experimenter (e.g., menu items, errors)
+- |PsychoPy| uses `wxPython <https://docs.wxpython.org/wx.Locale.html>`_ and `gettext <https://www.gnu.org/software/gettext>`_ to "look" for a language every time it displays items to the experimenter (e.g., menu items, errors)
 - If found
 
   - consults the ``messages.mo`` file under the directory for that language
 - If **not** found
 
-  - consults the ``messages.mo`` file under the directory (``en_US``) for American English
-  
-    - i.e., ``psychopy/app/locale/en_US/LC_MESSAGE/messages.po`` 
+  - consults the ``messages.mo`` file under the directory (``en_US``) for American English (``psychopy/app/locale/en_US/LC_MESSAGE/messages.mo``)
+
+**IMPORTANT NOTE**: Translators don't work on the ``.mo`` file. Instead, they work on a ``.po`` file.
 
 Visualisation
 ----------------
 
 .. image:: ../_images/trnslWkshp_poMoPsychoPy.png
   :align: center
-  :width: 550
+  :width: 700
   :alt: Image of a how .po and .mo files interact to allow PsychoPy to implement translations into other languages
 
 ..
 
-Further reading
--------------------
-Further, highly optional reading for those who are interested in the programming aspect of this
-   
-- GNU *gettext*
+How experimenters implement this in |PsychoPy|
+------------------------------------------------
 
-  - `https://www.gnu.org/software/gettext <https://www.gnu.org/software/gettext/>`_ 
-- *wxPython* 
+- On a Mac
 
-  - `https://docs.wxpython.org/wx.Locale.html <https://docs.wxpython.org/wx.Locale.html>`_
- 
+  - ``PsychoPy > Preferences > Application > locale``
+  - (choose locale)
 
-Overview of how translators make this happen
------------------------------------------------
+- On Windows
+
+  - (something similar; I forgot to check; I'll fix this later)  
+- Quit and restart |PsychoPy| 
+
+**WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
+
+Rough overview of how translators make this happen
+----------------------------------------------------
 
 Translators...
 
 1. translate "strings" in a ``messages.po`` file
 2. commit and push those changes to *GitHub*
-3. make a *pull request* on *GitHub* to incorporate those changes in the current release of |PsychoPy|
+3. make a *pull request* on *GitHub* to request incorporation of those changes into the current release of |PsychoPy|
 
-**NOTE**: They also translate *Start-up tips*, but this is a slightly different process that involves a simple ``.txt`` file
+**NOTE**: The ``.mo`` file is automatically generated during the next minor (aka "bug-fix") release of |PsychoPy|
 
 Prerequisites to translating
 -------------------------------
 
-a thorough understanding of at least three things, requiring months or years of study:
+thorough proficiency in at least three things, requiring months or years of study:
 
-- |PsychoPy| itself, as an experiment designer
+- |PsychoPy| itself, as a user/experiment designer (not a Python/Javascript programmer)
 - English
 - any language (or dialect) that is not **American** English to translate into (e.g., Korean, Singapore English)
 
 **NOT** prerequisites
 -------------------------------------------
 
-- how to use the free app `Poedit <https://poedit.net/>`_ to do translations
-- how bring those translations into |PsychoPy| project using `Git <https://git-scm.com/>`_, usually via `GitHub <https://github.com/>`_
-- Today's workshop mostly covers the topics on this slide
+(since today's workshop covers these topics)
 
+- how to use the free app `Poedit <https://poedit.net/>`_ to do translations
+- how bring those translations into |PsychoPy| project using the following:
+
+  -  `Git <https://git-scm.com/>`_
+  -  `GitHub <https://github.com/>`_
+  -  `GitHub Desktop <https://desktop.github.com/>`_
 
 Quick overview of steps
 --------------------------------
@@ -102,7 +110,6 @@ Quick overview of steps
 - setting up the *git* / *GitHub* workflow
 - working on translations
 - making a pull request on *GitHub*
-- cleaning up
 
 Today
 -----------------------------------
@@ -111,11 +118,11 @@ We're going to work through these one by one
 
 .. toctree::
     :maxdepth: 1
-
+    
     preliminaries.rst
     setUpGit.rst
     workOnTranslations.rst
     makePullRequest.rst
-
+    otherThingsToConsider.rst
 
 On to :ref:`preliminaries`
