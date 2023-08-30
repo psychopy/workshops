@@ -9,7 +9,7 @@ Working on translations
 Overview
 -------------
 
-- Step 1: Identifying the appropriate 5-6 character ``[ll_CC]`` locale name for your translation
+- Step 1: Identifying the appropriate 5-6 character ``ll_CC`` locale name for your translation
 - Step 2: Configuring the ``mappings.txt`` file with a text editor
 - Step 3: Working on translations with *Poedit*
   
@@ -17,10 +17,9 @@ Overview
   - translate the "strings" in that same file
 - Step 4: Translating "Start-up tips" in |PsychoPy| with a text editor
   
-**NOTE**: Steps 3 and 4 don't have to be sequential; they're just different translation processes
-**NOTE**: Steps 3 and 4 don't have to be sequential; they're just different translation processes
+**NOTE**: Steps 3 and 4 don't have to be sequential; they're different translation processes
 
-Step 1: What is the ``[ll_CC]`` locale name for my language?
+Step 1: What is the ``ll_CC`` locale name for my language?
 --------------------------------------------------------------
 
 First, we need to discuss how locale names work
@@ -28,10 +27,10 @@ First, we need to discuss how locale names work
 1a: What are the parts of a locale name?
 -----------------------------------------
 
-- the ``[ll_]``
+- the ``ll_``
 
   - an `ISO 639 pair <https://www.gnu.org/software/gettext/manual/gettext.html#Language-Codes>`_ of lowercase letters for a language
-- the ``[_CC]``
+- the ``_CC``
 
   - an `ISO 3166 pair <https://www.gnu.org/software/gettext/manual/gettext.html#Country-Codes>`_ of uppercase letters for a country
 
@@ -41,26 +40,31 @@ First, we need to discuss how locale names work
   - ``es_ES`` for Iberian Spanish (*español de ESPAÑA*)
   - ``zh_CN`` for (simplified) Chinese in mainland China
 
-1b: What our team speaks more than one dialect?
--------------------------------------------------
+1b: What if our language needs more than one language variety?
+-----------------------------------------------------------------
 
-- group decision on team strategy
+- Recommendation
+
+  - decide on which variety to start with
+  - finish the translations for that variety of the language
+  - copy, paste, rename, and adjust
   
-  - For example (one possibility):
+1c: Example using Spanish
+----------------------------
 
     - fully translate for Iberian Spanish (``es_ES``)
     - copy the entire ``es_ES`` folder
     - rename it to ``es_CL`` (Spanish in Chile)
-    - make adjustments to the new ``messages.po`` file to account for Chilean variations on the language  
     - add Chilean Spanish to the ``mappings.txt`` file
+    - make adjustments to the new ``messages.po`` file to account for Chilean variations on the language  
 
-1c: ``[ll_CC]`` folder/file structure
+1d: ``ll_CC`` folder/file structure
 -------------------------------------
 
 - The file translators actually work on
 
   - a ``messages.po`` file
-  - located *two* levels under under any particular ``[ll_CC]`` folder for that *locale*
+  - located *two* levels under under any particular ``ll_CC`` folder for that *locale*
   
 - For example for Farsi (Persian) in Iran: 
 
@@ -73,66 +77,65 @@ First, we need to discuss how locale names work
 
 ..
 
-**NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, And (for now) ignore the ``messages.mo`` located in the same folder as the ``messages.po`` file
-**NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, And (for now) ignore the ``messages.mo`` located in the same folder as the ``messages.po`` file
+**NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, as well as the ``messages.mo`` file underneath
 
-
-1d: Is your locale listed?
+1e: Is your locale listed?
 ------------------------------
 
 - Look under ``psychopy/psychopy/app/locale``
 
-  - Is your ``[ll_CC]`` folder there?
+  - Is your ``ll_CC`` folder there?
   
     - may already be there
     - *or not*
-- if not, why not?
+- if not, why isn't it pre-listed?
 
   - unnecessary storage
   
     - pre-listing every language-country pair = storage waste
     - current list = just guesses
 
-- if not listed, just add it 
+- if not pre-listed, just add it 
 
-1e: How to add one
+1f: How to add one
 ---------------------
 
 - the easy way
 
-  - find any ``[ll_CC]`` folder
+  - find any ``ll_CC`` folder
 
     - ideally, look for a small ``.po`` file with no translations yet
   - copy and paste the entire folder 
-  - rename the folder to the ``[ll_CC]`` appropriate for your locale
+  - rename the folder to the ``ll_CC`` appropriate for your locale
     
-  - make adjustments to the ``messages.po`` file inside (covered soon)
-- the hard way (not a reasonable approach; not going there)  
+  - make adjustments to the ``messages.po`` file underneath (covered soon)
+- the hard way
+
+  - not a reasonable approach; not going there  
 
 Step 2: ``mappings.txt``
 -------------------------
 
 - Do this once per translated language, and it's done forever (for that localisation)
-- This file just tells the experimenter which translations are available in |PsychoPy|
+- This file allows the experimenter to choose a localization in |PsychoPy|
 
 Step 2a: Open a text editor
 ------------------------------
 
-- Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*)
+- Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*, *TextEdit* [Mac], *Notepad* [Windows])
 
-**NOTE**: Just be careful with older versions of *Notepad* in Windows. Traditionally, it was incompatible with Unix style line endings. But as of Windows 10, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
-**NOTE**: Just be careful with older versions of *Notepad* in Windows. Traditionally, it was incompatible with Unix style line endings. But as of Windows 10, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
+**NOTE**: Just be careful with older versions of *Notepad* in *Windows*. Traditionally, it was incompatible with *Unix*-style line endings. But as of *Windows 10*, it now `works if it detects unix-style line feeds in the file <https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/>`_. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
 
-2b: add the ``[ll_CC]`` code
+2b: add the ``ll_CC`` code
 ----------------------------------
 
-- Open the following file (there's only one)
+- Open the following file (there's only ever one)
 
 ``/psychopy/psychopy/app/localization/mappings.txt``
 
-- Is the ``[ll_CC]`` code listed?
+- Is the ``ll_CC`` code listed?
 
-  - Make sure the ``[ll_CC]`` code resides at the appropriate line (alphabetically listed)
+  - Make sure the ``ll_CC`` code resides at the appropriate line (alphabetically listed)
 
 2c: Microsoft language code
 ------------------------------
@@ -142,18 +145,19 @@ Step 2a: Open a text editor
   - These can be found in the rightmost column (``Language code``) on Microsoft's list of *Language Identifiers and and Locales* at `https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10) <https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10)>`_.
   
 **NOTE**: If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
-**NOTE**: If you can't find your language, just add a random three-letter sequence that isn't already in use and probably doesn't refer to a language (e.g., ``JJY``).
 
 2d: language label
 ----------------------
 
-- At the far right
+- At the far right,
 
-  - add the label for the language **in that language**
-  - followed by the name of the language in English, but **in parentheses**
+  - type in the language and variety **in that language**
+  
+    - followed (in parentheses) by the the name of the language and variety, in English
+  - do not include the variety (the part after the comma) if there is only one variety that anyone would ever use
   - for example
 
-    - "``español (Spanish)``"
+    - "``español, España (Spanish, Spain)``"
 
       - (not just "``Spanish``")
     - "``עִברִית (Hebrew)``"
@@ -173,7 +177,7 @@ Step 3: Continual *Git* workflow
 
   - Do this **every time** you start work on a translation
   - Another translator may have changed the translation (the ``.po`` file) since the last time you worked on it
-- See end of the last slide deck for instructions
+- Go back to the end of :ref:`setting up version control` for instructions
 
 
 Step 4: Translating in *Poedit*
@@ -212,8 +216,6 @@ Poedit download page:
 - One exception is the version of |PsychoPy| you're using to translate
 
   - This is covered last   
-
-.. PB - These settings and settings on the following slides are largely based on Hiroyuki's settings for Japanese
 
 4c1: ``General`` (Name and email)
 ----------------------------------------
@@ -268,7 +270,6 @@ Poedit download page:
 ``..THE/PATH/ON/YOUR/COMPUTER/TO/psychopy/psychopy``
 
 **NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
-**NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
 
 4c5: Paths (2)
 -----------------
@@ -290,53 +291,60 @@ Poedit download page:
 - If it **isn't**, type it in  
 - Save your work (``File > Save``)
 
-.. PB - Hiroyuki also has _, gettext, and gettext_noop as keywords. Are these necessary or helpful?
-
 4d: The setting that does change
 ---------------------------------
 
-This is the setting that will change over time, as |PsychoPy| comes out with new versions
-
 - go to: ``Translation > Properties``
 
-  - then: ``Translation properties`` 
+  - then to the tab: ``Translation Properties``
 
     - then: ``Project name and version``
-  - Type in *PsychoPy* followed by the |PsychoPy| version you are working on
-  - For example:
-  
-    - ``PsychoPy 2023.1.0``
-      
-      - usually the most recently released version of |PsychoPy|
-  - This will tell subsequent translators whether they need to update the strings (i.e., if their version of |PsychoPy| is more recent)
+  - Type in *PsychoPy* followed by the |PsychoPy| version you are working on if it is not already up to date (e.g., ``PsychoPy 2023.1.0``, or the version of |PsychoPy| you are working on, hopefully the latest release)
+  - This will tell subsequent translators whether they need to update the *strings* (i.e., if their version of |PsychoPy| is more recent)
+  - We discuss *strings* next
 
 4e: Generate current list of translatable strings
---------------------------------------------------------
+----------------------------------------------------
+
+The elements you can translate are called *strings*
 
 - Select the following
  
   - ``Translation`` > ``Update from Source Code``
 - You should subsequently see a list of strings in English that need translating into your language
   
-  - If you don't, the keyword ``_translate`` may not have been added to the keywords
+  - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
+
+**NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
+
+4f: Sort and show string ID 
+-----------------------------
+
+- This is for collaboration in a team
+
+  - Choose: ``View > Show String ID``
+  - Choose: ``View > Sort by File Order``
+- If you do both of those, then the strings will be listed in order by index
+
+  - The index ``ID`` can be seen in the column at the far right
+  - Teams can divide up the work by ``ID`` ranges, for example
   
-    - i.e., ``Translation > Properties > Sources Keywords > Additional keywords``
+    - Translator A: IDs 1-250
+    - Translator B: IDs 251-500
+    - etc.
 
-**NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
-**NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
-
-4f: Translate the strings
+4g: Translate the strings
 ----------------------------
 
-- Look at the list under the heading: ``Source Text - English``
+- Look at the list under the heading: ``Source Text - English`` at the upper left
 - Select a string that you want to translate
-- Once selected, you should see it appear as English in the following box below the longer list: ``Source text``
+- Once selected, you should see it appear as English in the following box below the longer list: ``Source text`` (at the lower left)
 - Below that, there is a box labeled as follows: ``Translation``
 - Type your translation into that box
 - Save your work as you go
 
-Translation note 1a: Leave certain technical terms alone
-----------------------------------------------------------
+Note 1: Leave certain technical terms alone
+----------------------------------------------
 
 - Technical terms should not be translated:
   
@@ -344,26 +352,12 @@ Translation note 1a: Leave certain technical terms alone
   - ``Coder``
   - ``PsychoPy``
   - ``Flow``
-  - ``Routine``, and so on
+  - ``Routine``
+  - and so on
 - These are usually indicated with an uppercase first letter
-- The next slide covers cases of uncertainty
-- The next slide covers cases of uncertainty
+- Check the Japanese localization (``ja_JP/LC_MESSAGES/messages.po``) if in doubt
 
-Translation note 1b: What if I'm not sure whether I should translate or not?
------------------------------------------------------------------------------
-Translation note 1b: What if I'm not sure whether I should translate or not?
------------------------------------------------------------------------------
-
-- The Japanese translation is nearly completely
-- You have it since you forked and cloned the repository
-- Open: 
-
-``/psychopy/app/locale/ja_JP/LC_MESSAGES/messages.po``
-
-- Look up the string you're having difficulty with in the Japanese ``messages.po`` file
-- Use that as a model for your own ``.po`` file
-
-Translation note 2: Formatting arguments
+Note 2: Formatting arguments
 --------------------------------------------
 
 If there are formatting arguments in the original string (``%s``, ``%(first)i``)
@@ -375,12 +369,24 @@ If there are formatting arguments in the original string (``%s``, ``%(first)i``)
 
   - here, ``first`` is a python name
   - that part should not be translated
+- Again, refer to the Japanese localization if in doubt 
 
 .. PB - I really just copied this from the original explanation by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
-.. PB - I really just copied this from the original explanation by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
 
-Translation note 3: When you are unsure
-------------------------------------------
+Note 3a: Using the Japanese ``.po`` file for guidance
+-------------------------------------------------------
+
+- The Japanese translation is nearly complete
+- You have it since you forked and cloned the repository
+- Open: 
+
+``/psychopy/app/locale/ja_JP/LC_MESSAGES/messages.po``
+
+- Look up the string you're having difficulty with in the Japanese ``messages.po`` file
+- Use that as a model for your own ``.po`` file
+
+Note 3b: When you are unsure how to translate
+------------------------------------------------
 
 If you think your translation might have room for improvement
 
@@ -394,8 +400,8 @@ If you think your translation might have room for improvement
     - This should be located at lower-right of the app window if you have the sidebar visible
   - Add your notes for that string into the pop-up window
 
-Simple strategy to resolve uncertainty: Ask the experts
---------------------------------------------------------
+Note 3b1: Simple strategy to resolve uncertainty: Ask the experts
+-------------------------------------------------------------------
   
 - Go to the forum on *discourse*:
 
@@ -406,8 +412,8 @@ Simple strategy to resolve uncertainty: Ask the experts
   - few, if any, can help you with your language, of course
   - many more who can help you understand the underlying code of |PsychoPy|
   
-Advanced strategy to resolve uncertainty: *Determine it yourself*
-----------------------------------------------------------------------
+Note 3b2: Advanced strategy to resolve uncertainty: *Determine it yourself*
+----------------------------------------------------------------------------
 
 **NOTE**: You need to understand *Python* quite well to take the following approach
 
@@ -418,8 +424,8 @@ Advanced strategy to resolve uncertainty: *Determine it yourself*
 
   - Below that, you will see the (partial) path(s) to the file(s), followed by a colon, ``:``, then the respective line number in the file
 
-*Determine it yourself* (cont'd)
-----------------------------------------------------------------------------
+Note 3b2 (cont'd)
+------------------
 
 - For example, for the string ``Yes`` in one version of |PsychoPy|:
 
@@ -431,8 +437,8 @@ Advanced strategy to resolve uncertainty: *Determine it yourself*
 
 - You can then go into that file (or those files) to determine the function   
 
-Last resort: *Do nothing*
-----------------------------
+Note 3b3: Last resort: *Do nothing*
+-------------------------------------
 
 If still in doubt
   
@@ -450,7 +456,7 @@ Step 5: Translating the *Start-up Tips*
 - This is explained next
 
 5a: Copy ``tips.txt`` to a new file
---------------------------------------------
+-------------------------------------
 
 - Find the default *Start-up Tips* (in English) file
 
@@ -458,7 +464,7 @@ Step 5: Translating the *Start-up Tips*
 - Copy it
 
   - Paste it as a new file (``tips copy.txt``, perhaps)
-  - Rename it according to the ``[ll_CC]`` convention consistent with the language you're working on
+  - Rename it according to the ``ll_CC`` convention consistent with the language you're working on
 - For Example
 
   - ``tips_zh_CN.txt`` (simplified Chinese)
@@ -495,9 +501,9 @@ Note on humor in *Start-up tips*
 --------------------------------------
 
 - Some of the humor in the *Start-up tips* might not translate well
-- Feel free to leave out things that would be too odd
+- Feel free to delete humor that would be too odd
 
-  - or replace them mild humor that would be more appropriate
+  - or replace them with mild humor that would be more appropriate
 - Humor must be respectful and suitable for using in a classroom, laboratory, or other professional situation
 - Don't get too creative here
 - If you have any doubt, it is better to leave it out
