@@ -363,15 +363,11 @@ Note 2: Formatting arguments
 If there are formatting arguments in the original string (``%s``, ``%(first)i``)
 
 - The same number of arguments must also appear in the translation
-  
-  - but their order is not constrained to be the original order
 - If they are named (e.g., ``%(first)i``)
 
-  - here, ``first`` is a python name
+  - (here, ``first`` is a python name)
   - that part should not be translated
 - Again, refer to the Japanese localization if in doubt 
-
-.. PB - I really just copied this from the original explanation by Jeremy Gray. I don't really understand it, and may have copied it incorrectly. Needs checking.
 
 Note 3a: Using the Japanese ``.po`` file for guidance
 -------------------------------------------------------
