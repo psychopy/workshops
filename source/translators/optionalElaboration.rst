@@ -8,6 +8,45 @@ Elaboration of some concepts / terms
 
 - |PsychoPy| uses `wxPython <https://docs.wxpython.org/wx.Locale.html>`_ and `gettext <https://www.gnu.org/software/gettext>`_ 
  
+
+More information in issues in *Git*
+--------------------------------------
+
+Caveat: How your fork is *not* yours entirely
+-----------------------------------------------
+
+Keep in mind that |PsychoPy| is **not** yours in the sense that you still need to abide by the the particular |license-for-use| that applies to |PsychoPy|
+
+.. |license-for-use| raw:: html
+
+  <a href="https://psychopy.org/about/index.html#license-for-use" target="_blank">license</a>
+
+Why do translations take place on the *release* branch?
+--------------------------------------------------------------
+
+- the *dev* branch
+
+  - for *major* changes to |PsychoPy| that need to be tested extensively so that they don't "break" the software (e.g., new features, deprecation, etc.)
+  - Changes to the *dev* branch are released about twice a year only 
+    
+**NOTE 2**: You yourself can create branches as well. Normally, you would do this only when you are working on very different aspects of a project (e.g., both translations and bug fixes)
+
+What is the *release* branch then?
+------------------------------------
+
+- The *release* branch 
+
+  - for **minor** (aka "bug fix") releases of |PsychoPy|, where changes can't really "break" anything
+  
+    - bug fixes, documentation typos, etc.
+    - and critically, **translations**
+  - Changes to the *release* branch are made public much more often
+
+- Therefore
+
+  - since translations can't break code, they normally go under the *release* branch 
+
+
 Localization terminology
 --------------------------
 

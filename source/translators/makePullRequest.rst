@@ -110,9 +110,7 @@ Why the prefix?
 ------------------------------------
 
 - summary of what all the changes in the commit do as a single unit
-- The standard convention
-
-  - start with a verb in the imperative mood (i.e., a command)
+- The standard convention is to start with a verb in the imperative mood (i.e., a command)
 
 - For example:
 
@@ -337,5 +335,7 @@ Yes
   - ``Repository > Pull``
 
 FINISHED!!
+
+The rest is optional. It might help you with some concepts though.
  
 On to :ref:`other things to consider`

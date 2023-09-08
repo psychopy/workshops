@@ -215,7 +215,7 @@ Step 2a: Open a text editor
 2e: Make a pull request for ``mappings.txt``
 ----------------------------------------------
 
-2e1: Stage, commit, and push to origin
+2e1: Stage changes
 --------------------------------------------
 
 - Select *psychopy* under the tab labeled ``Current Repository``
@@ -224,22 +224,27 @@ Step 2a: Open a text editor
 
   - go to the tab labeled ``Changes`` 
   - make sure that ``mappings.txt`` is the only file with a checkmark
-- Commit this change
 
-  - add the following message to the box underneath with the temporary text *Summary (required)*
 
-    - ``DOCS: Update mappings.txt for Hebrew in Israel`` (for example)
+2e2: Commit staged change 
+----------------------------
+
+- add the following message to the box underneath with the temporary text *Summary (required)*
+
+  - ``DOCS: Update mappings.txt for Hebrew in Israel`` (for example)
     
-      - (this must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
-    - (ignore the box labeled ``Description`` for now)
-  - click the box underneath labeled ``Commit to release``
+    - (this must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
+  - (ignore the box labeled ``Description`` for now)
+- click the box underneath labeled ``Commit to release``
   
-    - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
-- push that commit to *origin*
+  - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
+
+2e3: Push to *origin*
+-------------------------
   
   - click the ``Push origin`` tab 
 
-2e2: pull request to upstream
+2e4: pull request to upstream
 -------------------------------
 
 - On *GitHub* (origin [AKA your online "fork"])
@@ -430,8 +435,8 @@ The elements you can translate are called *strings*
 3i: Make a pull request for ``messages.po``
 ----------------------------------------------
 
-3i1: Stage, commit, and push to origin
------------------------------------------
+3i1: Stage changes
+---------------------
 
 - Select *psychopy* under the tab labeled ``Current Repository``
 - Select *release* under the tab labeled ``Current Branch``
@@ -439,24 +444,28 @@ The elements you can translate are called *strings*
 
   - go to the tab labeled ``Changes`` 
   - make sure that ``messages.po`` is the only file with a checkmark
-- Commit this change
 
-  - add the following message to the box underneath with the temporary text *Summary (required)*
+3i2: Commit staged changes
+----------------------------
 
-    - ``DOCS: Add translations to Modern Standard Arabic`` (for example)
-    - ``DOCS: Add translations to Simplified Chinese`` (another example)
+- add the following message to the box underneath with the temporary text *Summary (required)*
+
+  - ``DOCS: Add translations to Modern Standard Arabic`` (for example)
+  - ``DOCS: Add translations to Simplified Chinese`` (another example)
     
-      - (again, must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
-    - (ignore the box labeled ``Description`` for now)
-  - click the box underneath labeled ``Commit to release``
+    - (again, must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
+  - (ignore the box labeled ``Description`` for now)
+- click the box underneath labeled ``Commit to release``
   
-    - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
-- push that commit to *origin*
-  
-  - click the ``Push origin`` tab 
+  - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
 
-3i2: pull request to upstream
--------------------------------
+3i3: Push changes to *origin*
+--------------------------------
+  
+- click the ``Push origin`` tab 
+
+3i4: pull request to *upstream*
+----------------------------------
 
 - On *GitHub* (origin [AKA your online "fork"])
 
@@ -624,8 +633,8 @@ Step 4: Translating the *Start-up Tips*
 
 There are two files this time
 
-4d1: Stage, commit, and push to origin
------------------------------------------
+4d1: Stage changes
+---------------------
 
 - Select *psychopy* under the tab labeled ``Current Repository``
 - Select *release* under the tab labeled ``Current Branch``
@@ -636,6 +645,10 @@ There are two files this time
   
     - ``messages.po``
     - ``tips_[ll_CC].txt`` 
+
+4d2: Commit changes
+------------------------------------
+
 - Commit these changes
 
   - add the following message to the box underneath with the temporary text *Summary (required)*
@@ -648,12 +661,14 @@ There are two files this time
   - click the box underneath labeled ``Commit to release``
   
     - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
-- push that commit to *origin*
-  
-  - click the ``Push origin`` tab 
 
-4d2: pull request to upstream
+4d3: Push changes to *origin*
 -------------------------------
+  
+- click the ``Push origin`` tab 
+
+4d4: pull request to *upstream*
+----------------------------------
 
 - On *GitHub* (origin [AKA your online "fork"])
 

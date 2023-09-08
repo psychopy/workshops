@@ -118,10 +118,10 @@ We're going to work through these one by one, along with a couple of extra topic
 .. toctree::
     :maxdepth: 1
     
-    setUpGit.rst
+    setUpVersionControl.rst
     workOnTranslations.rst
     makePullRequest.rst
     otherThingsToConsider.rst
     optionalElaboration.rst
 
-On to :ref:`preliminaries`
+On to :ref:`setting up version control`

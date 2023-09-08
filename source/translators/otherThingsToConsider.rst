@@ -25,3 +25,5 @@ These are not fundamental to the process, but worth thinking about
 
   - This means that there's no awkward period when languages aren't up to date with the new release 
 - This should be a team decision reached only after a localization is relatively complete
+
+On to :ref:`optionalElaboration`

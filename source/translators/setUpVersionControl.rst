@@ -176,41 +176,6 @@ What is a *fork*?
   
     - The latter is what you'll be doing as translators
 
-Caveat: How it's *not* yours
----------------------------------
-
-Keep in mind that |PsychoPy| is **not** yours in the sense that you still need to abide by the the particular |license-for-use| that applies to |PsychoPy|
-
-.. |license-for-use| raw:: html
-
-  <a href="https://psychopy.org/about/index.html#license-for-use" target="_blank">license</a>
-
-Why the *release* branch?
---------------------------------
-
-- the *dev* branch
-
-  - for *major* changes to |PsychoPy| that need to be tested extensively so that they don't "break" the software (e.g., new features, deprecation, etc.)
-  - Changes to the *dev* branch are released about twice a year only 
-    
-**NOTE 1**: At the end of this workshop, I will cover a situation when you might want to move your focus over to the *dev* branch 
-
-**NOTE 2**: You yourself can create branches as well. Normally, you would do this only when you are working on very different aspects of a project (e.g., both translations and bug fixes)
-
-What is the *release* branch then?
-------------------------------------
-
-- The *release* branch 
-
-  - for **minor** (aka "bug fix") releases of |PsychoPy|, where changes can't really "break" anything
-  
-    - bug fixes, documentation typos, etc.
-    - and critically, **translations**
-  - Changes to the *release* branch are made public much more often
-
-- Therefore
-
-  - since translations can't break code, they normally go under the *release* branch 
 
 Step 3: download a tool to avoid using the command line
 -------------------------------------------------------------
