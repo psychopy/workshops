@@ -72,23 +72,27 @@ Step 1: Get *Git* and *GitHub* working
 Step 1a: Install *Git*
 ------------------------
 
-- download *Git* here: 
+- download *Git* |downloadGitHere| 
 
-  - `https://git-scm.com/downloads <https://git-scm.com/downloads>`_
+  - (the binary installer is easiest)
+  - You can just choose the defaults 
 
-    - (the binary installer is easiest)
-    - You can just choose the defaults 
-
-- If you need it, the following *YouTube* video quickly shows you how to do this on both Mac and Windows
-
-  - `https://youtu.be/F02LEVYEmQw <https://youtu.be/F02LEVYEmQw>`_ 
+- If you need it, the following |watchHere| quickly shows you how to do this on both Mac and Windows
   
-    - The Windows installation process involves clicking through more screens
+  - The Windows installation process involves clicking through more screens
+
+.. |downloadGitHere| raw:: html
+
+  <a href="https://git-scm.com/downloads" target="_blank">here</a>
+
+.. |watchHere| raw:: html
+
+  <a href="https://youtu.be/F02LEVYEmQw" target="_blank">YouTube video</a>
 
 Step 1b: Sign up for *GitHub*
 ------------------------------
 
-- Go to `https://github.com/ <https://github.com/>`_
+- Go to |gitHubOnline|
 - Click the following button: ``Sign up for GitHub``
 - Provide your email, then create a password and username
 - Verify that you're a human
@@ -98,6 +102,10 @@ Step 1b: Sign up for *GitHub*
   - If asked *How many team members will be working with you*
   
     - Just answer with: ``Just me`` 
+
+.. |gitHubOnline| raw:: html
+
+  <a href="https://github.com/" target="_blank">GitHub online</a>
 
 Step 2: *Fork* the *psychopy* repository
 ------------------------------------------
@@ -171,12 +179,11 @@ What is a *fork*?
 Caveat: How it's *not* yours
 ---------------------------------
 
-- Keep in mind that |PsychoPy| is **not** yours in the sense that...
+Keep in mind that |PsychoPy| is **not** yours in the sense that you still need to abide by the the particular |license-for-use| that applies to |PsychoPy|
 
-  - you still need to abide by the the particular license that applies to |PsychoPy|: 
-    
-    - `https://github.com/psychopy/psychopy/blob/dev/LICENSE <https://github.com/psychopy/psychopy/blob/dev/LICENSE>`_
-    - `https://psychopy.org/about/index.html#license-for-use <https://psychopy.org/about/index.html#license-for-use>`_
+.. |license-for-use| raw:: html
+
+  <a href="https://psychopy.org/about/index.html#license-for-use" target="_blank">license</a>
 
 Why the *release* branch?
 --------------------------------
@@ -221,12 +228,16 @@ Popular tools
   
 - ideal starter option for translators: 
 
-  - `GitHub Desktop <https://desktop.github.com/>`_
+  - |githubDesktop|
   - Why?
 
     1. free
     2. retains the native terminology of *Git*
     3. simpler, and therefore, less confusing
+
+.. |githubDesktop| raw:: html
+
+  <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
 
 Disadvantage of *GitHub Desktop*
 ---------------------------------------
@@ -235,10 +246,19 @@ Disadvantage of *GitHub Desktop*
   
 - If you're using *Linux*, try one of the following:
     
-  - install the *GitHub Desktop* fork for Linux (`https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc <https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc>`_)
-  - install *GitFiend* (`https://gitfiend.com/ <https://gitfiend.com/>`_), which is cross-platform, but originally designed for *Linux*
+  - install the |githubDesktopForLinux|
+  - install |gitFiend|, which is cross-platform, but originally designed for *Linux*
     
     - just as easy to use as *GitHub Desktop*, perhaps easier
+    - works on Windows and Mac as well
+
+.. |githubDesktopForLinux| raw:: html
+
+  <a href="https://medium.com/@lorenzozar/installing-github-desktop-on-linux-ec2aefa7ccdc" target="_blank">GitHub Desktop fork for Linux</a>
+
+.. |gitFiend| raw:: html
+
+  <a href="https://gitfiend.com/" target="_blank">GitFiend</a>
 
 Minor note on *Git*-interface tools
 ------------------------------------

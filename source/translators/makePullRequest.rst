@@ -1,10 +1,9 @@
-.. _commit and make a pull request:
+.. _committing and making pull requests:
 
-Committing and making a pull request
+More information on Git workflow
 ==========================================
 
-- time to get your translations into the upcoming |PsychoPy| release
-- time to work towards a *pull request*
+You have already practiced this workflow, but here is some more information
 
 Steps on the way to a pull request
 -------------------------------------
@@ -13,7 +12,7 @@ Steps on the way to a pull request
 2. *commit* (local copy)
 3. *push* (local copy to *origin*)
 4. *pull request* (*origin* to *upstream*)
-5. clean up
+5. clean up (if you're working on a branch you created)
 
 What does *Git* track?
 ------------------------
@@ -54,13 +53,12 @@ Step 1: *Stage* your changes
 All that said...
 --------------------
 
-- After the initial setup, most translators will be working on just a couple of files anyway, i.e.:
+- After the initial setup, most translators will be working on just a few files anyway, i.e.:
   
+  - ``mappings.txt``
   - ``messages.po``
   - (and maybe) ``tips...txt``
   
-- So 99% of the time, you'll just leave those 1-2 boxes checked anyway 
-
 Step 2: The commit
 ---------------------
 
@@ -74,6 +72,7 @@ Step 2: The commit
   - required by *Git* for every commit
 
     - (there is no way around this)
+- The bottom one, ``Description`` is optional 
 
 2a: The commit message prefix
 -----------------------------------
@@ -103,6 +102,9 @@ Why the prefix?
   - *DOCS:*
 - usually for documentation
 - but also for changes that cannot "break" the software
+- *DOCS:* may change to something like *TRNSL:* in future
+
+  - Jon Peirce will let you know if this change occurs 
 
 2c: The commit message itself
 ------------------------------------
@@ -114,19 +116,20 @@ Why the prefix?
 
 - For example:
 
-  - ``DOCS: Add Spanish translations 1-50``
+  - ``DOCS: Update mappings.txt for Thai``
 
-  - ``DOCS: Add Spanish translations 62-85``
+  - ``DOCS: Add translations to Portuguese in Brazil``
 
-  - ``DOCS: Add start-up tips in Hebrew`` 
+  - ``DOCS: Add start-up tips to Modern Standard Arabic`` 
 - Use English, naturally, as the maintainers at |PsychoPy| probably don't speak your language 
+- Remember that there is a 50-character limit 
 
 2d: a description (optional)
 ------------------------------------
 
 - Sometimes commit messsage is clear
   
-  - ``DOCS: add start-up tips in Yoruba``
+  - ``DOCS: Add start-up tips to Yoruba in Nigeria``
 
 - Sometimes not possible
 
@@ -134,7 +137,7 @@ Why the prefix?
   - No character limit
   
     - but try to be succinct 
-  - > 100 characters?
+  - more than 100 characters?
   
     - split your commit into two or more commits?
 
@@ -157,7 +160,7 @@ Step 3: *Push* to *origin*
 - The commit is like sealing an envelope you want to send in the mail
 
   - It's still just on your computer
-  - You still need to "mail it in" to your online repository
+  - You still need to "mail it in" to **your** online repository
   - This is done through a *push*
 
 Why two steps? A *push* then a *pull request*?
@@ -172,7 +175,7 @@ Why two steps? A *push* then a *pull request*?
   1. first *push* to your fork at *origin*
   2. Then go to your fork on *GitHub* and make a *pull request* from there to *upstream*
 
-**NOTE**: You *can* make a *pull request* directly from *GitHub Desktop*, but I'm not completely sure what the implications of that are.
+**NOTE**: You *can* make a *pull request* directly from *GitHub Desktop*, but I'm not completely sure what the implications of that are. I'm scared of it, to be honest.
 
 3a: how to push to *origin* in *GitHub Desktop*
 --------------------------------------
@@ -233,7 +236,7 @@ Step 4: The pull request
 
 - You should now be switched to the *upstream* repository at ``psychopy/psychopy``
 - And you should see a screen with the following title: ``Comparing changes``
-- There should be four pull-down menus, labeled as follows on the next slide, from left to right
+- There should be 4 pull-down menus, labeled as follows on the next slide, from left to right
 
 4c2: Source and destination
 ------------------------------
@@ -293,7 +296,7 @@ Step 4: The pull request
 4g2: Is a description necessary?
 ------------------------------------
 
-- But truth be told, descriptions generally won't be of much use to translators unless you've done something unusual
+- But truth be told, descriptions generally won't be of much use to translators unless you've done something unusual, and I can't think of anything that would be unusual.
   
   - A *pull request* for a translation is only going to involve 1-3 files (though there may be many, many lines changed)
   - But even if there are many lines changed, the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language
@@ -306,7 +309,7 @@ Step 4: The pull request
   - *the administrators at PsychoPy will probably not be able to review translations in much detail since they probably won't speak the language*
 
 - In this sense, translators carry more responsibility than even someone adding new features to |PsychoPy|
-- This is because administrators will probably be forced to "rubber stamp" your proposed changes 
+- This is because administrators will probably be forced to authorize your proposed changes without checking them
 - Translate responsibly
 
 4i: Subsequent commits

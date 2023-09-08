@@ -36,7 +36,7 @@ Need for translations
 |PsychoPy| and languages
 ---------------------------
 
-- |PsychoPy| uses `wxPython <https://docs.wxpython.org/wx.Locale.html>`_ and `gettext <https://www.gnu.org/software/gettext>`_ to "look" for a language every time it displays items to the experimenter (e.g., menu items, errors)
+|PsychoPy| "looks" for a language to display "strings" in
 - If found
 
   - consults the ``messages.mo`` file under the directory for that language
@@ -108,21 +108,20 @@ Quick overview of steps
 
 - preliminaries
 - setting up the *git* / *GitHub* workflow
-- working on translations
-- making a pull request on *GitHub*
+- working on translations and making associated pull requests
 
 Today
 -----------------------------------
 
-We're going to work through these one by one
+We're going to work through these one by one, along with a couple of extra topics, if there's time
 
 .. toctree::
     :maxdepth: 1
     
-    preliminaries.rst
     setUpGit.rst
     workOnTranslations.rst
     makePullRequest.rst
     otherThingsToConsider.rst
+    optionalElaboration.rst
 
 On to :ref:`preliminaries`
