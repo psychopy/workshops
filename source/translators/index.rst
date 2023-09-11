@@ -3,10 +3,15 @@
 PsychoPy translation workshop
 =====================================
 
-These materials at:
-https://workshops.psychopy.org/translators
+You can view these materials |viewTranslatorPages| or |viewTranslatorSlides|.
 
-Or you can `view as slides <https://workshops.psychopy.org/slides/translators>`_
+.. |viewTranslatorPages| raw:: html
+
+  <a href="https://workshops.psychopy.org/translators" target="_blank">as webpages</a>
+
+.. |viewTranslatorSlides| raw:: html
+
+  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">as html slides.</a>
 
 Introductions and expectations
 --------------------------------
@@ -36,7 +41,7 @@ Need for translations
 |PsychoPy| and languages
 ---------------------------
 
-|PsychoPy| "looks" for a language to display "strings" in
+|PsychoPy| "looks" for a language to display its "strings" in
 - If found
 
   - consults the ``messages.mo`` file under the directory for that language
@@ -61,15 +66,17 @@ How experimenters implement this in |PsychoPy|
 
 - On a Mac
 
-  - ``PsychoPy > Preferences > Application > locale``
-  - (choose locale)
+  - Mac
+  
+    - ``PsychoPy > Preferences > Application > locale``
+  - PC
+  
+    - ``File > Preferences > Application > locale``
+  - (from here you **would**\* choose the language)
 
-- On Windows
-
-  - (something similar; I forgot to check; I'll fix this later)  
 - Quit and restart |PsychoPy| 
 
-**WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
+\* **WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
 
 Rough overview of how translators make this happen
 ----------------------------------------------------
@@ -96,12 +103,28 @@ thorough proficiency in at least three things, requiring months or years of stud
 
 (since today's workshop covers these topics)
 
-- how to use the free app `Poedit <https://poedit.net/>`_ to do translations
+- how to use the free app |homepageForPoedit| to do translations
 - how bring those translations into |PsychoPy| project using the following:
 
-  -  `Git <https://git-scm.com/>`_
-  -  `GitHub <https://github.com/>`_
-  -  `GitHub Desktop <https://desktop.github.com/>`_
+  -  |homepageForGit|
+  -  |homepageForGithub|
+  -  |homepageForGithubDesktop|
+
+.. |homepageForPoedit| raw:: html
+
+  <a href="https://poedit.net/" target="_blank">Poedit</a>
+
+.. |homepageForGit| raw:: html
+
+  <a href="https://git-scm.com/" target="_blank">Git</a>
+
+.. |homepageForGithub| raw:: html
+
+  <a href="https://github.com/" target="_blank">GitHub</a>
+
+.. |homepageForGithubDesktop| raw:: html
+
+  <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>
 
 Quick overview of steps
 --------------------------------

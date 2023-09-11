@@ -9,18 +9,12 @@ Setting up version control
 What is *version control*?
 ------------------------------
 
-- Similar to *Google Drive* and *MS 365*
-    
-  - each such document (e.g., a *Google Doc*) contains a *version history* 
-    
-    - go back and forth "in time" to look at (and even revert to) older versions of the document
+- A way to go "back and forth in time" to avoid ``FinalVersion1.docx``, ``FinalVersion2.docx``, etc.
 
-- What about mulitiple files and folders?
-  
-  - *Git* and *GitHub*
-  - You can also go "back and forth in time"
-    
-    - More complex as they account for multiple documents
+  - For single documents, cloud-based platforms have a *Version History" 
+ 
+    - e.g., in a *Google Doc*: ``File > Version History``
+  - For a larger project, with multiple files and folders, there are several tools, the most popular of which is currently *Git*
     
 What is *Git*?
 ----------------
@@ -66,8 +60,8 @@ Now we'll go through setting up the *Git* workflow for |PsychoPy|
 Step 1: Get *Git* and *GitHub* working
 ----------------------------------------
 
-* *Git* is free software for your computer
-* *GitHub* is an free online system, for which you need to sign up
+- *Git* is free software for your computer
+- *GitHub* is an free online system, for which you need to sign up
 
 Step 1a: Install *Git*
 ------------------------
@@ -77,7 +71,7 @@ Step 1a: Install *Git*
   - (the binary installer is easiest)
   - You can just choose the defaults 
 
-- If you need it, the following |watchHere| quickly shows you how to do this on both Mac and Windows
+- If you need it, the following |watchGitInstallVideoHere| quickly shows you how to do this on both Mac and Windows
   
   - The Windows installation process involves clicking through more screens
 
@@ -85,14 +79,14 @@ Step 1a: Install *Git*
 
   <a href="https://git-scm.com/downloads" target="_blank">here</a>
 
-.. |watchHere| raw:: html
+.. |watchGitInstallVideoHere| raw:: html
 
   <a href="https://youtu.be/F02LEVYEmQw" target="_blank">YouTube video</a>
 
 Step 1b: Sign up for *GitHub*
 ------------------------------
 
-- Go to |gitHubOnline|
+- Go to |signUpForGithubHere|
 - Click the following button: ``Sign up for GitHub``
 - Provide your email, then create a password and username
 - Verify that you're a human
@@ -103,7 +97,7 @@ Step 1b: Sign up for *GitHub*
   
     - Just answer with: ``Just me`` 
 
-.. |gitHubOnline| raw:: html
+.. |signUpForGithubHere| raw:: html
 
   <a href="https://github.com/" target="_blank">GitHub online</a>
 
@@ -129,7 +123,11 @@ Step 2a: Find the *psychopy* repository
     - type in: `psychopy`
   - You should see the following at the top of the search list: `psychopy/psychopy` 
   - Click it
-  - You should land here: ``https://github.com/psychopy/psychopy``
+  - You should land here: |landingPageForPsychopyPsychopyRepo|
+
+.. |landingPageForPsychopyPsychopyRepo| raw:: html
+
+  <a href="https://github.com/psychopy/psychopy" target="_blank">https://github.com/psychopy/psychopy</a>
 
 Step 2b: Ensure you are on the *release* branch
 ------------------------------------------------
@@ -181,7 +179,7 @@ Step 3: download a tool to avoid using the command line
 -------------------------------------------------------------
 
 - Command-line *Git* actually turns out to be very useful
-- But it might be intimidating at first
+- But it is often intimidating at first
 - So there are many GUIs to make *Git* easier to use
 
 Popular tools
@@ -193,21 +191,21 @@ Popular tools
   
 - ideal starter option for translators: 
 
-  - |githubDesktop|
+  - |homepageForGithubDesktop|
   - Why?
 
     1. free
     2. retains the native terminology of *Git*
     3. simpler, and therefore, less confusing
 
-.. |githubDesktop| raw:: html
+.. |homepageForGithubDesktop| raw:: html
 
-  <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
+    <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
 
-Disadvantage of *GitHub Desktop*
----------------------------------------
+What if I use *Linux*?
+---------------------------
 
-- Not designed for *Linux* 
+- *GitHub Desktop* not natively designed for *Linux* 
   
 - If you're using *Linux*, try one of the following:
     
@@ -225,41 +223,15 @@ Disadvantage of *GitHub Desktop*
 
   <a href="https://gitfiend.com/" target="_blank">GitFiend</a>
 
-Minor note on *Git*-interface tools
-------------------------------------
-
-- *Git* depends on a hidden folder in the most superordinate directory of any project:
-
-  - ``.git`` (required, the *sine qua non*, actually)
-There is also usually a hidden ``.gitignore`` file there (though it's technically optional)
-
-- Software tools like *GitHub Desktop* and *GitKraken* and even command-line *Git* simply refer to the ``.git`` folder and the ``.gitignore`` file
-- Therefore, you can switch among the various *Git* interfaces seamlessly
-- This will make more sense later, but it's not that important for now
-
 Step 3a: Download and install *GitHub Desktop*
 -----------------------------------------------
 
-- Go to: `https://desktop.github.com/ <https://desktop.github.com/>`_ 
+- Go to the homepage for |homepageForGithubDesktop|
 
   - Download and install the appropriate version
   - If your computer uses an *Apple silicon* chip (*M1*, *M2*), see the next slide
   
-- Linux users can download *GitFiend*
-  
-  - `https://gitfiend.com/ <https://gitfiend.com/>`_
-- (Note for users of *Apple silicon* chips on next slide) 
-
-Note for users with *Apple silicon* chips (*M1*, *M2*)
-------------------------------------------------------- 
-      
-- The appropriate download is under the heading at the bottom:
-      
-  - ``Apple silicon?``
-- Ultimately, the download should have an ``..arm-64`` extension instead of ``..x-64``
-- But the *Intel* version will actually work
-
-  - just a little bit slower as it has to go through *Rosetta 2*, *Apple*'s way of translating chip instructions from *Intel* to *Apple Silicon*
+- Linux users can easily download |gitFiend|
 
 Step 4: Cloning
 ------------------
@@ -274,7 +246,7 @@ Step 4: Cloning
 Step 4a: How to start cloning from *GitHub Desktop*
 -----------------------------------------------------
 
-- in *GitHub Desktop*
+- in *GitHub Desktop* on a Mac
 
   - ``GitHub Desktop > Settings > Accounts``
 
@@ -282,6 +254,7 @@ Step 4a: How to start cloning from *GitHub Desktop*
   - ``File > Clone repository``
     
     - choose *psychopy* 
+  - (In *GitFiend*, I don't think  you sign in. You just provide the repository URL, which can be found in the *GitHub* repository under the ``<> Code`` button, where you then choose the ``Local`` tab, then the ``https`` link)
 
 Step 4b: How to finish cloning
 --------------------------------
@@ -327,32 +300,14 @@ Nomenclature after forking and cloning
 What does all this mean?
 ----------------------------
 
-- You have established a direct back-and-forth between you and your online fork on *GitHub* 
-  
-  - You can manipulate files without interfering with anyone else
-- But now
+- You have established the means to do the following:
 
-  - you can contribute your changes to the original repository from via *pull requests* online
-  - In *GitHub* jargon, you would make a *pull request* from *origin* (your online, forked repository) to *upstream* (the main *psychopy* repository)
+  -  add translations to *PsychoPy* on your own computer
+  -  **push** those changes to *origin* (i.e., your fork on *GitHub*)
+  -  then "suggest" those changes to *upstream* (the original psychopy repo) through a **pull request** from **origin**
 
-- The importance of this will become clear later 
-
-What about the name for the repository on my own computer?
-------------------------------------------------------------
-
-- no special name for the repository on your local computer
-
-  - most people say "my local copy"?
-- why not *clone*?
-
-  - would be a good name
-  - but few seem to use it (or at least I haven't heard it in my limited experience)
-  
-    - maybe because it's awkward or creepy to say, "My clone" 
-  - Fortunately, it's not important either
-
-Done setting up *Git* and *GitHub*
-------------------------------------
+You're done setting up *Git* and *GitHub*
+---------------------------------------------
 
 - ... but... what about the *-flow* in *workflow*?
 - The next section is about keeping your repository up to date

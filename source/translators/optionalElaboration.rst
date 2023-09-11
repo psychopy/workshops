@@ -12,6 +12,18 @@ Elaboration of some concepts / terms
 More information in issues in *Git*
 --------------------------------------
 
+Minor note on *Git*-interface tools
+------------------------------------
+
+- *Git* depends on a hidden folder in the most superordinate directory of any project:
+
+  - ``.git`` (required, the *sine qua non*, actually)
+
+- There is also usually a hidden ``.gitignore`` file there (though it's technically optional)
+- Software tools like *GitHub Desktop* and *GitKraken* and even command-line *Git* simply refer to the ``.git`` folder and the ``.gitignore`` file
+- Therefore, you can switch among the various *Git* interfaces seamlessly
+- This will make more sense later, but it's not that important for now
+
 Caveat: How your fork is *not* yours entirely
 -----------------------------------------------
 
