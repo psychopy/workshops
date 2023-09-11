@@ -11,7 +11,7 @@ You can view these materials |viewTranslatorPages| or |viewTranslatorSlides|.
 
 .. |viewTranslatorSlides| raw:: html
 
-  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">as html slides.</a>
+  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">as html slides</a>
 
 Introductions and expectations
 --------------------------------
@@ -56,7 +56,7 @@ Visualisation
 
 .. image:: ../_images/trnslWkshp_poMoPsychoPy.png
   :align: center
-  :width: 700
+  :width: 750
   :alt: Image of a how .po and .mo files interact to allow PsychoPy to implement translations into other languages
 
 ..
@@ -106,9 +106,9 @@ thorough proficiency in at least three things, requiring months or years of stud
 - how to use the free app |homepageForPoedit| to do translations
 - how bring those translations into |PsychoPy| project using the following:
 
-  -  |homepageForGit|
-  -  |homepageForGithub|
-  -  |homepageForGithubDesktop|
+  - |homepageForGit|
+  - |homepageForGithub|
+  - |homepageForGithubDesktop|
 
 .. |homepageForPoedit| raw:: html
 

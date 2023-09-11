@@ -474,7 +474,7 @@ The elements you can translate are called *strings*
   - Leave a comment only if you think it's necessary (it shouldn't be for translations)
   - Click ``Create pull request``
 
-Note 1: Leave certain technical terms alone
+Note A: Leave certain technical terms alone
 ----------------------------------------------
 
 - Technical terms should not be translated:
@@ -488,7 +488,7 @@ Note 1: Leave certain technical terms alone
 - These are usually indicated with an uppercase first letter
 - Check the Japanese localization (``ja_JP/LC_MESSAGES/messages.po``) if in doubt
 
-Note 2: Formatting arguments
+Note B: Formatting arguments
 --------------------------------------------
 
 If there are formatting arguments in the original string (``%s``, ``%(first)i``)
@@ -502,7 +502,7 @@ If there are formatting arguments in the original string (``%s``, ``%(first)i``)
 
 \* As you already know, word order changes across languages. Therefore, the placement of these formatting arguments within the translated string may differ from the US-English string. 
 
-Note 3a: Using the Japanese ``.po`` file for guidance
+Note C1: Using the Japanese ``.po`` file for guidance
 -------------------------------------------------------
 
 - The Japanese translation is nearly complete
@@ -514,7 +514,7 @@ Note 3a: Using the Japanese ``.po`` file for guidance
 - Look up the string you're having difficulty with in the Japanese ``messages.po`` file
 - Use that as a model for your own ``.po`` file
 
-Note 3b: When you are unsure how to translate
+Note C2: When you are unsure how to translate
 ------------------------------------------------
 
 If you think your translation might have room for improvement
@@ -529,21 +529,21 @@ If you think your translation might have room for improvement
     - This should be located at lower-right of the app window if you have the sidebar visible
   - Add your notes for that string into the pop-up window
 
-Note 3b1: Simple strategy to resolve uncertainty: Ask the experts
+Note C2a: Simple strategy to resolve uncertainty: Ask the experts
 -------------------------------------------------------------------
   
-- Go to the forum on *discourse*:
-
-`https://discourse.psychopy.org/ <https://discourse.psychopy.org/>`_
-
+- Go to the |discoursePageForPsychopy|.
 - There are friendly, useful experts there
 
   - few, if any, can help you with your language, of course
   - many more who can help you understand the underlying code of |PsychoPy|
 
+.. |discoursePageForPsychopy| raw:: html
 
-  
-Note 3b2: Advanced strategy to resolve uncertainty: *Determine it yourself*
+  <a href="https://discourse.psychopy.org/" target="_blank">PsychoPy Forum</a>
+
+
+Note C2b: Advanced strategy to resolve uncertainty: *Determine it yourself*
 ----------------------------------------------------------------------------
 
 **NOTE**: You need to understand *Python* quite well to take the following approach
@@ -555,7 +555,7 @@ Note 3b2: Advanced strategy to resolve uncertainty: *Determine it yourself*
 
   - Below that, you will see the (partial) path(s) to the file(s), followed by a colon, ``:``, then the respective line number in the file
 
-Note 3b2 (cont'd)
+Note C2b (cont'd)
 ------------------
 
 - For example, for the string ``Yes`` in one version of |PsychoPy|:
@@ -568,7 +568,7 @@ Note 3b2 (cont'd)
 
 - You can then go into that file (or those files) to determine the function   
 
-Note 3b3: Last resort: *Do nothing*
+Note C2c: Last resort: *Do nothing*
 -------------------------------------
 
 If still in doubt

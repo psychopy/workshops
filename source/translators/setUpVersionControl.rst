@@ -11,7 +11,7 @@ What is *version control*?
 
 - A way to go "back and forth in time" to avoid ``FinalVersion1.docx``, ``FinalVersion2.docx``, etc.
 
-  - For single documents, cloud-based platforms have a *Version History" 
+  - For single documents, cloud-based platforms have a *Version History* 
  
     - e.g., in a *Google Doc*: ``File > Version History``
   - For a larger project, with multiple files and folders, there are several tools, the most popular of which is currently *Git*
