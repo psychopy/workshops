@@ -234,7 +234,6 @@ Step 3a: Download and install *GitHub Desktop*
 - Go to the homepage for |homepageForGithubDesktop|
 
   - Download and install the appropriate version
-  - If your computer uses an *Apple silicon* chip (*M1*, *M2*), see the next slide
   
 - Linux users can easily download |gitFiend|
 
