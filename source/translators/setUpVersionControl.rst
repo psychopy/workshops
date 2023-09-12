@@ -209,7 +209,7 @@ What if I use *Linux*?
   
 - If you're using *Linux*, try one of the following:
     
-  - install the |githubDesktopForLinux|
+  - install the |githubDesktopForLinux| (see more options on the |shiftkeyDesktopFork|)
   - install |gitFiend|, which is cross-platform, but originally designed for *Linux*
     
     - just as easy to use as *GitHub Desktop*, perhaps easier
@@ -222,6 +222,11 @@ What if I use *Linux*?
 .. |gitFiend| raw:: html
 
   <a href="https://gitfiend.com/" target="_blank">GitFiend</a>
+
+.. |shiftkeyDesktopFork| raw:: html
+
+  <a href="https://github.com/shiftkey/desktop" target="_blank">the shiftkey/desktop fork</a>
+
 
 Step 3a: Download and install *GitHub Desktop*
 -----------------------------------------------

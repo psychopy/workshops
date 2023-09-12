@@ -604,7 +604,7 @@ Step 4: Translating the *Start-up Tips*
 4b: translate
 ----------------------
 
-- Open the new, renamed ``tips_ll_CC.txt`` file using your preferred text editor
+- Open the new, renamed ``tips_ll_CC.txt`` file using your preferred text editor (as long as it opens up the file with each tip on a new line, unlike older versions of *Notepad*)
 - Translate the English-language tips by replacing them entirely with those of the language you are working on
 
 **WARNING**: Do *not* delete any English entry in the new ``.txt`` file before you have completely translated it. Instead, insert the relevant translation below the English entry. Then (and only then) delete the English entry. Save your work, of course.
