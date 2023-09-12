@@ -3,15 +3,21 @@
 PsychoPy translation workshop
 =====================================
 
-You can view these materials |viewTranslatorPages| or |viewTranslatorSlides|.
+- You can view these materials as web pages:
+
+  - |viewTranslatorPages| 
+ 
+- or as slides:
+
+  - |viewTranslatorSlides|
 
 .. |viewTranslatorPages| raw:: html
 
-  <a href="https://workshops.psychopy.org/translators" target="_blank">as webpages</a>
+  <a href="https://workshops.psychopy.org/translators" target="_blank">https://workshops.psychopy.org/translators</a>
 
 .. |viewTranslatorSlides| raw:: html
 
-  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">as html slides</a>
+  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">https://workshops.psychopy.org/slides/translators</a>
 
 Introductions and expectations
 --------------------------------
@@ -37,22 +43,8 @@ Need for translations
   
 **NOTE**: This is **NOT** what the participant sees. **THAT** is under the control of the experimenter 
 
-
-|PsychoPy| and languages
----------------------------
-
-|PsychoPy| "looks" for a language to display its "strings" in
-- If found
-
-  - consults the ``messages.mo`` file under the directory for that language
-- If **not** found
-
-  - consults the ``messages.mo`` file under the directory (``en_US``) for American English (``psychopy/app/locale/en_US/LC_MESSAGE/messages.mo``)
-
-**IMPORTANT NOTE**: Translators don't work on the ``.mo`` file. Instead, they work on a ``.po`` file.
-
-Visualisation
-----------------
+Visualisation of how |PsychoPy| does translations
+--------------------------------------------------
 
 .. image:: ../_images/trnslWkshp_poMoPsychoPy.png
   :align: center
