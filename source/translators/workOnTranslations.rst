@@ -22,7 +22,11 @@ Overview
 Step 1: What is the ``ll_CC`` locale name for my language?
 --------------------------------------------------------------
 
-First, we need to discuss how locale names work
+- First, we need to discuss how locale names work
+
+- Look under this directory in your local copy
+
+  - ``psychopy/psychopy/app/locale``
 
 Screenshot of localization files in |PsychoPy|
 ------------------------------------------------
