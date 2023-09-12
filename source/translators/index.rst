@@ -3,10 +3,15 @@
 PsychoPy translation workshop
 =====================================
 
-These materials at:
-https://workshops.psychopy.org/translators
+You can view these materials |viewTranslatorPages| or |viewTranslatorSlides|.
 
-Or you can `view as slides <https://workshops.psychopy.org/slides/translators>`_
+.. |viewTranslatorPages| raw:: html
+
+  <a href="https://workshops.psychopy.org/translators" target="_blank">as webpages</a>
+
+.. |viewTranslatorSlides| raw:: html
+
+  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">as html slides</a>
 
 Introductions and expectations
 --------------------------------
@@ -36,7 +41,7 @@ Need for translations
 |PsychoPy| and languages
 ---------------------------
 
-- |PsychoPy| uses `wxPython <https://docs.wxpython.org/wx.Locale.html>`_ and `gettext <https://www.gnu.org/software/gettext>`_ to "look" for a language every time it displays items to the experimenter (e.g., menu items, errors)
+|PsychoPy| "looks" for a language to display its "strings" in
 - If found
 
   - consults the ``messages.mo`` file under the directory for that language
@@ -51,7 +56,7 @@ Visualisation
 
 .. image:: ../_images/trnslWkshp_poMoPsychoPy.png
   :align: center
-  :width: 700
+  :width: 750
   :alt: Image of a how .po and .mo files interact to allow PsychoPy to implement translations into other languages
 
 ..
@@ -61,15 +66,17 @@ How experimenters implement this in |PsychoPy|
 
 - On a Mac
 
-  - ``PsychoPy > Preferences > Application > locale``
-  - (choose locale)
+  - Mac
+  
+    - ``PsychoPy > Preferences > Application > locale``
+  - PC
+  
+    - ``File > Preferences > Application > locale``
+  - (from here you **would**\* choose the language)
 
-- On Windows
-
-  - (something similar; I forgot to check; I'll fix this later)  
 - Quit and restart |PsychoPy| 
 
-**WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
+\* **WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
 
 Rough overview of how translators make this happen
 ----------------------------------------------------
@@ -96,33 +103,48 @@ thorough proficiency in at least three things, requiring months or years of stud
 
 (since today's workshop covers these topics)
 
-- how to use the free app `Poedit <https://poedit.net/>`_ to do translations
+- how to use the free app |homepageForPoedit| to do translations
 - how bring those translations into |PsychoPy| project using the following:
 
-  -  `Git <https://git-scm.com/>`_
-  -  `GitHub <https://github.com/>`_
-  -  `GitHub Desktop <https://desktop.github.com/>`_
+  - |homepageForGit|
+  - |homepageForGithub|
+  - |homepageForGithubDesktop|
+
+.. |homepageForPoedit| raw:: html
+
+  <a href="https://poedit.net/" target="_blank">Poedit</a>
+
+.. |homepageForGit| raw:: html
+
+  <a href="https://git-scm.com/" target="_blank">Git</a>
+
+.. |homepageForGithub| raw:: html
+
+  <a href="https://github.com/" target="_blank">GitHub</a>
+
+.. |homepageForGithubDesktop| raw:: html
+
+  <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>
 
 Quick overview of steps
 --------------------------------
 
 - preliminaries
 - setting up the *git* / *GitHub* workflow
-- working on translations
-- making a pull request on *GitHub*
+- working on translations and making associated pull requests
 
 Today
 -----------------------------------
 
-We're going to work through these one by one
+We're going to work through these one by one, along with a couple of extra topics, if there's time
 
 .. toctree::
     :maxdepth: 1
     
-    preliminaries.rst
-    setUpGit.rst
+    setUpVersionControl.rst
     workOnTranslations.rst
     makePullRequest.rst
     otherThingsToConsider.rst
+    optionalElaboration.rst
 
-On to :ref:`preliminaries`
+On to :ref:`setting up version control`
