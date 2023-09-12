@@ -338,7 +338,7 @@ Step 3: Translating in *Poedit*
 - Go to: ``Translation > Properties``
 - under: ``Language team``
 
-  - contact email for entire group 
+  - contact email for entire group (actually, I will do this)
 - under: ``Language``
   
   - select the appropriate ``Language (Country)`` combination
