@@ -38,10 +38,35 @@ Screenshot of localization files in |PsychoPy|
 
 ..
 
-1a: Example locale names
---------------------------
+1a: Examples of East Asian locale names
+------------------------------------------
 
 ``ll_`` (language), follwed by ``_CC`` (country), for example:
+
+- |zh_CN| for Chinese in the PRC (simplified)\*
+- |zh_TW| for Chinese in the ROC (complex)
+- |ko_KR| for Korean in South Korea
+- |th_TH| for Thai in Thailand
+
+.. |zh_CN| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/zh-Hans-CN/index.html" target="_blank">zh_CN</a>
+
+.. |zh_TW| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/zh-Hant-TW/index.html" target="_blank">zh_TW</a>
+
+.. |ko_KR| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/ko-KR/index.html" target="_blank">ko_KR</a>
+
+.. |th_TH| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/th-TH/index.html" target="_blank">th_TH</a>
+
+
+1b: Examples Central/Western Asian/European locale names
+-------------------------------------------------------------
 
 - |ar_001| for Modern Standard Arabic\*
 - |he_IL| for Hebrew in Israel
@@ -165,13 +190,15 @@ Step 2: ``mappings.txt``
 Step 2a: Open a text editor
 ------------------------------
 
-- Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*, *TextEdit* [Mac], *Notepad* [Windows])
+- Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*, *TextEdit* [Mac])
+- Avoid using *Notepad* in *Microsoft Windows*
 
-**NOTE**: Just be careful with older versions of *Notepad* in *Windows*. Traditionally, it was incompatible with *Unix*-style line endings. But as of *Windows 10*, it now |conditionsWhereNotepadWorks|. Or at least it *should*. If it's not working, you will see one huge paragraph of code. The least confusing solution is to change text editors.
+  - Use |linkToNotepadPlus| instead
 
-.. |conditionsWhereNotepadWorks| raw:: html
+.. |linkToNotepadPlus| raw:: html
 
-  <a href="https://devblogs.microsoft.com/commandline/extended-eol-in-notepad/" target="_blank">works if it detects unix-style line feeds in the file</a>
+  <a href="https://notepad-plus-plus.org/" target="_blank">Notepad Plus</a>
+
 
 2b: insert the appropriate ``ll_CC`` code
 -----------------------------------------
@@ -253,13 +280,13 @@ Step 2a: Open a text editor
 
 - On *GitHub* (origin [AKA your online "fork"])
 
-  - Click ``Compare & pull request``
-  - Make sure it says *Able to merge* in the box at the top
+  - Click ``Contribute``
+  - Choose ``Open pull request``
   - Leave a comment only if you think it's necessary (it shouldn't be for translations)
   - Click ``Create pull request``
 
 Step 3: Translating in *Poedit*
--------------------------------------
+---------------------------------
 
 - *Poedit*
 
@@ -399,19 +426,22 @@ Step 3: Translating in *Poedit*
 3f: Generate current list of translatable strings
 ----------------------------------------------------
 
-The elements you can translate are called *strings*
+- Only one person per language group should do this
 
-- Select the following
+  - (duplicated effort can result in merge conflicts) 
+- The elements you can translate are called *strings*
+
+  - Select the following
  
-  - ``Translation`` > ``Update from Source Code``
-- You should subsequently see a list of strings in English that need translating into your language
+    - ``Translation > Update from Source Code``
+  - You should subsequently see a list of strings in English that need translating into your language
   
-  - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
+    - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
 
 **NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
 
-3g: Sort and show string ID 
------------------------------
+3g: Group strategy: Sort and show string ID 
+----------------------------------------------
 
 - This is for collaboration in a team
 
@@ -424,7 +454,7 @@ The elements you can translate are called *strings*
   
     - Translator A: IDs 1-250
     - Translator B: IDs 251-500
-    - etc.
+    - etc. 
 
 3h: Translate the strings
 ----------------------------
@@ -448,6 +478,8 @@ The elements you can translate are called *strings*
 
   - go to the tab labeled ``Changes`` 
   - make sure that ``messages.po`` is the only file with a checkmark
+  
+    - if the ``.mo`` file is checked, **UN**-check it
 
 3i2: Commit staged changes
 ----------------------------
@@ -492,6 +524,8 @@ Note A: Leave certain technical terms alone
 - These are usually indicated with an uppercase first letter
 - Check the Japanese localization (``ja_JP/LC_MESSAGES/messages.po``) if in doubt
 
+  - The Simplified Chinese ``.po`` file also has some examples of this already
+
 Note B: Formatting arguments
 --------------------------------------------
 
@@ -502,7 +536,9 @@ If there are formatting arguments in the original string (``%s``, ``%(first)i``)
 
   - (here, ``first`` is a python name)
   - that part should not be translated
-- Again, refer to the Japanese localization if in doubt 
+- Again, refer to the Japanese localization if in doubt
+
+  - (and/or Simplified Chinese, if you are in that language)
 
 \* As you already know, word order changes across languages. Therefore, the placement of these formatting arguments within the translated string may differ from the US-English string. 
 
@@ -517,6 +553,8 @@ Note C1: Using the Japanese ``.po`` file for guidance
 
 - Look up the string you're having difficulty with in the Japanese ``messages.po`` file
 - Use that as a model for your own ``.po`` file
+
+   - (and/or Simplified Chinese, if you are in that language)
 
 Note C2: When you are unsure how to translate
 ------------------------------------------------
@@ -536,11 +574,17 @@ If you think your translation might have room for improvement
 Note C2a: Simple strategy to resolve uncertainty: Ask the experts
 -------------------------------------------------------------------
   
-- Go to the |discoursePageForPsychopy|.
+- Go to the |discoursePageForPsychopy|
 - There are friendly, useful experts there
 
-  - few, if any, can help you with your language, of course
-  - many more who can help you understand the underlying code of |PsychoPy|
+  - When posting
+  
+    - select *Development* under ``Category``
+    - add the tag *translation*
+  - How people on the Forum might help you
+  
+    - Few, if any, can help you with your language, of course
+    - Many more who can help you understand the underlying code of |PsychoPy|
 
 .. |discoursePageForPsychopy| raw:: html
 
@@ -648,7 +692,9 @@ There are two files this time
   - make sure that the following two files are checked
   
     - ``messages.po``
-    - ``tips_[ll_CC].txt`` 
+    - ``tips_tr_TR.txt`` (using Turkish in Turkey as the example)
+
+**IMPORTANT**: Again, be sure to **UN**-check the ``.mo`` file if it is checked.
 
 4d2: Commit changes
 ------------------------------------
@@ -676,7 +722,8 @@ There are two files this time
 
 - On *GitHub* (origin [AKA your online "fork"])
 
-  - Click ``Compare & pull request``
+  - Click ``Contribute``
+  - Choose ``Open pull request``
   - Make sure it says *Able to merge* in the box at the top
   - Leave a comment only if you think it's necessary (it shouldn't be for translations)
   - Click ``Create pull request``

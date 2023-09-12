@@ -113,8 +113,8 @@ Step 2: *Fork* the *psychopy* repository
 
 **NOTE**: Technically and more generally, it's copying a repository, while also disconnecting it from previous committers
 
-Step 2a: Find the *psychopy* repository
------------------------------------------
+Step 2a: Find the *psychopy/psychopy* repository
+-------------------------------------------------
 
 - While logged in to *GitHub*
     
@@ -124,29 +124,16 @@ Step 2a: Find the *psychopy* repository
   - You should see the following at the top of the search list: `psychopy/psychopy` 
   - Click it
   - You should land here: |landingPageForPsychopyPsychopyRepo|
+  - You could also just type that URL in to your browser
 
 .. |landingPageForPsychopyPsychopyRepo| raw:: html
 
   <a href="https://github.com/psychopy/psychopy" target="_blank">https://github.com/psychopy/psychopy</a>
 
-Step 2b: Ensure you are on the *release* branch
-------------------------------------------------
-**NOTE**: more on *branches* later
-
-- |PsychoPy| has two branches: *dev* and *release*
-- How to check you are on the *release* branch: 
-
-  - The pull-down menu near the upper left should say *release*, not *dev* (or anything else for that matter)
-
-.. image:: ../_images/trnslWkshp_releaseBranchBeforeForking.png
-  :align: center
-  :width: 300
-  :alt: Screenshot of what the upstream repository at psychopy/psychopy should look like when the release branch is selected
-
 ..
 
-Step 2c: *Fork* the *release* branch
-----------------------------------------
+Step 2b: *Fork* the *psychopy/psychopy* repository
+----------------------------------------------------
 
 - Find the ``Fork`` pull-down menu located near the upper right corner
 
@@ -158,7 +145,7 @@ Step 2c: *Fork* the *release* branch
 ..
 
 - Choose the following: ``+ Create a new fork``
-- Check the box labeled as follows: ``Copy the release branch only``
+- **IMPORTANT**: Be sure to **UN**-Check the box labeled as follows: ``Copy the ____ branch only``
 
 What is a *fork*?
 ------------------
@@ -348,6 +335,7 @@ Step 5: Continual *Git* workflow
 --------------------------
 
 - Go back to *GitHub Desktop* on your local machine
+- Make sure you are on the *release* branch
 - ``Repository > Pull``
 
   - This updates your local copy (your clone) with your fork (*origin*), which was just synchronized with the *upstream* repository

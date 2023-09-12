@@ -227,7 +227,7 @@ Step 4: The pull request
   - you can start a pull request from either of the following:
   
     - the ``Pull requests`` tab at the top
-    - the ``Contribute`` tab next to the ``Sync fork`` tab
+    - the ``Contribute`` tab next to the left of the ``Sync fork`` tab
 
 4c1: Double-checking source and destination
 -------------------------------------------
@@ -294,7 +294,7 @@ Step 4: The pull request
 4g2: Is a description necessary?
 ------------------------------------
 
-- But truth be told, descriptions generally won't be of much use to translators unless you've done something unusual, and I can't think of anything that would be unusual.
+- truth be told, descriptions generally won't be of much use to translators unless you've done something unusual, and I can't think of anything that would be unusual.
   
   - A *pull request* for a translation is only going to involve 1-3 files (though there may be many, many lines changed)
   - But even if there are many lines changed, the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language
@@ -333,6 +333,10 @@ Yes
 - From *GitHub Desktop*
   
   - ``Repository > Pull``
+
+Or the faster way in *GitHub Desktop*
+
+- ``Branch > Update from Upstream
 
 FINISHED!!
 
