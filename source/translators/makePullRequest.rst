@@ -114,8 +114,6 @@ Why the prefix?
 
 - For example:
 
-  - ``DOCS: Update mappings.txt for Thai``
-
   - ``DOCS: Add translations to Portuguese in Brazil``
 
   - ``DOCS: Add start-up tips to Modern Standard Arabic`` 
@@ -333,13 +331,5 @@ Yes
 - From *GitHub Desktop*
   
   - ``Repository > Pull``
-
-Or the faster way in *GitHub Desktop*
-
-- ``Branch > Update from Upstream
-
-FINISHED!!
-
-The rest is optional. It might help you with some concepts though.
  
 On to :ref:`other things to consider`

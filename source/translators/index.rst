@@ -118,17 +118,12 @@ thorough proficiency in at least three things, requiring months or years of stud
 
   <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>
 
-Quick overview of steps
---------------------------------
-
-- preliminaries
-- setting up the *git* / *GitHub* workflow
-- working on translations and making associated pull requests
 
 Today
 -----------------------------------
 
-We're going to work through these one by one, along with a couple of extra topics, if there's time
+- We're going to work through the first two of these, where we will make pull requests at the same time we do translations
+- Therefore, steps 3-5 are optional topics or elaborations
 
 .. toctree::
     :maxdepth: 1

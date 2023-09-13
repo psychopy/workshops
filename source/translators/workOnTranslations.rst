@@ -43,7 +43,7 @@ Screenshot of localization files in |PsychoPy|
 
 ``ll_`` (language), follwed by ``_CC`` (country), for example:
 
-- |zh_CN| for Chinese in the PRC (simplified)\*
+- |zh_CN| for Chinese in the PRC (simplified)
 - |zh_TW| for Chinese in the ROC (complex)
 - |ko_KR| for Korean in South Korea
 - |th_TH| for Thai in Thailand
@@ -407,7 +407,8 @@ Step 3: Translating in *Poedit*
   - Go to: ``Additional keywords``
 - The following keyword should be in that box (with the preceding underscore): 
  
-  - ``_translate`` 
+``_translate`` 
+
 - If it **isn't**, type it in  
 - Save your work (``File > Save``)
 
@@ -524,7 +525,7 @@ Note A: Leave certain technical terms alone
 - These are usually indicated with an uppercase first letter
 - Check the Japanese localization (``ja_JP/LC_MESSAGES/messages.po``) if in doubt
 
-  - The Simplified Chinese ``.po`` file also has some examples of this already
+  - The Simplified Chinese ``.po`` file also has some examples
 
 Note B: Formatting arguments
 --------------------------------------------
@@ -540,7 +541,7 @@ If there are formatting arguments in the original string (``%s``, ``%(first)i``)
 
   - (and/or Simplified Chinese, if you are in that language)
 
-\* As you already know, word order changes across languages. Therefore, the placement of these formatting arguments within the translated string may differ from the US-English string. 
+\* Word order changes across languages, of course. So the placement of these formatting arguments within the translated string may differ from the US-English string. 
 
 Note C1: Using the Japanese ``.po`` file for guidance
 -------------------------------------------------------
@@ -697,14 +698,13 @@ There are two files this time
 **IMPORTANT**: Again, be sure to **UN**-check the ``.mo`` file if it is checked.
 
 4d2: Commit changes
-------------------------------------
+----------------------
 
 - Commit these changes
 
   - add the following message to the box underneath with the temporary text *Summary (required)*
 
-    - ``DOCS: Add some startup tips to Turkish`` (for example)
-    - ``DOCS: Add some startup tips to Spanish in Mexico`` (another example)
+    - ``DOCS: Add some startup tips to Spanish in Mexico`` (for example)
     
       -(must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
     - (ignore the box labeled ``Description`` for now)
