@@ -351,9 +351,18 @@ Step 5: Continual *Git* workflow
 - You will be given a choice of repos and branches, but **DO NOT GO WITH THE DEFAULT**\* 
 - Instead, choose ``upstream/release``
   - (it might help to type ``release`` into the *Filter* box)  
-- 
+- Click the tab at the upper right, which should *Push origin* along with an arrow and a number (the number of commits that it's pushing to *origin*)
 
-\* Currently, the default is ``upstream/dev`` for some reason. We don't know how to change this in *GitHub Desktop* for the moment. Choosing that would merge the upstream *dev* branch into your local *release* branch, a disastrous merge. Also, do not choose ``Branch > Update from upstream/master``. This would have the same disastrous effect.
+\* Currently, the default is ``upstream/dev`` for some reason. We don't know how to change this in *GitHub Desktop* for the moment. Choosing that would merge the upstream *dev* branch into your local *release* branch, a disastrous merge.
+
+5d: **AVOID** one method in *GitHub Desktop*
+---------------------------------------------
+
+- Do not choose the following
+
+``Branch > Update from upstream/master``
+
+- This would have the same disastrous effect as choosing the default (``upstream/dev``) in the previous slide
 
 Step 6: Continual *Git* workflow
 -----------------------------------
