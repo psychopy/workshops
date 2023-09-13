@@ -345,6 +345,9 @@ Step 3: Translating in *Poedit*
 - On a Mac, choose this instead: ``Poedit > Settings``
 - Find the following tab: ``General``
 - Add your name and e-mail address where indicated
+- And *IMPORTANTLY**
+
+  - **UN**-check the box that says ``Automatically compile MO file when saving`` 
 
 3d2: ``Advanced`` tab
 ---------------------
