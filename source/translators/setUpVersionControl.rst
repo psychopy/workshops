@@ -344,18 +344,16 @@ Step 5: Continual *Git* workflow
 
   - The reason is that other translators on your team may have changed things since you last did, making your copy out of date
 
-AVOID FOR NOW: *pull* then *push*
------------------------------------
+5c: A faster approach (no need to go online)
+-----------------------------------------------
 
-- If you happen to be tempted to do so, avoid the  trick below for now in *GitHub Desktop*. 
-- Currently, this particular software is selecting the *dev* branch as a default
+- ``Branch > Merge into current branch``
+- You will be given a choice of repos and branches, but **DO NOT GO WITH THE DEFAULT**\* 
+- Instead, choose ``upstream/release``
+  - (it might help to type ``release`` into the *Filter* box)  
+- 
 
-  - ... and there doesn't seem to be a way make it refer to the *release* branch 
-- This means that the command below would merge the upstream *dev* branch into your local *release* branch
-
-  - ... which would be disastrous
-
-``Branch > Update from upstream/master``
+\* Currently, the default is ``upstream/dev`` for some reason. We don't know how to change this in *GitHub Desktop* for the moment. Choosing that would merge the upstream *dev* branch into your local *release* branch, a disastrous merge. Also, do not choose ``Branch > Update from upstream/master``. This would have the same disastrous effect.
 
 Step 6: Continual *Git* workflow
 -----------------------------------
