@@ -344,19 +344,18 @@ Step 5: Continual *Git* workflow
 
   - The reason is that other translators on your team may have changed things since you last did, making your copy out of date
 
-Alternative: *pull* then *push*
----------------------------------
+AVOID FOR NOW: *pull* then *push*
+-----------------------------------
 
-There is an alternative to the *sync-pull* approach
+- If you happen to be tempted to do so, avoid the  trick below for now in *GitHub Desktop*. 
+- Currently, this particular software is selecting the *dev* branch as a default
 
-- *pull* from *upstream*, then *push* to *origin*
+  - ... and there doesn't seem to be a way make it refer to the *release* branch 
+- This means that the command below would merge the upstream *dev* branch into your local *release* branch
 
-- ``Branch > Update from upstream/master``
-  
-  - (It might tell you that it's already up to date) 
-- ``Repository > Push`` (if there were changes from *upstream*)
+  - ... which would be disastrous
 
-**NOTE**: This is faster, but I tend to avoid it because my understanding of *Git* is limited, and this allows me to keep things simple.
+``Branch > Update from upstream/master``
 
 Step 6: Continual *Git* workflow
 -----------------------------------
