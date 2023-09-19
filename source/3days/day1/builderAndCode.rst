@@ -345,7 +345,6 @@ OK now you should have a timer to show participants how far through a trial they
 What next?
 ---------------------------------------------
 
-OK so we have covered the basics of making a task and how to do exciting dynamic things with the mouse. Let's touch on a relatively new response type...
+Let's get things moving, and talk about :ref:` dynamic`
 
-:ref:`typedResponses3days`
 

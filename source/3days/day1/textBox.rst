@@ -36,8 +36,3 @@ Make a digit span task. Participants will see 3 numbers and type their response.
 - A routine to show the digits one by one in a random order
 - A routine to gather the responses. Participants type a response and click a button to end the routine.
 - Both of these routines to repeat 5 times 
-
-What next?
-----------------------------------
-
-:ref:`builderAndCode`
