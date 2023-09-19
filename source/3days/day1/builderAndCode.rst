@@ -345,6 +345,6 @@ OK now you should have a timer to show participants how far through a trial they
 What next?
 ---------------------------------------------
 
-Let's get things moving, and talk about :ref:` dynamic`
+Let's get things moving, and talk about :ref:`dynamic`
 
 
