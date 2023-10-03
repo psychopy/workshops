@@ -316,37 +316,32 @@ Step 3: Translating in *Poedit*
 
   <a href="https://poedit.net/download" target="_blank">Poedit download page</a>
 
-3c: Find your ``.po`` file
------------------------------------
-
-- Start *Poedit*
-- open the ``.po`` file for the language you're working on:
-
-  - ``.../psychopy/psychopy/app/locale/[your ll_CC folder]/LC_MESSAGES/messages.po``
-
-- For example, for Thai in Thailand:
-
-``psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
-
-3d: Settings that don't change
+3c: General settings
 --------------------------------
 
+- Start *Poedit*
 - Once set, the settings below in *Poedit* don't really change
 
-  - unless you change your email, or the location of your files on your computer, etc.
-- One exception is the version of |PsychoPy| you're using to translate
-
-  - This is covered last   
-
-3d1: ``General`` tab (Name and email)
+3c1: ``General`` tab (Name and email)
 ----------------------------------------
 
 - On a PC, choose the following: ``File > Preferences``
 - On a Mac, choose this instead: ``Poedit > Settings``
 - Find the following tab: ``General``
-- Add your name and e-mail address where indicated
+- For convenience, make sure that the box with the following label is **UN**-checked:
 
-3d2: ``Advanced`` tab
+  - ``Automatically compile MO file when saving`` 
+  - Note that this is not strictly necessary as we have set Git to ignore the ``.mo`` file, but compiling this file is unnecessary and takes up processing time
+
+3c2: What about my name and email?
+------------------------------------
+- Do not provide your name or email
+
+  - Doing so will list your name and email in a public place (GitHub), where it doesn't really need to be  
+- Instead, just leave these fields blank
+
+
+3c3: ``Advanced`` tab
 ---------------------
 
 - click the ``Advanced`` tab in the same window
@@ -359,7 +354,22 @@ Step 3: Translating in *Poedit*
     
     - make sure this is checked
 
-3d3: Language and language team
+
+3d: Settings specific to a ``.po`` file
+----------------------------------------
+
+- ``File > Open``
+  
+  - find the ``.po`` file for the language you're working on:
+  
+    - ``.../psychopy/psychopy/app/locale/[your ll_CC folder]/LC_MESSAGES/messages.po``
+
+- For example, for Thai in Thailand:
+
+``psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
+
+
+3d1: Language and language team
 -----------------------------------
 
 - Go to: ``Translation > Properties``
@@ -377,7 +387,7 @@ Step 3: Translating in *Poedit*
   
   - *UTF-8 (recommended)* 
 
-3d4: Paths (1)
+3d2: Paths (1)
 ------------------
 
 - under the tab labeled: ``Sources Paths``
@@ -391,15 +401,14 @@ Step 3: Translating in *Poedit*
 
 **NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
 
-3d5: Paths (2)
+3d3: Paths (2)
 -----------------
 
-- under the tab labeled: ``Sources Paths``
-- in the box labeled: ``Paths``
-  
-  - ``psychopy/``
+- under the tab labeled: ``Sources Paths``...
+- in the box labeled: ``Paths``...
+- there should be a dot (``.``)
 
-3d6: keywords
+3d4: keywords
 -----------------
 
 - under the tab labeled: ``Sources Keywords``
@@ -412,39 +421,45 @@ Step 3: Translating in *Poedit*
 - If it **isn't**, type it in  
 - Save your work (``File > Save``)
 
-3e: The setting that does change
----------------------------------
+3e: A setting that might change
+----------------------------------
 
 - go to: ``Translation > Properties``
 
   - then to the tab: ``Translation Properties``
 
     - then: ``Project name and version``
-  - Type in *PsychoPy* followed by the |PsychoPy| version you are working on, if it is not already up to date (e.g., ``PsychoPy 2023.1.0``, or the version of |PsychoPy| you are working on, hopefully the latest release)
+  - If it is not already up to date, type in *PsychoPy* followed by the |PsychoPy| version you are working on (e.g., ``PsychoPy 2023.1.0``, or the version of |PsychoPy| you are working on, hopefully the latest release)
   - This will tell subsequent translators whether they need to update the *strings* (i.e., if their version of |PsychoPy| is more recent)
   - We discuss *strings* next
 
 3f: Generate current list of translatable strings
 ----------------------------------------------------
 
-- Only one person per language group should do this
-
-  - (duplicated effort can result in merge conflicts) 
 - The elements you can translate are called *strings*
 
-  - Select the following
- 
-    - ``Translation > Update from Source Code``
-  - You should subsequently see a list of strings in English that need translating into your language
+  - This process is straightforward if you are the sole translator on the language
+- But translation teams can run into merge conflicts
   
-    - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
+  - In such cases, make sure that you reduce the chances of merge conflicts by doing the following
+
+    1. synchronise your repositories
+    2. establish a team strategy (covered after the next slide)
+
+3f1: Generate the list
+-------------------------
+ 
+- Choose: ``Translation > Update from Source Code``
+- You should subsequently see a list of strings in English that need translating into your language
+  
+  - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
 
 **NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
 
 3g: Group strategy: Sort and show string ID 
 ----------------------------------------------
 
-- This is for collaboration in a team
+- This is for collaboration in a team, after the strings are updated
 
   - Choose: ``View > Show String ID``
   - Choose: ``View > Sort by File Order``
@@ -469,6 +484,8 @@ Step 3: Translating in *Poedit*
 
 3i: Make a pull request for ``messages.po``
 ----------------------------------------------
+
+- This involves several steps, described next
 
 3i1: Stage changes
 ---------------------
