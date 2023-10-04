@@ -21,7 +21,10 @@ Coding an experiment using PsychoPy coder
      }
      </style>
 
-  **When?** September 18th, 15:30 - 17:00 (UK time)
+  **When?** 
+
+  * September 18th, 15:30 - 17:00 (UK time) **[fully booked]**
+  * October 2nd, 15:30 - 17:00 (UK time)
 
   **Where?** Virtual (Zoom)
 
@@ -41,7 +44,7 @@ Coding an experiment using PsychoPy coder
 
    <span style="color: green;">Spaces limited to 20 per session. </span>
    
-  `Book (£20) <https://pavlovia.org/store/workshops/2023-9-18-psychopy-creating-experiments-topiccoder>`_
+  `Book (£20) <https://pavlovia.org/store/workshops/2023-10-2-psychopy-coding-workshop>`_
 
   `Apply for waiver <https://forms.clickup.com/4570406/f/4bf96-7128/38SE053NS2O5A8Z6SR>`_
 

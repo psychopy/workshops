@@ -4,16 +4,6 @@
 Building better experiments
 ==============================
 
-Using Builder
---------------------------------------
-
-Today we will work through making a `Numerical Stroop <https://run.pavlovia.org/Hirst/workshopnumberstroop/>`_  task in PsychoPy. (Try it on your phone!)
-
-.. image:: /_images/number_stroop_qr.png
-	:width: 40%
-	:align: center
-
-If your PsychoPy isn't open already - open it now!
 
 What makes a PsychoPy experiment?
 --------------------------------------
@@ -21,6 +11,19 @@ What makes a PsychoPy experiment?
 A builder experiment has three main sections. To start making an experiment we add routines to our flow and add components to our routines.
 
 .. image:: /_images/builder_terms.png
+
+Creating a routine
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A Routine is the basic building block of PsychoPy experiments. You can add routines to your flow by selecting "insert routine" on your flow panel > new > name your routine and insert on the flow. 
+
+.. image:: /_images/routines_basics.png
+	:width: 90%
+	:align: center
+
+.. nextslide::
+
+The next step is to add components to your routine. Think about what your trial will present, and how long each stimulus is on the screen for. For example, we might want some text (you can find this in the stimuli section) and a keyboard response (you can find this in the responses section).
 
 Gather participant info
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -32,18 +35,8 @@ Every experiment starts with a dialog box to gather some info about the particip
 	:align: center
 
 .. note::
-	In the current release (2022.2.4) check box options are not yet supported online.
+	In the current release (2023.2.2) check box options are not yet supported online.
 
-Creating a routine
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A Routine is the basic building block of PsychoPy experiments. They could be complex (e.g. a single trial) or simple (e.g. an Inter-Trial-Interval presenting a fixation cross). 
-
-.. image:: /_images/routines_basics.png
-	:width: 90%
-	:align: center
-
-To begin with, we want a routine to present two numbers on the screen.
 
 Changing things trial-by-trial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,28 +55,15 @@ Then make sure to use that variable to set the parameter of a component on every
 	:width: 60%
 	:align: center
 
-Let's start by presenting a different pair of numbers on each trial and allowing the participant to press the left and right arrow keys to press a number.
-
-
-*Warm up exercise (10 mins)*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-- Make the size (letter height) of the numbers change trial.
-- Add a column to the conditions spreadsheet to note if this trial is congruent (numerically larger number is also physically larger) or incongruent (numerically larger number is physically smaller). 
-- Add an instructions routine and a thanks routine to the experiment. 
-
-When you are finished, come back to the main session and collect one run of your task so that we can talk through the data file.
-
 .. _keyboardAccuracy:
 
 Storing accuracy 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is very easy to store accuracy from a keyboard in PsychoPy. In our experiment, the participant can press either the left or right arrow key. So, we add a column to our spreadsheet to indicate what the correct answer is. 
+To store accuracy, we need to consider what is the correct key press on each trial. We can therefore add a column to our conditions spreadsheet to indicate what is the correct answer on each trial (in the example below the participant is asked on each trial which number is numerically larger, the correct asnwer is indicated by "corrAns")
 
 .. figure:: /_images/keyboard_acc_spreadsheet.png
 
-	In this example, the numerically larger number is the correct answer. The corrAns column tells us which key is the correct answer. 
 
 .. nextslide::
 
@@ -114,20 +94,6 @@ e.g.
 Note: these are all cases where the components would be identical between blocks.
 
 
-Blocking: Our example
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Imagine we want our task to include a block of neutral trials (i.e. both numbers always the same size) and a block of congruent incongruent trials (i.e. the size of the numbers change trial by trial). 
-
-We need to create a total of 3 conditions files:
-
-.. rst-class:: build
-
-	* neutral_conditions.xlsx - A spreadsheet with neutral trials.
-	* congruency_conditions.xlsx - A spreadsheet with con/incon trials.
-	* blocks.xlsx - A spreadsheet listing neutral_conditions.xlsx and congruency_conditions.xls
-
-
 The natural approach
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -153,23 +119,17 @@ Blocking: Case 2
 
 If you do have two blocks that contain very different stimuli/components the approach to take is to control the number of times each block repeats using an outer-loop. 
 
+Think of nReps as a way of turning on or off different routines on your flow, if nReps is 0 then that routine will not be presented. 
+
 .. image:: /_images/case2_blocks.png
 
 
-*Exercise (15 mins)*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-- Rather than a randomised order of blocks, make it so that the neutral block always occurs first.
-- Add a routine on your flow to introduce each block. 
-- Add a column to your spreadsheet to present different text before each block e.g. "Block 1 of 2" or "Block 2 of 2"
-
-
-Solution
+Presenting blocks in a set order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To make blocks appear in a set order, we would set our loop type to "sequential".
 
-For our block introduction, if a routine should be presented once per block, it would be inside the blocks loop, but *before* the trials loop. 
+To introduce each block you can add a routine inside the blocks loop, but outside of the trials loop i.e. to introduce each set of trials.
 
 .. image:: /_images/block_intro.png
 
@@ -179,9 +139,7 @@ For our block introduction, if a routine should be presented once per block, it 
 Counterbalanced designs
 --------------------------------------
 
-Counterbalancing your blocks is really just an extension of our exercise, where we've set the blocks to operate in a particular order rather than leaving PsychoPy to randomize them.
-
-The only difference is, we need two (or more) orders, one per group.
+Counterbalancing your blocks involves presenting blocks in a particular order for each group.
 
 The steps we need for counterbalancing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

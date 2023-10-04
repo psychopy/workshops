@@ -106,3 +106,12 @@ For more inspiration look in the folder::
 
 You'll find working examples of a range of these stimulus setups
 
+
+
+What next?
+---------------------------------------------
+
+OK so we have covered the basics of making a task and how to do exciting dynamic things with the mouse. Let's touch on a relatively new response type...
+
+:ref:`typedResponses3days`
+
