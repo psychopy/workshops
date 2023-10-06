@@ -32,7 +32,7 @@ What is *Git*?
 **NOTE**: *Git* works best with plain-text documents (UTF-8 encoding included), but not binary files like *Microsoft Word* or *Excel* documents
 
 What is *GitHub*?
-------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 - a web-based service (not on your computer)
 - centralizes *Git* repositories in the cloud
@@ -41,7 +41,7 @@ What is *GitHub*?
 - simplifies collaboration
 
 Basic *Git* workflow and terminology
---------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../_images/openSourceGitFlow.png
   :align: center
@@ -50,10 +50,10 @@ Basic *Git* workflow and terminology
 
 ..
 
-(Creative Commons license, courtesy of openclipart.org, image `278845`, git-opensource-workflow, by developingo)
+(Creative Commons license, courtesy of openclipart.org, image `278845`, git-opensource-workflow, by *developingo*)
 
-Step-by-step
-----------------
+Setting up the *Git* workflow: step by step
+-----------------------------------------------
 
 Now we'll go through setting up the *Git* workflow for |PsychoPy|
 
@@ -64,7 +64,7 @@ Step 1: Get *Git* and *GitHub* working
 - *GitHub* is an free online system, for which you need to sign up
 
 Step 1a: Install *Git*
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - download *Git* |downloadGitHere| 
 
@@ -84,7 +84,7 @@ Step 1a: Install *Git*
   <a href="https://youtu.be/F02LEVYEmQw" target="_blank">YouTube video</a>
 
 Step 1b: Sign up for *GitHub*
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to |signUpForGithubHere|
 - Click the following button: ``Sign up for GitHub``
@@ -114,7 +114,7 @@ Step 2: *Fork* the *psychopy* repository
 **NOTE**: Technically and more generally, it's copying a repository, while also disconnecting it from previous committers
 
 Step 2a: Find the *psychopy/psychopy* repository
--------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - While logged in to *GitHub*
     
@@ -133,7 +133,7 @@ Step 2a: Find the *psychopy/psychopy* repository
 ..
 
 Step 2b: *Fork* the *psychopy/psychopy* repository
-----------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Find the ``Fork`` pull-down menu located near the upper right corner
 
@@ -147,8 +147,10 @@ Step 2b: *Fork* the *psychopy/psychopy* repository
 - Choose the following: ``+ Create a new fork``
 - **IMPORTANT**: Be sure to **UN**-Check the box labeled as follows: ``Copy the ____ branch only``
 
+  - That is, copy **all** the branches 
+
 What is a *fork*?
-------------------
+^^^^^^^^^^^^^^^^^^^^
 
 - a *fork* is your own (online) copy (on *GitHub*) of the all the code required to build the current (in this case, *release*) version of |PsychoPy|
 - it is "yours" in the sense that...
@@ -158,24 +160,22 @@ What is a *fork*?
   
     - for your own purposes (it's open source, after all); or
     - in order to contribute back to the project (more common)
-  
-    - The latter is what you'll be doing as translators
+  - In fact, the latter is what you'll be doing as translators
 
 
-Step 3: download a tool to avoid using the command line
--------------------------------------------------------------
+Step 3: download a tool to avoid using the command line (for now)
+----------------------------------------------------------------------
 
 - Command-line *Git* actually turns out to be very useful
 - But it is often intimidating at first
 - So there are many GUIs to make *Git* easier to use
 
 Popular tools
----------------
+^^^^^^^^^^^^^^^^^
 
 - popular, but relatively complex GUI tools for working with *Git*
 
   - *GitKraken*, *PyCharm*, *Visual Studio Code*, etc.
-  
 - ideal starter option for translators: 
 
   - |homepageForGithubDesktop|
@@ -190,7 +190,7 @@ Popular tools
     <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
 
 What if I use *Linux*?
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 - *GitHub Desktop* not natively designed for *Linux* 
   
@@ -216,7 +216,7 @@ What if I use *Linux*?
 
 
 Step 3a: Download and install *GitHub Desktop*
------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to the homepage for |homepageForGithubDesktop|
 
@@ -235,7 +235,7 @@ Step 4: Cloning
     - you will remain as the sole committer 
 
 Step 4a: How to start cloning from *GitHub Desktop*
------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - in *GitHub Desktop* on a Mac
 
@@ -245,10 +245,10 @@ Step 4a: How to start cloning from *GitHub Desktop*
   - ``File > Clone repository``
     
     - choose *psychopy* 
-  - (In *GitFiend*, I don't think  you sign in. You just provide the repository URL, which can be found in the *GitHub* repository under the ``<> Code`` button, where you then choose the ``Local`` tab, then the ``https`` link)
+  - (In *GitFiend*, you don't sign in. You just provide the repository URL, which can be found in the *GitHub* repository under the ``<> Code`` button, where you then choose the ``Local`` tab, then the ``https`` link)
 
 Step 4b: How to finish cloning
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
 - *psychopy* should be listed because it's already forked in your online account
  
@@ -258,7 +258,7 @@ Step 4b: How to finish cloning
     - This might take a minute, depending on your connection speed
 
 The result of cloning
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - full, updated\* copy on your local computer of all the files from current release of |PsychoPy|
 
@@ -266,7 +266,7 @@ The result of cloning
   - though you *may* need to add a new one (more on this soon)
 - Fully connected to your online fork of the repository on *GitHub* 
 
-\* It's updated at the moment you clone it, but as soon as someone else gets their commit(s) pulled in *upstream*, yours will be out of date. But there's a way to deal with this. I will cover this quite soon below.
+\* It's updated at the moment you clone it, but as soon as someone else gets their commit(s) pulled in *upstream*, yours will be out of date. But there's a way to deal with this (which is the whole point of *Git*). I will cover this quite soon below.
  
 
 Nomenclature after forking and cloning
@@ -289,7 +289,7 @@ Nomenclature after forking and cloning
       - ``psychopy/psychopy``
 
 What does all this mean?
-----------------------------
+---------------------------
 
 - You have established the means to do the following:
 
@@ -319,7 +319,7 @@ Step 5: Continual *Git* workflow
 \* And follow up any work fairly soon with a commit, push, and pull request (more on this later)
 
 5a: *Sync* (from *upstream*) to *origin*
--------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to your *fork* online
  
@@ -332,7 +332,7 @@ Step 5: Continual *Git* workflow
 \* Note that this can only do something if there is, indeed, something new to synchronize from *upstream* 
 
 5b: *Pull* from *origin*
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go back to *GitHub Desktop* on your local machine
 - Make sure you are on the *release* branch
@@ -345,7 +345,7 @@ Step 5: Continual *Git* workflow
   - The reason is that other translators on your team may have changed things since you last did, making your copy out of date
 
 5c: A faster approach (no need to go online)
------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - ``Branch > Merge into current branch``
 - You will be given a choice of repos and branches, but **DO NOT GO WITH THE DEFAULT**\* 
@@ -356,7 +356,7 @@ Step 5: Continual *Git* workflow
 \* Currently, the default is ``upstream/dev`` for some reason. We don't know how to change this in *GitHub Desktop* for the moment. Choosing that would merge the upstream *dev* branch into your local *release* branch, a disastrous merge.
 
 5d: **AVOID** one method in *GitHub Desktop*
----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Do not choose the following
 
