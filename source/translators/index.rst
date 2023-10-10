@@ -35,12 +35,12 @@ Translations in |PsychoPy|
 
 - |PsychoPy| now used worldwide
 
-  - needs to be available in different languages for experiment designers
+  - In the spirit of diversity and inclusion, it should also be available in different languages for experiment designers
 - starting with v1.81
 
   - many parts of the |PsychoPy| app 
   
-    - translatable into languages with unicode character sets
+    - translatable into written languages with unicode character sets
   
 How experiment designers implement this in |PsychoPy|
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,7 +77,7 @@ Translators...
 #. commit and push those changes to *GitHub*
 #. make a *pull request* on *GitHub* to request incorporation of those changes into the current release of |PsychoPy|
 
-**NOTE**: The ``.mo`` file is automatically generated during the next minor (aka "bug-fix") release of |PsychoPy|
+**NOTE**: The ``.mo`` file will automatically be generated during the subsequent minor (aka "bug-fix") release of |PsychoPy|
 
 Prerequisites to translating
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

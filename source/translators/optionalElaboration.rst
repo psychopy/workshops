@@ -45,23 +45,6 @@ Example
 - You switch to *Terminal* and pick up where you left off in *GitHub Desktop*
 - Then you go to *Visual Studio Code* and continue
 
-Notes on *Git* forks 
------------------------
-
-Is your fork really "yours"?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-- Forks are "yours" in open-source software
-
-  - to an extent 
-- Your fork of |PsychoPy| is 
-
-  - "yours" in that you can do what you want with it
-  - but **not** "yours" in the sense that you still need to abide by the the particular |license-for-use| that applies to |PsychoPy|
-
-.. |license-for-use| raw:: html
-
-  <a href="https://psychopy.org/about/index.html#license-for-use" target="_blank">license</a>
-
 Notes on *Git* branches
 ---------------------------
 
