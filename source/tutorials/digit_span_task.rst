@@ -12,6 +12,8 @@ What is a Digit Span Task?
 
 A digit span task is a basic test of working memory. Participants are presented a set of numbers and then asked to recall as many digits as they can. In this task we will use the `TextBox <https://www.psychopy.org/api/visual/textbox.html>`_ component to present text stimuli and to gather typed responses.
 
+An online version is available `here  <https://run.pavlovia.org/demos/digit-span-task/>`_ .
+
 Setting up our experiment 
 ----------------------------------------------
 
@@ -72,3 +74,5 @@ Exercise
 
 1. Add a routine to the start of your experiment and ask participants to type their name and occupation. 
 2. Turn this digit span task into a letter span task using code. *Hint: you can ` generate a random letter in python <https://www.kite.com/python/answers/how-to-generate-a-random-letter-in-python>`_ or use a random integer to index a letter from a list e.g. :code:`myList[randint()]`
+
+
