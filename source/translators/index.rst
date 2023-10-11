@@ -1,23 +1,27 @@
 .. _translatorWorkshopIndex:
 
+=====================================
 PsychoPy translation workshop
 =====================================
 
-- You can view these materials as web pages:
-
-  - |viewTranslatorPages| 
+- You can view these materials |translatorWkshpPages| 
  
-- or as slides:
+- or |translatorWkshpSlides|
 
-  - |viewTranslatorSlides|
+- or without the training on *git*, |translatorAsDeveloperPage|
 
-.. |viewTranslatorPages| raw:: html
+.. |translatorWkshpPages| raw:: html
 
-  <a href="https://workshops.psychopy.org/translators" target="_blank">https://workshops.psychopy.org/translators</a>
+  <a href="https://workshops.psychopy.org/translators" target="_blank">as web pages</a>
 
-.. |viewTranslatorSlides| raw:: html
+.. |translatorWkshpSlides| raw:: html
 
-  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">https://workshops.psychopy.org/slides/translators</a>
+  <a href="https://workshops.psychopy.org/slides/translators" target="_blank">as slides</a>
+
+.. |translatorAsDeveloperPage| raw:: html
+
+  <a href="https://psychopy.org/developers/localization.html" target="_blank">under the developer pages at PsychoPy</a>
+
 
 Introductions and expectations
 --------------------------------
@@ -26,25 +30,36 @@ Introductions and expectations
 - Who are you?
 - What are we trying to achieve?
 
-Need for translations
--------------------------
+Translations in |PsychoPy|
+-----------------------------
 
 - |PsychoPy| now used worldwide
 
-  - needs to be available in different languages
+  - In the spirit of diversity and inclusion, it should also be available in different languages for experiment designers
 - starting with v1.81
 
   - many parts of the |PsychoPy| app 
   
-    - translatable into languages with unicode character sets
-- a translation
-
-  - changes the language that the **experiment-ER** sees
+    - translatable into written languages with unicode character sets
   
-**NOTE**: This is **NOT** what the participant sees. **THAT** is under the control of the experimenter 
+How experiment designers implement this in |PsychoPy|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Visualisation of how |PsychoPy| does translations
---------------------------------------------------
+- Mac
+  
+  - ``PsychoPy > Preferences > Application > locale``
+- PC
+  
+  - ``File > Preferences > Application > locale``
+
+    - (from here you **would**\* choose the language)
+- Quit and restart |PsychoPy| 
+
+\* **WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
+
+
+Visualisation of how |PsychoPy| provides translated menus, etc.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../_images/trnslWkshp_poMoPsychoPy.png
   :align: center
@@ -53,36 +68,19 @@ Visualisation of how |PsychoPy| does translations
 
 ..
 
-How experimenters implement this in |PsychoPy|
-------------------------------------------------
-
-- On a Mac
-
-  - Mac
-  
-    - ``PsychoPy > Preferences > Application > locale``
-  - PC
-  
-    - ``File > Preferences > Application > locale``
-  - (from here you **would**\* choose the language)
-
-- Quit and restart |PsychoPy| 
-
-\* **WARNING**: Be careful playing with this as you might end up with menus that you cannot read, including how to change the locale back! 
-
 Rough overview of how translators make this happen
-----------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Translators...
 
-1. translate "strings" in a ``messages.po`` file
-2. commit and push those changes to *GitHub*
-3. make a *pull request* on *GitHub* to request incorporation of those changes into the current release of |PsychoPy|
+#. translate "strings" in a ``messages.po`` file
+#. commit and push those changes to *GitHub*
+#. make a *pull request* on *GitHub* to request incorporation of those changes into the current release of |PsychoPy|
 
-**NOTE**: The ``.mo`` file is automatically generated during the next minor (aka "bug-fix") release of |PsychoPy|
+**NOTE**: The ``.mo`` file will automatically be generated during the subsequent minor (aka "bug-fix") release of |PsychoPy|
 
 Prerequisites to translating
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 thorough proficiency in at least three things, requiring months or years of study:
 
@@ -91,7 +89,7 @@ thorough proficiency in at least three things, requiring months or years of stud
 - any language (or dialect) that is not **American** English to translate into (e.g., Korean, Singapore English)
 
 **NOT** prerequisites
--------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 (since today's workshop covers these topics)
 
@@ -120,7 +118,7 @@ thorough proficiency in at least three things, requiring months or years of stud
 
 
 Today
------------------------------------
+---------
 
 - We're going to work through the first two of these, where we will make pull requests at the same time we do translations
 - Therefore, steps 3-5 are optional topics or elaborations
