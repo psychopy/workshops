@@ -41,7 +41,7 @@ Screenshot of localization files in |PsychoPy|
 1a: Examples of East Asian locale names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``ll_`` (language), follwed by ``_CC`` (country), for example:
+``ll_`` (language), followed by ``_CC`` (country), for example:
 
 - |zh_CN| for Chinese in the PRC (simplified)
 - |zh_TW| for Chinese in the ROC (complex)
@@ -65,8 +65,8 @@ Screenshot of localization files in |PsychoPy|
   <a href="https://www.localeplanet.com/icu/th-TH/index.html" target="_blank">th_TH</a>
 
 
-1b: Examples Central/Western Asian/European locale names
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1b: Examples of Central/Western Asian/European locale names
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - |ar_001| for Modern Standard Arabic\*
 - |he_IL| for Hebrew in Israel
@@ -96,7 +96,66 @@ Screenshot of localization files in |PsychoPy|
 
   <a href="https://www.localeplanet.com/icu/ar-EG/index.html" target="_blank">ar_EG</a>
 
-1c: What if our language needs more than one language variety?
+1c: Some other Indo-European languages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- |ca_ES| for Catalonian/Valencian in Spain
+- |de_DE| for German in Germany (hochdeutsch)
+- |et_EE| for Estonian in Estonia
+- |fr_FR| for French in France
+- |hi_IN| for Hindi in India
+- |it_IT| for Italian in Italy
+- |lv_LV| for Latvian in Latvia
+- |nl_BE| for Flemish in Belgium
+- |pl_PL| for Polish in Poland
+- |pt_PT| for Portuguese in Portugal
+- |ru_RU| for Russian in Russia
+
+.. |ca_ES| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/ca-ES/index.html" target="_blank">ca_ES</a>
+
+.. |de_DE| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/de-DE/index.html" target="_blank">de_DE</a>
+
+.. |et_EE| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/et-EE/index.html" target="_blank">et_EE</a>
+
+.. |fr_FR| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/fr-FR/index.html" target="_blank">fr_FR</a>
+
+.. |hi_IN| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/hi-IN/index.html" target="_blank">hi_IN</a>
+
+.. |it_IT| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/it-IT/index.html" target="_blank">it_IT</a>
+
+.. |lv_LV| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/lv-LV/index.html" target="_blank">lv_LV</a>
+
+.. |nl_BE| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/nl-BE/index.html" target="_blank">nl_BE</a>
+
+.. |pl_PL| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/pl-PL/index.html" target="_blank">pl_PL</a>
+
+.. |pt_PT| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/pt-PT/index.html" target="_blank">pt_PT</a>
+
+.. |ru_RU| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/ru-RU/index.html" target="_blank">ru_RU</a>
+
+1d: What if our language needs more than one language variety?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Recommendation
@@ -105,7 +164,7 @@ Screenshot of localization files in |PsychoPy|
   - finish the translations for that variety of the language
   - copy, paste, rename, and adjust
   
-1d: Example using Spanish
+1e: Example using Spanish
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - fully translate for Iberian Spanish (|es_ES|)
@@ -122,7 +181,7 @@ Screenshot of localization files in |PsychoPy|
 
   <a href="https://www.localeplanet.com/icu/es-CL/index.html" target="_blank">es_CL</a>
 
-1e: ``ll_CC`` folder/file structure
+1f: ``ll_CC`` folder/file structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - The file translators only work on
@@ -143,7 +202,7 @@ Screenshot of localization files in |PsychoPy|
 
 **NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, as well as the ``messages.mo`` file underneath
 
-1f: Is your locale listed?
+1g: Is your locale listed?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Look under ``psychopy/psychopy/app/locale``
@@ -165,7 +224,7 @@ Screenshot of localization files in |PsychoPy|
 
 - if not pre-listed, just add it 
 
-1g: How to add a locale
+1h: How to add a locale
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - the easy way
