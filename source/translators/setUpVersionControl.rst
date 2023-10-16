@@ -249,6 +249,9 @@ Step 4: Cloning
 Step 4a: How to start cloning from *GitHub Desktop*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+- create an empty folder in a logical place (i.e., not on your desktop) on your computer (e.g., under ``Documents``)
+
+  - You can call it ``psychopy`` if you wish 
 - in *GitHub Desktop* on a Mac
 
   - ``GitHub Desktop > Settings > Accounts``
@@ -264,9 +267,9 @@ Step 4b: How to finish cloning
   
 - *psychopy* should be listed because it's already forked in your online account
  
-  - under ``Local Path`` at the bottom, choose a **logical** place on your computer for the cloned repository (e.g., not your desktop)
+  - under ``Local Path`` at the bottom, choose the empty folder that you just created
   
-    - click ``Clone``
+  - click ``Clone``
     - This might take a minute, depending on your connection speed
 
 The result of cloning

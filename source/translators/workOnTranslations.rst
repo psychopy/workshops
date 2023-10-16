@@ -9,6 +9,7 @@ Working on translations
 Overview
 -------------
 
+- (Step 0: Ensure you are on the ``release`` branch before you change anything)
 - Step 1: Identifying the appropriate 5-6 character ``ll_CC`` locale name for your translation
 - Step 2: Configuring the ``mappings.txt`` file with a text editor
 - Step 3: Working on main translations with *Poedit*
@@ -18,6 +19,17 @@ Overview
 - Step 4: Translating "Start-up tips" in |PsychoPy| with a text editor
   
 **NOTE**: Steps 3 and 4 aren't sequential; they're different translation processes
+
+Step 0: Ensure you are on the ``release`` branch
+--------------------------------------------------
+
+- You might be on the ``dev`` branch by default
+- Change this before you do any work
+
+  -  In *GitHub Desktop*
+  
+    -  look for the ``Current Branch`` pull-down tab at the upper left 
+    -  choose ``release`` from wherever it appears in the pull-down menu
 
 Step 1: What is the ``ll_CC`` locale name for my language?
 --------------------------------------------------------------
