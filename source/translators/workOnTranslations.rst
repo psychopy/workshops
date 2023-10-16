@@ -10,13 +10,13 @@ Overview
 -------------
 
 - (Step 0: Ensure you are on the ``release`` branch before you change anything)
-- Step 1: Identifying the appropriate 5-6 character ``ll_CC`` locale name for your translation
-- Step 2: Configuring the ``mappings.txt`` file with a text editor
-- Step 3: Working on main translations with *Poedit*
+- Step 1: Identify the appropriate 5-6 character ``ll_CC`` locale name for your translation
+- Step 2: Edit the ``mappings.txt`` file
+- Step 3: Work on main translations with *Poedit*
   
   - configure ``Poedit``
-  - generate and translate the "strings" in the ``messages.po`` file
-- Step 4: Translating "Start-up tips" in |PsychoPy| with a text editor
+  - generate and translate "strings" in the ``messages.po`` file
+- Step 4: Translate "Start-up tips" with a text editor
   
 **NOTE**: Steps 3 and 4 aren't sequential; they're different translation processes
 
