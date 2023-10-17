@@ -65,7 +65,7 @@ Step 1: Get *Git* and *GitHub* working
 - *Git* is free software for your computer
 - *GitHub* is an free online system, which you need to sign up for
 
-Step 1a: Install *Git*
+1a: Install *Git*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - download *Git* |downloadGitHere| 
@@ -85,7 +85,7 @@ Step 1a: Install *Git*
 
   <a href="https://youtu.be/F02LEVYEmQw" target="_blank">YouTube video</a>
 
-Step 1b: Sign up for *GitHub*
+1b: Sign up for *GitHub*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to |signUpForGithubHere|
@@ -115,7 +115,7 @@ Step 2: *Fork* the *psychopy* repository
 
 **NOTE**: Technically and more generally, it's copying a repository, while also disconnecting it from other previous committers
 
-Step 2a: Find the *psychopy/psychopy* repository
+2a: Find the *psychopy/psychopy* repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - While logged in to *GitHub*
@@ -134,7 +134,7 @@ Step 2a: Find the *psychopy/psychopy* repository
 
 ..
 
-Step 2b: *Fork* the *psychopy/psychopy* repository
+2b: *Fork* the *psychopy/psychopy* repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Find the ``Fork`` pull-down menu located near the upper right corner
@@ -147,9 +147,30 @@ Step 2b: *Fork* the *psychopy/psychopy* repository
 ..
 
 - Choose the following: ``+ Create a new fork``
-- **IMPORTANT**: Be sure to **UN**-Check the box labeled as follows: ``Copy the ____ branch only``
 
-  - In other words, please copy **all** the branches 
+  - For convenience, be sure to **UN**-Check the box labeled as follows: ``Copy the dev branch only``
+  
+    - In other words, please copy **all** the branches 
+  - If you only get the *dev* branch, you won't be able to contribute to the *release* branch
+  
+    - So you'd need to add it (see next slide) 
+
+2c: How to add an upstream branch to your fork
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- If you didn't check that box, and only forked the *dev* branch, you'll need to add the *release* branch 
+- Go to your fork of the repo
+
+  - Go to the branch pull-down menu at the upper-left, which should say *dev*
+  - In the pull-down menu, choose ``View all branches`` (at the bottom)
+  - On the next screen, click the box labeled ``New branch`` at the upper right
+  
+    - Under ``New branch name`` type in *release*
+    - Under ``Source``
+    
+      - choose ``psychopy/psychopy`` in the upper pull-down menu
+      - choose ``release`` in the lower pull-down menu
+  Click ``Create new branch``
 
 What is a *fork*?
 ^^^^^^^^^^^^^^^^^^^^
@@ -225,7 +246,7 @@ What if I use *Linux*?
   <a href="https://github.com/shiftkey/desktop" target="_blank">the shiftkey/desktop fork</a>
 
 
-Step 3a: Download and install *GitHub Desktop*
+3a: Download and install *GitHub Desktop*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to the homepage for |homepageForGithubDesktop|
@@ -246,7 +267,7 @@ Step 4: Cloning
   - Unlike *forking* it doesn't disassociate anyone
 - It also establishes a connection between your local and online files 
 
-Step 4a: How to start cloning from *GitHub Desktop*
+4a: How to start cloning from *GitHub Desktop*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - create an empty folder in a logical place (i.e., not on your desktop) on your computer (e.g., under ``Documents``)
@@ -262,7 +283,7 @@ Step 4a: How to start cloning from *GitHub Desktop*
     - choose *psychopy* 
   - (In *GitFiend*, you don't sign in. You just provide the repository URL, which can be found in the *GitHub* repository under the ``<> Code`` button, where you then choose the ``Local`` tab, then the ``https`` link)
 
-Step 4b: How to finish cloning
+4b: How to finish cloning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
 - *psychopy* should be listed because it's already forked in your online account
