@@ -158,11 +158,11 @@ Step 2: *Fork* the *psychopy* repository
 2c: How to add an upstream branch to your fork
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- If you didn't check that box, and only forked the *dev* branch, you'll need to add the *release* branch 
 - Go to your fork of the repo
 
   - Go to the branch pull-down menu at the upper-left, which should say *dev*
-  - In the pull-down menu, choose ``View all branches`` (at the bottom)
+  
+    - Choose ``View all branches`` (at the bottom)
   - On the next screen, click the box labeled ``New branch`` at the upper right
   
     - Under ``New branch name`` type in *release*
