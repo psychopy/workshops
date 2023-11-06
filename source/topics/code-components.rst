@@ -39,9 +39,6 @@ Extending Experiments with Python Code
 
    <span style="color: green;">Links will appear when dates available</span>
 
-  `Apply for waiver <https://forms.clickup.com/4570406/f/4bf96-7128/38SE053NS2O5A8Z6SR>`_
-
-
   .. figure:: /_images/Topics2.png
    :align: center
    :figwidth: 75%

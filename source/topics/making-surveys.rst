@@ -37,11 +37,7 @@ Making Surveys and Questionnaires using Pavlovia.org
 
   .. raw:: html
 
-   <span style="color: green;">Spaces limited to 20 per session. </span>
-
-  `Book (£20) <https://pavlovia.org/store/workshops/2023-8-30-psychopy-creating-experiments-surveytopic>`_
-
-  `Apply for waiver <https://forms.clickup.com/4570406/f/4bf96-7128/38SE053NS2O5A8Z6SR>`_
+   <span style="color: green;">Links will appear when dates available</span>`_
 
   Want to learn about this without the hands on support of the team? Here's a You Tube video to get you started!
 
