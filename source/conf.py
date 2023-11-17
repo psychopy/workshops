@@ -162,7 +162,7 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -281,32 +281,32 @@ texinfo_documents = [
 
 # -- Hieroglyph Slide Configuration ------------
 
-extensions += [
-    'hieroglyph',
-]
+# extensions += [
+#     'hieroglyph',
+# ]
 
-# Add extension to allow compilation to pdf
-#extensions += ['rst2pdf.pdfbuilder']
-pdf_documents = [('index', u'sample', u'Sample rst2pdf doc', u'Your Name'),]
+# # Add extension to allow compilation to pdf
+# #extensions += ['rst2pdf.pdfbuilder']
+# pdf_documents = [('index', u'sample', u'Sample rst2pdf doc', u'Your Name'),]
 
-slide_theme_path = ['_templates']
+# slide_theme_path = ['_templates']
 
-slide_theme = 'P4N_theme'
-slide_levels = 4
-slide_numbers = True
+# slide_theme = 'P4N_theme'
+# slide_levels = 4
+# slide_numbers = True
 
-# Place custom static assets in the _static directory and uncomment
-# the following lines to include them
+# # Place custom static assets in the _static directory and uncomment
+# # the following lines to include them
 
-slide_theme_options = {
-    'custom_css': 'P4Ncustomslides.css',
-#     'custom_js': 'custom.js',
-}
-slide_link_to_html = True
-slide_html_relative_path = '..'
-slide_link_html_to_slides = True
-slide_link_html_sections_to_slides = True
-slide_relative_path = 'slides'
+# slide_theme_options = {
+#     'custom_css': 'P4Ncustomslides.css',
+# #     'custom_js': 'custom.js',
+# }
+# slide_link_to_html = True
+# slide_html_relative_path = '..'
+# slide_link_html_to_slides = True
+# slide_link_html_sections_to_slides = True
+# slide_relative_path = 'slides'
 
 # ----------------------------------------------
 

@@ -9,8 +9,6 @@
 Official PsychoPy and Pavlovia workshops
 =========================================
 
-Come and join us in learning PsychoPy! Book onto one of our scheduled events or book a bespoke event for your department. We offer both in-person, online or hybrid formats. Contact us workshops@opensciencetools.org.
-
 .. only:: html
 
   .. carousel::
@@ -21,7 +19,7 @@ Come and join us in learning PsychoPy! Book onto one of our scheduled events or 
       :show_buttons_on_top:
       :show_controls:
 
-      .. figure:: /_images/3daySept23ad.jpg
+      .. figure:: /_images/3dayUon2024.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
 
         Join us for a comprehensive workshop with content suitable for beginners to advanced users. Available in UK and US (East Coast) timezones.
