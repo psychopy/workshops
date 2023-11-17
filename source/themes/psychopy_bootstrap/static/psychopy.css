@@ -398,6 +398,13 @@ blockquote {
     }
 }
 
+@media (min-width:  360px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+
 @media (min-width: 768px) {
     .container {
         max-width: 90%;
@@ -410,7 +417,7 @@ blockquote {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .container {
         max-width: 100%;
     }
