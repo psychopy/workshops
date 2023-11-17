@@ -370,6 +370,16 @@ blockquote {
 
 /* override the bootstrap max-widths to prevent jerky expanding */
 
+@media (min-width:  360px) {
+    .container {
+        max-width: 90%;
+    }
+    .carousel {
+        max-width: 90%;
+    }
+}
+
+
 @media (max-width: 576px) {
     .container {
         max-width: 90%
@@ -397,13 +407,6 @@ blockquote {
         display: none
     }
 }
-
-@media (min-width:  360px) {
-    .container {
-        max-width: 90%;
-    }
-}
-
 
 @media (min-width: 768px) {
     .container {
