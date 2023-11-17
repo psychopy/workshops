@@ -398,7 +398,7 @@ blockquote {
     }
 }
 
-@media (min-width:  647px) {
+@media (min-width:  360px) {
     .container {
         max-width: 90%;
     }
