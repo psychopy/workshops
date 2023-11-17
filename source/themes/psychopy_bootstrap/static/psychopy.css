@@ -10,6 +10,26 @@
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css");
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css");
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+
+:root {
+    --black: #000000;
+    --midgrey: #66666e;
+    --lightgrey: #acacb0;
+    --white: #f2f2f2;
+    --red: #f2545b;
+    --blue: #02a9ea;
+    --green: #6ccc74;
+    --orange: #ec9703;
+    --yellow: #f1d302;
+    --purple: #c3bef7;
+
+    --f1: "sans-serif"
+    --f2: "Arvo"
+    --f3: "Indie Flower"
+}
+
+
 
 body {
     padding-top: 54px;
@@ -50,16 +70,49 @@ h2::before {
 h3, .h3 {
     font-size: 24px;
 }
-
-h3::before { 
-    display: block; 
-    content: " "; 
-    margin-top: -101px; 
-    height: 101px; 
-    visibility: hidden; 
+h3::before {
+    display: block;
+    content: " ";
+    margin-top: -101px;
+    height: 101px;
+    visibility: hidden;
     pointer-events: none;
-  }
-  
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column-collapse { /* will convert to row for <768 */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/* special cases */
+blockquote ul {
+    font-size: initial;
+    margin: -11px -22px;
+    margin-left: -22px;
+}
+
+blockquote {
+    border-left: none;
+    padding: 0;
+    margin: 0 0 22px;
+    font-size: initial;
+    /* border-left: 5px solid #4582ec; */
+}
+
+.custom-button-red {
+    color: red; /* Change the color to your preference */
+    font-weight: bold;
+}
+
 /* logos (big and small) in top left */
 .large-logo img {
     position: absolute;
@@ -154,6 +207,12 @@ h3::before {
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
+.delay5 {
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
 
 /* to set a section to be the height of the browser window*/
 
@@ -161,11 +220,25 @@ h3::before {
     height: 100%;
 }
 
+.full-height-with-ticker {
+    height: 100%;
+    overflow: auto;
+}
+
 /* @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
 } */
+
+.bg-primary a {
+    color: white;
+    text-decoration: underline;
+}
+.bg-primary a:hover {
+    color: 'red';
+    text-decoration: underline;
+}
 
 .carousel-item {
     height: 65vh;
@@ -186,7 +259,8 @@ h3::before {
     background-color: white;
     position: fixed;
     right: 0;
-    top: 150px;
+    top: 200px;
+    padding: 8px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -196,9 +270,9 @@ h3::before {
 .social-bar a {
     display: block;
     text-align: center;
-    padding: 8px;
     transition: all 0.3s ease;
     font-size: 20px;
+    padding: 8px;
 }
 
 /* Style the social media icons with color, if you want */
@@ -256,6 +330,9 @@ h3::before {
 
     .social-bar {
         display: none;
+    }  
+    .column-collapse {
+        flex-direction: column;
     }
 
     body {
@@ -342,3 +419,27 @@ h3::before {
         padding: 80px;
     }
 }
+
+/* Classes for coloured text (first used in online/status.rst) */
+.darkgreen {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.darkorange {
+  color: darkorange;
+  font-weight: bold;
+}
+
+.darkred {
+  color: darkred;
+  font-weight: bold;
+}
+
+/* Add this CSS to your existing styles */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
