@@ -22,15 +22,13 @@ Official PsychoPy and Pavlovia workshops
       .. figure:: /_images/3dayUon2024.jpg
         :target: https://workshops.psychopy.org/3days/index.html#dayindex
 
-        Join us for a comprehensive workshop with content suitable for beginners to advanced users. Available in UK and US (East Coast) timezones.
+        Join us for a comprehensive workshop with content suitable for beginners to advanced users.
 
         
       .. figure:: /_images/SurveysLaunch.jpg
         :target: https://www.youtube.com/watch?v=1fs8CVKBPGk
 
         You can now make surveys directly in Pavlovia - learn how!
-
-        Get started making your eye tracking experiment in this workshop with the PsychoPy and Tobii team.
 
       .. figure:: /_images/LJM_2022.jpg
 
