@@ -372,6 +372,7 @@ blockquote {
 
 @media (min-width:  360px) {
     .container {
+        overflow-x: hidden;
         max-width: 90%;
     }
     .scbs-carousel-item {
@@ -382,6 +383,7 @@ blockquote {
 
 @media (max-width: 576px) {
     .container {
+        overflow-x: hidden;
         max-width: 90%
     }
 
