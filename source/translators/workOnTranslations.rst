@@ -766,6 +766,19 @@ Step 4: Translating the *Start-up Tips*
    * - ``tips.txt``
      - ``tips_ja_JP.txt``
 
+Note on humor in *Start-up tips*
+--------------------------------------
+
+- Some of the humor in the *Start-up tips* might not translate well
+- Feel free to delete humor that would be too odd
+
+  - or replace them with mild humor that would be more appropriate
+- Humor must be respectful and suitable for using in a classroom, laboratory, or other professional situation
+- Don't get too creative here
+- If you have any doubt, it is better to leave it out
+- It goes without saying that you should avoid any religious, political, disrespectful, or sexist material
+
+
 4d: Make a pull request for ``.po`` and ``.txt`` files
 --------------------------------------------------------
 
@@ -816,18 +829,6 @@ There are two files this time
   - Make sure it says *Able to merge* in the box at the top
   - Leave a comment only if you think it's necessary (it shouldn't be for translations)
   - Click ``Create pull request``
-
-Note on humor in *Start-up tips*
---------------------------------------
-
-- Some of the humor in the *Start-up tips* might not translate well
-- Feel free to delete humor that would be too odd
-
-  - or replace them with mild humor that would be more appropriate
-- Humor must be respectful and suitable for using in a classroom, laboratory, or other professional situation
-- Don't get too creative here
-- If you have any doubt, it is better to leave it out
-- It goes without saying that you should avoid any religious, political, disrespectful, or sexist material
 
 Done with translating
 ------------------------
