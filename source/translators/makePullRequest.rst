@@ -1,6 +1,6 @@
 .. _committing and making pull requests:
 
-More information on Git workflow
+More information on *Git* workflow
 ==========================================
 
 You have already practiced this workflow, but here is some more information
@@ -51,7 +51,7 @@ Step 1: *Stage* your changes
 - Next, check the boxes you want to stage for your next commit
 
 All that said...
---------------------
+^^^^^^^^^^^^^^^^^^^
 
 - After the initial setup, most translators will be working on just a few files anyway, i.e.:
   
@@ -75,7 +75,7 @@ Step 2: The commit
 - The bottom one, ``Description`` is optional 
 
 2a: The commit message prefix
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - convention established by the maintainers at |PsychoPy|
 
@@ -90,13 +90,14 @@ Step 2: The commit
     - for *feature fix*
 
 Why the prefix?
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 - help maintainers search for key changes to the project
 - Otherwise, they'd have to sift through all changes to a project when, say, they knew they only wanted to search through bug fixes (BFs)
   
 2b: The prefix for translations
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 - for all translations:
 
   - *DOCS:*
@@ -107,7 +108,7 @@ Why the prefix?
   - Jon Peirce will let you know if this change occurs 
 
 2c: The commit message itself
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - summary of what all the changes in the commit do as a single unit
 - The standard convention is to start with a verb in the imperative mood (i.e., a command)
@@ -121,7 +122,7 @@ Why the prefix?
 - Remember that there is a 50-character limit 
 
 2d: a description (optional)
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Sometimes commit messsage is clear
   
@@ -140,7 +141,7 @@ Why the prefix?
 **NOTE**: All that said, messages alone should suffice in almost all translation cases
 
 2e: Commit
-------------
+^^^^^^^^^^^^^^^^
 
 - When your changes are ready and staged, and you have a commit message
 
@@ -160,7 +161,7 @@ Step 3: *Push* to *origin*
   - This is done through a *push*
 
 Why two steps? A *push* then a *pull request*?
------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **can** push directly to your own fork on GitHub
 - **cannot** *push* directly to the main, *upstream*, repository at ``https://github.com/psychopy/psychopy``
@@ -174,7 +175,7 @@ Why two steps? A *push* then a *pull request*?
 **NOTE**: You *can* make a *pull request* directly from *GitHub Desktop*, but I'm not completely sure what the implications of that are. I'm scared of it, to be honest.
 
 3a: how to push to *origin* in *GitHub Desktop*
---------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Select the following:
 
@@ -195,7 +196,7 @@ Step 4: The pull request
 - To initiate the process of making them identical, you need to make a *pull request*
 
 4a: "Pull request"???
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - terminology a little counter-intuitive
   
@@ -206,7 +207,7 @@ Step 4: The pull request
 - (if that helps) 
  
 4b: Go to the right branch on *GitHub*
-----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to your fork of the repository on *GitHub* (i.e., *origin*)
 - Select the branch that you just made the commit to
@@ -216,7 +217,7 @@ Step 4: The pull request
 - Once there, *GitHub* should indicate that your latest commit is probably awaiting a *pull request* to *upstream*
 
 4c: Make the pull request
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Look for a banner at the top with a note about the recent commit, and a green button with the following message: ``Compare and pull request``
 - Click that button
@@ -228,14 +229,14 @@ Step 4: The pull request
     - the ``Contribute`` tab next to the left of the ``Sync fork`` tab
 
 4c1: Double-checking source and destination
--------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - You should now be switched to the *upstream* repository at ``psychopy/psychopy``
 - And you should see a screen with the following title: ``Comparing changes``
 - There should be 4 pull-down menus, labeled as follows on the next slide, from left to right
 
 4c2: Source and destination
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - ``base repository: psychopy/psychopy`` (this refers to the *upstream* **repository**)
   
@@ -248,14 +249,14 @@ Step 4: The pull request
 - ``compare: release`` (the appropriate **branch** on *origin* to merge *from* [unless you created a new branch])
 
 4d: Double-checking changes
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **WARNING**: If you see many more file changes than you were expecting, then you might be on the wrong branch
 
 **NOTE**: If it says *There isn't anything to compare*, you probably didn't yet push the commit from your local copy to *origin*
 
 4e: Will your changes merge?
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Hopefully, you see the following directly below the information covered in the last slide
   
@@ -265,7 +266,7 @@ Step 4: The pull request
     -  *Able to merge. These branches can be automatically merged.*
 
 4f: What if they did not?
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - If you do not, then one of the following might have occurred
 
@@ -281,7 +282,7 @@ Step 4: The pull request
       - It's not a big deal 
 
 4g1: Adding a description
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - *description* 
 
@@ -290,7 +291,7 @@ Step 4: The pull request
   - answers the *what*, *why*, *how*, etc. of the *pull request*
 
 4g2: Is a description necessary?
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - truth be told, descriptions generally won't be of much use to translators unless you've done something unusual, and I can't think of anything that would be unusual.
   
@@ -298,7 +299,7 @@ Step 4: The pull request
   - But even if there are many lines changed, the administrators at |PsychoPy| will probably not be able to review translations in much detail since they probably won't speak the language
 
 4h: Extra responsibility
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - From the last slide
 
@@ -309,7 +310,7 @@ Step 4: The pull request
 - Translate responsibly
 
 4i: Subsequent commits
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - If you make further *commits* before the *pull request* is merged in by the administrators
   

@@ -29,7 +29,7 @@ Step 1: What is the ``ll_CC`` locale name for my language?
   - ``psychopy/psychopy/app/locale``
 
 Screenshot of localization files in |PsychoPy|
-------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../_images/trnslWkshp_whereLlccFiles.png
   :align: center
@@ -39,9 +39,9 @@ Screenshot of localization files in |PsychoPy|
 ..
 
 1a: Examples of East Asian locale names
-------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-``ll_`` (language), follwed by ``_CC`` (country), for example:
+``ll_`` (language), followed by ``_CC`` (country), for example:
 
 - |zh_CN| for Chinese in the PRC (simplified)
 - |zh_TW| for Chinese in the ROC (complex)
@@ -65,8 +65,8 @@ Screenshot of localization files in |PsychoPy|
   <a href="https://www.localeplanet.com/icu/th-TH/index.html" target="_blank">th_TH</a>
 
 
-1b: Examples Central/Western Asian/European locale names
--------------------------------------------------------------
+1b: Examples of Central/Western Asian/European locale names
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - |ar_001| for Modern Standard Arabic\*
 - |he_IL| for Hebrew in Israel
@@ -96,8 +96,67 @@ Screenshot of localization files in |PsychoPy|
 
   <a href="https://www.localeplanet.com/icu/ar-EG/index.html" target="_blank">ar_EG</a>
 
-1b: What if our language needs more than one language variety?
------------------------------------------------------------------
+1c: Some other Indo-European languages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- |ca_ES| for Catalonian/Valencian in Spain
+- |de_DE| for German in Germany (hochdeutsch)
+- |et_EE| for Estonian in Estonia
+- |fr_FR| for French in France
+- |hi_IN| for Hindi in India
+- |it_IT| for Italian in Italy
+- |lv_LV| for Latvian in Latvia
+- |nl_BE| for Flemish in Belgium
+- |pl_PL| for Polish in Poland
+- |pt_PT| for Portuguese in Portugal
+- |ru_RU| for Russian in Russia
+
+.. |ca_ES| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/ca-ES/index.html" target="_blank">ca_ES</a>
+
+.. |de_DE| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/de-DE/index.html" target="_blank">de_DE</a>
+
+.. |et_EE| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/et-EE/index.html" target="_blank">et_EE</a>
+
+.. |fr_FR| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/fr-FR/index.html" target="_blank">fr_FR</a>
+
+.. |hi_IN| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/hi-IN/index.html" target="_blank">hi_IN</a>
+
+.. |it_IT| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/it-IT/index.html" target="_blank">it_IT</a>
+
+.. |lv_LV| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/lv-LV/index.html" target="_blank">lv_LV</a>
+
+.. |nl_BE| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/nl-BE/index.html" target="_blank">nl_BE</a>
+
+.. |pl_PL| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/pl-PL/index.html" target="_blank">pl_PL</a>
+
+.. |pt_PT| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/pt-PT/index.html" target="_blank">pt_PT</a>
+
+.. |ru_RU| raw:: html
+
+  <a href="https://www.localeplanet.com/icu/ru-RU/index.html" target="_blank">ru_RU</a>
+
+1d: What if our language needs more than one language variety?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Recommendation
 
@@ -105,8 +164,8 @@ Screenshot of localization files in |PsychoPy|
   - finish the translations for that variety of the language
   - copy, paste, rename, and adjust
   
-1c: Example using Spanish
-----------------------------
+1e: Example using Spanish
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     - fully translate for Iberian Spanish (|es_ES|)
     - copy the entire ``es_ES`` folder
@@ -122,8 +181,8 @@ Screenshot of localization files in |PsychoPy|
 
   <a href="https://www.localeplanet.com/icu/es-CL/index.html" target="_blank">es_CL</a>
 
-1d: ``ll_CC`` folder/file structure
--------------------------------------
+1f: ``ll_CC`` folder/file structure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - The file translators only work on
 
@@ -143,8 +202,8 @@ Screenshot of localization files in |PsychoPy|
 
 **NOTE**: Ignore the intermediate ``LC_MESSAGE`` level, as well as the ``messages.mo`` file underneath
 
-1e: Is your locale listed?
-------------------------------
+1g: Is your locale listed?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Look under ``psychopy/psychopy/app/locale``
 
@@ -165,8 +224,8 @@ Screenshot of localization files in |PsychoPy|
 
 - if not pre-listed, just add it 
 
-1f: How to add one
----------------------
+1h: How to add a locale
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - the easy way
 
@@ -181,14 +240,14 @@ Screenshot of localization files in |PsychoPy|
 
   - not a reasonable approach; not going there  
 
-Step 2: ``mappings.txt``
--------------------------
+Step 2: Update ``mappings.txt``
+---------------------------------
 
 - Do this once per translated language, and it's done forever (for that localisation)
 - This file allows the experimenter to choose a localization in |PsychoPy|
 
-Step 2a: Open a text editor
-------------------------------
+2a: Open a text editor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Start your preferred text editor (e.g., *Visual Studio Code*, *PyCharm*, *TextEdit* [Mac])
 - Avoid using *Notepad* in *Microsoft Windows*
@@ -200,8 +259,8 @@ Step 2a: Open a text editor
   <a href="https://notepad-plus-plus.org/" target="_blank">Notepad Plus</a>
 
 
-2b: insert the appropriate ``ll_CC`` code
------------------------------------------
+2b: Insert the appropriate ``ll_CC`` code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Open the following file (there's one and only one)
 
@@ -211,8 +270,8 @@ Step 2a: Open a text editor
 
   - Make sure the ``ll_CC`` code resides at the appropriate line (alphabetically listed)
 
-2c: Microsoft language code
-------------------------------
+2c: Add the Microsoft language code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Add the 3-letter Microsoft code that refers to the language
   
@@ -224,8 +283,8 @@ Step 2a: Open a text editor
 
   <a href="https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms903928(v=msdn.10)" target="_blank">Microsoft's list of Language Identifiers and and Locales</a>
 
-2d: language label
-----------------------
+2d: Add an informative language label
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - At the far right,
 
@@ -244,10 +303,10 @@ Step 2a: Open a text editor
 - Save the ``mappings.txt`` file
 
 2e: Make a pull request for ``mappings.txt``
-----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 2e1: Stage changes
---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Select *psychopy* under the tab labeled ``Current Repository``
 - Select *release* under the tab labeled ``Current Branch``
@@ -257,26 +316,26 @@ Step 2a: Open a text editor
   - make sure that ``mappings.txt`` is the only file with a checkmark
 
 
-2e2: Commit staged change 
-----------------------------
+2e2: Commit staged changes 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - add the following message to the box underneath with the temporary text *Summary (required)*
 
   - ``DOCS: Update mappings.txt for Hebrew in Israel`` (for example)
     
-    - (this must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
-  - (ignore the box labeled ``Description`` for now)
+    - this must be 50 characters or fewer
+    - add extra information under ``Description``, if necessary 
 - click the box underneath labeled ``Commit to release``
   
   - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
 
 2e3: Push to *origin*
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
   - click the ``Push origin`` tab 
 
-2e4: pull request to upstream
--------------------------------
+2e4: Pull request from *origin* to *upstream*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - On *GitHub* (origin [AKA your online "fork"])
 
@@ -285,8 +344,10 @@ Step 2a: Open a text editor
   - Leave a comment only if you think it's necessary (it shouldn't be for translations)
   - Click ``Create pull request``
 
-Step 3: Translating in *Poedit*
----------------------------------
+**FINISHED!!** (with ``mappings.txt``)
+
+Step 3: Translating strings in *Poedit*
+------------------------------------------
 
 - *Poedit*
 
@@ -294,7 +355,7 @@ Step 3: Translating in *Poedit*
   - first need to set some things up
 
 3a: Sync all your repositories
-----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Sync from *upstream* to *origin*
 - Pull from *origin*
@@ -308,7 +369,7 @@ Step 3: Translating in *Poedit*
 - Go back to the end of :ref:`setting up version control` for instructions
 
 3b: Download and install *Poedit*
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |PoeditDownloadPage|
 
@@ -316,38 +377,36 @@ Step 3: Translating in *Poedit*
 
   <a href="https://poedit.net/download" target="_blank">Poedit download page</a>
 
-3c: Find your ``.po`` file
------------------------------------
+3c: Check ``General`` settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Start *Poedit*
-- open the ``.po`` file for the language you're working on:
-
-  - ``.../psychopy/psychopy/app/locale/[your ll_CC folder]/LC_MESSAGES/messages.po``
-
-- For example, for Thai in Thailand:
-
-``psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
-
-3d: Settings that don't change
---------------------------------
-
 - Once set, the settings below in *Poedit* don't really change
 
-  - unless you change your email, or the location of your files on your computer, etc.
-- One exception is the version of |PsychoPy| you're using to translate
+3c1: ``General`` tab (Name and email)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  - This is covered last   
+- choose the following: 
 
-3d1: ``General`` tab (Name and email)
-----------------------------------------
-
-- On a PC, choose the following: ``File > Preferences``
-- On a Mac, choose this instead: ``Poedit > Settings``
+  - ``File > Preferences`` (on a PC)
+  - ``Poedit > Settings`` (on a Mac)
 - Find the following tab: ``General``
-- Add your name and e-mail address where indicated
+- For convenience, make sure that the box with the following label is **UN**-checked:
 
-3d2: ``Advanced`` tab
----------------------
+  - ``Automatically compile MO file when saving`` 
+  
+    - (Note that this is not strictly necessary as we have set Git to ignore the ``.mo`` file, but compiling this file is unnecessary and takes up processing time)
+
+3c2: Leave name and email blank
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Do not provide your name or email
+
+  - Doing so will list your name and email in a public place (GitHub), where it doesn't really need to be  
+- Instead, just leave these fields blank
+
+3c3: check the ``Advanced`` settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - click the ``Advanced`` tab in the same window
 - Make sure that the following are set correctly
@@ -359,26 +418,49 @@ Step 3: Translating in *Poedit*
     
     - make sure this is checked
 
-3d3: Language and language team
------------------------------------
+
+3d: Settings specific to a ``.po`` file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+First, open the ``.po`` file
+
+- ``File > Open``
+  
+  - find the ``.po`` file for the language you're working on:
+  
+    - ``.../psychopy/psychopy/app/locale/[your ll_CC folder]/LC_MESSAGES/messages.po``
+
+- For example, for Thai in Thailand:
+
+  - ``psychopy/app/locale/th_TH/LC_MESSAGES/messages.po``
+
+
+3d1: language team
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Go to: ``Translation > Properties``
-- under: ``Language team``
+- under: ``Language team`` (if there is more than one translator for the locale, and we have set up a *Google Group* for your team)
 
-  - contact email for entire group (actually, I will do this)
+  - make sure that the email for entire group is correct
+  
+    - ``psychopy_[language]@opensciencetools.org``
+    
+      - e.g., ``psychopy_hebrew@opensciencetools.org``
+
+3d2: language
+^^^^^^^^^^^^^^^^^
 - under: ``Language``
   
   - select the appropriate ``Language (Country)`` combination
   - For example
   
     - ``Duala (Cameroon)``
-  
-- under not only ``Charset``, but also ``Source code charset``
-  
-  - *UTF-8 (recommended)* 
+- under ``Charset``
 
-3d4: Paths (1)
-------------------
+  - ``UTF-8 (recommended)``  
+
+3d3: Paths (1)
+^^^^^^^^^^^^^^^^^^^
 
 - under the tab labeled: ``Sources Paths``
 
@@ -389,18 +471,17 @@ Step 3: Translating in *Poedit*
       
 ``..THE/PATH/ON/YOUR/COMPUTER/TO/psychopy/psychopy``
 
-**NOTE**: This setting does **not** make its way into the ``.po`` file, per se. Rather, it's just part of *Poedit*. 
+**NOTE**: This setting does **not** make its way into the ``.po`` file. Rather, it's just part of *Poedit*. 
 
-3d5: Paths (2)
------------------
+3d4: Paths (2)
+^^^^^^^^^^^^^^^^^^^
 
-- under the tab labeled: ``Sources Paths``
-- in the box labeled: ``Paths``
-  
-  - ``psychopy/``
+- under the tab labeled: ``Sources Paths``...
+- in the box labeled: ``Paths``...
+- there should be a dot (``.``)
 
-3d6: keywords
------------------
+3d5: keywords
+^^^^^^^^^^^^^^^^^^^^
 
 - under the tab labeled: ``Sources Keywords``
 
@@ -412,39 +493,33 @@ Step 3: Translating in *Poedit*
 - If it **isn't**, type it in  
 - Save your work (``File > Save``)
 
-3e: The setting that does change
----------------------------------
+3e1: Generate current list of translatable strings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- go to: ``Translation > Properties``
-
-  - then to the tab: ``Translation Properties``
-
-    - then: ``Project name and version``
-  - Type in *PsychoPy* followed by the |PsychoPy| version you are working on, if it is not already up to date (e.g., ``PsychoPy 2023.1.0``, or the version of |PsychoPy| you are working on, hopefully the latest release)
-  - This will tell subsequent translators whether they need to update the *strings* (i.e., if their version of |PsychoPy| is more recent)
-  - We discuss *strings* next
-
-3f: Generate current list of translatable strings
-----------------------------------------------------
-
-- Only one person per language group should do this
-
-  - (duplicated effort can result in merge conflicts) 
 - The elements you can translate are called *strings*
 
-  - Select the following
- 
-    - ``Translation > Update from Source Code``
-  - You should subsequently see a list of strings in English that need translating into your language
+  - This process is straightforward if you are the sole translator on the language
+- But translation teams can run into merge conflicts
   
-    - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
+  - In such cases, make sure that you reduce the chances of merge conflicts by doing the following
+
+    1. synchronise your repositories
+    2. establish a team strategy (covered after the next slide)
+
+3e2: Generate the list
+^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+- Choose: ``Translation > Update from Source Code``
+- You should subsequently see a list of strings in English that need translating into your language
+  
+  - If you don't, the keyword ``_translate`` may not have been added to the keywords (see above)
 
 **NOTE**: If ``Update from Source Code`` is greyed out, there are probably no new strings to update
 
 3g: Group strategy: Sort and show string ID 
-----------------------------------------------
+-----------------------------------------------
 
-- This is for collaboration in a team
+- This is for collaboration in a team, after the strings are updated
 
   - Choose: ``View > Show String ID``
   - Choose: ``View > Sort by File Order``
@@ -458,7 +533,7 @@ Step 3: Translating in *Poedit*
     - etc. 
 
 3h: Translate the strings
-----------------------------
+-------------------------------
 
 - Look at the list under the heading: ``Source Text - English`` at the upper left
 - Select a string that you want to translate
@@ -470,8 +545,10 @@ Step 3: Translating in *Poedit*
 3i: Make a pull request for ``messages.po``
 ----------------------------------------------
 
+- This involves several steps, described next
+
 3i1: Stage changes
----------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Select *psychopy* under the tab labeled ``Current Repository``
 - Select *release* under the tab labeled ``Current Branch``
@@ -483,7 +560,7 @@ Step 3: Translating in *Poedit*
     - if the ``.mo`` file is checked, **UN**-check it
 
 3i2: Commit staged changes
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - add the following message to the box underneath with the temporary text *Summary (required)*
 
@@ -497,12 +574,12 @@ Step 3: Translating in *Poedit*
   - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
 
 3i3: Push changes to *origin*
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
 - click the ``Push origin`` tab 
 
 3i4: pull request to *upstream*
-----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - On *GitHub* (origin [AKA your online "fork"])
 
@@ -512,7 +589,7 @@ Step 3: Translating in *Poedit*
   - Click ``Create pull request``
 
 Note A: Leave certain technical terms alone
-----------------------------------------------
+---------------------------------------------
 
 - Technical terms should not be translated:
   
@@ -528,7 +605,7 @@ Note A: Leave certain technical terms alone
   - The Simplified Chinese ``.po`` file also has some examples
 
 Note B: Formatting arguments
---------------------------------------------
+------------------------------
 
 If there are formatting arguments in the original string (``%s``, ``%(first)i``)
 
@@ -636,7 +713,7 @@ Step 4: Translating the *Start-up Tips*
 - This is explained next
 
 4a: Copy ``tips.txt`` to a new file
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Find the default *Start-up Tips* (in English) file
 
@@ -651,7 +728,7 @@ Step 4: Translating the *Start-up Tips*
   - ``tips_ar_001.txt`` (Modern Standard Arabic)
 
 4b: translate
-----------------------
+^^^^^^^^^^^^^^^^^^^
 
 - Open the new, renamed ``tips_ll_CC.txt`` file using your preferred text editor (as long as it opens up the file with each tip on a new line, unlike older versions of *Notepad*)
 - Translate the English-language tips by replacing them entirely with those of the language you are working on
@@ -659,7 +736,7 @@ Step 4: Translating the *Start-up Tips*
 **WARNING**: Do *not* delete any English entry in the new ``.txt`` file before you have completely translated it. Instead, insert the relevant translation below the English entry. Then (and only then) delete the English entry. Save your work, of course.
 
 4c: treat the ``.txt`` files as strings in *Poedit*
------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Open *Poedit*
 - Find the ``tips.txt`` string under the following heading: ``Source text - English``
@@ -683,7 +760,7 @@ Step 4: Translating the *Start-up Tips*
 There are two files this time
 
 4d1: Stage changes
----------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Select *psychopy* under the tab labeled ``Current Repository``
 - Select *release* under the tab labeled ``Current Branch``
@@ -698,7 +775,7 @@ There are two files this time
 **IMPORTANT**: Again, be sure to **UN**-check the ``.mo`` file if it is checked.
 
 4d2: Commit changes
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Commit these changes
 
@@ -706,19 +783,19 @@ There are two files this time
 
     - ``DOCS: Add some startup tips to Spanish in Mexico`` (for example)
     
-      -(must be 50 characters or fewer; add extra information under ``Description``, if necessary) 
-    - (ignore the box labeled ``Description`` for now)
+      - must be 50 characters or fewer
+      - add extra information under ``Description``, if necessary 
   - click the box underneath labeled ``Commit to release``
   
     - **NOTE**: If it's not labeled ``Commit to release``, start at the top of this slide again 
 
 4d3: Push changes to *origin*
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
 - click the ``Push origin`` tab 
 
 4d4: pull request to *upstream*
-----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - On *GitHub* (origin [AKA your online "fork"])
 
