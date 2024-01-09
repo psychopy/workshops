@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Home &#8212; PsychoPy®</title>
+    <link rel="stylesheet" href="_static/psychopy.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
+	<link rel="stylesheet" href="_static/breaking-news-ticker.css" type="text/css" >
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/breaking-news-ticker.min.js"></script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/carousel.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="next" title="About PsychoPy®" href="about/index.html"/>
+    
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4089651-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-4089651-2');
+    </script>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.psychopy.org"]);
+      _paq.push(["setDomains", ["*.psychopy.org","*.discourse.psychopy.org"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.opensciencetools.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript>
+        <p><img src="//analytics.opensciencetools.org/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p>
+    </noscript>
+
+</head>
+<body>
+
+<!-- The social media icon bar -->
+<div class="social-bar">
+    <a href="https://twitter.com/psychopy" class="twitter">
+        <i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/watch?v=VV6qhuQgsiI&list=PLFB5A1BE51964D587" class="youtube">
+        <i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/PsychoPy/" class="facebook">
+        <i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/psychopy/psychopy" class="github">
+        <i class="fab fa-github"></i></a>
+</div>
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand small-logo" href="{{ pathto('index') }}">
+          <img src="_static/psychopyLogoType_h480.png" alt="PsychoPy Logo">
+        </a>
+        <a class="navbar-brand large-logo" href="{{ pathto('index') }}">
+          <img src="_static/psychopyLogoType_h480.png" alt="PsychoPy Logo">
+        </a>
+        <!-- <span class="navbar-text navbar-version pull-right"><b>{{ version|e }}</b></span> -->
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse w-100 pull-right">
+        <ul class="nav navbar-nav ml-auto">
+          <li><a href="https://psychopy.org/" style="font-weight:bold">Home</a></li>
+          <li><a href="https://psychopy.org/about/index.html" >About</a></li>
+          <li><a href="https://pavlovia.org/">Pavlovia.org</a></li>
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.psychopy.org/download.html">Install</a></li>
+              <li><a href="https://www.psychopy.org/changelog.html">Change Log</a></li>
+              <!-- Add more dropdown options as needed -->
+            </ul>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://discourse.psychopy.org/">Forum</a></li>
+              <li><a href="https://psychopy.org/consultancy.html">Consultancy</a></li>
+              <!-- Add more dropdown options as needed -->
+            </ul>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://psychopy.org/documentation.html">Documentation</a></li>
+              <li><a href="https://workshops.psychopy.org/">Workshops</a></li>
+              <li><a href="https://psychopy.org/teaching/index.html">Teaching</a></li>
+              <li><a href="https://www.youtube.com/channel/UCQo2aB6cXJasHyXJp0afaWg">YouTube</a></li>
+              <li><a href="https://pavlovia.org/explore/demos?sort=DEFAULT">Demos</a></li>
+              <!-- Add more dropdown options as needed -->
+            </ul>
+          <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="https://psychopy.org/api/index.html">API</a></li>
+                        <li><a href="https://psychopy.org/developers/index.html">Contribute</a></li>
+                        <!-- Add more dropdown options as needed -->
+                      </ul>
+        </div>
+    </div>
+</div>
+
+<section id="land">
+  <div class="container full-height-with-ticker" height=100% width=90%>
+    <div class="row" align="center">
+    </div>
+
+    <div class="breaking-news-ticker" id="newsTicker">
+        <div class="bn-label">News</div>
+        <div class="bn-news">
+            <ul>
+                <li>
+                    <a href="https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/cep-2024-creating-experiments-in-psychopy">
+                    Join us in Nottingham for our in person 3 day PsychoPy workshop!
+                    </a>
+                </li>
+                <li>
+                    <a href="https://store.nottingham.ac.uk/conferences-and-events/conferences/schools-and-departments/psychology/psychopy-tobii-eyetracking-2024">
+                    Half day PsychoPy and Tobii eye tracking workshop at the University of Nottingham
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.eventbrite.com/e/pavlovia-surveys-feature-showcase-tickets-793023944967?aff=oddtdtcreator">
+                    Free event! Learn about what is possible with Pavlovia Surveys!
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="bn-controls">
+            <button><span class="bn-arrow bn-prev"></span></button>
+            <button><span class="bn-action"></span></button>
+            <button><span class="bn-arrow bn-next"></span></button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            $('#newsTicker').breakingNews({
+                align: 'center',
+                effect: 'typography',
+                position : 'fixed-bottom',
+                borderWidth: 3,
+                height: 50,
+                themeColor: '#ce2525'
+            });
+        });
+    </script>
+
+<section class="bg-primary" id="topic1">
+    <div class="container" style="padding:20px">
+        <h2>Topic Workshop: Getting Started with PsychoPy Builder (1.5 hours)</h2>
+        <p>Get started with PsychoPy Builder!</p>
+        This workshop is sampled from our official three day workshop, for those wanting to focus only on an introduction to PsychoPy Builder for creating experiments. We will cover the important considerations when setting up your experiment and create an experiment (e.g. A Posner cueing task) together in the workshop. Spaces are limited to 20 to allow you time to ask questions as we go through so that you leave feeling ready to get started making an experiment in PsychoPy Builder!  
+        <div class="row">
+
+            <div class="col-md-6 col-lg-8">
+                <img src="_static/builder.png" width=100% style="max-width: 1200px;">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <ul>
+                    <li>Date: 31st Jan 2024
+                    </li>
+                    <li>Time: 15:00. – 16:30 (UK timezone)
+                    </li>
+                    <li>Cost: £20 (waiver applications available)
+                    </li>
+                    <li>Number of Places: 20
+                    </li>
+                </ul>
+                <a href="https://run.pavlovia.org/pavlovia/survey/?surveyId=3a2feb45-36a1-4939-a461-ad80bd11fb15&event=Getting%20Started%20With%20PsychoPy" class = "red_button">Register interest</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light" id="topic2">
+    <div class="container" style="padding:20px">
+        <h2>Topic Workshop: Running Experiments online with Pavlovia (1.5 hours)</h2>
+        <p>Learn how to launch your experiments online with Pavlovia.org</p>
+        This workshop is sampled from our official three day workshop, for those wanting to focus only on how to get their experiment online with Pavlovia.org. We will cover the important considerations when setting up your experiment to run online (e.g. units of measurement to use, avoiding common errors) and showcase features available for running experiments online (e.g. daisy chaining with recruitment platforms and how to use the Shelf for experiments that might require counterbalancing or multisession testing).  Spaces are limited to 20 to allow you time to ask questions as we go through so that you leave feeling ready to launch your experiment online using Pavlovia.org
+        <div class="row">
+
+            <div class="col-md-6 col-lg-8">
+                <img src="_static/Pavlovia Emblem Opaque.png" width=50% style="max-width: 1200px;">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <ul>
+                    <li>Date: 7th  Feb 2024
+                    </li>
+                    <li>Time: 15:00. – 16:30 (UK timezone)
+                    </li>
+                    <li>Cost: £20 (waiver applications available)
+                    </li>
+                    <li>Number of Places: 20
+                    </li>
+                </ul>
+                <a href="https://run.pavlovia.org/pavlovia/survey/?surveyId=3a2feb45-36a1-4939-a461-ad80bd11fb15&event=Running%20Experiments%20online%20with%20Pavlovia" class = "red_button">Register interest</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-primary" id="topic3">
+   <div class="container" style="padding:20px">
+        <h2>Topic Workshop: Extending Experiments with Python code (1.5 hours)</h2>
+        <p>Make the most out of your experiments with the added flexibility of python code.</p>
+        This workshop is sampled from our official three day workshop, for those wanting to focus only on how to start extending your experiment by integrating code snippets. Adding snippets of python code you your experiment is a great way to start learning python and allows addition of features such as tracking accuracy across your experiment, calculating summary variables on the fly, and much more! Spaces are limited to 20 to allow you time to ask questions as we go through, so that you leave feeling ready to make the most out of your experiment by using the flexibility of code components.
+        <div class="row">
+
+            <div class="col-md-6 col-lg-8">
+                <img src="_static/codecomp.png" width=100% style="max-width: 1200px;">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <ul>
+                    <li>Date: 14th  Feb 2024
+                    </li>
+                    <li>Time: 15:00. – 16:30 (UK timezone)
+                    </li>
+                    <li>Cost: £20 (waiver applications available)
+                    </li>
+                    <li>Number of Places: 20
+                    </li>
+                </ul>
+                <a href="https://run.pavlovia.org/pavlovia/survey/?surveyId=3a2feb45-36a1-4939-a461-ad80bd11fb15&event=Extending%20Experiments%20with%20Python%20code" class = "red_button">Register interest</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light" id="topic4">
+    <div class="container" style="padding:20px">
+        <h2>Topic Workshop: Coding Experiments in from Scratch Using Python (1.5 hours)</h2>
+        <p>Get started with python code by coding an experiment from scratch.</p>
+        This workshop is sampled from our official three day workshop, for those wanting to focus only on how to code an experiment from scratch using python code. Although we recommend using PsychoPy Builder to create experiments, coding experiments is a great visual way to learn to code, and also provides a greater understanding of what goes on “under the hood” of experiments. In this session we will cover the basics of stimulus generation and presentation as well as gathering responses using python code. Spaces are limited to 20 to allow you time to ask questions as we go through.
+        <div class="row">
+
+            <div class="col-md-6 col-lg-8">
+                <img src="_static/Python-Logo.png" width=50% style="max-width: 1200px;">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <ul>
+                    <li>Date: 21st  Feb 2024
+                    </li>
+                    <li>Time: 15:00. – 16:30 (UK timezone)
+                    </li>
+                    <li>Cost: £20 (waiver applications available)
+                    </li>
+                    <li>Number of Places: 20
+                    </li>
+                </ul>
+                <a href="https://run.pavlovia.org/pavlovia/survey/?surveyId=3a2feb45-36a1-4939-a461-ad80bd11fb15&event=Coding%20Experiments%20in%20from%20Scratch%20Using%20Python" class = "red_button">Register interest</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container" style="padding:20px">
+        <h2>Credits</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <a href="http://www.nottingham.ac.uk/"><img src="_static/UoN_Supported_RGB.png", alt="Uni of Nottingham" width=200></a>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <p class="pull-right">
+                    &copy; Copyright 2002-2018, Jonathan Peirce<br>
+                    &copy; Copyright 2002-2018, <a href="https://opensciencetools.org">Open Science Tools Ltd.</a><br><br>
+                    PsychoPy<sup>®</sup> and Pavlovia<sup>®</sup> are registered trademarks of <a href="https://opensciencetools.org">Open Science Tools Ltd.</a>
+
+                    <br/><br/>
+                    <a href="#">Back to top</a>
+                    <br/>
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
