@@ -1,0 +1,26 @@
+{
+    "Home": "https://psychopy.org/",
+    "About": "https://psychopy.org/about/index",
+    "Pavlovia.org": "https://pavlovia.org/",
+    "Download": {
+        "Install": "https://www.psychopy.org/download",
+        "Changelog": "https://www.psychopy.org/changelog"
+    },
+    "Support": {
+        "Forum": "https://discourse.psychopy.org/",
+        "Consultancy": "https://www.psychopy.org/consultancy"
+    },
+    "Learn": {
+        "Documentation": "https://www.psychopy.org/documentation",
+        "Workshops": "https://workshops.psychopy.org/",
+        "Teaching": "https://www.psychopy.org/teaching/index",
+        "YouTube": "https://www.youtube.com/channel/UCQo2aB6cXJasHyXJp0afaWg",
+        "Demos": "https://pavlovia.org/explore/demos?sort=DEFAULT"
+    },
+    "More": {
+        "API": "https://www.psychopy.org/api/index",
+        "Contribute": "https://www.psychopy.org/developers/index",
+        "Blog": "https://blog.psychopy.org/",
+        "Ambassadors": "https://www.psychopy.org/ambassadors/index"
+    }
+}

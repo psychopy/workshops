@@ -1,0 +1,63 @@
+<style>
+    /** 
+    * Homepage-specific styling for the header
+    */
+    body {
+        padding-top: 0 !important;
+    }
+    main > section:nth-of-type(even) {
+        background-color: var(--mantle);
+    }
+    .navbar .container {
+        justify-content: center;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .workshops-header {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        background-image: url("_static/component_wave_double.svg");
+        background-size: cover;
+        background-position: center;
+    }
+    .workshops-header h1 {
+        font-size: 4rem;
+    }
+    .workshops-header p {
+        font-size: 2rem;
+    }
+    .logos-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .header-logo {
+        height: 16rem;
+    }
+    /* hide the title header */
+    section#home {
+        display: none;
+    }
+    
+</style>
+
+<title>PsychoPy Workshops</title>
+<header class="workshops-header">
+    <!-- create navbar -->
+    {{ navBar() }}
+
+    <div class="logos-container">
+        <img class="header-logo" src="_static/psychopy256.png" />
+        <img class="header-logo" src="_static/pavlovia.png" />
+    </div>
+
+    <h1>Official PsychoPy Workshops</h1>
+    <p><i>Learn with the team that make the tools</i></p>   
+</header>
