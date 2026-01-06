@@ -27,24 +27,27 @@ Home
 ==================================================================================
 
 
-🧠 The EEG Research Pipeline: A Hands-On Bootcamp from Task Design to Analysis
+🎓 Official PsychoPy Workshop (Virtual) - Save the date!
 ==================================================================================
-December 16th-17th 2025. Central Nottingham, venue to be confirmed.
+April 14th-17th 2026. Virtual - Online training. - Tickets will be available to purchase soon!
 
-Join us for a two-day, practical deep dive into EEG research — organised in collaboration with ANT Neuro.
+Join us for an intensive, hands-on course in designing behavioural experiments — delivered by the creators of PsychoPy and Pavlovia.org.
 
-**Day 1**: Learn to design and optimise cognitive tasks for EEG using PsychoPy.
+**Format:** Four half-day sessions (13:00–17:00 UK time), covering two full days worth of post-graduate level training.
 
-**Day 2**: Get hands-on experience with EEG data collection and ERP analysis strategies.
+**Who is it for:** This workshop is ideal for beginners, PhD students, faculty, and industry researchers interested in using PsychoPy. No prior experience is required, though downloading the software in advance for familiarization is recommended. Experienced users will also benefit from advanced tips and best practices. Bespoke training options are available on request.
 
-Whether you're new to EEG or planning your next project, this bootcamp offers interactive training, lightning talks, and networking opportunities with fellow researchers.
+**What you’ll learn:**
 
-*Spaces are limited* — register now to secure your place!
+- How to design and run experiments studying human behaviour (reaction times, accuracy, and more).
+- Integrating Python code for flexible, customisable experiments.
+- Running experiments online via Pavlovia.org for large-scale recruitment.
+- Connecting experiments with hardware for physiological measurements (EEG, fMRI, eyetracking).
 
-.. button-link:: https://www.eventbrite.com/e/the-eeg-research-pipeline-a-hands-on-bootcamp-from-task-design-to-analysis-tickets-1692116779839?aff=oddtdtcreator
-          :color: primary
+Whether you’re starting out with behavioural research or looking to refine your skills, this course offers interactive training and expert guidance from the team behind PsychoPy and Pavlovia.org.
 
-          Ticket Purchase
+*Spaces are limited* - Tickets will be available to purchase soon!
+
 
 One-to-one tutorials
 ==================================================================================
