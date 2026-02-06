@@ -12,9 +12,9 @@
         Want to stay in the loop on training events? Click here to join the mailing list
 
     .. grid-item-card:: :octicon:`info` News
-        :link: https://workshops.psychopy.org/
+        :link: https://www.eventbrite.co.uk/e/building-inclusive-computational-skills-online-panel-discussion-tickets-1981353031253
 
-        New workshop! "The EEG Research Pipeline" Join us in Nottingham in December for our bootcamp!
+        Workshop collaboration with Women in Cognitive Science (WiCS) Europe! Join the WiCS community and join our training sessions.
 
     .. grid-item-card:: :octicon:`info` News
         :link: https://www.youtube.com/playlist?list=PLFB5A1BE51964D587
@@ -52,6 +52,42 @@ Whether you’re starting out with behavioural research or looking to refine you
                 :color: primary
 
                 Purchase Tickets
+
+👩‍💻 WiCS Workshop Series: Building Inclusive Computational Skills with PsychoPy
+==================================================================================
+
+.. grid:: 1 1 2 2
+    :gutter: 1
+
+    .. grid-item::
+
+        We are pleased to be running a workshop series in collaboration with `Women in Cognitive Science Europe (WiCS Europe) <https://www.womenincogsci.org/wics-europe/>`_  as part of their Building Inclusive Computational Skills initiative.
+        
+        This four-part online workshop series will take place every Wednesday in March, from 12:00–13:00 (UK time). The workshops are designed for beginners and are ideal for researchers who would like to start using open-source tools in their research while learning the foundations of Python programming along the way.
+        
+        Participants will be introduced to PsychoPy and guided through practical steps for designing, running, and extending experiments. No prior programming experience is required.
+        
+        Workshop Schedule:
+        
+        - March 4th: Introduction to PsychoPy
+        - March 11th: Extending PsychoPy with Python Code
+        - March 18th: Running Online Studies with PsychoPy
+        - March 25th: Creating an Eye-Tracking Experiment in PsychoPy
+        
+        *How to Sign-up*
+        
+        *Initially, registration will be open only to participants attending the WiCS Building Inclusive Computational Skills webinar*. Click below to find more information, and sign up to that event:
+        
+              .. button-link:: https://www.eventbrite.co.uk/e/building-inclusive-computational-skills-online-panel-discussion-tickets-1981353031253
+                        :color: primary
+        
+                        Find out more
+    .. grid-item::
+
+        .. image:: _static/wicse-logo.png
+            :width: 420
+            :alt: Women in Cognitive Science Europe Logo
+            :align: right
 
 
 One-to-one tutorials
