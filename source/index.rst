@@ -84,7 +84,7 @@ Whether you’re starting out with behavioural research or looking to refine you
                         Find out more
     .. grid-item::
 
-        .. image:: _static/wicse-logo.png
+        .. image:: _static/wics-czi-event.png
             :width: 420
             :alt: Women in Cognitive Science Europe Logo
             :align: right
