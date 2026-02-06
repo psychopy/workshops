@@ -76,7 +76,7 @@ Whether you’re starting out with behavioural research or looking to refine you
         
         **How to Sign-up**
         
-        **Initially, registration will be open only to participants attending the WiCS Building Inclusive Computational Skills webinar*. Click below to find more information, and sign up to that event:**
+        **Initially, registration will be open only to participants attending the WiCS Building Inclusive Computational Skills webinar. Click below to find more information, and sign up to that event:**
         
               .. button-link:: https://www.eventbrite.co.uk/e/building-inclusive-computational-skills-online-panel-discussion-tickets-1981353031253
                         :color: primary
