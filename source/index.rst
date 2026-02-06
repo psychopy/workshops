@@ -67,7 +67,7 @@ Whether you’re starting out with behavioural research or looking to refine you
         
         Participants will be introduced to PsychoPy and guided through practical steps for designing, running, and extending experiments. No prior programming experience is required.
         
-        Workshop Schedule:
+        Workshop Schedule **all sessions 12:00–13:00 (UK time)**:
         
         - March 4th: Introduction to PsychoPy
         - March 11th: Extending PsychoPy with Python Code
