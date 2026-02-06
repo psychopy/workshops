@@ -53,7 +53,7 @@ Whether you’re starting out with behavioural research or looking to refine you
 
                 Purchase Tickets
 
-👩‍💻 WiCS Workshop Series: Building Inclusive Computational Skills with PsychoPy
+👩‍💻 Women in Cognitive Science (WiCS) Workshop Series
 ==================================================================================
 
 .. grid:: 1 1 2 2
@@ -61,7 +61,7 @@ Whether you’re starting out with behavioural research or looking to refine you
 
     .. grid-item::
 
-        We are pleased to be running a workshop series in collaboration with `Women in Cognitive Science Europe (WiCS Europe) <https://www.womenincogsci.org/wics-europe/>`_  as part of their Building Inclusive Computational Skills initiative.
+        We are pleased to be running a workshop series in collaboration with `Women in Cognitive Science Europe (WiCS Europe) <https://www.womenincogsci.org/wics-europe/>`_  as part of their **Building Inclusive Computational Skills initiative**.
         
         This four-part online workshop series will take place every Wednesday in March, from 12:00–13:00 (UK time). The workshops are designed for beginners and are ideal for researchers who would like to start using open-source tools in their research while learning the foundations of Python programming along the way.
         
@@ -74,9 +74,9 @@ Whether you’re starting out with behavioural research or looking to refine you
         - March 18th: Running Online Studies with PsychoPy
         - March 25th: Creating an Eye-Tracking Experiment in PsychoPy
         
-        *How to Sign-up*
+        **How to Sign-up**
         
-        *Initially, registration will be open only to participants attending the WiCS Building Inclusive Computational Skills webinar*. Click below to find more information, and sign up to that event:
+        **Initially, registration will be open only to participants attending the WiCS Building Inclusive Computational Skills webinar*. Click below to find more information, and sign up to that event:**
         
               .. button-link:: https://www.eventbrite.co.uk/e/building-inclusive-computational-skills-online-panel-discussion-tickets-1981353031253
                         :color: primary
