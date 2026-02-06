@@ -27,9 +27,10 @@ Home
 ==================================================================================
 
 
-🎓 Official PsychoPy Workshop (Virtual)
+🎓 Official PsychoPy Workshop (Virtual - Online training)
 ==================================================================================
-April 14th-17th 2026. Virtual - Online training. 
+- **April 14th-17th 2026 – SOLD OUT**  
+- April 21st-24th 2026 (General Ticket Release **Friday 13th**. Until then, booking is exclusive to those on the waitlist for the first event, so stay tuned!)
 
 Join us for an intensive, hands-on course in designing behavioural experiments — delivered by the creators of PsychoPy and Pavlovia.org.
 
