@@ -89,6 +89,25 @@ Whether you’re starting out with behavioural research or looking to refine you
             :alt: Women in Cognitive Science Europe Logo
             :align: right
 
+🧠 Pre-Conference Workshop at the BPS Cognitive Section Meeting
+================================================================
+
+📅 **August 25th, 12:00–15:00**  
+📍 **Liverpool Hope University, UK**
+
+We are excited to be attending this year’s **BPS Cognitive Section Meeting**!
+
+If you would like to join us for some PsychoPy and Pavlovia training, arrive a day before the conference for this pre-conference workshop. The session is tailored for beginners and is ideal for early-career researchers who are getting started with tools for designing and running cognitive experiments.
+
+Participants will be introduced to the foundations of building cognitive tasks using PsychoPy, with practical guidance and hands-on examples throughout the session.
+
+**Registration will be open to BPS Cognitive Section attendees and will be available to book during conference registration.**
+
+.. button-link:: https://www.bps.org.uk/event/cognitive-section-annual-conference-2026
+   :color: primary
+
+   Book here
+
 
 One-to-one tutorials
 ==================================================================================
