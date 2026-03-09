@@ -26,6 +26,13 @@
 Home
 ==================================================================================
 
+Want to stay in the loop on workshops and training events? join the mailing list! 
+
+.. button-link:: https://run.pavlovia.org/pavlovia/survey-2025.2.0/?surveyId=bcaab3c1-fc72-479a-9b82-226c84a64fb3
+        :color: primary
+
+        Sign Up
+
 
 🎓 Official PsychoPy Workshop (Virtual - Online training)
 ==================================================================================
