@@ -103,7 +103,7 @@ Whether you’re starting out with behavioural research or looking to refine you
 💻 Workshop: My First Pull Request
 ================================================================
 
-📅 March 19th, 12:00–13:00 (UK time)
+📅 May 30th, 12:00–13:00 (UK time)
 💻 Virtual
 
 Join us for **My First Pull Request: A Beginner’s Guide to Open Source with PsychoPy**, a friendly, hands-on introduction to contributing to open-source projects on GitHub.
@@ -114,10 +114,7 @@ Participants will learn how to find something to improve, edit documentation, an
 
 The session will be practical and supportive, with guidance throughout to help everyone successfully make their first open-source contribution.
 
-.. button-link:: https://www.eventbrite.co.uk/e/my-first-pull-request-a-beginners-guide-to-open-source-with-psychopy-tickets-1984769044641?aff=oddtdtcreator
-   :color: primary
-
-   Book here
+**Tickets will be bookable 2 weeks in advance of the workshop**
 
 🧠 Pre-Conference Workshop at the BPS Cognitive Section Meeting
 ================================================================
