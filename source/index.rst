@@ -40,7 +40,8 @@ Want to stay in the loop on workshops and training events? Join the mailing list
 🎓 Official PsychoPy Workshop (Virtual - Online training)
 ==================================================================================
 - **April 14th-17th 2026 – SOLD OUT**  
-- April 21st-24th 2026 
+- **April 21st-24th 2026 – SOLD OUT**  
+- We will be announcing further dates for late 2026 in our July newsletter. To stay in the loop please sign up to our mailing list using the link at the top of this page.
 
 Join us for an intensive, hands-on course in designing behavioural experiments — delivered by the creators of PsychoPy and Pavlovia.org.
 
