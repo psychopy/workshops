@@ -64,41 +64,6 @@ Whether you’re starting out with behavioural research or looking to refine you
 
                 Purchase Tickets
 
-👩‍💻 Women in Cognitive Science (WiCS) Workshop Series
-==================================================================================
-
-.. grid:: 1 1 2 2
-    :gutter: 1
-
-    .. grid-item::
-
-        We are pleased to be running a workshop series in collaboration with `Women in Cognitive Science Europe (WiCS Europe) <https://www.womenincogsci.org/wics-europe/>`_  as part of their **Building Inclusive Computational Skills initiative**.
-        
-        This four-part online workshop series will take place every Wednesday in March, from 12:00–13:00 (UK time). The workshops are designed for beginners and are ideal for researchers who would like to start using open-source tools in their research while learning the foundations of Python programming along the way.
-        
-        Participants will be introduced to PsychoPy and guided through practical steps for designing, running, and extending experiments. No prior programming experience is required.
-        
-        Workshop Schedule **all sessions 12:00–13:00 (UK time)**:
-        
-        - March 4th: Introduction to PsychoPy
-        - March 11th: Extending PsychoPy with Python Code
-        - March 18th: Running Online Studies with PsychoPy
-        - March 25th: Creating an Eye-Tracking Experiment in PsychoPy
-        
-        **How to Sign-up**
-        
-        **Initially, registration will be open only to participants attending the WiCS Building Inclusive Computational Skills webinar. Click below to find more information, and sign up to that event:**
-        
-              .. button-link:: https://www.eventbrite.co.uk/e/building-inclusive-computational-skills-online-panel-discussion-tickets-1981353031253
-                        :color: primary
-        
-                        Find out more
-    .. grid-item::
-
-        .. image:: _static/wics-czi-event.png
-            :width: 420
-            :alt: Women in Cognitive Science Europe Logo
-            :align: right
 
 💻 Workshop: My First Pull Request
 ================================================================
