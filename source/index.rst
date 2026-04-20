@@ -169,6 +169,13 @@ We make all of the materials from our workshops open access! Click the cards bel
 .. grid:: 1 1 2 2
   :gutter: 4
 
+  .. grid-item-card:: Getting Started with PsychoPy: Build your first Memory experiment.
+    :link: https://gitlab.pavlovia.org/Consultancy/orientation_memory_task
+      
+      *Part of day 1 of our virtual PsychoPy workshop*
+
+      :bdg:`Beginner` :bdg:`Builder` :bdg:`Memory Tasks`
+
   .. grid-item-card:: Creating perception studies to run in lab and online using PsychoPy and Pavlovia.
     :link: https://drive.google.com/drive/folders/1Fq9FM7vYD8pqKh129g2RWx7PEnqFP9m5?usp=drive_link
       
