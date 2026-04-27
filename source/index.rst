@@ -176,7 +176,7 @@ We make all of the materials from our workshops open access! Click the cards bel
 
       :bdg:`Beginner` :bdg:`Builder` :bdg:`Pavlovia` :bdg:`Python Code` :bdg:`Eye Tracking`
 
- .. grid-item-card:: Getting Started with PsychoPy: Build your first Memory experiment.
+  .. grid-item-card:: Getting Started with PsychoPy: Build your first Memory experiment.
     :link: https://gitlab.pavlovia.org/Consultancy/orientation_memory_task
       
       *Part of day 1 of our virtual PsychoPy workshop*
