@@ -41,7 +41,7 @@ Want to stay in the loop on workshops and training events? Join the mailing list
 ==================================================================================
 - **April 14th-17th 2026 – SOLD OUT**  
 - **April 21st-24th 2026 – SOLD OUT**  
-- We will be announcing further dates for late 2026 in our July newsletter. To stay in the loop please sign up to our mailing list using the link at the top of this page.
+- October 13th - 16th - Tickets available. 
 
 Join us for an intensive, hands-on course in designing behavioural experiments — delivered by the creators of PsychoPy and Pavlovia.org.
 
@@ -60,7 +60,7 @@ Whether you’re starting out with behavioural research or looking to refine you
 
 *Spaces are limited* 
 
-      .. button-link:: https://www.eventbrite.com/e/official-virtual-psychopy-workshop-2026-april-21st-24th-tickets-1982500841384?aff=oddtdtcreator
+      .. button-link:: https://www.eventbrite.co.uk/e/official-virtual-psychopy-workshop-2026-october-13th-16th-tickets-1988306639683?aff=oddtdtcreator
                 :color: primary
 
                 Purchase Tickets
