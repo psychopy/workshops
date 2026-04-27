@@ -168,7 +168,7 @@ We make all of the materials from our workshops open access! Click the cards bel
 
 .. grid:: 1 1 2 2
   :gutter: 4
-
+ 
   .. grid-item-card:: Women In Cognitive Science Workshop Series
     :link: https://wicseurope.github.io/WiCSeurope/resources/2026_psychopyforwics
       
