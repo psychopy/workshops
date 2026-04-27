@@ -233,6 +233,32 @@ We make all of the materials from our workshops open access! Click the cards bel
 
 .. card-carousel:: 2
 
+    .. card:: **Nikki Zabik**, University of Nebraska Medical Center, Omaha, NE, USA
+
+        The best workshop I have ever been to. It had the perfect pace and amount of interactions. All of the examples were buildable and relatable for researchers of all types. Clearly, a lot of thought and planning went into the format and content.
+
+    .. card:: **Anonymous**
+
+        This was a very well-structured and compact training, with a pace that felt just right throughout. It provided a clear and practical introduction, and I feel that after completing it, one can realistically start designing and running their own experiment. Just as importantly, it also gives participants the tools to know where to look for further information independently whenever needed.
+
+    .. card:: **Anna Skałba**, University of Warsaw
+
+        I highly recommend the PsychoPy workshop! It is tailored for everyone conducting experimental research – from beginners new to PsychoPy through to those wishing to learn its more advanced functionalities. I really appreciated the interactive and collaborative format of the workshop, which allowed us to present our own research and get conceptual and technical feedback regarding the implementation of specific features in PsychoPy. Kim and Rebecca presented the content in a very accessible way and took an individual approach, repeating explanations when needed and answering everyone's questions. You can expect to learn a lot and build experiments independently after attending four half-day sessions!
+
+.. card-carousel:: 2
+
+    .. card:: **Veeda Kala**, Estonian Academy of Music and Theatre
+
+        Virtual PsychoPy & Pavlovia Workshop was a really uplifting and intensive course that left me inspired and encouraged! I learned tools for specific use as well as creative solutions. Becca and Kim made everyone feel welcome and safe to ask any questions they had. It was especially great to connect with other researchers - the challenges of an online format where solved cleverly!
+
+    .. card:: **Louise Nicholls**, University of Strathclyde
+
+        Rebecca and Kim gave a fantastic, in-depth tutorial on Psychopy and Pavlovia. They are incredibly knowledgeable and patient and took time to ensure that course attendees were keeping up with the content. With this aim they gave considerable one-on-one, dedicated support where needed, and allowed plenty time for questions throughout. Thank you!
+
+    .. card:: **Ian M. Raugh**, McGill University
+
+        I've only been using PsychoPy for a few months, but already know I plan to be using it throughout my career. It is extremely powerful, able to accommodate a huge range of tasks, while remaining relatively intuitive and easy to learn. Although it can be self-taught (with a lot of help from the documentation, tutorials, and forum), the workshop is definitely worth it to build a solid foundation for using it. It is especially good if you are interested in open science and scientific citizenship, as it allows for easy documentation and sharing of programmed tasks.
+
     .. card:: **Rai Samar G Bari** PhD Cognitive Neuroscience, Durham University
 
         I'm grateful to the PsychoPy team for organizing an excellent workshop. The hands-on practice sessions were incredibly valuable, allowing us to create our own experiments. Rebecca was an exceptional trainer, and Sue provided great support in designing experiments during each session. Kim was also very helpful in setting up hardware connections. I highly recommend attending their workshop if you're looking to program experiments with PsychoPy.
