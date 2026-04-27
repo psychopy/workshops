@@ -169,7 +169,14 @@ We make all of the materials from our workshops open access! Click the cards bel
 .. grid:: 1 1 2 2
   :gutter: 4
 
-  .. grid-item-card:: Getting Started with PsychoPy: Build your first Memory experiment.
+  .. grid-item-card:: Women In Cognitive Science Workshop Series
+    :link: https://wicseurope.github.io/WiCSeurope/resources/2026_psychopyforwics
+      
+      *A full workshop series from getting started with PsychoPy Builder to creating eye tracking experiments*
+
+      :bdg:`Beginner` :bdg:`Builder` :bdg:`Pavlovia` :bdg:`Python Code` :bdg:`Eye Tracking`
+
+ .. grid-item-card:: Getting Started with PsychoPy: Build your first Memory experiment.
     :link: https://gitlab.pavlovia.org/Consultancy/orientation_memory_task
       
       *Part of day 1 of our virtual PsychoPy workshop*
