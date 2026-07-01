@@ -65,34 +65,16 @@ Whether you’re starting out with behavioural research or looking to refine you
                 Purchase Tickets
 
 
-💻 Workshop: My First Pull Request
+
+🧠 Workshop at the BPS Cognitive Section Meeting
 ================================================================
 
-📅 June 18th, 12:00–13:00 (UK time)
-💻 Virtual - Free
-
-Join us for **My First Pull Request: A Beginner’s Guide to Open Source with PsychoPy**, a friendly, hands-on introduction to contributing to open-source projects on GitHub.
-
-This workshop is designed for complete beginners who have never contributed to an open-source project before. Using the PsychoPy documentation as a real-world example, we will walk through the full contribution process step by step.
-
-Participants will learn how to find something to improve, edit documentation, and submit a contribution using GitHub. By the end of the session, attendees will have submitted their very first pull request.
-
-The session will be practical and supportive, with guidance throughout to help everyone successfully make their first open-source contribution.
-
-              .. button-link:: https://www.eventbrite.co.uk/e/my-first-pull-request-a-beginners-guide-to-open-source-with-psychopy-tickets-1988555668535?aff=oddtdtcreator
-                        :color: primary
-        
-                        Register
-
-🧠 Pre-Conference Workshop at the BPS Cognitive Section Meeting
-================================================================
-
-📅 **August 25th, 12:00–15:00**  
+📅 **August 26th, 13:00–15:00**  
 📍 **Liverpool Hope University, UK**
 
 We are excited to be attending this year’s **BPS Cognitive Section Meeting**!
 
-If you would like to join us for some PsychoPy and Pavlovia training, arrive a day before the conference for this pre-conference workshop. The session is tailored for beginners and is ideal for early-career researchers who are getting started with tools for designing and running cognitive experiments.
+This workshop will be running as part of the BPS cognitive meeting. The session is tailored for beginners and is ideal for early-career researchers who are getting started with tools for designing and running cognitive experiments.
 
 Participants will be introduced to the foundations of building cognitive tasks using PsychoPy, with practical guidance and hands-on examples throughout the session.
 
