@@ -66,7 +66,7 @@ Whether you’re starting out with behavioural research or looking to refine you
 
 
 
-  My First Pull Request
+:female-technologist: My First Pull Request
 ================================================================
 
 📅 **October 1st, 12:00–13:00**  
