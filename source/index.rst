@@ -65,9 +65,8 @@ Whether you’re starting out with behavioural research or looking to refine you
                 Purchase Tickets
 
 
-
 :female-technologist: My First Pull Request
-================================================================
+==================================================================================
 
 📅 **October 1st, 12:00–13:00**  
 :globe_with_meridians: **virtual**
