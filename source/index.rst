@@ -76,14 +76,12 @@ Learn how to contribute to Open Source code in a friendly environment.
 
 This is a free workshop in which we will walk you through the very basics of git and how to make a pull request to github repositories. By the end of the session, we hope that you will have made a pull request to the PsychoPy documentation.
 
-.. note::
-This is not a workshop designed to teach you about PsychoPy or Pavlovia, the focus is on GitHub basics.
+Note: This is not a workshop designed to teach you about PsychoPy or Pavlovia, the focus is on GitHub basics.
 
-.. button-link:: https://www.eventbrite.co.uk/e/my-first-pull-request-a-beginners-guide-to-open-source-with-psychopy-tickets-2001187229875?aff=oddtdtcreator
-:color: primary
+      .. button-link:: https://www.eventbrite.co.uk/e/my-first-pull-request-a-beginners-guide-to-open-source-with-psychopy-tickets-2001187229875?aff=oddtdtcreator
+                :color: primary
 
-Book here
-
+                Book here
 
 One-to-one tutorials
 ==================================================================================
