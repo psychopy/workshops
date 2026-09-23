@@ -65,22 +65,19 @@ Whether you’re starting out with behavioural research or looking to refine you
                 Purchase Tickets
 
 
+# :woman_technologist: **My First Pull Request**
+==================================================================================
 
-🧠 Workshop at the BPS Cognitive Section Meeting
-================================================================
+📅 **October 1st, 12:00–13:00**  
+:globe_with_meridians: **virtual**
 
-📅 **August 26th, 13:00–15:00**  
-📍 **Liverpool Hope University, UK**
+Learn how to contribute to Open Source code in a friendly environment.
 
-We are excited to be attending this year’s **BPS Cognitive Section Meeting**!
+This is a **free workshop** in which we will walk you through the very basics of git and how to make a pull request to github repositories. By the end of the session, we hope that you will have made a pull request to the PsychoPy documentation. 
 
-This workshop will be running as part of the BPS cognitive meeting. The session is tailored for beginners and is ideal for early-career researchers who are getting started with tools for designing and running cognitive experiments.
+## :warning:  Note this is not a workshop designed to teach you about PsychoPy or Pavlovia, the focus is on GitHub basics. 
 
-Participants will be introduced to the foundations of building cognitive tasks using PsychoPy, with practical guidance and hands-on examples throughout the session.
-
-**Registration will be open to BPS Cognitive Section attendees and will be available to book during conference registration.**
-
-.. button-link:: https://www.bps.org.uk/event/cognitive-section-annual-conference-2026
+.. button-link:: https://www.eventbrite.co.uk/e/my-first-pull-request-a-beginners-guide-to-open-source-with-psychopy-tickets-2001187229875?aff=oddtdtcreator
    :color: primary
 
    Book here
