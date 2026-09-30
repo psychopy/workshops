@@ -40,7 +40,11 @@ Want to stay in the loop on workshops and training events? Join the mailing list
 🎓 Official PsychoPy Workshop (Virtual - Online training)
 ==================================================================================
 
-- October 13th - 16th
+**2026 dates**
+- October 13th - 16th 2026
+
+**2027 dates**
+- April 13th - 16th 2027
 
 Join us for an intensive, hands-on course in designing behavioural experiments — delivered by the creators of PsychoPy and Pavlovia.org.
 
@@ -62,7 +66,12 @@ Whether you’re starting out with behavioural research or looking to refine you
       .. button-link:: https://www.eventbrite.co.uk/e/official-virtual-psychopy-workshop-2026-october-13th-16th-tickets-1988306639683?aff=oddtdtcreator
                 :color: primary
 
-                Purchase Tickets
+                Purchase Tickets 2026
+
+      .. button-link:: https://www.eventbrite.com/e/official-virtual-psychopy-workshop-2027-april-13th-16th-tickets-2002616191939?keep_tld=true
+                :color: primary
+
+                Purchase Tickets 2027
 
 
 👩‍💻 My First Pull Request
