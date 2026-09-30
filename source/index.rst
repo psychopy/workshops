@@ -73,6 +73,7 @@ Whether you’re starting out with behavioural research or looking to refine you
 
                 Purchase Tickets 2027
 
+Interested in attending but these times don't work for you? Let us know what timezones work for you in `this form <https://run.pavlovia.org/pavlovia/survey-2026.2.0/?surveyId=d769c52a-294e-451f-b052-5f2938a138b0>`_ — if we get enough requests, we will make something work!
 
 👩‍💻 My First Pull Request
 ==================================================================================
