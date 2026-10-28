@@ -40,10 +40,7 @@ Want to stay in the loop on workshops and training events? Join the mailing list
 🎓 Official PsychoPy Workshop (Virtual - Online training)
 ==================================================================================
 
-**2026 dates**
-- October 13th - 16th 2026
-
-**2027 dates**
+**Next dates**
 - April 13th - 16th 2027
 
 Join us for an intensive, hands-on course in designing behavioural experiments — delivered by the creators of PsychoPy and Pavlovia.org.
@@ -63,35 +60,13 @@ Whether you’re starting out with behavioural research or looking to refine you
 
 *Spaces are limited* 
 
-      .. button-link:: https://www.eventbrite.co.uk/e/official-virtual-psychopy-workshop-2026-october-13th-16th-tickets-1988306639683?aff=oddtdtcreator
-                :color: primary
-
-                Purchase Tickets 2026
-
       .. button-link:: https://www.eventbrite.com/e/official-virtual-psychopy-workshop-2027-april-13th-16th-tickets-2002616191939?keep_tld=true
                 :color: primary
 
-                Purchase Tickets 2027
+                Purchase Tickets
 
 Interested in attending but these times don't work for you? Let us know what timezones work for you in `this form <https://run.pavlovia.org/pavlovia/survey-2026.2.0/?surveyId=d769c52a-294e-451f-b052-5f2938a138b0>`_ — if we get enough requests, we will make something work!
 
-👩‍💻 My First Pull Request
-==================================================================================
-
-📅 October 1st, 12:00–13:00
-
-🌐 Virtual
-
-Learn how to contribute to Open Source code in a friendly environment.
-
-This is a free workshop in which we will walk you through the very basics of git and how to make a pull request to github repositories. By the end of the session, we hope that you will have made a pull request to the PsychoPy documentation.
-
-Note: This is not a workshop designed to teach you about PsychoPy or Pavlovia, the focus is on GitHub basics.
-
-      .. button-link:: https://www.eventbrite.co.uk/e/my-first-pull-request-a-beginners-guide-to-open-source-with-psychopy-tickets-2001187229875?aff=oddtdtcreator
-                :color: primary
-
-                Book here
 
 One-to-one tutorials
 ==================================================================================
