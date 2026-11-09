@@ -201,6 +201,14 @@ We make all of the materials from our workshops open access! Click the cards bel
 
         The best workshop I have ever been to. It had the perfect pace and amount of interactions. All of the examples were buildable and relatable for researchers of all types. Clearly, a lot of thought and planning went into the format and content.
 
+    .. card:: **Helayna Sjoberg, University of Minnesota**
+
+        This workshop was wonderful! Becca is so knowledgeable, patient, and kind. I entered with absolutely no psychopy experience, and am leaving feeling like a pro! I am so excited to bring this knowledge back to my lab and to learn even more as I go!
+
+    .. card:: **A. Hashemi, Wilfrid Laurier University**
+
+        The OST team and Becca specifically provided a PHENOMENAL workshop that covered the fundamentals of PsychoPy/Pavlovia, but also dynamically adapted to specific and more technical requests by various attendees. The workshop solidified my skills and gave me the confidence to teach it to my students, and has helped me make progress on some projects that I was struggling with.
+
     .. card:: **Anonymous**
 
         This was a very well-structured and compact training, with a pace that felt just right throughout. It provided a clear and practical introduction, and I feel that after completing it, one can realistically start designing and running their own experiment. Just as importantly, it also gives participants the tools to know where to look for further information independently whenever needed.
